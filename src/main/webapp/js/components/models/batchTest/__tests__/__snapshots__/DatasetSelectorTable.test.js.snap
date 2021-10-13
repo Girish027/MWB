@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DatasetSelectorTable /> Snapshots renders correctly with given datasets 1`] = `
+<div>
+  <withTheme(Table)
+    columns={
+      Array [
+        Object {
+          "Cell": [Function],
+          "Header": [Function],
+          "accessor": "",
+          "id": "checkbox",
+          "maxWidth": 100,
+          "sortable": false,
+        },
+        Object {
+          "Cell": [Function],
+          "Header": "Dataset Names",
+          "accessor": "",
+          "id": "name",
+        },
+        Object {
+          "Header": "User Id",
+          "accessor": [Function],
+          "id": "userId",
+        },
+        Object {
+          "Header": "Date Created",
+          "accessor": [Function],
+          "id": "createdAt",
+        },
+      ]
+    }
+    data={
+      Array [
+        Object {
+          "_key": 1,
+          "clientId": 1,
+          "createdAt": 1536777405845,
+          "description": "test dataset",
+          "id": 1,
+          "isClickable": true,
+          "locale": "en_US",
+          "name": "dataset 1",
+          "projectId": 2,
+          "status": "COMPLETED",
+          "task": "INDEX",
+          "type": "Audio/Voice (Data Collection)",
+        },
+        Object {
+          "_key": 2,
+          "clientId": 1,
+          "createdAt": 1536777805845,
+          "description": "test dataset",
+          "id": 2,
+          "isClickable": true,
+          "locale": "en_US",
+          "name": "dataset 2",
+          "projectId": 2,
+          "status": "COMPLETED",
+          "task": "INDEX",
+          "type": "Audio/Voice (Data Collection)",
+        },
+        Object {
+          "_key": 3,
+          "clientId": 1,
+          "createdAt": 1536778005208,
+          "description": "test dataset",
+          "id": 3,
+          "isClickable": true,
+          "locale": "en_US",
+          "name": "dataset 3",
+          "projectId": 2,
+          "status": "COMPLETED",
+          "task": "INDEX",
+          "type": "Audio/Voice (Data Collection)",
+        },
+      ]
+    }
+    defaultPageSize={1000}
+    defaultSorted={
+      Array [
+        Object {
+          "desc": true,
+          "id": "createdAt",
+        },
+      ]
+    }
+    showPagination={false}
+  />
+</div>
+`;

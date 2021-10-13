@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DeleteDialog /> Creating an instance with test props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    centerContent={false}
+    closeIconVisible={true}
+    headerChildren="Delete Dialog"
+    isOpen={true}
+    okChildren="DELETE"
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    size="small"
+    styleOverride={
+      Object {
+        "content": Object {
+          "top": "20%",
+        },
+        "header": Object {
+          "borderBottom": "1px solid",
+          "borderBottomColor": "#DADADA",
+          "display": "flex",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "center",
+          "title": Object {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "marginLeft": "23px",
+            "marginRight": "20px",
+          },
+          "titleIcon": Object {
+            "marginRight": "20px",
+          },
+          "width": "100%",
+        },
+      }
+    }
+  />
+</div>
+`;

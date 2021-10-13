@@ -1,0 +1,62 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Project Configuration Properties
+  description: APIs to retreive project config properties
+host: localhost:8080
+basePath: /v1
+schemes:
+  - http
+produces:
+  - application/json
+paths:
+  /configProperties:
+    x-swagger-router-controller: files
+    get:
+      tags:
+        - get
+      summary: Get the project configuration property
+      operationId: getProjectConfigProperty
+      parameters:
+        - in: query
+          name: propertyName
+          type: string
+          required: true
+          description: Configuration property to retrieve (can be single or comma seperated)
+      responses:
+        200:
+          description: Configuration property
+          schema:
+            $ref: "#/definitions/ConfigProperty"
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  ConfigProperty:
+    discriminator: propertyname
+    type: object
+    required:
+      - value
+    properties:
+      value:
+        type: string
+        description: The project Config value
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code: 
+        type: string
+        description: Error category 
+      message:
+        type: string
+        description: Error message shown in api response

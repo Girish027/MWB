@@ -1,0 +1,729 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Projects
+  description: Project APIs and their descriptions
+host: localhost:8080
+basePath: /nltools/private
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /v1/projects:
+    x-swagger-router-controller: projects
+    get:
+      tags:
+        - get
+      summary: List all projects
+      operationId: listProjects
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          type: integer
+          format: int32
+          default: 100
+        - name: startIndex
+          in: query
+          description: starting index
+          type: integer
+          format: int32
+          default: 0
+        - name: showDeleted
+          in: query
+          description: show deleted projects
+          type: boolean
+          format: true/false
+          default: false
+        - name: clientId
+          in: query
+          description: Filter to only show projects belonging to this client
+          type: string
+      responses:
+        200:
+          description: An paged array of Projects
+          headers:
+            headers:
+              location:
+                type: string
+                description: A link to the next page of responses
+              X-Offset:
+                type: integer
+                format: int32
+                description: The current offset / startIndex
+              X-Total-Count:
+                type: integer
+                format: int32
+                description: The total number of items available
+          schema:
+            $ref: "#/definitions/ProjectDetailDatasetTaskStatus"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    post:
+      tags:
+        - post
+      summary: Create a project
+      operationId: createProject
+      parameters:
+        - name: project
+          description: Project object
+          in: body
+          schema:
+            $ref: "#/definitions/Project"
+      responses:
+        201:
+          description: Project succesfully created
+          schema:
+            $ref: "#/definitions/ProjectDetail"
+        400:
+          description: Project could not be created
+          schema:
+            $ref: "#/definitions/Error"
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /v1/projects/{projectId}:
+    get:
+      summary: Info for a specific Project
+      operationId: getProjectById
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to retrieve
+          type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          schema:
+            $ref: "#/definitions/ProjectDetail"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    delete:
+      tags:
+        - delete
+      summary: Deletes a project.
+      operationId: deleteProjectById
+      description: Deletes the project and its all associated projects and artifacts
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to delete
+          type: string
+      responses:
+        204:
+          description: OK
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    patch:
+      tags:
+        - patch
+      consumes:
+        - application/json-patch+json
+      summary: Modifies a project
+      operationId: patchProjectById
+      description: Modifies an attribute of a project without required parameters
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to patch
+          type: string
+        - name: JsonPatch
+          in: body
+          required: true
+          schema:
+            $ref: "#/definitions/PatchRequest"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/ProjectDetail"
+        401:
+          description: Unauthorized to call the API
+        400:
+          description: Project could not be modified
+          schema:
+            $ref: "#/definitions/Error"
+        409:
+          description: Conflict (Project name already exists)
+          schema:
+            $ref: "#/definitions/Error"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /v1/projects/{projectId}/undelete:
+    post:
+      tags:
+        - post
+      summary: Undeletes a project.
+      operationId: undeleteProjectById
+      description: Enables the project
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the Project to enable
+          type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ProjectDetail'
+        401:
+          description: Unauthorized to call the API
+        404:
+          description: Project Not Found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/datasets:
+    get:
+      tags:
+        - get
+      summary: List all data sets associated to specifed project
+      operationId: listDatasetsForProjectById
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          type: integer
+          format: int32
+          default: 100
+        - name: startIndex
+          in: query
+          description: starting index
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        200:
+          description: An paged array of Datasets
+          headers:
+            location:
+              type: string
+              description: A link to the next page of responses
+            X-Offset:
+              type: integer
+              format: int32
+              description: The current offset / startIndex
+            X-Total-Count:
+              type: integer
+              format: int32
+              description: The total number of items available
+          schema:
+            $ref: "#/definitions/DatasetsDetail"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /v1/projects/{projectId}/datasets/{datasetId}:
+    put:
+      summary: Map a specified dataset to a specific project
+      operationId: addDatasetToProjectMappingById
+      tags:
+        - put
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+      responses:
+        204:
+          description: OK
+        401:
+          description: Unauthorized to call the API
+        400:
+          description: Dataset could not be mapped to project
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description:  Conflict (Mapping already exists)
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      summary: Remove specified dataset mapping for a specific project
+      operationId: removeDatasetToProjcetMappingById
+      tags:
+        - delete
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset
+          type: string
+      responses:
+        401:
+          description: Unauthorized to call the API
+  /v1/projects/{projectId}/datasets/{datasetId}/transform:
+    put:
+      summary: transforms a dataset for a project
+      operationId: transformDataset
+      tags:
+        - put
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+      responses:
+        202:
+          description: ACCEPTED
+          schema:
+            $ref: '#/definitions/TaskEventDetail'
+          headers:
+            location:
+              type: string
+              description: A link to the transform status api
+        401:
+          description: Unauthorized to call the API
+        404:
+          description: Project or Dataset cannot be found
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description: Dataset has already been transformed
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/datasets/{datasetId}/transform/retry:
+    put:
+      summary: retry a failed transformation job
+      operationId: transformRetry
+      tags:
+        - put
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+      responses:
+        202:
+          description: ACCEPTED
+          schema:
+            $ref: '#/definitions/TaskEventDetail'
+          headers:
+            location:
+              type: string
+              description: A link to the transform status api
+        404:
+          description: Project or Dataset cannot be found
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description: Dataset has already been transformed, or indexed
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/datasets/{datasetId}/transform/status:
+    get:
+      summary: Retrieves the status of a transform job
+      operationId: transformStatus
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/TaskEventDetail'
+        404:
+          description: Transformation job cannot be found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  Project:
+    discriminator: name
+    type: object
+    required:
+      - name
+      - clientId
+      - ownerId
+      - vertical
+    properties:
+      name:
+        type: string
+        description: Project name
+      clientId:
+        type: string
+        description: id of the client this project belongs to
+      ownerId:
+        type: string
+        description: id of the user this project belongs to
+      groupId:
+        type: string
+        description: id of the group for this project
+      vertical:
+        $ref: "#/definitions/Vertical"
+      description:
+        type: string
+        description: Short description of the Project
+      locale:
+        type: string
+        description: The BCP 47 code for project language.
+        default: en-US
+      state:
+        type: string
+        default: ENABLED
+        enum:
+          - ENABLED
+          - DISABLED
+  ProjectDetail:
+    allOf:
+      - $ref: '#/definitions/Project'
+      - type: object
+        required:
+          - id
+          - createdAt
+        properties:
+          id:
+            type: string
+            description: project id
+          createdAt:
+            type: integer
+            format: int64
+            description: The UTC date time for project creation
+          modifiedAt:
+            type: integer
+            format: int64
+            description: Modification time for any attribute update. Removing and adding datasets should change this time
+          modifiedBy:
+            type: string
+            description: User ID of last user to make a change
+          startAt:
+            type: integer
+            format: int64
+            description: The UTC date time for project start date
+          endAt:
+            type: integer
+            format: int64
+            description: The UTC date time for project end date
+          offset:
+            type: integer
+            format: int32
+          totalCount:
+            type: integer
+            format: int64
+  ProjectDetailDatasetTaskStatus:
+    allOf:
+      - $ref: '#/definitions/ProjectDetail'
+      - type: object
+        required:
+          - datasetTaskStatusList
+        properties:
+          datasetTaskStatusList:
+            type: array
+            description: List of DatasetTaskStatus objects
+            items:
+              $ref: "#/definitions/DatasetTaskStatus"
+  DatasetTaskStatus:
+    discriminator: id
+    type: object
+    required:
+      - id
+      - name
+      - task
+      - status
+    properties:
+      id:
+        type: string
+        description: The dataset Id
+      name:
+        type: string
+        description: The dataset Name
+      task:
+        type: string
+        description: The name of dataset transformation task
+      status:
+        type: string
+        description: The status of the dataset transformation task
+  ProjectsDetail:
+    type: array
+    items:
+      $ref: "#/definitions/ProjectDetailDatasetTaskStatus"
+  PatchRequest:
+    type: array
+    items:
+      $ref: "#/definitions/PatchDocument"
+  Vertical:
+    type: string
+    enum:
+      - FINANCIAL
+      - HEALTHCARE
+      - RETAIL
+      - TECHNOLOGY
+      - TELCO
+      - TRAVEL
+      - UTILITIES
+      - OTHER
+  Dataset:
+    discriminator: name
+    type: object
+    required:
+      - name
+      - clientId
+      - dataType
+      - uri
+    properties:
+      name:
+        type: string
+        description: Dataset name
+      clientId:
+        type: string
+        description: id of the client this dataset came from
+      receivedAt:
+        type: integer
+        format: int64
+        description: The UTC date time for when the dataset was recieved
+      uri:
+        type: string
+        description: Uri within repository
+      dataType:
+        $ref: "#/definitions/DataType"
+      description:
+        type: string
+        description: Short description of the Dataset
+      locale:
+        type: string
+        description: The BCP 47 code for dataset language.
+        default: en-US
+  DatasetDetail:
+    allOf:
+      - $ref: '#/definitions/Dataset'
+      - type: object
+        required:
+          - id
+          - createdAt
+          - transformationStatus
+        properties:
+          id:
+            type: string
+            description: dataset id
+          createdAt:
+            type: integer
+            format: int64
+            description: The UTC date time for when the dataset was created
+          transformationStatus:
+            type: string
+            description: Status of dataset transformation for a project
+          offset:
+            type: integer
+            format: int32
+          totalCount:
+            type: integer
+            format: int64
+  TaskEvent:
+    discriminator: task
+    type: object
+    required:
+      - jobId
+      - task
+      - status
+    properties:
+      jobId:
+        type: string
+        description: ID of job
+      task:
+        type: string
+        enum:
+          - TAG
+          - STRING
+        description: Task name
+      status:
+        type: string
+        enum:
+          - STARTED
+          - QUEUED
+          - RUNNING
+          - COMPLETED
+          - CANCELLED
+          - FAILED
+        description: Task status
+      code:
+        type: string
+        enum:
+          - OK
+        description: message code for task
+      message:
+        type: string
+        description: message for task for detailed information
+  TaskEventDetail:
+    allOf:
+      - $ref: '#/definitions/TaskEvent'
+      - type: object
+        required:
+          - id
+          - createdAt
+          - modifiedAt
+        properties:
+          id:
+            type: string
+            description: dataset id
+          createdAt:
+            type: integer
+            format: int64
+            description: The UTC date time for when the Task Event was created
+          modifiedAt:
+            type: integer
+            format: int64
+            description: The UTC date time for when the Task Event was modified
+          percentComplete:
+            type: integer
+            format: int32
+            description: The percentage that the transformation job is complete
+  Job:
+    discriminator: projectId
+    type: object
+    required:
+      - projectId
+      - datasetId
+    properties:
+      projectId:
+        type: string
+        description: ID of job
+      datasetId:
+        type: string
+        description: Task name
+      filename:
+        type: string
+        description: Task status
+  JobDetail:
+    allOf:
+      - $ref: '#/definitions/Job'
+      - type: object
+        required:
+          - id
+          - createdAt
+          - createdBy
+        properties:
+          id:
+            type: string
+            description: job id
+          createdAt:
+            type: integer
+            format: int64
+            description: The UTC date time for when the Task Event was created
+          createdBy:
+            type: string
+            description: ID of the user that initiated this job
+  DatasetsDetail:
+    type: array
+    items:
+      $ref: "#/definitions/DatasetDetail"
+  PatchDocument:
+    description: A JSONPatch document as defined by RFC 6902
+    required:
+      - op
+      - path
+    properties:
+      op:
+        type: string
+        description: The operation to be performed
+        enum:
+          - add
+          - remove
+          - replace
+          - move
+          - copy
+          - test
+      path:
+        type: string
+        description: A JSON-Pointer
+      value:
+        type: object
+        description: The value to be used within the operations.
+      from:
+        type: string
+        description: A string containing a JSON Pointer value.
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response

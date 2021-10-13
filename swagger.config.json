@@ -1,0 +1,9 @@
+{
+  "groupId":"com.tfs.learningsystems",
+  "modelPackage":"com.tfs.learningsystems.ui.model",
+  "apiPackage":"com.tfs.learningsystems.ui.rest",
+  "invokerPackage":"com.tfs.learningsystems.ui.rest",
+  "artifactVersion":"1.2.0",
+  "library":"jersey2",
+  "sourceFolder":"src/main/java"
+}

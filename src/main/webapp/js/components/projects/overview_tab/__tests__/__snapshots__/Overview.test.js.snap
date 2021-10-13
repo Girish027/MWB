@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overview should render overview component correctly with given props 1`] = `
+<Route>
+  <Component />
+</Route>
+`;

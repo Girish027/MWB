@@ -1,0 +1,181 @@
+@import '../vars/vars';
+#ConsistencyReport {
+    // padding-top: $headerHeight;
+    .MultipleCheckboxFilter {
+        background-color: white;
+        border-bottom:  dashed #ddd 1px;
+        .Label {
+            padding: 0 0 0 10px;
+        }
+    }
+    #ConsistencyReportControls {
+        // position: fixed;
+        width: 100%;
+        .searchContainer {
+            min-width: 1200px;
+            border-bottom: 1px dashed #ddd;
+            margin: 0;
+            padding: 0;
+            height: 70px;
+            margin-top: 10px;
+            .searchFieldContainer {
+                min-width: 650px;
+                max-width: 650px;
+                width: 650px;
+            }
+            .filters {
+                float: left;
+                .filtersBlock {
+                    /* margin-top: auto; */
+                    margin-bottom: auto;
+                    text-align: left;
+                    margin-left: 10px;
+                }
+            }
+            .actions {
+                width: 200px;
+                button {
+                    margin: 0px 10px 0 10px;
+                }
+                float: right
+            }
+            .consistencyReportProjectControl {
+                float: left;
+            }
+            .consistencyReportToolsMenu {
+                width: 200px;
+                margin-left: 30px;
+                z-index: 9999;
+                float: left;
+            }
+            .projectName {
+                font-size: 1.5em;
+                margin-left: 10px;
+                color: #000;
+            }
+            .consistencyReportGuideNavControls {
+                padding-top: 20px;
+                padding-left: 15px;
+                height: 88px;
+                margin: 0;
+            }
+        }
+        .datasetsFilter {
+            line-height: 34px;
+            border-bottom: 1px dashed #ddd;
+            .DatasetsLabel {
+                line-height: 34px;
+                padding: 0 0 0 15px;
+            }
+            .DatasetsList {
+                line-height: 34px;
+            }
+        }
+        .statsContainer {
+            line-height: 34px;
+            font-size: 16px;
+            font-style: normal;
+            text-align: left;
+            color: #000;
+            .statRow {
+                white-space: nowrap;
+                padding-left: 15px;
+                .num {
+                    color: #666;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    .GridMessage {
+        // position: fixed;
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0 0 0;
+        text-align: center;
+        /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: bold;
+    }
+    #ConsistencyReportGridContainer {
+        width: 100%;
+        #ConsistencyReportGridActions {
+            z-index: 20;
+            width: 100%;
+            height: 60px;
+            font-style: normal;
+            text-align: left;
+            .PageInfo {
+                /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+                font-size: 14px;
+                white-space: nowrap;
+                .GrayText {
+                    color: #666;
+                }
+            }
+            .ActionsContainer {
+                padding: 0;
+                white-space: nowrap;
+                button {
+                    margin: 0 0 0 8px;
+                    line-height: 18px;
+                }
+                button[disabled]:hover {
+                    svg {
+                        stroke: #fff;
+                    }
+                }
+                .bulkTagLabelCellContainer {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    line-height: 44px;
+                    height: 44px;
+                    .bulkTagLabel {
+                        width: 100px;
+                        text-align: right;
+                        line-height: 44px;
+                    }
+                    .bulklTxtInput {
+                        margin: 5px;
+                        padding: 0;
+                    }
+                    .bulkTagSuggestContainer {
+                        .cellSuggest {
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        #ConsistencyReportGrid {
+            .react-grid-loading-bar {
+                // position: absolute;
+            }
+            .react-grid-header-fixed-container {
+                // position: absolute;
+            }
+            .react-grid-table-container {
+                padding-bottom: 40px;
+                tr {
+                    cursor: pointer;
+                    td {
+                        .HasConflictIconContainer {
+                            svg {
+                                path {
+                                    fill: orange;
+                                }
+                            }
+                        }
+                        .NoConflictIconContainer {
+                            svg {
+                                stroke: green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

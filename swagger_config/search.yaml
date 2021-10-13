@@ -1,0 +1,610 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Search
+  description: Search APIs and their descriptions
+host: localhost:8080
+basePath: /nltools/v1
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+/search/{projectId}/stats:
+    post:
+      summary: Gives basic stats of a project
+      operationId: stats
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: search
+          in : body
+          schema:
+            $ref: '#/definitions/SearchRequest'
+      responses:
+        200:
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/StatsResponse'
+        400:
+          description: Project does not have a transformed data set.
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id / Specified dataset not associated with project
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /search/{projectId}/datasets/{datasetId}/stats:
+    get:
+      summary: Gives basic stats of a project
+      operationId: stats
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset
+          type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/StatsResponse'
+        400:
+          description: Project does not have a transformed data set.
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id / Specified dataset not associated with project
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /search/{projectId}:
+      post:
+        tags:
+          - post
+        summary: Search project transcriptions
+        operationId: search
+        parameters:
+          - name: projectId
+            in: path
+            required: true
+            description: The id of the project to retrieve
+            type: string
+          - name: startIndex
+            in: query
+            required: false
+            description: The start index to fetch the results from
+            type: integer
+            format: int32
+            default: 0
+          - name: limit
+            in: query
+            required: false
+            description: The page size of the results starting from the startIndex
+            type: integer
+            format: int32
+            default: 100
+          - name: op
+            in: query
+            required: false
+            description: The operator to be used between 2 words in a query string
+            type: string
+            default: AND
+          - name: sortBy
+            in: query
+            required: false
+            description: An array of fields to hierarchically sort in order of their apperance in the array
+            type: array
+            items: multi
+            default: count:asc
+          - name: search
+            in : body
+            schema:
+              $ref: '#/definitions/SearchRequest'
+        responses:
+          200:
+            description: OK
+            schema:
+              $ref: '#/definitions/TranscriptionDocumentDetailCollection'
+          400:
+            description: Project does not have a transformed data set
+            schema:
+              $ref: '#/definitions/Error'
+          404:
+            description: Invalid Project id / Specified dataset not associated with project
+            schema:
+              $ref: '#/definitions/Error'
+          500:
+            description:  Internal Server Error
+            schema:
+              $ref: '#/definitions/Error'
+          503:
+            description: Elasticsearch Service Unavailable
+            schema:
+              $ref: '#/definitions/Error'
+  /search/{projectId}/datasets/{datasetId}:
+    post:
+      tags:
+        - post
+      summary: Search project transcriptions
+      operationId: search
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to retrieve
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset from the project
+          type: string
+        - name: startIndex
+          in: query
+          required: false
+          description: The start index to fetch the results from
+          type: integer
+          format: int32
+          default: 0
+        - name: limit
+          in: query
+          required: false
+          description: The page size of the results starting from the startIndex
+          type: integer
+          format: int32
+          default: 100
+        - name: op
+          in: query
+          required: false
+          description: The operator to be used between 2 words in a query string
+          type: string
+          default: AND
+        - name: sortBy
+          in: query
+          required: false
+          description: An array of fields to hierarchically sort in order of their apperance in the array
+          type: array
+          items: multi
+          default: count:asc
+        - name: search 
+          in : body
+          schema:
+            $ref: '#/definitions/SearchRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/TranscriptionDocumentDetailCollection'
+        400:
+          description: Project does not have a transformed data set
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id / Specified dataset not associated with project
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /search/{projectId}/intents:
+    get:
+      tags:
+        - get
+      summary: Lookup intents/tags to help tag one or more transcriptions.
+      operationId: getMatchedIntents
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to retrieve
+          type: string
+        - name: q
+          in: query
+          description: Prefix to search for
+          type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/IntentResponse'
+        400:
+          description: Project does not have a transformed data set.
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /search/{projectId}/intentguide:
+    get:
+      tags:
+        - get
+      summary: Search project tagging guide documents
+      operationId: searchTaggingGuideDocuments
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to retrieve
+          type: string
+        - name: sortBy
+          in: query
+          required: false
+          description: An array of fields to hierarchically sort in order of their apperance in the array
+          type: array
+          items: multi
+          default: intent:asc
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TaggingGuideDocumentDetail'
+        404:
+          description: Invalid Project id
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /search/{projectId}/intentguide/importstats:
+    get:
+      tags:
+        - get
+      summary: Get tagging guide last import stats
+      operationId: getTaggingGuideImportStats
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/TaggingGuideImportStats'
+        404:
+          description: Invalid Project id
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /search/audit/{projectId}:
+    post:
+      tags:
+        - post
+      summary: Get all audit documents for a given project/dataset
+      operationId: getAuditDocuments
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to query
+          type: string
+        - name: datasetId
+          in: query
+          description: The id of the dataset to query
+          type: string
+        - name: auditFilter
+          in: body
+          description: Search filters
+          schema:
+            $ref: '#/definitions/AuditFilter'
+        - name: sortBy
+          in: query
+          required: false
+          description: An array of fields to hierarchically sort in order of their apperance in the array
+          type: array
+          items: multi
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/TranscriptionDocumentDetailCollection'
+        400:
+          description: Project does not have a transformed data set.
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /search/{projectId}/datasets/{datasetId}/getReportFields:
+    get:
+      tags:
+        - get
+      summary: List all fields for report visualization
+      operationId: listReportFields
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset
+          type: string
+      responses:
+        200:
+          description: An array of ReportField objects
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ReportField'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  StatsResponse:
+    properties:
+      intents:
+        format: int64
+        type: integer
+        description: Total unique intents used to tag transcriptions for this project
+      unique:
+        $ref: '#/definitions/SearchStats'
+      all:
+        $ref: '#/definitions/SearchStats'
+  SearchStats:
+    properties:
+      total: 
+        type: integer
+        format: int64
+        description: Number of transcriptions
+      tagged:
+        type: integer
+        format: int64
+        description: Number of tagged transcriptions
+      percent:
+        type: number
+        format: float
+        description: Percentage of transcriptions tagged
+  SearchRequest:
+    properties:
+      query:
+        type: string
+        description: Query string or keyword to search
+        default: "*"
+      filter:
+        $ref: '#/definitions/SearchRequestFilter'
+  SearchRequestFilter:
+    properties:
+      tagged:
+        type: boolean
+        description: Search only tagged transcriptions
+        default: false
+      untagged:
+        type: boolean
+        description: Search only untagged transcriptions
+        default: true
+      hasComment:
+        type: boolean
+        description: Search only commented transcriptions if true, if false all transcriptions
+        default: false
+      wordCountRange:
+        type: object
+        description: Range of word counts to look for in a transcription
+        properties:
+          min:
+            type: integer
+            default: 1
+          max:
+            type: integer
+      autoTagCountRange:
+        type: object
+        description: Range to specify minimum and maximum auto categorization counts 
+        properties:
+          min:
+            type: integer
+            default: 1
+          max:
+            type: integer
+      dateRange:
+        $ref: '#/definitions/DateRange'
+      datasets:
+        discription: filter on specified datasets
+        type: array
+        items: integer
+  TaggingGuideDocument:
+    properties:
+      intent:
+        type: string
+        description: The intent in the top-goal format
+      rutag:
+        type: string
+        description: The hierarchical classification of the intents
+      comments:
+        type: string
+        description: Comments associated with this tag or intent
+      examples:
+        type: string
+        description: Examples given using this intent
+      keywords:
+        type: string
+        description: Keywords identifying this tag or intent
+      description:
+        type: string
+        description: The description of a tag
+  TaggingGuideDocumentDetail:
+    allOf:
+    - $ref: '#/definitions/TaggingGuideDocument'
+    - type: object
+      required:
+        - count
+        - percentage
+      properties:
+        count:
+          type: integer
+          format: int64
+        percentage:
+          type: number
+          format: float
+          description: Percentage of transcriptions tagged with this intent
+  TranscriptionDocumentDetailCollection:
+    properties:
+      startIndex:
+        type: integer
+        description: The startIndex sent in the request
+      limit:
+        type: integer
+        description: The limit sent in the request
+      total:
+        type: integer
+        format: int64
+        description: Total unique transcriptions that fall into the search criteria
+      transcriptionList:
+        type: array
+        items:
+          $ref: '#/definitions/TranscriptionDocumentDetail'
+  TranscriptionDocumentDetail:
+    required:
+      - transcriptionHash
+      - textStringForTagging
+    properties:
+      intent:
+        type: string
+      intents:
+        type: object
+        additionalProperties: {
+          type: string
+        }
+      taggedAt:
+        type: string
+      taggedBy:
+        type: string  
+      autoTagString:
+        type: string
+      numTokens:
+        type: integer
+      datasetIds:
+        type: array
+        items: integer
+      autoTagCount:
+        type: integer
+      documentCount:
+        type: integer
+        format: int64
+      transcriptionHash:
+        type: string
+      textStringForTagging:
+        type: string
+  IntentResponse:
+    type: array
+    description: List of returned tags
+    items:
+      type: string
+  AuditFilter:
+    properties:
+      type:
+        type: string
+        description: tagged/untagged
+      dateRange:
+        $ref: '#/definitions/DateRange'
+      taggedBy:
+        type: string
+        description: User who tagged text strings
+      deletedBy:
+        type: string
+        description: User who deleted text strings
+      intent:
+        type: string
+        description: Intent in the tagged or untagged text strings
+  DateRange:
+    properties:
+      startDate:
+        type: integer
+        format: int64
+        description: Date in milliseconds since UTC epoch
+      endDate:
+        type: integer
+        format: int64
+        description: Date in milliseconds since UTC epoch
+  ReportField:
+    required:
+      - urlTemplate
+      - name
+      - chartType
+    properties:
+      urlTemplate:
+        type: string
+        description: URL template for Kibana chart
+      name:
+        type: string
+        description: Name of the field displayed to user
+      chartType:
+        type: string
+        description: Type of visualization for this field
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response

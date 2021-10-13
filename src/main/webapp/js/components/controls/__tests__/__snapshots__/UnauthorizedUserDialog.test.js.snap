@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UnauthorizedUserDialog /> Snapshots: should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CLOSE"
+    closeIconVisible={false}
+    headerChildren="Unauthorized User"
+    isOpen={true}
+    okVisible={false}
+    onClickCancel={[Function]}
+    styleOverride={
+      Object {
+        "content": Object {
+          "boxShadow": "rgba(0, 0, 0, 0.2) 1px 3px 3px 0px, rgba(0, 0, 0, 0.2) 1px 3px 15px 2px",
+          "left": "calc((100vw - 515px) / 2)",
+          "maxHeight": "271px",
+          "maxWidth": "500px",
+          "top": "315px",
+        },
+      }
+    }
+  >
+    <p>
+       
+      User is not authorized to access any workspace. Please contact your admin.
+       
+    </p>
+  </withTheme(DialogComponent)>
+</div>
+`;

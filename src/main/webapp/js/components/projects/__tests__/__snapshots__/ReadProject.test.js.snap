@@ -1,0 +1,2126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReadProject /> Functionality: onClickDatasetTemplate should call onClickDatasetTemplate 1`] = `
+<div
+  id="ReadProject"
+>
+  <withTheme(Tabs)
+    align="left"
+    onTabSelected={[Function]}
+    selectedIndex={2}
+    styleOverride={
+      Object {
+        "tabContainer": Object {
+          "borderTop": "none",
+        },
+        "tabItem": Object {
+          "padding": "23px 20px 21px",
+        },
+      }
+    }
+    tabPanels={
+      Array [
+        <withRouter(Overview)
+          clientId="12"
+          dispatch={
+            [MockFunction] {
+              "calls": Array [
+                Array [
+                  "called changeRoute",
+                ],
+                Array [
+                  "called changeRoute",
+                ],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            }
+          }
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(NodeAnalytics)
+          clientId="12"
+          dispatch={
+            [MockFunction] {
+              "calls": Array [
+                Array [
+                  "called changeRoute",
+                ],
+                Array [
+                  "called changeRoute",
+                ],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            }
+          }
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(ModelsView)
+          clientId="12"
+          dispatch={
+            [MockFunction] {
+              "calls": Array [
+                Array [
+                  "called changeRoute",
+                ],
+                Array [
+                  "called changeRoute",
+                ],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            }
+          }
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+          userFeatureConfiguration={
+            Object {
+              "appHelp": "show",
+              "createNewVersionModelReviewTab": "show",
+              "createNewVersionTrainingConfigTab": "show",
+              "datasetDelete": "show",
+              "datasetExport": "show",
+              "datasetExportById": "show",
+              "datasetTemplate": "show",
+              "downloadResults": "show",
+              "granularMessage": "show",
+              "intentGuideContextualActionBar": "show",
+              "intentGuideDelete": "show",
+              "intentGuideExport": "show",
+              "intentGuideTemplate": "show",
+              "intentGuideUpdate": "show",
+              "kibanaLogs": "show",
+              "modelConfigDownload": "show",
+              "modelConfigTemplate": "show",
+              "modelDelete": "show",
+              "modelDownload": "show",
+              "modelTrainingOutputs": "show",
+              "models": "show",
+              "projectDelete": "show",
+              "resolveInconsistencies": "show",
+              "speechBundledUnbundled": "show",
+              "supportLink": "show",
+              "tagSearchHelp": "show",
+              "transformationHelp": "show",
+            }
+          }
+        />,
+        <div
+          id="ReadProjectDatasetsDetails"
+        >
+          <div
+            style={
+              Object {
+                "contextualBar": Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                },
+                "marginLeft": "-10px",
+              }
+            }
+          >
+            <withTheme(ContextualActionsBar)
+              styleOverride={
+                Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                }
+              }
+            >
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-tag-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                TAG
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-upload-button"
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                UPLOAD
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-inconsistencies-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                RESOLVE INCONSISTENCIES
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-export-all-datasets"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                EXPORT
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                DATASET TEMPLATE
+              </withTheme(ContextualActionItem)>
+            </withTheme(ContextualActionsBar)>
+          </div>
+          <Connect(ReadProjectDatasetsGrid)
+            clientId="12"
+            data={
+              Array [
+                Object {
+                  "id": "123",
+                  "status": "COMPLETED",
+                },
+              ]
+            }
+            history={Object {}}
+          />
+        </div>,
+        <Connect(TaggingGuide)
+          intents={Array []}
+        />,
+        <Connect(SettingsView) />,
+      ]
+    }
+    tabs={
+      Array [
+        "Overview",
+        "Node Analytics",
+        "All Versions",
+        "Datasets",
+        "Intent Guide",
+        "Settings",
+      ]
+    }
+  />
+  <span
+    className="add-version"
+  >
+    <withTheme(Button)
+      disabled={false}
+      onClick={[Function]}
+    >
+      ADD VERSION
+    </withTheme(Button)>
+  </span>
+</div>
+`;
+
+exports[`<ReadProject /> Functionality: onClickExportAllDatasets should call onClickExportAllDatasets 1`] = `
+<div
+  id="ReadProject"
+>
+  <withTheme(Tabs)
+    align="left"
+    onTabSelected={[Function]}
+    selectedIndex={2}
+    styleOverride={
+      Object {
+        "tabContainer": Object {
+          "borderTop": "none",
+        },
+        "tabItem": Object {
+          "padding": "23px 20px 21px",
+        },
+      }
+    }
+    tabPanels={
+      Array [
+        <withRouter(Overview)
+          clientId="12"
+          dispatch={
+            [MockFunction] {
+              "calls": Array [
+                Array [
+                  "called changeRoute",
+                ],
+                Array [
+                  "called changeRoute",
+                ],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            }
+          }
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(NodeAnalytics)
+          clientId="12"
+          dispatch={
+            [MockFunction] {
+              "calls": Array [
+                Array [
+                  "called changeRoute",
+                ],
+                Array [
+                  "called changeRoute",
+                ],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            }
+          }
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(ModelsView)
+          clientId="12"
+          dispatch={
+            [MockFunction] {
+              "calls": Array [
+                Array [
+                  "called changeRoute",
+                ],
+                Array [
+                  "called changeRoute",
+                ],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            }
+          }
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+          userFeatureConfiguration={
+            Object {
+              "appHelp": "show",
+              "createNewVersionModelReviewTab": "show",
+              "createNewVersionTrainingConfigTab": "show",
+              "datasetDelete": "show",
+              "datasetExport": "show",
+              "datasetExportById": "show",
+              "datasetTemplate": "show",
+              "downloadResults": "show",
+              "granularMessage": "show",
+              "intentGuideContextualActionBar": "show",
+              "intentGuideDelete": "show",
+              "intentGuideExport": "show",
+              "intentGuideTemplate": "show",
+              "intentGuideUpdate": "show",
+              "kibanaLogs": "show",
+              "modelConfigDownload": "show",
+              "modelConfigTemplate": "show",
+              "modelDelete": "show",
+              "modelDownload": "show",
+              "modelTrainingOutputs": "show",
+              "models": "show",
+              "projectDelete": "show",
+              "resolveInconsistencies": "show",
+              "speechBundledUnbundled": "show",
+              "supportLink": "show",
+              "tagSearchHelp": "show",
+              "transformationHelp": "show",
+            }
+          }
+        />,
+        <div
+          id="ReadProjectDatasetsDetails"
+        >
+          <div
+            style={
+              Object {
+                "contextualBar": Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                },
+                "marginLeft": "-10px",
+              }
+            }
+          >
+            <withTheme(ContextualActionsBar)
+              styleOverride={
+                Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                }
+              }
+            >
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-tag-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                TAG
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-upload-button"
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                UPLOAD
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-inconsistencies-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                RESOLVE INCONSISTENCIES
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-export-all-datasets"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                EXPORT
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                DATASET TEMPLATE
+              </withTheme(ContextualActionItem)>
+            </withTheme(ContextualActionsBar)>
+          </div>
+          <Connect(ReadProjectDatasetsGrid)
+            clientId="12"
+            data={
+              Array [
+                Object {
+                  "id": "123",
+                  "status": "COMPLETED",
+                },
+              ]
+            }
+            history={Object {}}
+          />
+        </div>,
+        <Connect(TaggingGuide)
+          intents={Array []}
+        />,
+        <Connect(SettingsView) />,
+      ]
+    }
+    tabs={
+      Array [
+        "Overview",
+        "Node Analytics",
+        "All Versions",
+        "Datasets",
+        "Intent Guide",
+        "Settings",
+      ]
+    }
+  />
+  <span
+    className="add-version"
+  >
+    <withTheme(Button)
+      disabled={false}
+      onClick={[Function]}
+    >
+      ADD VERSION
+    </withTheme(Button)>
+  </span>
+</div>
+`;
+
+exports[`<ReadProject /> Snapshots renders correctly for default props on shallow copy 1`] = `
+<div
+  id="ReadProject"
+>
+  <withTheme(Tabs)
+    align="left"
+    onTabSelected={[Function]}
+    selectedIndex={2}
+    styleOverride={
+      Object {
+        "tabContainer": Object {
+          "borderTop": "none",
+        },
+        "tabItem": Object {
+          "padding": "23px 20px 21px",
+        },
+      }
+    }
+    tabPanels={
+      Array [
+        <withRouter(Overview)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(NodeAnalytics)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(ModelsView)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+          userFeatureConfiguration={
+            Object {
+              "appHelp": "show",
+              "createNewVersionModelReviewTab": "show",
+              "createNewVersionTrainingConfigTab": "show",
+              "datasetDelete": "show",
+              "datasetExport": "show",
+              "datasetExportById": "show",
+              "datasetTemplate": "show",
+              "downloadResults": "show",
+              "granularMessage": "show",
+              "intentGuideContextualActionBar": "show",
+              "intentGuideDelete": "show",
+              "intentGuideExport": "show",
+              "intentGuideTemplate": "show",
+              "intentGuideUpdate": "show",
+              "kibanaLogs": "show",
+              "modelConfigDownload": "show",
+              "modelConfigTemplate": "show",
+              "modelDelete": "show",
+              "modelDownload": "show",
+              "modelTrainingOutputs": "show",
+              "models": "show",
+              "projectDelete": "show",
+              "resolveInconsistencies": "show",
+              "speechBundledUnbundled": "show",
+              "supportLink": "show",
+              "tagSearchHelp": "show",
+              "transformationHelp": "show",
+            }
+          }
+        />,
+        <div
+          id="ReadProjectDatasetsDetails"
+        >
+          <div
+            style={
+              Object {
+                "contextualBar": Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                },
+                "marginLeft": "-10px",
+              }
+            }
+          >
+            <withTheme(ContextualActionsBar)
+              styleOverride={
+                Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                }
+              }
+            >
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-tag-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                TAG
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-upload-button"
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                UPLOAD
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-inconsistencies-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                RESOLVE INCONSISTENCIES
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-export-all-datasets"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                EXPORT
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                DATASET TEMPLATE
+              </withTheme(ContextualActionItem)>
+            </withTheme(ContextualActionsBar)>
+          </div>
+          <Connect(ReadProjectDatasetsGrid)
+            clientId="12"
+            data={
+              Array [
+                Object {
+                  "id": "123",
+                  "status": "COMPLETED",
+                },
+              ]
+            }
+            history={Object {}}
+          />
+        </div>,
+        <Connect(TaggingGuide)
+          intents={Array []}
+        />,
+        <Connect(SettingsView) />,
+      ]
+    }
+    tabs={
+      Array [
+        "Overview",
+        "Node Analytics",
+        "All Versions",
+        "Datasets",
+        "Intent Guide",
+        "Settings",
+      ]
+    }
+  />
+  <span
+    className="add-version"
+  >
+    <withTheme(Button)
+      disabled={false}
+      onClick={[Function]}
+    >
+      ADD VERSION
+    </withTheme(Button)>
+  </span>
+</div>
+`;
+
+exports[`<ReadProject /> Snapshots renders correctly for default props on shallow copy 2`] = `
+<Placeholder
+  message="Please select or create a new model."
+  styleOverride={Object {}}
+/>
+`;
+
+exports[`<ReadProject /> Snapshots renders correctly for default props with datasets and models undefined 1`] = `
+<div
+  id="ReadProject"
+>
+  <withTheme(Tabs)
+    align="left"
+    onTabSelected={[Function]}
+    selectedIndex={2}
+    styleOverride={
+      Object {
+        "tabContainer": Object {
+          "borderTop": "none",
+        },
+        "tabItem": Object {
+          "padding": "23px 20px 21px",
+        },
+      }
+    }
+    tabPanels={
+      Array [
+        <withRouter(Overview)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={false}
+          loadingModels={false}
+          projectId="23"
+        />,
+        <withRouter(NodeAnalytics)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={false}
+          loadingModels={false}
+          projectId="23"
+        />,
+        <withRouter(ModelsView)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={false}
+          loadingModels={false}
+          projectId="23"
+          userFeatureConfiguration={
+            Object {
+              "appHelp": "show",
+              "createNewVersionModelReviewTab": "show",
+              "createNewVersionTrainingConfigTab": "show",
+              "datasetDelete": "show",
+              "datasetExport": "show",
+              "datasetExportById": "show",
+              "datasetTemplate": "show",
+              "downloadResults": "show",
+              "granularMessage": "show",
+              "intentGuideContextualActionBar": "show",
+              "intentGuideDelete": "show",
+              "intentGuideExport": "show",
+              "intentGuideTemplate": "show",
+              "intentGuideUpdate": "show",
+              "kibanaLogs": "show",
+              "modelConfigDownload": "show",
+              "modelConfigTemplate": "show",
+              "modelDelete": "show",
+              "modelDownload": "show",
+              "modelTrainingOutputs": "show",
+              "models": "show",
+              "projectDelete": "show",
+              "resolveInconsistencies": "show",
+              "speechBundledUnbundled": "show",
+              "supportLink": "show",
+              "tagSearchHelp": "show",
+              "transformationHelp": "show",
+            }
+          }
+        />,
+        <div
+          id="ReadProjectDatasetsDetails"
+        >
+          <div
+            style={
+              Object {
+                "contextualBar": Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                },
+                "marginLeft": "-10px",
+              }
+            }
+          >
+            <withTheme(ContextualActionsBar)
+              styleOverride={
+                Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                }
+              }
+            >
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-tag-button"
+                disabled={true}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                TAG
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-upload-button"
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                UPLOAD
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-inconsistencies-button"
+                disabled={true}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                RESOLVE INCONSISTENCIES
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-export-all-datasets"
+                disabled={true}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                EXPORT
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                DATASET TEMPLATE
+              </withTheme(ContextualActionItem)>
+            </withTheme(ContextualActionsBar)>
+          </div>
+          <Placeholder
+            message=""
+            styleOverride={Object {}}
+          >
+            <div
+              className="message-default"
+            >
+              Please upload a dataset to start model building.
+            </div>
+            <withTheme(Button)
+              name="upload-2"
+              onClick={[Function]}
+              type="flat"
+            >
+              <withTheme(ContextualActionItem)
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+              >
+                UPLOAD NEW DATASET
+              </withTheme(ContextualActionItem)>
+            </withTheme(Button)>
+          </Placeholder>
+        </div>,
+        <Connect(TaggingGuide)
+          intents={Array []}
+        />,
+        <Connect(SettingsView) />,
+      ]
+    }
+    tabs={
+      Array [
+        "Overview",
+        "Node Analytics",
+        "All Versions",
+        "Datasets",
+        "Intent Guide",
+        "Settings",
+      ]
+    }
+  />
+  <span
+    className="add-version"
+  >
+    <withTheme(Button)
+      disabled={true}
+      onClick={[Function]}
+    >
+      ADD VERSION
+    </withTheme(Button)>
+  </span>
+</div>
+`;
+
+exports[`<ReadProject /> Snapshots renders correctly for default props with path set as / 1`] = `
+<div
+  id="ReadProject"
+>
+  <withTheme(Tabs)
+    align="left"
+    onTabSelected={[Function]}
+    selectedIndex={0}
+    styleOverride={
+      Object {
+        "tabContainer": Object {
+          "borderTop": "none",
+        },
+        "tabItem": Object {
+          "padding": "23px 20px 21px",
+        },
+      }
+    }
+    tabPanels={
+      Array [
+        <withRouter(Overview)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(NodeAnalytics)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(ModelsView)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+          userFeatureConfiguration={
+            Object {
+              "appHelp": "show",
+              "createNewVersionModelReviewTab": "show",
+              "createNewVersionTrainingConfigTab": "show",
+              "datasetDelete": "show",
+              "datasetExport": "show",
+              "datasetExportById": "show",
+              "datasetTemplate": "show",
+              "downloadResults": "show",
+              "granularMessage": "show",
+              "intentGuideContextualActionBar": "show",
+              "intentGuideDelete": "show",
+              "intentGuideExport": "show",
+              "intentGuideTemplate": "show",
+              "intentGuideUpdate": "show",
+              "kibanaLogs": "show",
+              "modelConfigDownload": "show",
+              "modelConfigTemplate": "show",
+              "modelDelete": "show",
+              "modelDownload": "show",
+              "modelTrainingOutputs": "show",
+              "models": "show",
+              "projectDelete": "show",
+              "resolveInconsistencies": "show",
+              "speechBundledUnbundled": "show",
+              "supportLink": "show",
+              "tagSearchHelp": "show",
+              "transformationHelp": "show",
+            }
+          }
+        />,
+        <div
+          id="ReadProjectDatasetsDetails"
+        >
+          <div
+            style={
+              Object {
+                "contextualBar": Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                },
+                "marginLeft": "-10px",
+              }
+            }
+          >
+            <withTheme(ContextualActionsBar)
+              styleOverride={
+                Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                }
+              }
+            >
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-tag-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                TAG
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-upload-button"
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                UPLOAD
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-inconsistencies-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                RESOLVE INCONSISTENCIES
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-export-all-datasets"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                EXPORT
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                DATASET TEMPLATE
+              </withTheme(ContextualActionItem)>
+            </withTheme(ContextualActionsBar)>
+          </div>
+          <Connect(ReadProjectDatasetsGrid)
+            clientId="12"
+            data={
+              Array [
+                Object {
+                  "id": "123",
+                  "status": "COMPLETED",
+                },
+              ]
+            }
+            history={Object {}}
+          />
+        </div>,
+        <Connect(TaggingGuide)
+          intents={Array []}
+        />,
+        <Connect(SettingsView) />,
+      ]
+    }
+    tabs={
+      Array [
+        "Overview",
+        "Node Analytics",
+        "All Versions",
+        "Datasets",
+        "Intent Guide",
+        "Settings",
+      ]
+    }
+  />
+  <span
+    className="add-version"
+  >
+    <withTheme(Button)
+      disabled={false}
+      onClick={[Function]}
+    >
+      ADD VERSION
+    </withTheme(Button)>
+  </span>
+</div>
+`;
+
+exports[`<ReadProject /> Snapshots renders correctly for default props with path set as /datasets 1`] = `
+<div
+  id="ReadProject"
+>
+  <withTheme(Tabs)
+    align="left"
+    onTabSelected={[Function]}
+    selectedIndex={3}
+    styleOverride={
+      Object {
+        "tabContainer": Object {
+          "borderTop": "none",
+        },
+        "tabItem": Object {
+          "padding": "23px 20px 21px",
+        },
+      }
+    }
+    tabPanels={
+      Array [
+        <withRouter(Overview)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(NodeAnalytics)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(ModelsView)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+          userFeatureConfiguration={
+            Object {
+              "appHelp": "show",
+              "createNewVersionModelReviewTab": "show",
+              "createNewVersionTrainingConfigTab": "show",
+              "datasetDelete": "show",
+              "datasetExport": "show",
+              "datasetExportById": "show",
+              "datasetTemplate": "show",
+              "downloadResults": "show",
+              "granularMessage": "show",
+              "intentGuideContextualActionBar": "show",
+              "intentGuideDelete": "show",
+              "intentGuideExport": "show",
+              "intentGuideTemplate": "show",
+              "intentGuideUpdate": "show",
+              "kibanaLogs": "show",
+              "modelConfigDownload": "show",
+              "modelConfigTemplate": "show",
+              "modelDelete": "show",
+              "modelDownload": "show",
+              "modelTrainingOutputs": "show",
+              "models": "show",
+              "projectDelete": "show",
+              "resolveInconsistencies": "show",
+              "speechBundledUnbundled": "show",
+              "supportLink": "show",
+              "tagSearchHelp": "show",
+              "transformationHelp": "show",
+            }
+          }
+        />,
+        <div
+          id="ReadProjectDatasetsDetails"
+        >
+          <div
+            style={
+              Object {
+                "contextualBar": Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                },
+                "marginLeft": "-10px",
+              }
+            }
+          >
+            <withTheme(ContextualActionsBar)
+              styleOverride={
+                Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                }
+              }
+            >
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-tag-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                TAG
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-upload-button"
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                UPLOAD
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-inconsistencies-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                RESOLVE INCONSISTENCIES
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-export-all-datasets"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                EXPORT
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                DATASET TEMPLATE
+              </withTheme(ContextualActionItem)>
+            </withTheme(ContextualActionsBar)>
+          </div>
+          <Connect(ReadProjectDatasetsGrid)
+            clientId="12"
+            data={
+              Array [
+                Object {
+                  "id": "123",
+                  "status": "COMPLETED",
+                },
+              ]
+            }
+            history={Object {}}
+          />
+        </div>,
+        <Connect(TaggingGuide)
+          intents={Array []}
+        />,
+        <Connect(SettingsView) />,
+      ]
+    }
+    tabs={
+      Array [
+        "Overview",
+        "Node Analytics",
+        "All Versions",
+        "Datasets",
+        "Intent Guide",
+        "Settings",
+      ]
+    }
+  />
+  <span
+    className="add-version"
+  >
+    <withTheme(Button)
+      disabled={false}
+      onClick={[Function]}
+    >
+      ADD VERSION
+    </withTheme(Button)>
+  </span>
+</div>
+`;
+
+exports[`<ReadProject /> Snapshots renders correctly for default props with path set as /manage-intents 1`] = `
+<div
+  id="ReadProject"
+>
+  <withTheme(Tabs)
+    align="left"
+    onTabSelected={[Function]}
+    selectedIndex={4}
+    styleOverride={
+      Object {
+        "tabContainer": Object {
+          "borderTop": "none",
+        },
+        "tabItem": Object {
+          "padding": "23px 20px 21px",
+        },
+      }
+    }
+    tabPanels={
+      Array [
+        <withRouter(Overview)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(NodeAnalytics)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(ModelsView)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+          userFeatureConfiguration={
+            Object {
+              "appHelp": "show",
+              "createNewVersionModelReviewTab": "show",
+              "createNewVersionTrainingConfigTab": "show",
+              "datasetDelete": "show",
+              "datasetExport": "show",
+              "datasetExportById": "show",
+              "datasetTemplate": "show",
+              "downloadResults": "show",
+              "granularMessage": "show",
+              "intentGuideContextualActionBar": "show",
+              "intentGuideDelete": "show",
+              "intentGuideExport": "show",
+              "intentGuideTemplate": "show",
+              "intentGuideUpdate": "show",
+              "kibanaLogs": "show",
+              "modelConfigDownload": "show",
+              "modelConfigTemplate": "show",
+              "modelDelete": "show",
+              "modelDownload": "show",
+              "modelTrainingOutputs": "show",
+              "models": "show",
+              "projectDelete": "show",
+              "resolveInconsistencies": "show",
+              "speechBundledUnbundled": "show",
+              "supportLink": "show",
+              "tagSearchHelp": "show",
+              "transformationHelp": "show",
+            }
+          }
+        />,
+        <div
+          id="ReadProjectDatasetsDetails"
+        >
+          <div
+            style={
+              Object {
+                "contextualBar": Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                },
+                "marginLeft": "-10px",
+              }
+            }
+          >
+            <withTheme(ContextualActionsBar)
+              styleOverride={
+                Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                }
+              }
+            >
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-tag-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                TAG
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-upload-button"
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                UPLOAD
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-inconsistencies-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                RESOLVE INCONSISTENCIES
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-export-all-datasets"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                EXPORT
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+              >
+                DATASET TEMPLATE
+              </withTheme(ContextualActionItem)>
+            </withTheme(ContextualActionsBar)>
+          </div>
+          <Connect(ReadProjectDatasetsGrid)
+            clientId="12"
+            data={
+              Array [
+                Object {
+                  "id": "123",
+                  "status": "COMPLETED",
+                },
+              ]
+            }
+            history={Object {}}
+          />
+        </div>,
+        <Connect(TaggingGuide)
+          intents={Array []}
+        />,
+        <Connect(SettingsView) />,
+      ]
+    }
+    tabs={
+      Array [
+        "Overview",
+        "Node Analytics",
+        "All Versions",
+        "Datasets",
+        "Intent Guide",
+        "Settings",
+      ]
+    }
+  />
+  <span
+    className="add-version"
+  >
+    <withTheme(Button)
+      disabled={false}
+      onClick={[Function]}
+    >
+      ADD VERSION
+    </withTheme(Button)>
+  </span>
+</div>
+`;
+
+exports[`<ReadProject /> Snapshots renders correctly for default props with state loadingProject set 1`] = `
+<div
+  id="ReadProject"
+/>
+`;
+
+exports[`<ReadProject /> Snapshots renders correctly for default props with userFeatureConfiguration undefined 1`] = `
+<div
+  id="ReadProject"
+>
+  <withTheme(Tabs)
+    align="left"
+    onTabSelected={[Function]}
+    selectedIndex={2}
+    styleOverride={
+      Object {
+        "tabContainer": Object {
+          "borderTop": "none",
+        },
+        "tabItem": Object {
+          "padding": "23px 20px 21px",
+        },
+      }
+    }
+    tabPanels={
+      Array [
+        <withRouter(Overview)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(NodeAnalytics)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <withRouter(ModelsView)
+          clientId="12"
+          dispatch={[MockFunction]}
+          history={Object {}}
+          isAnyDatasetTransformed={true}
+          loadingModels={false}
+          models={
+            Object {
+              "toArray": [MockFunction],
+            }
+          }
+          projectId="23"
+        />,
+        <div
+          id="ReadProjectDatasetsDetails"
+        >
+          <div
+            style={
+              Object {
+                "contextualBar": Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                },
+                "marginLeft": "-10px",
+              }
+            }
+          >
+            <withTheme(ContextualActionsBar)
+              styleOverride={
+                Object {
+                  "borderBottom": "none",
+                  "borderTop": "none",
+                  "paddingTop": "5px",
+                }
+              }
+            >
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-tag-button"
+                disabled={false}
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                TAG
+              </withTheme(ContextualActionItem)>
+              <withTheme(ContextualActionItem)
+                data-qa="dataset-upload-button"
+                icon={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  }
+                }
+                onClickAction={[Function]}
+                styleOverride={
+                  Object {
+                    "icon": Object {
+                      "height": "13px",
+                      "width": "10px",
+                    },
+                  }
+                }
+              >
+                UPLOAD
+              </withTheme(ContextualActionItem)>
+            </withTheme(ContextualActionsBar)>
+          </div>
+          <Connect(ReadProjectDatasetsGrid)
+            clientId="12"
+            data={
+              Array [
+                Object {
+                  "id": "123",
+                  "status": "COMPLETED",
+                },
+              ]
+            }
+            history={Object {}}
+          />
+        </div>,
+        <Connect(TaggingGuide)
+          intents={Array []}
+        />,
+        <Connect(SettingsView) />,
+      ]
+    }
+    tabs={
+      Array [
+        "Overview",
+        "Node Analytics",
+        "All Versions",
+        "Datasets",
+        "Intent Guide",
+        "Settings",
+      ]
+    }
+  />
+  <span
+    className="add-version"
+  >
+    <withTheme(Button)
+      disabled={false}
+      onClick={[Function]}
+    >
+      ADD VERSION
+    </withTheme(Button)>
+  </span>
+</div>
+`;
+
+exports[`<ReadProject /> Snapshots renders correctly for default props without any project 1`] = `
+<Placeholder
+  message="Requested project is not found."
+  styleOverride={Object {}}
+/>
+`;
+
+exports[`<ReadProject /> Snapshots renders correctly when status complete 1`] = `
+<Connect(ReadProject)
+  clientId="12"
+  datasets={
+    Object {
+      "toArray": [MockFunction],
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="dev"
+  history={Object {}}
+  match={
+    Object {
+      "path": "/models",
+    }
+  }
+  models={
+    Object {
+      "toArray": [MockFunction],
+    }
+  }
+  project={Object {}}
+  projectId="23"
+  taggingguide={Array []}
+  userFeatureConfiguration={
+    Object {
+      "appHelp": "show",
+      "createNewVersionModelReviewTab": "show",
+      "createNewVersionTrainingConfigTab": "show",
+      "datasetDelete": "show",
+      "datasetExport": "show",
+      "datasetExportById": "show",
+      "datasetTemplate": "show",
+      "downloadResults": "show",
+      "granularMessage": "show",
+      "intentGuideContextualActionBar": "show",
+      "intentGuideDelete": "show",
+      "intentGuideExport": "show",
+      "intentGuideTemplate": "show",
+      "intentGuideUpdate": "show",
+      "kibanaLogs": "show",
+      "modelConfigDownload": "show",
+      "modelConfigTemplate": "show",
+      "modelDelete": "show",
+      "modelDownload": "show",
+      "modelTrainingOutputs": "show",
+      "models": "show",
+      "projectDelete": "show",
+      "resolveInconsistencies": "show",
+      "speechBundledUnbundled": "show",
+      "supportLink": "show",
+      "tagSearchHelp": "show",
+      "transformationHelp": "show",
+    }
+  }
+/>
+`;

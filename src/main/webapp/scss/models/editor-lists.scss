@@ -1,0 +1,163 @@
+@import '../vars/vars';
+
+#EditorSimplePairs,
+#EditorLongPairs,
+#EditorOrderedList,
+#TransformationItems,
+#PostProcessingTransformations, {
+  .list-item {
+    min-height: 60px;
+    display: grid;
+    grid-template-columns: 7% 1fr 7%;
+    cursor: grab;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+
+  }
+
+  .index {
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    width: 100%;
+  }
+
+  .item-content {
+    padding: 15px 0px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-left: 1px solid #ddd;
+
+    input:disabled {
+      background-color: $disabledTextFieldBackgroundColor;
+    }
+
+    textarea:disabled {
+      background-color: $disabledTextFieldBackgroundColor;
+    }
+
+  }
+
+  .list-item .list-item-delete {
+    visibility: hidden;
+    line-height: 50px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .list-item:hover .list-item-delete {
+    visibility: visible;
+  }
+
+  .grabbable {
+    cursor: grab;
+    margin-left: 8px;
+    // padding: 20px 0px;
+  }
+
+  .list-item-input-top,
+  .list-item-input-bottom{
+    width: 45%;
+    box-sizing: border-box;
+
+    input {
+      width: 100%;
+      min-height: 40px;
+      border: 1px solid #DCE1E8;
+      border-radius: 2px;
+      line-height: 22px;
+      padding: 8px;
+      margin: 0px;
+      outline: none;
+      background-color: #FFF,
+    }
+    input:hover {
+      border: 1px solid #DCE1E8;
+    }
+
+    input:focus,
+    input:focus-within,
+    input:active {
+      border: 1px solid #8C9FBC;
+    }
+  }
+
+
+  .list-item-textarea-top {
+    width: 50%;
+    box-sizing: border-box;
+
+    textarea {
+      width: 100%;
+      resize: vertical;
+      min-height: 40px;
+      border: 1px solid #DCE1E8;
+      padding: 5px 10px;
+    }
+
+    textarea:hover {
+      border: 1px solid #DCE1E8;
+    }
+    textarea:focus,
+    textarea:active {
+      border: 1px solid #8C9FBC;
+    }
+  }
+
+  .list-item-input-one {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 10px;
+
+    input {
+      width: 100%;
+      min-height: 40px;
+      border-radius: 2px;
+      border: 1px solid #DCE1E8;
+      line-height: 22px;
+      padding: 8px;
+      margin: 0px;
+      outline: none;
+      background-color: #FFF,
+    }
+    input:hover {
+      border: 1px solid #DCE1E8;
+    }
+
+    input:focus,
+    input:focus-within,
+    input:active {
+      border: 1px solid #8C9FBC;
+    }
+  }
+
+// Specific to Pre and Post Sidebar
+  .transformation-list-item {
+    min-height: 40px;
+    grid-template-columns: 10% 1fr 20%;
+  }
+
+  .transformation-item-content {
+    display: block;
+    padding-left: 10px;
+    line-height: 16px;
+  }
+
+  .transformation-name {
+    color: #313f54;
+    font-size: 14px;
+  }
+
+  .transformation-type {
+    font-size: 12px;
+    color: #727272;
+  }
+
+  .transformation-selected-item {
+    background: #eee;
+  }
+}

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewModel /> Functionality: getCheckbox for Radio Buttons should render getCheckbox with correct styles on click of N-Gram Radio Button 1`] = `""`;
+
+exports[`<NewModel /> Functionality: getCheckbox for Radio Buttons should render getCheckbox with correct styles on click of Tensorflow Radio Button 1`] = `""`;
+
+exports[`<NewModel /> Functionality: getConfigSelect call should show related model configs correctly 1`] = `""`;
+
+exports[`<NewModel /> Functionality: getConfigSelect call should show related model configs correctly with parameters 1`] = `""`;
+
+exports[`<NewModel /> Functionality: onClickCheckbox should render onClickCheckbox while clicking on checkbox 1`] = `""`;
+
+exports[`<NewModel /> Functionality: onClickRadioButton should render onClickRadioButton while clicking on Radio Button 1`] = `""`;
+
+exports[`<NewModel /> Functionality: should call isDatasetValid should upload the config successfully 1`] = `""`;
+
+exports[`<NewModel /> Snapshots should match with basic props 1`] = `""`;

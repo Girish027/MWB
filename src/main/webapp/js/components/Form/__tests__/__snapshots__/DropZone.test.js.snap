@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dropzone /> Snapshots renders correctly with default props 1`] = `
+<div
+  onBlur={[Function]}
+  onClick={[Function]}
+  onDragEnter={[Function]}
+  onDragLeave={[Function]}
+  onDragOver={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fafafa",
+      "borderColor": "#eeeeee",
+      "borderRadius": 2,
+      "borderStyle": "dashed",
+      "borderWidth": 2,
+      "color": "#bdbdbd",
+      "display": "flex",
+      "flex": 1,
+      "flexDirection": "column",
+      "height": "170px",
+      "outline": "none",
+      "padding": "20px",
+      "transition": "border .24s ease-in-out",
+    }
+  }
+  tabIndex={0}
+>
+  <input
+    accept="text/csv, application/vnd.ms-excel, .csv"
+    autoComplete="off"
+    disabled={false}
+    multiple={false}
+    onChange={[Function]}
+    onClick={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    tabIndex={-1}
+    type="file"
+  />
+  <div
+    className="dropzone-content"
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <[object Object]
+          height={48}
+          width={48}
+        />
+      </div>
+      <div
+        style={
+          Object {
+            "paddingTop": "10px",
+            "textAlign": "center",
+            "whiteSpace": "pre-wrap",
+          }
+        }
+      >
+        <div>
+          Drag and drop your file
+          <div>
+             or 
+          </div>
+          <div
+            style={
+              Object {
+                "color": "#004c97",
+                "cursor": "pointer",
+              }
+            }
+          >
+             BROWSE
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

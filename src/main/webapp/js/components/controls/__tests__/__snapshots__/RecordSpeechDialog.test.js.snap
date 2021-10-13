@@ -1,0 +1,757 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecordSpeechDialog /> Creating an instance with no props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="RECORD AGAIN"
+    cancelVisible={false}
+    centerContent={true}
+    closeIconVisible={true}
+    headerChildren=""
+    isOpen={true}
+    okChildren="RUN TEST"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    showBodySeperator={false}
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "340px",
+          "width": "500px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <span>
+      <div
+        className="record-icon"
+      >
+        <AudioRecorder
+          audioSrc=""
+          buttonHeight="70px"
+          dispatch={[Function]}
+          iconProps={
+            Object {
+              "recordProps": Object {
+                "fill": "#004C97",
+              },
+              "stopProps": Object {
+                "fill": "#004C97",
+              },
+            }
+          }
+          onRecord={[Function]}
+          onStop={[Function]}
+          recordIcon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          registerCallbacks={[Function]}
+          stopIcon={[Function]}
+          styleOverride={
+            Object {
+              "button": Object {
+                ":focus": Object {
+                  "outline": "none",
+                },
+                ":hover": Object {
+                  "boxShadow": "none",
+                },
+                "height": "70px",
+              },
+            }
+          }
+        />
+      </div>
+    </span>
+    <span
+      className="speech-recording-span blueText"
+    >
+      START
+    </span>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<RecordSpeechDialog /> Creating an instance with test props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="RECORD AGAIN"
+    cancelVisible={false}
+    centerContent={true}
+    closeIconVisible={true}
+    headerChildren="Record"
+    isOpen={true}
+    okChildren="RUN TEST"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    showBodySeperator={false}
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "340px",
+          "width": "500px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <span>
+      <div
+        className="record-icon"
+      >
+        <AudioRecorder
+          audioSrc=""
+          buttonHeight="70px"
+          dispatch={[Function]}
+          iconProps={
+            Object {
+              "recordProps": Object {
+                "fill": "#004C97",
+              },
+              "stopProps": Object {
+                "fill": "#004C97",
+              },
+            }
+          }
+          onRecord={[Function]}
+          onStop={[Function]}
+          recordIcon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          registerCallbacks={[Function]}
+          stopIcon={[Function]}
+          styleOverride={
+            Object {
+              "button": Object {
+                ":focus": Object {
+                  "outline": "none",
+                },
+                ":hover": Object {
+                  "boxShadow": "none",
+                },
+                "height": "70px",
+              },
+            }
+          }
+        />
+      </div>
+    </span>
+    <span
+      className="speech-recording-span blueText"
+    >
+      START
+    </span>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<RecordSpeechDialog /> Various state of the Record Speech Dialog renders correctly when user has not recorded audio 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="RECORD AGAIN"
+    cancelVisible={false}
+    centerContent={true}
+    closeIconVisible={true}
+    headerChildren="Record"
+    isOpen={true}
+    okChildren="RUN TEST"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    showBodySeperator={false}
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "340px",
+          "width": "500px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <span>
+      <div
+        className="record-icon"
+      >
+        <AudioRecorder
+          audioSrc=""
+          buttonHeight="70px"
+          dispatch={[Function]}
+          iconProps={
+            Object {
+              "recordProps": Object {
+                "fill": "#004C97",
+              },
+              "stopProps": Object {
+                "fill": "#004C97",
+              },
+            }
+          }
+          onRecord={[Function]}
+          onStop={[Function]}
+          recordIcon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          registerCallbacks={[Function]}
+          stopIcon={[Function]}
+          styleOverride={
+            Object {
+              "button": Object {
+                ":focus": Object {
+                  "outline": "none",
+                },
+                ":hover": Object {
+                  "boxShadow": "none",
+                },
+                "height": "70px",
+              },
+            }
+          }
+        />
+      </div>
+    </span>
+    <span
+      className="speech-recording-span blueText"
+    >
+      START
+    </span>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<RecordSpeechDialog /> Various state of the Record Speech Dialog renders correctly when user has playing the recorded audio 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="RECORD AGAIN"
+    cancelVisible={true}
+    centerContent={true}
+    closeIconVisible={true}
+    headerChildren="Record"
+    isOpen={true}
+    okChildren="RUN TEST"
+    okDisabled={false}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    showBodySeperator={false}
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "340px",
+          "width": "500px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <span>
+      <div
+        className="record-icon"
+      >
+        <AudioPlayer
+          audioSrc="file"
+          audioStates={
+            Object {
+              "beforePlaying": "beforePlaying",
+              "beforeRecording": "beforeRecording",
+              "playing": "playing",
+              "recording": "recording",
+            }
+          }
+          dispatch={[Function]}
+          iconProps={
+            Object {
+              "playProps": Object {
+                "fill": "#004C97",
+              },
+              "stopProps": Object {
+                "fill": "#004C97",
+              },
+            }
+          }
+          onPlay={[Function]}
+          onStop={[Function]}
+          playIcon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          stopIcon={[Function]}
+          styleOverride={
+            Object {
+              "button": Object {
+                ":focus": Object {
+                  "outline": "none",
+                },
+                ":hover": Object {
+                  "boxShadow": "none",
+                },
+                "height": "70px",
+              },
+            }
+          }
+        />
+      </div>
+    </span>
+    <span
+      className="speech-recording-span blueText"
+    >
+      STOP
+      <span
+        style={
+          Object {
+            "paddingLeft": "10px",
+          }
+        }
+      >
+        <PrimaryNavDivider
+          fill="#004C97"
+          float="left"
+          height="20px"
+        />
+        <Downloader
+          dispatch={[Function]}
+          file="file"
+          fileName="recording_1557955235157.wav"
+          fileType="recording"
+          iconProps={Object {}}
+        >
+          DOWNLOAD
+        </Downloader>
+      </span>
+    </span>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<RecordSpeechDialog /> Various state of the Record Speech Dialog renders correctly when user has stopped playing the recorded audio 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="RECORD AGAIN"
+    cancelVisible={true}
+    centerContent={true}
+    closeIconVisible={true}
+    headerChildren="Record"
+    isOpen={true}
+    okChildren="RUN TEST"
+    okDisabled={false}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    showBodySeperator={false}
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "340px",
+          "width": "500px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <span>
+      <div
+        className="record-icon"
+      >
+        <AudioPlayer
+          audioSrc="file"
+          audioStates={
+            Object {
+              "beforePlaying": "beforePlaying",
+              "beforeRecording": "beforeRecording",
+              "playing": "playing",
+              "recording": "recording",
+            }
+          }
+          dispatch={[Function]}
+          iconProps={
+            Object {
+              "playProps": Object {
+                "fill": "#004C97",
+              },
+              "stopProps": Object {
+                "fill": "#004C97",
+              },
+            }
+          }
+          onPlay={[Function]}
+          onStop={[Function]}
+          playIcon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          stopIcon={[Function]}
+          styleOverride={
+            Object {
+              "button": Object {
+                ":focus": Object {
+                  "outline": "none",
+                },
+                ":hover": Object {
+                  "boxShadow": "none",
+                },
+                "height": "70px",
+              },
+            }
+          }
+        />
+      </div>
+    </span>
+    <span
+      className="speech-recording-span blueText"
+    >
+      PLAY
+      <span
+        style={
+          Object {
+            "paddingLeft": "10px",
+          }
+        }
+      >
+        <PrimaryNavDivider
+          fill="#004C97"
+          float="left"
+          height="20px"
+        />
+        <Downloader
+          dispatch={[Function]}
+          file="file"
+          fileName="recording_1557955235157.wav"
+          fileType="recording"
+          iconProps={Object {}}
+        >
+          DOWNLOAD
+        </Downloader>
+      </span>
+    </span>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<RecordSpeechDialog /> Various state of the Record Speech Dialog renders correctly when user has stopped recording audio 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="RECORD AGAIN"
+    cancelVisible={true}
+    centerContent={true}
+    closeIconVisible={true}
+    headerChildren="Record"
+    isOpen={true}
+    okChildren="RUN TEST"
+    okDisabled={false}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    showBodySeperator={false}
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "340px",
+          "width": "500px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <span>
+      <div
+        className="record-icon"
+      >
+        <AudioPlayer
+          audioSrc="file"
+          audioStates={
+            Object {
+              "beforePlaying": "beforePlaying",
+              "beforeRecording": "beforeRecording",
+              "playing": "playing",
+              "recording": "recording",
+            }
+          }
+          dispatch={[Function]}
+          iconProps={
+            Object {
+              "playProps": Object {
+                "fill": "#004C97",
+              },
+              "stopProps": Object {
+                "fill": "#004C97",
+              },
+            }
+          }
+          onPlay={[Function]}
+          onStop={[Function]}
+          playIcon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          stopIcon={[Function]}
+          styleOverride={
+            Object {
+              "button": Object {
+                ":focus": Object {
+                  "outline": "none",
+                },
+                ":hover": Object {
+                  "boxShadow": "none",
+                },
+                "height": "70px",
+              },
+            }
+          }
+        />
+      </div>
+    </span>
+    <span
+      className="speech-recording-span blueText"
+    >
+      PLAY
+      <span
+        style={
+          Object {
+            "paddingLeft": "10px",
+          }
+        }
+      >
+        <PrimaryNavDivider
+          fill="#004C97"
+          float="left"
+          height="20px"
+        />
+        <Downloader
+          dispatch={[Function]}
+          file="file"
+          fileName="recording_1557955235157.wav"
+          fileType="recording"
+          iconProps={Object {}}
+        >
+          DOWNLOAD
+        </Downloader>
+      </span>
+    </span>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<RecordSpeechDialog /> Various state of the Record Speech Dialog renders correctly when user is recording audio 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="RECORD AGAIN"
+    cancelVisible={false}
+    centerContent={true}
+    closeIconVisible={true}
+    headerChildren="Record"
+    isOpen={true}
+    okChildren="RUN TEST"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    showBodySeperator={false}
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "340px",
+          "width": "500px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <span>
+      <span
+        className="speech-recording-timer"
+      >
+        00
+        :
+        40
+      </span>
+      <div
+        className="record-icon"
+      >
+        <AudioRecorder
+          audioSrc=""
+          buttonHeight="70px"
+          dispatch={[Function]}
+          iconProps={
+            Object {
+              "recordProps": Object {
+                "fill": "#004C97",
+              },
+              "stopProps": Object {
+                "fill": "#004C97",
+              },
+            }
+          }
+          onRecord={[Function]}
+          onStop={[Function]}
+          recordIcon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          registerCallbacks={[Function]}
+          stopIcon={[Function]}
+          styleOverride={
+            Object {
+              "button": Object {
+                ":focus": Object {
+                  "outline": "none",
+                },
+                ":hover": Object {
+                  "boxShadow": "none",
+                },
+                "height": "70px",
+              },
+            }
+          }
+        />
+      </div>
+    </span>
+    <span
+      className="speech-recording-span blueText"
+    >
+      STOP
+    </span>
+  </withTheme(DialogComponent)>
+</div>
+`;

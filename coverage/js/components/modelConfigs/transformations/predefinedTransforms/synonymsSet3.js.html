@@ -1,0 +1,415 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for js/components/modelConfigs/transformations/predefinedTransforms/synonymsSet3.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">js/components/modelConfigs/transformations/predefinedTransforms</a> synonymsSet3.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>3/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>3/3</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const synonymsSet3 = () =&gt; {
+  const regex = {
+    type: 'regex-replace',
+    mappings: {
+      '/\\b(gen\\S* equiv\\S* dipl\\S*|general\\S* edu\\S* degree\\S*|GED\\S*|general\\S* edu\\S* dev\\S*|HSED\\S*|.?SED|GDE|( ( highschool\\S*|high.?school\\S*|gen.?r.?l\\S* ) &amp;&amp; (edu\\S*|equiv\\S* ) &amp;&amp; (degree\\S*|diploma\\S*|dev\\S* ) ))\\b/i': 'GeneralEduDiploma',
+      '/\\b(grade\\S*|grading\\S*|mark|marks\\S*|marking\\S*|score\\S*|result\\S*)\\b/i': 'Grade',
+      '/\\b(graduation\\S*|graduate|graduates|conv.?cat\\S*|commenc\\S*|comenc\\S*|((grad\\S*|conv.?cat\\S*|commenc\\S*|comenc\\S*) &amp;&amp; (cer.?mon\\S*|celebrat\\S*|event\\S*)))\\b/i': 'Graduation',
+      '/\\b(health care provider\\S*|hcp|health provider\\S*|healthcare provider\\S*|provider\\S*)\\b/i': 'HealthCareProvider',
+      '/\\b((health\\S* &amp;&amp; ( clin\\S*|cent\\S*|building\\S* ) )|hospi\\S*|clinic\\S*)\\b/i': 'HealthClinic',
+      '/\\b(help\\S*|assist\\S*|aid\\S*|support\\S*|suport\\S*|guid\\S*|how.?to|walk.?through\\S*|walkthrough\\S*|walk\\S* through|advice\\S*|troubleshoot\\S*|trouble.?shoot\\S* )\\b/i': 'Help',
+      '/\\b(highschool\\S*|high.?school\\S*|high school\\S*|second.?r\\S* school\\S*|( grade\\S* &amp;&amp; (twel\\S*|eleven\\S*|ten\\S*|nin\\S* ) ))\\b/i': 'HighSchool',
+      '/\\b(fast|faster|quick|speed\\S*|rapid\\S*|brisk\\S*|hast\\S*|swift\\S*|accelerat\\S*|soon|expedit\\S*)\\b/i': 'Fast',
+      '/\\b(evening\\S*|night\\S*|nite\\S*|dusk\\S*|midnight \\S*|bed.?time|bedtime|dark)\\b/i': 'Evening',
+      '/\\b(assignment\\S*|homework\\S*|home.?work\\S*|project|projects|take.?home work\\S*)\\b/i': 'Homework',
+      '/\\b(identi\\S*|idente\\S*|identa\\S*|ID|I.?D.?|I.?D )\\b/i': 'Identity ',
+      '/\\b(internation\\S*|foreign\\S*|for.?.?gn\\S*|another countr\\S*|diff\\S* countr\\S*|other countr\\S*|oversea\\S*|abroad|world\\S*|glob\\S*)\\b/i': 'International',
+      '/\\b(interview\\S*|try\\S* out|tryout\\S*|try.?out\\S*|walk\\S* on\\S*|walkon\\S*|walk.?on\\S*|audition\\S*)\\b/i': 'Interview',
+      '/\\b(invest\\S* )\\b/i': 'Investment',
+      '/\\b(((did not|didn.?t\\S*|do\\S* not|don.?t\\S*|does not\\S*|doesn.?t\\S* ) &amp;&amp; have)|((is not|isn.?t\\S*|are not|aren.?t\\S*|arne.?t\\S*|arn.?t\\S*) &amp;&amp; there)|has not|hasn.?t\\S*|have not|haven.?t\\S*|lack\\S*|without|nonexist\\S*|non.?exist\\S*|short.?of)\\b/i': 'Lacking',
+      '/\\b(late|tardy|belate\\S*|behind\\S*|lag|lags|lagging|overdue\\S*|over.?due\\S*|held.?up )\\b/i': 'Late',
+      '/\\b(month\\S*|january\\S*|jan|jan.?|february\\S*|febuary\\S*|feb|feb.?|march\\S*|mar|april\\S*|apr|apr.?|may|may.?|may.?s|june\\S*|jun|jun.?|july\\S*|jul|jul.?|august|aug|aug.?|september\\S*|sep|sept|sep.?|sept.?|october\\S*|oct|oct.?|november\\S*|nov|nov.?|december\\S*|dec|dec.? )\\b/i': 'Months',
+      '/\\b(leave\\S*|leaving\\S*|left\\S*|abandon\\S*|desert\\S*|ditch\\S*|quit\\S*|resign\\S*|exit\\S*)\\b/i': 'Leave',
+      '/\\b(librar\\S*|libar\\S*|bookmobil\\S*|book.?mobil\\S*|archiv\\S*)\\b/i': 'Library',
+      '/\\b(licen\\S*|lisen\\S*|perm.?t|perm.?ts|perm.?t.?s )\\b/i': 'License',
+      '/\\b(operat\\S* sys\\S*|os|osx|os x|((Window\\S*|win) &amp;&amp; (95|98|2000|XP\\S*|Vista\\S*|7|8|8.?1|81|10))|windows|mac|macs|mac.?nt.?sh\\S*|linux\\S*|apple\\S*|unix\\S*)\\b/i': 'OperatingSystem',
+      '/\\b(option\\S*|choice\\S*|selection\\S*|alternativ\\S*)\\b/i': 'Option ',
+      '/\\b(opt.?out|opt\\S*  out|waiv\\S* )\\b/i': 'OptOut',
+      '/\\b(paperless|paper.?less|paper.?free|paperfree|( ( paperless|paper.?less|paper.?free|paperfree ) &amp;&amp; ( record\\S*|record.?keeping ) ) )\\b/i': 'Paperless',
+      '/\\b(paper\\S*|paper.?work\\S*|doc|docs|document\\S*|form|forms|file\\S*|slip|slips )\\b/i': 'Paperwork',
+      '/\\b(parking\\S*|park|parked|parking.?lot|parkinglot|carpark\\S*|car.?park\\S*|parking.?garage\\S*)\\b/i': 'Parking',
+      '/\\b(mand.?tor\\S*|require\\S*|necessar\\S*|necesar\\S*|compuls.?r\\S*|essenti.?l\\S*|esenti.?l\\S*|obligat\\S*|requis.?t\\S*|((have|has|had|having|need\\S*) &amp;&amp; to)|need\\S*|factor\\S*  consider\\S*|must|should)\\b/i': 'Need',
+      '/\\b(password\\S*|pass.?word\\S*|passcode|pass.?code\\S*|passkey\\S*|pass.?key\\S*|passwrd\\S*|pw|pwd)\\b/i': 'Password',
+      '/\\b(pay\\S*|paid|pay\\S* out\\S*|paid out\\S*|pay\\S* off|paid\\S* off|pay\\S* up|paid\\S* up|pay.?off\\S*|paid.?off\\S*|paying.?off\\S*|pymt\\S*|put\\S* money on\\S*|installment\\S*|instalment\\S* )\\b/i': 'Payment',
+      '/\\b(paypal\\S*|pay.?pal\\S* )\\b/i': 'PayPal',
+      '/\\b(percent\\S*|ratio|ratios|weigh\\S*|proportion\\S*|distribut\\S* )\\b/i': 'Percentage',
+      '/\\b(price\\S*|pricing|cost\\S*|((how much) &amp;&amp; (is|are|was|will))|charge\\S*|rate\\S*|cheap\\S*|expens\\S*|fare|fares|worth\\S*|valu\\S* )\\b/i': 'Price ',
+      '/\\b(process|processes|procedure\\S*|method\\S*|routin\\S*|operation\\S*|action|actions|step|steps|way to|ways to)\\b/i': 'Process',
+      '/\\b(area\\S*|region\\S*|section\\S*|sector\\S*|territor\\S*|vicinit\\S*|zone\\S*|district\\S* )\\b/i': 'Region',
+      '/\\b(remov\\S*|delet\\S*|elim\\S*|eras\\S*|extrac\\S*|((take|taking|took) &amp;&amp; (out\\S*|away))|drop\\S*|withdr\\S*|with.?dr\\S*|withdrw\\S*|with.?dr.?w\\S*|wd|g.?t\\S* rid of|dispos\\S* of|clean\\S*|clear\\S*|scrub\\S*|sweep\\S*)\\b/i': 'Remove',
+      '/\\b(home\\S*|propert\\S*|hous\\S*|houseing\\S*|housing\\S*|apartment\\S*|apt\\S*|apts|condo|condos|cond.?min\\S*)\\b/i': 'Home',
+      '/\\b(req|reqs|pre.?req\\S*|prereq\\S*|co.?req\\S*|coreq\\S*|requisit\\S*)\\b/i': 'Prerequisite',
+      '/\\b(repeat\\S*|retak\\S*|re.?tak\\S*|redo|re.?do|do over|do.?over\\S*|do again|duplicat\\S* )\\b/i': 'Repeat',
+      '/\\b(request\\S*|ask\\S*|ask\\S* for|.?nquir\\S*|demand\\S*|query|queri\\S*|would like|want|wants|wanting|desir\\S*|wish\\S*)\\b/i': 'Request',
+      '/\\b(reserv\\S*|book\\S*|secure|secured|securing|hold\\S*|held|layaway\\S*|lay.?away\\S*|set\\S* asid\\S*  )\\b/i': 'Reserve',
+      '/\\b(safe\\S* deposit box\\S*|sdb\\S*|S.?D.?B\\S*|deposit box\\S*|safe\\S* box\\S*|safe\\S* deposit\\S*|vault\\S*|locker\\S*|secur\\S* box\\S*|safe|safes)\\b/i': 'SafeDepositBox',
+      '/\\b(schedul\\S*|s.?edul\\S*|sheldul\\S*|sked\\S*|timetable\\S*|time.?table\\S*|agenda\\S*)\\b/i': 'Schedule',
+      '/\\b(serv\\S*|sevric\\S* )\\b/i': 'Service',
+      '/\\b(share\\S*|sharing|joint|communal\\S*|collectiv\\S*|mutu.?l\\S*|coop|co.?op|cooperat\\S*|co.?operat\\S*|collaborat\\S*|collab|common|spousal)\\b/i': 'Share',
+      '/\\b(show|shows|showed|showing|shown|depict\\S*|demonstra\\S*|proof\\S*|prove\\S*|proove\\S*|proving|prooving|exhibit\\S*|display\\S*|present\\S*|reveal\\S*|illustrat\\S*|disclos\\S*|explain\\S*|indicat\\S*)\\b/i': 'Show ',
+      '/\\b(sign.?in|login|log.?in|((log\\S*|sign\\S*) &amp;&amp; (in|on))|((start\\S*|begin\\S*|open\\S*|initiat\\S*) &amp;&amp; session\\S*))\\b/i': 'SignIn',
+      '/\\b(sign.?off|sign.?out|logoff|log.?off|logout|log.?out|((log\\S*|sign\\S*) &amp;&amp; (out|off))|((end\\S*|stop\\S*|clos\\S*) &amp;&amp; session\\S*))\\b/i': 'SignOff',
+      '/\\b(simil\\S*|equiv.?l.?nt\\S*|equal\\S*|interchang\\S*|inter.?chang\\S*|is like|was like|are like|like each other|be like|were like|the same|same as|alike\\S*|comp.?r.?bl\\S*|compr.?bl\\S*|compat.?bl\\S* )\\b/i': 'Similar',
+      '/\\b(skip\\S*|avoid\\S*|miss\\S*|forget\\S*|omit\\S*|absen\\S*|default\\S*|bypass\\S*|abstain\\S*|avert\\S*|circumv\\S*|deflect\\S*|desist\\S*|elud\\S*|evad\\S*|shirk\\S*|sidestep\\S*|side.?step\\S*|bail\\S*|cop.?out|skip\\S* out\\S* on)\\b/i': 'SkipAvoid',
+      '/\\b(smok\\S*|tobacco\\S*|cigar\\S*|shisha\\S*|hookah\\S*|(smok\\S* &amp;&amp; (pipe\\S*|chain\\S*))|vape|vaped|vapori\\S*|vaping|ejuice\\S*|e.?juice\\S*|pipe|cigaret\\S* )\\b/i': 'Smoking',
+      '/\\b(social.?media|youtube\\S*|you.?tube|twitter\\S*|instagr.?m\\S*|insta.?gram\\S*|facebook\\S*|face.?book\\S*|.?log\\S*|tumblr\\S*|snapchat\\S*|snap.?chat\\S*|tweet\\S*|pinterest\\S*|linkedin|linked.?in|google.?)\\b/i': 'SocialMedia',
+      '/\\b(software\\S*|soft.?ware\\S*|program\\S*|software licen\\S*|app|apps )\\b/i': 'Software',
+      '/\\b(special\\S* need\\S*|disabl\\S*|disabil\\S*|paraly\\S*|parali\\S*|handicap\\S*|handi.?cap\\S*|blind|deaf|wheel.?chair\\S*|wheelchair\\S*|((phys\\S*|mental\\S* ) &amp;&amp; disab\\S*) )\\b/i': 'SpecialNeeds',
+      '/\\b(status\\S*|state|states|condition\\S*|currently at)\\b/i': 'Status ',
+      '/\\b(stol\\S*|steal\\S*|steel\\S*|robbed|robed|robs|rob|burgl\\S*|break\\S* in\\S*|broke\\S* in\\S*|rip\\S* off|lifted|pick.?pocket\\S*|pickpocket\\S*|theft|thief\\S*|theif \\S*|thiev\\S*|theiv\\S*|crook|pirat\\S*|((someone|somebody|some.?one|some.?body) &amp;&amp; (took|take\\S*)))\\b/i': 'Stolen',
+      '/\\b(stop\\S*|end|ends|ending|ended|conclud\\S*|conclus\\S*|put\\S* a stop to|put\\S* an end to|halt\\S*|pause\\S*|pausi\\S*|cease\\S*|ceasing  )\\b/i': 'Stop',
+      '/\\b(stud.?nt\\S*|schol.?r|schol.?rs|pup.?l\\S*)\\b/i': 'StudentGeneral',
+      '/\\b(Weekday\\S*|week.?day\\S*|week|weeks|weekly|Monday\\S*|Mon|Mon.?|Tuesday\\S*|Tue|Tue.?|Tues.?|Wednesday\\S*|Wensday\\S*|Wed|Wed.?|Thursday\\S*|Thur|Thur.?|Thurs.?|Friday\\S*|Fri|Fri.? )\\b/i': 'Weekdays',
+      '/\\b(weekend\\S*|week.?end\\S*|saturday\\S*|sat|sat.?|sunday\\S*|sun|sun.? )\\b/i': 'Weekend',
+      '/\\b(wireles\\S*|wire.?les\\S*|wifi\\S*|wi.?fi\\S* )\\b/i': 'Wireless',
+      '/\\b(can not|can.?t|cant|cannot|canot|couldn.?t|could not|unable|not able|.?ncap.?ble|inable\\S*|inabil\\S*|un.?able\\S*|unabil\\S*|.?nadequat\\S*|helpless\\S*|powerless\\S*|unfit\\S*|incompetent\\S*|unqualif\\S* )\\b/i': 'Unable',
+      '/\\b(unavailab\\S*|close\\S*|closing\\S*|occupy|occupi\\S*|.?naccess\\S*|taken|absen\\S*|omit\\S*|busy|engaged )\\b/i': 'Unavailable',
+      '/\\b(use|uses|using|usage\\S*|run|runs|running|operat\\S*|ut.?l.?z\\S*|ut.?l.?s\\S* )\\b/i': 'Use',
+      '/\\b(user\\S*|end.?user\\S*|customer\\S*|client\\S*|caller\\S*|member\\S*|buyer\\S*|purchaser\\S* )\\b/i': 'User',
+      '/\\b(((secur\\S*|secret\\S*) &amp;&amp; (question\\S*|queston\\S*|answer\\S*|respons\\S*))|answer to the question|((fav\\S*|title) &amp;&amp; (book|books|movie\\S*|food\\S*))|mother\\S* maid\\S* name\\S*|((pet|pet.?s|dog|dog.?s|cat|cat.?s) &amp;&amp; (name|first|1st|1 st))|(city &amp;&amp; born))\\b/i': 'SecurityQuestion',
+      '/\\b(knowledge.?base\\S*|kb|content manag\\S* system\\S*|CMS)\\b/i': 'KnowledgeBase',
+      '/\\b(certific.?t\\S* )\\b/i': 'Certificate',
+      '/\\b(backup\\S*|back.?up\\S*|back\\S* up\\S*)\\b/i': 'Backup',
+      '/\\b(clean\\S*|sanit\\S*|wash\\S*|clear\\S*|scrub\\S*|wipe\\S*)\\b/i': 'Clean',
+      '/\\b(brit\\S*|england\\S*|GB|great brit\\S*|north\\S* irel.?nd|scotl.?nd|uk|u.?k\\S*|united.?kingdom|wales|brexit\\S*)\\b/i': 'Britain',
+      '/\\b(list\\S*|record\\S*|checklist\\S*|check.?list\\S*|directory\\S*|directories|catalog\\S*|index\\S*|tall.?\\S* )\\b/i': 'List',
+      '/\\b(gov\\S*|gvmt|gvmnt|gov.?t|congress\\S*|parl.?.?m.?nt\\S*|parl.?m.?nt\\S*)\\b/i': 'Government',
+      '/\\b(image\\S*|screenshot\\S*|screen.?shot\\S*|screen.?view\\S*|screen|screens|screencap\\S*|screen.?cap\\S*|picture|screen.?pic\\S* )\\b/i': 'Image',
+      '/\\b(hard.?drive\\S*|hard disk|hard disk drive\\S*|hdd|hd|harddrive\\S*)\\b/i': 'HardDrive',
+      '/\\b(((parent\\S*|matern\\S*|patern\\S*|mat) &amp;&amp; (leave|time.?off|absen\\S*))|maternity|paternity)\\b/i': 'ParentalLeave',
+      '/\\b(photocop\\S*|photo\\S* cop\\S*|copy|copies\\S*|xer\\S*|print\\S* cop\\S*|scan\\S*)\\b/i': 'Photocopy',
+      '/\\b(pos|p.o.s\\S*|point\\S* of sale\\S*|point.?of.?sale\\S*)\\b/i': 'PointOfSale',
+      '/\\b(storag\\S*|storing|repositor\\S*|cache|depositor\\S*|depot\\S*)\\b/i': 'Storage',
+      '/\\b(vacation\\S*|vacay|vaca|trip|trips|getaway\\S*|get.?away\\S*|travel\\S*|voyage\\S*|excursion\\S*|sight.?see\\S*|sightsee\\S*|tour\\S*)\\b/i': 'Vacation ',
+      '/\\b(vaccine\\S*|vacin\\S*|shots|shot|immuni.?\\S*|imuni.?\\S*|inoculat\\S*|innoculat\\S*|flu.?jab\\S*|flujab\\S*)\\b/i': 'Vaccine ',
+      '/\\b(verif\\S* by visa\\S*|verifiedbyvisa\\S*|VBV|V.?B.?V.?|VB Visa|V.?B.? Visa|VBVisa)\\b/i': 'VerifiedVisa',
+      '/\\b(view\\S*|see|sees|saw|seeing|look\\S*|observ\\S*|watch\\S*|check.?out  )\\b/i': 'View',
+      '/\\b(virus\\S*|spy.?ware\\S*|spyware\\S*|adaware\\S*|spybot\\S*|hack\\S*|malware\\S*|mal.?ware\\S*|bot|bots|webcrawl\\S*|web.?crawl\\S*|junkware\\S*|junk.?ware\\S*)\\b/i': 'VirusSpyware',
+      '/\\b(stream\\S*|netflix\\S*|cravetv|crave.?tv|amazon.?prime\\S*|amazon\\S* prime\\S*|amazon\\S* instant\\S* video\\S*|hulu\\S*|hulu plus|sling|slingbox|sling.?box\\S*|playstation vue\\S*|hbo now|youtub\\S*|you.?tub\\S*|(netflix &amp;&amp; chill))\\b/i': 'StreamingService',
+      '/\\b(holiday\\S*|((New Year\\S*|Islander|Family|Louis Riel|St Patrick\\S*|St George\\S*|Victoria|National Patriotes|National Aboriginal|St Jean Baptiste|Discovery|Canada|Memorial|Nunavut|Labour|labor|Remembrance|Boxing|memorial|columbus|Martin Luther King|MLK|snowflake) &amp;&amp; day)|Good Friday|Easter Monday|Easter|F.?te Nationale|Civic Holiday\\S*|Thanksgiving\\S*|Christmas\\S*|x.?mas|xmas|hanukka\\S*|hanuka\\S*|chanukka\\S*|chanuka\\S*|new year\\S*|july\\S* 4\\S*|may 24\\S*|pres\\S* day|prez day|washington\\S* birthday|long weekend\\S*|bank\\S* holiday)\\b/i': 'Holidays',
+      '/\\b(print\\S*)\\b/i': 'Print',
+      '/\\b(natur\\S* disast\\S*|avalan.?h\\S*|landslid\\S*|tornado\\S*|.?.?unami\\S*|flood\\S*|hurrican\\S*|earthquak\\S*|earth.?quake\\S*|volcan\\S*|tidal.?wav\\S*|sinkhol\\S*|blizz.?rd\\S*)\\b/i': 'NaturalDisaster',
+      '/\\b(foreign\\S* languag\\S*|languag\\S*|dialect\\S*|english\\S*|eng|arabic\\S*|chines\\S*|mandarin\\S*|canton\\S*|germ.?n\\S*|greek\\S*|french\\S*|itali.?n\\S*|japanes\\S*|korean\\S*|latin\\S*|languag\\S*|portug.?s\\S*|portug.?.?s\\S*|russian\\S*|spanish\\S*|ukranian\\S*|vietnames\\S*|anglais\\S*|fran.?ais\\S*|espa.?ol\\S*|klingon)\\b/i': 'Languages',
+      '/\\b(manager\\S*|supervis.?r\\S*|boss\\S*|superi.?r\\S*|direct.?r|direct.?rs|employ.?r\\S*|superintend.?nt\\S*|team.?lead\\S*|kelly)\\b/i': 'Manager',
+      '/\\b(configur\\S*|setup\\S*|set.?up\\S*|set\\S* up\\S*|set|sets|setting\\S*|seting\\S*|layout\\S*|reset\\S*|reconfig\\S*|enabl\\S*|instal\\S*)\\b/i': 'Configure',
+      '/\\b(foul\\S* language\\S*|bad word\\S*|stupid\\S*|swear|swears|swearing|bull\\S*|fuck\\S*|weed|curse word\\S*|fuck\\S*|shit\\S*|ret.?rd\\S*|dumb\\S*|sucking\\S*|sucker\\S* piss\\S*|hell|damn\\S*|dick\\S*|puss\\S*|vagin\\S*|penis\\S*|boob\\S*|butt\\S*|ass|ef\\S* you\\S*|assh\\S*|cock\\S*|sex|sexy|sexual|porn\\S*|balls|scrotum|tit|tits|titties|cunt|bitch\\S*|dick\\S*|bastard\\S*|whore\\S*|slut\\S*|pimp\\S*|fag\\S*|queer\\S*|nigg\\S*|chink|poop\\S*|mast.?rbate\\S*|whack off|jack off|crap\\S*|jerk off|jackass\\S*|jack ass|horn\\S*|fart\\S*|blow job|blowjob|booger\\S*|schlong\\S*|weiner\\S*|wiener\\S*|boner\\S*|hardon|hard-on|Viagra|virgin|cooch\\S*|get laid|kkk|suck\\S*|willy|winky\\S*|winkie\\S*|chick.?nf.?ck.?r\\S*|homo|chik.?nf.?.?.?r\\S*|chik.?nf.?.?k\\S*|chick\\S* f.?.?.?.?r\\S*|chik\\S* f.?.?.?r\\S*|suck|sucks\\S*|suckr|sucker\\S*|you suck|u suck|ch.?ck.?nsh.?t\\S*|ch.?ck.?n\\S* sh.?t\\S*|ch.?ck.?n.?sh.?t\\S*|nipple\\S*|are you gay|are u gay)\\b/i': 'FoulLanguage',
+      '/\\b(housekeep\\S*|house.?keep\\S*|clean\\S*|scrub\\S*|saniti\\S*|wash\\S*|vacu\\S*|vaccu\\S*|dust\\S*|sweep\\S*|mop|broom\\S*|maid\\S*)\\b/i': 'Housekeeping',
+      '/\\b(revers\\S*|revert\\S*|undo|un.?do|overturn\\S*|counter\\S*|turn\\S* around|rollback\\S*|roll\\S* back\\S*|go\\S* back\\S*|return\\S* to)\\b/i': 'Reverse',
+      '/\\b(try\\S*|trial\\S*|attemp\\S*|practi.?e\\S*|practis\\S*|practic\\S*|experiment\\S*)\\b/i': 'Try',
+      '/\\b(verif\\S*|confirm\\S*|authenticat\\S*|attest\\S*|check\\S*|double.?check\\S*|doublecheck\\S*|((mak\\S*|made) &amp;&amp; ( certain\\S*|sure\\S*))|prove|proving|proved|proven|proves|proof|proov\\S*|validat\\S*|corroborat\\S*)\\b/i': 'Verify',
+      '/\\b(determin\\S*|calcul\\S*|((find\\S*|figur\\S*|found|work\\S*) &amp;&amp; out)|measur\\S*|gauge|count|tally)\\b/i': 'Determine',
+      '/\\b(frequen\\S*|cycl\\S*|peri.?d\\S*|int.?rv.?l\\S*|times|oft.?n|regul.?r\\S*|recur\\S*|s.?m.?ster\\S*)\\b/i': 'Frequency',
+      '/\\b(find\\S*|found|search\\S*|locate\\S*|locating|look\\S* for|look\\S* up|lookup\\S*|look.?up\\S*|hunt\\S*|track\\S*  down|track\\S*|tracking|brows\\S*|perus\\S*|direction\\S*|googl\\S*)\\b/i': 'Find',
+      '/\\b(handl\\S*|manag\\S*|deal\\S* with|oversee\\S*|tak\\S* care of|approach\\S*|cop\\S* with|attend\\S* to)\\b/i': 'Handle',
+      '/\\b(addons|add.?ons)\\b/i': 'AddOns',
+    },
+  };
+  return regex;
+};
+&nbsp;
+export default synonymsSet3;
+//      '/\\b(computer\\S*|cpu\\S*|pc\\S*|mac\\S*|personal comp\\S*|comp|desktop\\S*|desk.?top\\S*|laptop\\S*|lap.?top\\S*|notebook\\S*|note.?book\\S*|macbook\\S*|mac.?book\\S*||((notebook\\S*|note.?book\\S*|laptop\\S*|lap.?top\\S*|portab\\S*) &amp;&amp; (pc\\S*|computer\\S*))|comp\\S* manufact\\S*|apple|dell|asus|acer|toshiba|hp|compaq|IBM|thinkpad\\S*)\\b/i': 'Computer',
+//      '/\\b(overdraft\\S*|over.?draft\\S*|overrun\\S*|over.?run\\S*|over.?dr.?w\\S*|overdr.?w\\S*|OP|O.?P.?|NSF|N.?S.?F.?|OPFB|O.?P.?F.?B.?|ODF|O.?D.?F.?|((overdraft\\S*|over.?draft\\S*|overrun\\S*|over.?run\\S*|over.?dr.?w\\S*|overdr.?w\\S*) &amp;&amp; (protect\\S*|facilit\\S*))|(( not enou\\S*|have enou\\S*|has enou\\S*|not enuf\\S*|have enuf\\S*|has enuf\\S*|not suffic\\S*|not sufic\\S*|isn\\S* enough|non.?suffic\\S*|non.?sufic\\S*|non suffic\\S*|non sufic\\S*|unsuffic\\S*|unsufic\\S*|insuffic\\S*|insufic\\S* ) &amp;&amp; Money)|((bounc\\S*|did not clear|will not clear|won.?t clear|didn.?t clear|did not go through|didn.?t go through|will not go through|won.?t go through|return\\S* ) &amp;&amp; Cheque))\\b/i': 'Overdraft ',
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
+                at Thu Aug 05 2021 15:06:58 GMT+0530 (IST)
+            </div>
+        </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

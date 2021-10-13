@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DatasetColumnMapperDialog /> Creating an instance with test props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    headerChildren="Columns Mapping"
+    isOpen={true}
+    okChildren="NEXT"
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    styleOverride={
+      Object {
+        "content": Object {
+          "left": "calc((100vw - 800px) / 2)",
+          "maxWidth": "800px",
+          "minHeight": "500px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+        "overlay": Object {
+          "zIndex": 9000,
+        },
+      }
+    }
+  >
+    <Box
+      announce={false}
+      className="TaggerMapping"
+      direction="column"
+      flex={true}
+      focusable={true}
+      id="CreateDatasetMapping"
+      pad="none"
+      responsive={true}
+      tag="div"
+    >
+      <Box
+        announce={false}
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        Please choose corresponding columns for the file uploaded.
+        <div
+          className="notice"
+        >
+          Notice: some columns were selected automatically based on first row data.
+        </div>
+      </Box>
+      <Box
+        announce={false}
+        className="ContentRow BindingInfo"
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        <Box
+          announce={false}
+          direction="row"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          <Box
+            announce={false}
+            className="InfoLabel"
+            direction="column"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            Required:
+          </Box>
+          <Box
+            announce={false}
+            className="InfoText"
+            direction="row"
+            flex={true}
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <span
+              className="Required"
+              key="0"
+            >
+              Transcription
+            </span>
+          </Box>
+        </Box>
+        <Box
+          announce={false}
+          direction="row"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          <Box
+            announce={false}
+            className="InfoLabel"
+            direction="column"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            Selected:
+          </Box>
+          <Box
+            announce={false}
+            className="InfoText"
+            direction="row"
+            flex={true}
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <span
+              className="Selected Required"
+              key="0"
+            >
+              Transcription
+            </span>
+          </Box>
+        </Box>
+        <Box
+          announce={false}
+          direction="row"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          <Box
+            announce={false}
+            className="InfoLabel"
+            direction="column"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            Skipped:
+          </Box>
+          <Box
+            announce={false}
+            className="InfoText"
+            direction="row"
+            flex={true}
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <span
+              className="Skipped"
+              key="1"
+            >
+              Rollup Intent
+            </span>
+          </Box>
+        </Box>
+      </Box>
+      <BindColumnsPreviewGrid
+        columns={
+          Array [
+            Object {
+              "displayName": "Transcription",
+              "id": "1",
+              "name": "transcription",
+              "required": true,
+            },
+            Object {
+              "displayName": "Rollup Intent",
+              "id": "7",
+              "name": "rutag",
+              "required": false,
+            },
+          ]
+        }
+        columnsBinding={
+          Object {
+            "transcription": 0,
+          }
+        }
+        data={
+          Array [
+            Array [
+              "Transcription",
+              "Granular Intent",
+              "Rollup Intent",
+            ],
+            Array [
+              "cancel reservation",
+              "reservation-cancel",
+              "Reservation_Update",
+            ],
+          ]
+        }
+        onColumnBindChange={[Function]}
+      />
+      <Box
+        announce={false}
+        className="ContentRow SkipFirstRow"
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        <withTheme(Checkbox)
+          checked={true}
+          label="Skip First Row"
+          onChange={[Function]}
+          value="skip-first-row"
+        />
+      </Box>
+    </Box>
+  </withTheme(DialogComponent)>
+</div>
+`;

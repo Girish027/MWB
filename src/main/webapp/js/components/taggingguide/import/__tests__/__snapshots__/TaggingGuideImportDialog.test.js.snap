@@ -1,0 +1,1086 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TaggingGuideImportDialog /> Snapshots renders correctly for default props 1`] = `
+<TaggingGuideImportDialog
+  clientId="123"
+  csrfToken="dffs"
+  dispatch={[MockFunction]}
+  project={
+    Object {
+      "id": "12",
+      "name": "project1",
+    }
+  }
+  taggingGuideImport={
+    Object {
+      "bindingArray": Array [],
+      "columns": Array [
+        Object {
+          "name": "column1",
+          "required": true,
+        },
+        Object {
+          "name": "column2",
+          "required": true,
+        },
+      ],
+      "columnsBinding": Object {
+        "column1": 0,
+      },
+      "done": true,
+      "invalidTags": Array [
+        "sadsd",
+      ],
+      "isBindingValid": true,
+      "isCommitRequestLoading": false,
+      "isMappingRequestLoading": false,
+      "isPreSelected": true,
+      "missingTags": Array [
+        "dsfsdf",
+      ],
+      "previewData": Array [],
+      "skipFirstRow": true,
+      "step": "mapping",
+      "token": "dasda",
+      "validTagCount": 12,
+    }
+  }
+  userName="testUser"
+>
+  <TaggerModal
+    actions={
+      Array [
+        <withTheme(Button)
+          name="cancel"
+          onClick={[Function]}
+          type="flat"
+        >
+          CANCEL
+        </withTheme(Button)>,
+        <withTheme(Button)
+          name="next"
+          onClick={[Function]}
+        >
+          NEXT
+        </withTheme(Button)>,
+      ]
+    }
+    className="TaggingGuideImportDialog mapping"
+    content={
+      <Box
+        announce={false}
+        className="TaggerMapping"
+        direction="column"
+        flex={true}
+        focusable={true}
+        id="TaggingGuideMapping"
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        <Box
+          announce={false}
+          className="ContentRow"
+          direction="column"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          Please choose corresponding columns for the file uploaded.
+          <div
+            className="notice"
+          >
+            Notice: some columns were selected automatically based on first row data.
+          </div>
+        </Box>
+        <Box
+          announce={false}
+          className="ContentRow BindingInfo"
+          direction="column"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          <Box
+            announce={false}
+            direction="row"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <Box
+              announce={false}
+              className="InfoLabel"
+              direction="column"
+              focusable={true}
+              pad="none"
+              responsive={true}
+              tag="div"
+            >
+              Required:
+            </Box>
+            <Box
+              announce={false}
+              className="InfoText"
+              direction="row"
+              flex={true}
+              focusable={true}
+              pad="none"
+              responsive={true}
+              tag="div"
+            >
+              <span
+                className="Required"
+              />
+              , 
+              <span
+                className="Required"
+              />
+            </Box>
+          </Box>
+          <Box
+            announce={false}
+            direction="row"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <Box
+              announce={false}
+              className="InfoLabel"
+              direction="column"
+              focusable={true}
+              pad="none"
+              responsive={true}
+              tag="div"
+            >
+              Selected:
+            </Box>
+            <Box
+              announce={false}
+              className="InfoText"
+              direction="row"
+              flex={true}
+              focusable={true}
+              pad="none"
+              responsive={true}
+              tag="div"
+            >
+              <span
+                className="Selected Required"
+              />
+            </Box>
+          </Box>
+          <Box
+            announce={false}
+            direction="row"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <Box
+              announce={false}
+              className="InfoLabel"
+              direction="column"
+              focusable={true}
+              pad="none"
+              responsive={true}
+              tag="div"
+            >
+              Skipped:
+            </Box>
+            <Box
+              announce={false}
+              className="InfoText"
+              direction="row"
+              flex={true}
+              focusable={true}
+              pad="none"
+              responsive={true}
+              tag="div"
+            >
+              <span
+                className="Skipped Required"
+              />
+            </Box>
+          </Box>
+        </Box>
+        <BindColumnsPreviewGrid
+          columns={
+            Array [
+              Object {
+                "name": "column1",
+                "required": true,
+              },
+              Object {
+                "name": "column2",
+                "required": true,
+              },
+            ]
+          }
+          columnsBinding={
+            Object {
+              "column1": 0,
+            }
+          }
+          data={Array []}
+          onColumnBindChange={[Function]}
+        />
+        <Box
+          announce={false}
+          className="ContentRow SkipFirstRow"
+          direction="column"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          <withTheme(Checkbox)
+            checked={true}
+            label="Skip First Row"
+            onChange={[Function]}
+            value="skip-first-row"
+          />
+        </Box>
+      </Box>
+    }
+    header="Columns mapping"
+    id="TaggingGuideImportDialog"
+    resize={true}
+  >
+    <Layer
+      align="center"
+      className="TaggerControl TaggerModal TaggerModalResize TaggingGuideImportDialog mapping"
+      closer={false}
+      id="TaggerModal"
+    >
+      <span
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+    </Layer>
+  </TaggerModal>
+</TaggingGuideImportDialog>
+`;
+
+exports[`<TaggingGuideImportDialog /> Snapshots renders correctly for default props with step as confirm 1`] = `
+<TaggerModal
+  actions={
+    Array [
+      <withTheme(Button)
+        name="cancel"
+        onClick={[Function]}
+        type="flat"
+      >
+        CANCEL
+      </withTheme(Button)>,
+      <withTheme(Button)
+        name="next"
+        onClick={null}
+      >
+        NEXT
+      </withTheme(Button)>,
+    ]
+  }
+  className="TaggingGuideImportDialog confirm"
+  content={
+    <div
+      id="TaggingGuideUpload"
+    >
+      <div>
+        <label
+          htmlFor="TaggingGuideUploadFilepicker"
+        >
+          Upload File*
+        </label>
+      </div>
+      <div
+        id="TaggingGuideUploadFilepicker"
+      >
+        <t
+          config={
+            Object {
+              "iconFiletypes": Array [
+                ".csv",
+              ],
+              "postUrl": "/nltools/private/v1/taggingguide/undefined/12/import",
+              "showFiletypeIcon": true,
+            }
+          }
+          djsConfig={
+            Object {
+              "accept": [Function],
+              "acceptedFiles": "text/csv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "addRemoveLinks": true,
+              "dictDefaultMessage": "Click to choose a file or drag it here",
+              "headers": Object {
+                "X-CSRF-Token": "dffs",
+              },
+              "maxFileSize": 5000000000,
+              "maxFiles": 1,
+              "paramName": "file",
+              "params": Object {
+                "username": "testUser",
+              },
+              "timeout": 120000,
+            }
+          }
+          eventHandlers={
+            Object {
+              "error": [Function],
+              "removedfile": [Function],
+              "sending": [Function],
+              "success": [Function],
+            }
+          }
+        />
+      </div>
+    </div>
+  }
+  header="12 tags will be added"
+  id="TaggingGuideImportDialog"
+  resize={false}
+/>
+`;
+
+exports[`<TaggingGuideImportDialog /> Snapshots renders correctly for default props with step as confirm_delete 1`] = `
+<TaggerModal
+  actions={
+    Array [
+      <withTheme(Button)
+        name="cancel"
+        onClick={[Function]}
+        type="flat"
+      >
+        CANCEL
+      </withTheme(Button)>,
+      <withTheme(Button)
+        label="Back"
+        name="back"
+        onClick={[Function]}
+        styleOverride={
+          Object {
+            "margin": "0px 10px",
+          }
+        }
+      >
+        BACK
+      </withTheme(Button)>,
+      <withTheme(Button)
+        label="Import"
+        name="import"
+        onClick={[Function]}
+      >
+        IMPORT
+      </withTheme(Button)>,
+    ]
+  }
+  className="TaggingGuideImportDialog confirm_delete"
+  content={
+    <Box
+      announce={false}
+      direction="column"
+      flex={true}
+      focusable={true}
+      id="TaggingGuideConfirm"
+      pad="none"
+      responsive={true}
+      tag="div"
+    >
+      <Box
+        announce={false}
+        className="ValidTagsCount"
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        Are you sure you want to delete tags?
+      </Box>
+      <Box
+        announce={false}
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        This operation will untag unique strings with these tags:
+      </Box>
+      <Box
+        announce={false}
+        className="TagsSummaryTableRow"
+        direction="row"
+        flex={true}
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        <Box
+          announce={false}
+          className="TagsSummaryTableRowValue"
+          direction="column"
+          flex={true}
+          focusable={true}
+          pad="none"
+          responsive={true}
+          separator="all"
+          tag="div"
+        >
+          <textarea
+            readOnly={true}
+            value="dsfsdf"
+          />
+        </Box>
+      </Box>
+    </Box>
+  }
+  header="Import Tagging Guide for project1"
+  id="TaggingGuideImportDialog"
+  resize={false}
+/>
+`;
+
+exports[`<TaggingGuideImportDialog /> Snapshots renders correctly for default props with step as confirm_ok 1`] = `
+<TaggerModal
+  actions={
+    Array [
+      <withTheme(Button)
+        name="cancel"
+        onClick={[Function]}
+        type="flat"
+      >
+        CANCEL
+      </withTheme(Button)>,
+      <withTheme(Button)
+        label="Back"
+        name="back"
+        onClick={[Function]}
+        styleOverride={
+          Object {
+            "margin": "0px 10px",
+          }
+        }
+      >
+        BACK
+      </withTheme(Button)>,
+      <withTheme(Button)
+        label="Import"
+        name="import"
+        onClick={[Function]}
+      >
+        IMPORT
+      </withTheme(Button)>,
+    ]
+  }
+  className="TaggingGuideImportDialog confirm_ok"
+  content={
+    <Box
+      announce={false}
+      direction="column"
+      flex={true}
+      focusable={true}
+      id="TaggingGuideConfirm"
+      pad="none"
+      responsive={true}
+      tag="div"
+    >
+      <Box
+        announce={false}
+        className="ValidTagsCount"
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        12
+         
+        tag
+        s
+         
+        will be added.
+      </Box>
+      <Box
+        announce={false}
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        Do you want to import?
+      </Box>
+    </Box>
+  }
+  header="Import Tagging Guide for project1"
+  id="TaggingGuideImportDialog"
+  resize={false}
+/>
+`;
+
+exports[`<TaggingGuideImportDialog /> Snapshots renders correctly for default props with step as confirm_table with missingTags 1`] = `
+<TaggerModal
+  actions={
+    Array [
+      <withTheme(Button)
+        name="cancel"
+        onClick={[Function]}
+        type="flat"
+      >
+        CANCEL
+      </withTheme(Button)>,
+      <withTheme(Button)
+        name="back"
+        onClick={[Function]}
+      >
+        BACK
+      </withTheme(Button)>,
+      <withTheme(Button)
+        name="next"
+        onClick={[Function]}
+      >
+        NEXT
+      </withTheme(Button)>,
+    ]
+  }
+  className="TaggingGuideImportDialog confirm_table"
+  content={
+    <Box
+      announce={false}
+      direction="column"
+      flex={true}
+      focusable={true}
+      id="TaggingGuideConfirm"
+      pad="none"
+      responsive={true}
+      tag="div"
+    >
+      <Box
+        announce={false}
+        className="ValidTagsCount"
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        12
+         
+        tag
+        s
+         
+        will be added.
+      </Box>
+      <Box
+        announce={false}
+        className="TagsSummaryTable"
+        direction="column"
+        flex={true}
+        focusable={true}
+        pad="none"
+        responsive={true}
+        separator="all"
+        tag="div"
+      >
+        <Box
+          announce={false}
+          className="TagsSummaryTableRow"
+          direction="row"
+          flex={true}
+          focusable={true}
+          pad="none"
+          responsive={true}
+          separator="bottom"
+          tag="div"
+        >
+          <Box
+            announce={false}
+            className="TagsSummaryTableRowName"
+            direction="column"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            separator="right"
+            tag="div"
+          >
+            Invalid Tags
+          </Box>
+          <Box
+            announce={false}
+            className="TagsSummaryTableRowValue"
+            direction="column"
+            flex={true}
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <textarea
+              readOnly={true}
+              value="sadsd"
+            />
+          </Box>
+        </Box>
+        <Box
+          announce={false}
+          className="TagsSummaryTableRow"
+          direction="row"
+          flex={true}
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          <Box
+            announce={false}
+            className="TagsSummaryTableRowName"
+            direction="column"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            separator="right"
+            tag="div"
+          >
+            Missing Tags
+          </Box>
+          <Box
+            announce={false}
+            className="TagsSummaryTableRowValue"
+            direction="column"
+            flex={true}
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <textarea
+              readOnly={true}
+              value="dsfsdf"
+            />
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  }
+  header="Import Tagging Guide for project1"
+  id="TaggingGuideImportDialog"
+  resize={false}
+/>
+`;
+
+exports[`<TaggingGuideImportDialog /> Snapshots renders correctly for default props with step as confirm_table without missingTags 1`] = `
+<TaggerModal
+  actions={
+    Array [
+      <withTheme(Button)
+        name="cancel"
+        onClick={[Function]}
+        type="flat"
+      >
+        CANCEL
+      </withTheme(Button)>,
+      <withTheme(Button)
+        name="back"
+        onClick={[Function]}
+        styleOverride={
+          Object {
+            "margin": "0px 10px",
+          }
+        }
+      >
+        BACK
+      </withTheme(Button)>,
+      <withTheme(Button)
+        name="import"
+        onClick={[Function]}
+      >
+        IMPORT
+      </withTheme(Button)>,
+    ]
+  }
+  className="TaggingGuideImportDialog confirm_table"
+  content={
+    <Box
+      announce={false}
+      direction="column"
+      flex={true}
+      focusable={true}
+      id="TaggingGuideConfirm"
+      pad="none"
+      responsive={true}
+      tag="div"
+    >
+      <Box
+        announce={false}
+        className="ValidTagsCount"
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        12
+         
+        tag
+        s
+         
+        will be added.
+      </Box>
+      <Box
+        announce={false}
+        className="TagsSummaryTable"
+        direction="column"
+        flex={true}
+        focusable={true}
+        pad="none"
+        responsive={true}
+        separator="all"
+        tag="div"
+      >
+        <Box
+          announce={false}
+          className="TagsSummaryTableRow"
+          direction="row"
+          flex={true}
+          focusable={true}
+          pad="none"
+          responsive={true}
+          separator="none"
+          tag="div"
+        >
+          <Box
+            announce={false}
+            className="TagsSummaryTableRowName"
+            direction="column"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            separator="right"
+            tag="div"
+          >
+            Invalid Tags
+          </Box>
+          <Box
+            announce={false}
+            className="TagsSummaryTableRowValue"
+            direction="column"
+            flex={true}
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <textarea
+              readOnly={true}
+              value="sadsd"
+            />
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  }
+  header="Import Tagging Guide for project1"
+  id="TaggingGuideImportDialog"
+  resize={false}
+/>
+`;
+
+exports[`<TaggingGuideImportDialog /> Snapshots renders correctly for default props with step as mapping 1`] = `
+<TaggerModal
+  actions={
+    Array [
+      <withTheme(Button)
+        name="cancel"
+        onClick={[Function]}
+        type="flat"
+      >
+        CANCEL
+      </withTheme(Button)>,
+      <withTheme(Button)
+        name="next"
+        onClick={[Function]}
+      >
+        NEXT
+      </withTheme(Button)>,
+    ]
+  }
+  className="TaggingGuideImportDialog mapping"
+  content={
+    <Box
+      announce={false}
+      className="TaggerMapping"
+      direction="column"
+      flex={true}
+      focusable={true}
+      id="TaggingGuideMapping"
+      pad="none"
+      responsive={true}
+      tag="div"
+    >
+      <Box
+        announce={false}
+        className="ContentRow"
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        Please choose corresponding columns for the file uploaded.
+        <div
+          className="notice"
+        >
+          Notice: some columns were selected automatically based on first row data.
+        </div>
+      </Box>
+      <Box
+        announce={false}
+        className="ContentRow BindingInfo"
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        <Box
+          announce={false}
+          direction="row"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          <Box
+            announce={false}
+            className="InfoLabel"
+            direction="column"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            Required:
+          </Box>
+          <Box
+            announce={false}
+            className="InfoText"
+            direction="row"
+            flex={true}
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <span
+              className="Required"
+            />
+            , 
+            <span
+              className="Required"
+            />
+          </Box>
+        </Box>
+        <Box
+          announce={false}
+          direction="row"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          <Box
+            announce={false}
+            className="InfoLabel"
+            direction="column"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            Selected:
+          </Box>
+          <Box
+            announce={false}
+            className="InfoText"
+            direction="row"
+            flex={true}
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <span
+              className="Selected Required"
+            />
+          </Box>
+        </Box>
+        <Box
+          announce={false}
+          direction="row"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          <Box
+            announce={false}
+            className="InfoLabel"
+            direction="column"
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            Skipped:
+          </Box>
+          <Box
+            announce={false}
+            className="InfoText"
+            direction="row"
+            flex={true}
+            focusable={true}
+            pad="none"
+            responsive={true}
+            tag="div"
+          >
+            <span
+              className="Skipped Required"
+            />
+          </Box>
+        </Box>
+      </Box>
+      <BindColumnsPreviewGrid
+        columns={
+          Array [
+            Object {
+              "name": "column1",
+              "required": true,
+            },
+            Object {
+              "name": "column2",
+              "required": true,
+            },
+          ]
+        }
+        columnsBinding={
+          Object {
+            "column1": 0,
+          }
+        }
+        data={Array []}
+        onColumnBindChange={[Function]}
+      />
+      <Box
+        announce={false}
+        className="ContentRow SkipFirstRow"
+        direction="column"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        <withTheme(Checkbox)
+          checked={true}
+          label="Skip First Row"
+          onChange={[Function]}
+          value="skip-first-row"
+        />
+      </Box>
+    </Box>
+  }
+  header="Columns mapping"
+  id="TaggingGuideImportDialog"
+  resize={true}
+/>
+`;
+
+exports[`<TaggingGuideImportDialog /> Snapshots renders correctly for default props with step as upload 1`] = `
+<TaggerModal
+  actions={
+    Array [
+      <withTheme(Button)
+        name="cancel"
+        onClick={[Function]}
+        type="flat"
+      >
+        CANCEL
+      </withTheme(Button)>,
+      <withTheme(Button)
+        name="next"
+        onClick={null}
+      >
+        NEXT
+      </withTheme(Button)>,
+    ]
+  }
+  className="TaggingGuideImportDialog upload"
+  content={
+    <div
+      id="TaggingGuideUpload"
+    >
+      <div>
+        <label
+          htmlFor="TaggingGuideUploadFilepicker"
+        >
+          Upload File*
+        </label>
+      </div>
+      <div
+        id="TaggingGuideUploadFilepicker"
+      >
+        <t
+          config={
+            Object {
+              "iconFiletypes": Array [
+                ".csv",
+              ],
+              "postUrl": "/nltools/private/v1/taggingguide/undefined/12/import",
+              "showFiletypeIcon": true,
+            }
+          }
+          djsConfig={
+            Object {
+              "accept": [Function],
+              "acceptedFiles": "text/csv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "addRemoveLinks": true,
+              "dictDefaultMessage": "Click to choose a file or drag it here",
+              "headers": Object {
+                "X-CSRF-Token": "dffs",
+              },
+              "maxFileSize": 5000000000,
+              "maxFiles": 1,
+              "paramName": "file",
+              "params": Object {
+                "username": "testUser",
+              },
+              "timeout": 120000,
+            }
+          }
+          eventHandlers={
+            Object {
+              "error": [Function],
+              "removedfile": [Function],
+              "sending": [Function],
+              "success": [Function],
+            }
+          }
+        />
+      </div>
+    </div>
+  }
+  header="Import Tagging Guide for project1"
+  id="TaggingGuideImportDialog"
+  resize={false}
+/>
+`;

@@ -1,0 +1,14 @@
+#!/usr/local/bin/perl -w
+
+use strict;
+use Tellme::Mommy;
+
+my $exe = '/usr/local/tellme/bin/start_workbench';
+my $logfile = '/var/tellme/log/workbench.log';
+
+my $mommy = new Tellme::Mommy(name          => 'workbench',
+                              exe           => $exe,
+                              startup_log   => $logfile,
+                              startup_line  => 'Started NlToolsUiApplication');
+
+$mommy->mommy(@ARGV);

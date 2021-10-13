@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dialog /> Creating an instance snapshot to match 1`] = `
+<Modal
+  autoFocus={true}
+  backdrop={true}
+  backdropTransition={
+    Object {
+      "mountOnEnter": true,
+      "timeout": 150,
+    }
+  }
+  centered={false}
+  fade={true}
+  isOpen={false}
+  keyboard={true}
+  modalTransition={
+    Object {
+      "timeout": 300,
+    }
+  }
+  onClosed={[Function]}
+  onOpened={[Function]}
+  role="dialog"
+  size={null}
+  zIndex={1050}
+>
+  <ModalHeader
+    charCode={215}
+    closeAriaLabel="Close"
+    tag="h5"
+    wrapTag="div"
+  >
+    <span
+      className="dialog-title-text"
+    />
+  </ModalHeader>
+  <ModalBody
+    tag="div"
+  >
+    <div>
+       dialog message 
+    </div>
+  </ModalBody>
+  <ModalFooter
+    tag="div"
+  >
+    <div
+      className="dialog-cancel-container"
+    >
+      <withTheme(Button)
+        name="cancel-dialog"
+        styleOverride={
+          Object {
+            ":focus": Object {
+              "outline": "none",
+            },
+          }
+        }
+        type="flat"
+      >
+        CANCEL
+      </withTheme(Button)>
+    </div>
+    <div
+      className="dialog-ok-container"
+    >
+      <withTheme(Button)
+        name="ok-dialog"
+      >
+        OK
+      </withTheme(Button)>
+    </div>
+  </ModalFooter>
+</Modal>
+`;

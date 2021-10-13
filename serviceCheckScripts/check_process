@@ -1,0 +1,251 @@
+#!/usr/local/bin/perl -w
+
+use strict;
+
+use constant UNK => -1;
+use constant OK  => 0;
+use constant WARN => 1;
+use constant CRIT => 2;
+
+my %procs;
+my %proc_data;
+my @out;
+my $ps;
+my @processes = @ARGV;
+my $bsd = 0;
+
+if ($#processes < 1) {
+    print "Process WARNING: must pass hostname and at least one process name.\n";
+    exit(WARN);
+} else {
+    shift(@processes); # first argument passed is the hostname, which isn't needed
+}
+
+foreach my $process (@processes) {
+    my $count_min;
+    my $count_max;
+    my $user;
+    my $args = $process;
+
+    #
+    # support [user@]process[=min[,max]]
+    #
+    if ($process =~ /^([a-z][a-z0-9._-]+)\@(.*)$/) {
+        ($user, $process) = ($1, $2);
+    }
+    if ($process =~ /^(.+)=(\d+)$/) {
+        ($process, $count_min) = ($1, $2);
+    } elsif ($process =~ /^(.+)=(\d+),(\d+)$/) {
+        ($process, $count_min, $count_max) = ($1, $2, $3);
+    }
+
+    $procs{$process}[0]{'pid'} = -1;
+    $procs{$process}[0]{'args'} = $args;
+    $procs{$process}[0]{'count_total'} = 0;
+    $procs{$process}[0]{'count_min'} = $count_min if defined($count_min);
+    $procs{$process}[0]{'count_max'} = $count_max if defined($count_max);
+    $procs{$process}[0]{'user_restrict'} = $user if defined($user);
+}
+
+if (! -x '/bin/ps') {
+    print "Process WARNING: /bin/ps not found.\n";
+    exit(WARN);
+}
+
+my $solPs = undef;
+if ($^O =~ /bsd|linux/) {
+    $ps = '/bin/ps auxw';
+    $bsd = 1;
+} elsif ($^O eq 'solaris') {
+    $ps = '/usr/ucb/ps auxww';
+    $solPs = '/bin/ps -e -o user,pid,pcpu,pmem,vsz,rss,stime,time,args';
+} else {
+    print "Process WARNING: OS $^O not supported.\n";
+    exit(WARN);
+}
+
+@out = `$ps`;
+my %solProc = ();
+if ($solPs) {
+    my @solOut = `$solPs`;
+    foreach (@solOut) {
+        my @bits = split;
+        my $cmd = join(' ', @bits[8..$#bits]);
+        my $pid = $bits[1];
+        @{$solProc{$pid}} = @bits[0..7];
+    }
+}
+
+foreach (@out) {
+    # make the BSD start date output more like SYSV
+    s/(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s/$1_/;
+
+    my @bits = split;
+    my ($user, $pid, $cpu, $mem, $vsz, $rss, $start, $time, $cmd);
+
+    # BSD ps often smashes VSZ and RSS or CPU and MEM together
+    if (($#bits < 10) || ($bits[9] !~ /:/)) {
+        if (/^(\w+)\s+(\d{1,5}).*\d:\d[^\s]+\s+(.*)$/) {
+            ($user, $pid, $cmd) = ($1, $2, $3);
+            ($cpu, $mem, $vsz, $rss, $start, $time) = (@{$solProc{$pid}})[2..7] if exists $solProc{$pid};
+        } else {
+            next;    # no hope, so just skip
+        }
+    } else {
+        ($user, $pid, $cpu, $mem, $vsz, $rss) = @bits[0..5];
+        ($cpu, $mem, $vsz, $rss, $start, $time) = (@{$solProc{$pid}})[2..7] if exists $solProc{$pid};
+        $start = $bits[8];
+        $time = $bits[9];
+        $cmd = join(' ', @bits[10..$#bits]);
+    }
+
+    foreach my $process (@processes) {
+        my $p;
+        if ($cmd =~ /^\/?[^ ]*${process}/)
+        {
+            $p = $process;
+        }
+        elsif ($cmd =~ /^\/?[^ ]*(perl|sh|python(?:[\d.]+)|ruby|node)(?:\s+--?[\w-]+(?:=[\w-]+)?)*\s+(?:[^ ]*\/)?${process}(?:\s|$)/)
+        {
+            $p = "$1/$process";
+        }
+        elsif ($cmd =~ /^\/?[^ ]*(java)(?:\s+-([^ ]+|(cp|classpath)\s+[^ ]+))*\s+org\.python\.util\.jython ${process}(?:\s|$)/)
+        {
+            $p = "jython/$process";
+        }
+        elsif ($cmd =~ /^\/?[^ ]*(java)(?:\s+-([^ ]+|(cp|classpath)\s+[^ ]+))*\s+${process}(?:\s|$)/)
+        {
+            $p = "$1/$process";
+        }
+
+        if ($p) {
+            my $i = $#{$procs{$process}};
+            $i++ if $procs{$process}[$i]{'pid'} > 0;
+            $procs{$process}[$i]{'process'} = $p;
+            $procs{$process}[$i]{'pid'} = $pid;
+            $procs{$process}[$i]{'user'} = $user;
+            $procs{$process}[$i]{'cpu'} = defined($cpu)   ? $cpu   : "N/A";
+            $procs{$process}[$i]{'mem'} = defined($mem)   ? $mem   : "N/A";
+            $procs{$process}[$i]{'vsz'} = defined($vsz)   ? $vsz   : "N/A";
+            $procs{$process}[$i]{'rss'} = defined($rss)   ? $rss   : "N/A";
+            $procs{$process}[$i]{'start'} = defined($start) ? $start : "N/A";
+            $procs{$process}[$i]{'time'} = defined($time)  ? $time  : "N/A";
+            $procs{$process}[$i]{'cmd'} = $cmd;
+
+            # don't count it if we are only looking for processes run as a
+            # specific user, but we still track it so we can see all
+            # processes in case we are simply looking at the wrong user.
+            unless (defined $procs{$process}[0]{'user_restrict'} and
+                    $procs{$process}[0]{'user_restrict'} ne $user) {
+                $procs{$process}[0]{'count_total'}++;
+                $procs{$process}[$i]{'counted'}++;
+            };
+
+            $proc_data{$process}{'cpu'} += defined($cpu)  ? $cpu   : 0;
+            $proc_data{$process}{'mem'} += defined($mem)  ? $mem   : 0;
+            $proc_data{$process}{'vsz'} += defined($vsz)  ? $vsz   : 0;
+            $proc_data{$process}{'rss'} += defined($rss)  ? $rss   : 0;
+
+        }
+    }
+}
+
+my $exit = OK;
+my $output = '';
+my $data = '';
+my @notfound;
+my @toofew;
+my @toomany;
+my $fmt = "%24s %8s %6s %5s %5s %7s %7s %8s %8s\n";
+$output .= sprintf($fmt, 'Process', 'User', 'PID', 'CPU%', 'Mem%',
+                    'VSZ', 'RSS', 'Started', 'CPU_Time');
+my $legend;
+
+foreach my $process (sort(@processes)) {
+    if (defined($procs{$process}[0]{'count_min'}) &&
+        ($procs{$process}[0]{'count_total'} < $procs{$process}[0]{'count_min'})) {
+        my $error = "$process ";
+        $error .= "as user $procs{$process}[0]{user_restrict} " if defined ($procs{$process}[0]{'user_restrict'});
+        $error .= $procs{$process}[0]{'count_total'};
+        $error .= " < $procs{$process}[0]{count_min}";
+        push(@toofew, $error);
+        $exit = WARN;
+    }
+
+    if (defined($procs{$process}[0]{'count_max'}) &&
+        ($procs{$process}[0]{'count_total'} > $procs{$process}[0]{'count_max'})) {
+        my $error = "$process ";
+        $error .= "as user $procs{$process}[0]{user_restrict} " if defined ($procs{$process}[0]{'user_restrict'});
+        $error .= $procs{$process}[0]{'count_total'};
+        $error .= " > $procs{$process}[0]{count_max}";
+        push(@toomany, $error);
+        $exit = WARN;
+    }
+
+    for (my $i = 0; $i <= $#{$procs{$process}}; $i++) {
+        if ($procs{$process}[$i]{'pid'} < 0) {
+            if (!defined($procs{$process}[0]{'count_min'}) || ($procs{$process}[0]{'count_min'} > 0)) {
+                $exit = CRIT;
+                push(@notfound, $process);
+                $output .= sprintf($fmt, $process, split(',', 'N/A,' x 8));
+            }
+        } else {
+            my $marker = defined $procs{$process}[$i]{'counted'} ? "" : "*";
+            $legend = 1 if ($marker);
+            $output .= sprintf($fmt, $marker . $procs{$process}[$i]{'process'},
+                        $procs{$process}[$i]{'user'},
+                        $procs{$process}[$i]{'pid'},
+                        $procs{$process}[$i]{'cpu'},
+                        $procs{$process}[$i]{'mem'},
+                        $procs{$process}[$i]{'vsz'},
+                        $procs{$process}[$i]{'rss'},
+                        $procs{$process}[$i]{'start'},
+                        $procs{$process}[$i]{'time'});
+        }
+    }
+    if (defined $proc_data{$process}{'cpu'}) {
+        $data .= "$process.cpu:$proc_data{$process}{'cpu'}\n";
+    }
+    if (defined $proc_data{$process}{'mem'}) {
+        $data .= "$process.mem:$proc_data{$process}{'mem'}\n";
+    }
+    if (defined $proc_data{$process}{'vsz'}) {
+        $data .= "$process.vsz:$proc_data{$process}{'vsz'}\n";
+    }
+    if (defined $proc_data{$process}{'rss'}) {
+        $data .= "$process.rss:$proc_data{$process}{'rss'}\n";
+    }
+}
+if ($legend) {
+    $output .= sprintf($fmt, "", "* = ignored due to user restriction","","","","","","","");
+}
+
+my $summary = "check_process";
+
+if ($exit == OK) {
+    $summary .= " OK\n";
+    $output =  "(" . join(', ', map { $procs{$_}[0]{'args'} } @processes) . ")\n" . $output;
+}
+elsif ($exit == WARN || $exit == CRIT) {
+    $summary .= (($exit == CRIT) ? " CRITICAL\n" : " WARNING\n");
+    my @preout = ();
+    if (@notfound) {
+        push @preout, (@notfound > 1 ? "processes" : "process") . " not found (" . (join ", ", @notfound) . ")";
+    }
+
+    if (@toofew) {
+        push @preout, "process count" . (@notfound > 1 ? "s" : "") . " below threshold (" . (join ", ", @toofew) . ")";
+    }
+
+    if (@toomany) {
+        push @preout, "process count" . (@notfound > 1 ? "s" : "") . " above threshold (" . (join ", ", @toomany) . ")";
+    }
+
+    if (! @notfound && !( @toofew || @toomany)) {
+        $summary .= " UNKNOWN\n";
+    }
+    $output = (join " and ", @preout) . "\n\n" . $output;
+}
+
+print $summary, "__OUTPUT__\n", $output, "__DATA__\n" , $data;
+exit($exit);

@@ -1,0 +1,14 @@
+{
+  "name": {
+    "ui:field": "text"
+  },
+  "description": {
+    "ui:field": "text"
+  },
+  "dataType": {
+      "ui:field": "select"
+  },
+  "dropZone": {
+    "ui:field": "dropZone"
+  }
+}

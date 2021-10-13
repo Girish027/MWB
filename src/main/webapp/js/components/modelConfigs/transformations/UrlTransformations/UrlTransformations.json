@@ -1,0 +1,14 @@
+{
+  "urlTransforms": [
+    {
+      "name": "Standard Date",
+      "url": "",
+      "content": "DateTransformation"
+    },
+    {
+      "name": "Standard Address",
+      "url": "",
+      "content": "AddressTransformation"
+    }
+  ]
+}

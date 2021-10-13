@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DataSetTable /> Snapshots should match snapshots 1`] = `
+<div
+  className="datagridContainer transition"
+  style={
+    Object {
+      "paddingTop": "undefinedpx",
+    }
+  }
+>
+  <div
+    className="actionsTableContainer"
+  >
+    <div
+      className="resultsMessageContainer"
+    >
+      <div
+        style={
+          Object {
+            "color": "black",
+          }
+        }
+      >
+        No search results found
+      </div>
+    </div>
+  </div>
+  <div
+    className="tableContainer"
+  >
+    <div />
+  </div>
+  <div
+    className="gridFooterForSuggestList"
+  />
+</div>
+`;

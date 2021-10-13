@@ -1,0 +1,60 @@
+uh
+um
+is
+have
+having
+has
+had
+was
+were
+are
+can
+could
+should
+would
+shall
+oh 
+be
+been
+to
+i
+my
+myself
+mine
+i've
+i have
+we've
+we have
+what
+why
+where
+how
+which
+it is
+it's
+it
+hello
+hi
+i'm
+a
+i feel
+it
+if
+wondering
+just
+yeah
+yes
+i need
+wanna
+want
+a
+an
+the
+s
+f
+[a-z]{1,2}
+by
+com
+way
+you
+like

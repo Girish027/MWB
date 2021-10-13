@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Internet-Networks-Servers / Worldwide-Web / network-add - hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Internet-Networks-Servers-/-Worldwide-Web-/-network-add---hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#EF8822">
+            <g id="network-add">
+                <circle id="Oval" cx="8.625" cy="8.625" r="3"></circle>
+                <path d="M8.625,7.125 L8.625,10.125" id="Shape"></path>
+                <path d="M7.125,8.625 L10.125,8.625" id="Shape"></path>
+                <path d="M5.254,11.576 C2.36649818,11.189544 0.251754329,8.6625605 0.380221119,5.75214623 C0.50868791,2.84173195 2.83785739,0.510904443 5.74817951,0.380366625 C8.65850163,0.249828808 11.1869894,2.36277392 11.5755,5.25" id="Shape"></path>
+                <path d="M4.6445,11.4605 C3.884,10.3445 3.375,8.3165 3.375,6 C3.375,3.6835 3.884,1.656 4.6445,0.5395" id="Shape"></path>
+                <path d="M0.3875,5.625 L5.234,5.625" id="Shape"></path>
+                <path d="M1.4995,2.625 L10.5,2.625" id="Shape"></path>
+                <path d="M1.024,8.625 L3.607,8.625" id="Shape"></path>
+                <path d="M7.3555,0.5395 C8.02923971,1.63516569 8.43928858,2.86223692 8.5555,4.1305" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

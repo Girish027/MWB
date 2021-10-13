@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`removeDupWords snapshot predefined transformation 1`] = `
+Object {
+  "/\\\\\\\\b(\\\\\\\\w+)(\\\\\\\\s\\\\\\\\1\\\\\\\\b)+/i": "$1",
+}
+`;

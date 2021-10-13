@@ -1,0 +1,34 @@
+Amex US,amexusa,amexus,default
+CapitalOne,capitaloneac,capitalone,chatbot
+Choice Hotels,choicehotelsac,choicehotels,default
+Farmers,farmersac,farmers,default
+UPS,upsdemo,demo,ups
+Ebay UK,ebayuk,ebay,uk
+Ebay DE,ebayde,ebay,de
+eversource,eversrcac,eversource,public
+searsonline,searsonlineac,searsonline,order_enquiry
+airtel,airtelac,airtel,default
+cap1caat,cap1caatac,cap1caat,hrchat
+optus,optusac,optus,chatbot
+Tellme,tellmeac,tellme,default
+test-default,testdefaultac,testdefault,default
+British Gas,britishgasac,britishgas,general
+Delta,deltaac,delta,general 
+Marriott,marriott,marriott,general
+247inc,247inc,247inc,default
+247ai Referencebot,247aireferencebot,247ai,referencebot
+Mitsui,mitsuiac,mitsui,general
+SiriusXM,siriusac,sirius,chatbot
+Dish,dishac,dish,chatbot
+Assurant,assurantac,assurant,pyb
+First American (Home Warranty),firstam,firstam,homewarranty
+Columbia General,columbiaac,columbia,general
+Columbia Sorel,columbiaac,columbia,sorel
+Columbia Mountainhw,columbiaac,columbia,mountainhw
+Hilton,hiltonac,hilton,general
+CSSP,cssp,cssp,default
+ModelingWorkbench,modelingworkbenchac,modelingworkbench,default
+Botstore,botstore,botstore,default
+247ai Aisha,247aiaisha,247ai,aisha
+client_retail,retailac,retail,default
+client_telco,telcoac,telco,default

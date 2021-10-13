@@ -1,0 +1,454 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions_models <Function call /> should call clearViewModel 1`] = `
+Array [
+  Object {
+    "type": "CLEAR_VIEW_MODEL_VIEW",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call createSpeechModel 1`] = `
+Array [
+  Object {
+    "modelType": "DIGITAL_SPEECH",
+    "type": "NEW_MODEL",
+  },
+  Object {
+    "projectId": "321",
+    "type": "REQUEST_CONFIG",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call listBatchTests 1`] = `Array []`;
+
+exports[`actions_models <Function call /> should call modelBatchJobRequest 1`] = `
+Array [
+  Object {
+    "modelBatchJobRequest": "",
+    "type": "MODEL_BATCH_JOB_REQUEST",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call modelBatchTest 1`] = `Array []`;
+
+exports[`actions_models <Function call /> should call modelBatchTestResults 1`] = `
+Array [
+  Object {
+    "type": "MODEL_BATCH_TEST_RESULTS",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call modelCheckBatchTest 1`] = `Array []`;
+
+exports[`actions_models <Function call /> should call modelCreated 1`] = `
+Array [
+  Object {
+    "model": Object {
+      "configId": "321",
+      "description": "newDescription",
+      "id": "123",
+      "name": "newMode",
+      "projectId": "661",
+    },
+    "type": "MODEL_CREATED",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call recieveModelTestResults 1`] = `
+Array [
+  Object {
+    "modelTestResults": Array [],
+    "speechResults": false,
+    "type": "RECIEVE_MODEL_TEST_RESULTS",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call showModelNavigationConfirmationDialog 1`] = `
+Array [
+  Object {
+    "showModelNavigationConfirmationDialog": Object {},
+    "type": "SHOW_MODEL_NAVIGATION_CONFIRMATION_DIALOG",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call startModelBuild 1`] = `
+Array [
+  Object {
+    "type": "CONVERT_TO_SPEECH_CONFIG",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call submitModel 1`] = `Array []`;
+
+exports[`actions_models <Function call /> should call testModel 1`] = `
+Array [
+  Object {
+    "fileType": undefined,
+    "modelType": "DIGITAL",
+    "type": "INITIATE_UTTERANCE_TEST",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call tuneModel 1`] = `
+Array [
+  Object {
+    "tuneModelId": "123",
+    "type": "TUNE_MODEL_ID",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call updateSpeechModelIdForDigitalModel 1`] = `
+Array [
+  Object {
+    "modelId": "12",
+    "projectId": "4",
+    "speechModelId": "13",
+    "type": "UPDATE_SPEECH_MODEL_ID_FOR_DIGITAL_MODEL",
+  },
+]
+`;
+
+exports[`actions_models <Function call /> should call viewSelectedModel  1`] = `
+Array [
+  Object {
+    "type": "VIEW_MODEL_ID",
+    "viewModelId": "123",
+  },
+  Object {
+    "projectId": "321",
+    "type": "REQUEST_CONFIG",
+  },
+]
+`;
+
+exports[`actions_models createNewModel: should dispatch actions call createNewModel 1`] = `
+Array [
+  Object {
+    "type": "CLEAR_MODEL_DATA",
+  },
+  Object {
+    "modelType": "DIGITAL",
+    "type": "NEW_MODEL",
+  },
+]
+`;
+
+exports[`actions_models deleteModelFromProject: should dispatch deleteModel action 1`] = `Array []`;
+
+exports[`actions_models deleteModelFromProject: should do delete call with required data 1`] = `"/nltools/private/v1/clients/2/projects/3/models/221"`;
+
+exports[`actions_models onFetchFailureDeleteModel: should dispatch modelAlreadyDeletedFromProject actions to display bad request message when delete have failed  1`] = `
+Array [
+  Object {
+    "type": "MODEL_ALREADY_DELETED",
+  },
+  Object {
+    "type": "WARNING_REQUEST",
+    "value": "Model is already deleted.",
+  },
+]
+`;
+
+exports[`actions_models onFetchFailureDeleteModel: should dispatch modelAlreadyDeletedFromProject actions to display bad request message when no result is available 1`] = `
+Array [
+  Object {
+    "type": "MODEL_DELETE_FAILED",
+  },
+  Object {
+    "type": "WARNING_REQUEST",
+    "value": "Model deletion failed.",
+  },
+]
+`;
+
+exports[`actions_models onFetchFailureDeleteModel: should dispatch modelDeleteFailed actions to display bad request message when delete have failed  1`] = `
+Array [
+  Object {
+    "type": "MODEL_DELETE_FAILED",
+  },
+  Object {
+    "type": "WARNING_REQUEST",
+    "value": "Model deletion failed.",
+  },
+]
+`;
+
+exports[`actions_models onFetchSuccessDeleteModel: should dispatch modelDeletedFromProject actions display good request message when model is deleted 1`] = `
+Array [
+  Object {
+    "clientId": "1",
+    "limit": 500,
+    "startIndex": 0,
+    "type": "REQUEST_PROJECTS_BY_CLIENT",
+  },
+  Object {
+    "modelId": "123",
+    "projectId": "661",
+    "type": "MODEL_DELETED_FROM_PROJECT",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model version  deleted.",
+  },
+]
+`;
+
+exports[`actions_models onTestDigitalModelFailure: should dispatch actions and display bad request message when results are not available 1`] = `
+Array [
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Could not process your request. Please retry again.",
+  },
+]
+`;
+
+exports[`actions_models onTestDigitalModelFailure: should dispatch actions and display bad request message when test have failed  1`] = `
+Array [
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Could not process your request. Please retry again.",
+  },
+]
+`;
+
+exports[`actions_models onTestDigitalModelSuccess: should dispatch actions to close modal and display bad request message when results are not available 1`] = `
+Array [
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Failed to evaluate the utterance.",
+  },
+]
+`;
+
+exports[`actions_models onTestDigitalModelSuccess: should dispatch actions to test digital model and store current results 1`] = `
+Array [
+  Object {
+    "modalDialogState": null,
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "modelTestResults": Object {
+      "evaluations": Array [
+        Object {
+          "utterance": "how are you",
+        },
+      ],
+      "modelId": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+      "projectId": "661",
+    },
+    "speechResults": false,
+    "type": "RECIEVE_MODEL_TEST_RESULTS",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model test results received.",
+  },
+]
+`;
+
+exports[`actions_models onTestSpeechModelFailure: should dispatch actions to close modal and display bad request message when results are not available 1`] = `
+Array [
+  Object {
+    "modalDialogState": null,
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Could not process your request. Please retry again.",
+  },
+]
+`;
+
+exports[`actions_models onTestSpeechModelFailure: should dispatch actions to close modal and display bad request message when test have failed  1`] = `
+Array [
+  Object {
+    "modalDialogState": null,
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Could not process your request. Please retry again.",
+  },
+]
+`;
+
+exports[`actions_models onTestSpeechModelSuccess: should dispatch actions to close modal and display bad request message when results are not available 1`] = `
+Array [
+  Object {
+    "modalDialogState": null,
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Failed to evaluate the utterance.",
+  },
+]
+`;
+
+exports[`actions_models onTestSpeechModelSuccess: should dispatch actions to test digital model and store current results 1`] = `
+Array [
+  Object {
+    "fileType": undefined,
+    "modelType": "DIGITAL",
+    "type": "INITIATE_UTTERANCE_TEST",
+  },
+  Object {
+    "modelTestResults": Object {
+      "evaluations": Array [
+        Object {
+          "utterance": "how are you",
+        },
+      ],
+      "modelId": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+      "projectId": "661",
+    },
+    "speechResults": true,
+    "type": "RECIEVE_MODEL_TEST_RESULTS",
+  },
+]
+`;
+
+exports[`actions_models onTestSubmitModelFailure: should dispatch actions to display bad request message when no message is available 1`] = `Array []`;
+
+exports[`actions_models onTestSubmitModelFailure: should dispatch actions to display bad request message when submit has failed 1`] = `Array []`;
+
+exports[`actions_models onTestSubmitModelSuccess: should dispatch onTestSubmitModelSuccess when model is submitted 1`] = `
+Array [
+  Object {
+    "clientId": "1",
+    "limit": 500,
+    "startIndex": 0,
+    "type": "REQUEST_PROJECTS_BY_CLIENT",
+  },
+  Object {
+    "model": Object {
+      "_key": "123",
+      "created": "undefined",
+      "createdAt": "20200630",
+      "datasetIds": Array [
+        "1",
+      ],
+      "id": "123",
+      "modelType": "DIGITAL",
+      "projectId": "2",
+      "status": "NULL",
+      "version": "111",
+    },
+    "type": "MODEL_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model version 111 created.",
+  },
+  Object {
+    "projectId": "2",
+    "promise": Promise {},
+    "type": "PROJECTS_MANAGER_PROJECT_MODELS_LOAD_REQUEST",
+  },
+]
+`;
+
+exports[`actions_models onUpdateModelFailure: should dispatch actions to display bad request message when no message is available  1`] = `
+Array [
+  Object {
+    "type": "BAD_REQUEST",
+    "value": undefined,
+  },
+]
+`;
+
+exports[`actions_models onUpdateModelFailure: should dispatch actions to display bad request message when update have failed  1`] = `
+Array [
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Unable to update the model",
+  },
+]
+`;
+
+exports[`actions_models onUpdateModelSuccess: should dispatch actions display good request message when model is updated 1`] = `
+Array [
+  Object {
+    "model": Object {
+      "0": "1",
+      "1": "2",
+      "2": "3",
+    },
+    "type": "MODEL_UPDATE",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model version  updated.",
+  },
+  Object {
+    "projectId": "[object Object]",
+    "promise": Promise {},
+    "type": "PROJECTS_MANAGER_PROJECT_MODELS_LOAD_REQUEST",
+  },
+]
+`;
+
+exports[`actions_models onUpdateModelSuccess: should dispatch actions display good request message when no message is not available 1`] = `
+Array [
+  Object {
+    "model": Object {
+      "0": "1",
+      "1": "2",
+      "2": "3",
+    },
+    "type": "MODEL_UPDATE",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model version  updated.",
+  },
+  Object {
+    "projectId": "undefined",
+    "promise": Promise {},
+    "type": "PROJECTS_MANAGER_PROJECT_MODELS_LOAD_REQUEST",
+  },
+]
+`;
+
+exports[`actions_models testDigitalModel: should dispatch initiateSingleUtteranceTest action and clear Model Test Results 1`] = `
+Array [
+  Object {
+    "fileType": undefined,
+    "modelType": "DIGITAL",
+    "type": "INITIATE_UTTERANCE_TEST",
+  },
+]
+`;
+
+exports[`actions_models testDigitalModel: should do post call with required data 1`] = `"/nltools/private/v1/clients/2/projects/3/models/abcd-efgh-/eval_transcriptions?testModelType=DIGITAL"`;
+
+exports[`actions_models testSpeechModel: should dispatch initiateSingleUtteranceTest action and clear Model Test Results 1`] = `
+Array [
+  Object {
+    "fileType": "upload",
+    "modelType": "",
+    "type": "INITIATE_UTTERANCE_TEST",
+  },
+  Object {
+    "type": "CLEAR_MODEL_TEST_RESULTS",
+  },
+]
+`;
+
+exports[`actions_models testSpeechModel: should do post call with required data 1`] = `"/nltools/private/v1/clients/2/projects/3/models/abcd-efgh-/eval_utterance?fileType=upload"`;
+
+exports[`actions_models updateByModel: should dispatch updateModel action 1`] = `Array []`;
+
+exports[`actions_models updateByModel: should dispatch updateModel action without data 1`] = `Array []`;
+
+exports[`actions_models updateByModel: should do patch call with required data 1`] = `"/nltools/private/v1/clients/2/projects/3/models/221"`;

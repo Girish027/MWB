@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AudioRecorder /> Snapshots renders correctly for the basic props (audio is not being recorded) 1`] = `
+<withTheme(Button)
+  name="AudioRecorder-button"
+  onClick={[Function]}
+  styleOverride={
+    Object {
+      ":focus": Object {
+        "outline": "none",
+      },
+      ":hover": Object {
+        "boxShadow": "none",
+        "color": "#003467",
+      },
+    }
+  }
+  type="flat"
+>
+  <Memo(withTheme(StartRecordingIcon)) />
+</withTheme(Button)>
+`;
+
+exports[`<AudioRecorder /> Snapshots renders correctly for the enhanced props (audio is not being recorded) 1`] = `
+<withTheme(Button)
+  name="AudioRecorder-button"
+  onClick={[Function]}
+  styleOverride={
+    Object {
+      ":focus": Object {
+        "outline": "none",
+      },
+      ":hover": Object {
+        "boxShadow": "none",
+        "color": "#003467",
+      },
+    }
+  }
+  type="flat"
+>
+  <Memo(withTheme(StartRecordingIcon))
+    width="20px"
+  />
+</withTheme(Button)>
+`;
+
+exports[`<AudioRecorder /> Snapshots renders correctly for when audio is being recorded 1`] = `
+<withTheme(Button)
+  name="AudioRecorder-button"
+  onClick={[Function]}
+  styleOverride={
+    Object {
+      ":focus": Object {
+        "outline": "none",
+      },
+      ":hover": Object {
+        "boxShadow": "none",
+        "color": "#003467",
+      },
+    }
+  }
+  type="flat"
+>
+  <StopRecordingIcon
+    fill="#D0021B"
+    height="60"
+    width="60"
+  />
+</withTheme(Button)>
+`;
+
+exports[`<AudioRecorder /> Snapshots renders correctly for when permission is denied 1`] = `
+<withTheme(Button)
+  name="AudioRecorder-button"
+  onClick={[Function]}
+  styleOverride={
+    Object {
+      ":focus": Object {
+        "outline": "none",
+      },
+      ":hover": Object {
+        "boxShadow": "none",
+        "color": "#003467",
+      },
+    }
+  }
+  type="flat"
+>
+  <Memo(withTheme(StartRecordingIcon))
+    fill="#bdbdbd"
+    width="20px"
+  />
+</withTheme(Button)>
+`;

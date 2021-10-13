@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomTextArea /> Snapshots renders correctly for default props 1`] = `
+<div
+  style={
+    Object {
+      "field": Object {
+        "width": "99%",
+      },
+      "label": Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "fontWeight": "normal",
+        "paddingBottom": "5px",
+      },
+      "marginTop": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "fontWeight": "normal",
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    Description
+  </div>
+  <withTheme(Textarea)
+    maxLength={150}
+    minLength={5}
+    name="testDescription"
+    onChange={[Function]}
+    placeholder="Add Description"
+    styleOverride={
+      Object {
+        "width": "99%",
+      }
+    }
+  />
+</div>
+`;

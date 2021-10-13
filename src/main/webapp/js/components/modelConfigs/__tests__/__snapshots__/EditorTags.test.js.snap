@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EditorTags /> Creating an instance matches snapshot 1`] = `
+<div
+  id="EditorTags"
+>
+  <DragDropContext(ReactTags)
+    handleAddition={[Function]}
+    handleDelete={[Function]}
+    inline={false}
+    suggestions={Array []}
+    tags={
+      Array [
+        Object {
+          "id": "0",
+          "key": "0",
+          "text": "first",
+        },
+        Object {
+          "id": "1",
+          "key": "1",
+          "text": "second",
+        },
+        Object {
+          "id": "2",
+          "key": "2",
+          "text": "third",
+        },
+      ]
+    }
+  />
+</div>
+`;

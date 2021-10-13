@@ -1,0 +1,439 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Models
+  description: Models APIs
+host: localhost:8443
+basePath: /nltools
+schemes:
+- https
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /v1/models:
+    x-swagger-router-controller: models
+    post:
+      tags:
+      - post
+      summary: Create a model
+      operationId: configureModel
+      parameters:
+      - name: model
+        description: Model object
+        in: body
+        schema:
+          $ref: "#/definitions/TFSModel"
+      responses:
+        200:
+          description: model configuration added
+        400:
+          description: Invalid request to create a model
+          schema:
+            $ref: "#/definitions/Error"
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /v1/models/{id}:
+    get:
+      produces:
+      - application/json
+      summary: Metadata about a specific model
+      operationId: getModelById
+      tags:
+      - get
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: The Modelling Workbench model id
+        type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/TFSModel"
+        404:
+          description: Invalid model id
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    patch:
+      tags:
+      - patch
+      consumes:
+      - application/json-patch+json
+      summary: Modifies a model configuration
+      operationId: updateModelConfig
+      description: Modifies one or more attributes of a model configuration
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: The Modelling Workbench id of the model to patch
+        type: string
+      - name: JsonPatch
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/PatchRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/TFSModel'
+        400:
+          description: Invalid request
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/models:
+    get:
+      summary: Get all models for a project
+      operationId: getModelsForProject
+      tags:
+      - get
+      parameters:
+      - name: projectId
+        in: path
+        required: true
+        description: The project Id
+        type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/TFSModelList'
+        404:
+          description: Invalid project Id
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/models/{id}/build:
+    post:
+      summary: Queue this model for building
+      operationId: queueModelForBuilding
+      tags:
+      - post
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: The Modelling Workbench Model id
+        type: string
+      responses:
+        202:
+          description: Accepted request to build the model
+        400:
+          description: Invalid request
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/models/{id}/state:
+    get:
+      summary: Status of the model creation request
+      operationId: getModelBuildingStatus
+      tags:
+      - get
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: The Modelling Workbench Model id
+        type: string
+      responses:
+        200:
+          description: Request OK. Model is still being built
+        303:
+          description: Check the other location header
+          headers:
+            Location:
+              schema:
+                type: string
+              description: The URI of the created model.
+        400:
+          description: Invalid request
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/clients/{clientId}/publish:
+    post:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      summary: Publish Model files
+      operationId: publishModel
+      tags:
+      - post
+      parameters:
+      - name: clientId
+        in: path
+        required: true
+        description: The id of the client to retrieve
+        type: string
+      - name: projectModels
+        in: body
+        schema:
+          type: array
+          items:
+            $ref: '#/definitions/ProjectModelsForPublish'
+      responses:
+        200:
+          description: An paged array of Configs
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: "#/definitions/ModelConfigCollection"
+        404:
+          description: Invalid client / project / model id
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /v1/models/{id}/download:
+    get:
+      produces:
+      - text/plain
+      summary: Model file of a model
+      operationId: downloadModel
+      tags:
+      - get
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: The Modelling Workbench model id
+        type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            type: file
+          headers:
+            Content-type:
+              type: string
+              description: text/plain; charset=utf-8
+            Content-Disposition:
+              type: string
+              description: attachment; filename=final_web2nl.model
+        404:
+          description: Invalid model id
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /v1/models/{id}/statistics:
+    get:
+      produces:
+      - application/octet-stream
+      summary: Statistics about a specific model
+      operationId: downloadModelStats
+      tags:
+      - get
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: The Modelling Workbench model id
+        type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            type: file
+          headers:
+            Content-type:
+              type: string
+              description: text/plain; charset=utf-8
+            Content-Disposition:
+              type: string
+              description: attachment; filename=model.statistics
+        404:
+          description: Invalid model id
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /v1/models/{id}/training-outputs:
+    get:
+      produces:
+      - application/octet-stream
+      summary: Statistics about a specific model
+      operationId: downloadTrainingOutputs
+      tags:
+      - get
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: The Modelling Workbench model id
+        type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            type: file
+          headers:
+            Content-type:
+              type: string
+              description: text/plain; charset=utf-8
+            Content-Disposition:
+              type: string
+              description: attachment; filename=trainingOutputs.zip
+        404:
+          description: Invalid model id
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  TFSModel:
+    discriminator: id
+    type: object
+    required:
+    - name
+    - configId
+    - projectId
+    - datasetIds
+    properties:
+      name:
+        type: string
+        description: Project name
+      version:
+        type: integer
+        format: int32
+      userId:
+        type: string
+        description: id of the user
+      configId:
+        type: string
+        description: id of the model configuration
+      projectId:
+        type: string
+        description: id of the project
+      createdAt:
+        type: integer
+        format: int64
+      updatedAt:
+        type: integer
+        format: int64
+      datasetIds:
+        type: array
+        items:
+          type: string
+      description:
+        type: string
+        description: Short description of the Model
+  TFSModelList:
+    type: array
+    items:
+      $ref: "#/definitions/TFSModel"
+  PatchRequest:
+    type: array
+    items:
+      $ref: "#/definitions/PatchDocument"
+  PatchDocument:
+    description: A JSONPatch document as defined by RFC 6902
+    required:
+    - op
+    - path
+    properties:
+      op:
+        type: string
+        description: The operation to be performed
+        enum:
+        - add
+        - remove
+        - replace
+        - move
+        - copy
+        - test
+      path:
+        type: string
+        description: A JSON-Pointer
+      value:
+        type: object
+        description: The value to be used within the operations.
+      from:
+        type: string
+        description: A string containing a JSON Pointer value.
+  Error:
+    required:
+    - code
+    - error_code
+    - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response
+
+  TFSProjectModelList:
+    type: array
+    items:
+      $ref: "#/definitions/TFSProjectModel"
+
+  ProjectModelsForPublish
+  type: array
+  items:
+    $ref: "#/definitions/ProjectModels"
+
+  ProjectModels:
+    type: object
+    required:
+    - projectId
+    - modelId
+    properties:
+      projectId:
+        type: string
+        description: The project id the deployed model belongs to
+      modelId:
+        type: string
+        description: The model db id the model to be deployed
+
+
+  TFSProjectModel:
+    type: object
+    required:
+    - projectId
+    - modelId
+    - modelName
+    - clientId
+    - modelUUID
+    properties:
+      projectId:
+        type: string
+        description: The project id the deployed model belongs to
+      modelId:
+        type: string
+        description: The model db id the model deployed
+      modelName:
+        type: string
+        description:The name of model the , the model deployed to.
+      clientId:
+        type: string
+        description: The model id the model deployed
+      modelUUID:
+        type: string
+        description: The model db id the model deployed
+

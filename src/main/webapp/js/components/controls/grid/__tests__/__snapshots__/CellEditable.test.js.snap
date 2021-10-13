@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CellEditable /> Snapshots renders correctly for default props 1`] = `
+<CellEditable
+  activateNextCellOnEnter={true}
+  columnIndex={1}
+  id="12"
+  maxRowIndex={4}
+  rowIndex={1}
+  stateKey="TestEditable"
+  tableState={
+    Object {
+      "activeColumnIndex": 1,
+      "activeRowIndex": 1,
+    }
+  }
+  value=""
+>
+  <div
+    className="CellEditable"
+    id="12"
+  >
+    <input
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+</CellEditable>
+`;
+
+exports[`<CellEditable /> Snapshots renders correctly for default props with state set as false 1`] = `
+<div
+  className="CellEditable error"
+  id="12"
+>
+  <input
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    type="text"
+    value="dff"
+  />
+</div>
+`;
+
+exports[`<CellEditable /> Snapshots renders correctly for default props with state set as true 1`] = `
+<div
+  className="CellEditable touched dsf"
+  id="12"
+>
+  <input
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    type="text"
+    value="dff"
+  />
+</div>
+`;

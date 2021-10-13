@@ -1,0 +1,4 @@
+[2021-08-24 18:03:40,460] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-08-24 18:03:40,465] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-08-24 18:03:59,991] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-08-24 18:03:59,992] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]

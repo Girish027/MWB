@@ -1,0 +1,520 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ModelTestTabs /> Snapshots renders correctly when a batch test tab currently active 1`] = `
+<div
+  id="ModelTest"
+>
+  <Deprecated
+    fluid={true}
+  >
+    <Deprecated>
+      <div
+        id="ReadProject"
+      >
+        <withTheme(Tabs)
+          align="left"
+          onTabSelected={[Function]}
+          selectedIndex={1}
+          tabPanels={
+            Array [
+              <Connect(UtteranceTestContainer)
+                clearRunSingleUtterance={[Function]}
+                client={
+                  Object {
+                    "id": "2",
+                  }
+                }
+                csrfToken="123"
+                digitalModelTestResults={Object {}}
+                dispatch={[Function]}
+                history={Object {}}
+                match={
+                  Object {
+                    "path": "/models/batchtest",
+                  }
+                }
+                model={
+                  Object {
+                    "modelToken": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                  }
+                }
+                modelId="3"
+                modelTestResults={
+                  Object {
+                    "evaluations": Array [
+                      Object {
+                        "entities": Array [
+                          Object {
+                            "name": "date",
+                            "value": "june 13",
+                          },
+                        ],
+                        "intents": Array [
+                          Object {
+                            "intent": "reservation-query",
+                            "score": 0.49544276870123316,
+                          },
+                          Object {
+                            "intent": "agent-query",
+                            "score": 0.42004871402243316,
+                          },
+                          Object {
+                            "intent": "None_None",
+                            "score": 0.14285217997731586,
+                          },
+                        ],
+                        "transformations": Array [
+                          Object {
+                            "id": "rx-mapper.non-breaking-space-regex",
+                            "result": "i want to cancel for june 13",
+                          },
+                          Object {
+                            "id": "wsp",
+                            "result": "i want to cancel for june 13",
+                          },
+                        ],
+                        "utterance": "i want to cancel for june 13",
+                      },
+                    ],
+                    "modelId": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                    "projectId": "7",
+                    "status": "SUCCESS",
+                    "type": "UTTERANCES",
+                  }
+                }
+                projectId="7"
+                runSingleUtterance=""
+                speechModelTestResults={Object {}}
+                userId="abc"
+              />,
+              <Connect(BatchTestContainer)
+                client={
+                  Object {
+                    "id": "2",
+                  }
+                }
+                csrfToken="123"
+                digitalModelTestResults={Object {}}
+                dispatch={[Function]}
+                history={Object {}}
+                match={
+                  Object {
+                    "path": "/models/batchtest",
+                  }
+                }
+                model={
+                  Object {
+                    "modelToken": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                  }
+                }
+                modelId="3"
+                modelTestResults={
+                  Object {
+                    "evaluations": Array [
+                      Object {
+                        "entities": Array [
+                          Object {
+                            "name": "date",
+                            "value": "june 13",
+                          },
+                        ],
+                        "intents": Array [
+                          Object {
+                            "intent": "reservation-query",
+                            "score": 0.49544276870123316,
+                          },
+                          Object {
+                            "intent": "agent-query",
+                            "score": 0.42004871402243316,
+                          },
+                          Object {
+                            "intent": "None_None",
+                            "score": 0.14285217997731586,
+                          },
+                        ],
+                        "transformations": Array [
+                          Object {
+                            "id": "rx-mapper.non-breaking-space-regex",
+                            "result": "i want to cancel for june 13",
+                          },
+                          Object {
+                            "id": "wsp",
+                            "result": "i want to cancel for june 13",
+                          },
+                        ],
+                        "utterance": "i want to cancel for june 13",
+                      },
+                    ],
+                    "modelId": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                    "projectId": "7",
+                    "status": "SUCCESS",
+                    "type": "UTTERANCES",
+                  }
+                }
+                onReviewDatasetsClick={[Function]}
+                onRunSingleUtterance={[Function]}
+                onTuneModelClick={[Function]}
+                projectId="7"
+                speechModelTestResults={Object {}}
+                userId="abc"
+              />,
+            ]
+          }
+          tabs={
+            Array [
+              "Utterance Test",
+              "Batch Test",
+            ]
+          }
+        />
+      </div>
+    </Deprecated>
+  </Deprecated>
+</div>
+`;
+
+exports[`<ModelTestTabs /> Snapshots renders correctly when a utterance tab currently active 1`] = `
+<div
+  id="ModelTest"
+>
+  <Deprecated
+    fluid={true}
+  >
+    <Deprecated>
+      <div
+        id="ReadProject"
+      >
+        <withTheme(Tabs)
+          align="left"
+          onTabSelected={[Function]}
+          selectedIndex={0}
+          tabPanels={
+            Array [
+              <Connect(UtteranceTestContainer)
+                clearRunSingleUtterance={[Function]}
+                client={
+                  Object {
+                    "id": "2",
+                  }
+                }
+                csrfToken="123"
+                digitalModelTestResults={Object {}}
+                dispatch={[Function]}
+                history={Object {}}
+                match={
+                  Object {
+                    "path": "/models/test",
+                  }
+                }
+                model={
+                  Object {
+                    "modelToken": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                  }
+                }
+                modelId="3"
+                modelTestResults={
+                  Object {
+                    "evaluations": Array [
+                      Object {
+                        "entities": Array [
+                          Object {
+                            "name": "date",
+                            "value": "june 13",
+                          },
+                        ],
+                        "intents": Array [
+                          Object {
+                            "intent": "reservation-query",
+                            "score": 0.49544276870123316,
+                          },
+                          Object {
+                            "intent": "agent-query",
+                            "score": 0.42004871402243316,
+                          },
+                          Object {
+                            "intent": "None_None",
+                            "score": 0.14285217997731586,
+                          },
+                        ],
+                        "transformations": Array [
+                          Object {
+                            "id": "rx-mapper.non-breaking-space-regex",
+                            "result": "i want to cancel for june 13",
+                          },
+                          Object {
+                            "id": "wsp",
+                            "result": "i want to cancel for june 13",
+                          },
+                        ],
+                        "utterance": "i want to cancel for june 13",
+                      },
+                    ],
+                    "modelId": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                    "projectId": "7",
+                    "status": "SUCCESS",
+                    "type": "UTTERANCES",
+                  }
+                }
+                projectId="7"
+                runSingleUtterance=""
+                speechModelTestResults={Object {}}
+                userId="abc"
+              />,
+              <Connect(BatchTestContainer)
+                client={
+                  Object {
+                    "id": "2",
+                  }
+                }
+                csrfToken="123"
+                digitalModelTestResults={Object {}}
+                dispatch={[Function]}
+                history={Object {}}
+                match={
+                  Object {
+                    "path": "/models/test",
+                  }
+                }
+                model={
+                  Object {
+                    "modelToken": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                  }
+                }
+                modelId="3"
+                modelTestResults={
+                  Object {
+                    "evaluations": Array [
+                      Object {
+                        "entities": Array [
+                          Object {
+                            "name": "date",
+                            "value": "june 13",
+                          },
+                        ],
+                        "intents": Array [
+                          Object {
+                            "intent": "reservation-query",
+                            "score": 0.49544276870123316,
+                          },
+                          Object {
+                            "intent": "agent-query",
+                            "score": 0.42004871402243316,
+                          },
+                          Object {
+                            "intent": "None_None",
+                            "score": 0.14285217997731586,
+                          },
+                        ],
+                        "transformations": Array [
+                          Object {
+                            "id": "rx-mapper.non-breaking-space-regex",
+                            "result": "i want to cancel for june 13",
+                          },
+                          Object {
+                            "id": "wsp",
+                            "result": "i want to cancel for june 13",
+                          },
+                        ],
+                        "utterance": "i want to cancel for june 13",
+                      },
+                    ],
+                    "modelId": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                    "projectId": "7",
+                    "status": "SUCCESS",
+                    "type": "UTTERANCES",
+                  }
+                }
+                onReviewDatasetsClick={[Function]}
+                onRunSingleUtterance={[Function]}
+                onTuneModelClick={[Function]}
+                projectId="7"
+                speechModelTestResults={Object {}}
+                userId="abc"
+              />,
+            ]
+          }
+          tabs={
+            Array [
+              "Utterance Test",
+              "Batch Test",
+            ]
+          }
+        />
+      </div>
+    </Deprecated>
+  </Deprecated>
+</div>
+`;
+
+exports[`<ModelTestTabs /> Snapshots renders correctly with two tabs 1`] = `
+<div
+  id="ModelTest"
+>
+  <Deprecated
+    fluid={true}
+  >
+    <Deprecated>
+      <div
+        id="ReadProject"
+      >
+        <withTheme(Tabs)
+          align="left"
+          onTabSelected={[Function]}
+          selectedIndex={0}
+          tabPanels={
+            Array [
+              <Connect(UtteranceTestContainer)
+                clearRunSingleUtterance={[Function]}
+                client={
+                  Object {
+                    "id": "2",
+                  }
+                }
+                csrfToken="123"
+                digitalModelTestResults={Object {}}
+                dispatch={[Function]}
+                history={Object {}}
+                match={
+                  Object {
+                    "path": "/models/test",
+                  }
+                }
+                model={
+                  Object {
+                    "modelToken": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                  }
+                }
+                modelId="3"
+                modelTestResults={
+                  Object {
+                    "evaluations": Array [
+                      Object {
+                        "entities": Array [
+                          Object {
+                            "name": "date",
+                            "value": "june 13",
+                          },
+                        ],
+                        "intents": Array [
+                          Object {
+                            "intent": "reservation-query",
+                            "score": 0.49544276870123316,
+                          },
+                          Object {
+                            "intent": "agent-query",
+                            "score": 0.42004871402243316,
+                          },
+                          Object {
+                            "intent": "None_None",
+                            "score": 0.14285217997731586,
+                          },
+                        ],
+                        "transformations": Array [
+                          Object {
+                            "id": "rx-mapper.non-breaking-space-regex",
+                            "result": "i want to cancel for june 13",
+                          },
+                          Object {
+                            "id": "wsp",
+                            "result": "i want to cancel for june 13",
+                          },
+                        ],
+                        "utterance": "i want to cancel for june 13",
+                      },
+                    ],
+                    "modelId": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                    "projectId": "7",
+                    "status": "SUCCESS",
+                    "type": "UTTERANCES",
+                  }
+                }
+                projectId="7"
+                runSingleUtterance=""
+                speechModelTestResults={Object {}}
+                userId="abc"
+              />,
+              <Connect(BatchTestContainer)
+                client={
+                  Object {
+                    "id": "2",
+                  }
+                }
+                csrfToken="123"
+                digitalModelTestResults={Object {}}
+                dispatch={[Function]}
+                history={Object {}}
+                match={
+                  Object {
+                    "path": "/models/test",
+                  }
+                }
+                model={
+                  Object {
+                    "modelToken": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                  }
+                }
+                modelId="3"
+                modelTestResults={
+                  Object {
+                    "evaluations": Array [
+                      Object {
+                        "entities": Array [
+                          Object {
+                            "name": "date",
+                            "value": "june 13",
+                          },
+                        ],
+                        "intents": Array [
+                          Object {
+                            "intent": "reservation-query",
+                            "score": 0.49544276870123316,
+                          },
+                          Object {
+                            "intent": "agent-query",
+                            "score": 0.42004871402243316,
+                          },
+                          Object {
+                            "intent": "None_None",
+                            "score": 0.14285217997731586,
+                          },
+                        ],
+                        "transformations": Array [
+                          Object {
+                            "id": "rx-mapper.non-breaking-space-regex",
+                            "result": "i want to cancel for june 13",
+                          },
+                          Object {
+                            "id": "wsp",
+                            "result": "i want to cancel for june 13",
+                          },
+                        ],
+                        "utterance": "i want to cancel for june 13",
+                      },
+                    ],
+                    "modelId": "b61693f6-fa65-4308-af09-b32872dfb5f6",
+                    "projectId": "7",
+                    "status": "SUCCESS",
+                    "type": "UTTERANCES",
+                  }
+                }
+                onReviewDatasetsClick={[Function]}
+                onRunSingleUtterance={[Function]}
+                onTuneModelClick={[Function]}
+                projectId="7"
+                speechModelTestResults={Object {}}
+                userId="abc"
+              />,
+            ]
+          }
+          tabs={
+            Array [
+              "Utterance Test",
+              "Batch Test",
+            ]
+          }
+        />
+      </div>
+    </Deprecated>
+  </Deprecated>
+</div>
+`;

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PromoteDialog /> Creating an instance with test props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    centerContent={false}
+    headerChildren="Promote Dialog"
+    isOpen={true}
+    okChildren="PROMOTE"
+    okDisabled={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    size="medium"
+    styleOverride={
+      Object {
+        "content": Object {
+          "top": "20%",
+        },
+        "header": Object {
+          "borderBottom": "1px solid",
+          "borderBottomColor": "#DADADA",
+          "display": "flex",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "center",
+          "title": Object {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "marginLeft": "23px",
+            "marginRight": "20px",
+          },
+          "titleIcon": Object {
+            "marginRight": "20px",
+          },
+          "width": "100%",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <div>
+      <p>
+        Select global model name:
+      </p>
+      <withTheme(RadioGroup)
+        labels={
+          Array [
+            "Root_Intent",
+            "Sentiment",
+            "Social",
+            "Yes_No",
+          ]
+        }
+        onChange={[Function]}
+        value=""
+        values={
+          Array [
+            "Root_Intent",
+            "Sentiment",
+            "Social",
+            "Yes_No",
+          ]
+        }
+      />
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

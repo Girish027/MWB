@@ -1,0 +1,115 @@
+/* CELL AUTO SUGGEST STATES */
+
+$ribbonGrey: #f9f9f9;
+
+.requiresEvents {
+  pointer-events: all; // scrollbar needs to work
+}
+
+.requiresNoEvents {
+  pointer-events: none; // no tags - makes it easier to blur away and click cell beneath with a message like No Matching Tags or an error message
+}
+
+.cellSuggestContainer {
+  display: flex;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  max-height: 160px;
+  min-height: 60px;
+  width: 284px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-width: 200px;
+  cursor: default;
+  border: 1px solid #f1f1f1;
+
+  .cellSuggest {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    pointer-events: none;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 0;
+    margin-bottom: 2px;
+    cursor: pointer;
+  }
+
+  .cellSuggest.suggested {
+    font-weight: bold;
+  }
+
+  .normal {
+    background-color: $ribbonGrey;
+  }
+
+  .good {
+    background-color: $ribbonGrey;
+  }
+
+  .warning {
+    background-color: lighten(#e0d490, 80%);
+  }
+
+  .error {
+    background-color: lighten(#b36666, 60%);
+  }
+
+  .active {
+    pointer-events: all !important;
+    cursor: pointer;
+  }
+
+  .active:hover {
+    background-color: #ef8822;
+    color: white;
+    cursor: pointer;
+  }
+
+  .activeKeyboardSelected {
+    background-color: #ef8822;
+    color: white;
+  }
+
+  .cellSuggestLast {
+    border: none;
+  }
+
+  .cellUntag {
+    background-color: blue !important;
+    border: none;
+    color: white;
+  }
+
+}
+
+.cellSuggestContainer::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.cellSuggestContainer::-webkit-scrollbar:vertical {
+  width: 16px;
+}
+
+.cellSuggestContainer::-webkit-scrollbar:horizontal {
+  height: 16px;
+}
+
+.cellSuggestContainer::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(84, 164, 222, 1);
+}
+
+.cellSuggestContainer::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 8px;
+}

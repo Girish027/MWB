@@ -1,0 +1,721 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SettingsPageHeader /> Snapshots: should render correctly 1`] = `
+<SettingsPageHeader
+  app={
+    Object {
+      "notificationType": "success",
+      "serverMessage": "model built",
+    }
+  }
+  clientId=""
+  dispatch={[Function]}
+  history={Object {}}
+  itsURL=""
+  match={Object {}}
+  selectedClient={Object {}}
+  selectedProject={Object {}}
+>
+  <withTheme(PageHeader)
+    breadcrumb={
+      Array [
+        Object {
+          "data-route": undefined,
+          "itsurl": "?clientid=&appid=",
+          "label": "Overview",
+          "onClick": [Function],
+          "value": "Overview",
+        },
+      ]
+    }
+    title="Preferences"
+  >
+    <PageHeader
+      breadcrumb={
+        Array [
+          Object {
+            "data-route": undefined,
+            "itsurl": "?clientid=&appid=",
+            "label": "Overview",
+            "onClick": [Function],
+            "value": "Overview",
+          },
+        ]
+      }
+      onBackClick={[Function]}
+      showBackButton={false}
+      styleOverride={Object {}}
+      subtitle=""
+      tfsStyle={
+        Object {
+          "pageHeader": Object {
+            "breadcrumb": Object {
+              "color": "#9E9E9E",
+              "display": "inline-block",
+              "fontFamily": "Lato",
+              "fontSize": "13px",
+              "marginBottom": "5px",
+            },
+            "breadcrumbHover": Object {
+              "color": "#003467",
+              "cursor": "pointer",
+            },
+            "chevronIcon": Object {
+              "cursor": "pointer",
+              "display": "inline-flex",
+              "marginRight": "3px",
+            },
+            "secondaryNavBar": Object {
+              "alignItems": "center",
+              "background": "#F6F7F8",
+              "borderBottom": "1px solid #DADADD",
+              "display": "flex",
+              "flexGrow": 1,
+              "height": "60px",
+              "justifyContent": "space-between",
+              "paddingLeft": "30px",
+            },
+            "statusNotificationContainer": Object {
+              "alignItems": "center",
+              "display": "inline-flex",
+              "justifyContent": "center",
+              "left": "0px",
+              "padding": "20px 0",
+              "pointerEvents": "none",
+              "position": "absolute",
+              "right": "0px",
+              "top": "0px",
+            },
+            "statusNotificationContent": Object {
+              "color": "#4A90E2",
+              "display": "inline-block",
+              "fontSize": "13px",
+              "fontWeight": "normal",
+              "lineHeight": "20px",
+              "padding": "0px 0px 0px 8px",
+            },
+            "subtitle": Object {
+              "color": "#9E9E9E",
+              "fontFamily": "Lato",
+              "fontSize": "13px",
+              "marginTop": "5px",
+            },
+            "title": Object {
+              "color": "#313F54",
+              "fontFamily": "Lato",
+              "fontSize": "20px",
+              "fontWeight": "bold",
+            },
+          },
+        }
+      }
+      title="Preferences"
+    >
+      <div
+        data-radium={true}
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#F6F7F8",
+            "borderBottom": "1px solid #DADADD",
+            "display": "flex",
+            "flexGrow": 1,
+            "height": "60px",
+            "justifyContent": "space-between",
+            "paddingLeft": "30px",
+          }
+        }
+      >
+        <div
+          data-radium={true}
+          key=".0"
+        >
+          <div
+            data-radium={true}
+            key=".0"
+            style={Object {}}
+          >
+            <withTheme(Breadcrumb)
+              items={
+                Array [
+                  Object {
+                    "data-route": undefined,
+                    "itsurl": "?clientid=&appid=",
+                    "label": "Overview",
+                    "onClick": [Function],
+                    "value": "Overview",
+                  },
+                ]
+              }
+              styleOverride={Object {}}
+            >
+              <Breadcrumb
+                items={
+                  Array [
+                    Object {
+                      "data-route": undefined,
+                      "itsurl": "?clientid=&appid=",
+                      "label": "Overview",
+                      "onClick": [Function],
+                      "value": "Overview",
+                    },
+                  ]
+                }
+                onKeyDown={[Function]}
+                styleOverride={Object {}}
+                tfsStyle={
+                  Object {
+                    "pageHeader": Object {
+                      "breadcrumb": Object {
+                        "color": "#9E9E9E",
+                        "display": "inline-block",
+                        "fontFamily": "Lato",
+                        "fontSize": "13px",
+                        "marginBottom": "5px",
+                      },
+                      "breadcrumbHover": Object {
+                        "color": "#003467",
+                        "cursor": "pointer",
+                      },
+                      "chevronIcon": Object {
+                        "cursor": "pointer",
+                        "display": "inline-flex",
+                        "marginRight": "3px",
+                      },
+                      "secondaryNavBar": Object {
+                        "alignItems": "center",
+                        "background": "#F6F7F8",
+                        "borderBottom": "1px solid #DADADD",
+                        "display": "flex",
+                        "flexGrow": 1,
+                        "height": "60px",
+                        "justifyContent": "space-between",
+                        "paddingLeft": "30px",
+                      },
+                      "statusNotificationContainer": Object {
+                        "alignItems": "center",
+                        "display": "inline-flex",
+                        "justifyContent": "center",
+                        "left": "0px",
+                        "padding": "20px 0",
+                        "pointerEvents": "none",
+                        "position": "absolute",
+                        "right": "0px",
+                        "top": "0px",
+                      },
+                      "statusNotificationContent": Object {
+                        "color": "#4A90E2",
+                        "display": "inline-block",
+                        "fontSize": "13px",
+                        "fontWeight": "normal",
+                        "lineHeight": "20px",
+                        "padding": "0px 0px 0px 8px",
+                      },
+                      "subtitle": Object {
+                        "color": "#9E9E9E",
+                        "fontFamily": "Lato",
+                        "fontSize": "13px",
+                        "marginTop": "5px",
+                      },
+                      "title": Object {
+                        "color": "#313F54",
+                        "fontFamily": "Lato",
+                        "fontSize": "20px",
+                        "fontWeight": "bold",
+                      },
+                    },
+                  }
+                }
+              >
+                <div
+                  data-radium={true}
+                >
+                  <div
+                    data-radium={true}
+                    key=".$Overview"
+                    style={
+                      Object {
+                        "color": "#9E9E9E",
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <div
+                      data-radium={true}
+                      key=".$Overview"
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      role="presentation"
+                      style={
+                        Object {
+                          "color": "#9E9E9E",
+                          "display": "inline-block",
+                          "fontFamily": "Lato",
+                          "fontSize": "13px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Overview
+                    </div>
+                     
+                    / 
+                  </div>
+                </div>
+              </Breadcrumb>
+            </withTheme(Breadcrumb)>
+          </div>
+          <div
+            data-radium={true}
+            key=".1"
+            style={
+              Object {
+                "color": "#313F54",
+                "fontFamily": "Lato",
+                "fontSize": "20px",
+                "fontWeight": "bold",
+              }
+            }
+          >
+            <withTheme(Label)
+              onBackClick={[Function]}
+              showBackButton={false}
+              title="Preferences"
+            >
+              <Label
+                onBackClick={[Function]}
+                showBackButton={false}
+                styleOverride={Object {}}
+                tfsStyle={
+                  Object {
+                    "pageHeader": Object {
+                      "breadcrumb": Object {
+                        "color": "#9E9E9E",
+                        "display": "inline-block",
+                        "fontFamily": "Lato",
+                        "fontSize": "13px",
+                        "marginBottom": "5px",
+                      },
+                      "breadcrumbHover": Object {
+                        "color": "#003467",
+                        "cursor": "pointer",
+                      },
+                      "chevronIcon": Object {
+                        "cursor": "pointer",
+                        "display": "inline-flex",
+                        "marginRight": "3px",
+                      },
+                      "secondaryNavBar": Object {
+                        "alignItems": "center",
+                        "background": "#F6F7F8",
+                        "borderBottom": "1px solid #DADADD",
+                        "display": "flex",
+                        "flexGrow": 1,
+                        "height": "60px",
+                        "justifyContent": "space-between",
+                        "paddingLeft": "30px",
+                      },
+                      "statusNotificationContainer": Object {
+                        "alignItems": "center",
+                        "display": "inline-flex",
+                        "justifyContent": "center",
+                        "left": "0px",
+                        "padding": "20px 0",
+                        "pointerEvents": "none",
+                        "position": "absolute",
+                        "right": "0px",
+                        "top": "0px",
+                      },
+                      "statusNotificationContent": Object {
+                        "color": "#4A90E2",
+                        "display": "inline-block",
+                        "fontSize": "13px",
+                        "fontWeight": "normal",
+                        "lineHeight": "20px",
+                        "padding": "0px 0px 0px 8px",
+                      },
+                      "subtitle": Object {
+                        "color": "#9E9E9E",
+                        "fontFamily": "Lato",
+                        "fontSize": "13px",
+                        "marginTop": "5px",
+                      },
+                      "title": Object {
+                        "color": "#313F54",
+                        "fontFamily": "Lato",
+                        "fontSize": "20px",
+                        "fontWeight": "bold",
+                      },
+                    },
+                  }
+                }
+                title="Preferences"
+              >
+                <div
+                  data-radium={true}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "display": "flex",
+                    }
+                  }
+                >
+                  Preferences
+                </div>
+              </Label>
+            </withTheme(Label)>
+          </div>
+        </div>
+        <withTheme(ToastNotification)
+          key=".1"
+          styleOverride={
+            Object {
+              "display": "inline-block",
+              "fontSize": "13px",
+              "fontWeight": "normal",
+              "lineHeight": "20px",
+              "padding": "0px 8px",
+              "top": "4px",
+              "width": "40%",
+            }
+          }
+          type="success"
+        >
+          <ToastNotification
+            styleOverride={
+              Object {
+                "display": "inline-block",
+                "fontSize": "13px",
+                "fontWeight": "normal",
+                "lineHeight": "20px",
+                "padding": "0px 8px",
+                "top": "4px",
+                "width": "40%",
+              }
+            }
+            tfsStyle={
+              Object {
+                "toastNotification": Object {
+                  "container": Object {
+                    "borderRadius": "5px",
+                    "fontWeight": "bold",
+                    "left": "0px",
+                    "margin": "0 auto",
+                    "padding": "10px",
+                    "position": "absolute",
+                    "right": "0px",
+                    "textAlign": "center",
+                    "top": "50px",
+                    "width": "40%",
+                  },
+                  "default": Object {
+                    "backgroundColor": "#4A90E214",
+                    "border": "1px solid #4A90E2",
+                    "color": "#4A90E2",
+                  },
+                  "error": Object {
+                    "backgroundColor": "#C8191914",
+                    "border": "1px solid #C81919",
+                    "color": "#C81919",
+                  },
+                  "icon": Object {
+                    "marginTop": "-5px",
+                    "verticalAlign": "middle",
+                  },
+                  "success": Object {
+                    "backgroundColor": "#00AC8614",
+                    "border": "1px solid #00AC86",
+                    "color": "#00AC86",
+                  },
+                },
+              }
+            }
+            type="success"
+          >
+            <div
+              data-radium={true}
+              style={
+                Object {
+                  "backgroundColor": "#00AC8614",
+                  "border": "1px solid #00AC86",
+                  "borderRadius": "5px",
+                  "color": "#00AC86",
+                  "display": "inline-block",
+                  "fontSize": "13px",
+                  "fontWeight": "normal",
+                  "left": "0px",
+                  "lineHeight": "20px",
+                  "margin": "0 auto",
+                  "padding": "0px 8px",
+                  "position": "absolute",
+                  "right": "0px",
+                  "textAlign": "center",
+                  "top": "4px",
+                  "width": "40%",
+                }
+              }
+            >
+              <SuccessIcon
+                fill="#00ac86"
+                height="16px"
+                key=".0"
+                styleOverride={Object {}}
+                width="16px"
+              >
+                <svg
+                  height="16px"
+                  style={Object {}}
+                  viewBox="0 0 16 16"
+                  width="16px"
+                >
+                  <path
+                    d="M29,22a8,8,0,1,0,8,8A8,8,0,0,0,29,22ZM27.5,34.1,24,30.6l1.2-1.2,2.3,2.3,5.3-5.3L34,27.6Z"
+                    fill="#00ac86"
+                    transform="translate(-21 -22)"
+                  />
+                </svg>
+              </SuccessIcon>
+              <div
+                data-radium={true}
+                key=".1"
+                role="presentation"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "marginLeft": "10px",
+                  }
+                }
+              >
+                model built
+                <withTheme(Button)
+                  key=".$.1"
+                  onClick={[Function]}
+                  styleOverride={
+                    Object {
+                      ":focus": Object {
+                        "outline": "none",
+                      },
+                      ":hover": Object {
+                        "boxShadow": "none",
+                      },
+                      "marginLeft": "10px",
+                    }
+                  }
+                  type="flat"
+                >
+                  <Button
+                    disabled={false}
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    styleOverride={
+                      Object {
+                        ":focus": Object {
+                          "outline": "none",
+                        },
+                        ":hover": Object {
+                          "boxShadow": "none",
+                        },
+                        "marginLeft": "10px",
+                      }
+                    }
+                    tabIndex={0}
+                    tfsStyle={
+                      Object {
+                        "button": Object {
+                          "base": Object {
+                            ":focus": Object {
+                              "outline": "2px solid #009CDE",
+                            },
+                            "border": "1px solid transparent",
+                            "borderRadius": "4px",
+                            "cursor": "pointer",
+                            "fontSize": "13px",
+                            "fontWeight": 600,
+                            "minHeight": "35px",
+                            "minWidth": "100px",
+                            "outlineOffset": "2px",
+                            "paddingLeft": "20px",
+                            "paddingRight": "20px",
+                            "wordBreak": "normal",
+                          },
+                          "disabled": Object {
+                            "cursor": "not-allowed",
+                            "flat": Object {
+                              "color": "#666666",
+                            },
+                            "primary": Object {
+                              "backgroundColor": "#E0E0E0",
+                              "color": "#666666",
+                            },
+                            "secondary": Object {
+                              "border": "2px solid #E0E0E0",
+                              "color": "#666666",
+                            },
+                          },
+                          "flat": Object {
+                            ":active": Object {
+                              "color": "#004C97",
+                            },
+                            ":hover": Object {
+                              "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                              "color": "#336FAB",
+                            },
+                            "backgroundColor": "transparent",
+                            "color": "#000000",
+                            "minWidth": "auto",
+                            "paddingLeft": "10px",
+                            "paddingRight": "10px",
+                          },
+                          "primary": Object {
+                            ":active": Object {
+                              "backgroundColor": "#336FAB",
+                              "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                              "color": "#FFFFFF",
+                            },
+                            ":hover": Object {
+                              "backgroundColor": "#336FAB",
+                              "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                              "color": "#FFFFFF",
+                            },
+                            "backgroundColor": "#004C97",
+                            "color": "#FFFFFF",
+                          },
+                          "secondary": Object {
+                            ":active": Object {
+                              "border": "2px solid #336FAB",
+                              "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                              "color": "#336FAB",
+                            },
+                            ":hover": Object {
+                              "border": "2px solid #336FAB",
+                              "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                              "color": "#336FAB",
+                            },
+                            "backgroundColor": "#FFFFFF",
+                            "border": "2px solid #004C97",
+                            "color": "#004C97",
+                          },
+                        },
+                      }
+                    }
+                    type="flat"
+                  >
+                    <button
+                      data-radium={true}
+                      disabled={false}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "backgroundColor": "transparent",
+                          "border": "1px solid transparent",
+                          "borderRadius": "4px",
+                          "color": "#000000",
+                          "cursor": "pointer",
+                          "fontSize": "13px",
+                          "fontWeight": 600,
+                          "marginLeft": "10px",
+                          "minHeight": "35px",
+                          "minWidth": "auto",
+                          "outlineOffset": "2px",
+                          "paddingLeft": "10px",
+                          "paddingRight": "10px",
+                          "wordBreak": "normal",
+                        }
+                      }
+                      tabIndex={0}
+                      type="button"
+                    >
+                      <Xmark
+                        fill="#00ac86"
+                        height="1em"
+                        width="1em"
+                      >
+                        <svg
+                          height="1em"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                        >
+                          <path
+                            d="M.421 20.58a1.442 1.442 0 0 0 2.038 2.04l8.891-8.89a.242.242 0 0 1 .34 0l8.891 8.89a1.445 1.445 0 0 0 2.41-.64 1.46 1.46 0 0 0-.372-1.4l-8.891-8.89a.257.257 0 0 1-.071-.17.239.239 0 0 1 .071-.17l8.892-8.89A1.442 1.442 0 0 0 20.581.42L11.69 9.31a.242.242 0 0 1-.34 0L2.459.42A1.442 1.442 0 0 0 .421 2.46l8.891 8.89a.239.239 0 0 1 .071.17.257.257 0 0 1-.071.17z"
+                            data-name="remove"
+                            fill="#00ac86"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                      </Xmark>
+                    </button>
+                  </Button>
+                </withTheme(Button)>
+              </div>
+            </div>
+          </ToastNotification>
+        </withTheme(ToastNotification)>
+      </div>
+    </PageHeader>
+  </withTheme(PageHeader)>
+</SettingsPageHeader>
+`;
+
+exports[`<SettingsPageHeader /> Snapshots: should render correctly on with breadcrumbs 1`] = `
+<withTheme(PageHeader)
+  breadcrumb={
+    Array [
+      Object {
+        "data-route": undefined,
+        "itsurl": "?clientid=&appid=",
+        "label": "Overview",
+        "onClick": [Function],
+        "value": "Overview",
+      },
+    ]
+  }
+  title="Preferences"
+>
+  <withTheme(ToastNotification)
+    styleOverride={
+      Object {
+        "display": "inline-block",
+        "fontSize": "13px",
+        "fontWeight": "normal",
+        "lineHeight": "20px",
+        "padding": "0px 8px",
+        "top": "4px",
+        "width": "40%",
+      }
+    }
+    type="success"
+  >
+    model built
+    <withTheme(Button)
+      onClick={[Function]}
+      styleOverride={
+        Object {
+          ":focus": Object {
+            "outline": "none",
+          },
+          ":hover": Object {
+            "boxShadow": "none",
+          },
+          "marginLeft": "10px",
+        }
+      }
+      type="flat"
+    >
+      <Xmark
+        fill="#00ac86"
+        height="1em"
+        width="1em"
+      />
+    </withTheme(Button)>
+  </withTheme(ToastNotification)>
+</withTheme(PageHeader)>
+`;

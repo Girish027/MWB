@@ -1,0 +1,195 @@
+
+@import 'nltools/index';
+@import 'common/common';
+@import 'common/commonControls';
+@import 'common/commonGrid';
+@import 'common/commonForms';
+@import 'common/commonCollapsible';
+@import 'common/commonLayout';
+@import 'overrides/rc_dialog';
+@import 'overrides/react-textarea-autosize';
+@import 'projects/projects';
+@import 'tagging/progress/progress';
+@import 'datasets/datasetsOpen';
+@import 'datasets/datasetsCreate';
+@import 'grommet/grommet';
+@import 'grommet/menu-styles';
+@import 'tagging/index';
+@import 'taggingguide/taggingguide';
+@import 'models/index';
+@import 'consistency/consistencyReport';
+@import 'reports/reports';
+@import 'reactstrap/index';
+@import '../../../../node_modules/react-tabs/style/react-tabs';
+@import '../../../../node_modules/bootstrap-scss/bootstrap';
+@import "~react-vis/dist/style";
+@import "layout/main-layout";
+@import 'dialog/dialog'; // for Dialog. To be removed when only TFSUI Dialog are being used
+@import 'JsonForm/index';
+
+
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll !important;
+  font-family: 'LatoWeb', sans-serif;
+  font-style: 'normal';
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  font-family: 'LatoWeb', sans-serif;
+  font-style: 'normal';
+  line-height: 1;
+}
+
+// .taggerAppContainer {
+//   display: block;
+//   position: relative;
+//   height: 100%;
+//   width: auto;
+//   min-width: 1000px;
+// }
+
+:focus {
+  outline: none;
+  //border: none;
+}
+
+input:focus {
+  border: 1px solid #ddd;
+}
+
+textarea {
+  border: 1px solid #ddd;
+}
+
+textarea:focus {
+  border: 1px solid #ddd;
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.appName {
+  font-family: 'LatoWeb', sans-serif;
+  font-style: 'normal';
+  margin-top: 10px;
+  color: #206ba4;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover{
+  color: #003467;
+}
+
+//h2 {
+//    font-family: "Abel", Arial, sans-serif;
+//    margin-top: 10px;
+//    color: #206BA4;
+//}
+
+
+//h3 {
+//    color: #d2d2d2;
+//    font-family: "Open Sans", sans-serif;
+//}
+
+h4 {
+  /* font-family: "Abel", Arial, sans-serif;  */
+  color: #859aab;
+  font-family: 'LatoWeb', sans-serif;
+  font-style: 'normal';
+  font-size: 18px;
+}
+
+h5 {
+  color: #666;
+
+  /* font-family: "Open Sans", sans-serif;  */
+  font-size: 16px;
+}
+
+#dataset-filepicker .dz-message {
+  margin: 0;
+}
+
+#dataset-filepicker .filepicker-file-icon {
+  pointer-events: none;
+}
+
+#dataset-filepicker .dz-remove:hover {
+  color: #003467;
+}
+
+/* Filepicker & Grommet CSS */
+
+
+.projectNameFull {
+  width: 100%;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-clear {
+  clear: both;
+}
+
+.help-text {
+  font-style: italic;
+  line-height: normal;
+  font-size: smaller;
+  margin-bottom: 20px;
+}
+
+.indentation {
+  margin-left: 15px;
+}
+
+.overflow-wrap {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ddd;
+}
+

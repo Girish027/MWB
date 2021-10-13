@@ -1,0 +1,24 @@
+{
+  "title": "",
+  "type": "object",
+  "required": [
+    "name",
+    "dropZone"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name",
+      "isRequired": true
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "optional": true
+    },
+    "dropZone": {
+      "type": "object",
+      "minLength": 1
+    }
+  }
+}

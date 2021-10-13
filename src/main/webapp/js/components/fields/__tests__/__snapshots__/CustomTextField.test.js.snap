@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomTextField /> Snapshots renders correctly for default props 1`] = `
+<div
+  style={
+    Object {
+      "field": Object {
+        "background": "#FFFFFF",
+        "border": "0px solid #DCE1E8",
+        "input": Object {
+          "fontSize": "14px",
+          "height": "35px",
+          "letterSpacing": 0,
+          "textAlign": "left",
+        },
+        "width": "99%",
+      },
+      "label": Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "letterSpacing": 0,
+        "optionalField": Object {
+          "color": "#A0A0A0",
+          "float": "right",
+          "fontSize": "14px",
+          "fontStyle": "italic",
+          "marginRight": "1%",
+          "opacity": 1,
+          "textAlign": "right",
+        },
+        "paddingBottom": "5px",
+        "textAlign": "left",
+      },
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "color": "#6E6E6E",
+          "fontSize": "14px",
+          "letterSpacing": 0,
+          "optionalField": Object {
+            "color": "#A0A0A0",
+            "float": "right",
+            "fontSize": "14px",
+            "fontStyle": "italic",
+            "marginRight": "1%",
+            "opacity": 1,
+            "textAlign": "right",
+          },
+          "paddingBottom": "5px",
+          "textAlign": "left",
+        }
+      }
+    >
+      Name
+    </span>
+  </div>
+  <div
+    style={
+      Object {
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    <withTheme(TextField)
+      maxLength={150}
+      minLength={5}
+      name="testName"
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Name this iteration"
+      styleOverride={
+        Object {
+          "background": "#FFFFFF",
+          "border": "0px solid #DCE1E8",
+          "input": Object {
+            "fontSize": "14px",
+            "height": "35px",
+            "letterSpacing": 0,
+            "textAlign": "left",
+          },
+          "width": "99%",
+        }
+      }
+    />
+  </div>
+</div>
+`;

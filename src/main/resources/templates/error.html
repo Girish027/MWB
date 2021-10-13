@@ -1,0 +1,25 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title th:if="${status}" th:text="${error}">error ...</title>
+	<title th:unless="${status}">Error</title>
+</head>
+
+<body>
+	<h1>Error</h1>
+
+	<p th:if="${status}">
+		<b>Response Status:</b> <span th:text="${status}">status-code</span> <span
+			th:if="${error}" th:text="'('+${error}+')'">error ...</span>
+	</p>
+
+	<div
+		th:if="${message} and ${message.length() != 0}">
+		<span th:if="${message} and ${message.length() != 0}"
+			th:text="${message}">message ...</span>
+	</div>
+
+</body>
+</html>

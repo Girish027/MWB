@@ -1,0 +1,1 @@
+ALTER TABLE models ADD digital_hosted_url varchar(250) DEFAULT NULL;

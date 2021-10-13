@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TaggerGrid /> Snapshots renders correctly for default props 1`] = `
+<div
+  className="TaggerGrid"
+>
+  <Connect(Grid)
+    cursor="ssdfd"
+  />
+</div>
+`;
+
+exports[`<TaggerGrid /> Snapshots renders correctly for default props with className 1`] = `
+<div
+  className="TaggerGrid fff"
+>
+  <Connect(Grid)
+    cursor="ssdfd"
+  />
+</div>
+`;

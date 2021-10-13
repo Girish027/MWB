@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModelTestTransformsGrid Snapshots renders correctly for modelTestEntities table 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Rank",
+        "accessor": "rank",
+        "id": "Rank",
+        "maxWidth": 200,
+      },
+      Object {
+        "Header": "Transformation",
+        "accessor": "id",
+      },
+      Object {
+        "Header": "Result",
+        "accessor": "result",
+      },
+    ]
+  }
+  data={Array []}
+  defaultPageSize={100}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": false,
+        "id": "Rank",
+      },
+    ]
+  }
+  id="ModelTestTransformsGrid"
+  resizable={true}
+  showPagination={false}
+/>
+`;

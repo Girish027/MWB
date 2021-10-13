@@ -1,0 +1,57 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: CSRF Token
+  description: CSRF Token APIs
+host: localhost:10010
+basePath: /v1
+schemes:
+  - http
+produces:
+  - text/plain
+paths:
+  /csrftoken:
+    x-swagger-router-controller: files
+    get:
+      tags:
+        - get
+      summary: Get the CSRF token for the session
+      operationId: getCSRFToken
+      responses:
+        200:
+          description: The CSRF token for the session
+          schema:
+            $ref: "#/definitions/CSRFToken"
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  CSRFToken:
+    discriminator: value
+    type: object
+    required:
+      - value
+    properties:
+      value:
+        type: string
+        description: The CSRF Token String
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code: 
+        type: string
+        description: Error category 
+      message:
+        type: string
+        description: Error message shown in api response
+

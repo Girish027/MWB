@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModelTestEntitiesGrid Snapshots renders correctly for modelTestEntities table 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Header": "Name",
+        "accessor": "name",
+        "id": "Name",
+      },
+      Object {
+        "Header": "Value",
+        "accessor": "value",
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": false,
+        "id": "Name",
+      },
+    ]
+  }
+  id="ModelTestEntitiesGrid"
+  resizable={true}
+  showPagination={false}
+/>
+`;

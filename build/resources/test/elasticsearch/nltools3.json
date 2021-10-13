@@ -1,0 +1,246 @@
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 1,
+    "index.requests.cache.enable": true,
+    "analysis": {
+      "analyzer": {
+        "analyzer_keyword": {
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "_default_": {
+      "_meta": {
+        "schemaVersion": "schema1"
+      },
+      "dynamic_templates": [{
+        "message_field": {
+          "match": "message",
+          "match_mapping_type": "text",
+          "mapping": {
+            "type": "text",
+            "norms": false
+          }
+        }
+      },
+        {
+          "double_fields": {
+            "match": "*",
+            "match_mapping_type": "double",
+            "mapping": {
+              "type": "double",
+              "doc_values": true
+            }
+          }
+        },{
+          "integer_fields": {
+            "match": "*",
+            "match_mapping_type": "integer",
+            "mapping": {
+              "type": "integer",
+              "doc_values": true
+            }
+          }
+        }, {
+          "long_fields": {
+            "match": "*",
+            "match_mapping_type": "long",
+            "mapping": {
+              "type": "long",
+              "doc_values": true
+            }
+          }
+        }, {
+          "date_fields": {
+            "match": "*",
+            "match_mapping_type": "date",
+            "mapping": {
+              "type": "date",
+              "doc_values": true,
+              "ignore_malformed": true
+            }
+          }
+        }
+      ],
+      "properties": {
+        "uuid": {
+          "type": "keyword",
+          "norms": false
+        },
+        "clientId": {
+          "type": "integer",
+          "doc_values": true
+        },
+        "projectId": {
+          "type": "integer",
+          "doc_values": true
+        },
+        "datasetId": {
+          "type": "keyword",
+          "norms": false
+        },
+        "jobId": {
+          "type": "text",
+          "norms": false
+        },
+        "dataset": {
+          "type": "text",
+          "norms": false
+        },
+        "dataType": {
+          "type": "text",
+          "norms": false
+        },
+        "vertical": {
+          "type": "text",
+          "norms": false
+        },
+        "collectedAt": {
+          "type": "date",
+          "index": "not_analyzed",
+          "doc_values": true,
+          "ignore_malformed": true
+        },
+        "filename": {
+          "type": "text",
+          "norms": false
+        },
+        "filesize": {
+          "type": "integer",
+          "doc_values": true,
+          "ignore_malformed": true
+        },
+        "sessionId": {
+          "type": "text",
+          "norms": false
+        },
+        "ani": {
+          "type": "text",
+          "norms": false
+        },
+        "dnis": {
+          "type": "text",
+          "norms": false
+        },
+        "node": {
+          "type": "text",
+          "norms": false
+        },
+        "audio": {
+          "type": "text",
+          "norms": false
+        },
+        "intent": {
+          "type": "text",
+          "fielddata":true,
+          "analyzer": "analyzer_keyword",
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        },
+        "inheritedIntent": {
+          "type": "text",
+          "norms": false
+        },
+        "rutag": {
+          "type": "text",
+          "norms": false
+        },
+        "taggedAt": {
+          "type": "date",
+          "format": "epoch_millis",
+          "doc_values": true
+        },
+        "taggedBy": {
+          "type": "text",
+          "norms": false
+        },
+        "deletedBy": {
+          "type": "text",
+          "norms": false
+        },
+        "deletedAt": {
+          "type": "date",
+          "format": "epoch_millis",
+          "doc_values": true
+        },
+        "num_tokens": {
+          "type": "integer",
+          "doc_values": true
+        },
+        "autoTagCount": {
+          "type": "integer",
+          "doc_values": true
+        },
+        "autoTagStr": {
+          "type": "text",
+          "norms": false
+        },
+        "autoTag": {
+          "type": "text",
+          "norms": false
+        },
+        "transcriptionRaw": {
+          "type": "text",
+          "norms": false
+        },
+        "transcriptionHash": {
+          "type": "keyword",
+          "norms": false
+        },
+        "textStringForTagging": {
+          "type": "text",
+          "norms": false
+        },
+        "textStringOriginal": {
+          "type": "text",
+          "norms": false
+        },
+        "documentType": {
+          "type": "keyword",
+          "norms": false,
+          "index": true
+
+        },
+        "documentId": {
+          "type": "text",
+          "norms": false
+        },
+        "@timestamp": {
+          "type": "date",
+          "doc_values": true
+        },
+        "@version": {
+          "type": "text",
+          "norms": false
+        },
+        "commentedAt": {
+          "type": "date",
+          "format": "epoch_millis",
+          "doc_values": true
+        },
+        "commentedBy": {
+          "type": "text",
+          "norms": false
+        },
+        "comment": {
+          "type": "text",
+          "norms": false,
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}

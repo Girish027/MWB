@@ -1,0 +1,10 @@
+dataset,date,filename,transcription,test,RU tag
+0_2K,03.30.2015,00005151371426429124.wav,ich kann mein ebay-programm nicht Ùber mein handy aufrufen,ich kann mein ebayprogramm nicht Ùber mein handy aufrufen,mobile-get_help
+0_2K,03.30.2015,00005151371427187059.wav,umm [side_speech] ein problem wurde ge_ffnet das Ùberhaupt nicht besteht [side_speech],umm ein problem wurde ge_ffnet das Ùberhaupt nicht besteht,other-query
+0_2K,03.30.2015,00005151371427617906.wav,[side_speech] ich habe einen artikel eingestellt und m_chte eine zusatznachricht einstellen und du mÙssten sie mir kurz sagen wie das geht und da bitte ich mal um auskunft,ich habe einen artikel eingestellt und m_chte eine zusatznachricht einstellen und du mÙssten sie mir kurz sagen wie das geht und da bitte ich mal um auskunft,listing-get_help
+0_2K,03.30.2015,00005151381426879113.wav,ich brauche hilfe bei der rÙckgabe eines artikels,ich brauche hilfe bei der rÙckgabe eines artikels,returns-query
+0_2K,03.30.2015,00005151381427646875.wav,umm ja der computer meines mannes ist kaputt und ich wÙrde ihnen ganz gern mal die e-m-((ail)) die die die zugangsnummer neunzehn dieter sowieso [side_speech] nennen benutzername nennen weil da wahrscheinlich die daten drauf sind,umm ja der computer meines mannes ist kaputt und ich wÙrde ihnen ganz gern mal die die die die zugangsnummer neunzehn dieter sowieso nennen benutzername nennen weil da wahrscheinlich die daten drauf sind,account-vague
+0_2K,03.30.2015,00005151401426841710.wav,uh ich kann keinen fall _ffnen und das m_cht ich gerne tun,uh ich kann keinen fall _ffnen und das m_cht ich gerne tun,case-open
+0_2K,03.30.2015,00005151401427032100.wav,[noise] artikel verkauft,artikel verkauft,item_sold-query
+0_2K,03.30.2015,00005151401427122742.wav,ich wurde aufgefordert meinen uh einen artikel zurÙckzunehmen wobei der k_ufer [noise] ihn selber zur zeit im internet mit meinen daten anbietet,ich wurde aufgefordert meinen uh einen artikel zurÙckzunehmen wobei der k_ufer ihn selber zur zeit im internet mit meinen daten anbietet,online-get_help
+0_2K,03.30.2015,00005151411426184024.wav,negative meldung,negative meldung,feedback-get_help

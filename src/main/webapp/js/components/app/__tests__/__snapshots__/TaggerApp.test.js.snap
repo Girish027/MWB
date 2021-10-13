@@ -1,0 +1,398 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TaggerApp /> Snapshots renders correctly when status completed 1`] = `
+<Connect(TaggerApp)
+  app={
+    Object {
+      "contextMenuState": Object {
+        "type": "default",
+      },
+      "modalDialogState": Object {
+        "type": "",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getContextMenu should render getContextMenu correctly 1`] = `
+<Connect(TaggerApp)
+  app={
+    Object {
+      "contextMenuState": Object {
+        "type": "default",
+      },
+      "modalDialogState": Object {
+        "type": "",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render AddIntentDialog component according to relevant modalDialogState type 1`] = `
+<AddIntentDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "AddIntentDialog",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  onClickAdd={[Function]}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+  validateData={[Function]}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render ColumnSelectorDialog component according to relevant modalDialogState type 1`] = `
+<ColumnSelectorDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "ColumnSelectorDialog",
+      },
+    }
+  }
+  columnData={Object {}}
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  localStorageKey=""
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render CreateDatasetDialog component according to relevant modalDialogState type 1`] = `
+<Connect(CreateDatasetDialog)
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "CreateDatasetDialog",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render CreateModelDialog component according to relevant modalDialogState type 1`] = `
+<CreateModelDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "CreateModelDialog",
+      },
+    }
+  }
+  closeIconVisible={true}
+  dispatch={[MockFunction]}
+  environment="test"
+  errorType=""
+  formData={Object {}}
+  header=""
+  history={Array []}
+  onClickClose={[Function]}
+  onClickOk={[Function]}
+  routeAppId=""
+  routeClientId=""
+  size="large"
+  styleOverride={Object {}}
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render DatasetColumnMapperDialog component according to relevant modalDialogState type 1`] = `
+<DatasetColumnMapperDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "DatasetColumnMapperDialog",
+      },
+    }
+  }
+  createDatasetDialog={Object {}}
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  onOk={[Function]}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render DatasetDialog component according to relevant modalDialogState type 1`] = `
+<DatasetDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "DatasetDialog",
+      },
+    }
+  }
+  closeIconVisible={true}
+  dispatch={[MockFunction]}
+  environment="test"
+  errorType=""
+  formData={Object {}}
+  header=""
+  history={Array []}
+  onClickClose={[Function]}
+  onClickOk={[Function]}
+  project={Object {}}
+  routeAppId=""
+  routeClientId=""
+  size="large"
+  styleOverride={Object {}}
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render DeleteDialog component according to relevant modalDialogState type 1`] = `
+<DeleteDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "DeleteDialog",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  message=""
+  ok="DELETE"
+  routeAppId=""
+  routeClientId=""
+  size="small"
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render LinkDialog component according to relevant modalDialogState type 1`] = `
+<LinkDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "LinkDialog",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  onClickCancel={[Function]}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render ProgressDialog component according to relevant modalDialogState type 1`] = `
+<ProgressDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "ProgressDialog",
+      },
+    }
+  }
+  cancelChildren=""
+  cancelVisible={false}
+  closeIconVisible={false}
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  message=""
+  okChildren=""
+  okVisible={false}
+  onOk={[Function]}
+  routeAppId=""
+  routeClientId=""
+  showFooter={false}
+  showHeader={false}
+  showSpinner={true}
+  string=""
+  styleOverride={
+    Object {
+      "childContainer": Object {
+        "margin": "auto",
+      },
+    }
+  }
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render PromoteDialog component according to relevant modalDialogState type 1`] = `
+<PromoteDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "PromoteDialog",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  onClickCancel={[Function]}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render RecordSpeechDialog component according to relevant modalDialogState type 1`] = `
+<RecordSpeechDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "RecordSpeechDialog",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  onClickRunTest={[Function]}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render SimpleDialog component according to relevant modalDialogState type 1`] = `
+<SimpleDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "SimpleDialog",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render SpeechSelectDatasetDialog component according to relevant modalDialogState type 1`] = `
+<SpeechSelectDatasetDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "SpeechSelectDatasetDialog",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render TaggingGuideImportDialog component according to relevant modalDialogState type 1`] = `
+<Connect(withRouter(TaggingGuideImportDialog))
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "TaggingGuideImportDialog",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render UnauthorizedUserDialog component according to relevant modalDialogState type 1`] = `
+<UnauthorizedUserDialog
+  app={
+    Object {
+      "modalDialogState": Object {
+        "type": "UnauthorizedUserDialog",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  message="User is not authorized to access any workspace. Please contact your admin."
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;
+
+exports[`<TaggerApp /> getModalDialog should render getModalDialog correctly 1`] = `
+<Connect(TaggerApp)
+  app={
+    Object {
+      "contextMenuState": Object {
+        "type": "default",
+      },
+      "modalDialogState": Object {
+        "type": "",
+      },
+    }
+  }
+  dispatch={[MockFunction]}
+  environment="test"
+  header=""
+  history={Array []}
+  routeAppId=""
+  routeClientId=""
+  userFeatureConfiguration={Object {}}
+/>
+`;

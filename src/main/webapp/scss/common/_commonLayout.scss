@@ -1,0 +1,24 @@
+@import '../vars/vars';
+
+.row-divider {
+  width: 100%;
+  height: 1px;
+  background-color: $dividerColor;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tab-divider {
+  width: 100%;
+  height: 1px;
+  background-color: $dividerColor;
+  margin-top: -30px;
+}
+
+.column-divider {
+
+}
+
+.menu-separator {
+  color: $dividerColor;
+}

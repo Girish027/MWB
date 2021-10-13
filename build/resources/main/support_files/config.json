@@ -1,0 +1,376 @@
+{
+  "version": "1.0.0",
+  "name": "MWB-Default",
+  "description": "Modeling Workbench default configs used for model building",
+  "transformations": [
+    {
+      "non-breaking-space-regex": {
+        "type": "regex-replace",
+        "mappings": {
+          "/\\xao/i": " "
+        }
+      }
+    },
+    "whitespace-normalization",
+    {
+      "chat-shortcuts": {
+        "type": "stems-nocase",
+        "mappings": {
+          "2moro": "Tomorrow",
+          "2nite": "Tonight",
+          "BRB": "Be Right Back",
+          "BTW": "By The Way",
+          "B4N": "Bye For Now",
+          "BCNU": "Be Seeing You",
+          "BFF": "Best Friends Forever",
+          "CYA": "See Ya",
+          "DBEYR": "Don't Believe Everything You Read",
+          "DILLIGAS": "Do I Look Like I Give A Shit",
+          "FUD": "Fear Uncertainty and Disinformation",
+          "FWIW": "For What It's Worth",
+          "GR8": "Great",
+          "ILY": "I Love You",
+          "IMHO": "In My Humble Opinion",
+          "IRL": "In Real Life",
+          "ISO": "In Search Of",
+          "J/K": "Just Kidding",
+          "L8R": "Later",
+          "LMAO": "Laughing My Ass Off",
+          "LOL": "Laughing Out Loud",
+          "LYLAS": "Love You Like A Sister",
+          "MHOTY": "My Hat's Off To You",
+          "NIMBY": "Not In My Back Yard",
+          "NP": "No Problem",
+          "NUB": "New person to a site or game",
+          "OIC": "Oh I See",
+          "OMG": "Oh My God",
+          "OT": "Off Topic",
+          "POV": "Point Of View",
+          "RBTL": "Read Between The Lines",
+          "ROTFLMAO": "Rolling On The Floor Laughing My Ass Off",
+          "RT": "ReTweet",
+          "THX": "Thanks",
+          "TX": "Thanks",
+          "THKS": "Thanks",
+          "SH": "Shit Happens",
+          "SITD": "Still In The Dark",
+          "SOL": "Shit Out of Luck",
+          "STBY": "Sucks To Be You",
+          "SWAK": "Sent With A Kiss",
+          "TFH": "Thread From Hell",
+          "RTM": "Read The Manual",
+          "RTFM": "Read The Fucking Manual",
+          "TLC": "Tender Loving Care",
+          "TMI": "Too Much Information",
+          "TTYL": "Talk To You Later",
+          "TYVM": "Thank You Very Much",
+          "VBG": "Very Big Grin",
+          "WEG": "Wicked Evil Grin",
+          "WTF": "What The Fuck",
+          "WYWH": "Wish You Were Here",
+          "XOXO": "Hugs and Kisses"
+        }
+      }
+    },
+    {
+      "word-substitutions": {
+        "type": "stems",
+        "mappings": {
+          "_class_debit_card's": "_class_debit_card is",
+          "account's": "account",
+          "advisor's": "advisor",
+          "ain't": "am not",
+          "aren't": "are not",
+          "'em": "them",
+          "can't": "cannot",
+          "card's": "card is",
+          "cashier's": "cashier",
+          "check's": "check is",
+          "couldn't": "could not",
+          "deposit's": "deposit",
+          "didn't": "did not",
+          "doesn't": "does not",
+          "don't": "do not",
+          "hadn't": "had not",
+          "hasn't": "has not",
+          "haven't": "have not",
+          "he'd": "he would",
+          "he'll": "he will",
+          "he's": "he has",
+          "i'd": "i would",
+          "i'll": "i will",
+          "i'm": "i am",
+          "i've": "i have",
+          "isn't": "is not",
+          "it's": "it is",
+          "let's": "let us",
+          "mightn't": "might not",
+          "mustn't": "must not",
+          "o'clock": "clock",
+          "shan't": "shall not",
+          "she'd": "she would",
+          "she'll": "she will",
+          "she's": "she is",
+          "shouldn't": "should not",
+          "somebody's": "somebody is",
+          "that's": "that is",
+          "there's": "there is",
+          "they'd": "they would",
+          "they'll": "they will",
+          "they're": "they are",
+          "they've": "they have",
+          "today's": "today",
+          "transaction's": "transaction has",
+          "wasn't": "was not",
+          "we'd": "we would",
+          "we'll": "we will",
+          "we're": "we are",
+          "we've": "we have",
+          "weren't": "were not",
+          "what'll": "what will",
+          "what're": "what are",
+          "what's": "what is",
+          "what've": "what have",
+          "when'll": "when will",
+          "when's": "when is",
+          "where's": "where is",
+          "who'd": "who would",
+          "who'll": "who will",
+          "who're": "who are",
+          "who's": "who is",
+          "who've": "who have",
+          "won't": "will not",
+          "wouldn't": "would not",
+          "y'all": "you all",
+          "ya'all": "you all",
+          "you'd": "you would",
+          "you'll": "you will",
+          "you're": "you are",
+          "you've": "you have",
+          "aint": "am not",
+          "arent": "are not",
+          "em": "them",
+          "cant": "cannot",
+          "couldnt": "could not",
+          "didnt": "did not",
+          "doesnt": "does not",
+          "dont": "do not",
+          "hadnt": "had not",
+          "hasnt": "has not",
+          "havent": "have not",
+          "im": "i am",
+          "ive": "i have",
+          "isnt": "is not",
+          "its": "it is",
+          "lets": "let us",
+          "mightnt": "might not",
+          "mustnt": "must not",
+          "oclock": "clock",
+          "shant": "shall not",
+          "shouldnt": "should not",
+          "thats": "that is",
+          "theres": "there is",
+          "theyd": "they would",
+          "theyll": "they will",
+          "theyre": "they are",
+          "theyve": "they have",
+          "wasnt": "was not",
+          "weve": "we have",
+          "werent": "were not",
+          "whatll": "what will",
+          "whatre": "what are",
+          "whats": "what is",
+          "whatve": "what have",
+          "whenll": "when will",
+          "whens": "when is",
+          "wheres": "where is",
+          "whod": "who would",
+          "wholl": "who will",
+          "whos": "who is",
+          "whove": "who have",
+          "wont": "will not",
+          "wouldnt": "would not",
+          "yall": "you all",
+          "yaall": "you all",
+          "youd": "you would",
+          "youll": "you will",
+          "youre": "you are",
+          "youve": "you have"
+        },
+        "comments": "These are client specific abbreviations"
+      }
+    },
+    {
+      "email-regex": {
+        "type": "wordclass-subst-regex",
+        "mappings": {
+          "/(([\\w_\\.-])+@([\\d\\w\\.-])+\\.([a-z\\.]){2,6})/i": "_class_email"
+        }
+      }
+    },
+    {
+      "url-regex": {
+        "type": "wordclass-subst-regex",
+        "mappings": {
+          "/https?://(www\\.)?[\\-a-zA-Z0-9@:%._\\+~#=/]+/i": "_class_url"
+        }
+      }
+    },
+    {
+      "html-encoding": {
+        "type": "regex-removal",
+        "list": [
+          "/%[0-9]+/"
+        ]
+      }
+    },
+    {
+      "date-regex": {
+        "type": "wordclass-subst-regex",
+        "mappings": {
+          "/(?:\\d{1,2}\\s*[\\s/\\.-]\\s*\\d{1,2}\\s*[\\s/\\.-]\\s*(?:\\d{4}|\\d{2}))/i": "_class_date",
+          "/(?:(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tue|wed)\\s*(?:[\\s,/\\.-]|of)\\s*)?(?:(?:(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?)\\s*(?:[\\s,/\\.-]|of)\\s*(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?)\\s*(?:[\\s,/\\.-]|of)\\s*\\b(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept|sep|oct|nov|dec)\\b)|(?:(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?)\\s*(?:[\\s,/\\.-]|of)\\s*\\b(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept|sep|oct|nov|dec)\\b\\s*(?:[\\s,/\\.-]|of)\\s*(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?))|(?:\\b(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept|sep|oct|nov|dec)\\b\\s*(?:[\\s,/\\.-]|of)\\s*(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?)\\s*(?:[\\s,/\\.-]|of)\\s*(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?)))(?:\\s*(?:[\\s,/\\.-]|of)\\s*(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tue|wed))?/i": "_class_date",
+          "/(?:(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tue|wed)\\s*(?:[\\s,/\\.-]|of)\\s*)?(?:(?:(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?)\\s*(?:[\\s,/\\.-]|of)?\\s*(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept|sep|oct|nov|dec)\\s*(?:[\\s,/\\.-]|of)?\\s*(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?))|(?:(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept|sep|oct|nov|dec)(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?))|(?:(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?)(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept|sep|oct|nov|dec)))(?:\\s*(?:[\\s,/\\.-]|of)\\s*(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tue|wed))?/i": "_class_date",
+          "/(?:(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tue|wed)\\s*(?:[\\s,/\\.-]|of)\\s*)?(?:(?:(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?)\\s*(?:[\\s,/\\.-]|of)\\s*\\b(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept|sep|oct|nov|dec)\\b)|(?:\\b(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept|sep|oct|nov|dec)\\b\\s*(?:[\\s,/\\.-]|of)\\s*(?:\\d{4}|\\d{1,2}(?:nd|th|rd|st)?)))(?:\\s*(?:[\\s,/\\.-]|of)\\s*(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tue|wed))?/i": "_class_date",
+          "/(?:\\d{1,2}\\s*[/]\\s*(?:\\d{4}|\\d{2}))|(?:\\d{1,2}\\s*[\\.]\\s*\\d{4})/i": "_class_date",
+          "/\\b(?:january|february|march|april|june|july|august|september|october|november|december|jan|feb|mar|jun|jul|aug|sept|sep|oct|nov|dec)\\b/i": "_class_date",
+          "/\\b(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tue|wed)\\b/i": "_class_date"
+        }
+      }
+    },
+    "whitespace-normalization",
+    {
+      "class_time": {
+        "type": "wordclass-subst-regex",
+        "mappings": {
+          "/(?:\\d{1,2}\\s*:?\\s*)?\\d{1,2}\\s*(?:am|pm|hrs|hours)/i": "_class_time"
+        }
+      }
+    },
+    {
+      "class_percentage": {
+        "type": "wordclass-subst-regex",
+        "mappings": {
+          "/[0-9]+\\.[0-9]*\\s?(?:%|percent(?:age|ile)?)/i": "_class_percentage",
+          "/[0-9]+\\s?(?:%|percent(?:age|ile)?)/i": "_class_percentage",
+          "/(?:one(?:\\s|-))?hundred\\s?(?:%|percent(?:age|ile)?)/i": "_class_percentage",
+          "/(?:\\b(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)(?:(?:\\s|-)?(?:one|two|three|four|five|six|seven|eight|nine))?)\\s?(?:%|percent(?:age|ile)?)/i": "_class_percentage",
+          "/\\b(?:zero|one|two|three|four|five|six|seven|eight|nine|hundred|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)\\s?(?:%|percent(?:age|ile)?)/i": "_class_percentage"
+        }
+      }
+    },
+    {
+      "phone_number": {
+        "type": "wordclass-subst-regex",
+        "mappings": {
+          "/\\(?([0-9]{3})?[-.\\s)]*[0-9]{3}[-.\\s]*[0-9]{4}\\b/": "_class_phone_number",
+          "/\\b[0-9]{5}[\\s\\.-]?[0-9]{5}\\b/": "_class_phone_number"
+        }
+      }
+    },
+    {
+      "class_number": {
+        "type": "wordclass-subst-regex",
+        "mappings": {
+          "/\\b[0-9]+(?:\\s*[\\.,]\\s*[0-9]+)*(?:\\s*(?:nd|th|rd|st))?\\b/i": "_class_number",
+          "/\\b(?:zero|one|two|three|four|five|six|seven|eight|nine|hundred|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)'?s\\b/i": "_class_number",
+          "/#(?=[^a-zA-Z0-9])/i": "_class_number_ref"
+        }
+      }
+    },
+    {
+      "enchant-spellcheck-enhance": {
+        "type": "spell-checking"
+      }
+    },
+    "case-normalization",
+    {
+      "wordclass-substitutions": {
+        "type": "wordclass-subst-regex",
+        "mappings": {
+          "/\\b(?:customer services representative|customer service representative|customer services operator|customer service operator|customer services agent|customer care assistant|customer service agent|customer servicing|customer relations|real live person|customer service|representative|customer care|real person|live person|human being|call centre|supervisor|specialist|assistant|operator|advisor|adviser|human|agent|rep)'?s?\\b/i": "_class_agent",
+          "/\\b(?:text message|sms message|message|text|sms)'?s?\\b/i": "_class_text",
+          "/\\b(?:day after tomorrow|yesterday|day after|tomorrow|today|later)'?s?\\b/i": "_class_date",
+          "/\\b(?:granddaughter|girlfriend|boyfriend|grandson|grandkid|daughter|husband|brother|spouse|sister|mother|father|cousin|wives|wife|son|kid)'?s?\\b/i": "_class_family",
+          "/\\b(?:application|mobile app|app)'?s?\\b/i": "_class_app",
+          "/\\b(?:should not|would not|shouldn't|could not|wouldn't|will not|shouldnt|does not|couldn't|wouldnt|weren't|doesn't|did not|couldnt|can not|werent|do not|didn't|cannot|aren't|won't|never|isn't|don't|can't|arent|wont|isnt|dont|cant|aint|not|no)'?s?\\b/i": "_class_negation",
+          "/\\b(?:pissedoff|goddammit|fricking|bollocks|blighter|arsehole|goddamn|fucking|dipshit|bastard|asshole|wanker|bugger|bloody|blimey|whore|jesus|bitch|shit|geez|fuck|feck|darn|damn|crud|crap|arse|god)'?s?\\b/i": "_class_swears",
+          "/\\b(?:seventeen|thirteen|nineteen|fourteen|eighteen|sixteen|seventy|hundred|fifteen|twenty|twelve|thirty|ninety|eleven|eighty|three|sixty|seven|forty|fifty|eight|zero|nine|four|five|two|ten|six|one)'?s?\\b/i": "_class_number",
+          "/\\b(?:on line|online)'?s?\\b/i": "_class_online",
+          "/\\b(?:account|accnt|acct|acc)'?s?\\b/i": "_class_account",
+          "/\\b(?:settup|set up|setup)'?s?\\b/i": "_class_setup",
+          "/\\b(?:pymnt|pymt|pyt|pmt)'?s?\\b/i": "_class_payment",
+          "/\\b(?:hello|hola|hey|hi)'?s?\\b/i": "_class_hello",
+          "/\\b(?:yeah|okie|okay|yup|yes|yep|yea|ok)'?s?\\b/i": "_class_yes"
+        }
+      }
+    },
+    "training-data-stems",
+    {
+      "punctuation-normalization": {
+        "type": "regex-replace",
+        "mappings": {
+          "/(\\-|\\.|\\,|\\?|\\!|\\*|\\$|\\\\|\\%|\\&|\\#|\\@|\\:|\\||\"|\\/|\\)|\\()/i": " "
+        }
+      }
+    },
+    {
+      "stops": {
+        "type": "stop-words",
+        "list": [
+          "been",
+          "be",
+          "your",
+          "our",
+          "we",
+          "'em",
+          "that",
+          "uh",
+          "are",
+          "and",
+          "of",
+          "me",
+          "um",
+          "oh",
+          "so",
+          "you",
+          "a",
+          "like",
+          "in",
+          "was",
+          "this",
+          "i",
+          "is",
+          "it",
+          "my",
+          "an",
+          "the",
+          "at",
+          "to"
+        ]
+      }
+    },
+    {
+      "rx-remove-dup-words": {
+        "type": "regex-replace",
+        "mappings": {
+          "/\\b(\\w+)(\\s\\1\\b)+/i": "$1"
+        }
+      }
+    },
+    "whitespace-normalization"
+  ],
+  "trainingConfigs": {
+    "numOfEpochs": 2,
+    "validationSplit": 3,
+    "stemmingExceptions": [],
+    "parallel_SVM_trainings": 20,
+    "parallel_sigmoid_trainings": 30,
+    "feat_and_window": 10,
+    "out_of_domain_intent": "None_None",
+    "add_stem_inflections": "false",
+    "use_sentence_marker": "true",
+    "regexFlags": "i"
+  },
+  "modelType": "normalization"
+}

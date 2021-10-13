@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 50.1 (55040) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Vis-Spec" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08" transform="translate(-382.000000, -807.000000)" fill="#EF8822" fill-rule="nonzero">
+            <g id="bar/actions-copy" transform="translate(352.000000, 780.000000)">
+                <g id="Group-18" transform="translate(30.000000, 24.000000)">
+                    <path d="M3.56842989,13 L0.839630563,13 C0,13 0,13 0,12.1603694 L0,9.43157011 C0,8.80184719 0.0167926113,8.8270361 0.319059614,8.5247691 L5.61712846,3.22670025 C5.91939547,2.92443325 5.91099916,2.92443325 6.21326616,3.22670025 L9.78169605,6.77833753 C10.0755668,7.07220823 10.0755668,7.08900084 9.77329975,7.38287154 L4.46683459,12.6809404 C4.16456759,12.9748111 4.19815281,13 3.56842989,13 Z M2.09907641,11.7405542 C2.56087322,11.7405542 2.93870697,11.3627204 2.93870697,10.9009236 C2.93870697,10.4391268 2.56087322,10.061293 2.09907641,10.061293 C1.6372796,10.061293 1.25944584,10.4391268 1.25944584,10.9009236 C1.25944584,11.3627204 1.6372796,11.7405542 2.09907641,11.7405542 Z" id="Shape" transform="translate(5.000530, 8.000000) scale(-1, 1) rotate(-180.000000) translate(-5.000530, -8.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

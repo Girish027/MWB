@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CellEditableManualTag /> Snapshots renders correctly for default props with state set as true 1`] = `
+<div
+  className="CellEditableManualTag"
+>
+  <Connect(CellEditable)
+    activateNextCellOnEnter={true}
+    columnIndex={1}
+    onChange={[Function]}
+    onEdit={[Function]}
+    onValidChange={[Function]}
+    rowIndex={1}
+    stateKey="TestEditable"
+    suggestedStateKey="cellEditableManualTagSuggest"
+    validation={[Function]}
+    value="abc"
+  />
+  <Connect(CellEditableManualTagSuggest)
+    highlightTags={Array []}
+    intent="dff"
+    projectId="-1"
+    stateKey="TestEditable"
+  />
+</div>
+`;

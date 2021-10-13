@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainLayout /> Snapshots: should render correctly 1`] = `
+<Connect(MainLayoutComponent)
+  clientList={
+    Array [
+      Object {
+        "cid": "cltBEOPMGPPLOMXCUI47",
+        "clientDisplayName": "247 ai",
+        "createdAt": 1524158751174,
+        "deploymentModule": "clients--247ai--applications--referencebot--models",
+        "id": "151",
+        "isVertical": false,
+        "itsAccountId": "247aireferencebot",
+        "itsAppId": "referencebot",
+        "itsClientId": "247ai",
+        "modifiedAt": 1591175798246,
+        "name": "247ai Referencebot",
+        "offset": 0,
+        "standardClientName": "tfsai",
+        "state": "ENABLED",
+        "totalCount": 432,
+      },
+      Object {
+        "cid": "cltBEOPMGPPLOMXCUI48",
+        "clientDisplayName": "247 ai",
+        "createdAt": 1524158751174,
+        "deploymentModule": "clients--247ai--applications--retailbot--models",
+        "id": "152",
+        "isVertical": false,
+        "itsAccountId": "247airetailbot",
+        "itsAppId": "retailbot",
+        "itsClientId": "247ai",
+        "modifiedAt": 1591175798246,
+        "name": "247ai RetailBot",
+        "offset": 0,
+        "standardClientName": "tfsai",
+        "state": "ENABLED",
+        "totalCount": 432,
+      },
+    ]
+  }
+  dispatch={[MockFunction]}
+  project={
+    Object {
+      "clientId": "151",
+      "created": 1593579120820,
+      "id": "17",
+      "locale": "en-US",
+      "name": "New Model2",
+      "vertical": "FINANCIAL",
+    }
+  }
+  projects={
+    Object {
+      "16": Object {
+        "clientId": "151",
+        "created": 1593161543648,
+        "id": "16",
+        "locale": "en-US",
+        "name": "New Model",
+        "vertical": "FINANCIAL",
+      },
+      "17": Object {
+        "clientId": "151",
+        "created": 1593579120820,
+        "id": "17",
+        "locale": "en-US",
+        "name": "New Model2",
+        "vertical": "FINANCIAL",
+      },
+    }
+  }
+  routeAppId="referencebot"
+  routeClientId="tfsai"
+  selectedClient={
+    Object {
+      "cid": "cltBEOPMGPPLOMXCUI47",
+      "clientDisplayName": "247 ai",
+      "createdAt": 1524158751174,
+      "deploymentModule": "clients--247ai--applications--referencebot--models",
+      "id": "151",
+      "isVertical": false,
+      "itsAccountId": "247aireferencebot",
+      "itsAppId": "referencebot",
+      "itsClientId": "247ai",
+      "modifiedAt": 1591175798246,
+      "name": "247ai Referencebot",
+      "offset": 0,
+      "standardClientName": "tfsai",
+      "state": "ENABLED",
+      "totalCount": 432,
+    }
+  }
+  showSidebar={true}
+  userFeatureConfiguration={
+    Object {
+      "appHelp": "show",
+      "createNewVersionModelReviewTab": "show",
+      "createNewVersionTrainingConfigTab": "show",
+      "datasetDelete": "show",
+      "datasetExport": "show",
+      "datasetExportById": "show",
+      "datasetTemplate": "show",
+      "downloadResults": "show",
+      "granularMessage": "show",
+      "intentGuideContextualActionBar": "show",
+      "intentGuideDelete": "show",
+      "intentGuideExport": "show",
+      "intentGuideTemplate": "show",
+      "intentGuideUpdate": "show",
+      "kibanaLogs": "show",
+      "modelConfigDownload": "show",
+      "modelConfigTemplate": "show",
+      "modelDelete": "show",
+      "modelDownload": "show",
+      "modelTrainingOutputs": "show",
+      "models": "show",
+      "projectDelete": "show",
+      "resolveInconsistencies": "show",
+      "speechBundledUnbundled": "show",
+      "supportLink": "show",
+      "tagSearchHelp": "show",
+      "transformationHelp": "show",
+    }
+  }
+/>
+`;
+
+exports[`<MainLayout /> Snapshots: should render correctly with empty clientList 1`] = `
+<Connect(MainLayoutComponent)
+  clientList={Array []}
+  dispatch={[MockFunction]}
+  project={
+    Object {
+      "clientId": "151",
+      "created": 1593579120820,
+      "id": "17",
+      "locale": "en-US",
+      "name": "New Model2",
+      "vertical": "FINANCIAL",
+    }
+  }
+  projects={
+    Object {
+      "16": Object {
+        "clientId": "151",
+        "created": 1593161543648,
+        "id": "16",
+        "locale": "en-US",
+        "name": "New Model",
+        "vertical": "FINANCIAL",
+      },
+      "17": Object {
+        "clientId": "151",
+        "created": 1593579120820,
+        "id": "17",
+        "locale": "en-US",
+        "name": "New Model2",
+        "vertical": "FINANCIAL",
+      },
+    }
+  }
+  routeAppId="referencebot"
+  routeClientId="tfsai"
+  selectedClient={
+    Object {
+      "cid": "cltBEOPMGPPLOMXCUI47",
+      "clientDisplayName": "247 ai",
+      "createdAt": 1524158751174,
+      "deploymentModule": "clients--247ai--applications--referencebot--models",
+      "id": "151",
+      "isVertical": false,
+      "itsAccountId": "247aireferencebot",
+      "itsAppId": "referencebot",
+      "itsClientId": "247ai",
+      "modifiedAt": 1591175798246,
+      "name": "247ai Referencebot",
+      "offset": 0,
+      "standardClientName": "tfsai",
+      "state": "ENABLED",
+      "totalCount": 432,
+    }
+  }
+  showSidebar={false}
+  userFeatureConfiguration={
+    Object {
+      "appHelp": "show",
+      "createNewVersionModelReviewTab": "show",
+      "createNewVersionTrainingConfigTab": "show",
+      "datasetDelete": "show",
+      "datasetExport": "show",
+      "datasetExportById": "show",
+      "datasetTemplate": "show",
+      "downloadResults": "show",
+      "granularMessage": "show",
+      "intentGuideContextualActionBar": "show",
+      "intentGuideDelete": "show",
+      "intentGuideExport": "show",
+      "intentGuideTemplate": "show",
+      "intentGuideUpdate": "show",
+      "kibanaLogs": "show",
+      "modelConfigDownload": "show",
+      "modelConfigTemplate": "show",
+      "modelDelete": "show",
+      "modelDownload": "show",
+      "modelTrainingOutputs": "show",
+      "models": "show",
+      "projectDelete": "show",
+      "resolveInconsistencies": "show",
+      "speechBundledUnbundled": "show",
+      "supportLink": "show",
+      "tagSearchHelp": "show",
+      "transformationHelp": "show",
+    }
+  }
+/>
+`;

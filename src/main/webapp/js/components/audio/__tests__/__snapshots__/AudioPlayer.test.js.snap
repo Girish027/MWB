@@ -1,0 +1,1007 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AudioPlayer /> Snapshots renders correctly for basic props (audio is playing) 1`] = `
+<AudioPlayer
+  audioSrc="some link"
+  audioStates={
+    Object {
+      "beforePlaying": "beforePlaying",
+      "beforeRecording": "beforeRecording",
+      "playing": "playing",
+      "recording": "recording",
+    }
+  }
+  dispatch={[Function]}
+  iconProps={Object {}}
+  onPlay={[Function]}
+  onStop={[Function]}
+  playIcon={
+    Object {
+      "$$typeof": Symbol(react.memo),
+      "compare": null,
+      "type": [Function],
+    }
+  }
+  stopIcon={
+    Object {
+      "$$typeof": Symbol(react.memo),
+      "compare": null,
+      "type": [Function],
+    }
+  }
+  styleOverride={Object {}}
+>
+  <withTheme(Button)
+    name="audioplayer-button"
+    onClick={[Function]}
+    styleOverride={
+      Object {
+        ":focus": Object {
+          "outline": "none",
+        },
+        ":hover": Object {
+          "boxShadow": "none",
+          "color": "#003467",
+        },
+      }
+    }
+    type="flat"
+  >
+    <Button
+      disabled={false}
+      name="audioplayer-button"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      styleOverride={
+        Object {
+          ":focus": Object {
+            "outline": "none",
+          },
+          ":hover": Object {
+            "boxShadow": "none",
+            "color": "#003467",
+          },
+        }
+      }
+      tabIndex={0}
+      tfsStyle={
+        Object {
+          "button": Object {
+            "base": Object {
+              ":focus": Object {
+                "outline": "2px solid #009CDE",
+              },
+              "border": "1px solid transparent",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "13px",
+              "fontWeight": 600,
+              "minHeight": "35px",
+              "minWidth": "100px",
+              "outlineOffset": "2px",
+              "paddingLeft": "20px",
+              "paddingRight": "20px",
+              "wordBreak": "normal",
+            },
+            "disabled": Object {
+              "cursor": "not-allowed",
+              "flat": Object {
+                "color": "#666666",
+              },
+              "primary": Object {
+                "backgroundColor": "#E0E0E0",
+                "color": "#666666",
+              },
+              "secondary": Object {
+                "border": "2px solid #E0E0E0",
+                "color": "#666666",
+              },
+            },
+            "flat": Object {
+              ":active": Object {
+                "color": "#004C97",
+              },
+              ":hover": Object {
+                "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                "color": "#336FAB",
+              },
+              "backgroundColor": "transparent",
+              "color": "#000000",
+              "minWidth": "auto",
+              "paddingLeft": "10px",
+              "paddingRight": "10px",
+            },
+            "primary": Object {
+              ":active": Object {
+                "backgroundColor": "#336FAB",
+                "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                "color": "#FFFFFF",
+              },
+              ":hover": Object {
+                "backgroundColor": "#336FAB",
+                "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                "color": "#FFFFFF",
+              },
+              "backgroundColor": "#004C97",
+              "color": "#FFFFFF",
+            },
+            "secondary": Object {
+              ":active": Object {
+                "border": "2px solid #336FAB",
+                "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                "color": "#336FAB",
+              },
+              ":hover": Object {
+                "border": "2px solid #336FAB",
+                "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                "color": "#336FAB",
+              },
+              "backgroundColor": "#FFFFFF",
+              "border": "2px solid #004C97",
+              "color": "#004C97",
+            },
+          },
+        }
+      }
+      type="flat"
+    >
+      <button
+        data-radium={true}
+        disabled={false}
+        name="audioplayer-button"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "border": "1px solid transparent",
+            "borderRadius": "4px",
+            "color": "#000000",
+            "cursor": "pointer",
+            "fontSize": "13px",
+            "fontWeight": 600,
+            "minHeight": "35px",
+            "minWidth": "auto",
+            "outlineOffset": "2px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "wordBreak": "normal",
+          }
+        }
+        tabIndex={0}
+        type="button"
+      >
+        <withTheme(Stop)
+          key=".0"
+        >
+          <Stop
+            height="31px"
+            tfsStyle={
+              Object {
+                "icons": Object {
+                  "common": Object {
+                    "borderColor": "#B2B2B2",
+                    "color": "#004C97",
+                    "colorLight": "#336FAB",
+                    "disabledColor": "#E0E0E0",
+                    "fillColor": "#FFFFFF",
+                  },
+                },
+              }
+            }
+            width="31px"
+          >
+            <svg
+              height="31px"
+              viewBox="0 0 31 31"
+              width="31px"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+                transform="translate(1.114 1)"
+              >
+                <circle
+                  cx={14.5}
+                  cy={14.5}
+                  fill="#FFFFFF"
+                  r={14.5}
+                  stroke="#004C97"
+                />
+                <path
+                  d="M10.771 10.771h7.457v7.457h-7.457z"
+                  fill="#004C97"
+                />
+              </g>
+            </svg>
+          </Stop>
+        </withTheme(Stop)>
+        <audio
+          data-radium={true}
+          key=".1"
+          src="some link"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+          type="audio/wav"
+        >
+          <track
+            kind=""
+            label="English"
+            src=""
+            srcLang="en"
+          />
+        </audio>
+      </button>
+    </Button>
+  </withTheme(Button)>
+</AudioPlayer>
+`;
+
+exports[`<AudioPlayer /> Snapshots renders correctly for the basic props (audio is not playing) 1`] = `
+<AudioPlayer
+  audioSrc="some link"
+  audioStates={
+    Object {
+      "beforePlaying": "beforePlaying",
+      "beforeRecording": "beforeRecording",
+      "playing": "playing",
+      "recording": "recording",
+    }
+  }
+  dispatch={[Function]}
+  iconProps={Object {}}
+  onPlay={[Function]}
+  onStop={[Function]}
+  playIcon={
+    Object {
+      "$$typeof": Symbol(react.memo),
+      "compare": null,
+      "type": [Function],
+    }
+  }
+  stopIcon={
+    Object {
+      "$$typeof": Symbol(react.memo),
+      "compare": null,
+      "type": [Function],
+    }
+  }
+  styleOverride={Object {}}
+>
+  <withTheme(Button)
+    name="audioplayer-button"
+    onClick={[Function]}
+    styleOverride={
+      Object {
+        ":focus": Object {
+          "outline": "none",
+        },
+        ":hover": Object {
+          "boxShadow": "none",
+          "color": "#003467",
+        },
+      }
+    }
+    type="flat"
+  >
+    <Button
+      disabled={false}
+      name="audioplayer-button"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      styleOverride={
+        Object {
+          ":focus": Object {
+            "outline": "none",
+          },
+          ":hover": Object {
+            "boxShadow": "none",
+            "color": "#003467",
+          },
+        }
+      }
+      tabIndex={0}
+      tfsStyle={
+        Object {
+          "button": Object {
+            "base": Object {
+              ":focus": Object {
+                "outline": "2px solid #009CDE",
+              },
+              "border": "1px solid transparent",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "13px",
+              "fontWeight": 600,
+              "minHeight": "35px",
+              "minWidth": "100px",
+              "outlineOffset": "2px",
+              "paddingLeft": "20px",
+              "paddingRight": "20px",
+              "wordBreak": "normal",
+            },
+            "disabled": Object {
+              "cursor": "not-allowed",
+              "flat": Object {
+                "color": "#666666",
+              },
+              "primary": Object {
+                "backgroundColor": "#E0E0E0",
+                "color": "#666666",
+              },
+              "secondary": Object {
+                "border": "2px solid #E0E0E0",
+                "color": "#666666",
+              },
+            },
+            "flat": Object {
+              ":active": Object {
+                "color": "#004C97",
+              },
+              ":hover": Object {
+                "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                "color": "#336FAB",
+              },
+              "backgroundColor": "transparent",
+              "color": "#000000",
+              "minWidth": "auto",
+              "paddingLeft": "10px",
+              "paddingRight": "10px",
+            },
+            "primary": Object {
+              ":active": Object {
+                "backgroundColor": "#336FAB",
+                "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                "color": "#FFFFFF",
+              },
+              ":hover": Object {
+                "backgroundColor": "#336FAB",
+                "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                "color": "#FFFFFF",
+              },
+              "backgroundColor": "#004C97",
+              "color": "#FFFFFF",
+            },
+            "secondary": Object {
+              ":active": Object {
+                "border": "2px solid #336FAB",
+                "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                "color": "#336FAB",
+              },
+              ":hover": Object {
+                "border": "2px solid #336FAB",
+                "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                "color": "#336FAB",
+              },
+              "backgroundColor": "#FFFFFF",
+              "border": "2px solid #004C97",
+              "color": "#004C97",
+            },
+          },
+        }
+      }
+      type="flat"
+    >
+      <button
+        data-radium={true}
+        disabled={false}
+        name="audioplayer-button"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "border": "1px solid transparent",
+            "borderRadius": "4px",
+            "color": "#000000",
+            "cursor": "pointer",
+            "fontSize": "13px",
+            "fontWeight": 600,
+            "minHeight": "35px",
+            "minWidth": "auto",
+            "outlineOffset": "2px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "wordBreak": "normal",
+          }
+        }
+        tabIndex={0}
+        type="button"
+      >
+        <withTheme(Play)
+          key=".0"
+        >
+          <Play
+            height="31px"
+            tfsStyle={
+              Object {
+                "icons": Object {
+                  "common": Object {
+                    "borderColor": "#B2B2B2",
+                    "color": "#004C97",
+                    "colorLight": "#336FAB",
+                    "disabledColor": "#E0E0E0",
+                    "fillColor": "#FFFFFF",
+                  },
+                },
+              }
+            }
+            width="31px"
+          >
+            <svg
+              height="31px"
+              viewBox="0 0 31 31"
+              width="31px"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+                transform="translate(1 1)"
+              >
+                <circle
+                  cx={14.5}
+                  cy={14.5}
+                  fill="#FFFFFF"
+                  r={14.5}
+                  stroke="#004C97"
+                />
+                <path
+                  d="M12.678 8.403v12.232l6.023-6.172z"
+                  fill="#004C97"
+                  fillRule="nonzero"
+                />
+              </g>
+            </svg>
+          </Play>
+        </withTheme(Play)>
+        <audio
+          data-radium={true}
+          key=".1"
+          src="some link"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+          type="audio/wav"
+        >
+          <track
+            kind=""
+            label="English"
+            src=""
+            srcLang="en"
+          />
+        </audio>
+      </button>
+    </Button>
+  </withTheme(Button)>
+</AudioPlayer>
+`;
+
+exports[`<AudioPlayer /> Snapshots renders correctly for the enhanced props (audio is not playing) 1`] = `
+<AudioPlayer
+  audioSrc="some link"
+  audioStates={
+    Object {
+      "beforePlaying": "beforePlaying",
+      "beforeRecording": "beforeRecording",
+      "playing": "playing",
+      "recording": "recording",
+    }
+  }
+  dispatch={[Function]}
+  iconProps={
+    Object {
+      "common": Object {
+        "height": "20px",
+      },
+      "playProps": Object {
+        "width": "20px",
+      },
+      "stopProps": Object {
+        "fill": "grey",
+      },
+    }
+  }
+  onPlay={[Function]}
+  onStop={[Function]}
+  playIcon={
+    Object {
+      "$$typeof": Symbol(react.memo),
+      "compare": null,
+      "type": [Function],
+    }
+  }
+  stopIcon={
+    Object {
+      "$$typeof": Symbol(react.memo),
+      "compare": null,
+      "type": [Function],
+    }
+  }
+  styleOverride={
+    Object {
+      "button": Object {
+        "height": "70px",
+      },
+    }
+  }
+>
+  <withTheme(Button)
+    name="audioplayer-button"
+    onClick={[Function]}
+    styleOverride={
+      Object {
+        "height": "70px",
+      }
+    }
+    type="flat"
+  >
+    <Button
+      disabled={false}
+      name="audioplayer-button"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      styleOverride={
+        Object {
+          "height": "70px",
+        }
+      }
+      tabIndex={0}
+      tfsStyle={
+        Object {
+          "button": Object {
+            "base": Object {
+              ":focus": Object {
+                "outline": "2px solid #009CDE",
+              },
+              "border": "1px solid transparent",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "13px",
+              "fontWeight": 600,
+              "minHeight": "35px",
+              "minWidth": "100px",
+              "outlineOffset": "2px",
+              "paddingLeft": "20px",
+              "paddingRight": "20px",
+              "wordBreak": "normal",
+            },
+            "disabled": Object {
+              "cursor": "not-allowed",
+              "flat": Object {
+                "color": "#666666",
+              },
+              "primary": Object {
+                "backgroundColor": "#E0E0E0",
+                "color": "#666666",
+              },
+              "secondary": Object {
+                "border": "2px solid #E0E0E0",
+                "color": "#666666",
+              },
+            },
+            "flat": Object {
+              ":active": Object {
+                "color": "#004C97",
+              },
+              ":hover": Object {
+                "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                "color": "#336FAB",
+              },
+              "backgroundColor": "transparent",
+              "color": "#000000",
+              "minWidth": "auto",
+              "paddingLeft": "10px",
+              "paddingRight": "10px",
+            },
+            "primary": Object {
+              ":active": Object {
+                "backgroundColor": "#336FAB",
+                "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                "color": "#FFFFFF",
+              },
+              ":hover": Object {
+                "backgroundColor": "#336FAB",
+                "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                "color": "#FFFFFF",
+              },
+              "backgroundColor": "#004C97",
+              "color": "#FFFFFF",
+            },
+            "secondary": Object {
+              ":active": Object {
+                "border": "2px solid #336FAB",
+                "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                "color": "#336FAB",
+              },
+              ":hover": Object {
+                "border": "2px solid #336FAB",
+                "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                "color": "#336FAB",
+              },
+              "backgroundColor": "#FFFFFF",
+              "border": "2px solid #004C97",
+              "color": "#004C97",
+            },
+          },
+        }
+      }
+      type="flat"
+    >
+      <button
+        data-radium={true}
+        disabled={false}
+        name="audioplayer-button"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "border": "1px solid transparent",
+            "borderRadius": "4px",
+            "color": "#000000",
+            "cursor": "pointer",
+            "fontSize": "13px",
+            "fontWeight": 600,
+            "height": "70px",
+            "minHeight": "35px",
+            "minWidth": "auto",
+            "outlineOffset": "2px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "wordBreak": "normal",
+          }
+        }
+        tabIndex={0}
+        type="button"
+      >
+        <withTheme(Play)
+          height="20px"
+          key=".0"
+          width="20px"
+        >
+          <Play
+            height="20px"
+            tfsStyle={
+              Object {
+                "icons": Object {
+                  "common": Object {
+                    "borderColor": "#B2B2B2",
+                    "color": "#004C97",
+                    "colorLight": "#336FAB",
+                    "disabledColor": "#E0E0E0",
+                    "fillColor": "#FFFFFF",
+                  },
+                },
+              }
+            }
+            width="20px"
+          >
+            <svg
+              height="20px"
+              viewBox="0 0 31 31"
+              width="20px"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+                transform="translate(1 1)"
+              >
+                <circle
+                  cx={14.5}
+                  cy={14.5}
+                  fill="#FFFFFF"
+                  r={14.5}
+                  stroke="#004C97"
+                />
+                <path
+                  d="M12.678 8.403v12.232l6.023-6.172z"
+                  fill="#004C97"
+                  fillRule="nonzero"
+                />
+              </g>
+            </svg>
+          </Play>
+        </withTheme(Play)>
+        <audio
+          data-radium={true}
+          key=".1"
+          src="some link"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+          type="audio/wav"
+        >
+          <track
+            kind=""
+            label="English"
+            src=""
+            srcLang="en"
+          />
+        </audio>
+      </button>
+    </Button>
+  </withTheme(Button)>
+</AudioPlayer>
+`;
+
+exports[`<AudioPlayer /> Snapshots renders correctly for the enhanced props (audio is playing) 1`] = `
+<AudioPlayer
+  audioSrc="some link"
+  audioStates={
+    Object {
+      "beforePlaying": "beforePlaying",
+      "beforeRecording": "beforeRecording",
+      "playing": "playing",
+      "recording": "recording",
+    }
+  }
+  dispatch={[Function]}
+  iconProps={
+    Object {
+      "common": Object {
+        "height": "20px",
+      },
+      "playProps": Object {
+        "width": "20px",
+      },
+      "stopProps": Object {
+        "fill": "grey",
+      },
+    }
+  }
+  onPlay={[Function]}
+  onStop={[Function]}
+  playIcon={
+    Object {
+      "$$typeof": Symbol(react.memo),
+      "compare": null,
+      "type": [Function],
+    }
+  }
+  stopIcon={
+    Object {
+      "$$typeof": Symbol(react.memo),
+      "compare": null,
+      "type": [Function],
+    }
+  }
+  styleOverride={
+    Object {
+      "button": Object {
+        "height": "70px",
+      },
+    }
+  }
+>
+  <withTheme(Button)
+    name="audioplayer-button"
+    onClick={[Function]}
+    styleOverride={
+      Object {
+        "height": "70px",
+      }
+    }
+    type="flat"
+  >
+    <Button
+      disabled={false}
+      name="audioplayer-button"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      styleOverride={
+        Object {
+          "height": "70px",
+        }
+      }
+      tabIndex={0}
+      tfsStyle={
+        Object {
+          "button": Object {
+            "base": Object {
+              ":focus": Object {
+                "outline": "2px solid #009CDE",
+              },
+              "border": "1px solid transparent",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "13px",
+              "fontWeight": 600,
+              "minHeight": "35px",
+              "minWidth": "100px",
+              "outlineOffset": "2px",
+              "paddingLeft": "20px",
+              "paddingRight": "20px",
+              "wordBreak": "normal",
+            },
+            "disabled": Object {
+              "cursor": "not-allowed",
+              "flat": Object {
+                "color": "#666666",
+              },
+              "primary": Object {
+                "backgroundColor": "#E0E0E0",
+                "color": "#666666",
+              },
+              "secondary": Object {
+                "border": "2px solid #E0E0E0",
+                "color": "#666666",
+              },
+            },
+            "flat": Object {
+              ":active": Object {
+                "color": "#004C97",
+              },
+              ":hover": Object {
+                "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                "color": "#336FAB",
+              },
+              "backgroundColor": "transparent",
+              "color": "#000000",
+              "minWidth": "auto",
+              "paddingLeft": "10px",
+              "paddingRight": "10px",
+            },
+            "primary": Object {
+              ":active": Object {
+                "backgroundColor": "#336FAB",
+                "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                "color": "#FFFFFF",
+              },
+              ":hover": Object {
+                "backgroundColor": "#336FAB",
+                "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                "color": "#FFFFFF",
+              },
+              "backgroundColor": "#004C97",
+              "color": "#FFFFFF",
+            },
+            "secondary": Object {
+              ":active": Object {
+                "border": "2px solid #336FAB",
+                "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                "color": "#336FAB",
+              },
+              ":hover": Object {
+                "border": "2px solid #336FAB",
+                "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                "color": "#336FAB",
+              },
+              "backgroundColor": "#FFFFFF",
+              "border": "2px solid #004C97",
+              "color": "#004C97",
+            },
+          },
+        }
+      }
+      type="flat"
+    >
+      <button
+        data-radium={true}
+        disabled={false}
+        name="audioplayer-button"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "border": "1px solid transparent",
+            "borderRadius": "4px",
+            "color": "#000000",
+            "cursor": "pointer",
+            "fontSize": "13px",
+            "fontWeight": 600,
+            "height": "70px",
+            "minHeight": "35px",
+            "minWidth": "auto",
+            "outlineOffset": "2px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "wordBreak": "normal",
+          }
+        }
+        tabIndex={0}
+        type="button"
+      >
+        <withTheme(Stop)
+          fill="grey"
+          height="20px"
+          key=".0"
+        >
+          <Stop
+            fill="grey"
+            height="20px"
+            tfsStyle={
+              Object {
+                "icons": Object {
+                  "common": Object {
+                    "borderColor": "#B2B2B2",
+                    "color": "#004C97",
+                    "colorLight": "#336FAB",
+                    "disabledColor": "#E0E0E0",
+                    "fillColor": "#FFFFFF",
+                  },
+                },
+              }
+            }
+            width="31px"
+          >
+            <svg
+              fill="grey"
+              height="20px"
+              viewBox="0 0 31 31"
+              width="31px"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+                transform="translate(1.114 1)"
+              >
+                <circle
+                  cx={14.5}
+                  cy={14.5}
+                  fill="#FFFFFF"
+                  r={14.5}
+                  stroke="#004C97"
+                />
+                <path
+                  d="M10.771 10.771h7.457v7.457h-7.457z"
+                  fill="#004C97"
+                />
+              </g>
+            </svg>
+          </Stop>
+        </withTheme(Stop)>
+        <audio
+          data-radium={true}
+          key=".1"
+          src="some link"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+          type="audio/wav"
+        >
+          <track
+            kind=""
+            label="English"
+            src=""
+            srcLang="en"
+          />
+        </audio>
+      </button>
+    </Button>
+  </withTheme(Button)>
+</AudioPlayer>
+`;

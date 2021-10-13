@@ -1,0 +1,1 @@
+ALTER TABLE metrics ADD version INTEGER not null;

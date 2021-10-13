@@ -1,0 +1,59 @@
+@import '../vars/vars';
+
+button {
+  overflow: visible;
+  width: auto;
+}
+
+button.link {
+  font-size: 12px; 
+  text-align: left;
+  color: $primaryColor;
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  height: 35px;
+  -moz-user-select: text;
+
+  /* override all your button styles here if there are any others */
+}
+
+button.link span {
+  text-decoration: underline;
+}
+
+button.link:hover span,
+button.link:focus span {
+  color: black;
+}
+
+button.primary {
+  height: 35px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  background-image: linear-gradient(-180deg, #ffb549 3%, #f82 100%);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+button.primary:hover {
+  box-shadow: 0 5px 30px #ffb549;
+}
+
+button.primary:active {
+  background: #f82;
+  box-shadow: 0;
+}
+
+button.primary:disabled {
+  background-color: lightgray;
+  background-image: none;
+}
+
+button.primary:disabled:hover {
+  box-shadow: none;
+}
+

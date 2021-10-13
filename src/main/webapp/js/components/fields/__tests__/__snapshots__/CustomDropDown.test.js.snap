@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomDropDown /> Snapshots renders correctly for default props 1`] = `
+<div
+  style={
+    Object {
+      "field": Object {
+        "height": "35px",
+        "width": "99%",
+      },
+      "label": Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "fontWeight": "normal",
+        "paddingBottom": "5px",
+      },
+      "select": Object {
+        "border": "1px solid #dce1e8",
+        "borderRadius": "2px",
+        "boxSizing": "border-box",
+        "fontSize": "14px",
+        "height": "35px",
+        "margin": "0px",
+        "marginBottom": "15px",
+        "opacity": 1,
+        "outline": "none",
+        "padding": "8px",
+        "width": "99%",
+      },
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "fontWeight": "normal",
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    DropDown
+  </div>
+  <div
+    style={
+      Object {
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    <Request
+      accept="application/json"
+      method="get"
+      url={null}
+      verbose={true}
+    >
+      <Component />
+    </Request>
+  </div>
+</div>
+`;
+
+exports[`<CustomDropDown /> Snapshots should render correctly when list/result is passed 1`] = `
+<div
+  style={
+    Object {
+      "field": Object {
+        "height": "35px",
+        "width": "99%",
+      },
+      "label": Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "fontWeight": "normal",
+        "paddingBottom": "5px",
+      },
+      "select": Object {
+        "border": "1px solid #dce1e8",
+        "borderRadius": "2px",
+        "boxSizing": "border-box",
+        "fontSize": "14px",
+        "height": "35px",
+        "margin": "0px",
+        "marginBottom": "15px",
+        "opacity": 1,
+        "outline": "none",
+        "padding": "8px",
+        "width": "99%",
+      },
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "fontWeight": "normal",
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    DropDown
+  </div>
+  <div
+    style={
+      Object {
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    <Request
+      accept="application/json"
+      method="get"
+      url={null}
+      verbose={true}
+    >
+      <Component />
+    </Request>
+  </div>
+</div>
+`;

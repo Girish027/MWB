@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TaggerModal /> Creating an instance with no props Snapshots should render correctly 1`] = `
+<Layer
+  align="center"
+  className="TaggerControl TaggerModal"
+  closer={false}
+  id="TaggerModal"
+>
+  <Box
+    announce={false}
+    direction="column"
+    flex={true}
+    focusable={true}
+    pad="none"
+    responsive={true}
+    tag="div"
+  >
+    <Box
+      announce={false}
+      className="ModalRow ModalHead"
+      direction="column"
+      focusable={true}
+      pad="none"
+      responsive={true}
+      tag="div"
+    >
+      <span
+        className="ModalTitle"
+      />
+    </Box>
+    <Box
+      announce={false}
+      className="ModalRow ModalContent"
+      direction="column"
+      flex={true}
+      focusable={true}
+      pad="none"
+      responsive={true}
+      tag="div"
+    />
+    <Box
+      announce={false}
+      className="ModalRow ModalActions"
+      direction="row"
+      focusable={true}
+      justify="end"
+      pad="none"
+      responsive={true}
+      tag="div"
+    />
+  </Box>
+</Layer>
+`;
+
+exports[`<TaggerModal /> Creating an instance with test props Snapshots should render correctly 1`] = `
+<TaggerModal
+  header="Apply Suggested Intents"
+>
+  <Layer
+    align="center"
+    className="TaggerControl TaggerModal"
+    closer={false}
+    id="TaggerModal"
+  >
+    <span
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    />
+  </Layer>
+</TaggerModal>
+`;

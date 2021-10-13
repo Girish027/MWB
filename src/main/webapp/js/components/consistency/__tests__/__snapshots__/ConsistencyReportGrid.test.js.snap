@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ConsistencyReportGrid /> Snapshots renders correctly for default props on shallow copy 1`] = `
+<div
+  id="ConsistencyReportGridContainer"
+  style={
+    Object {
+      "paddingTop": "12px",
+    }
+  }
+>
+  <div
+    direction="row"
+    id="ConsistencyReportGridActions"
+    style={Object {}}
+  >
+    <div
+      className="ActionsContainer"
+      direction="row"
+    >
+      <withTheme(ContextualActionsBar)>
+        <withTheme(ContextualActionItem)
+          disabled={true}
+          icon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          onClickAction={[Function]}
+          styleOverride={
+            Object {
+              "paddingLeft": "20px",
+            }
+          }
+        >
+          APPLY SUGGESTED
+        </withTheme(ContextualActionItem)>
+        <withTheme(ContextualActionItem)
+          disabled={true}
+          icon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          onClickAction={[Function]}
+        >
+          BULK TAG
+        </withTheme(ContextualActionItem)>
+        <withTheme(ContextualActionItem)
+          disabled={true}
+          icon={[Function]}
+          onClickAction={[Function]}
+        >
+          BULK UNTAG
+        </withTheme(ContextualActionItem)>
+      </withTheme(ContextualActionsBar)>
+    </div>
+  </div>
+  <div>
+    <TaggerGrid
+      className="ConsistencyReportGrid"
+      config={
+        Object {
+          "columns": Array [
+            Object {
+              "dataIndex": "documentCount",
+              "hidden": true,
+              "hideable": true,
+              "name": "Count",
+              "resizable": false,
+              "sortable": true,
+              "width": "5%",
+            },
+            Object {
+              "dataIndex": "intentConflict",
+              "hideable": true,
+              "name": "Has Conflict",
+              "renderer": [Function],
+              "resizable": false,
+              "sortable": true,
+              "width": "3%",
+            },
+            Object {
+              "dataIndex": "textStringForTagging",
+              "hideable": false,
+              "name": "Text String",
+              "sortable": true,
+              "width": "20%",
+            },
+            Object {
+              "dataIndex": "normalizedForm",
+              "hideable": true,
+              "name": "Normalized Form",
+              "sortable": true,
+              "width": "15%",
+            },
+            Object {
+              "dataIndex": "normalizedFormGroup",
+              "hideable": true,
+              "name": "Group",
+              "sortable": true,
+              "width": "10%",
+            },
+            Object {
+              "dataIndex": "intent",
+              "hideable": true,
+              "name": "Original Intent",
+              "renderer": [Function],
+              "sortable": true,
+              "width": "15%",
+            },
+            Object {
+              "dataIndex": "suggestedIntent",
+              "hideable": true,
+              "name": "Suggested Intent",
+              "sortable": true,
+              "width": "15%",
+            },
+            Object {
+              "dataIndex": "intents",
+              "hideable": true,
+              "name": "Other Intents With Same Form",
+              "renderer": [Function],
+              "sortable": true,
+              "width": "20%",
+            },
+          ],
+          "dataSource": [Function],
+          "emptyDataMessage": "No Search Results",
+          "events": Object {},
+          "height": "",
+          "plugins": Object {
+            "COLUMN_MANAGER": Object {
+              "minColumnWidth": 8,
+              "moveable": true,
+              "resizable": true,
+              "sortable": Object {
+                "enabled": true,
+                "method": "remote",
+                "sortingSource": [Function],
+              },
+            },
+            "GRID_ACTIONS": Object {
+              "iconCls": "action-icon",
+              "menu": Array [],
+            },
+            "SELECTION_MODEL": Object {
+              "allowDeselect": true,
+              "enabled": true,
+              "mode": "checkbox-multi",
+            },
+          },
+          "stateKey": "ConsistencyReportGridState-v1",
+          "stateful": true,
+        }
+      }
+      id="ConsistencyReportGrid"
+    />
+  </div>
+</div>
+`;

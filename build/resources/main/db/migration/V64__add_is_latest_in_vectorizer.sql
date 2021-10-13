@@ -1,0 +1,1 @@
+ALTER TABLE vectorizer ADD is_latest INTEGER NOT NULL;

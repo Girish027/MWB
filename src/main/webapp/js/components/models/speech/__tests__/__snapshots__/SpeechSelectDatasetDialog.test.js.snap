@@ -1,0 +1,551 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SpeechSelectDatasetDialog /> Snapshots renders correctly for digital model with speechModelId set 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    headerChildren="Rebuild Speech"
+    isOpen={true}
+    okChildren="REBUILD SPEECH"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    size="medium"
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "marginRight": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "15px",
+        },
+        "childContainer": Object {
+          "overflow": "auto",
+          "paddingBottom": "0px",
+          "paddingLeft": "30px",
+          "paddingRight": "30px",
+          "paddingTop": "0px",
+          "textAlign": "left",
+        },
+        "container": Object {
+          "height": "480px",
+          "width": "720px",
+        },
+        "header": Object {
+          "borderBottom": "1px solid",
+          "borderBottomColor": "#DADADA",
+          "display": "flex",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "center",
+          "title": Object {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "marginLeft": "23px",
+            "marginRight": "20px",
+          },
+          "titleIcon": Object {
+            "marginRight": "20px",
+          },
+          "width": "100%",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <div
+      style={null}
+    >
+      <div
+        id="speech-dataset"
+        style={
+          Object {
+            "marginTop": "30px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "fontSize": "14.5px",
+              "fontWeight": "normal",
+              "marginTop": "30px",
+              "paddingBottom": "10px",
+            }
+          }
+        >
+          Select datasets to build speech model
+        </div>
+        <MultipleCheckboxFilter
+          allowEmpty={true}
+          className="transparent-bkg"
+          disabled={false}
+          isSpeechBundledUnbundledEnabled={false}
+          noOfColumns={1}
+          onChange={[Function]}
+          options={Array []}
+          showAsGrid={true}
+          showDropbox={false}
+          type="add-speech"
+          value={Array []}
+        />
+        <withTheme(Button)
+          name="stop-words"
+          onClick={[Function]}
+          styleOverride={
+            Object {
+              "fontWeight": "normal",
+              "marginTop": "15px",
+            }
+          }
+          type="flat"
+        >
+          MORE OPTIONS &gt;
+        </withTheme(Button)>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "unset",
+            "height": "100%",
+            "paddingRight": "30px",
+            "width": "50%",
+          }
+        }
+      >
+        <Connect(SpeechDropzone)
+          dispatch={[Function]}
+          modelToken="15e17bdf-f38e-42f3-a8f0-7b595dd3df40"
+          onChange={[Function]}
+          onChangeDigitalHostedUrl={[Function]}
+          onRadioChange={[Function]}
+          showDropbox={false}
+        />
+      </div>
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<SpeechSelectDatasetDialog /> Snapshots renders correctly for user with MWB_ROLE_EXTERNAL permission 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    headerChildren="Add Speech"
+    isOpen={true}
+    okChildren="ADD SPEECH"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    size="medium"
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "marginRight": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "15px",
+        },
+        "childContainer": Object {
+          "overflow": "auto",
+          "paddingBottom": "0px",
+          "paddingLeft": "30px",
+          "paddingRight": "30px",
+          "paddingTop": "0px",
+          "textAlign": "left",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "480px",
+          "width": "520px",
+        },
+        "header": Object {
+          "borderBottom": "1px solid",
+          "borderBottomColor": "#DADADA",
+          "display": "flex",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "center",
+          "title": Object {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "marginLeft": "23px",
+            "marginRight": "20px",
+          },
+          "titleIcon": Object {
+            "marginRight": "20px",
+          },
+          "width": "100%",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <div
+      style={null}
+    >
+      <div
+        id="speech-dataset"
+        style={
+          Object {
+            "marginTop": "30px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "fontSize": "14.5px",
+              "fontWeight": "normal",
+              "marginTop": "30px",
+              "paddingBottom": "10px",
+            }
+          }
+        >
+          Select datasets to build speech model
+        </div>
+        <MultipleCheckboxFilter
+          allowEmpty={true}
+          className="transparent-bkg"
+          disabled={false}
+          isSpeechBundledUnbundledEnabled={false}
+          noOfColumns={1}
+          onChange={[Function]}
+          options={Array []}
+          showAsGrid={true}
+          showDropbox={false}
+          type="add-speech"
+          value={Array []}
+        />
+        <withTheme(Button)
+          name="stop-words"
+          onClick={[Function]}
+          styleOverride={
+            Object {
+              "fontWeight": "normal",
+              "marginTop": "15px",
+            }
+          }
+          type="flat"
+        >
+          MORE OPTIONS &gt;
+        </withTheme(Button)>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "unset",
+            "height": "100%",
+            "paddingRight": "30px",
+            "width": "50%",
+          }
+        }
+      >
+        <Connect(SpeechDropzone)
+          dispatch={[Function]}
+          modelToken="15e17bdf-f38e-42f3-a8f0-7b595dd3df40"
+          onChange={[Function]}
+          onChangeDigitalHostedUrl={[Function]}
+          onRadioChange={[Function]}
+          showDropbox={false}
+        />
+      </div>
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<SpeechSelectDatasetDialog /> Snapshots renders correctly with for model with 2 datasets selected 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    headerChildren="Add Speech"
+    isOpen={true}
+    okChildren="ADD SPEECH"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    size="medium"
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "marginRight": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "15px",
+        },
+        "childContainer": Object {
+          "overflow": "auto",
+          "paddingBottom": "0px",
+          "paddingLeft": "30px",
+          "paddingRight": "30px",
+          "paddingTop": "0px",
+          "textAlign": "left",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "480px",
+          "width": "520px",
+        },
+        "header": Object {
+          "borderBottom": "1px solid",
+          "borderBottomColor": "#DADADA",
+          "display": "flex",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "center",
+          "title": Object {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "marginLeft": "23px",
+            "marginRight": "20px",
+          },
+          "titleIcon": Object {
+            "marginRight": "20px",
+          },
+          "width": "100%",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <div
+      style={null}
+    >
+      <div
+        id="speech-dataset"
+        style={
+          Object {
+            "marginTop": "30px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "fontSize": "14.5px",
+              "fontWeight": "normal",
+              "marginTop": "30px",
+              "paddingBottom": "10px",
+            }
+          }
+        >
+          Select datasets to build speech model
+        </div>
+        <MultipleCheckboxFilter
+          allowEmpty={true}
+          className="transparent-bkg"
+          disabled={false}
+          isSpeechBundledUnbundledEnabled={true}
+          noOfColumns={1}
+          onChange={[Function]}
+          options={Array []}
+          showAsGrid={true}
+          showDropbox={false}
+          type="add-speech"
+          value={Array []}
+        />
+        <withTheme(Button)
+          name="stop-words"
+          onClick={[Function]}
+          styleOverride={
+            Object {
+              "fontWeight": "normal",
+              "marginTop": "15px",
+            }
+          }
+          type="flat"
+        >
+          MORE OPTIONS &gt;
+        </withTheme(Button)>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "unset",
+            "height": "100%",
+            "paddingRight": "30px",
+            "width": "50%",
+          }
+        }
+      >
+        <Connect(SpeechDropzone)
+          dispatch={[Function]}
+          modelToken="15e17bdf-f38e-42f3-a8f0-7b595dd3df40"
+          onChange={[Function]}
+          onChangeDigitalHostedUrl={[Function]}
+          onRadioChange={[Function]}
+          showDropbox={false}
+        />
+      </div>
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<SpeechSelectDatasetDialog /> Snapshots renders correctly with for model with all datasets selected 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    headerChildren="Add Speech"
+    isOpen={true}
+    okChildren="ADD SPEECH"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    size="medium"
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "marginRight": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "15px",
+        },
+        "childContainer": Object {
+          "overflow": "auto",
+          "paddingBottom": "0px",
+          "paddingLeft": "30px",
+          "paddingRight": "30px",
+          "paddingTop": "0px",
+          "textAlign": "left",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "480px",
+          "width": "520px",
+        },
+        "header": Object {
+          "borderBottom": "1px solid",
+          "borderBottomColor": "#DADADA",
+          "display": "flex",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "center",
+          "title": Object {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "marginLeft": "23px",
+            "marginRight": "20px",
+          },
+          "titleIcon": Object {
+            "marginRight": "20px",
+          },
+          "width": "100%",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+      }
+    }
+  >
+    <div
+      style={null}
+    >
+      <div
+        id="speech-dataset"
+        style={
+          Object {
+            "marginTop": "30px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "fontSize": "14.5px",
+              "fontWeight": "normal",
+              "marginTop": "30px",
+              "paddingBottom": "10px",
+            }
+          }
+        >
+          Select datasets to build speech model
+        </div>
+        <MultipleCheckboxFilter
+          allowEmpty={true}
+          className="transparent-bkg"
+          disabled={false}
+          isSpeechBundledUnbundledEnabled={true}
+          noOfColumns={1}
+          onChange={[Function]}
+          options={Array []}
+          showAsGrid={true}
+          showDropbox={false}
+          type="add-speech"
+          value={Array []}
+        />
+        <withTheme(Button)
+          name="stop-words"
+          onClick={[Function]}
+          styleOverride={
+            Object {
+              "fontWeight": "normal",
+              "marginTop": "15px",
+            }
+          }
+          type="flat"
+        >
+          MORE OPTIONS &gt;
+        </withTheme(Button)>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "unset",
+            "height": "100%",
+            "paddingRight": "30px",
+            "width": "50%",
+          }
+        }
+      >
+        <Connect(SpeechDropzone)
+          dispatch={[Function]}
+          modelToken="15e17bdf-f38e-42f3-a8f0-7b595dd3df40"
+          onChange={[Function]}
+          onChangeDigitalHostedUrl={[Function]}
+          onRadioChange={[Function]}
+          showDropbox={false}
+        />
+      </div>
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

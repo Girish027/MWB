@@ -1,0 +1,11 @@
+{
+  "_meta" : {
+    "schemaVersion" : "schema2"
+  },
+  "properties" : {
+    "classificationId": {
+      "type": "keyword",
+      "norms": false
+    }
+  }
+}

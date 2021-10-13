@@ -1,0 +1,92 @@
+@import '../vars/vars';
+
+#CreateModelWizardPage {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+
+  grid-template-rows: auto 1fr 1px;
+  grid-template-columns: 1fr;
+  height: 100%;
+  margin: 0;
+
+  #createModelHeader {
+    grid-area: header;
+  }
+
+  #createModelContent {
+    grid-area: content;
+  }
+
+  #createModelFooter {
+    grid-area: footer;
+  }
+
+  .mwb-model-create-header {
+    background: $containerBackgroundColor;
+    margin-left: -35px;
+    width: 100vw;
+  }
+
+  .form-fields {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 400px;
+    margin-bottom: 20px;
+
+    input {
+      width: 100%;
+      min-height: 0px;
+    }
+
+    input[type="text"]:disabled {
+      background: $disabledTextFieldBackgroundColor;
+    }
+
+    textarea:disabled {
+      background: $disabledTextFieldBackgroundColor;
+    }
+
+    .configuration-label {
+      display: inline-block;
+    }
+
+    .upload-configuration-label {
+      float: left;
+    }
+
+    .upload-configuration {
+      float: right;
+    }
+
+    .config-select {
+      clear: both;
+    }
+
+    > li {
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      color: #727272;
+    }
+  }
+
+  .delete:hover {
+    cursor: pointer;
+  }
+
+  //specific to Post Processing Rules Content
+  .rules-form {
+    margin-left: 30px;
+    padding-top: 30px;
+  }
+}
+.navigate-warning-content {
+  text-align: center;
+}

@@ -1,0 +1,1437 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots renders correctly when status completed 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "_key": "3",
+        "clientId": "001",
+        "description": "ftyfriyttg",
+        "id": "3",
+        "locale": "en-US",
+        "modifiedBy": "abc@247.ai",
+        "name": "y1",
+        "projectId": "7",
+        "status": "COMPLETED",
+        "task": "INDEX",
+        "type": "Social/Text",
+      },
+    ]
+  }
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots renders correctly when status failed 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "_key": "3",
+        "clientId": "001",
+        "description": "ftyfriyttg",
+        "id": "3",
+        "locale": "en-US",
+        "modifiedBy": "abc@247.ai",
+        "name": "y1",
+        "projectId": "7",
+        "status": "FAILED",
+        "task": "INDEX",
+        "type": "Social/Text",
+      },
+    ]
+  }
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should call getStatusBadge 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should call renderCreatedAt 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should call renderName with default status 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should call renderName with status completed 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should call renderStatus with status null 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should call renderStatus with status null and percentage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should call renderStatus with status other than null 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should renders correct status - COMPLETED 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should renders correct status - ERROR 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should renders correct status - FAILED 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should renders correct status - LIVE 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should renders correct status - NULL 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should renders correct status - PREVIEW 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should renders correct status - QUEUED 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should renders correct status - RUNNING 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectDatasetsGrid /> Snapshots should renders correct status - STARTED 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "Name",
+        "accessor": "",
+        "id": "name",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Type",
+        "accessor": "type",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "Locale",
+        "accessor": "locale",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 100,
+      },
+      Object {
+        "Header": "User",
+        "accessor": "modifiedBy",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Date",
+        "accessor": "createdAt",
+        "minWidth": 150,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={Array []}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "createdAt",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;

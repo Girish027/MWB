@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GridBulkTag /> Snapshots should match snapshots 1`] = `
+<Connect(GridBulkTag)
+  dispatch={[MockFunction]}
+/>
+`;

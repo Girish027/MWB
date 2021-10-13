@@ -1,0 +1,5 @@
+﻿"Frequency","% of Total","Tag","RU Tag","Description","Keywords","Examples","Comments"
+"2","8.0","agent-q","agent-ru",,"reservation","do reservation",
+"2","8.0","agent-quer","agent-query",,"agent","representative",
+"8","33.0","agent-query","TEST",,"reservation","do reservation",
+"12","50.0","reservation-query","reservation-query",,"make reservations","make a reservation today",

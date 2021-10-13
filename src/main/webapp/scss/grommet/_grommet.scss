@@ -1,0 +1,245 @@
+
+@import '../vars/vars';
+
+.grommetux-section {
+  padding: 0;
+}
+
+.grommetux-background-color-index-neutral-1, .grommetux-background-color-index-neutral-4 {
+  background-color: #fff;
+}
+
+.grommetux-check-box__label {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.grommetux-radio-button__label {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.grommetux-header--small {
+  min-height: 50px;
+  height: 50px;
+}
+
+.grommetux-drop {
+  // left: 565.229px; 
+  width: auto; 
+  max-height: 400px;
+
+  button.grommetux-button--fill {
+    max-width: calc(100% - 5px);
+    display: none;
+  }
+}
+
+.grommet.grommetux-drop {
+  z-index: $grommetuxDropZIndex;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.grommet.grommetux-drop:not([class*="background-color-index-"]) {
+  background-color: rgba(248, 248, 248, 0.95);
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.grommetux-select__control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-54%);
+  right: -8px;
+}
+
+.grommetux-select__options {
+  max-height: 200px;
+  max-width: 450px;
+}
+
+.grommetux-button__icon {
+  padding: 5px;
+}
+
+.grommetux-input {
+  padding: 5px !important;
+}
+
+.grommetux-search-input input {
+  background: #fff;
+}
+
+.grommetux-search-input__control {
+  position: absolute;
+  top: 15px;
+  transform: translateY(-50%);
+  right: 0;
+  padding: 5px !important;
+  height: 30px;
+}
+
+.grommetux-search-input__control:focus {
+  padding: 5px !important;
+  height: 30px;
+}
+
+
+.grommetux-control-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.grommetux-timestamp__date {
+  font-size: 14px;
+}
+
+.grommetux-timestamp__time {
+  font-size: 14px;
+}
+
+.grommetux-sidebar--full {
+  min-height: 100vh;
+  background: #eee;
+  //border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+
+}
+
+.grommetux-button--accent {
+  border-color: rgba(255,193,7,0.8) !important;
+  background-color: black;
+}
+
+.grommetux-button--accent:hover {
+  border-color: none;
+  box-shadow:none;
+}
+
+
+.grommetux-button__label {
+  text-decoration: none;
+
+  /* font-family: "Open Sans", Helvetica, Arial; */
+  font-size: 14px;
+}
+
+.grommetux-button__labeldrop {
+  text-decoration: none;
+
+  /* font-family: "Open Sans", Helvetica, Arial; */
+  font-size: 14px;
+  background: gainsboro;
+  color: #000;
+}
+
+
+.grommetux-button--primarydrop{
+  color: #000;
+}
+
+.grommetux-notification {
+  font-size: 1.1875rem;
+  line-height: 24px;
+  position: fixed;
+  z-index: 2;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  right: 0;
+}
+
+.grommetux-select__input {
+  height: 30px;
+  //margin-top: 10px;
+  //width: 90%;
+}
+
+.grommetux-toast {
+  background-color: whitesmoke;
+  height: 50px;
+}
+
+//.grommetux-button__label {
+//    margin-left: 5px !important;
+//    padding-right: 10px;
+//}
+
+a.grommetux-button {
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding: 6px !important;
+  margin-right: 5px; 
+  margin-left: 5px; 
+}
+
+button.grommetux-button  {
+  //padding: 0px;
+  //margin: 0px;
+  //padding-left: 5px;
+  //padding-right: 5px;
+  //margin-right: 5px;
+  //margin-left: 5px;
+  line-height: 0.316 !important;
+}
+
+
+
+.grommetux-split__column--separator {
+  border-right: 1px solid #999;
+}
+
+.grommetux-title {
+  font-family: $fontTitle;
+  color: #999 !important;
+}
+
+.grommetux-title svg, .grommetux-title img {
+  max-height: 16px;
+  max-width: 60px;
+}
+
+// .grommetux-anchor {
+// 	color: #999;
+// }
+
+// .grommetux-anchor:visited {
+// 	color: #999;
+// }
+
+.grommetux-background-color-index--light .grommetux-anchor, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor {
+  color: #999 !important;
+}
+
+
+// New Styles overrides
+
+button.grommetux-button.grommetux-button--primary {
+  background-color: $primaryColor;
+  border: none;
+}
+
+.grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--primary:hover {
+  background-color: $primaryColor;
+  border: none;
+  box-shadow: 0 0 0 2px $hoverShadowColor;
+}
+
+
+.grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill):hover {
+  background-color: $primaryColor;
+  border: none;
+  box-shadow: 0 0 0 2px $hoverShadowColor;
+}
+
+.grommetux-list-item--selected {
+  color: $primaryColor;
+  background: transparent;
+}
+
+button.grommetux-button:focus {
+  outline: 0px auto;
+  outline: 0px auto -webkit-focus-ring-color;
+}

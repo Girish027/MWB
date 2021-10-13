@@ -1,0 +1,1 @@
+UPDATE projects SET name = CONCAT_WS('_',name, created_at) where name in ('Root_Intent', 'Yes_No', 'Sentiment', 'Social') and type = 'NODE';

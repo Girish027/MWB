@@ -1,0 +1,3681 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ModelRowCascadeMenu /> Functionality: changeActiveItems: should mark the current item in focus/hover and render correctly 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={false}
+    key="Download Model File"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={false}
+    key="Download Training Outputs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={false}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={false}
+    key="Add Speech"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={false}
+    key="Delete"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Functionality: onClickDeleteModel: renders correctly for Digital + Speech Model - should not contain Delete action 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Digital Url"
+    disabled={false}
+    key="View Digital Url"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Digital Url
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={false}
+    key="Download Model File"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Functionality: onClickDeleteModel: renders correctly for Digital Model - should contain Delete action 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={false}
+    key="Download Model File"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={false}
+    key="Download Training Outputs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={false}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={false}
+    key="Add Speech"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={false}
+    key="Delete"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Functionality: onMouseLeave: should remove focus on all items and render correctly 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={false}
+    key="Download Model File"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={false}
+    key="Download Training Outputs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={false}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={false}
+    key="Add Speech"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={false}
+    key="Delete"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for Digital + Speech Model - should not contain Add Speech 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Digital Url"
+    disabled={false}
+    key="View Digital Url"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Digital Url
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={false}
+    key="Download Model File"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for Digital Model - should contain Add Speech 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={false}
+    key="Download Model File"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={false}
+    key="Download Training Outputs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={false}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={false}
+    key="Add Speech"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={false}
+    key="Delete"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with DEFAULT permissions when status is COMPLETED 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={false}
+    key="Download Model File"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={false}
+    key="Download Training Outputs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={false}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={false}
+    key="Add Speech"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={false}
+    key="Delete"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with DEFAULT permissions when status is ERROR 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={true}
+    key="Download Model File"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={true}
+    key="Download Training Outputs"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={false}
+    key="Delete"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with DEFAULT permissions when status is FAILED 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={false}
+    key="Build"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={true}
+    key="Download Model File"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={true}
+    key="Download Training Outputs"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={false}
+    key="Delete"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with DEFAULT permissions when status is LIVE 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={false}
+    key="Download Model File"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={false}
+    key="Download Training Outputs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={false}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={false}
+    key="Add Speech"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with DEFAULT permissions when status is NULL 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={false}
+    key="Build"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={true}
+    key="Download Model File"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={true}
+    key="Download Training Outputs"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={true}
+    key="Delete"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with DEFAULT permissions when status is PREVIEW 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={false}
+    key="Download Model File"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={false}
+    key="Download Training Outputs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={false}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={false}
+    key="Add Speech"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with DEFAULT permissions when status is QUEUED 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={true}
+    key="Download Model File"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={true}
+    key="Download Training Outputs"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={false}
+    key="Delete"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with DEFAULT permissions when status is RUNNING 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={true}
+    key="Download Model File"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={true}
+    key="Download Training Outputs"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={true}
+    key="Delete"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with DEFAULT permissions when status is STARTED 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Model File"
+    disabled={true}
+    key="Download Model File"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Model File
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Training Outputs"
+    disabled={true}
+    key="Download Training Outputs"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Training Outputs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Configuration"
+    disabled={false}
+    key="Download Configuration"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Configuration
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View Logs"
+    disabled={false}
+    key="View Logs"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View Logs
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Delete"
+    disabled={false}
+    key="Delete"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Delete
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with MWB_ROLE_EXTERNAL permissions when status is COMPLETED 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={false}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={false}
+    key="Add Speech"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with MWB_ROLE_EXTERNAL permissions when status is ERROR 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with MWB_ROLE_EXTERNAL permissions when status is FAILED 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={false}
+    key="Build"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with MWB_ROLE_EXTERNAL permissions when status is LIVE 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={false}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={false}
+    key="Add Speech"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with MWB_ROLE_EXTERNAL permissions when status is NULL 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={false}
+    key="Build"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with MWB_ROLE_EXTERNAL permissions when status is PREVIEW 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={false}
+    key="Test"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={false}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={false}
+    key="Add Speech"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with MWB_ROLE_EXTERNAL permissions when status is QUEUED 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with MWB_ROLE_EXTERNAL permissions when status is RUNNING 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+</Menu>
+`;
+
+exports[`<ModelRowCascadeMenu /> Snapshots renders correctly for user with MWB_ROLE_EXTERNAL permissions when status is STARTED 1`] = `
+<Menu
+  className="ActionItems"
+  closeOnClick={true}
+  direction="column"
+  dropAlign={
+    Object {
+      "left": "left",
+      "top": "top",
+    }
+  }
+  label="..."
+  pad="none"
+  responsive={true}
+>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Build"
+    disabled={true}
+    key="Build"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Build
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Test"
+    disabled={true}
+    key="Test"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Test
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Tune"
+    disabled={false}
+    key="Tune"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Tune
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="View"
+    disabled={false}
+    key="View"
+    method="push"
+    onClick={[Function]}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      View
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Download Accuracy Report"
+    disabled={true}
+    key="Download Accuracy Report"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Download Accuracy Report
+    </span>
+  </Anchor>
+  <Anchor
+    animateIcon={true}
+    className="dataset-menu action-menu"
+    data-qa="Add Speech"
+    disabled={true}
+    key="Add Speech"
+    method="push"
+    onClick={null}
+    tag="a"
+  >
+    <span
+      className="dataset-menu-item action-menu-item"
+    >
+      Add Speech
+    </span>
+  </Anchor>
+</Menu>
+`;

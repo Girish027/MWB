@@ -1,0 +1,63 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Version
+  description: APIs for resources needed for the UI
+host: localhost:8443
+basePath: /nltools/v1/
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /version:
+    get:
+      tags:
+        - get
+      summary: List Version information for services
+      operationId: getVersion
+      responses:
+        200:
+          description: An array of strings listing Vertical Markets
+          type: object
+          schema:
+                $ref: '#/definitions/Version'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  Version:
+    required:
+      - buildDate
+      - revision
+      - version
+    properties:
+      buildDate:
+        type: integer
+        format: int64
+        description: Date of build in MS from epoch
+      revision:
+        type: string
+        description: Code Repository revision
+      version:
+        type: string
+        description: Version name
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response

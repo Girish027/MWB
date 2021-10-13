@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SettingsView /> Snapshots should match with basic props 1`] = `
+<div
+  id="SettingsTab"
+>
+  <Deprecated>
+    <Deprecated>
+      <div
+        className="ModelLevelMonitoringTitle"
+      >
+        Model Level Monitoring Threshold
+      </div>
+      <hr
+        color="#bcc1c7"
+      />
+      <div
+        className="EscalationRate"
+      >
+        Escalation Rate
+      </div>
+      <div
+        className="Threshold"
+      >
+        Set threshold and send alert if escalation rate exceeds 
+        <withTheme(TextField)
+          defaultValue="30%"
+          name="thresholdValue"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "helpText": Object {
+                "height": "0px",
+              },
+              "input": Object {
+                "height": "23px",
+                "width": "100%",
+              },
+              "width": "45px",
+            }
+          }
+        />
+         for a day
+      </div>
+      <div
+        className="DefaultThreshold"
+      >
+        Default 30%
+      </div>
+      <div
+        className="Threshold"
+      >
+        Set threshold and send alert if the difference between escalation rate exceeds 
+        <withTheme(TextField)
+          defaultValue="0%"
+          name="thresholdValue"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "helpText": Object {
+                "height": "0px",
+              },
+              "input": Object {
+                "height": "23px",
+                "width": "100%",
+              },
+              "width": "45px",
+            }
+          }
+        />
+         on consecutive days
+      </div>
+    </Deprecated>
+    <div>
+      <div
+        className="NodeLevelMonitoringTitle"
+      >
+        Node Level Monitoring Threshold
+      </div>
+      <hr
+        color="#bcc1c7"
+        style={
+          Object {
+            "marginBottom": "0px",
+          }
+        }
+      />
+      <div>
+        <div
+          className="tabs"
+        >
+          <withTheme(Tabs)
+            align="left"
+            onTabSelected={[Function]}
+            selectedIndex={0}
+            styleOverride={
+              Object {
+                "tabContainer": Object {
+                  "borderTop": "none",
+                },
+                "tabItem": Object {
+                  "padding": "23px 20px 21px",
+                },
+              }
+            }
+            tabPanels={
+              Array [
+                <Deprecated>
+                  <div
+                    className="EscalationRate"
+                    style={
+                      Object {
+                        "paddingTop": "15px",
+                      }
+                    }
+                  >
+                    Escalation Rate
+                  </div>
+                  <div
+                    className="EscalationRateDesc"
+                  >
+                    Set default for all the Nodes
+                  </div>
+                  <div
+                    className="Threshold"
+                  >
+                    Set threshold and send alert if escalation rate exceeds 
+                    <withTheme(TextField)
+                      defaultValue="30%"
+                      name="thresholdValue"
+                      onChange={[Function]}
+                      styleOverride={
+                        Object {
+                          "input": Object {
+                            "height": "23px",
+                            "width": "100%",
+                          },
+                          "width": "45px",
+                        }
+                      }
+                    />
+                     for a day
+                  </div>
+                </Deprecated>,
+                <Deprecated>
+                  <Deprecated
+                    size={2}
+                    styleOverride={
+                      Object {
+                        "borderRight": "1px solid #CCC",
+                        "height": "auto",
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <withTheme(VerticalNav)
+                      onSelection={[Function]}
+                      selectedItems={
+                        Array [
+                          "Node 1",
+                        ]
+                      }
+                      styleOverride={
+                        Object {
+                          "boxShadow": "none",
+                          "marginLeft": -6,
+                          "overflowY": "auto",
+                          "padding": "20px 0px",
+                        }
+                      }
+                    >
+                      <withTheme(VerticalNavItem)
+                        name="Node 1"
+                      >
+                        Node 1
+                      </withTheme(VerticalNavItem)>
+                      <withTheme(VerticalNavItem)
+                        name="Node 2"
+                      >
+                        Node 2
+                      </withTheme(VerticalNavItem)>
+                    </withTheme(VerticalNav)>
+                  </Deprecated>
+                  <Deprecated>
+                    <Deprecated
+                      size={9}
+                      styleOverride={
+                        Object {
+                          "overflowY": "auto",
+                          "padding": "25px 0 0 25px",
+                        }
+                      }
+                    >
+                      <div>
+                        <div
+                          className="EscalationRate"
+                        >
+                          Escalation Rate
+                        </div>
+                        <div
+                          className="Threshold"
+                        >
+                          Set threshold and send alert if escalation rate exceeds 
+                          <withTheme(TextField)
+                            defaultValue="30%"
+                            name="thresholdValue"
+                            onChange={[Function]}
+                            styleOverride={
+                              Object {
+                                "helpText": Object {
+                                  "height": "0px",
+                                },
+                                "input": Object {
+                                  "height": "23px",
+                                  "width": "100%",
+                                },
+                                "width": "45px",
+                              }
+                            }
+                          />
+                           for a day
+                        </div>
+                        <div
+                          className="DefaultThreshold"
+                        >
+                          Default 30%
+                        </div>
+                      </div>
+                    </Deprecated>
+                  </Deprecated>
+                </Deprecated>,
+              ]
+            }
+            tabs={
+              Array [
+                "Universal",
+                "Each Node",
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </Deprecated>
+</div>
+`;

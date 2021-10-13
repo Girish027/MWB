@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ColumnSelectorDialog /> Creating an instance with no props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    centerContent={true}
+    closeIconVisible={true}
+    headerChildren=""
+    isOpen={true}
+    onClickClose={[Function]}
+    showFooter={false}
+    size="small"
+    styleOverride={
+      Object {
+        "childContainer": Object {
+          "margin": "5px 30px auto",
+        },
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<ColumnSelectorDialog /> Creating an instance with test props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    centerContent={true}
+    closeIconVisible={true}
+    headerChildren=""
+    isOpen={true}
+    onClickClose={[Function]}
+    showFooter={false}
+    size="small"
+    styleOverride={
+      Object {
+        "childContainer": Object {
+          "margin": "5px 30px auto",
+        },
+      }
+    }
+  >
+    <withTheme(Checkbox)
+      checked={true}
+      disabled={false}
+      key="count"
+      label="Count"
+      onChange={[Function]}
+      value="count"
+    />
+    <withTheme(Checkbox)
+      checked={true}
+      disabled={false}
+      key="datasetIds"
+      label="Datasets"
+      onChange={[Function]}
+      value="datasetIds"
+    />
+    <withTheme(Checkbox)
+      checked={true}
+      disabled={false}
+      key="uniqueTextString"
+      label="Unique Text String"
+      onChange={[Function]}
+      value="uniqueTextString"
+    />
+    <withTheme(Checkbox)
+      checked={true}
+      disabled={false}
+      key="suggestedTag"
+      label="Suggested Category"
+      onChange={[Function]}
+      value="suggestedTag"
+    />
+    <withTheme(Checkbox)
+      checked={true}
+      disabled={false}
+      key="manualTag"
+      label="Granular Intent"
+      onChange={[Function]}
+      value="manualTag"
+    />
+    <withTheme(Checkbox)
+      checked={true}
+      disabled={false}
+      key="rutag"
+      label="Rollup Intent"
+      onChange={[Function]}
+      value="rutag"
+    />
+    <withTheme(Checkbox)
+      checked={true}
+      disabled={false}
+      key="comment"
+      label="Comments"
+      onChange={[Function]}
+      value="comment"
+    />
+  </withTheme(DialogComponent)>
+</div>
+`;

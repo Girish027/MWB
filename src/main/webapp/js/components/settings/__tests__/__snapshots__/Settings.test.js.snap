@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Settings /> Snapshots should match with basic props 1`] = `
+<div
+  id="Settings"
+>
+  <Deprecated>
+    <Deprecated
+      size={2}
+      styleOverride={
+        Object {
+          "borderRight": "1px solid #CCC",
+          "height": "calc(100vh - 101px)",
+          "position": "relative",
+        }
+      }
+    >
+      <withTheme(VerticalNav)
+        onSelection={[Function]}
+        selectedItems={
+          Array [
+            "Model Technologies",
+          ]
+        }
+        styleOverride={
+          Object {
+            "boxShadow": "none",
+            "marginLeft": -6,
+            "marginTop": "-20px",
+            "overflowY": "auto",
+            "padding": "20px 0px",
+          }
+        }
+      >
+        <withTheme(VerticalNavItem)
+          name="Model Technologies"
+          styleOverride={
+            Object {
+              "fontSize": "15px",
+              "lineHeight": "60px",
+            }
+          }
+        >
+          Model Technologies
+        </withTheme(VerticalNavItem)>
+        <withTheme(VerticalNavItem)
+          name="Model Monitoring"
+          styleOverride={
+            Object {
+              "fontSize": "15px",
+              "lineHeight": "60px",
+            }
+          }
+        >
+          Model Monitoring
+        </withTheme(VerticalNavItem)>
+      </withTheme(VerticalNav)>
+    </Deprecated>
+    <Deprecated>
+      <Deprecated
+        size={9}
+        styleOverride={
+          Object {
+            "overflowY": "auto",
+            "padding": "25px 0 0 25px",
+          }
+        }
+      >
+        <div>
+          <div
+            style={
+              Object {
+                "color": "#333333",
+                "fontSize": "15px",
+                "fontWeight": "bold",
+                "lineHeight": "30px",
+                "marginBottom": "4px",
+              }
+            }
+          >
+            Model Technology
+          </div>
+          <div
+            style={
+              Object {
+                "color": "#9B9B9B",
+                "fontSize": "14px",
+                "fontWeight": "normal",
+                "lineHeight": "13px",
+              }
+            }
+          >
+            Select one from the list below to set as a default technology.
+          </div>
+          <hr />
+          <IconButton
+            defaultColor="#004c97"
+            disabled={false}
+            disabledColor="#9B9B9B"
+            focusedColor="#003467"
+            height={200}
+            icon={[Function]}
+            onClick={[Function]}
+            padding="1px"
+            strokeColor="none"
+            styleOverride={
+              Object {
+                ":hover": Object {
+                  "border": "2px solid #004c97",
+                },
+                "border": "2px solid #dedede",
+                "borderRadius": "5px",
+                "marginRight": "25px",
+              }
+            }
+            title=""
+            width={180}
+          />
+          <IconButton
+            defaultColor="#004c97"
+            disabled={false}
+            disabledColor="#9B9B9B"
+            focusedColor="#003467"
+            height={200}
+            icon={[Function]}
+            onClick={[Function]}
+            padding="1px"
+            strokeColor="none"
+            styleOverride={
+              Object {
+                ":hover": Object {
+                  "border": "2px solid #004c97",
+                },
+                "border": "2px solid #000000",
+                "borderRadius": "5px",
+              }
+            }
+            title=""
+            width={180}
+          />
+          <div
+            style={
+              Object {
+                "paddingLeft": "800px",
+                "paddingTop": "40px",
+              }
+            }
+          >
+            <withTheme(Button)
+              name="save-as-default-button"
+              onClick={[Function]}
+              styleOverride={
+                Object {
+                  "paddingLeft": "25px",
+                  "paddingRight": "25px",
+                }
+              }
+              type="primary"
+            >
+              SAVE AS DEFAULT
+            </withTheme(Button)>
+          </div>
+          <hr />
+        </div>
+      </Deprecated>
+      <withTheme(DialogComponent)
+        cancelChildren="CANCEL"
+        closeIconVisible={false}
+        headerChildren="Are you sure"
+        isOpen={true}
+        okChildren="CONFIRM"
+        onClickCancel={[Function]}
+        onClickOk={[Function]}
+        size="small"
+      >
+        <div
+          style={
+            Object {
+              "fontSize": "14px",
+              "lineHeight": "25px",
+              "paddingBottom": "25px",
+              "textAlign": "left",
+            }
+          }
+        >
+          Changing the default value will not affect the already existing models, instead the new models will use the default technology. You can always change the technology while creating or editing a model version
+        </div>
+        <withTheme(Checkbox)
+          checked={false}
+          label="Update model technology of all the existing models to this default"
+          onChange={[Function]}
+          value={true}
+        />
+      </withTheme(DialogComponent)>
+    </Deprecated>
+  </Deprecated>
+</div>
+`;

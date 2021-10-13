@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<actions_configs /> Snapshots should call addSpeechWithWordClassFile function while user uploads wordclass file 1`] = `
+Array [
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": Object {},
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Create Failed - Are you logged in?",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Config already exists.",
+  },
+]
+`;
+
+exports[`<actions_configs /> Snapshots should call addSpeechWithoutWordClassFile function while user does not upload wordclass file 1`] = `
+Array [
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": Object {},
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Create Failed - Are you logged in?",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Config already exists.",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "There was a problem importing the file.",
+  },
+]
+`;
+
+exports[`<actions_configs /> Snapshots should call importSpeechFile function on creating speech model 1`] = `
+Array [
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+]
+`;
+
+exports[`<actions_configs /> Snapshots should call submit model on creating digital model  1`] = `
+Array [
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+]
+`;
+
+exports[`<actions_configs /> Snapshots should display config create fail on 400 status 1`] = `
+Array [
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": Object {},
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Create Failed - Are you logged in?",
+  },
+]
+`;
+
+exports[`<actions_configs /> Snapshots should display configAlreadyExists message on 409 status 1`] = `
+Array [
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+  Object {
+    "config": Object {},
+    "type": "CONFIG_CREATED",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "undefined created.",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": Object {},
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Create Failed - Are you logged in?",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Config already exists.",
+  },
+]
+`;

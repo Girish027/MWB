@@ -1,0 +1,1 @@
+delete from model_configs where name='system_default_en_1';

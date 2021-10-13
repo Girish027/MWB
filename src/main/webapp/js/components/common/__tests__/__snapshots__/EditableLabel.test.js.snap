@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EditableLabel /> Snapshots renders correctly for a model without any batch tests 1`] = `
+<div
+  className=""
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+>
+  <div
+    className="float-left"
+  >
+    <label
+      contentEditable={false}
+      onInput={[Function]}
+      style={Object {}}
+    >
+      test value
+    </label>
+  </div>
+  <div
+    className="float-left"
+    onClick={[Function]}
+    style={
+      Object {
+        "paddingLeft": "8px",
+      }
+    }
+  >
+    <Component
+      src="/images/actions/pencil.svg"
+    />
+  </div>
+  <div
+    className="float-clear"
+  />
+</div>
+`;
+
+exports[`<EditableLabel /> Snapshots renders correctly when custom class is provided 1`] = `
+<div
+  className="test class"
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+>
+  <div
+    className="float-left"
+  >
+    <label
+      contentEditable={false}
+      onInput={[Function]}
+      style={Object {}}
+    >
+      test value
+    </label>
+  </div>
+  <div
+    className="float-left"
+    onClick={[Function]}
+    style={
+      Object {
+        "paddingLeft": "8px",
+      }
+    }
+  >
+    <Component
+      src="/images/actions/pencil.svg"
+    />
+  </div>
+  <div
+    className="float-clear"
+  />
+</div>
+`;
+
+exports[`<EditableLabel /> Snapshots should call enableEditMode 1`] = `
+<div
+  className=""
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+>
+  <div
+    className="float-left"
+  >
+    <label
+      contentEditable="true"
+      onInput={[Function]}
+      style={
+        Object {
+          "borderBottom": "1px dotted black",
+          "caretColor": "#ef8822",
+          "display": "inline-block",
+          "paddingBottom": "2px",
+        }
+      }
+    >
+      test value
+    </label>
+  </div>
+  <div
+    className="float-left"
+    onClick={[Function]}
+    style={
+      Object {
+        "paddingLeft": "8px",
+      }
+    }
+  >
+    <Component
+      src="/images/actions/pencil.svg"
+    />
+  </div>
+  <div
+    className="float-clear"
+  />
+</div>
+`;

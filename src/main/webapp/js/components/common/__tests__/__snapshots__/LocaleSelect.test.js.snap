@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LocaleSelect /> Snapshots renders correctly 1`] = `
+<div>
+  <label />
+  <Request
+    accept="application/json"
+    method="get"
+    url="/nltools/private/v1/resources/locales"
+    verbose={true}
+  >
+    <Component />
+  </Request>
+</div>
+`;
+
+exports[`<LocaleSelect /> Snapshots should call processResults 1`] = `
+<div>
+  <label />
+  <Request
+    accept="application/json"
+    method="get"
+    url="/nltools/private/v1/resources/locales"
+    verbose={true}
+  >
+    <Component />
+  </Request>
+</div>
+`;
+
+exports[`<LocaleSelect /> Snapshots should call processResults without body 1`] = `
+<div>
+  <label />
+  <Request
+    accept="application/json"
+    method="get"
+    url="/nltools/private/v1/resources/locales"
+    verbose={true}
+  >
+    <Component />
+  </Request>
+</div>
+`;

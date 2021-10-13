@@ -1,0 +1,135 @@
+// @import '../vars/vars';
+
+// #OpenProject {
+//   overflow: visible;
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+//   top: $viewTop;
+//   position: fixed;
+//   left: 0;
+//   right: 0;
+
+//   .openProjectContainer {
+//     margin-left: 400px;
+//     margin-top: 0;
+//     margin-right: 0;
+//     margin-bottom: 0;
+//     overflow: visible;
+//     padding-top: 70px;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     padding-bottom: 20px;
+
+//     .projDetailsRow {
+//       display: block;
+
+//       label {
+//         width: 95px;
+//         text-align: right
+//       }
+
+//       .grommetux-timestamp__date{
+//         font-size: 14px;
+//       }
+
+//       .grommetux-timestamp__time{
+//         font-size: 14px;
+//       }
+
+//       p {
+//         display: inline-block;
+//         margin-left: 10px;
+//         margin-bottom: 0;
+//       }
+//     }
+
+//     .projDetailsSmall {
+//       font-size: 12px;
+//     } 
+
+//     .projSummary {
+//       margin-bottom: 30px;
+//     }
+
+
+//     .projBtnContainer {
+//       margin: 10px 0 30px;
+
+//       .actionBtnContainer{
+//         display: inline-block;
+//         margin-left: 10px;
+//       }
+
+//       .actionBtnContainer:first-of-type button {
+//         margin-left: 0;
+//       }
+
+//       .actionBtnContainer:first-of-type a {
+//         margin-left: 0;
+//       }
+
+//       .actionBtnContainer a {
+//         padding: 6px 22px 10px;
+//       }
+
+//       a.grommetux-button{
+//         padding: 10px !important;
+//       }
+
+//     }
+
+//     .projTransformationSpinner{
+//       display: inline-block;
+//       vertical-align: top;
+//       width: 46px;
+//     }
+
+//   }
+
+//   .openproject-appheader-container {
+//     top: 200px;
+//     position: fixed;
+//     left: 0;
+//     right: 0;
+//   }
+// }
+
+// #OpenProject.sidebar-closed {
+//   .sidebarContainer {
+//     min-width: 30px;
+//     width: 30px;
+//   }
+
+//   .openProjectContainer {
+//     margin-left: 60px;
+//     padding-top: 70px;
+//     padding-right: 0;
+//     padding-bottom: 0;
+//     padding-left: 0;
+//   }
+// }
+
+// #OpenProject.sidebar-hidden {
+//   .sidebarContainer {
+//     min-width: 0px;
+//     width: 0px;
+//   }
+
+//   .openProjectContainer {
+//     margin-left: 0px;
+//     padding-top: 70px;
+//     padding-right: 0;
+//     padding-bottom: 0;
+//     padding-left: 0;
+//   }
+// }
+
+// .sidebarToggle {
+//   float: right;
+// }
+
+// .sidebarToggle:hover {
+//   cursor: pointer;
+// }

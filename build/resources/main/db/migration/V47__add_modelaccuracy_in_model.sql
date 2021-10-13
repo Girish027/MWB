@@ -1,0 +1,1 @@
+ALTER TABLE models ADD accuracy varchar(64) DEFAULT NULL ;

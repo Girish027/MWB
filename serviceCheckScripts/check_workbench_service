@@ -1,0 +1,42 @@
+#!/usr/local/bin/perl -w
+
+
+use strict;
+use warnings;
+use JSON;
+
+use lib "/usr/local/lib";
+use Statusd;
+use constant UNKNOWN  => -1;
+use constant OK       => 0;
+use constant CRITICAL => 2;
+
+my $statusd = new Statusd;
+
+my $result = `/usr/local/bin/curl -m 30 -s 127.0.0.1:9590/actuator/health`;
+
+if ($result) {
+
+    my $json = decode_json($result);
+    my $serviceStatus = $json->{'status'};
+    my $dbStatus = $json->{'details'}{'db'}{'status'};
+    my $redisStatus = $json->{'details'}{'redis'}{'status'};
+    my $exit_code = OK;
+    my $summary;
+
+     if (($serviceStatus eq "UP") && ($dbStatus eq "UP") && ($redisStatus eq "UP")) {
+        $summary = "OK";
+        $exit_code = OK;
+    }
+
+    else {
+	$summary = "CRITICAL";
+	$exit_code = CRITICAL;
+    }
+
+    print "$summary";
+    print "\n__OUTPUT__\n $result \n";
+    exit($exit_code);
+} else {
+    $statusd->exit_critical('Did not get a response from SpringBoot Actuator \n');
+}

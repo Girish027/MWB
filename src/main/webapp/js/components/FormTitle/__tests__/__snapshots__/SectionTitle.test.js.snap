@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionTitle /> Snapshots renders correctly with default props 1`] = `
+<Deprecated>
+  <Deprecated>
+    <Deprecated
+      size={10}
+    >
+      <div
+        style={
+          Object {
+            "color": "#333333",
+            "float": "left",
+            "fontSize": "14px",
+            "fontWeight": "bold",
+            "lineHeight": "24px",
+            "marginBottom": "15px",
+          }
+        }
+      >
+        Title
+      </div>
+    </Deprecated>
+  </Deprecated>
+  <Deprecated>
+    <Deprecated
+      key="abc"
+    />
+    <Deprecated
+      key="bcd"
+      size={12}
+    />
+  </Deprecated>
+</Deprecated>
+`;

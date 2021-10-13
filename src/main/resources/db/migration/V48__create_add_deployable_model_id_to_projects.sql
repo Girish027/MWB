@@ -1,0 +1,1 @@
+ALTER TABLE projects ADD column deployable_model_id int(12) default null;

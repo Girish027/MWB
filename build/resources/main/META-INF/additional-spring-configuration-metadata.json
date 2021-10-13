@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "service.client.create.enabled",
+  "type": "java.lang.Boolean",
+  "description": "Enable the create REST api for clients, if enabled allow requests to create new clients"
+}]}

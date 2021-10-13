@@ -1,0 +1,19 @@
+
+@import '../colors/colors';
+@import '../layout/layout';
+
+/* z indexes */
+$taggerGridLoadingBarZIndex: 10;
+$taggerGridFixedHeaderZIndex: 10;
+$taggerGridControlsZIndex: 100;
+$headerZIndex: 200;
+$contextMenusZIndex: 1000;
+$notificationZIndex: $contextMenusZIndex + 100;
+$modalZIndex: $notificationZIndex + 100;
+$modalResizeIconZIndex: $notificationZIndex + 110;
+$grommetuxDropZIndex: 10000; // Select Drop to appear on top of dialogs as well.
+
+$fontFamily: 'LatoWeb', sans-serif;
+
+$formTopMargin: 70px;
+$formLeftMargin: 20px;

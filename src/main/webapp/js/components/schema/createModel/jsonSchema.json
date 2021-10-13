@@ -1,0 +1,29 @@
+{
+  "title": "",
+  "type": "object",
+  "required": [
+    "name"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name",
+      "isRequired": true
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "optional": true
+    },
+    "vertical": {
+      "type": "string",
+      "title": "Vertical",
+      "default": "FINANCIAL"
+    },
+    "locale": {
+      "type": "string",
+      "title": "Locale",
+      "default": "en-US"
+    }
+  }
+}

@@ -1,0 +1,1697 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateModelTabsComponent /> Functionality: buildModelWithConfig should render buildModelWithConfig on clicking CREATE VERSION button 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={true}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Functionality: confirmModelWithConfig should render confirmModelWithConfig while clicking on CREATE VERSION button 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={true}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Functionality: getTabs should hide the Preprocessing Tab if Tensorflow is selected in Basic Info Tab 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={true}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "technology": "USE",
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={false}
+            model={
+              Object {
+                "technology": "USE",
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            model={
+              Object {
+                "technology": "USE",
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "technology": "USE",
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Functionality: getTabs should render the Preprocessing Tab if N-Gram is selected in Basic Info Tab 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={true}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "technology": "N-GRAM",
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={false}
+            model={
+              Object {
+                "technology": "N-GRAM",
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            model={
+              Object {
+                "technology": "N-GRAM",
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "technology": "N-GRAM",
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Functionality: handleCancel should render handleCancel while clicking on CANCEL button 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={true}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Functionality: onClickNext should hide the Preprocessing Tab if Tensorflow is selected in Basic Info Tab 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={2}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={false}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={true}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Functionality: onClickNext should render the Preprocessing Tab if N-Gram is selected in Basic Info Tab 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={1}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={false}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={true}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Functionality: onClickNext should render the next tab 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={1}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={Object {}}
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={false}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "description": "myDesc",
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={true}
+            model={
+              Object {
+                "description": "myDesc",
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={Object {}}
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={Object {}}
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "description": "myDesc",
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Functionality: onTabSelected should render the selected tab 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={-1}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={false}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Functionality: renderActionItem should render renderActionItem correctly 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={true}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Functionality: tuneModel should render tuneModel function while tuning model 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={true}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={
+              Object {
+                "name": "undefined-cfg",
+              }
+            }
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "description": "myDesc",
+                "startBuild": true,
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;
+
+exports[`<CreateModelTabsComponent /> Snapshots should match with basic props 1`] = `
+<div
+  id="CreateModelWizardPage"
+>
+  <div
+    id="modelCreateContent"
+  >
+    <withTheme(Tabs)
+      align="center"
+      forceRenderTabPanel={false}
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      styleOverride={
+        Object {
+          "tabContainer": Object {
+            "borderTop": "none",
+          },
+          "tabItem": Object {
+            "padding": "23px 50px 21px",
+          },
+        }
+      }
+      tabPanels={
+        Array [
+          <NewModel
+            config={Object {}}
+            configs={null}
+            currentType={Object {}}
+            datasets={null}
+            dispatch={[Function]}
+            fetchConfigById={[Function]}
+            isCurrentTab={true}
+            latestTensorflowVersion={Object {}}
+            model={
+              Object {
+                "description": "myDesc",
+              }
+            }
+            modelViewReadOnly={false}
+            models={null}
+            newModelConfig={[Function]}
+            onClickDownloadConfig={[Function]}
+            onNewConfigSelect={[Function]}
+            project={Object {}}
+            registerCallbacks={[Function]}
+            reportError={[Function]}
+            reportSuccess={[Function]}
+            saveConfigChanges={[Function]}
+            saveModelChanges={[Function]}
+            setValidModel={[Function]}
+            tabName="Basic Info*"
+            tuneModelId="123"
+            viewModelId={null}
+          />,
+          <Connect(ModelTransformations)
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+              }
+            }
+            newConfigSelected={true}
+            registerCallbacks={[Function]}
+            resetNewConfigSelected={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Pre Processing"
+          />,
+          <PostProcessingTransformations
+            config={Object {}}
+            isCurrentTab={false}
+            model={
+              Object {
+                "description": "myDesc",
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Post Processing"
+          />,
+          <TrainingConfigs
+            config={Object {}}
+            isCurrentTab={false}
+            isTrainingConfigsValid={[Function]}
+            model={
+              Object {
+                "description": "myDesc",
+              }
+            }
+            registerCallbacks={[Function]}
+            saveConfigChanges={[Function]}
+            tabName="Training Configs"
+          />,
+        ]
+      }
+      tabs={
+        Array [
+          "Basic Info*",
+          "Pre Processing",
+          "Post Processing",
+          "Training Configs",
+        ]
+      }
+    />
+  </div>
+  <div
+    id="modelCreateFooter"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": "30px",
+          "position": "fixed",
+          "right": "30px",
+        }
+      }
+    >
+      <Next />
+    </div>
+  </div>
+  <withRouter(NavigationPrompt)
+    afterConfirm={[Function]}
+    renderIfNotActive={true}
+    when={[Function]}
+  >
+    <Component />
+  </withRouter(NavigationPrompt)>
+</div>
+`;

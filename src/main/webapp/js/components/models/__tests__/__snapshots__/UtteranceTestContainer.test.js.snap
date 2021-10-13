@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UtteranceTestContainer /> Snapshots renders correctly for a digital model 1`] = `
+<div
+  id="ModelTest"
+>
+  <Deprecated>
+    <Connect(UtteranceInputBar)
+      handleAudio={[Function]}
+      model={
+        Object {
+          "modelToken": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+          "modelType": "DIGITAL",
+        }
+      }
+      onModelTypeChange={[Function]}
+      speechModelTestResults={Object {}}
+      submitTest={[Function]}
+      testModelType="DIGITAL"
+      utterance=""
+    />
+    <UtteranceTestResults
+      audioSrc=""
+      digitalModelTestResults={Object {}}
+      fileType=""
+      model={
+        Object {
+          "modelToken": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+          "modelType": "DIGITAL",
+        }
+      }
+      speechModelTestResults={Object {}}
+      testModelType="DIGITAL"
+    />
+  </Deprecated>
+</div>
+`;

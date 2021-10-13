@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Proccessing Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Proccessing-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Proccessing-Icon-2" fill-rule="nonzero">
+            <path d="M8,16 C3.57746876,16 0,12.4141794 0,8 C0,3.58582061 3.57746876,0 8,0 C12.4225312,0 16,3.58582061 16,8 C16,12.4141794 12.4225312,16 8,16 Z M8,14.020284 C11.3026229,14.020284 13.9876289,11.3290096 13.9876289,8 C13.9876289,4.67099036 11.3026229,1.97971602 8,1.97971602 C4.69737713,1.97971602 2.01237113,4.67099036 2.01237113,8 C2.01237113,11.3290096 4.69737713,14.020284 8,14.020284 Z" id="Oval-32" fill="#E8E8E8"></path>
+            <path d="M8,14.020284 L8,16 C3.57746876,16 0,12.4141794 0,8 L2.01237113,8 C2.01237113,11.3290096 4.69737713,14.020284 8,14.020284 Z" id="Combined-Shape" fill="#FF8822"></path>
+        </g>
+    </g>
+</svg>

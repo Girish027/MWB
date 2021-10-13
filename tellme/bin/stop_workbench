@@ -1,0 +1,22 @@
+#!/usr/local/bin/bash
+
+export PATH=$PATH:/bin
+PARENT=$1
+
+pkill -2 -P $PARENT java
+
+for i in {1..10}
+do
+    pkill -0 -P $PARENT java > /dev/null 2>&1
+    if [ $? -eq 0 ]
+    then
+        sleep 1
+    else
+        exit
+    fi
+done
+
+# If the process is not dead yet, nuke it
+echo "Nuking java process for $PARENT!"
+pkill -9 -P $PARENT java
+

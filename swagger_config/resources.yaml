@@ -1,0 +1,88 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Resources
+  description: APIs for resources needed for the UI
+host: localhost:8080
+basePath: /nltools/v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /resources/verticals:
+    get:
+      tags:
+        - get
+      summary: List all Vertical Markets
+      operationId: listVerticals
+      type: array
+      items: string
+      responses:
+        200:
+          description: An array of strings listing Vertical Markets
+          schema:
+            type: array
+            items:
+              type: string
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /resources/datatypes:
+    get:
+      tags:
+        - get
+      summary: List all Data Set types
+      operationId: listDataTypes
+      type: array
+      items: string
+      responses:
+        200:
+          description: An array of strings listing Data Set Types
+          schema:
+            type: array
+            items:
+              type: string
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /resources/locales:
+    get:
+      tags:
+        - get
+      summary: List all supported dataset locales
+      operationId: listLocales
+      type: array
+      items: string
+      responses:
+        200:
+          description: An array of strings listing locales
+          schema:
+            type: array
+            items:
+              type: string
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response

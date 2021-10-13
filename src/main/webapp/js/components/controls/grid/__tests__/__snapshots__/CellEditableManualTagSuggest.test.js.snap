@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CellEditableManualTagSuggest /> Snapshots renders correctly for default props 1`] = `
+<div
+  className="SuggestContainer"
+  onKeyPress={[Function]}
+>
+  <div
+    className="Suggest warning"
+    key="cell-0"
+  >
+    No matching tags
+  </div>
+  <div
+    className="Suggest warning"
+    key="cell-1"
+  >
+    This will create a new tag
+  </div>
+</div>
+`;
+
+exports[`<CellEditableManualTagSuggest /> Snapshots renders correctly for default props with highlightTags 1`] = `
+<div
+  className="SuggestContainer"
+  onKeyPress={[Function]}
+>
+  <div
+    className="Suggest suggested"
+    data-label="ddf"
+    key="cell-0"
+    onMouseOver={[Function]}
+    tabIndex="-1"
+  >
+    ddf
+  </div>
+</div>
+`;
+
+exports[`<CellEditableManualTagSuggest /> Snapshots renders correctly for default props with suggestedTags not empty 1`] = `
+<div
+  className="SuggestContainer"
+  onKeyPress={[Function]}
+>
+  <div
+    className="Suggest"
+    data-label="ddf"
+    key="cell-0"
+    onMouseOver={[Function]}
+    tabIndex="-1"
+  >
+    ddf
+  </div>
+</div>
+`;

@@ -1,0 +1,121 @@
+buildscript {
+	ext {
+		springBootVersion = '1.4.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "gradle.plugin.com.github.jk1:gradle-license-report:0.3.5"
+    classpath "gradle.plugin.org.hidetake:gradle-swagger-codegen-plugin:1.0.0"
+  }
+}
+
+
+plugins {
+  id "com.github.jk1.dependency-license-report" version "0.3.5"
+}
+plugins {
+  id "org.hidetake.swagger.codegen" version "1.0.0"
+}
+
+dependencies {
+   swaggerCodegen 'io.swagger:swagger-codegen-cli:2.2.1'
+}
+
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+apply plugin: 'pmd'
+apply plugin: 'findbugs'
+apply plugin: 'checkstyle'
+apply plugin: "com.github.jk1.dependency-license-report"
+apply plugin: "org.hidetake.swagger.codegen"
+
+// findbugs tasks
+findbugs {
+    reportLevel = "low"
+    ignoreFailures = true
+}
+
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+}
+
+// checkstyle tasks
+checkstyle {
+    ignoreFailures = true
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+}
+
+jar {
+	baseName = 'nl-tools-ui'
+	version = '0.0.1-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+    	jcenter()
+}
+
+
+
+dependencies {
+
+    // The production code uses the SLF4J logging API at compile time
+    //compile('org.slf4j:slf4j-api:1.7.21')
+    //compile('org.slf4j:slf4j-log4j12:1.7.21')
+    //compile('log4j:log4j:1.2.14')
+    compile('org.projectlombok:lombok')
+    compile('org.xerial:sqlite-jdbc:3.8.11.2')
+	compile('org.flywaydb:flyway-core:4.0.3')
+	//compile('org.springframework.boot:spring-boot-starter-actuator')
+	//compile('org.springframework.cloud:spring-cloud-starter-consul-discovery')
+	compile('org.springframework.boot:spring-boot-starter-jetty')
+	compile('org.springframework.boot:spring-boot-starter-jdbc')
+	compile('org.springframework.boot:spring-boot-starter-jersey')
+	//compile('org.springframework.boot:spring-boot-starter-security')
+	//compile('org.springframework.session:spring-session')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Camden.RELEASE"
+	}
+}
+
+
+//https://github.com/int128/gradle-swagger-codegen-plugin
+//https://github.com/swagger-api/swagger-codegen
+// define a task to generate code
+task generateServer(type: SwaggerCodegen) {
+  language = 'spring'
+  inputFile = file('users.yaml')
+  outputDir = file("$buildDir/generated/server")
+}
+

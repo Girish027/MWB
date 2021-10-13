@@ -1,0 +1,13 @@
+.form-group {
+  margin-bottom: unset;
+}
+
+select option:hover,
+select option:focus,
+select option:active {
+  background: #EF8822
+}
+
+select:focus > option:checked {
+  background: #EFF3F6 !important;
+}

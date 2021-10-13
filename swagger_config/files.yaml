@@ -1,0 +1,266 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Files
+  description: File APIs and their descriptions
+host: localhost:10010
+basePath: /v1
+schemes:
+  - http
+produces:
+  - application/json
+paths:
+  /files:
+    x-swagger-router-controller: files
+    get:
+      tags:
+        - get
+      summary: List all files
+      operationId: listFiles
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          type: integer
+          format: int32
+          default: 25
+        - name: startIndex
+          in: query
+          description: starting index
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        200:
+          description: An paged array of Files
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: "#/definitions/FileEntryCollection"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    post:
+      tags:
+        - post
+      summary: Add a file
+      operationId: addFile
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: username
+          in: formData
+          required: true
+          description: The user adding the file
+          type: string
+        - name: file
+          description: The file form-data param
+          in: formData
+          type: file
+          schema:
+            $ref: "#/definitions/FileEntry"
+      responses:
+        201:
+          description: File succesfully added
+          schema:
+            $ref: "#/definitions/FileEntryDetail"
+        400:
+          description: Invalid request
+          schema:
+            $ref: "#/definitions/Error"
+        401:
+          description: Unauthorized to call the API
+        401:
+          description: User not authenticated
+          schema:
+            $ref: "#/definitions/Error"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /files/{fileId}:
+    get:
+      summary: Info for a specific File
+      operationId: getFileById
+      tags:
+        - get
+      parameters:
+        - name: fileId
+          in: path
+          required: true
+          description: The id of the file to retrieve
+          type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          schema:
+            $ref: "#/definitions/FileEntryDetail"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    delete:
+      tags:
+        - delete
+      summary: Deletes a user.
+      operationId: deleteFileById
+      description: Deletes the file
+      parameters:
+        - name: fileId
+          in: path
+          required: true
+          description: The id of the file to delete
+          type: string
+      responses:
+        204:
+          description: OK
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    patch:
+      tags: 
+        - patch
+      consumes:
+        - application/json-patch+json
+      summary: Modifies a file (currently on name)
+      operationId: patchFileById
+      description: Modifies an attribute of a file without required parameters
+      parameters:
+        - name: fileId
+          in: path
+          required: true
+          description: The id of the file to patch
+          type: string
+        - name: JsonPatch
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/PatchRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/FileEntryDetail'
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  FileEntry:
+    discriminator: file_id
+    type: object
+    required:
+      - id
+      - file_id
+      - name
+      - system_path
+      - user
+      - created_at
+      - modified_at
+    properties:
+      id:
+        type: string
+        description: A unique ID for the record
+      file_id:
+        type: string
+        description: A unique ID for the file
+      name:
+        type: string
+        description: The name of the file
+      system_name:
+        type: string
+        description: The name of this file on the file system
+      user:
+        type: string
+        description: The username who uploaded the file
+      created_at:
+        type: integer
+        format: int64
+        description: The milliseconds since epoch representing the time the file was uploaded
+      modified_at:
+        type: integer
+        format: int64
+        description: The milliseconds since epoch representing the time the file metadata was modified
+  FileEntryDetail:
+    required:
+      - uri
+    allOf:
+        - $ref: '#/definitions/FileEntry'
+        - type: object
+        - properties:
+            uri:
+              type: string
+              description: The URI of this file
+  FileEntryCollection:
+    type: object
+    required:
+      - offset
+      - totalCount
+      - resources
+    properties:
+      offset:
+        type: integer
+        format: int32
+        description: The offset from where the list files is returned
+      totalCount:
+        type: integer
+        format: int32
+        description: The total count of files returned
+      resources:
+        type: array
+        items:
+          $ref: "#/definitions/FileEntryDetail"
+  PatchRequest:
+    type: array
+    items:
+      $ref: "#/definitions/PatchDocument"
+  PatchDocument: 
+    description: A JSONPatch document as defined by RFC 6902 
+    required:
+     - op
+     - path
+    properties: 
+     op: 
+      type: string 
+      description: The operation to be performed 
+      enum:
+       - add
+       - remove
+       - replace
+       - move
+       - copy
+       - test
+     path: 
+      type: string 
+      description: A JSON-Pointer 
+     value: 
+      type: object 
+      description: The value to be used within the operations.
+     from: 
+      type: string 
+      description: A string containing a JSON Pointer value.
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code: 
+        type: string
+        description: Error category 
+      message:
+        type: string
+        description: Error message shown in api response
+

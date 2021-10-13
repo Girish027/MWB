@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SimpleDialog /> Creating an instance with no props Snapshots should render correctly 1`] = `
+<TaggerModal
+  actions={
+    Array [
+      <withTheme(Button)
+        data-qa="cancel"
+        name="cancel"
+        onClick={[Function]}
+        styleOverride={
+          Object {
+            ":focus": Object {
+              "outline": "none",
+            },
+          }
+        }
+        type="flat"
+      >
+        Cancel
+      </withTheme(Button)>,
+      <withTheme(Button)
+        data-qa="ok"
+        name="yes"
+        onClick={[Function]}
+      >
+        OK
+      </withTheme(Button)>,
+    ]
+  }
+  className="SimpleDialog"
+  content=""
+  header="Are you sure?"
+  id="AddDatasetDialog"
+/>
+`;
+
+exports[`<SimpleDialog /> Creating an instance with test props Snapshots should render correctly 1`] = `
+<SimpleDialog
+  header="Apply Suggested Intents"
+>
+  <TaggerModal
+    actions={
+      Array [
+        <withTheme(Button)
+          data-qa="cancel"
+          name="cancel"
+          onClick={[Function]}
+          styleOverride={
+            Object {
+              ":focus": Object {
+                "outline": "none",
+              },
+            }
+          }
+          type="flat"
+        >
+          Cancel
+        </withTheme(Button)>,
+        <withTheme(Button)
+          data-qa="ok"
+          name="yes"
+          onClick={[Function]}
+        >
+          OK
+        </withTheme(Button)>,
+      ]
+    }
+    className="SimpleDialog"
+    content=""
+    header="Apply Suggested Intents"
+    id="AddDatasetDialog"
+  >
+    <Layer
+      align="center"
+      className="TaggerControl TaggerModal SimpleDialog"
+      closer={false}
+      id="TaggerModal"
+    >
+      <span
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+    </Layer>
+  </TaggerModal>
+</SimpleDialog>
+`;

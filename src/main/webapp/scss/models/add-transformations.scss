@@ -1,0 +1,28 @@
+@import '../vars/vars';
+
+.select-container {
+  width: 200px;
+}
+
+#AddTransformationDialog {
+  label {
+    margin-top: 10px;
+  }
+
+  .btn-secondary {
+    width: 250px;
+    background: transparent;
+    color: $listTextColor;
+  }
+}
+
+#add-predefined {
+  .multi-select {
+    width: 400px;
+  }
+}
+
+.modal-body {
+  margin: auto;
+}
+

@@ -1,0 +1,26 @@
+#!/bin/sh
+
+NAME=`basename $0`
+MOMMY=/usr/local/tellme/scripts/workbench.mommy
+LINKS='rc0.d/K10 rc6.d/K10 rc1.d/K10 rc2.d/K10 rc3.d/S90'
+
+case $1 in
+
+    start)
+        [ -x $MOMMY ] && $MOMMY start
+        ;;
+    stop)
+        [ -x $MOMMY ] && $MOMMY stop
+        ;;
+    link)
+        for i in $LINKS; do
+            ln -s /etc/init.d/${NAME} /etc/${i}${NAME}
+        done
+        ;;
+    *)
+        echo "Usage: $0 { start | stop | link }"
+        exit 1
+        ;;
+
+esac
+exit 0

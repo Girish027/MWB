@@ -1,0 +1,22 @@
+@import '../vars/vars';
+
+#NewModel {
+  padding-top: 30px;
+
+  .MultipleCheckboxFilter {
+    background-color: transparent;
+
+    .grommetux-box {
+      display: block;
+    }
+
+    .Label {
+      float: none;
+      padding: 0;
+    }
+  }
+
+  .validation-error {
+    color: red
+  }
+}

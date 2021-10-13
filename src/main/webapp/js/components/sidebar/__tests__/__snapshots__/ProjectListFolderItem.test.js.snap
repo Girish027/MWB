@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProjectListFolderItem /> Snapshots should match with basic props 1`] = `
+<ListItem
+  align="center"
+  className="ProjectListFolderItem"
+  direction="row"
+  justify="between"
+  key="2358"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  pad={
+    Object {
+      "horizontal": "medium",
+      "vertical": "small",
+    }
+  }
+  role="listitem"
+  separator="bottom"
+>
+  <Box
+    announce={false}
+    direction="row"
+    flex={true}
+    focusable={true}
+    pad="none"
+    responsive={true}
+    tag="div"
+  >
+    <Box
+      align="center"
+      announce={false}
+      className="ProjectListFolderIcon"
+      direction="row"
+      focusable={true}
+      pad="none"
+      responsive={true}
+      style={
+        Object {
+          "backgroundColor": "#d7d8d9",
+        }
+      }
+      tag="div"
+    >
+      <MessageIcon
+        color="none"
+        height="19.25px"
+        stroke="#7f7f7f"
+        width="19.25px"
+      />
+    </Box>
+    <Box
+      announce={false}
+      className="ProjectListFolderItemName"
+      direction="column"
+      flex={true}
+      focusable={true}
+      pad="none"
+      responsive={true}
+      tag="div"
+    >
+      <Box
+        announce={false}
+        direction="row"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        <Box
+          announce={false}
+          direction="column"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          tag="div"
+        >
+          <span
+            className="project-list-menu-icon"
+          />
+        </Box>
+        <div
+          className="project-list-item-name"
+        >
+          Root_Intent
+        </div>
+      </Box>
+      <div
+        className="project-list-item-meta"
+      >
+        Version 65
+      </div>
+      <div
+        className="project-list-item-duration"
+      >
+        LAST TWO WEEKS
+      </div>
+      <hr />
+      <Box
+        announce={false}
+        direction="row"
+        focusable={true}
+        pad="none"
+        responsive={true}
+        tag="div"
+      >
+        <Box
+          announce={false}
+          direction="column"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          style={
+            Object {
+              "width": "130px",
+            }
+          }
+          tag="div"
+        >
+          <div>
+            <span
+              className="project-list-volume-count"
+            >
+              <withTheme(Tooltip)
+                content={8000}
+                direction="right"
+                enabled={false}
+              >
+                <span>
+                  8000
+                </span>
+              </withTheme(Tooltip)>
+            </span>
+            <span
+              className="grey-theme-volume"
+            >
+              <SolidTriangle
+                direction="down"
+                fill="#6E7887"
+                height="6px"
+                width="11px"
+              />
+              1.6%
+            </span>
+            <div
+              className="project-list-volume"
+            >
+              Volume
+            </div>
+          </div>
+        </Box>
+        <Box
+          announce={false}
+          direction="column"
+          focusable={true}
+          pad="none"
+          responsive={true}
+          style={
+            Object {
+              "width": "130px",
+            }
+          }
+          tag="div"
+        >
+          <div>
+            <span
+              className="project-list-escalation-count"
+            >
+              <withTheme(Tooltip)
+                content={2850}
+                direction="right"
+                enabled={false}
+              >
+                <span>
+                  2850
+                </span>
+              </withTheme(Tooltip)>
+            </span>
+            <span
+              className="grey-theme-escalation"
+            >
+              <SolidTriangle
+                direction="up"
+                fill="#6E7887"
+                height="6px"
+                width="11px"
+              />
+              1.8%
+            </span>
+            <div
+              className="project-list-escalation"
+            >
+              Escalation
+            </div>
+          </div>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</ListItem>
+`;

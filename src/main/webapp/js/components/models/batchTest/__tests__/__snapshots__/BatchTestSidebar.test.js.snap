@@ -1,0 +1,496 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BatchTestSidebar /> Snapshots renders correctly for a model without any batch tests 1`] = `
+<div
+  className="listContainer"
+  id="batchTestSideBar"
+  style={
+    Object {
+      "marginTop": "0px",
+    }
+  }
+>
+  <span
+    className="float-right"
+    style={
+      Object {
+        "marginTop": "30px",
+      }
+    }
+  >
+    <IconButton
+      data-qa="batchtest-hide-sidebar"
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px"
+      strokeColor="none"
+      styleOverride={Object {}}
+      title="Hide Sidebar"
+      width={10}
+    />
+  </span>
+  <div>
+    <withTheme(ContextualActionsBar)>
+      <withTheme(ContextualActionItem)
+        icon={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          }
+        }
+        onClickAction={[Function]}
+      >
+        CREATE NEW BATCH TEST
+      </withTheme(ContextualActionItem)>
+    </withTheme(ContextualActionsBar)>
+    <Placeholder
+      message="You don't have any recent batchtest."
+      styleOverride={Object {}}
+    />
+  </div>
+</div>
+`;
+
+exports[`<BatchTestSidebar /> Snapshots renders correctly for multiple batch tests 1`] = `
+<div
+  className="listContainer"
+  id="batchTestSideBar"
+  style={
+    Object {
+      "marginTop": "0px",
+    }
+  }
+>
+  <span
+    className="float-right"
+    style={
+      Object {
+        "marginTop": "30px",
+      }
+    }
+  >
+    <IconButton
+      data-qa="batchtest-hide-sidebar"
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px"
+      strokeColor="none"
+      styleOverride={Object {}}
+      title="Hide Sidebar"
+      width={10}
+    />
+  </span>
+  <div>
+    <withTheme(ContextualActionsBar)>
+      <withTheme(ContextualActionItem)
+        icon={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          }
+        }
+        onClickAction={[Function]}
+      >
+        CREATE NEW BATCH TEST
+      </withTheme(ContextualActionItem)>
+    </withTheme(ContextualActionsBar)>
+    <div>
+      <BatchTestListItem
+        batchtest={
+          Object {
+            "batchTestName": "BatchTest_1536876619527",
+            "createdAt": "1536876619527",
+            "requestPayload": "YesNo,trainingRU-2",
+            "status": "IN_PROGRESS",
+            "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+            "type": "DATASETS",
+          }
+        }
+        focused={false}
+        index={0}
+        key="batchtest-0"
+        onClickBatchTestItem={[Function]}
+        onFocusChange={[Function]}
+        selected={true}
+      />
+      <BatchTestListItem
+        batchtest={
+          Object {
+            "batchTestName": "BatchTest_1536876619527",
+            "createdAt": "1536876619527",
+            "requestPayload": "YesNo,trainingRU-2",
+            "status": "SUCCESS",
+            "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+            "type": "DATASETS",
+          }
+        }
+        focused={false}
+        index={1}
+        key="batchtest-1"
+        onClickBatchTestItem={[Function]}
+        onFocusChange={[Function]}
+        selected={false}
+      />
+      <BatchTestListItem
+        batchtest={
+          Object {
+            "batchTestName": "BatchTest_1536876619527",
+            "createdAt": "1536876619527",
+            "requestPayload": "YesNo,trainingRU-2",
+            "status": "SUCCESS",
+            "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+            "type": "DATASETS",
+          }
+        }
+        focused={false}
+        index={2}
+        key="batchtest-2"
+        onClickBatchTestItem={[Function]}
+        onFocusChange={[Function]}
+        selected={false}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestSidebar /> Snapshots renders correctly for recent batch test - FAILED 1`] = `
+<div
+  className="listContainer"
+  id="batchTestSideBar"
+  style={
+    Object {
+      "marginTop": "0px",
+    }
+  }
+>
+  <span
+    className="float-right"
+    style={
+      Object {
+        "marginTop": "30px",
+      }
+    }
+  >
+    <IconButton
+      data-qa="batchtest-hide-sidebar"
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px"
+      strokeColor="none"
+      styleOverride={Object {}}
+      title="Hide Sidebar"
+      width={10}
+    />
+  </span>
+  <div>
+    <withTheme(ContextualActionsBar)>
+      <withTheme(ContextualActionItem)
+        icon={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          }
+        }
+        onClickAction={[Function]}
+      >
+        CREATE NEW BATCH TEST
+      </withTheme(ContextualActionItem)>
+    </withTheme(ContextualActionsBar)>
+    <div>
+      <BatchTestListItem
+        batchtest={
+          Object {
+            "batchTestName": "BatchTest_1536876619527",
+            "createdAt": "1536876619527",
+            "requestPayload": "YesNo,trainingRU-2",
+            "status": "FAILED",
+            "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+            "type": "DATASETS",
+          }
+        }
+        focused={false}
+        index={0}
+        key="batchtest-0"
+        onClickBatchTestItem={[Function]}
+        onFocusChange={[Function]}
+        selected={true}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestSidebar /> Snapshots renders correctly for recent batch test - IN_PROGRESS 1`] = `
+<div
+  className="listContainer"
+  id="batchTestSideBar"
+  style={
+    Object {
+      "marginTop": "0px",
+    }
+  }
+>
+  <span
+    className="float-right"
+    style={
+      Object {
+        "marginTop": "30px",
+      }
+    }
+  >
+    <IconButton
+      data-qa="batchtest-hide-sidebar"
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px"
+      strokeColor="none"
+      styleOverride={Object {}}
+      title="Hide Sidebar"
+      width={10}
+    />
+  </span>
+  <div>
+    <withTheme(ContextualActionsBar)>
+      <withTheme(ContextualActionItem)
+        icon={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          }
+        }
+        onClickAction={[Function]}
+      >
+        CREATE NEW BATCH TEST
+      </withTheme(ContextualActionItem)>
+    </withTheme(ContextualActionsBar)>
+    <div>
+      <BatchTestListItem
+        batchtest={
+          Object {
+            "batchTestName": "BatchTest_1536876619527",
+            "createdAt": "1536876619527",
+            "requestPayload": "YesNo,trainingRU-2",
+            "status": "IN_PROGRESS",
+            "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+            "type": "DATASETS",
+          }
+        }
+        focused={false}
+        index={0}
+        key="batchtest-0"
+        onClickBatchTestItem={[Function]}
+        onFocusChange={[Function]}
+        selected={true}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestSidebar /> Snapshots renders correctly for recent batch test - QUEUED 1`] = `
+<div
+  className="listContainer"
+  id="batchTestSideBar"
+  style={
+    Object {
+      "marginTop": "0px",
+    }
+  }
+>
+  <span
+    className="float-right"
+    style={
+      Object {
+        "marginTop": "30px",
+      }
+    }
+  >
+    <IconButton
+      data-qa="batchtest-hide-sidebar"
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px"
+      strokeColor="none"
+      styleOverride={Object {}}
+      title="Hide Sidebar"
+      width={10}
+    />
+  </span>
+  <div>
+    <withTheme(ContextualActionsBar)>
+      <withTheme(ContextualActionItem)
+        icon={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          }
+        }
+        onClickAction={[Function]}
+      >
+        CREATE NEW BATCH TEST
+      </withTheme(ContextualActionItem)>
+    </withTheme(ContextualActionsBar)>
+    <div>
+      <BatchTestListItem
+        batchtest={
+          Object {
+            "batchTestName": "BatchTest_1536876619527",
+            "createdAt": "1536876619527",
+            "requestPayload": "YesNo,trainingRU-2",
+            "status": "QUEUED",
+            "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+            "type": "DATASETS",
+          }
+        }
+        focused={false}
+        index={0}
+        key="batchtest-0"
+        onClickBatchTestItem={[Function]}
+        onFocusChange={[Function]}
+        selected={true}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestSidebar /> Snapshots renders correctly for recent batch test - SUCCESS 1`] = `
+<div
+  className="listContainer"
+  id="batchTestSideBar"
+  style={
+    Object {
+      "marginTop": "0px",
+    }
+  }
+>
+  <span
+    className="float-right"
+    style={
+      Object {
+        "marginTop": "30px",
+      }
+    }
+  >
+    <IconButton
+      data-qa="batchtest-hide-sidebar"
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px"
+      strokeColor="none"
+      styleOverride={Object {}}
+      title="Hide Sidebar"
+      width={10}
+    />
+  </span>
+  <div>
+    <withTheme(ContextualActionsBar)>
+      <withTheme(ContextualActionItem)
+        icon={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          }
+        }
+        onClickAction={[Function]}
+      >
+        CREATE NEW BATCH TEST
+      </withTheme(ContextualActionItem)>
+    </withTheme(ContextualActionsBar)>
+    <div>
+      <BatchTestListItem
+        batchtest={
+          Object {
+            "batchTestName": "BatchTest_1536876619527",
+            "createdAt": "1536876619527",
+            "requestPayload": "YesNo,trainingRU-2",
+            "status": "SUCCESS",
+            "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+            "type": "DATASETS",
+          }
+        }
+        focused={false}
+        index={0}
+        key="batchtest-0"
+        onClickBatchTestItem={[Function]}
+        onFocusChange={[Function]}
+        selected={true}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestSidebar /> Snapshots renders correctly when sidebar is closed 1`] = `
+<div
+  className="listContainer"
+  id="batchTestSideBar"
+  style={
+    Object {
+      "marginTop": "0px",
+    }
+  }
+>
+  <span
+    className="float-right"
+    style={
+      Object {
+        "marginTop": "30px",
+      }
+    }
+  >
+    <IconButton
+      data-qa="batchtest-show-sidebar"
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px"
+      strokeColor="none"
+      styleOverride={Object {}}
+      title="Show Sidebar"
+      width={10}
+    />
+  </span>
+</div>
+`;

@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`breadcrumbSegments returned default project id and name when selectedProject is null 1`] = `
+Array [
+  Object {
+    "data-route": undefined,
+    "itsurl": "https://stable.developer.sv2.247-inc.net/integratedtoolsuite?clientid=dish&appid=referencebot",
+    "label": "Overview",
+    "onClick": [Function],
+    "value": "Overview",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Manage Models & Datasets",
+    "onClick": [Function],
+    "value": "Manage Models & Datasets",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Loading Model",
+    "onClick": [Function],
+    "value": "Loading Model",
+  },
+  Object {
+    "data-route": "models",
+    "label": "Version 5",
+    "onClick": [Function],
+    "value": "Version 5",
+  },
+]
+`;
+
+exports[`breadcrumbSegments returned default urlItems when url is null 1`] = `
+Array [
+  Object {
+    "data-route": undefined,
+    "itsurl": "https://stable.developer.sv2.247-inc.net/integratedtoolsuite?clientid=dish&appid=referencebot",
+    "label": "Overview",
+    "onClick": [Function],
+    "value": "Overview",
+  },
+]
+`;
+
+exports[`breadcrumbSegments returned segments match length and label for model 1`] = `
+Array [
+  Object {
+    "data-route": undefined,
+    "itsurl": "https://stable.developer.sv2.247-inc.net/integratedtoolsuite?clientid=dish&appid=referencebot",
+    "label": "Overview",
+    "onClick": [Function],
+    "value": "Overview",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Manage Models & Datasets",
+    "onClick": [Function],
+    "value": "Manage Models & Datasets",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Week 1",
+    "onClick": [Function],
+    "value": "week 1",
+  },
+  Object {
+    "data-route": "models",
+    "label": "Version 5",
+    "onClick": [Function],
+    "value": "Version 5",
+  },
+]
+`;
+
+exports[`breadcrumbSegments returns expected segments for model create 1`] = `
+Array [
+  Object {
+    "data-route": undefined,
+    "itsurl": "https://stable.developer.sv2.247-inc.net/integratedtoolsuite?clientid=dish&appid=referencebot",
+    "label": "Overview",
+    "onClick": [Function],
+    "value": "Overview",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Manage Models & Datasets",
+    "onClick": [Function],
+    "value": "Manage Models & Datasets",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Week 1",
+    "onClick": [Function],
+    "value": "week 1",
+  },
+]
+`;
+
+exports[`breadcrumbSegments returns expected segments for model tune 1`] = `
+Array [
+  Object {
+    "data-route": undefined,
+    "itsurl": "https://stable.developer.sv2.247-inc.net/integratedtoolsuite?clientid=dish&appid=referencebot",
+    "label": "Overview",
+    "onClick": [Function],
+    "value": "Overview",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Manage Models & Datasets",
+    "onClick": [Function],
+    "value": "Manage Models & Datasets",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Week 1",
+    "onClick": [Function],
+    "value": "week 1",
+  },
+]
+`;
+
+exports[`breadcrumbSegments returns expected segments for model view 1`] = `
+Array [
+  Object {
+    "data-route": undefined,
+    "itsurl": "https://stable.developer.sv2.247-inc.net/integratedtoolsuite?clientid=dish&appid=referencebot",
+    "label": "Overview",
+    "onClick": [Function],
+    "value": "Overview",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Manage Models & Datasets",
+    "onClick": [Function],
+    "value": "Manage Models & Datasets",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Week 1",
+    "onClick": [Function],
+    "value": "week 1",
+  },
+]
+`;
+
+exports[`breadcrumbSegments returns expected segments for project create 1`] = `
+Array [
+  Object {
+    "data-route": undefined,
+    "itsurl": "https://stable.developer.sv2.247-inc.net/integratedtoolsuite?clientid=dish&appid=referencebot",
+    "label": "Overview",
+    "onClick": [Function],
+    "value": "Overview",
+  },
+  Object {
+    "data-route": "projects",
+    "label": "Manage Models & Datasets",
+    "onClick": [Function],
+    "value": "Manage Models & Datasets",
+  },
+]
+`;

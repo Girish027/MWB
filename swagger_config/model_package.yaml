@@ -1,0 +1,176 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Model Packages
+  description: Package APIs
+host: localhost:8443
+basePath: /nltools/v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /projects/{projectId}/packages:
+    parameters:
+      - name: projectId
+        in: path
+        required: true
+        description: The project Id
+        type: string
+    get:
+      summary: Get all packages for a project
+      operationId: getPackagesForProject
+      tags:
+        - get
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ModelPackageCollection'
+        404:
+          description: Invalid project Id
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      tags:
+        - post
+      summary: Add a package package
+      operationId: add
+      consumes:
+        - application/json
+      parameters:
+        - name: package
+          in: body
+          required: true
+          description: The package metadata to add
+          schema:
+            $ref: "#/definitions/ModelPackageDetail"
+      responses:
+        200:
+          description: Package succesfully added
+          schema:
+            $ref: "#/definitions/ModelPackageDetail"
+        400:
+          description: Invalid request
+          schema:
+            $ref: "#/definitions/Error"
+        401:
+          description: Unauthorized to call the API
+          schema:
+            $ref: "#/definitions/Error"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /projects/{projectId}/packages/{packageId}:
+    get:
+      summary: Get package metadata
+      operationId: getPackageById
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The project Id
+          type: string
+        - name: packageId
+          in: path
+          required: true
+          description: The id of the package metadata to retrieve
+          type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          schema:
+            $ref: "#/definitions/ModelPackageDetail"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /projects/{projectId}/packages/{packageId}/publish:
+    post:
+      summary: publish a package. Push related models into GitHub, and add a tag.
+      operationId: publishPackageById
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The project Id
+          type: string
+        - name: packageId
+          in: path
+          required: true
+          description: The id of the package metadata to retrieve
+          type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  ModelPackage:
+    discriminator: name
+    type: object
+    required:
+      - name
+      - description
+      - gitHubTag
+      - user
+      - projectId
+    properties:
+      name:
+        type: string
+        description: The name of the package
+      description:
+        type: string
+        description: The discription of the package
+      gitHubTag:
+        type: string
+        description: The tag used in GitHub
+      user:
+        type: string
+        description: The username who published the package
+      projectId:
+        type: string
+        description: The project the package is for
+  ModelPackageDetail:
+    allOf:
+        - $ref: '#/definitions/ModelPackage'
+        - type: object
+        - properties:
+            modelId:
+              type: string
+              description: The id of one model that belongs to this package
+            modelVersion:
+              type: integer
+              description: The internal version of one model that belongs to this package
+  ModelPackageCollection:
+    type: array
+    items:
+      $ref: "#/definitions/ModelPackageDetail"
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response
+

@@ -1,0 +1,32 @@
+.seat {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+}
+ 
+.seat.open{
+  background-color: green;
+}
+ 
+.seat.reserved{
+  background-color: red;
+}
+ 
+.table{
+  margin-bottom: 10px;
+}
+ 
+.table-title{
+  font-weight: bold;
+}
+
+.dropzone-box {
+	border-width: 2;
+	border-color: "black";
+	border-style: "dashed";
+	border-radius: 4;
+	margin: 30;
+	padding: 30;
+	width: 200;
+	transition: "all 0.5s";
+}

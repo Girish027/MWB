@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`classPercentage snapshot predefined transformation 1`] = `
+Object {
+  "/(?:\\\\b(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)(?:(?:\\\\s|-)?(?:one|two|three|four|five|six|seven|eight|nine))?)\\\\s?(?:%|percent(?:age|ile)?)/i": "_class_percentage",
+  "/(?:one(?:\\\\s|-))?hundred\\\\s?(?:%|percent(?:age|ile)?)/i": "_class_percentage",
+  "/[0-9]+\\\\.[0-9]*\\\\s?(?:%|percent(?:age|ile)?)/i": "_class_percentage",
+  "/[0-9]+\\\\s?(?:%|percent(?:age|ile)?)/i": "_class_percentage",
+  "/\\\\b(?:zero|one|two|three|four|five|six|seven|eight|nine|hundred|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)\\\\s?(?:%|percent(?:age|ile)?)/i": "_class_percentage",
+}
+`;

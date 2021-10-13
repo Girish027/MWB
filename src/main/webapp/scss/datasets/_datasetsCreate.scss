@@ -1,0 +1,137 @@
+.datasetPageCentered{
+  display: flex;
+  justify-content: left;
+  overflow:visible;
+  width: 100%;
+  background: white;
+
+  .datasetPage {
+    display: block;
+    width:450px;
+    //margin:15px;
+    background: white;
+
+    #create-dataset-form {
+      float: left;
+      margin-left: 12px;
+      width: 500px;
+
+      input[type="text"],
+      select,
+      textarea {
+        display: block;
+        margin-bottom: 10px;
+        width: 80%;
+      }
+
+      textarea: {
+        height: 100px;
+      }
+
+      .TransformationOptions {
+        height: 100px;
+        padding-top: 10px;
+
+        > label {
+          float: left;
+          clear: both;
+        }
+
+        > div {
+          float: left;
+          clear: both;
+          line-height: 24px;
+        }
+      }
+
+      button[type=submit] {
+        background-color: #4680e9;
+        border: 1px solid #333;
+        color: #fff;
+        float: right;
+        margin-right: 20%;
+      }
+
+      button[type=button] {
+        background-color: #ccc;
+        border: 1px solid #333;
+        color: #000;
+        float: right;
+        margin-right: 20px;
+      }
+
+      button:disabled {
+        background: #ddd;
+        color: #666;
+        cursor: not-allowed;
+      }
+
+      #dataset-filepicker {
+        display: block;
+        margin-bottom: 10px;
+        width: 80%;
+
+        .dz-error .dz-error-message {
+          top: 150px;
+        }
+
+      }
+    }
+  }
+}
+
+#CreateDatasetDialog {
+  min-width: 500px;
+
+  .ModalContent {
+    overflow: hidden;
+  }
+
+  .confidential-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+
+  #CreateDatasetUpload {
+    .Field {
+      margin: 16px 0 16px 0;
+
+      #dataset-filepicker {
+        .dropzone {
+          min-height: 160px;
+        }
+      }
+
+      .rc-upload:hover {
+        color: #003467;
+      }
+    }
+  }
+
+  #CreateDatasetMapping {
+    overflow: hidden;
+
+    .BindingInfo {
+      div {
+        overflow: hidden;
+      }
+    }
+  }
+
+  #CreateDatasetConfirm {
+    #CreateDatasetForm {
+      .Field {
+        margin: 10px 0 10px 0;
+
+        input, select {
+          padding: 2px;
+          border-radius: 0;
+          width: 100%;
+          border: 1px solid #818181;
+        }
+      }
+    }
+  }
+}

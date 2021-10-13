@@ -1,0 +1,8 @@
+#name,Required,Display Name
+transcription,TRUE,Transcription
+filename,FALSE,Filename
+inheritedIntent,FALSE,Granular Intent
+rutag,FALSE,Rollup Intent
+filesize,FALSE,Filesize
+date,FALSE,Date
+dataset,FALSE,Dataset

@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateBatchTest /> Snapshots renders correctly when one of the datasets is selected - Run Test button is enabled 1`] = `
+<Deprecated>
+  <Deprecated>
+    <div
+      className="batchtest-name-editor"
+    >
+      Create new batch test
+    </div>
+  </Deprecated>
+  <Deprecated
+    styleOverride={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <EditableLabel
+      customClassName="batchtest-name-editor"
+      data-qa="batchtest-name-editor"
+      defaultValue="Create new batch test"
+      validateAndUpdateValue={[Function]}
+    />
+  </Deprecated>
+  <Deprecated>
+    <div
+      className="batchtest-info"
+    >
+      Select one or more data sets from the project list to run a batch test.
+    </div>
+  </Deprecated>
+  <Deprecated>
+    <DatasetSelectorTable
+      client={
+        Object {
+          "id": "1",
+          "name": "abc",
+        }
+      }
+      datasets={
+        Object {
+          "1": Object {
+            "_key": 1,
+            "clientId": 1,
+            "createdAt": 1536777405845,
+            "description": "test dataset",
+            "id": 1,
+            "locale": "en_US",
+            "name": "dataset 1",
+            "projectId": 2,
+            "status": "COMPLETED",
+            "task": "INDEX",
+            "type": "Audio/Voice (Data Collection)",
+          },
+          "2": Object {
+            "_key": 2,
+            "clientId": 1,
+            "createdAt": 1536777805845,
+            "description": "test dataset",
+            "id": 2,
+            "locale": "en_US",
+            "name": "dataset 2",
+            "projectId": 2,
+            "status": "COMPLETED",
+            "task": "INDEX",
+            "type": "Audio/Voice (Data Collection)",
+          },
+          "3": Object {
+            "_key": 3,
+            "clientId": 1,
+            "createdAt": 1536778005208,
+            "description": "test dataset",
+            "id": 3,
+            "locale": "en_US",
+            "name": "dataset 3",
+            "projectId": 2,
+            "status": "COMPLETED",
+            "task": "INDEX",
+            "type": "Audio/Voice (Data Collection)",
+          },
+        }
+      }
+      history={Object {}}
+      projectId="2"
+      updateSelectedDatasets={[Function]}
+    />
+  </Deprecated>
+  <Deprecated>
+    <div
+      className="float-right runtest-button"
+    >
+      <withTheme(Button)
+        name="run-batch-test-button"
+        onClick={[Function]}
+        styleOverride={
+          Object {
+            "padding": "0px 25px",
+          }
+        }
+        tabIndex={0}
+        type="primary"
+      >
+        RUN TEST
+      </withTheme(Button)>
+    </div>
+    <div
+      className="float-clear"
+    />
+  </Deprecated>
+</Deprecated>
+`;
+
+exports[`<CreateBatchTest /> Snapshots renders correctly with given datasets 1`] = `
+<Deprecated>
+  <Deprecated>
+    <div
+      className="batchtest-name-editor"
+    >
+      Create new batch test
+    </div>
+  </Deprecated>
+  <Deprecated
+    styleOverride={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <EditableLabel
+      customClassName="batchtest-name-editor"
+      data-qa="batchtest-name-editor"
+      defaultValue="Create new batch test"
+      validateAndUpdateValue={[Function]}
+    />
+  </Deprecated>
+  <Deprecated>
+    <div
+      className="batchtest-info"
+    >
+      Select one or more data sets from the project list to run a batch test.
+    </div>
+  </Deprecated>
+  <Deprecated>
+    <DatasetSelectorTable
+      client={
+        Object {
+          "id": "1",
+          "name": "abc",
+        }
+      }
+      datasets={
+        Object {
+          "1": Object {
+            "_key": 1,
+            "clientId": 1,
+            "createdAt": 1536777405845,
+            "description": "test dataset",
+            "id": 1,
+            "locale": "en_US",
+            "name": "dataset 1",
+            "projectId": 2,
+            "status": "COMPLETED",
+            "task": "INDEX",
+            "type": "Audio/Voice (Data Collection)",
+          },
+          "2": Object {
+            "_key": 2,
+            "clientId": 1,
+            "createdAt": 1536777805845,
+            "description": "test dataset",
+            "id": 2,
+            "locale": "en_US",
+            "name": "dataset 2",
+            "projectId": 2,
+            "status": "COMPLETED",
+            "task": "INDEX",
+            "type": "Audio/Voice (Data Collection)",
+          },
+          "3": Object {
+            "_key": 3,
+            "clientId": 1,
+            "createdAt": 1536778005208,
+            "description": "test dataset",
+            "id": 3,
+            "locale": "en_US",
+            "name": "dataset 3",
+            "projectId": 2,
+            "status": "COMPLETED",
+            "task": "INDEX",
+            "type": "Audio/Voice (Data Collection)",
+          },
+        }
+      }
+      history={Object {}}
+      projectId="2"
+      updateSelectedDatasets={[Function]}
+    />
+  </Deprecated>
+  <Deprecated>
+    <div
+      className="float-right runtest-button"
+    >
+      <withTheme(Button)
+        disabled={true}
+        name="run-batch-test-button"
+        onClick={[Function]}
+        styleOverride={
+          Object {
+            "padding": "0px 25px",
+          }
+        }
+        tabIndex={0}
+        type="primary"
+      >
+        RUN TEST
+      </withTheme(Button)>
+    </div>
+    <div
+      className="float-clear"
+    />
+  </Deprecated>
+</Deprecated>
+`;

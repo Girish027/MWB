@@ -1,0 +1,575 @@
+_class_swears
+arse
+arsehole
+asshole
+bastard
+bitch
+blighter
+blimey
+bloody
+bollocks
+bugger
+crap
+crud
+damn
+darn
+dipshit
+feck
+fricking
+fuck
+fucking
+geez
+god
+goddammit
+goddamn
+jesus
+pissed off
+shit
+wanker
+whore
+
+_class_family
+daughter
+granddaughter
+grandson
+husband
+son
+spouse
+wife
+wives
+
+_class_united_kingdom
+britain
+england
+great britain
+ireland
+northern ireland
+scotland
+u k
+uk
+united kingdom
+
+_class_location_united_kingdom
+aberdeen
+albans
+armagh
+bangor
+bath
+belfast
+birmingham
+bradford
+brighton
+bristol
+cambridge
+canterbury
+cardiff
+carlisle
+chelmsford
+chester
+chichester
+coventry
+derby
+derry
+dundee
+durham
+edinburgh
+ely
+exeter
+glasgow
+gloucester
+hereford
+inverness
+lancaster
+leeds
+leicester
+lichfield
+lincoln
+lisburn
+liverpool
+london
+londonderry
+manchester
+newcastle
+newport
+newry
+norwich
+nottingham
+oxford
+perth
+peterborough
+plymouth
+portsmouth
+preston
+ripon
+salford
+salisbury
+sheffield
+southampton
+stirling
+sunderland
+swansea
+truro
+wakefield
+wells
+westminster
+winchester
+wolverhampton
+worcester
+york
+
+_class_number
+two
+three
+four
+five
+six
+seven
+eight
+nine
+hundred
+thousand
+million
+billion
+ten
+eleven
+twelve
+thirteen
+fourteen
+fifteen
+sixteen
+seventeen
+eighteen
+nineteen
+twenty
+thirty
+fourty
+forty
+fifty
+sixty
+seventy
+eighty
+ninety
+
+_class_date
+monday
+tuesday
+wednesday
+thursday
+friday
+saturday
+sunday
+january
+february
+march
+april
+june
+july
+august
+september
+october
+november
+december
+third
+fourth
+fifth
+sixth
+seventh
+eighth
+ninth
+tenth
+eleventh
+twelfth
+thirteenth
+fourteenth
+fifteenth
+sixteenth
+seventeenth
+eighteenth
+nineteenth
+twentieth
+thirtieth
+
+_class_currency
+euro
+euros
+pence
+pennies
+penny
+pound
+pounds
+quid
+quids
+dollar
+dollars
+
+_class_location_international
+acapulco
+afghanistan
+africa
+america
+amsterdam
+argentina
+aruba
+asia
+athens
+australia
+austria
+bahamas
+bangkok
+bangladesh
+barcelona
+beijing
+beirut
+belgrade
+berlin
+bermuda
+bolivia
+brazil
+british virgin islands
+buenos aires
+cairo
+calgary
+cambodia
+canada
+cancun
+cape town
+caribbean
+caribbean
+chennai
+chile
+china
+colombia
+copenhagen
+costa rica
+cuba
+cyprus
+czech republic
+damascus
+delhi
+denmark
+dubai
+ecuador
+egypt
+el salvador
+europe
+finland
+florence
+france
+frankfurt
+germany
+greece
+guadalajara
+guatemala
+guatemala city
+haiti
+honduras
+hong kong
+hungary
+hyderabad
+iceland
+india
+indonesia
+iran
+iraq
+israel
+istanbul
+italy
+jakarta
+jamaica
+japan
+kenya
+korea
+kuala lumpur
+kuwait
+lebanon
+london
+madrid
+malaysia
+mexico
+mexico city
+montreal
+morocco
+moscow
+mozambique
+munich
+netherlands
+netherlands
+new zealand
+nicaragua
+norway
+north korea
+pakistan
+palestine
+panama
+panama city
+paraguay
+paris
+peru
+philippines
+philippines
+poland
+portugal
+puerto rico
+quebec city
+rio de janeiro
+rome
+russia
+san juan
+san salvador
+saudi arabia
+scandinavia
+shanghai
+singapore
+south africa
+south america
+south korea
+spain
+stockholm
+sweden
+switzerland
+sydney
+syria
+tel aviv
+thailand
+tijuana
+tokyo
+toronto
+u s
+u s a
+u s virgin islands
+uganda
+ukraine
+united states of america
+uruguay
+vancouver
+venezuela
+venice
+vietnam
+virgin islands
+zurich
+
+_class_login
+log in
+log into
+log on
+login
+logon
+
+_class_rep
+adviser
+advisor
+agent
+assistant
+call centre
+customer care
+customer care assistant
+customer relations
+customer servicing
+customer service
+customer service agent
+customer service operator
+customer service representative
+customer services agent
+customer services operator
+customer services representative
+human
+live person
+operator
+real person
+real live person
+representative
+supervisor
+
+_class_ebay_id
+ebay i d
+member i d
+user i d
+username
+
+_class_vat
+v a t
+vat
+
+_class_enquiry
+enquire
+enquired
+enquires
+enquiries
+enquiring
+enquiry
+inquiring
+inquiry
+
+_class_an_open_case
+a open case
+an open case
+have a open case
+have an open case
+a open request
+an open request
+have a open request
+have an open request
+a open resolution
+an open resolution
+have a open resolution
+have an open resolution
+that is open
+that's open
+
+_class_payment_pay
+want to pay
+like to pay
+
+_class_get_help
+help about
+help on
+help with
+help me with
+assistance with
+
+_class_buyer
+buyer
+my buyer
+my customer
+shopper
+consumer
+purchaser
+
+_class_seller_role
+as a seller
+
+_class_items
+apple iphone
+article
+articles
+battery
+bell
+bell bulbs
+bicycle
+bracelet
+bulbs
+c c t v
+camcoder
+camera
+compressor
+cooker
+d v d
+d v d player
+d v d recoder
+desk
+dishwasher
+dog bag
+doll
+dress
+flask
+galaxy
+galaxy s five
+galaxy s four
+galaxy tab
+goods
+handbag
+handycam
+heater
+ipad
+ipad mini
+ipad smart covers
+iphone
+iphone four s
+iphone six plus
+iphone x plus
+item
+items
+jacket
+jewelery
+jewellery
+l e d lamp
+lamps
+machine
+mattress
+microwave
+notepad
+pen
+pen knife
+scanner
+shoes
+sofa
+speaker
+t v
+tablet
+television
+vacuum flask
+washing machine
+watch
+xbox
+
+_class_seller_rating
+d s r
+d s r rating
+d s r seller rating
+detail seller rating
+detail seller ratings
+detailed seller rating
+detailed seller ratings
+rating
+seller rating
+seller ratings
+seller performance rating
+seller performance ratings
+seller's rating
+seller performance
+
+_class_ad
+ad
+ads
+advert
+advertisement
+announcement
+
+_class_increase
+higher
+increase
+raise
+up my
+
+_class_photo
+photo
+photograph
+picture
+image
+
+_class_spam
+spam
+spoof
+phishing
+
+_class_fraud
+fraud
+fraudulent
+scam
+con
+
+_class_forgery
+fake
+counterfeit
+forgery
+bogus
+
+_class_voucher
+coupon
+coupons
+voucher
+vouchers
+
+_class_change
+change
+alter
+revise
+
+_class_buy_it_now
+buy it now
+
+_class_someone
+someone
+somebody
+person
+individual

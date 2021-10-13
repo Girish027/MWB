@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddIntentDialog /> Snapshots should match snapshots 1`] = `
+<AddIntentDialog
+  dispatch={[MockFunction]}
+  header=""
+  onClickAdd={[Function]}
+  validateData={[Function]}
+/>
+`;

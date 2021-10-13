@@ -1,0 +1,319 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Groups
+  description: Group APIs and their descriptions
+host: localhost:8443
+basePath: /v1
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /groups:
+    x-swagger-router-controller: groups
+    get:
+      tags:
+        - get
+      summary: List all groups
+      operationId: listGroups
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          type: integer
+          format: int32
+          default: 100
+        - name: startIndex
+          in: query
+          description: starting index
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        200:
+          description: An paged array of groups
+          headers:
+            location:
+              type: string
+              description: A link to the next page of responses
+            X-Offset:
+              type: integer
+              format: int32
+              description: The current offset / startIndex
+            X-Total-Count:
+              type: integer
+              format: int32
+              description: The total number of items available
+          schema:
+            $ref: '#/definitions/GroupsDetail'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      tags:
+        - post
+      summary: Create a group
+      operationId: createGroup
+      parameters:
+        - name: group
+          description: Group object
+          in: body
+          schema:
+            $ref: '#/definitions/Group'
+      responses:
+        201:
+          description: Group succesfully created
+          schema:
+            $ref: '#/definitions/GroupDetail'
+        400:
+          description: Group could not be created
+          schema:
+            $ref: '#/definitions/Error'
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /groups/{groupId}:
+    get:
+      summary: Info for a specific group
+      operationId: getGroupById
+      tags:
+        - get
+      parameters:
+        - name: groupId
+          in: path
+          required: true
+          description: The id of the group to retrieve
+          type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/GroupDetail'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      tags:
+        - group
+      summary: Deletes a group.
+      operationId: deleteGroupById
+      description: Deletes the group
+      parameters:
+        - name: groupId
+          in: path
+          required: true
+          description: The id of the group to delete
+          type: string
+      responses:
+        204:
+          description: OK
+        401:
+          description: Unauthorized to call the API
+        403:
+          description: Group is associated to a project so cannot be removed
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    patch:
+      tags:
+        - patch
+      consumes:
+        - application/json-patch+json
+      summary: Modifies a group
+      operationId: patchGroupById
+      description: Modifies an attribute of a group without required parameters
+      parameters:
+        - name: groupId
+          in: path
+          required: true
+          description: The id of the group to patch
+          type: string
+        - name: JsonPatch
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/PatchRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/GroupDetail'
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /groups/{groupId}/users/{userId}:
+    put:
+      summary: Add specified user to a specific group
+      operationId: addUserToGroupById
+      tags:
+        - put
+      parameters:
+        - name: groupId
+          in: path
+          required: true
+          description: The id of the group to add user to
+          type: string
+        - name: userId
+          in: path
+          required: true
+          description: The id of the user to add
+          type: string
+      responses:
+        204:
+          description: OK
+        400:
+          description: User could not be added to group
+          schema:
+            $ref: '#/definitions/Error'
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      summary: Remove specified user from a specific group
+      operationId: removeUserToGroupById
+      tags:
+        - delete
+      parameters:
+        - name: groupId
+          in: path
+          required: true
+          description: The id of the group to add user to
+          type: string
+        - name: userId
+          in: path
+          required: true
+          description: The id of the user to add
+          type: string
+      responses:
+        204:
+          description: OK
+        400:
+          description: User could not be removed from group
+          schema:
+            $ref: '#/definitions/Error'
+        401:
+          description: Unauthorized to call the API
+        403:
+          description: User owns a project so cannot be removed from group
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  Group:
+    discriminator: name
+    type: object
+    required:
+      - name
+    properties:
+      name:
+        type: string
+        description: Group name
+      description:
+        type: string
+        description: Short description for this group
+  GroupDetail:
+    allOf:
+    - $ref: '#/definitions/Group'
+    - type: object
+      required:
+        - id
+        - createdAt
+        - createdBy
+      properties:
+        id:
+          type: string
+          description: Numeric string to identify the group uniquely
+        createdAt:
+          type: integer
+          format: int64
+          description: The UTC date time for group creation
+        createdBy:
+          type: string
+          description: User ID of User creator
+        modifiedAt:
+          type: integer
+          format: int64
+          description: Modification time for any attribute update. Removing and adding users should change this time
+        modifiedBy:
+            type: string
+            description: User ID of last user to make a change 
+        offset:
+          type: integer
+          format: int32
+        totalCount:
+          type: integer
+          format: int64
+        users:
+          type: array
+          description: members of this group
+          items:
+            type: string
+  GroupsDetail:
+    type: array
+    items:
+      $ref: '#/definitions/GroupDetail'
+  PatchRequest:
+    type: array
+    items:
+      $ref: '#/definitions/PatchDocument'
+  PatchDocument:
+    description: A JSONPatch document as defined by RFC 6902
+    required:
+      - op
+      - path
+    properties:
+      op:
+        type: string
+        description: The operation to be performed
+        enum:
+          - add
+          - remove
+          - replace
+          - move
+          - copy
+          - test
+      path:
+        type: string
+        description: A JSON-Pointer
+      value:
+        type: object
+        description: The value to be used within the operations.
+      from:
+        type: string
+        description: A string containing a JSON Pointer value.
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response

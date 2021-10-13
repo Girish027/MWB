@@ -1,0 +1,59 @@
+#!/usr/local/bin/bash
+
+if [ -z "$JAVA_HOME" ]; then
+    if [ -x /usr/local/jre8 ]; then
+        JAVA_HOME="/usr/local/jre8"
+    elif [ -x /usr/local/jre7 ]; then
+        JAVA_HOME="/usr/local/jre7"
+    elif [ -x /usr/local/jre ]; then
+        JAVA_HOME="/usr/local/jre"
+    elif [ -x /usr/local/java ]; then
+        JAVA_HOME="/usr/local/java"
+    elif [ -x /usr/local/jdk1.7.0_67 ]; then
+        JAVA_HOME="/usr/local/jdk1.7.0_67"
+    fi
+fi
+
+export JAVA_HOME=$JAVA_HOME
+
+JAVA="$JAVA_HOME/bin/java"
+
+if [ -z "$LIBDIR" ]; then
+    LIBDIR="/usr/local/lib/java/tellme"
+fi
+
+CLASSPATH=$LIBDIR/nl-tools-ui-2.6.2.jar
+
+LOGBACK_CONFIG_FILE="/tools/config/current/workbench-logback.xml"
+WORKBENCH_CONFIG_FILE="/tools/config/current/application.properties"
+ELASTICSEARCH_CONFIG_FILE="/tools/stow/config/elasticsearch.properties"
+
+# Retrieve web proxy settings from the verdad configuration
+GOLD_CONF_FILE="/tools/config/current/gold.conf";
+PATTERN="web.proxy";
+
+if [ -f "$GOLD_CONF_FILE" ]
+then
+    PROXY_SETTING=$(grep -i "$PATTERN" "$GOLD_CONF_FILE")
+    PROXY_STRING=$(echo $PROXY_SETTING | cut -f2 -d=)
+    PROXY_HOST=$(echo $PROXY_STRING | cut -f1 -d:)
+    PROXY_PORT=$(echo $PROXY_STRING | cut -f2 -d:)
+
+    echo "$PROXY_SETTING"
+    echo "$PROXY_HOST"
+    echo "$PROXY_PORT"
+else
+    echo "$GOLD_CONF_FILE not found"
+    PROXY_HOST=""
+    PROXY_PORT=""
+fi
+
+if [ -z "$JAVA_OPTS" ]; then
+    JAVA_OPTS="-server -Xms4G -Xmx4G"
+fi
+
+trap "{ /usr/local/tellme/bin/stop_workbench $$; }" EXIT
+
+cd $LIBDIR
+
+$JAVA $JAVA_OPTS -Dhttps.proxyHost=$PROXY_HOST -Dhttps.proxyPort=$PROXY_PORT -Dc3p0.preferredTestQuery="SELECT 1" -Dc3p0.testConnectionOnCheckout=true -Dspring.config.location=file:$WORKBENCH_CONFIG_FILE,file:$ELASTICSEARCH_CONFIG_FILE -Dlogging.config=$LOGBACK_CONFIG_FILE -jar $CLASSPATH

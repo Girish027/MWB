@@ -1,0 +1,527 @@
+@import '../../vars/vars';
+
+$middleSectionHeight: 100px;
+$statWidth: auto;
+$labelColor: #000;
+$statHilite1Color: #000;
+$statHilite2Color: #000;
+$statHilite3Color: #000;
+$appBlue: #54a4de;
+$appGrey: #ccc; 
+
+$liteBg: #f9f9f9;
+
+.openDatasetsContainer {
+  display: block;
+  position: relative;
+
+  h5 {
+    margin: 0;
+    padding: 0;	
+  }
+
+  h6 {
+    color: #666;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;	
+  }
+
+  .centerTitle{
+    text-align: center;
+    padding: 15px;
+  }
+
+  .openDatasetProgress {
+    display: block;
+    position: fixed;
+    // padding-top: $headerHeight;
+
+    /* height: 170px; */
+    z-index: 10;
+    width: 100%;
+
+    .Controls {
+      line-height: 30px;
+      padding-top: 20px;
+      padding-right: 10px;
+      width: 100%;
+      height: 50px;
+
+      .LeftControls {
+        float: left;
+
+        .info {
+          float: left;
+        }
+
+      }
+
+      .RightControls {
+        float: right;
+      }
+    }
+
+    iframe {
+      width: 100%;
+      height: calc(100vh - 120px);
+    }
+
+    $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    .slideUp {
+      animation: slideUpAnimation 600ms $easeOutCubic forwards;
+    }
+
+    .slideDown {
+      animation: slideDownAnimation 600ms $easeOutCubic forwards;
+    }
+
+    @keyframes slideUpAnimation {
+      0% {
+        height: "200px";
+      }
+
+      100% {
+        height: "0px";
+      }
+    }
+
+    @keyframes slideDownAnimation {
+      0% {
+        height: "0px";
+      }
+
+      100% {
+        height: "200px";
+      }
+    }
+
+    .progressContainer {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+      width: 100%;
+      height: 150px;
+      margin-top: 0;
+      background-color: transparent;
+      min-width: 1000px;
+
+      .ribbon {
+        display: flex;
+        flex-direction: row;
+        flex-flow: center; 
+        align-items: center; 
+        position: relative;
+        margin: 0;
+        padding: 0;
+        background-color: $liteBg;
+      }
+
+      .evenRow{
+        border-top: 1px dashed #ddd;
+        background-color: #fdfdfd;
+      }
+
+      .oddRow{
+        background-color: #f7f7f7;
+        border-top: 1px dashed #ddd;
+      }
+
+      .tag-dataset-actions-buttons {
+        margin-left: 30px;
+      }
+
+      .statsContainer {
+        text-align: left;
+        height: 30px;
+        padding-top: 0;
+        display: flex !important;
+        align-content: stretch;
+        position: relative;
+        width: 100%;
+        border-bottom: 1px dashed #ddd;
+
+        .stat {
+          position: relative;
+          margin: 0;
+          padding: 0;
+          width: $statWidth;
+          margin-left: 20px;
+
+          .statLabel {
+            display: inline-block !important;
+            vertical-align: top;
+
+            p {
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              font-weight: bold;
+              font-style: normal;
+              text-align: left;
+              color: $labelColor; 
+              display: inline-block;
+              vertical-align: top; 
+            }
+						
+            span {
+              font-size: 16px;
+              color: #666;
+              font-weight: normal;
+              font-style: italic;
+            }
+
+            span.nums {
+              font-size: 16px;
+              color: #666;
+              //font-weight: bold;
+            }
+
+            span.statHilite1 {
+              color: $statHilite1Color; 
+            }
+
+            span.statHilite2 {
+              color: $statHilite2Color; 
+            }
+
+            span.statHilite3 {
+              color: $statHilite3Color;
+            }
+          }
+					
+        }
+
+        .bar {
+          flex-grow: 1;
+
+          .percentBarContainer{
+            display: inline-block;
+            vertical-align: top;
+            position: relative; 
+            margin: 0;
+            padding: 0;
+            height: 10px;
+            width: 200px;
+            background-color: transparent;
+            background-repeat: repeat-x;
+            //background-image: url("icons/pattern.svg"); meh... nice idea but wrong pattern
+            margin-left: 10px;						
+            margin-top: 7px;
+            overflow: hidden; 
+
+            .percentBar {
+              display: block;
+              position: relative; 
+              margin: 0;
+              padding: 0;
+              height: 20px;
+            }
+
+            .percentBarOrange {
+              background-color: orange; //orange;
+            }
+
+            .percentBarBlue {
+              background-color: $appBlue;//$appBlue;
+            }
+
+            .percentBarGrey {
+              background-color: $appGrey;//$appBlue;
+            }
+          }
+
+          .percentBarBlueBorderContainer{
+            border: 1px solid $appBlue;
+          }
+
+          .percentBarOrangeBorderContainer{
+            border: 1px solid orange;
+          }
+
+          .percentBarGreyBorderContainer{
+            border: 1px solid $appGrey;
+          }
+
+        }
+
+        .animateColor {
+          animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+
+          /* you could also use milliseconds (ms) or something like 2.5s */
+          -webkit-animation: colorchange 5s; /* Chrome and Safari */
+        }
+
+        @keyframes colorchange
+		    {
+          0%   {color: $statHilite1Color; font-weight: 400}
+          25%  {color: orange; font-weight: 500}
+          50%  {color: orange; font-weight: 900}
+          75%  {color: orange; font-weight: 500}
+          100% {color: $statHilite1Color; font-weight: 400}
+        }
+
+        @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+		    {
+          0%   {color: $statHilite1Color; font-weight: 400}
+          25%  {color: orange; font-weight: 500}
+          50%  {color: orange; font-weight: 900}
+          75%  {color: orange; font-weight: 500}
+          100% {color: $statHilite1Color; font-weight: 400}
+        }
+
+        .animateBGColor {
+          animation: bgcolorchange 5s; /* animation-name followed by duration in seconds*/
+
+          /* you could also use milliseconds (ms) or something like 2.5s */
+          -webkit-animation: bgcolorchange 5s; /* Chrome and Safari */
+        }
+
+        @keyframes bgcolorchange
+		    {
+          0%   {color: $appBlue;}
+          25%  {color: orange;}
+          50%  {color: orange;}
+          75%  {color: orange;}
+          100% {color: $appBlue;}
+        }
+
+        @-webkit-keyframes bgcolorchange /* Safari and Chrome - necessary duplicate */
+		    {
+          0%   {background-color: $appBlue;}
+          25%  {background-color: orange;}
+          50%  {background-color: orange;}
+          75%  {background-color: orange}
+          100% {background-color: $appBlue;}
+        }
+
+
+      }
+
+    }
+  }
+
+  .react-grid-table-container {
+    padding-bottom: 40px;
+  }
+
+  .footerContainer {
+    padding-left: 10px;
+
+    .FooterSegment {
+      line-height: 30px;
+      border-left: 1px dashed #ddd;
+      padding-left: 10px;
+      margin-left: 10px;
+    }
+
+    .FooterSegment.Last {
+      border-right: 1px dashed #ddd;
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+
+    select {
+      height: 24px;
+      min-width: 50px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.search {
+  height: $middleSectionHeight;
+  //border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+
+}
+
+.exampleSearch {
+  display: block;
+  position: absolute;
+  // top: 50px;
+  left: 15px;
+  color: #666;
+  font-size: 14px;
+  // font-style: italic;
+  font-weight: bold;
+  width: 100%;
+  line-height: 30px;
+  margin-top: 2px;
+  min-width: 650px;
+  margin-bottom: 20px;
+
+
+  span.labelLarge {
+    color: #000;
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 5px;
+    font-weight: bold;
+    font-style: normal;
+    float: left;
+  }
+
+  span.darkLarge {
+    color: #000;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-style: normal;
+  }
+}
+
+span.booleanOperators {
+  float: right;
+  white-space: nowrap;
+  margin-right: 50px;
+}
+
+span.boolean {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+span.info {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 20px;
+}
+
+span.field {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+span.help {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ef8822;
+  margin-left: 318px;
+}
+
+span.emptybox {
+  display: block;
+  margin-bottom: 30px; 
+}
+
+.searchContainer {
+  overflow: visible;
+  margin: 5px;
+  padding: 0;
+  vertical-align: top;
+  height: $middleSectionHeight;
+
+  .searchFieldContainer {
+    display: block;
+    position: relative;
+    margin: 5px;
+    margin-left: 0;
+    padding: 15px; 
+
+    .searchInputContainer {
+      display: inline-block;
+      vertical-align: top; 
+      position: relative;
+      width: calc(100% - 50px);
+      margin-top: 5px;
+
+      input {
+        width: 100%;
+      }
+
+      .grommetux-search-input {
+        width: 100%;
+				
+        .grommetux-control-icon-search {
+          margin: 0 !important;
+          padding: 0 !important;
+          position: absolute !important;
+          top: 5px !important;
+          left: 14px !important;
+          // opacity: 0;
+        }
+      }
+			
+    }
+
+    .searchHelpContainer{
+      display: inline-block;
+      vertical-align: top; 
+      position: relative;
+      width: 30px;
+      height: 30px; 
+      background-image: url("icons/help.svg");
+      margin-left: 5px;
+      pointer-events: all;
+      cursor: pointer;
+      margin-top: 5px;
+
+    }
+  }
+
+
+}
+
+.filtersContainer {
+  width: 50%;
+  text-align: right;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+  vertical-align: top;
+  height: $middleSectionHeight;
+
+  .applyFiltersColContainer {
+    margin: 10px !important;
+  }
+
+}
+
+
+.checkboxGreaterContainer{
+  display: inline-block;
+  width: 300px;
+  height: 30px;
+  margin: 5px;
+}
+
+.greaterContainer {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+}
+
+.greaterContainerSelect {
+  display: inline-block;
+  position: relative;
+  width: 260px;
+
+  p {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold; 
+  }
+
+  select {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+  }
+}
+
+
+

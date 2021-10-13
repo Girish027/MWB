@@ -1,0 +1,1 @@
+update model_configs set id=0 where name='system_default_en_0';

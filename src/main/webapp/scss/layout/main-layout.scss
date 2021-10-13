@@ -1,0 +1,191 @@
+@import '../vars/vars';
+
+$sidebarOpenWidth: 23vw;
+$sidebarClosedWidth: 30px;
+
+#app-main {
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  grid-template-areas: "nav nav nav"
+                       "header header header"
+                       "sidebar separator content"
+                       "footer footer footer";
+  grid-template-rows: $navHeight $headerHeight 1fr $footerHeight;
+  grid-template-columns: auto 1px 9fr;
+}
+
+#main-navigation-container {
+  height: $navHeight;
+  grid-area: nav;
+  background-color: $navBackgroundColor;
+  order: 1;
+
+  svg{
+    padding-bottom: 0 !important;
+    vertical-align: initial !important;
+  }
+}
+
+.navigation-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  svg{
+    padding-bottom: 0 !important;
+    vertical-align: initial !important;
+  }
+}
+
+#main-header-container {
+  height: $headerHeight;
+  background-color: $containerBackgroundColor;
+  grid-area: header;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: $navHeight;
+  width: 100%;
+  z-index: 99;
+}
+
+.app-header-container {
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: $containerBackgroundColor;
+  position: relative;
+  top: -4px;
+}
+
+#main-footer-container {
+  height: $footerHeight;
+  grid-area: footer;
+  background-color: $footerBackgroundColor;
+}
+
+.footer-inner-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main-sidebar-container.sidebar-open {
+  grid-area: sidebar;
+  width: $sidebarOpenWidth;
+  overflow: auto;
+  height: calc(100vh - 100px);
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+
+}
+
+.main-sidebar-container.sidebar-closed {
+  grid-area: sidebar;
+  width: $sidebarClosedWidth;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.main-sidebar-container.sidebar-hidden {
+  grid-area: sidebar;
+  width: 0;
+  display: none;
+}
+
+.main-separator {
+  grid-area: separator;
+  width: 1px;
+  background-color: rgb(218, 218, 221);
+}
+
+#main-content-container {
+  position: relative;
+  grid-area: content;
+  overflow: auto;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.sidebarToggle.sidebar-closed {
+  position: absolute;
+  width: 25px;
+  right: -5px;
+  top: 11px;
+}
+
+.sidebarToggle:hover {
+  cursor: pointer;
+}
+
+.toggleVisible {
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.listContainer {
+  display: block;
+  position: relative;
+}
+
+.vertical-center {
+  display: 'flex';
+  align-items: 'center';
+}
+
+.horizontal-center {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.message-default {
+  width: 100%;
+  padding-top: 25vh;
+  font-size: 20px;
+  color: #9e9e9e;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+.sidebar-create-project {
+  position: absolute;
+  width: 25px;
+  right: -2px;
+  top: 20px;
+}
+
+.sidebar-filter-global {
+  position: absolute;
+  width: 25px;
+  right: -2px;
+  top: 20px;
+}
+
+.sidebar-filter-node {
+  position: absolute;
+  width: 25px;
+  right: 20px;
+  top: 20px;
+}
+
+.add-version {
+  position: absolute;
+  right: 28px;
+  top: 11px;
+}
+

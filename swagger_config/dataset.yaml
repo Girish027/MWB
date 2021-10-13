@@ -1,0 +1,349 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Datasets
+  description: Data Set APIs and their descriptions
+host: localhost:8443
+basePath: /v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /datasets:
+    x-swagger-router-controller: datasets
+    get:
+      tags:
+        - get
+      summary: List all data sets
+      operationId: listDatasets
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          type: integer
+          format: int32
+          default: 100
+        - name: startIndex
+          in: query
+          description: starting index
+          type: integer
+          format: int32
+          default: 0
+        - name: clientId
+          in: query
+          description: Filter to only show datasets belonging to this client
+          type: string
+      responses:
+        200:
+          description: An paged array of Data Sets
+          headers:
+            location:
+              type: string
+              description: A link to the next page of responses
+            X-Offset:
+              type: integer
+              format: int32
+              description: The current offset / startIndex
+            X-Total-Count:
+              type: integer
+              format: int32
+              description: The total number of items available
+          schema:
+            $ref: "#/definitions/DatasetsDetail"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    post:
+      tags:
+        - post
+      summary: Create a Data Set
+      operationId: createDataset
+      parameters:
+        - name: addDatasetRequest
+          description: AddDatasetRequest object
+          in: body
+          schema:
+            $ref: "#/definitions/AddDatasetRequest"
+      responses:
+        201:
+          description: Dataset succesfully created
+          headers:
+            location:
+              type: string
+              description: A link to the created dataset
+          schema:
+            $ref: "#/definitions/DatasetDetail"
+        400:
+          description: Dataset could not be created
+          schema:
+            $ref: "#/definitions/Error"
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /datasets/{datasetId}:
+    get:
+      summary: Info for a specific Data Set
+      operationId: getDatasetById
+      tags:
+        - get
+      parameters:
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to retrieve
+          type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          schema:
+            $ref: "#/definitions/DatasetDetail"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    delete:
+      tags:
+        - delete
+      summary: Deletes a data set. 
+      operationId: deleteDatasetById
+      description: Deletes the dataset and its all associated datasets and artifacts 
+      parameters:
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to delete
+          type: string
+      responses:
+        204:
+          description: OK
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    patch:
+      tags:
+        - patch
+      consumes:
+        - application/json-patch+json
+      summary: Modifies a dataset
+      operationId: patchDatasetById
+      description: Modifies an attribute of a dataset without required parameters
+      parameters:
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to patch
+          type: string
+        - name: JsonPatch
+          in: body
+          required: true
+          schema:
+            $ref: "#/definitions/PatchRequest"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/DatasetDetail"
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /datasets/{datasetId}/transform:
+    post:
+      tags:
+        - post
+      summary: Submit the dataset for indexing
+      operationId: transformDataset
+      parameters:
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to transform
+          type: string
+        - name: transformDatasetRequest
+          description: TransformDatasetRequest object
+          in: body
+          schema:
+            $ref: "#/definitions/TransformDatasetRequest"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/DatasetDetail"
+        400:
+          description: Dataset could not be transformed
+          schema:
+            $ref: "#/definitions/Error"
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  Dataset:
+    discriminator: name
+    type: object
+    required:
+      - name
+      - clientId
+      - dataType
+      - uri
+    properties:
+      name:
+        type: string
+        description: Dataset name
+      clientId: 
+        type: string
+        description: id of the client this dataset came from
+      receivedAt:
+        type: integer
+        format: int64
+        description: The UTC date time for when the dataset was recieved 
+      uri:
+        type: string
+        description: Uri within repository
+      dataType:
+        $ref: "#/definitions/DataType"
+      description:
+        type: string
+        description: Short description of the Dataset
+      locale:
+        type: string
+        description: The BCP 47 code for dataset language. 
+        default: en-US
+  DatasetDetail:
+    allOf:
+    - $ref: '#/definitions/Dataset'
+    - type: object
+      required:
+        - id
+        - createdAt
+        - createdBy
+        - modifiedAt
+        - modifiedBy
+      properties:
+        id:
+          type: string
+          description: dataset id
+        createdAt:
+          type: integer
+          format: int64
+          description: The UTC date time for when the dataset was created
+        createdBy:
+          type: string
+          description: The user creating the dataset
+        modifiedAt:
+          type: integer
+          format: int64
+          description: The UTC date time for when the dataset was modified
+        modifiedBy:
+          type: string
+          description: The user modifying the dataset          
+        offset: 
+          type: integer
+          format: int32
+        totalCount: 
+          type: integer
+          format: int64
+  DatasetsDetail:
+    type: array
+    items:
+      $ref: "#/definitions/DatasetDetail"
+  AddDatasetRequest:
+    type: object
+    required:
+      - dataset
+      - projectId
+    properties:
+      dataset:
+        $ref: "#/definitions/Dataset"
+      projectId:
+        type: string
+        description: Project id in which the dataset is to be ingested
+      autoTagDataset:
+        type: boolean
+        default: false
+        description: Whether to auto-tag a dataset during ingestion
+  PatchRequest:
+    type: array
+    items:
+      $ref: "#/definitions/PatchDocument"
+  DataType:
+    type: string
+    enum:
+      - AIVA
+      - OMNICHANNEL
+      - SPEECH 
+  Vertical:
+    type: string
+    enum:
+      - FINANCIAL
+      - HEALTHCARE
+      - RETAIL
+      - TECHNOLOGY
+      - TELCO
+      - TRAVEL
+      - UTILITIES
+      - OTHER
+  PatchDocument: 
+    description: A JSONPatch document as defined by RFC 6902 
+    required:
+     - op
+     - path
+    properties: 
+     op: 
+      type: string 
+      description: The operation to be performed 
+      enum:
+       - add
+       - remove
+       - replace
+       - move
+       - copy
+       - test
+     path: 
+      type: string 
+      description: A JSON-Pointer 
+     value: 
+      type: object 
+      description: The value to be used within the operations.
+     from: 
+      type: string 
+      description: A string containing a JSON Pointer value.
+  TransformDatasetRequest:
+    description: An object that defines a request to transform the dataset
+    required:
+     - projectId
+    properties:
+     projectId:
+      type: string
+      description: The ID of the project this dataset is associated with
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code: 
+        type: string
+        description: Error category 
+      message:
+        type: string
+        description: Error message shown in api response
+

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`phoneNumber snapshot predefined transformation 1`] = `
+Object {
+  "/\\\\(?([0-9]{3})?[-.\\\\s)]*[0-9]{3}[-.\\\\s]*[0-9]{4}\\\\b/": "_class_phone_number",
+  "/\\\\b[0-9]{5}[\\\\s\\\\.-]?[0-9]{5}\\\\b/": "_class_phone_number",
+}
+`;

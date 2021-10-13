@@ -1,0 +1,312 @@
+
+.table>thead>tr>th {
+  border-right: 2px solid #ddd;
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+}
+
+.table>thead>tr>td {
+  border-right: 1px solid #ddd;
+}
+
+td {
+  border-right: 2px solid #ddd;
+}
+
+.imgBtn {
+  display: block;
+  border: none;
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.tableContainer {
+  display: block;
+  position: relative;
+  background-color: white;
+  /* margin:0; */
+  margin-top: 60px;
+  padding: 0;
+  z-index: 9;
+  overflow: visible;
+}
+
+.suggestContainer {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.react-data-table {
+  border-right: 1px solid #eee;
+}
+
+.columnContainer {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 33px;
+  margin: 0;
+  padding: 0;
+  z-index: 12;
+  margin-top: 62px;
+  background-color: #f9f9f9;
+  pointer-events: none;
+  overflow: hidden;
+  min-width: 1000px;
+
+  /*
+  .columnCheckbox{
+    margin-left: 6px;
+  }
+  */
+
+  .columnBg {
+    display: block;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    border-left: none;
+    padding: 5px;
+    text-align: left;
+    font-weight: 700;
+    color: #666;
+    pointer-events: none;
+
+    .columnImgContainer {
+      display: inline-block;
+      vertical-align: top;
+      height: 33px;
+      width: auto;
+      pointer-events: none;
+
+    }
+
+    .columnLabelContainer {
+      display: inline-block;
+      vertical-align: top;
+      height: 20px;
+      width: auto;
+      pointer-events: none;
+      margin-top: 3px;
+    }
+
+  }
+
+  .checkboxColumn {
+    //width: 20px !important;
+    //height: 20px !important;
+    //background-size: contain !important;
+    width: 31px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 9px;
+    pointer-events: none;
+    cursor: pointer;
+    //opacity: 0;
+  }
+
+  /*
+  .countColumn {
+    width: 8%;
+    overflow: hidden;
+  }
+
+  .uniqueColumn {
+    width: 35%;
+  }
+
+  .suggestColumn {
+    width: 15%;
+  }
+
+  .manualColumn {
+    width: 15%;
+  }
+
+  .commentsColumn {
+    width: 27%;
+  }
+  */
+
+}
+
+.resizeColumn {
+  display: inline-block;
+  width: 30px;
+  height: 26px;
+  background-color: transparent;
+  opacity: 1;
+  background-image: url("icons/resizeColumn.svg");
+  float: right;
+  pointer-events: none;
+}
+
+.actionsTableContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  height: 62px;
+  z-index: 13;
+  background: #f9f9f9;
+  pointer-events: none;
+
+  .actionTableBtnContainer {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 7px;
+    right: 20px;
+
+    .bulkTagContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      position: relative;
+      pointer-events: all;
+      width: 350px;
+      background-color: transparent;
+      border-radius: 5px;
+      height: 30px;
+      padding: 5px;
+
+      .bulkSuggestContainer {
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        z-index: 2;
+        width: 375px;
+
+        .bulkTagSuggestContainer {
+          display: block;
+          position: relative;
+        }
+
+        .bulkTagLabelCellContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+          .bulkTagLabel {
+            width: 100px;
+            margin-left: 15px;
+            margin-top: 15px;
+            text-align: right;
+          }
+        }
+
+      }
+
+      .bulkBtnContainer {
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+  }
+}
+
+.datasetsFilter {
+  line-height: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  overflow: hidden;
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  color: #000;
+
+  .DatasetsLabel {
+    font-weight: bold;
+    padding-left: 20px;
+    float: left;
+    white-space: nowrap;
+  }
+
+  .DatasetsList {
+    .controlContainer {
+      height: 34px;
+      float: left;
+      line-height: 34px;
+      margin-right: 0;
+      margin-left: 15px;
+      white-space: nowrap;
+    }
+  }
+}
+
+#TagDataset {
+  .searchContainer {
+    .searchFieldContainer {
+      min-width: 650px;
+      max-width: 650px;
+      width: 650px;
+    }
+  }
+}
+
+@media print {
+  #TagDataset {
+    .openDatasetProgress {
+      position: relative;
+      padding-top: 0;
+      display: block;
+    }
+
+    .datagridContainer {
+      position: relative;
+      padding-top: 28px !important;
+      display: block;
+
+      .actionsTableContainer {
+        position: relative;
+      }
+
+      .tableContainer {
+        position: relative;
+        margin-top: 0;
+        display: block;
+
+        .react-grid-container {
+          .react-grid-loading-bar {
+            display: none;
+          }
+
+          .react-grid-header-fixed-container {
+            position: relative;
+            display: block;
+          }
+
+          .react-grid-table-container {
+            position: relative !important;
+            display: block;
+            padding-bottom: 0;
+            top: 0;
+          }
+
+          .footerContainer {
+            position: relative;
+          }
+        }
+      }
+
+      .gridFooterForSuggestList {
+        display: none;
+      }
+    }
+  }
+}
+
+
+

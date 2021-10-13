@@ -1,0 +1,715 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Content
+  description: Content APIs and their descriptions
+host: localhost:8080
+basePath: /nltools/v1
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /content/{clientId}/projects/{projectId}/datasets/{datasetId}/index:
+    post:
+      tags:
+        - post
+      summary: Indexing new transcriptions
+      operationId: indexNewTranscriptions
+      parameters:
+        - name: clientId
+          in: path
+          required: true
+          description: The id of the client to retrieve
+          type: string
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to retrieve
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset from the project
+          type: string
+        - name: transcriptionDocuments
+          in : body
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TranscriptionDocumentForIndexing'
+      responses:
+        200:
+          description: OK
+        400:
+          description: Project does not have a transformed data set
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Client Id / Project Id / Dataset Id / Specified dataset not associated with project
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /content/{projectId}/tag:
+      post:
+        tags:
+          - post
+        summary: Tagging transcriptions. (Adding intents to transcriptions.)
+        operationId: addIntentByTranscriptionHash
+        parameters:
+          - name: projectId
+            in: path
+            required: true
+            description: The id of the project
+            type: string
+          - name: AddIntentRequest
+            in : body
+            required: true
+            schema:
+              $ref: '#/definitions/AddIntentRequest'
+        responses:
+          200:
+            description: OK
+            schema:
+              $ref: '#/definitions/UpdateIntentResponse'
+          400:
+            description: Project does not have a transformed data set / Invalid transcriptionHashList; No transcriptions were tagged.
+            schema:
+              $ref: '#/definitions/Error'
+          404:
+            description: Invalid Project id
+            schema:
+              $ref: '#/definitions/Error'
+          409:
+            description: Transcription conflict
+            schema:
+              $ref: '#/definitions/Error'
+          500:
+            description:  Internal Server Error
+            schema:
+              $ref: '#/definitions/Error'
+          503:
+            description: Elasticsearch Service Unavailable
+            schema:
+              $ref: '#/definitions/Error'
+  /content/{projectId}/datasets/{datasetId}/tag:
+    post:
+      tags:
+        - post
+      summary: Tagging transcriptions. (Adding intents to transcriptions.)
+      operationId: addIntentByTranscriptionHash
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: datasetId
+          in: path
+          description: the id of the dataset
+          type: string
+        - name: AddIntentRequest 
+          in : body
+          required: true
+          schema:
+            $ref: '#/definitions/AddIntentRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/UpdateIntentResponse'
+        400:
+          description: Project does not have a transformed data set / Invalid transcriptionHashList; No transcriptions were tagged.
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id / Specified dataset not associated with project
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description: Transcription conflict
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /content/{projectId}/tag/update:
+    post:
+      tags:
+        - post
+      summary: Updating intent of Tagged transcriptions.
+      operationId: addIntentByTranscriptionHash
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: AddIntentRequest
+          in : body
+          required: true
+          schema:
+            $ref: '#/definitions/AddIntentRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/UpdateIntentResponse'
+        400:
+          description: Project does not have a transformed data set.
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description: Transcription conflict
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /content/{projectId}/datasets/{datasetId}/tag/update:
+    post:
+      tags:
+        - post
+      summary: Updating intent of Tagged transcriptions.
+      operationId: addIntentByTranscriptionHash
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: datasetId
+          in: path
+          description: the id of the dataset
+          type: string
+        - name: AddIntentRequest
+          in : body
+          required: true
+          schema:
+            $ref: '#/definitions/AddIntentRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/UpdateIntentResponse'
+        400:
+          description: Project does not have a transformed data set.
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id / Specified dataset not associated with project
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description: Transcription conflict
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /content/{projectId}/tag/delete:
+    post:
+      tags:
+        - post
+      summary: Deletes tags from transcriptions
+      operationId: deleteIntentByTranscriptionHash
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: DeleteIntentRequest
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/DeleteIntentRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/UpdateIntentResponse'
+        400:
+          description: A transcription on the list is not tagged / Project does not have a transformed data set
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id
+          schema:
+            $ref: '#/definitions/Error' 
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+/content/{projectId}/datasets/{datasetId}/tag/delete:
+    post:
+      tags:
+        - post
+      summary: Deletes tags from transcriptions
+      operationId: deleteIntentByTranscriptionHash
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: datasetId
+          in: path
+          description: the id of the dataset
+          type: string
+        - name: DeleteIntentRequest
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/DeleteIntentRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/UpdateIntentResponse'
+        400:
+          description: A transcription on the list is not tagged / Project does not have a transformed data set
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id / Specified dataset not associated with project
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /content/{projectId}/intentguide:
+    delete:
+      tags:
+        - delete
+      summary: Delete intent tagging guide from a project
+      operationId: deleteIntentGuideFromProject
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+      responses:
+        200:
+          description: OK
+        400:
+          description: Project does not have a transformed data set.
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /content/{projectId}/datasets/{datasetId}/comment:
+    post:
+      tags:
+        - post
+      summary: Add/update comment to transcription
+      operationId: addCommentByTranscriptionHash
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: datasetId
+          in: path
+          description: the id of the dataset
+          type: string
+        - name: AddCommentRequest
+          in : body
+          required: true
+          schema:
+            $ref: '#/definitions/AddCommentRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/UpdateIntentResponse'
+        400:
+          description: Project does not have a transformed data set / Invalid transcriptionHashList; No comments were added.
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id / Specified dataset not associated with project
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /content/{projectId}/datasets/{datasetId}:
+    delete:
+      tags:
+        - delete
+      summary: Deletes all records in ElasticSearch for a given dataset
+      operationId: deleteRecords
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset
+          type: string
+      responses:
+        204:
+          description: OK
+        400:
+          description: Project does not have a transformed data set.
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id / Specified dataset not associated with project
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /content/{projectId}/intents:
+    post:
+      tags:
+        - post
+      summary: Create a new intent and its supportive information
+      operationId: addNewIntent
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: taggingGuideDocument
+          in: body
+          required: true
+          description: The tagging guide intent document
+          schema:
+            $ref: '#/definitions/TaggingGuideDocument'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/TaggingGuideDocument'
+        400:
+          description: Invalid intent
+          schema:
+            $ref: '#/definitions/Error'          
+        401:
+          description: Unauthorized to call the API            
+        404:
+          description: Invalid Project id
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description: Requested intent already exists
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /content/{projectId}/intents/{intentId}:
+    patch:
+      tags:
+        - patch
+      consumes:
+        - application/json-patch+json
+      summary: Modifies an intent document
+      operationId: patchIntentById
+      description: Modifies one or more attributes of an intent document
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to patch
+          type: string
+        - name: intentId
+          in: path
+          required: true
+          description: The document id of the intent to patch
+          type: string
+        - name: intentJsonPatch
+          in: body
+          required: true
+          schema:
+            $ref: "#/definitions/PatchRequest"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/ProjectDetail"
+        401:
+          description: Unauthorized to call the API
+        404:
+          description: Invalid projectId / Intent Id
+          schema:
+            $ref: '#/definitions/Error'          
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch service unavailable
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      tags:
+        - delete
+      summary: Deletes a tagging guide document
+      operationId: deleteIntentById
+      description: Deletes a tagging guide document
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: intentId
+          in: path
+          required: true
+          description: The document id of the intent to delete
+          type: string
+      responses:
+        204:
+          description: No content
+        401:
+          description: Unauthorized to call the API
+        404:
+          description: Invalid projectId
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch service unavailable
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  AddIntentRequest:
+    required:
+      - intent
+      - username
+      - transcriptionHashList
+    properties:
+      intent:
+        type: string
+        description: The intent to be tagged.
+      username:
+        type: string
+        description: User who is making the change. (Temp)
+      transcriptionHashList:
+        type: array
+        description: List of transcriptions to tag.
+        items:
+          type: string
+  DeleteIntentRequest:
+    required:
+      - username
+      - transcriptionHashList
+    properties:
+      username:
+        type: string
+        description: User who is making the change. (Temp)
+      transcriptionHashList:
+        type: array
+        description: List of transcriptions to un-tag.
+        items:
+          type: string
+  UpdateIntentResponse:
+    required:
+      - uniqueCount
+      - totalCount
+    properties:
+      uniqueCount:
+        type: integer
+        description: Number of unique transcriptions untagged.
+      totalCount:
+        type: integer
+        description: Total number of transcriptions untagged.
+  AddCommentRequest:
+    required:
+      - comment
+      - username
+      - transcriptionHashList
+    properties:
+      comment:
+        type: string
+        description: The comment to be added.
+      username:
+        type: string
+        description: User who is making the change.
+      transcriptionHashList:
+        type: array
+        description: List of transcriptions to comment.
+        items:
+          type: string
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response
+  TaggingGuideDocument:
+    properties:
+      intent:
+        type: string
+        description: The intent in the top-goal format
+      rutag:
+        type: string
+        description: The hierarchical classification of the intents
+      comments:
+        type: string
+        description: Comments associated with this tag or intent
+      examples:
+        type: string
+        description: Examples given using this intent
+      keywords:
+        type: string
+        description: Keywords identifying this tag or intent
+      description:
+        type: string
+        description: The description of a tag
+  TranscriptionDocumentForIndexing:
+    required:
+      - jobId
+      - vertical
+      - clientId
+      - projectId
+      - dataType
+      - datasetId
+      - documentType
+      - textStringOriginal
+      - textStringForTagging
+    properties:
+      jobId:
+        type: string
+      vertical:
+        type: string
+      clientId:
+        type: integer
+      projectId:
+        type: integer
+      datasetId:
+        type: integer
+      dataType:
+        type: string
+      numTokens:
+        type: integer
+      autoTagCount:
+        type: integer
+      autoTagString:
+        type: string
+      documentType:
+        type: string
+      documentId:
+        type: string
+      filename:
+        type: string
+      transcriptionHash:
+        type: string
+      textStringOriginal:
+        type: string
+      textStringForTagging:
+        type: string
+  PatchDocument:
+    description: A JSONPatch document as defined by RFC 6902
+    required:
+     - op
+     - path
+    properties:
+     op:
+      type: string
+      description: The operation to be performed
+      enum:
+       - add
+       - remove
+       - replace
+       - move
+       - copy
+       - test
+     path:
+      type: string
+      description: A JSON-Pointer
+     value:
+      type: object
+      description: The value to be used within the operations.
+     from:
+      type: string
+      description: A string containing a JSON Pointer value.
+  PatchRequest:
+    type: array
+    items:
+      $ref: "#/definitions/PatchDocument"

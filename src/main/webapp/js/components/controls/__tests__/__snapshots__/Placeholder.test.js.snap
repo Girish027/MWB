@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Placeholder /> Snapshots: should render correctly when children is provided 1`] = `
+<div
+  className="vertical-center horizontal-center"
+  style={
+    Object {
+      "paddingBottom": "20px",
+    }
+  }
+>
+   
+  <p>
+     hello 
+  </p>
+   
+</div>
+`;
+
+exports[`<Placeholder /> Snapshots: should render correctly when message and children are not provided 1`] = `
+<div
+  className="vertical-center horizontal-center message-default"
+  style={Object {}}
+/>
+`;
+
+exports[`<Placeholder /> Snapshots: should render correctly when message is provided 1`] = `
+<div
+  className="vertical-center horizontal-center message-default"
+  style={Object {}}
+>
+  Default message to be shown
+</div>
+`;

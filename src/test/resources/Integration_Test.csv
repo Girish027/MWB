@@ -1,0 +1,12 @@
+intent,transcription,transcriptionHash,count,Rutag
+reservation-query,reservation,855b3aad9e13dcb704aae8eaf82ae1e3b135800d,6185,reservation-query
+reservation-query,I would like to cancel flight,dd2d665d78c45ba3a73dc249a26e655d4b089fed,6089,reservation-query
+reservation-query,make a reservation,26a4201ac4b8dda1f310b08702c43eae9dd00ec0,3600,reservation-query
+reservation-query,reservations,cc54c3df1e24dd1a6e6aca7be40ba097d131571b,3310,reservation-query
+reservation-query,customer service,722f9a04918bc5cc6bf85bfdabff2c78e226a686,2021,reservation-query
+reservation-query,i'd like to make a reservation,bdb944b570e719b31dd92410e92224e2d00b8ad4,1756,reservation-query
+agent-query,representative,f6ef3aef47bff007f5bbcbfb4ed61741941133db,1172,agent-query
+agent-query,make reservation,ddb0e8dd3c4bfc487bd5c8290fa84259b07606c8,720,agent-query
+agent-query,i need to make changes to my reservation,bc505155bce047b42510410987e8c77e2cf32950,698,agent-query
+agent-query,cancel reservation,e5b10efff59628164bcd9fbcd47abc5e9fcfe432,658,agent-query
+agent-query,change reservation,b81c6c10cbe9a599efbac8001b2746f7395ea223,525,agent-query

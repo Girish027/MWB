@@ -1,0 +1,495 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MultipleCheckboxFilter /> Snapshots Creating an instance with initial value and className and no label- row format 1`] = `
+<Box
+  announce={false}
+  className="MultipleCheckboxFilter CustomClassName"
+  direction="column"
+  flex={true}
+  focusable={true}
+  pad="none"
+  responsive={true}
+  tag="div"
+>
+  <Box
+    announce={false}
+    direction="row"
+    flex={true}
+    focusable={true}
+    pad="none"
+    responsive={true}
+    tag="div"
+  >
+    <div
+      className="List"
+    >
+      <withTheme(Checkbox)
+        checked={false}
+        data-qa="checkbox-Zero"
+        disabled={false}
+        key="filter-0"
+        label="Zero"
+        onChange={[Function]}
+        styleOverride={
+          Object {
+            "float": "left",
+            "marginLeft": "10px",
+            "paddingTop": "5px",
+          }
+        }
+      />
+      <withTheme(Checkbox)
+        checked={true}
+        data-qa="checkbox-One"
+        disabled={false}
+        key="filter-1"
+        label="One"
+        onChange={[Function]}
+        styleOverride={
+          Object {
+            "float": "left",
+            "marginLeft": "10px",
+            "paddingTop": "5px",
+          }
+        }
+      />
+      <withTheme(Checkbox)
+        checked={false}
+        data-qa="checkbox-Two"
+        disabled={false}
+        key="filter-2"
+        label="Two"
+        onChange={[Function]}
+        styleOverride={
+          Object {
+            "float": "left",
+            "marginLeft": "10px",
+            "paddingTop": "5px",
+          }
+        }
+      />
+      <withTheme(Checkbox)
+        checked={true}
+        data-qa="checkbox-Three"
+        disabled={false}
+        key="filter-3"
+        label="Three"
+        onChange={[Function]}
+        styleOverride={
+          Object {
+            "float": "left",
+            "marginLeft": "10px",
+            "paddingTop": "5px",
+          }
+        }
+      />
+    </div>
+  </Box>
+</Box>
+`;
+
+exports[`<MultipleCheckboxFilter /> Snapshots Creating an instance with label and 3 options - row format 1`] = `
+<Box
+  announce={false}
+  className="MultipleCheckboxFilter"
+  direction="column"
+  flex={true}
+  focusable={true}
+  pad="none"
+  responsive={true}
+  tag="div"
+>
+  <Box
+    announce={false}
+    direction="row"
+    flex={true}
+    focusable={true}
+    pad="none"
+    responsive={true}
+    tag="div"
+  >
+    <div
+      className="Label"
+    >
+      Test Label
+    </div>
+    <div
+      className="List"
+    >
+      <withTheme(Checkbox)
+        checked={false}
+        data-qa="checkbox-Zero"
+        disabled={false}
+        key="filter-0"
+        label="Zero"
+        onChange={[Function]}
+        styleOverride={
+          Object {
+            "float": "left",
+            "marginLeft": "10px",
+            "paddingTop": "5px",
+          }
+        }
+      />
+      <withTheme(Checkbox)
+        checked={false}
+        data-qa="checkbox-One"
+        disabled={false}
+        key="filter-1"
+        label="One"
+        onChange={[Function]}
+        styleOverride={
+          Object {
+            "float": "left",
+            "marginLeft": "10px",
+            "paddingTop": "5px",
+          }
+        }
+      />
+      <withTheme(Checkbox)
+        checked={false}
+        data-qa="checkbox-Two"
+        disabled={false}
+        key="filter-2"
+        label="Two"
+        onChange={[Function]}
+        styleOverride={
+          Object {
+            "float": "left",
+            "marginLeft": "10px",
+            "paddingTop": "5px",
+          }
+        }
+      />
+      <withTheme(Checkbox)
+        checked={true}
+        data-qa="checkbox-Three"
+        disabled={false}
+        key="filter-3"
+        label="Three"
+        onChange={[Function]}
+        styleOverride={
+          Object {
+            "float": "left",
+            "marginLeft": "10px",
+            "paddingTop": "5px",
+          }
+        }
+      />
+    </div>
+  </Box>
+</Box>
+`;
+
+exports[`<MultipleCheckboxFilter /> Snapshots renders checkboxes in disabled state 1`] = `
+<div
+  style={null}
+>
+  <div
+    className="Label"
+  >
+    Test Label
+  </div>
+   
+  <Deprecated
+    styleOverride={null}
+  >
+    <Deprecated
+      key="row0"
+    >
+      <Deprecated
+        key="row0-col0"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={false}
+          data-qa="checkbox-Zero"
+          disabled={true}
+          key="filter-0"
+          label="Zero"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+      <Deprecated
+        key="row0-col1"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={false}
+          data-qa="checkbox-One"
+          disabled={true}
+          key="filter-1"
+          label="One"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+      <Deprecated
+        key="row0-col2"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={false}
+          data-qa="checkbox-Two"
+          disabled={true}
+          key="filter-2"
+          label="Two"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+    </Deprecated>
+    <Deprecated
+      key="row1"
+    >
+      <Deprecated
+        key="row1-col0"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={true}
+          data-qa="checkbox-Three"
+          disabled={true}
+          key="filter-3"
+          label="Three"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+    </Deprecated>
+  </Deprecated>
+   
+</div>
+`;
+
+exports[`<MultipleCheckboxFilter /> Snapshots renders in a Grid format - no label 1`] = `
+<div
+  style={null}
+>
+   
+  <Deprecated
+    styleOverride={null}
+  >
+    <Deprecated
+      key="row0"
+    >
+      <Deprecated
+        key="row0-col0"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={false}
+          data-qa="checkbox-Zero"
+          disabled={false}
+          key="filter-0"
+          label="Zero"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+      <Deprecated
+        key="row0-col1"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={false}
+          data-qa="checkbox-One"
+          disabled={false}
+          key="filter-1"
+          label="One"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+      <Deprecated
+        key="row0-col2"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={false}
+          data-qa="checkbox-Two"
+          disabled={false}
+          key="filter-2"
+          label="Two"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+    </Deprecated>
+    <Deprecated
+      key="row1"
+    >
+      <Deprecated
+        key="row1-col0"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={true}
+          data-qa="checkbox-Three"
+          disabled={false}
+          key="filter-3"
+          label="Three"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+    </Deprecated>
+  </Deprecated>
+   
+</div>
+`;
+
+exports[`<MultipleCheckboxFilter /> Snapshots renders in a Grid format 1`] = `
+<div
+  style={null}
+>
+  <div
+    className="Label"
+  >
+    Test Label
+  </div>
+   
+  <Deprecated
+    styleOverride={null}
+  >
+    <Deprecated
+      key="row0"
+    >
+      <Deprecated
+        key="row0-col0"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={false}
+          data-qa="checkbox-Zero"
+          disabled={false}
+          key="filter-0"
+          label="Zero"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+      <Deprecated
+        key="row0-col1"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={false}
+          data-qa="checkbox-One"
+          disabled={false}
+          key="filter-1"
+          label="One"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+      <Deprecated
+        key="row0-col2"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={false}
+          data-qa="checkbox-Two"
+          disabled={false}
+          key="filter-2"
+          label="Two"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+    </Deprecated>
+    <Deprecated
+      key="row1"
+    >
+      <Deprecated
+        key="row1-col0"
+        size={4}
+      >
+        <withTheme(Checkbox)
+          checked={true}
+          data-qa="checkbox-Three"
+          disabled={false}
+          key="filter-3"
+          label="Three"
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "float": "left",
+              "marginLeft": "10px",
+              "paddingTop": "5px",
+            }
+          }
+        />
+      </Deprecated>
+    </Deprecated>
+  </Deprecated>
+   
+</div>
+`;

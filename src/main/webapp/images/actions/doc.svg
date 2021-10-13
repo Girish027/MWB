@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="11px" viewBox="0 0 9 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 50.1 (55040) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 8 Copy</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Vis-Spec" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08" transform="translate(-684.000000, -806.000000)">
+            <g id="bar/actions-copy" transform="translate(352.000000, 780.000000)">
+                <g id="Group-12" transform="translate(210.000000, 24.000000)">
+                    <g id="Group-8-Copy" transform="translate(122.000000, 2.000000)">
+                        <rect id="Rectangle-9" stroke="#EF8822" x="0.5" y="0.5" width="8" height="10" rx="1"></rect>
+                        <g id="document" transform="translate(1.000000, 2.000000)">
+                            <path d="M6,2.23846154 L0.923076923,2.23846154 C0.8,2.23846154 0.692307692,2.12179487 0.692307692,1.98846154 C0.692307692,1.85512821 0.8,1.73846154 0.923076923,1.73846154 L5.98461538,1.73846154 C6.10769231,1.73846154 6.21538462,1.85512821 6.21538462,1.98846154 C6.21538462,2.12179487 6.12307692,2.23846154 6,2.23846154 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                            <path d="M6,4.36153846 L0.923076923,4.36153846 C0.8,4.36153846 0.692307692,4.24487179 0.692307692,4.11153846 C0.692307692,3.97820513 0.8,3.86153846 0.923076923,3.86153846 L5.98461538,3.86153846 C6.10769231,3.86153846 6.21538462,3.97820513 6.21538462,4.11153846 C6.21538462,4.24487179 6.12307692,4.36153846 6,4.36153846 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                            <path d="M6,6.46923077 L0.923076923,6.46923077 C0.8,6.46923077 0.692307692,6.3525641 0.692307692,6.21923077 C0.692307692,6.08589744 0.8,5.96923077 0.923076923,5.96923077 L5.98461538,5.96923077 C6.10769231,5.96923077 6.21538462,6.08589744 6.21538462,6.21923077 C6.21538462,6.3525641 6.12307692,6.46923077 6,6.46923077 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                            <path d="M1.5,1.5 L5.62310563,1.5" id="Line" stroke="#EF8822" stroke-linecap="square"></path>
+                            <path d="M1.5,3.5 L5.62310563,3.5" id="Line" stroke="#EF8822" stroke-linecap="square"></path>
+                            <path d="M1.5,5.5 L5.62310563,5.5" id="Line" stroke="#EF8822" stroke-linecap="square"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

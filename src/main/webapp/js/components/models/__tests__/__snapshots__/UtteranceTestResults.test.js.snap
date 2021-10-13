@@ -1,0 +1,1085 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UtteranceTestResults /> Snapshots renders correctly for a digital model when modelTestResults are absent 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "borderTop": "1px solid #dadadd",
+    }
+  }
+>
+  <Placeholder
+    message="Type an utterance to run a test"
+    styleOverride={Object {}}
+  />
+</Deprecated>
+`;
+
+exports[`<UtteranceTestResults /> Snapshots renders correctly for a digital model when modelTestResults are present 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "borderTop": "1px solid #dadadd",
+    }
+  }
+>
+  <span>
+    <withTheme(Tabs)
+      align="left"
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      tabPanels={
+        Array [
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestIntentsGrid
+              data={
+                Array [
+                  Object {
+                    "intent": "reservation-query",
+                    "score": 0.49544276870123316,
+                  },
+                  Object {
+                    "intent": "agent-query",
+                    "score": 0.42004871402243316,
+                  },
+                  Object {
+                    "intent": "None_None",
+                    "score": 0.14285217997731586,
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestTransformsGrid
+              data={
+                Array [
+                  Object {
+                    "id": "rx-mapper.non-breaking-space-regex",
+                    "result": "i want to cancel for june 13",
+                  },
+                  Object {
+                    "id": "wsp",
+                    "result": "i want to cancel for june 13",
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestEntitiesGrid
+              data={
+                Array [
+                  Object {
+                    "name": "date",
+                    "value": "june 13",
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+        ]
+      }
+      tabs={
+        Array [
+          "Predicted Intents (3)",
+          "Transformations (2)",
+          "Entities (1)",
+        ]
+      }
+    />
+  </span>
+</Deprecated>
+`;
+
+exports[`<UtteranceTestResults /> Snapshots renders correctly for a speech model when modelTestResults are absent 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "borderTop": "1px solid #dadadd",
+    }
+  }
+>
+  <Placeholder
+    message="Select, record, upload, or link an audio file to run a test"
+    styleOverride={Object {}}
+  />
+</Deprecated>
+`;
+
+exports[`<UtteranceTestResults /> Snapshots renders correctly for a speech model when modelTestResults are present 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "borderTop": "1px solid #dadadd",
+    }
+  }
+>
+  <span>
+    <Deprecated
+      styleOverride={
+        Object {
+          "borderBottom": "1px solid #dadadd",
+        }
+      }
+    >
+      <ul
+        className="utterance-reco-score-ul"
+      >
+        <li
+          className="center-item-li recognition-score"
+          key="recognition-score"
+        >
+          Recognition Score
+          <span
+            className="recognition-score-data"
+          >
+             
+            93.12 %
+             
+          </span>
+        </li>
+        <li
+          className="center-item-li word-class"
+        >
+          <div>
+            <span
+              className="utterance-result"
+            >
+              i want to cancel for june 13
+            </span>
+            <AudioPlayer
+              audioSrc=""
+              audioStates={Object {}}
+              dispatch={[Function]}
+              iconProps={
+                Object {
+                  "common": Object {
+                    "circleStroke": "#004C97",
+                    "height": "20px",
+                    "pathFill": "#004C97",
+                    "width": "20px",
+                  },
+                }
+              }
+              onPlay={[Function]}
+              onStop={[Function]}
+              playIcon={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              stopIcon={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              styleOverride={Object {}}
+            />
+            <span
+              style={
+                Object {
+                  "paddingLeft": "0px",
+                  "paddingRight": "20px",
+                }
+              }
+            >
+              <Downloader
+                file=""
+                fileName="audio_1557955235157.wav"
+                fileType="link"
+                iconProps={Object {}}
+              >
+                <Memo(withTheme(Download))
+                  fill="#004C97"
+                  height="16px"
+                  width="12px"
+                />
+              </Downloader>
+            </span>
+          </div>
+          <span>
+             Utterance with word class:
+          </span>
+          <span
+            style={
+              Object {
+                "fontWeight": "normal",
+                "paddingLeft": "5px",
+              }
+            }
+          >
+            i want to cancel for speech_class_date
+          </span>
+        </li>
+      </ul>
+    </Deprecated>
+    <withTheme(Tabs)
+      align="left"
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      tabPanels={
+        Array [
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestIntentsGrid
+              data={
+                Array [
+                  Object {
+                    "intent": "speech-intent",
+                    "score": 0.49544276870123316,
+                  },
+                  Object {
+                    "intent": "speech-intent2",
+                    "score": 0.42004871402243316,
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestTransformsGrid
+              data={
+                Array [
+                  Object {
+                    "id": "rx-mapper.non-breaking-space-regex",
+                    "result": "i want to cancel for june 13",
+                  },
+                  Object {
+                    "id": "wsp",
+                    "result": "i want to cancel for june 13",
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestEntitiesGrid
+              data={
+                Array [
+                  Object {
+                    "name": "date",
+                    "value": "june 13",
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+        ]
+      }
+      tabs={
+        Array [
+          "Predicted Intents (2)",
+          "Transformations (2)",
+          "Entities (1)",
+        ]
+      }
+    />
+  </span>
+</Deprecated>
+`;
+
+exports[`<UtteranceTestResults /> Snapshots renders correctly modelTestResults are does not have entities 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "borderTop": "1px solid #dadadd",
+    }
+  }
+>
+  <span>
+    <Deprecated
+      styleOverride={
+        Object {
+          "borderBottom": "1px solid #dadadd",
+        }
+      }
+    >
+      <ul
+        className="utterance-reco-score-ul"
+      >
+        <li
+          className="center-item-li recognition-score"
+          key="recognition-score"
+        >
+          Recognition Score
+          <span
+            className="recognition-score-data"
+          >
+             
+            93.12 %
+             
+          </span>
+        </li>
+        <li
+          className="center-item-li word-class"
+        >
+          <div>
+            <span
+              className="utterance-result"
+            >
+              i want to cancel for june 13
+            </span>
+            <AudioPlayer
+              audioSrc=""
+              audioStates={Object {}}
+              dispatch={[Function]}
+              iconProps={
+                Object {
+                  "common": Object {
+                    "circleStroke": "#004C97",
+                    "height": "20px",
+                    "pathFill": "#004C97",
+                    "width": "20px",
+                  },
+                }
+              }
+              onPlay={[Function]}
+              onStop={[Function]}
+              playIcon={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              stopIcon={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              styleOverride={Object {}}
+            />
+            <span
+              style={
+                Object {
+                  "paddingLeft": "0px",
+                  "paddingRight": "20px",
+                }
+              }
+            >
+              <Downloader
+                file=""
+                fileName="audio_1557955235157.wav"
+                fileType="link"
+                iconProps={Object {}}
+              >
+                <Memo(withTheme(Download))
+                  fill="#004C97"
+                  height="16px"
+                  width="12px"
+                />
+              </Downloader>
+            </span>
+          </div>
+          <span>
+             Utterance with word class:
+          </span>
+          <span
+            style={
+              Object {
+                "fontWeight": "normal",
+                "paddingLeft": "5px",
+              }
+            }
+          >
+            i want to cancel for speech_class_date
+          </span>
+        </li>
+      </ul>
+    </Deprecated>
+    <withTheme(Tabs)
+      align="left"
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      tabPanels={
+        Array [
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestIntentsGrid
+              data={
+                Array [
+                  Object {
+                    "intent": "speech-intent",
+                    "score": 0.49544276870123316,
+                  },
+                  Object {
+                    "intent": "speech-intent2",
+                    "score": 0.42004871402243316,
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestTransformsGrid
+              data={
+                Array [
+                  Object {
+                    "id": "rx-mapper.non-breaking-space-regex",
+                    "result": "i want to cancel for june 13",
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <Placeholder
+              message="No Entities Results"
+              styleOverride={Object {}}
+            />
+          </Deprecated>,
+        ]
+      }
+      tabs={
+        Array [
+          "Predicted Intents (2)",
+          "Transformations (1)",
+          "Entities (0)",
+        ]
+      }
+    />
+  </span>
+</Deprecated>
+`;
+
+exports[`<UtteranceTestResults /> Snapshots renders correctly modelTestResults are does not have intents 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "borderTop": "1px solid #dadadd",
+    }
+  }
+>
+  <span>
+    <Deprecated
+      styleOverride={
+        Object {
+          "borderBottom": "1px solid #dadadd",
+        }
+      }
+    >
+      <ul
+        className="utterance-reco-score-ul"
+      >
+        <li
+          className="center-item-li recognition-score"
+          key="recognition-score"
+        >
+          Recognition Score
+          <span
+            className="recognition-score-data"
+          >
+             
+            93.12 %
+             
+          </span>
+        </li>
+        <li
+          className="center-item-li word-class"
+        >
+          <div>
+            <span
+              className="utterance-result"
+            >
+              i want to cancel for june 13
+            </span>
+            <AudioPlayer
+              audioSrc=""
+              audioStates={Object {}}
+              dispatch={[Function]}
+              iconProps={
+                Object {
+                  "common": Object {
+                    "circleStroke": "#004C97",
+                    "height": "20px",
+                    "pathFill": "#004C97",
+                    "width": "20px",
+                  },
+                }
+              }
+              onPlay={[Function]}
+              onStop={[Function]}
+              playIcon={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              stopIcon={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              styleOverride={Object {}}
+            />
+            <span
+              style={
+                Object {
+                  "paddingLeft": "0px",
+                  "paddingRight": "20px",
+                }
+              }
+            >
+              <Downloader
+                file=""
+                fileName="audio_1557955235157.wav"
+                fileType="link"
+                iconProps={Object {}}
+              >
+                <Memo(withTheme(Download))
+                  fill="#004C97"
+                  height="16px"
+                  width="12px"
+                />
+              </Downloader>
+            </span>
+          </div>
+          <span>
+             Utterance with word class:
+          </span>
+          <span
+            style={
+              Object {
+                "fontWeight": "normal",
+                "paddingLeft": "5px",
+              }
+            }
+          >
+            i want to cancel for speech_class_date
+          </span>
+        </li>
+      </ul>
+    </Deprecated>
+    <withTheme(Tabs)
+      align="left"
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      tabPanels={
+        Array [
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestIntentsGrid
+              data={
+                Array [
+                  Object {
+                    "intent": "speech-intent",
+                    "score": 0.49544276870123316,
+                  },
+                  Object {
+                    "intent": "speech-intent2",
+                    "score": 0.42004871402243316,
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestTransformsGrid
+              data={
+                Array [
+                  Object {
+                    "id": "rx-mapper.non-breaking-space-regex",
+                    "result": "i want to cancel for june 13",
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestEntitiesGrid
+              data={
+                Array [
+                  Object {
+                    "name": "date",
+                    "value": "june 13",
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+        ]
+      }
+      tabs={
+        Array [
+          "Predicted Intents (2)",
+          "Transformations (1)",
+          "Entities (1)",
+        ]
+      }
+    />
+  </span>
+</Deprecated>
+`;
+
+exports[`<UtteranceTestResults /> Snapshots renders correctly modelTestResults are does not have transformations 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "borderTop": "1px solid #dadadd",
+    }
+  }
+>
+  <span>
+    <Deprecated
+      styleOverride={
+        Object {
+          "borderBottom": "1px solid #dadadd",
+        }
+      }
+    >
+      <ul
+        className="utterance-reco-score-ul"
+      >
+        <li
+          className="center-item-li recognition-score"
+          key="recognition-score"
+        >
+          Recognition Score
+          <span
+            className="recognition-score-data"
+          >
+             
+            93.12 %
+             
+          </span>
+        </li>
+        <li
+          className="center-item-li word-class"
+        >
+          <div>
+            <span
+              className="utterance-result"
+            >
+              i want to cancel for june 13
+            </span>
+            <AudioPlayer
+              audioSrc=""
+              audioStates={Object {}}
+              dispatch={[Function]}
+              iconProps={
+                Object {
+                  "common": Object {
+                    "circleStroke": "#004C97",
+                    "height": "20px",
+                    "pathFill": "#004C97",
+                    "width": "20px",
+                  },
+                }
+              }
+              onPlay={[Function]}
+              onStop={[Function]}
+              playIcon={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              stopIcon={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              styleOverride={Object {}}
+            />
+            <span
+              style={
+                Object {
+                  "paddingLeft": "0px",
+                  "paddingRight": "20px",
+                }
+              }
+            >
+              <Downloader
+                file=""
+                fileName="audio_1557955235157.wav"
+                fileType="link"
+                iconProps={Object {}}
+              >
+                <Memo(withTheme(Download))
+                  fill="#004C97"
+                  height="16px"
+                  width="12px"
+                />
+              </Downloader>
+            </span>
+          </div>
+          <span>
+             Utterance with word class:
+          </span>
+          <span
+            style={
+              Object {
+                "fontWeight": "normal",
+                "paddingLeft": "5px",
+              }
+            }
+          >
+            i want to cancel for speech_class_date
+          </span>
+        </li>
+      </ul>
+    </Deprecated>
+    <withTheme(Tabs)
+      align="left"
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      tabPanels={
+        Array [
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestIntentsGrid
+              data={
+                Array [
+                  Object {
+                    "intent": "speech-intent",
+                    "score": 0.49544276870123316,
+                  },
+                  Object {
+                    "intent": "speech-intent2",
+                    "score": 0.42004871402243316,
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <Placeholder
+              message="No Transformations Results"
+              styleOverride={Object {}}
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestEntitiesGrid
+              data={
+                Array [
+                  Object {
+                    "name": "date",
+                    "value": "june 13",
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+        ]
+      }
+      tabs={
+        Array [
+          "Predicted Intents (2)",
+          "Transformations (0)",
+          "Entities (1)",
+        ]
+      }
+    />
+  </span>
+</Deprecated>
+`;
+
+exports[`<UtteranceTestResults /> Snapshots renders correctly when a tab currently active 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "borderTop": "1px solid #dadadd",
+    }
+  }
+>
+  <span>
+    <Deprecated
+      styleOverride={
+        Object {
+          "borderBottom": "1px solid #dadadd",
+        }
+      }
+    >
+      <ul
+        className="utterance-reco-score-ul"
+      >
+        <li
+          className="center-item-li recognition-score"
+          key="recognition-score"
+        >
+          Recognition Score
+          <span
+            className="recognition-score-data"
+          >
+             
+            93.12 %
+             
+          </span>
+        </li>
+        <li
+          className="center-item-li word-class"
+        >
+          <div>
+            <span
+              className="utterance-result"
+            >
+              i want to cancel for june 13
+            </span>
+            <AudioPlayer
+              audioSrc=""
+              audioStates={Object {}}
+              dispatch={[Function]}
+              iconProps={
+                Object {
+                  "common": Object {
+                    "circleStroke": "#004C97",
+                    "height": "20px",
+                    "pathFill": "#004C97",
+                    "width": "20px",
+                  },
+                }
+              }
+              onPlay={[Function]}
+              onStop={[Function]}
+              playIcon={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              stopIcon={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              styleOverride={Object {}}
+            />
+            <span
+              style={
+                Object {
+                  "paddingLeft": "0px",
+                  "paddingRight": "20px",
+                }
+              }
+            >
+              <Downloader
+                file=""
+                fileName="audio_1557955235157.wav"
+                fileType="link"
+                iconProps={Object {}}
+              >
+                <Memo(withTheme(Download))
+                  fill="#004C97"
+                  height="16px"
+                  width="12px"
+                />
+              </Downloader>
+            </span>
+          </div>
+          <span>
+             Utterance with word class:
+          </span>
+          <span
+            style={
+              Object {
+                "fontWeight": "normal",
+                "paddingLeft": "5px",
+              }
+            }
+          >
+            i want to cancel for speech_class_date
+          </span>
+        </li>
+      </ul>
+    </Deprecated>
+    <withTheme(Tabs)
+      align="left"
+      onTabSelected={[Function]}
+      selectedIndex={0}
+      tabPanels={
+        Array [
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestIntentsGrid
+              data={
+                Array [
+                  Object {
+                    "intent": "speech-intent",
+                    "score": 0.49544276870123316,
+                  },
+                  Object {
+                    "intent": "speech-intent2",
+                    "score": 0.42004871402243316,
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestTransformsGrid
+              data={
+                Array [
+                  Object {
+                    "id": "rx-mapper.non-breaking-space-regex",
+                    "result": "i want to cancel for june 13",
+                  },
+                  Object {
+                    "id": "wsp",
+                    "result": "i want to cancel for june 13",
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+          <Deprecated
+            styleOverride={
+              Object {
+                "paddingBottom": "30px",
+                "paddingTop": "30px",
+              }
+            }
+          >
+            <ModelTestEntitiesGrid
+              data={
+                Array [
+                  Object {
+                    "name": "date",
+                    "value": "june 13",
+                  },
+                ]
+              }
+            />
+          </Deprecated>,
+        ]
+      }
+      tabs={
+        Array [
+          "Predicted Intents (2)",
+          "Transformations (2)",
+          "Entities (1)",
+        ]
+      }
+    />
+  </span>
+</Deprecated>
+`;

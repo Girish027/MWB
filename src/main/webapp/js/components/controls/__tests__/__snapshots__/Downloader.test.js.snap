@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Downloader /> Snapshots renders correctly with just label 1`] = `
+<span>
+  <withTheme(Button)
+    key="download-file"
+    name="download-button"
+    onClick={[Function]}
+    styleOverride={
+      Object {
+        ":focus": Object {
+          "outline": "none",
+        },
+        "fontWeight": "normal",
+        "paddingLeft": "10px",
+      }
+    }
+    type="flat"
+  >
+     
+    Download
+     
+  </withTheme(Button)>
+</span>
+`;
+
+exports[`<Downloader /> Snapshots renders correctly with just the icon 1`] = `
+<span>
+  <withTheme(Button)
+    key="download-file"
+    name="download-button"
+    onClick={[Function]}
+    styleOverride={
+      Object {
+        ":focus": Object {
+          "outline": "none",
+        },
+        "fontWeight": "normal",
+        "paddingLeft": "10px",
+      }
+    }
+    type="flat"
+  >
+    <Memo(withTheme(Download)) />
+  </withTheme(Button)>
+</span>
+`;
+
+exports[`<Downloader /> Snapshots renders correctly with just the icon and label 1`] = `
+<span>
+  <withTheme(Button)
+    key="download-file"
+    name="download-button"
+    onClick={[Function]}
+    styleOverride={
+      Object {
+        ":focus": Object {
+          "outline": "none",
+        },
+        "fontWeight": "normal",
+        "paddingLeft": "10px",
+      }
+    }
+    type="flat"
+  >
+    <Memo(withTheme(Download)) />
+     
+    Download
+     
+  </withTheme(Button)>
+</span>
+`;

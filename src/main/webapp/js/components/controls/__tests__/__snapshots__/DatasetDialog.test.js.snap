@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DatasetDialog /> Creating an instance with test props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    dispatch={[Function]}
+    headerChildren="Upload Dataset"
+    isOpen={true}
+    okChildren="NEXT"
+    okDisabled={true}
+    okVisible={true}
+    onCancel={[Function]}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    project={Object {}}
+    showBodySeperator={false}
+    size="large"
+    styleOverride={
+      Object {
+        "childContainer": Object {
+          "marginBottom": "0px",
+          "marginTop": "0px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "460px",
+          "width": "446px",
+        },
+      }
+    }
+  >
+    <div>
+      <div>
+        <Form
+          fields={
+            Object {
+              "dropZone": [Function],
+              "select": [Function],
+              "text": [Function],
+            }
+          }
+          formContext={Object {}}
+          formData={Object {}}
+          jsonSchema={
+            Object {
+              "properties": Object {
+                "description": Object {
+                  "optional": true,
+                  "title": "Description",
+                  "type": "string",
+                },
+                "dropZone": Object {
+                  "minLength": 1,
+                  "type": "object",
+                },
+                "name": Object {
+                  "isRequired": true,
+                  "title": "Name",
+                  "type": "string",
+                },
+              },
+              "required": Array [
+                "name",
+                "dropZone",
+              ],
+              "title": "",
+              "type": "object",
+            }
+          }
+          liveValidate={true}
+          onChange={[Function]}
+          onSubmit={[Function]}
+          showErrorList={false}
+          uiSchema={
+            Object {
+              "description": Object {
+                "ui:field": "text",
+              },
+              "dropZone": Object {
+                "ui:field": "dropZone",
+              },
+              "name": Object {
+                "ui:field": "text",
+              },
+            }
+          }
+        />
+      </div>
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

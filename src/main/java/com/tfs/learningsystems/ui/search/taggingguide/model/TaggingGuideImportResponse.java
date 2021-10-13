@@ -1,0 +1,20 @@
+/*******************************************************************************
+ * Copyright © [24]7 Customer, Inc. All Rights Reserved.
+ *******************************************************************************/
+package com.tfs.learningsystems.ui.search.taggingguide.model;
+
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import java.util.List;
+import lombok.Data;
+
+@Data
+@JsonSerialize
+public class TaggingGuideImportResponse {
+
+  int id;
+  int validTagCount;
+  long importedAt;
+  String importedBy;
+  List<String> invalidTags;
+  List<String> missingTags;
+}

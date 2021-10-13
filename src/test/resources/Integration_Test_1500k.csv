@@ -1,0 +1,1513 @@
+intent,transcription,transcriptionHash,count,Rutag
+reservation-query,reservation,855b3aad9e13dcb704aae8eaf82ae1e3b135800d,6185,reservation-query
+none-none,null,dd2d665d78c45ba3a73dc249a26e655d4b089fed,6089,none-none
+reservation-make,make a reservation,26a4201ac4b8dda1f310b08702c43eae9dd00ec0,3600,reservation-make
+reservation-query,reservations,cc54c3df1e24dd1a6e6aca7be40ba097d131571b,3310,reservation-query
+agent-query,customer service,722f9a04918bc5cc6bf85bfdabff2c78e226a686,2021,agent-query
+reservation-make,i'd like to make a reservation,bdb944b570e719b31dd92410e92224e2d00b8ad4,1756,reservation-make
+agent-query,representative,f6ef3aef47bff007f5bbcbfb4ed61741941133db,1172,agent-query
+reservation-make,make reservation,ddb0e8dd3c4bfc487bd5c8290fa84259b07606c8,720,reservation-make
+reservation-modify,i need to make changes to my reservation,bc505155bce047b42510410987e8c77e2cf32950,698,reservation-modify
+reservation-cancel,cancel reservation,e5b10efff59628164bcd9fbcd47abc5e9fcfe432,658,reservation-cancel
+agent-query,operator,b81c6c10cbe9a599efbac8001b2746f7395ea223,525,agent-query
+points-query,points,dbdf564d3453f45ffa2b4ee069345600dfcd869e,435,points-query
+reservation-make,i need to make a reservation,651d22ed5a43d02c3c4c733873267eb17975e98a,421,reservation-make
+points-balance,points balance,8f9d300e7f609f9bad45c8d45ac68761b83da554,363,points-balance
+reservation-cancel,cancel a reservation,bde71cbb02b7e664bea259ff6b10a5699562fec9,358,reservation-cancel
+reservation-make,make reservations,c8bff444751f5e3fe1fbfbd8a647533eea467fc2,339,reservation-make
+reservation-modify,change reservation,a631d5f010ed4bef1a6d0acdb05e864c5a2d27e5,338,reservation-modify
+reservation-make,like to make a reservation,c3040f4a3acda8670294e996e6f45f9c597e8a1f,329,reservation-make
+agent-query,agent,3a050031e2d1149621fdfac593706196d6257515,299,agent-query
+reservation-modify,changes to reservation,7e18e29ef6a71db75cf506f7e9234d12a7896cca,251,reservation-modify
+reservation-modify,changes to my reservation,02194279a5da6f209a9cdaaae2a55c95d0d5a199,248,reservation-modify
+reservation-make,i would like to make a reservation,7229378ef6b5981a36852e9d449786582882e903,248,reservation-make
+agent-query,speak to a representative,3027c13b2d0263e825faa361bb6193054a72910b,212,agent-query
+reservation-query,new reservation,336daa74dd649b8cce9391d4eb2313b084b75bfd,211,reservation-query
+reservation-cancel,i need to cancel a reservation,b6f8acc47b693283cadaf5eeda0e323803324ab5,183,reservation-cancel
+reservation-query,a reservation,5f6571fd8eb5319faad91b9b0cc06b84a6d1de62,157,reservation-query
+reservation-modify,change a reservation,4a1d1448a49b8319bb54eeef7fa01deb8ad1e7f2,156,reservation-modify
+reservation-modify,make changes to my reservation,0473478f08565da063c0129624ede9c7c8eee9ec,148,reservation-modify
+reservation-make,need to make a reservation,a0a2168d2f6dcdb18b758604cbdf07d4ca53df8e,131,reservation-make
+reservation-query,reservation reservation,3413aace0251d703ee2dc6cf7d516c0e2a20e94a,120,reservation-query
+payment-make,make a payment,557d273d9e454abe4f4b75f6b4a3e34c2dc0ac81,118,payment-make
+reservation-query,reservations please,7f1b8368ce7fdf81908ffb037b47f487efdc477b,118,reservation-query
+reservation-make,to make a reservation,bcafe9996cb2926da10a0017429059ce521ac370,113,reservation-make
+points-balance,point balance,75df2986ecd0bebea3c03af2c5d7076e35807cc2,109,points-balance
+reservation-modify,change my reservation,3a30d5bd96ffd7d6045dad5ae8d362c0d4472a09,97,reservation-modify
+agent-query,member services,328929d27c71b8de1ed17f46b1996945bd994f63,87,agent-query
+agent-query,talk to a representative,e0d83d322d7d49decd7bb6329cc60c4a12af3679,85,agent-query
+reservation-make,i wanna make a reservation,b2f130b2325fb960ae83f6f794a426a091b8a7c3,79,reservation-make
+agent-query,customer service please,3de2ed371305269366789e9f8a563c71feaf2c04,72,agent-query
+reservation-modify,make changes to reservation,a3b25b9a5dab627458d0632ce4878a461a5c7669,69,reservation-modify
+agent-query,customer service representative,4cd85aa70f855077a6286268331a0e72ba39292e,68,agent-query
+reservation-cancel,cancel reservations,3e750851db1a96adbdd95164a7a142e458f7af55,64,reservation-cancel
+reservation-make,i want to make a reservation,ae823bb6e70b8991ad29a86a2df824601d6ec73b,64,reservation-make
+reservation-query,i need a reservation,f48dd76898a67f9f05bafb4e8d23325ab2b42507,64,reservation-query
+reservation-query,reservation please,37a94d4306ba52a398da60b27b2b7385b4935e02,61,reservation-query
+reservation-cancel,i need to cancel my reservation,383d48b6530348cdb50bc4c1d5667b18e4f50de0,59,reservation-cancel
+agent-query,speak to representative,c9fe5919e184d72e39d2bf761593d0d2c4c2b89c,59,agent-query
+reservation-modify,i need to change a reservation,6213da917e573e2972236c1291c79c7162672698,57,reservation-modify
+agent-query,customer representative,487a4a4421044cd8c0395e761bf78c72c2752541,57,agent-query
+reservation-cancel,i'd like to cancel a reservation,d2fd339b937ef6234bab07c43aefce164c6955b2,56,reservation-cancel
+reservation-make,i like to make a reservation,3bf017479eea71738bd896b759ef0fa809ef30fe,55,reservation-make
+reservation-make,i need to make reservations,6e4130c5d3a471f95792f971948250b806ebb034,55,reservation-make
+reservation-modify,need to make changes to my reservation,971d83b0e0e35a9ffd94ceebe5b9a284bc6daeda,54,reservation-modify
+reservation-modify,change reservations,fd5e13c1f35e34ea195f5e479c6abc7fd0a1485e,52,reservation-modify
+agent-query,i need to speak to a representative,c21abdcf01678e92e2f81a6ba76d7a008125fddd,52,agent-query
+reservation-modify,modify reservation,3cc1ecded50a00e4d9c9cd90e2e4328b38166799,52,reservation-modify
+points-balance,what's my points balance,e922dbef3d4dd8244deba7f7cc3fa1bd50242c79,51,points-balance
+reservation-make,i'd like to make reservation,ae885184ea661a2f0b1fc64603632273c5a6aad0,51,reservation-make
+agent-query,speak to an agent,c376395c53d3f23884e024ce684a3b7283014b6f,46,agent-query
+reservation-make,make a new reservation,74f83a8520335bdcf3061b034f65253e12c0ab93,44,reservation-make
+agent-query,supervisor,63b25c4b923377f18388b672d3b4aa98b1b073fb,43,agent-query
+reservation-cancel,cancel my reservation,e89ae250b6691f523036e426006822b1aaa96f06,42,reservation-cancel
+agent-query,representative please,30f8a3d67d4494e17dcaf09b4d66b49da1a6d6dd,40,agent-query
+agent-query,speak with a representative,c9d505b9afa9362b900bf34a8d25787439d24323,38,agent-query
+reservation-modify,i need to change my reservation,fe189cbc6f38126fcd9a590d9808e884d0417753,38,reservation-modify
+points-query,point,5c268baaa336295bbfe6e738aad44a86d359757e,36,points-query
+points-balance,what's my point balance,d0d5e8ae6c446e2fd6c5ce2237f94066ffc3516d,34,points-balance
+payment-make,i'd like to make a payment,c72fbafb77801d8a8888f42c8f608d02ead7cac5,33,payment-make
+agent-query,a representative,b429dc8ee65e44f4ccc72c684cf02ad9164914a4,32,agent-query
+reservation-make,i'd like to make reservations,60cd6cb107918bd93218396d7e2f3eabdc3dad02,32,reservation-make
+reservation-make,i need to make reservation,a9928d688e228a741396b26af822f2d40f40d25f,30,reservation-make
+agent-query,customer service rep,d4c92458b18a8a5136c0779d74d18353725dbe12,29,agent-query
+points-query,my points,1c05b19f913042aa81d2afe8d0ea91e9d377dc8c,29,points-query
+agent-query,membership,31b132c5729c325dd6d74162e7a0886352c3b7cf,29,agent-query
+reservation-make,make a reservations,10e66d50f023f6595ec55fc454d5e16886697c5f,29,reservation-make
+agent-query,operator please,311a04adf82ad3007741e394802ef10aa8c335b1,27,agent-query
+agent-query,report a missing stay,ac86727c6688d936b068e4dc41135821dbe5e33d,26,agent-query
+reservation-make,to make reservations,c515b0050c88ea6bfe27522480890c4cd6f56e67,25,reservation-make
+agent-query,agent please,046f9cdb7e0573e0c92536cbf32ccc2ad9948a5b,25,agent-query
+points-query,how do i get points,0e890774d7ac0315a54f86523617ab8ebdb2ead0,24,points-query
+reservation-make,making a reservation,30680f6429b8be66411d4a44efb1d46d6bc773a9,24,reservation-make
+reservation-cancel,need to cancel a reservation,59e23f24a598004c79638ffaab860534156e3378,24,reservation-cancel
+reservation-query,reservations reservations,fff9778b56e9d736e1acd373b8b29abe7dee36b3,24,reservation-query
+agent-query,i need to talk to a representative,77e03d772a9fad45d4bf412be230eb2618664b33,23,agent-query
+reservation-query,need a reservation,fb579a401789f02834b52a73f46b2bba6feec304,23,reservation-query
+reservation-modify,i'd like to change a reservation,e0ed51c6249ce934c3318278921c864e60a80dc5,22,reservation-modify
+reservation-modify,changes to a reservation,cf0109927987fa77c419da30a7b762d46159df2d,21,reservation-modify
+agent-query,talk to representative,262ec9e682e8a767c82aa42a0ef0ffd678000151,21,agent-query
+reservation-make,i'm trying to make a reservation,984746b2587e3a05fa77d3b833e3473ae6fcaeb5,20,reservation-make
+reservation-make,wanna make a reservation,f25046ff5c73736c621e11f6b6f296d8633ce785,20,reservation-make
+agent-query,representative representative,76a4086dca942b7baa4382bd7738dcef18d34f9f,19,agent-query
+reservation-modify,make changes to a reservation,749eef0a3d44e18ed895c4c8329a6230c5fb5c87,18,reservation-modify
+reservation-modify,change the reservation,7698c9d105e6d6babf0125aca63395052cec3e69,18,reservation-modify
+reservation-modify,i would like to change a reservation,4c63d812afb17c373f23f3141c2c5f6f4c7cf1da,18,reservation-modify
+reservation-make,make a reservation make a reservation,f603edc131679f6593e723646afaf078c03ac510,18,reservation-make
+reservation-modify,i need to make changes to my reservations,bf7e82563fd5f2f775c27f85cf8b2a705d331a6c,18,reservation-modify
+agent-query,i need customer service,ae7b7a37bf7d5a3529491d99a2d3df36c0e138ed,17,agent-query
+agent-query,manager,ec6551e557b8b906c6fa0c0f6a78a898da2ef7ed,17,agent-query
+reservation-make,like to make reservation,e715046326ff0641643885ff5bec1706a3f63902,17,reservation-make
+agent-query,need to talk to a representative,71b098a2366aaeffa526a04dba71ad2a679c9a45,16,agent-query
+reservation-make,to make reservation,2d2199da158b2539bb605da1180e65bce23a6a91,16,reservation-make
+reservation-make,i'd like to make a reservation please,dea779ccd8f324b12b8a1599fef753da65a79216,16,reservation-make
+reservation-make,need to make reservations,9b8ea173fef88eed996839be2c805306e3d609dc,16,reservation-make
+reservation-modify,i'd like to change my reservation,221e3de0aec171f088a800e387068a85037dfdc5,16,reservation-modify
+reservation-make,need to make reservation,84a0a068a78c06622de9bd3c1165d62a665adb54,16,reservation-make
+reservation-make,i would like to make reservation,099e81699475942a4a9c75475afd7a983af8bfb4,16,reservation-make
+points-balance,my points balance,875dcecf345cc4253666efaddc36ce456699f505,16,points-balance
+reservation-modify,change to my reservation,77aa2ba80b052273f7c3375ad745758022e03b49,15,reservation-modify
+reservation-make,trying to make a reservation,e97c02d95c66ef26a062e3ee2300ec2e6ab36c3b,15,reservation-make
+reservation-query,i'd like reservation,782e56115ffc59d886fc317305eb6278d12b825a,14,reservation-query
+reservation-query,new reservations,698e2024af0e7cef4feaed165bbec73b9a037085,14,reservation-query
+reservation-query,i need reservations,47f957170b823a5b28be8bc6b36d997b1d4d4c7e,14,reservation-query
+reservation-make,i would like to make reservations,5f028db93169e2428498e8ae1f5cff875d1481d7,14,reservation-make
+agent-query,i need to speak with a representative,a2add5fee6964580d0decbd2414b3bc14df70cd3,14,agent-query
+reservation-modify,change to reservation,962fbdd0e8088af7154ddd8cd83e7b5b776c2839,13,reservation-modify
+reservation-query,my reservation,a7e71f0c86dfe530130034fdd27dfd82fa087c74,13,reservation-query
+agent-query,talk to customer service,0eecfeac64c8963f801e42137a880dba96643c4b,13,agent-query
+reservation-make,i'd like to make a reservation i'd like to make a reservation,aa41df56d9a1a408152b2d42756d78c78398f26b,13,reservation-make
+reservation-modify,modify a reservation,95a449bde6a3392204d65f6f34b2c11bd1700295,13,reservation-modify
+reservation-make,want to make a reservation,63d3b98429b1f0329d926c1277b9759ce81555b1,13,reservation-make
+reservation-make,would like to make a reservation,3eeba68f64c73cfedb8d3faa3a77ae03b36bfc71,13,reservation-make
+agent-query,speak to an operator,62ac1fdddb312b9bdbe12f1c325672d032473839,12,agent-query
+reservation-modify,changes to reservations,3c2c8da1ccfd7c45a4ceeec178fc1c45e7d2f2ec,12,reservation-modify
+agent-query,need to speak to a representative,14ec86a57982594e8106c621dbd063ccb8f9a7c0,12,agent-query
+payment-make,make payment,6620d1b079c1b27b8e9838ce830b8357e81b5a74,12,payment-make
+agent-query,i need to speak to an agent,87084fa2e8b626f218b5e79708f12134d7691106,12,agent-query
+reservation-modify,need to change a reservation,0b6f34862e1ba46fd4aa2640c62019d578b137c5,12,reservation-modify
+points-balance,points balance please,87caa0a66d6fe8149d112fff0422615ffc7cb9cf,12,points-balance
+reservation-make,reservation make a reservation,0ae7b3f9ed9b050a35c6bbd0a3894b7a56259808,11,reservation-make
+agent-query,member service,df2577be3376e29f3331866df61b3e12e5171cc1,11,agent-query
+agent-query,i'd like to speak to a representative,d109f96b698445beea80f375a69e307051fd9644,11,agent-query
+reservation-modify,i would like to make changes to my reservation,fdf856ca5ce3bae89ae00f38c351c0507c0a5df5,10,reservation-modify
+agent-query,talk to an agent,269951add00e4cb6f4628f82e83ba7e115471567,10,agent-query
+agent-query,speak to customer service,73a36b7476d6d5ed641aea9c0fd251b423761d43,10,agent-query
+agent-query,a representative please,7ab44417a7f3f1609b7b758051c954c7fb8faa7d,10,agent-query
+agent-query,speak to a customer representative,7373eb43954723a53b0325e31b4cc727191b77f6,10,agent-query
+reservation-query,reservation reservations,8e30225d4f286e41cf2489d0c28d78c942f65475,10,reservation-query
+reservation-modify,i need to make i need to make changes to my reservation,24fbe80462cca13c82bec3be3a671f57c070e8e7,10,reservation-modify
+reservation-modify,modify my reservation,bdc15a093b6ec7ead5ad6e2ac2ec22c696942381,10,reservation-modify
+reservation-make,make a make a reservation,e5136e1588283504a9615a354e009a5c793e4bad,10,reservation-make
+agent-query,speak to operator,5f374d91da759c63f4e383921ed8535365c34d26,10,agent-query
+agent-query,i need to speak to a customer service representative,888368ca05778578b2e0e142e339e5b325d295ec,10,agent-query
+agent-query,customer service customer service,34ca5ab57018f756c7999ddd3c2682156aa8b8f4,10,agent-query
+reservation-make,make make a reservation,e30f7839741a62df8aac1bdee792dd91bccb1744,10,reservation-make
+reservation-query,a new reservation,4b28716301c4201e046beae2e7e0ef7278e669cf,10,reservation-query
+agent-query,live representative,c20854e1a85b2bc1f1f4666ddc9c4dea037f30eb,10,agent-query
+agent-query,choice membership,6bb160aac0043848b60bf7dc6569da67e55c512d,10,agent-query
+reservation-query,a reservation please,dbca796e92eefbd2d040a7ebadae810c7b5157d6,9,reservation-query
+reservation-cancel,cancel cancel reservation,de1e3ed1f25e3be4dd72a7b54d502970315f79dc,9,reservation-cancel
+agent-query,member number,b4098f85475dd3f2175ae3e768e32e1c0a22814c,9,agent-query
+reservation-make,make the reservation,facb10ee0d0c5fdf64084df75527985c5b277b20,9,reservation-make
+reservation-modify,i need to make change to my reservation,4690fe6a82b19b565fae1c830e258f08ab6ac841,9,reservation-modify
+reservation-cancel,i need to cancel reservation,5b49f294d703c75a4abe1393d1fa6738ac5f21db,9,reservation-cancel
+agent-query,repeat,80269605407da06f200335e38d717729d430c6a9,9,agent-query
+agent-query,representatives,f0e8bf75c9c64fe6129999af54adf1db3b825d1f,9,agent-query
+reservation-modify,i need to modify my reservation,1f77065617d69ea6222a8fd86506d6dd0f178c30,9,reservation-modify
+reservation-modify,i need to make changes for my reservation,60e555c3494af4c1c74239e16c75dd6a86e86535,9,reservation-modify
+agent-query,i need a representative,6a677eaed8a104abb6aa3f8f040390c6b84b13b1,9,agent-query
+reservation-modify,i need to make changes to a reservation,7b3ca6cbc96e628af9f40201105200ed85e6994d,9,reservation-modify
+points-balance,what is my points balance,78d1e4fee62bed114a6da25457c5405a0c7210b2,9,points-balance
+reservation-modify,need to change my reservation,072ea9e6b12c424f85372b046de500a0121fb3c2,8,reservation-modify
+agent-query,speak to agent,c75de47150649314425fbf31dcfee315f4e46671,8,agent-query
+reservation-make,make a reservation please,08fc738b6ec55162b7fa2a07eafb1147665215f9,8,reservation-make
+reservation-modify,i'd like to make changes to my reservation,f663673afaba8203c272578a02eb07b2c377353d,8,reservation-modify
+reservation-make,reservation make reservation,6be80d92e7e42bbc80d7d2ad7617e9edfc93aeb1,8,reservation-make
+reservation-query,i want a reservation,4253483f77f2940afe5d9074bf51d03258fdbdb7,8,reservation-query
+reservation-make,i wanna make reservations,166b4fb8e9683fcde32cfc1dffd53a6a3c4cc473,8,reservation-make
+points-balance,my point balance,5d145792520e9d690741f7b32c2c7a3e677264d2,8,points-balance
+reservation-make,i'd like to make i'd like to make a reservation,ee9a147f10ea20a7c92839babeef1ba034a28a64,8,reservation-make
+reservation-make,i need to make a reservation please,26bbfad1528e4a3460207c1fe6339fef68b7bec6,8,reservation-make
+reservation-modify,change change reservation,a629b039259f1a039710a1d8221304b23b01e2d3,8,reservation-modify
+reservation-cancel,i wanna cancel a reservation,ca1d8c566226590adcbb6ea15febb56ecffc4c71,8,reservation-cancel
+reservation-make,making reservation,8571c72c36d5d6606f446dd66237b2a387eeace9,8,reservation-make
+agent-query,speak to a customer service representative,6d0d30a08621baa6c5db5311887c358b04491ab9,8,agent-query
+reservation-query,the reservation,aa1474997170387a1f95d50a2f7ac15a67a406a0,8,reservation-query
+reservation-modify,make changes to my reservations,26470ecc285aba65ee6efa6ca8562ffc89040aba,8,reservation-modify
+agent-query,talk to a supervisor,9073b96c1824f4287cacbb348edfc757beb0a7a4,8,agent-query
+reservation-modify,i need to make changes on my reservation,a0b8d009ee8253b844a911b4f18f64caf2b5008a,8,reservation-modify
+reservation-make,i need to make a new reservation,afead8455301dfa0454299fcf128537dfebfbe2b,8,reservation-make
+agent-query,customer service agent,fb9133f831c762b7a573cda32be5a2c3f86f0609,8,agent-query
+reservation-make,make a reservation reservation,2840dfb9bd595b95cfa74b8c4c9421f2d482d827,8,reservation-make
+agent-query,agents,cad9a93a47d8e1059c5aa492a511fb5990ebaca9,8,agent-query
+reservation-make,i'd like i'd like to make a reservation,9ca03ebb071b80b4da7c9ae327ee705648311bdf,8,reservation-make
+agent-query,report missing stay,fc55ce17d21d08b08cc4c07baeecf07c22bd8ecf,8,agent-query
+agent-query,to speak to a representative,6de06ef52a06c586180e2ad449f6c3feff4f6609,7,agent-query
+reservation-modify,to make changes to my reservation,01839d7c12eff8f1d83144d4b51350081ca71678,7,reservation-modify
+reservation-cancel,i would like to cancel a reservation,6e2a05b260c70bfb48a141dc3bb48bc8116d515c,7,reservation-cancel
+agent-query,an agent,3abd6bdeed27710837991b24e5a99c9856dbfd71,7,agent-query
+reservation-modify,changes to my reservations,db10c1ea71fba6178c133c75520c165d15ce57f9,7,reservation-modify
+reservation-query,i'd like a reservation,be272ac077be8df408955a251b5c5d10e8e6e1b8,7,reservation-query
+reservation-cancel,to cancel reservation,c336f5d9eab3367289dd410866d13fae020f8246,7,reservation-cancel
+reservation-make,make make reservation,b4b2cff42311aa6c749c7b8184f1f2d4b78c048c,7,reservation-make
+reservation-modify,update a reservation,907330d53115ec7e54fc7a95212f26aad075ff0c,7,reservation-modify
+reservation-query,reserve,e1a0ab630051bdbe6d3817b6858e0a7c4df2de6e,7,reservation-query
+agent-query,i need to speak to customer service,8f9b5ca7df07c95c581e3b6fef7590e9b1fed7a6,7,agent-query
+reservation-cancel,cancel the reservation,cd238ea43930211e467497d9c35232b91d167091,7,reservation-cancel
+agent-query,customer service rep please,37f6153309da299f74e64af75df697610bdc8b1d,7,agent-query
+agent-query,i need an operator,ee19d97a57e65e530f0565ed355570eb9a0aebb3,6,agent-query
+payment-make,i would like to make a payment,2c0401ab59b387229600de2c65fdc4c2cd1dbfcd,6,payment-make
+reservation-make,i want to make reservations,768385fbaf72d55e41e77a955040411ffa8a0c58,6,reservation-make
+reservation-modify,need to make changes on my reservation,a4cbdc42dc18904f00f8365862e704fb0e700066,6,reservation-modify
+agent-query,talk to a manager,5111dfed3c3929cd809123b8aeb4762a3c30351c,6,agent-query
+reservation-modify,i want to change a reservation,a330e76c8e97a885ece0c8741d3958530ec987e5,6,reservation-modify
+reservation-cancel,cancel reservation cancel reservation,c98e68498bae5dab109076f686c4eda278ea020e,6,reservation-cancel
+reservation-modify,i need i need to make changes to my reservation,01ab07c80b693ac66d5128db39b62e72d97ac629,6,reservation-modify
+reservation-modify,change in reservation,94f6d101981ce40a57110941471b4dc59d899e57,6,reservation-modify
+reservation-cancel,canceling a reservation,f9b28b54682fdc14f26aad389a9991f33cb2bc96,6,reservation-cancel
+points-query,how to get points,cd4694a83ba81fa716eb17c11ca51546777d1f7b,6,points-query
+agent-query,customer service customer service customer service,89f0691173435d967b33a5a2800df111de504ce9,6,agent-query
+reservation-make,i want to make reservation,0491d0aee2054d991322081e7a547769549ae162,6,reservation-make
+agent-query,customer agent,1a35a24e72c16dc01f667129b31b334218283099,6,agent-query
+agent-query,membership services,8c92c04e6a3bfaa2c97c05c82e8f6e2a3c4951c9,6,agent-query
+reservation-make,i like to make reservation,1b44b66c5c232f92383ec9d989e3a3478559d444,6,reservation-make
+agent-query,i need to talk to a customer service rep,a3569ea49f074e47bf7520056207679f5c22ca4b,6,agent-query
+reservation-cancel,i need to cancel my reservations,344e91e5f57506f92c6160adeea611752f1eec27,6,reservation-cancel
+reservation-make,making reservations,62d07bdf1fc5d520a2734af7a64d2e497f355fb3,6,reservation-make
+agent-query,talk to an operator,8f1ce7c640b015f834b890e06695630c4560a020,6,agent-query
+reservation-modify,like to make changes to my reservation,03f3ca3d5c3587fc94dfb23735de0e59e9aec328,6,reservation-modify
+agent-query,membership card,64ac84ba92923ae95b206afba5ad29482e4290eb,6,agent-query
+points-query,points please,5e1e0d38abfe8af01172e06f6ff3bb5e751761c6,6,points-query
+reservation-modify,changes changes to my reservation,4efcf0e0d9b6c48d0f3c848d32aae579a34cd871,6,reservation-modify
+agent-query,speak with an agent,e8955dc54c1e9bd4e0648b360661f697d60c9247,6,agent-query
+reservation-cancel,i'd like to cancel my reservation,2c978bbf3f5d7f31a4ffe9dc20b695b1752b2387,6,reservation-cancel
+reservation-make,need to make a reservations,22bb1794e320aa8a1770e786eee7cb7c63373b57,6,reservation-make
+points-query,what's my points,4cecd8224714a01d5f57674e0fcfd2c18a74bf02,6,points-query
+reservation-query,a reservations,61c978d5a257d994d427a7efca2834c4d0a00e26,5,reservation-query
+reservation-modify,i need to modify a reservation,563596902072d4e8fd05520c6e4a3ce598152a55,5,reservation-modify
+reservation-cancel,i wanna cancel my reservation,872b3afa52e610b7683d859ce48db2b8cd848e39,5,reservation-cancel
+agent-query,become a member,dc43a465a55afabf08e3d46ba38a61d1051a8fb4,5,agent-query
+reservation-modify,change change reservations,150748402c71fb228a59242f62b566ce607fe7eb,5,reservation-modify
+reservation-modify,i need to change reservation,9a336841b4798259501ca86a79ab3c7faefe7436,5,reservation-modify
+agent-query,membership points,7b6b8c70ce5d789443f7422a2f8fb8dd3431ae52,5,agent-query
+agent-query,i need to speak to a manager,f3336e70d3fd109bf97178c924f08a4398731c0d,5,agent-query
+reservation-cancel,to cancel a reservation,af6ee6be5cc2654604e9ee34f2f6e25df0fd9970,5,reservation-cancel
+reservation-make,i'd like to make my reservation,1152cfad855779692e4cb7c246b1512e971f8f09,5,reservation-make
+agent-query,customer representative please,f43270cb27c12de24ef9ac0de6c59f274e824947,5,agent-query
+agent-query,i need to talk to a supervisor,775db9484ab0f7f84d83608b860e1e4a5c69d0a0,5,agent-query
+points-query,i need my points,82643b7c5e13743b2dee79510eb2f1aad7583b83,5,points-query
+agent-query,choice privileges customer service,b3e6071c753922cbe49c99568313c31b4c4ffc4f,4,agent-query
+agent-query,speak to a supervisor,4777b6a636efb97f39458c1ec528cc96d8c5a194,4,agent-query
+agent-query,customer service relations please,c5515a380e99ab6d57be84f7dfa490d71c7f971d,4,agent-query
+reservation-query,reservation reservation please,a77465bebcc5616c25b7c7844631f70d3f9d3ce3,4,reservation-query
+reservation-make,i like make a reservation,d081661514a346701f20bb171ae1dfb794bd102c,4,reservation-make
+reservation-modify,changes to my reservation changes to my reservation,a9601b6c920e451ba8f57da29b3f5c646326255d,4,reservation-modify
+agent-query,i need to talk to representative,cb7f9f434709a7c73e9de7fe2703f009d4f49625,4,agent-query
+agent-query,reactivate my membership,4466406cb7ac1c544be8a560f7b2fd1c80fd3072,4,agent-query
+agent-query,choice privileges membership,a16227597a9ceabe3f359a4b7a24e23efdec7983,4,agent-query
+reservation-modify,i would like to change my reservation,0c903c0edc38679d7e333305e1d6d26d60b0a5ba,4,reservation-modify
+reservation-modify,i need to make changes in my reservation,8cd3317f5cfe1f9f4d1ed89e03e41eb153caae90,4,reservation-modify
+reservation-make,i'd like to make a i'd like to make a reservation,98c80bb8b922336ba8108c7433069a8f7f1ceaad,4,reservation-make
+agent-query,report missing points,e6ed5e8dbdca6aa742105aff09fb4521fbf7b6d7,4,agent-query
+agent-query,i need to speak with an agent,ef32432cd61c7aff867622f63d7a9294b5e11016,4,agent-query
+reservation-make,we'd like to make a reservation,91037af71a542412847ef3ee060191ef04e461b3,4,reservation-make
+agent-query,customer service supervisor,808a806020b16a3b6dbf67887b570fece43eae89,4,agent-query
+reservation-make,i i'd like to make a reservation,505db31a95bd5e62d3d194461b313c07c2848f66,4,reservation-make
+agent-query,update my membership,700e035606628c73a8109ddc016b96b3e0a939c0,4,agent-query
+reservation-modify,make changes in a reservation,27440bf0016631983fd8c6d99e849e9945182a82,4,reservation-modify
+agent-query,i need to talk to a operator,12eb6e152c7a889f20580a3ac5cab914d61df11c,4,agent-query
+agent-query,a customer service rep please,df527e952c450f70e5ec01a3d4d56352fe697853,4,agent-query
+points-balance,what is my point balance,a3bbfee7b86e8c81c8e49897782147acc9c3e85f,4,points-balance
+reservation-make,i'd like to make a reservations,37e3d58d528cf78fe639dc39ad874499e96a84a8,4,reservation-make
+agent-query,reservations customer service,0ff263ab2988ae82bddb514c999cac94b02c6bde,4,agent-query
+reservation-make,i would like to make a reservations,db394af1a580afb37e29ac30541fb6cd3f35859e,4,reservation-make
+agent-query,operator assistance,5af43c9ad8097ce50cf69c82ca80daf1b0030c83,4,agent-query
+reservation-modify,i need to change my reservations,e27001750a8c49ef8ad0e7c0753a28dc87a907f0,4,reservation-modify
+reservation-make,i am trying to make a reservation,7764b7eadc75a7be1cc9ff84163203d0085e4e71,4,reservation-make
+agent-query,points discrepancy,8a3ce8258efa3b75ee2f5571554592a051a8a0fb,4,agent-query
+reservation-cancel,like to cancel a reservation,6cf9c6b8bf01fbfa0dbddfec8daf1cb74f052da1,4,reservation-cancel
+reservation-query,with a reservation,140916265d3a6a6bcad45c264bdc8b7ed4d1966e,4,reservation-query
+agent-query,i need to talk to an operator,7a0d06d08518628a8e6691341736b65649a9ced6,4,agent-query
+agent-query,customer rep,f4ba14ae1c5cc9b2c64a25211cbdacbb2f3a807d,4,agent-query
+reservation-query,reservations reservations reservations,4e7cbc3f7bafe3af85c7d6ae0e9130a8de3b0a3d,4,reservation-query
+agent-query,service representative,71fce803617a3effdcae22459098b1217bd37407,4,agent-query
+agent-query,a customer service representative,c0fb2cd6688a61952ef669ac88aa41e9a543ae66,4,agent-query
+reservation-make,like to make reservations,9bc77e6a4ec14fb7abd13ba815d3abce22f098e3,4,reservation-make
+reservation-modify,make changes for reservation,ea63a1b212e39b44bd4dc199d42e14a77df66274,4,reservation-modify
+agent-query,report a stay,6c6202e5e9ff8773511fed7abae9077e52850057,4,agent-query
+reservation-query,for reservation,49c91b14a8bda73536960f8c01c1fd5fbb68f478,4,reservation-query
+agent-query,i need to find my member number,14a5f16dc9143eb13964457595052526f480b274,4,agent-query
+reservation-modify,i need to changes to my reservation,43da81e08c7838d9100ef87bcd36476b19ed8c91,4,reservation-modify
+agent-query,reservation customer service,c5df0e1179bf177b6a7cce7f0941c68ba8467769,4,agent-query
+agent-query,speak with an operator,cd2b6950cfeb506120e96082912b095cde655adf,4,agent-query
+reservation-query,i need to get a reservation,69650e9a4bf937b00ef1ac3fc9bf916fa39597fd,4,reservation-query
+reservation-cancel,i cancel reservation,9c39126dd89116179373497ba5133276e1c50663,4,reservation-cancel
+agent-query,talk to a customer service agent,dc43cffc73ff8a913109d0a327461052e4b1e58c,4,agent-query
+reservation-modify,change to reservations,8e063cc3a1a724e2c153fd9c0fe538d31ea55f42,4,reservation-modify
+agent-query,to talk to an operator,3e775f32305876aaef67a1372953590f2302e42b,4,agent-query
+reservation-modify,i need to make a change to my reservation,54862e92f00d22cbde61a7eb67065263934d97c5,4,reservation-modify
+agent-query,i would like to speak to a representative please,b91dcd18deeb944b99ecc2aefad21952f87db4df,4,agent-query
+agent-query,i need to speak with a supervisor,d575b52af8a0def65fca42f892f986bacb51dfe0,4,agent-query
+agent-query,reservation agent,1526b859adaaf77b63803900ff083b24148f09d8,4,agent-query
+reservation-modify,i need to change the reservation,6888c46fc2768eb6375cfb97c2d190e69decbc9e,4,reservation-modify
+agent-query,speak to a operator,61cc7a5f9380f643ca49589cd06176f7337fbe1d,4,agent-query
+agent-query,member resolution,ec06c853a6864e3a094d760953db397bf0d83265,4,agent-query
+payment-make,i need to make a payment,5758a4f81e28d896cdc48103a101557e89b45d97,4,payment-make
+reservation-make,i'd like i'd like i'd like to make a reservation,cf02e458ede33e81bdb2424d0fa40ed9905bb076,4,reservation-make
+reservation-modify,i would like to modify a reservation,80e52c914b6126ea868df045ed55738d94b1b51e,4,reservation-modify
+agent-query,the operator,ea784eb8c4b82883b948a5ddfd91a9339aa72a63,4,agent-query
+reservation-modify,update reservation,53d60bb563ca66b1a94434456a36e0ce29ae05f3,4,reservation-modify
+agent-query,i need to speak to representative,566e2916f573ec038040741343fea8491752c42d,4,agent-query
+reservation-query,reservation reservation reservation,59ce7a781110a5a6092c6f55607142491e9bf61e,4,reservation-query
+reservation-make,i like to make reservations,a306d3b04253de90d54f69800f2d5d3b97ba1a6e,4,reservation-make
+agent-query,live agent,9facb63f88d4f532a1b9c63d7361de7aad7a6d5b,4,agent-query
+agent-query,choice privileges membership number,ccd289beefd266298c434c6034047e3cd8075e3e,4,agent-query
+agent-query,i wanna talk to a representative,84a2622858feba5d79adc2f12f0a34416d1ab480,4,agent-query
+agent-query,agent agent,ddab7707515dc079681b28dcdb5891eaf2571960,4,agent-query
+agent-query,an operator,fae2abeaa40c592dfa9cfd520cbb638e9d96f26c,4,agent-query
+reservation-modify,change a reservation reservation,0705c391264ea77c77cd24f8923bb192046f0106,4,reservation-modify
+reservation-make,i'd to make a reservation,d987aae7f84fb8fbcd2eacdc03a274ddf8556224,4,reservation-make
+reservation-query,i'd like to me a reservation,c8df147726f1e0ec35d0acc7f8fd3e27b1100084,4,reservation-query
+reservation-cancel,i'd like to cancel a reservation please,5c43680843aa8513b03098a398b4a9c43940a107,4,reservation-cancel
+agent-query,speak with a rep,c6a954726d3ce55bfd22d361ad0efac1d799a0ed,4,agent-query
+reservation-make,make new reservation,405ea75afbd8b1883ece6c764693917ee7bdfeb4,4,reservation-make
+reservation-query,reservations reservation,51f861c55c030be6fe33839c23d72e57a5af4353,4,reservation-query
+reservation-make,i need to make reservations please,b183e5dc8e54a106e3ffbf4fa8bb7e73d4010af5,4,reservation-make
+reservation-make,make make reservations,7223c25ba4627657b957230abb5dd7ad8b4781ce,4,reservation-make
+agent-query,need to talk to customer service,e11c33c45be4099579727e4b6a033ecc46bce345,4,agent-query
+reservation-cancel,cancellation of reservation,96e40db0b1c44df58ab1856ae01a806afc23c53c,4,reservation-cancel
+reservation-modify,i wanna change a reservation,a816b3baa6c3d05109e69ad2953b9a120ca8fe1c,4,reservation-modify
+reservation-modify,change in my reservation,42ec20f99398fe661d3570494bcb0ee169e3a593,4,reservation-modify
+agent-query,speak to a customer service rep,1c13ba72e682320bf68e55afe060456f6835e08c,4,agent-query
+agent-query,customer customer service,42f3558d779b3b734133810082ea707b35d7dc48,4,agent-query
+agent-query,need to speak with a representative,037b69c0c2a9d0bf94da67c1f5481e3c15533608,4,agent-query
+agent-query,customer service manager,85db39b4e0c3b7dfa1c5fc2476e87c14c4eb5142,4,agent-query
+reservation-make,to make new reservations,ad2475798e277943ba0fedd20b4413a5ac29e510,4,reservation-make
+agent-query,i'd like to talk to a representative,cb2c7b4a866cf14179c193044f6e72b5c062445b,4,agent-query
+reservation-make,i'd make a reservation,38c2ab44e23999b00be198335c66d4a53d1edca4,4,reservation-make
+reservation-make,i would like to make a reservation please,1a1ac3102edb3409e8ae3f34856bcfaed785def5,4,reservation-make
+reservation-make,i wanna make reservation,3ccdc1aa4854a833327dde1685a05a86c6efcf1c,4,reservation-make
+points-balance,point balance please,10e477f355e2d58ccc1c73a59298ccb1bca5ede9,4,points-balance
+agent-query,i need to speak to a representative please,472bc5b3f8ebc8e4a2191cbb23c9216633a1e3d8,4,agent-query
+reservation-modify,changes reservation,0bc7bceb3d337b67af593d0185cb6a3dc6549df7,4,reservation-modify
+reservation-query,i would like a reservation,d400b09d6acd756c7e6ccd96b1b33755a28e803d,4,reservation-query
+reservation-cancel,cancel cancel a reservation,dd7ca4865837374463422f9e3e26732ae6b7fca7,4,reservation-cancel
+agent-query,account representative,cd42059e732c1ad7828584dcaa785ad8c5a54956,4,agent-query
+reservation-query,just my reservation,b926ba77a74682f89e479527fc1acac1b0eefe6a,4,reservation-query
+reservation-make,just want to make a reservation,bd854a78f03f1a250802c9a44db649ffe27a1405,4,reservation-make
+reservation-modify,i need to make changes i need to make changes to my reservation,6221b95e4e49378d87dcaf84aba4276f8962814e,4,reservation-modify
+agent-query,i need to speak to a customer service person,57e9768da4f9fc46e49e5c9fe99728b652acd98b,4,agent-query
+reservation-modify,change change a reservation,7f146940f5d8894f689094b8d6e20abc5a5cb8e7,4,reservation-modify
+agent-query,speak to representative please,2f93bb626b6f7bcec0e5d6bf11fdb4f3a1ab716f,4,agent-query
+agent-query,member services please,5d8eb72cf5bb37212d216b98c519bf33b022dce4,4,agent-query
+reservation-make,like to make a reservation please,7207e1e3c60b20613bac287664bc95eec4c92519,4,reservation-make
+agent-query,can i speak to a representative,5a836d3d15b20558e7beb6701005e1c03fc43dac,4,agent-query
+reservation-modify,i need to make changes to reservation,4a332f28eccb74eedadde135b5609ff5dcd2b206,4,reservation-modify
+reservation-query,need reservations,054e8efa17e778b841bd0e28d80508d941b8e380,4,reservation-query
+points-query,points points,1304b70675bcbf38dd0784d8fc2046007a7d4d8e,4,points-query
+agent-query,like to speak to a representative,d89c5e1daf817f7fdfcebc44e63cc3528aa2e654,4,agent-query
+reservation-query,i need reservation,7c093d09c60ab9f52a7626bc034618235b67b7d3,4,reservation-query
+reservation-modify,need to make changes to my reservations,b09bc523e83ddb39e6a6552176d6ece476af7e5a,3,reservation-modify
+reservation-query,i'd like to reservation,9c605bd77cd78e08407978ac99b14129a34c7fcc,3,reservation-query
+agent-query,need to speak to representative,dcbd2941a3789e868e776258a4ded3abf2ccdcd2,3,agent-query
+reservation-make,trying to make reservation,fa38e5baf68eb2b5978b17efe45f4cf0806a8f92,3,reservation-make
+reservation-cancel,need to cancel reservation,fcdd3bb997922b6336e25fbd115f2f50810eb411,3,reservation-cancel
+reservation-query,about a reservation,c1daa17be24436703b4b691abaed41b74d5d3694,3,reservation-query
+reservation-query,to reservation,ee7d90fb6c916a263157c9492b9e65a892fc4912,3,reservation-query
+reservation-make,i'd like to i'd like to make a reservation,dff014a95e6fb0995486e5b7421a85a03b5b16ed,3,reservation-make
+reservation-cancel,i'm trying to cancel a reservation,de4d6ca4b94e64127fc6a1ec90f357015f8706b4,3,reservation-cancel
+agent-query,need to talk to representative,80bfd88639ebec52d1a29fbe4c1cb91ad78f1fb9,3,agent-query
+agent-query,i need to speak to a customer service rep,a850e23ac070b7405d32dcb577f96c96ef362556,3,agent-query
+reservation-make,i'd like make a reservation,2cd6b71355792395a5ee5975e4aa97d364577476,3,reservation-make
+payment-make,wanna make a payment,edab59d0371db00067eb5a6f8b08c405be37445b,3,payment-make
+agent-query,customer service representative please,5fc6e48112137174f2a624a96d640b0b641e784b,3,agent-query
+agent-query,i would like to speak to an operator,2fc98cb41470a9f80a4cb5375f7733985a734b1e,3,agent-query
+reservation-make,i'd like to make a new reservation,6e2f04cc6f1ce0e29da4c69a025d64ff007661c3,3,reservation-make
+reservation-cancel,i need to cancel reservations,55d55582abf013e05305b2c62bd9b10bc9ef5d84,3,reservation-cancel
+agent-query,speak to a representative please,a6ef2e306a3d134980c62f54e3a8e1dab7201a11,3,agent-query
+payment-make,like to make a payment,f84d3bdfb89175e8ccb215672e21376c1cff656c,3,payment-make
+agent-query,questions about my membership,9388f9cb52dfa1e112028d1d1e1ed30f197f26db,3,agent-query
+agent-query,need to speak to a customer service rep please,cd8f08a098164afcf1688b74fcc6a39dfd9d404f,3,agent-query
+reservation-modify,change of reservation,b70141f73426ff8d8915ffc5d012bce63e554136,3,reservation-modify
+agent-query,to representative,014a6ae83078ebd6f18d020fb580aaaa417cc703,3,agent-query
+reservation-modify,change my reservations,36121b8c17b8a19c72d9324c4d968ff9a1821265,3,reservation-modify
+agent-query,speak to a customer service,3b8c63fc98aca39e96e30dac677ce293df7f823e,3,agent-query
+agent-query,i need to talk to an agent,bc589469d9a4dbd5d50089a1c551b2453f229d8f,3,agent-query
+reservation-modify,need to change reservations,b963b6bb9db62635fb124c4e1fe8efaf9ba26105,3,reservation-modify
+payment-make,i like to make a payment,565081869432ceed5b563997a92ac372b8051493,3,payment-make
+reservation-modify,i wanted to change a reservation from a paid reservation to using points,2d75f3ecd7007482df48536277dbb943829bb525,2,reservation-modify
+agent-query,i need to speak to a choice privileges representative,a88b9fc643e50d609c8490689a7cb09c73a0a3ae,2,agent-query
+agent-query,password and password for membership,f5b4ed3c5fe97f6367862635af7828b79795ff0b,2,agent-query
+reservation-make,like to make reservation and get some information on the prices of the rooms,e1448d3c06d55f016f4d31e399e088eb63f88c7d,2,reservation-make
+reservation-make,make a reservation for the hamlin newfoundland pennsylvania comfort inn,8794fcd96c3ac36167f10631cba3a0e9bb0968a2,2,reservation-make
+reservation-make,i'd like to try to make a reservation,b857ad3b17abd80a605cac8d9315f26f5548cd03,2,reservation-make
+agent-query,need reservations speak to a representative,06b17be6237a8dfd5b63ffceff6b3ea81fdd4642,2,agent-query
+points-query,how do i get my points,5d01172e3dbe9df204902c4addbeff588ef8a964,2,points-query
+agent-query,talk to agent about my bill,ebf925b7c01a7414c291ed488687859959048d43,2,agent-query
+agent-query,in my choice privilege member number and password,251389462695f93412443be1b280ceb1d7f9a9ef,2,agent-query
+reservation-make,i'd like to make a reservation and check my point value,51d20d7c94cbdb5e65100cbc4fcd1e0aa0c5afea,2,reservation-make
+reservation-make,wanna make reservation,697349288c4f06e2e803efbb74567fdd985104cd,2,reservation-make
+agent-query,i'd like to know if i'm still a member,7537d833e9d3028966770a7b37d90fba6ce59ed1,2,agent-query
+reservation-cancel,i canceled a reservation and i would like to reinstate it,0426747cf59d3424f8410c6bea9c61740e59335b,2,reservation-cancel
+points-balance,what is my choice privileges account point balance,aa1ea848498ca71efbbcd5e624da7314fcaaaf63,2,points-balance
+reservation-make,i would like to make a reservation and have,e0510ab109b3f406a4fa70361a9c3d4e15388fe0,2,reservation-make
+agent-query,adding points to my member,e164700b9907d4f3aafacadd5272fff96496ee76,2,agent-query
+agent-query,a management talk to a manager,21c92aeccd6a21a8d722ca9e846956faafe6cb42,2,agent-query
+agent-query,management i'd like to speak to a manager,99b21b672fb829ed41d0c330fa8eafeaaeba5de4,2,agent-query
+agent-query,i need talk to customer service recent activity,f40077f2f8e022957f9766454d687abfccc9809a,2,agent-query
+reservation-query,about a reservations,ccb3312379e478f98382ae31557f63cd769f0fa8,2,reservation-query
+agent-query,membership service,44be811e0abc0b81cca40461db743edcda938855,2,agent-query
+agent-query,member services please member services,914c9b93e9807292c9987e6c347d843a2f027bdb,2,agent-query
+agent-query,like to speak to operator,6be68745201c20686d85278a090a787ad3017a47,2,agent-query
+agent-query,i want to speak to a manager,485649e8d5f4e04345268247136fac4e3cca8ea7,2,agent-query
+reservation-make,i need to talk to a girl i got cut off while i was making a reservation,470f3a31356713c2960863db8f1c0e008a078613,2,reservation-make
+agent-query,reservation manager,c383e2d2a2a7ac3077f93623f67e192f6280ce2d,2,agent-query
+agent-query,reputation management,7abf026a1bd8eebc453e91cebc9b0cddc7943324,2,agent-query
+agent-query,i need help with my membership,a7b5fd76f65cade3a7138ce2c83db9848230f77f,2,agent-query
+agent-query,need a new membership card,46573b21c136440d99e50e6704ba7d5d1c295632,2,agent-query
+reservation-make,make new reservations,aa39307f2a48e5faea7cedeb328e8a2862dc8f75,2,reservation-make
+agent-query,customer care representative,feebe0b57fa0ea0334152cc06446864911d0768b,2,agent-query
+agent-query,associate a representative,ed631e7b1027d7ea9be7ecde67a07ba135fdf5ed,2,agent-query
+agent-query,find a choice privileges member number,42beeff54148d22acba45315b6d6876b8a7611f7,2,agent-query
+agent-query,can i talk with this customer service agent,1f98c49e8306dcfd3d2e47586d7c3e04c4e7dd88,2,agent-query
+agent-query,reward reward points member,46be834004d0a79975283a06f7fe29120a776552,2,agent-query
+reservation-make,online website won't allow me to make a reservation,bf8b83fe671b561684eab4f6f0ff6dd52b6853e1,2,reservation-make
+agent-query,to report missing points,18de15287f0cc3e5d6498ca5841b8e6f09398854,2,agent-query
+reservation-make,sir two days ago your one of your people from choice hotels international made reservations for us and i have a confirmation number and there is no hotel,6acbe8e5cf0ecb258bed4112be4e40c317a804b3,2,reservation-make
+agent-query,trying to confirm my membership number,4a743431c818d370430882ac565575b75231c0cb,2,agent-query
+agent-query,representative about recent stay,f11de6b54ba69ce9916b7edce748a701425a651b,2,agent-query
+reservation-modify,i'd like to make a change in my reservation,3a99cc5d2c14c49639ca1f280ebcc509f0f8b632,2,reservation-modify
+agent-query,trouble getting in my room operator,f44499e9e8aed2ee7175f73eae9bca2d4b46449d,2,agent-query
+agent-query,i wanna speak to a representative,dae8d937c113aa72136985b64a92b8a7a63320ca,2,agent-query
+agent-query,i can't remember my username,9bf8a5e7081a6dc12c00edcf671724599f525958,2,agent-query
+agent-query,i want to speak to representative,d066d0cfd6ae30310d11c374d8ecc1c97f2fa45a,2,agent-query
+agent-query,speak with agent,d9dbe268807bb07b64df034eeeeaf8149d9f5cfe,2,agent-query
+reservation-make,i'd like to make a reservation in layton utah,25790714f3f9d203b6c1c3275159b18580bc8c39,2,reservation-make
+agent-query,membership representative,1b9023a26fdf6fc73d9fee6a5bb89517a7cadb3f,2,agent-query
+agent-query,reservation agent please,8ecbb702bad89c67f4c979dea818230290efe1d9,2,agent-query
+reservation-query,i'd like a reservation at the,138930ae96f0e4539718b64893ad7e0b4bb644f7,2,reservation-query
+agent-query,i would like to talk to the general manager,c7b4b1e9f5d065e4bef74732833b6fd876afe3d2,2,agent-query
+agent-query,what's my points privilege membership number,b814d89bb25832930d20d2cc369a6dc51b0c76d3,2,agent-query
+agent-query,i'd like to speak to a customer service person please,e3b9a4b7ddf204e0de6e6e6d22c4bd96311ac179,2,agent-query
+reservation-modify,i guess it's changes to my reservation,399fd326fcfa67a536bd8379257995bbc5a901ca,2,reservation-modify
+agent-query,customer member services,56814d14b521c5034eb3932292cd7669486aeea6,2,agent-query
+reservation-cancel,gotta cancel a reservation,56041c66cec6959f6a8c7aff1409321d4fa27363,2,reservation-cancel
+reservation-make,what's my point balance like to make a reservation,a7cd485b26b702bdbf674af847f5e62c54f03c21,2,reservation-make
+agent-query,membership login issues,e109f54dce196c58c8b3545cc267a0c6b83948fb,2,agent-query
+agent-query,reporting missing stay,08ded3476786c0fdbbf262b72c6980d57b40fb06,2,agent-query
+agent-query,view discrepancy,ff5cc37bfc7887657f5950514a39a2db3ffdfe2e,2,agent-query
+agent-query,can't remember my username and pin,a0a651fb87acc0b1ab8264cc356094f9056f854c,2,agent-query
+reservation-modify,update to reservation,9a4295708f17b43c780617c9e1cb7aaa6bf2844f,2,reservation-modify
+agent-query,i need to be sure i am still a member,3ab24dccb8783c7b38b3611d0799536bae8473f6,2,agent-query
+agent-query,to speak to a customer service representative,6b7c8a37c689c3839ac961caf203df5eea8a9639,2,agent-query
+agent-query,econo lodge customer service,e3c28755d2a30e1ef67723af0601f3b203608ee2,2,agent-query
+reservation-make,i would like make a reservation,b27b92401988c97cb40a87413452602df4dabc53,2,reservation-make
+agent-query,i have a problem with y'all having my credit card listed on my account i need to talk to a service rep,9f6493d43a3db6046b90ab4723ecbb24de572d11,2,agent-query
+agent-query,calling to speak to someone in customer service,cbf91e573a0817815e4ad6bc5e24465493911ad5,2,agent-query
+payment-make,want to make a payment,2c0ca1921f58464d55780373d7c84293025d1b86,2,payment-make
+agent-query,agent for reservation,ed9737f4d5611e3223ae74f969635a50bc05848b,2,agent-query
+agent-query,merge member accounts,9fc00c3e4dc4f5ebe090307f5ee97dcd67230351,2,agent-query
+agent-query,report complaint,72161c4692ede41771f4b357c486f018e84dbc32,2,agent-query
+reservation-query,to reservations please,721149553e529d47f585a472de067fc6851c92fc,2,reservation-query
+agent-query,what is i'd like to speak to a representative,da596f16650c0c4c5534ae2cadc4c0dd08310a75,2,agent-query
+reservation-make,reservation reservation i need to make a reservation,9d5d4c08b22b2a072eeeb0eb98cfd4ed104dd921,2,reservation-make
+agent-query,speak to a representative about canceling,1506da41d44b867ae5041f472e93825cac4b35ea,2,agent-query
+points-balance,what's the points balance,77ed065c9d679d4dca62605c4e7a42dd6177e0b1,2,points-balance
+agent-query,manager management,11563baf118fa59eeabd2332a412e72741ba64ff,2,agent-query
+agent-query,i need a agent nine one one emergency agent,f5522bae2d16ea8074cb3cdcdedd950364655eed,2,agent-query
+agent-query,give me a live operator,be718111d5e71f97cc7b9264c295e97bf5f84fbe,2,agent-query
+reservation-modify,i'd like to make a change in reservation,add8b553adbb9eb30aee379081ef735ee355450f,2,reservation-modify
+reservation-make,i wanna make reservation please,a6de9f90dd1d9fb00274a49aeb59dcbed08418af,2,reservation-make
+agent-query,to speak to an operator,a97350a11e8bba6a67b24b884685403a1aee8d80,2,agent-query
+agent-query,report a problem with choice privileges,51d4ea0435a4f5b990610f97db50f70cc1313c2e,2,agent-query
+reservation-cancel,i would like to cancel my reservation how i can do it,a56bd749c4d8b060a15dfb3576bedad4b85123ab,2,reservation-cancel
+reservation-make,i need to make i need to make a reservation,9d840df7b218dcf5fff37e84c56b9f9ddca07ac7,2,reservation-make
+agent-query,need to get in to my choice rewards club membership,5b1097073e329fa9a095ea8a295fba77d4ce66f9,2,agent-query
+reservation-cancel,to cancel the reservation,008a4b5d53630592fbf7d3455f4c4c4d4f5d14e4,2,reservation-cancel
+agent-query,customer relation manager,a7ac9812ff5696529f49b221ef38d1f94b34aefe,2,agent-query
+reservation-make,i want to make a new reservation,d0162c069258950c8af18e7428a3a68574c46c93,2,reservation-make
+agent-query,i need to speak to operator i got disconnected,140f85057d97424fa0d6f304f9c20697129387b5,2,agent-query
+reservation-make,i i i would like to make a reservation,056ea3e0cb3fdedc7cf6a3d6048a70ad0a2e6a77,2,reservation-make
+agent-query,could i have a representative please,7326920feb162872e991ea95a3fb40e94fe41f78,2,agent-query
+agent-query,i'd like to talk to a manager,1b70058e7da841d2eae0da654f03464a93c8fcb7,2,agent-query
+agent-query,supervisor line,06edf6dc1d288011ab2a2d848c3e1ed308b16246,2,agent-query
+agent-query,members services,fe0f2defb9c6fd1964781ad2b0fe2141ac887a46,2,agent-query
+agent-query,i don't i don't know my information i don't remember,2c4b6a118874b81cc432b1d23fa36a490b31f6d4,2,agent-query
+reservation-make,i would like to make a reservation i'd like to know the cost for night,b2861f8966ae8625afb56ae61dd7c6a543e17cd4,2,reservation-make
+reservation-make,i'd like to make reservation to jekyll island georgia,6ecc0a399a6617c706078c235d77cf7927a5c17c,2,reservation-make
+agent-query,i need to speak to an operator,9ed97b6632838edffbb06b52766b2a6b8e9d2f68,2,agent-query
+agent-query,operator help assistance,363ce30c438e25637ec3cdda5677c76f88f66c3a,2,agent-query
+agent-query,need to report a missing stay,a0aeea3bee91388849d1730bf7b975e4d74e8af9,2,agent-query
+agent-query,membership privileges,af83ea2ca1be5af013e971af2ae86c152a3aba7b,2,agent-query
+agent-query,i'd like to speak to a customer service rep,160de30fda89e419831b7bbab12f8a42bdbe6811,2,agent-query
+agent-query,add customer service,a52ae437907b4e15f449e42560ef7a1cba3154c0,2,agent-query
+reservation-make,i'd like to make make a reservation,940ba0cb79a18a756c25a9e35eac79db59b039b1,2,reservation-make
+agent-query,customer service complaint,d009c68640a4e8275ad02d47cebe88f07249cb82,2,agent-query
+agent-query,i would like to speak with the an agent representative,ddc050f8687a284944dc3613b229301d49d887b8,2,agent-query
+reservation-make,i need make a reservation,dca38f043a00b5c926d89b99ab8b6ab45f3d98fb,2,reservation-make
+agent-query,member error,34cbe584eec3fa3a2c65591b113da30fe6dedeba,2,agent-query
+reservation-cancel,i want i wanna cancel my reservation,08271b241a64cbc7a7d9e59bb30a36920d08898b,2,reservation-cancel
+reservation-modify,changes changes to reservation,d45129d538d596ddd1071ccbb2ef5c8febc84ae8,2,reservation-modify
+agent-query,i need to speak with the agent please,7ef5a2860382a66450923317747164c1c9e96165,2,agent-query
+reservation-make,just want to comment on trying to make a reservation,408c61700ddf58e5fefdf7b1fd7e2474410361f0,2,reservation-make
+reservation-modify,to make changes to reservation,79d0bf0cc5f80f8fd32795826f065c13a4e783f7,2,reservation-modify
+agent-query,i want to talk to agent,ed1b1e32d8ba399b6c029fa5ffe2e4b9f6bc4517,2,agent-query
+agent-query,like to talk to a manager,e0bdf81863405bc18e0679522849756771c392ac,2,agent-query
+agent-query,i need to speak to a representative regarding a new card membership card,bdff8f941dce03f746cea59edfb65160bdd9568e,2,agent-query
+agent-query,preferred service representative,788beb9b1d342e25bf04f1b9b6ea489006c3a3e3,2,agent-query
+agent-query,i need my membership number,b7e38fd0034660064e5071c6a700be9c6fe05528,2,agent-query
+reservation-make,i'm trying to make a reservations,9fba837af944f70f653e074c785b79cb19bafdff,2,reservation-make
+points-query,i'd like to get my points,8321d4ab060b16f47f8198e7aa7d9db17828c95e,2,points-query
+agent-query,i don't know what to say how about representative,6ca0bcd7f7815eea924379f55b6114ba28477925,2,agent-query
+agent-query,repeat that,b0b9b034cd0c57997be08b87a70471980e46898b,2,agent-query
+reservation-modify,i need to change in my reservation,99890ae66f25ffd6f9b2946e8c74a09796a3d3a6,2,reservation-modify
+agent-query,cannot find my member's i d,8b0138118cb669da94d7bd6ecc2a12636cf9df03,2,agent-query
+reservation-make,i was on the phone making a reservation two times and was cut off,b7b9c7343a94d44725f4b08192b283e2897a6998,2,reservation-make
+agent-query,i would like to speak to a representative about changing my name on my privileges account,ec1e35fb291b017bc4f86219b755b60432fffd17,2,agent-query
+agent-query,talk with a customer service representative,ade7d0c4521a0bc09b3186c7f49b9545604061c1,2,agent-query
+reservation-modify,modify reservation information,bbd41848fa1598183164e313100b7ababe43751c,2,reservation-modify
+reservation-make,i need to make a reservation combining my husbands points and my points,846b5a28af0809515b86ef3776c08e88f06cd0fd,2,reservation-make
+agent-query,i would like to speak to a manager,9830da2265056f1a0967f009d4f81c8d8b002a8a,2,agent-query
+reservation-query,i need i need a reservation,65472f8405e2e1460179a9fefbbb36f792947562,2,reservation-query
+agent-query,trying to get choice member,2b9bf933724e4e5966c7fe8dac23124a8389770d,2,agent-query
+reservation-make,i would like to make reservations for another choice privilege hotel,36a684005a2b6afa747b7c35084c899be41751f3,2,reservation-make
+points-balance,i cannot access my points balance online,40dc1435bd990dda34b5f938ee772dd08b8d41a3,2,points-balance
+reservation-cancel,i need to cancel a reservation that i made by mistake,126fe6fe09579b665be31fd28e309ac98ca6f70d,2,reservation-cancel
+reservation-make,i wanna make reservations i forgot my username and password to login online,243e6c4ac889c85d49e0d20bb74db06df5a8af56,2,reservation-make
+reservation-make,i need to make a reservation and it's not accepting my choice privileges account number,f3d94d184d578eef23e97d0d29c503f30dc70826,2,reservation-make
+points-balance,what's my choice privileges account balance points balance,c26d34c72700bb560071c220c0ab87c2d40bf161,2,points-balance
+agent-query,choice i wanna talk to the choice privileges membership,37cf95ea38a23058828bbfe806fd2902c7226716,2,agent-query
+reservation-modify,hi changes to a reservation,1253658221154fc364d94231c6bbac8daa72e29e,2,reservation-modify
+agent-query,i need an agent,2058a928fafdec3d4684d095032495db518ea7a4,2,agent-query
+reservation-make,i want to make reservation please florida,4e08522ce0ba512489281041ed0b07416f7adfea,2,reservation-make
+points-balance,what is our points balance,4574456eb066485c0a5f35ab82ee5d707fc7f2b0,2,points-balance
+agent-query,a representative representative,f1b73ace671f3f653cb46b0e4f44c4e0b2001e52,2,agent-query
+agent-query,speak to a representative about being blocked from that website,5d66e6dfb12b1be5437c98a3847e35ba0c0efd0f,2,agent-query
+agent-query,need to speak to an agent,23b93eb2d46a23eb2aaf7fdc84e2a2fa9cc5cdea,2,agent-query
+reservation-query,a reservations please,0cc4e836adf8463341d5097abec5d40c7eb77443,2,reservation-query
+reservation-modify,not make changes to reservation,250f45585a48dd5629c26d5a130a7fdc46f94b16,2,reservation-modify
+agent-query,changes to my representative reservation i need to speak to a live customer operator,4d18e582561e412e80de1d6bc5520c0835b385f9,2,agent-query
+agent-query,triple a membership number not working,00a07f1a7a69630ee485388fad2259db37506271,2,agent-query
+reservation-make,like to make the reservation,0df775f3d8e0447d634bac951b35f3fbcb0bdaff,2,reservation-make
+reservation-make,i need to know what my points balance is and i made a reservation and,4ac47a321e4b2b33004666ccf1170bc12e34b530,2,reservation-make
+reservation-make,like make a reservation,e0fea1d158a78a64650c0b9d8fca9c400efd7c57,2,reservation-make
+agent-query,a manager,27605e272fbb9914330adeeea6b9cb369dc0d8eb,2,agent-query
+agent-query,i'd like to report a problem with your website,972cfd44c4630ca1f36baf7d90c61da948137571,2,agent-query
+reservation-make,i need to make a reservation i can't find my,98419bb4c2a516521bdb59cae148f1cb3580a17e,2,reservation-make
+reservation-make,making the reservation,849746f75569c5b8a4d02ae12b8c16ecbd78150f,2,reservation-make
+agent-query,operator corporate office somebody,cce0281b7016b6730abbe9d4a92eed3813a310db,2,agent-query
+agent-query,i would like to talk to a representative,252e134c1f56c2edc10448408d36c685fba7893a,2,agent-query
+agent-query,i would like to see how many points i have on my account on my member number,0783b87e466e341c1f0deec8181418a26b8edb63,2,agent-query
+reservation-modify,i i need a reservation changed that they they would not change for i need to change a reservation on error that i made,5709c126e89b151ec661f60c4f8872a09f1d86cb,2,reservation-modify
+agent-query,yeah i got some technician i need somebody technician so i got some error in the computer,a8c72ff4d47d35432b9be725fbfb7d3ce660a755,2,agent-query
+reservation-modify,make change to my reservation i need to make changes to my reservation i need to make changes to my reservation,b3357db3cce881c69543d69f3c8bb5c1ae6fe261,2,reservation-modify
+reservation-make,make a reservation i'd like to make a reservation,78f89361a3ec7f96ab5679848a39d27b2fefedc7,2,reservation-make
+reservation-make,i need to make a reservation in el paso texas,da1b7af6b0fb94b64f59f1e988faa5edfd2a0e10,2,reservation-make
+agent-query,i'd like to talk to customer service,3b13166a0dec2e72ab1ae699e9b6a300f8d59692,2,agent-query
+reservation-query,reserve a reservation,1241abe81b30f4f890dc199a6a40b3e04c5e4736,2,reservation-query
+agent-query,i want to talk to a representative about a stay at a motel,4539e4c807b1f03bcd7f333e3df98cc268640703,2,agent-query
+points-balance,what's my point points balance,5b1c0c721f6209c0e14cafef54076406fd9f262f,2,points-balance
+agent-query,can i speak with an agent please,08c040160e78329deeef2619815d8ce4154da8fe,2,agent-query
+reservation-modify,revise reservations,5a7e1e22ba2e9e390cb694e6b42be83d84d0ea52,2,reservation-modify
+points-query,our point,f2d2c35e8b175d9d56696f0497f6182e72aefaeb,2,points-query
+agent-query,incident report,14fd7df8a4622b6134fc57aea4d242140f39456b,2,agent-query
+reservation-cancel,canceling of reservation,f6678c26c6a88eea10b6341a1c17821b80830997,2,reservation-cancel
+reservation-cancel,i need to cancel the reservation,7cdb45cc0ca05ba13a31cb1aec0a4e7c23e4cddc,2,reservation-cancel
+reservation-make,make my reservations,f0a6eafe9d5ee42ebd5a27edce582f4d6b78d1d8,2,reservation-make
+agent-query,i need to talk to a manager about the lincoln city hotel,6526c9daa53f8a68add597aa75501ec19f5e2c23,2,agent-query
+reservation-cancel,confirm cancellation of reservation,e9387035d2eb30b9770c3b552b7f353f8d45b843,2,reservation-cancel
+agent-query,reporting unreported points privileges,1864ded9f687ecef4a6fa8617ceef713d42d7c64,2,agent-query
+points-balance,a point balance,f5e2a35cafef572e55ee31422b0767748cbfbd86,2,points-balance
+reservation-modify,like to change i would like to change my reservation,91856ccf13d78f1b9cb5f03c8bf79612397cbf1a,2,reservation-modify
+agent-query,i need to talk to customer service,916e839252d2959eb83bcab5fff5f84b8ded0184,2,agent-query
+agent-query,mmmm customer service,e027dd877e1e52854b48d9804ca7d4d12454fe3d,2,agent-query
+reservation-cancel,i wanna cancel my reservations,1d6f2391b36845981fdc0cb18350b942eea65c6c,2,reservation-cancel
+reservation-cancel,i was charged even though i canceled the reservation,de59c0cd18ed49f1fc66c57ab4b78e167793e175,2,reservation-cancel
+agent-query,missing points talk to a supervisor,643fa281a4f63b8e07c5cb95e9fd2d7397d5683f,2,agent-query
+points-balance,points balances,0dc4f7a198011daec844b80bf3a6442b64157d2e,2,points-balance
+reservation-make,i'd like to know make a reservation,24b28ae8033bbc6d63ee43e5fecfd2408eda59ae,2,reservation-make
+reservation-cancel,i want to cancel a reservation,cb87164087de661754f670c0373ee9979a5d5da1,2,reservation-cancel
+reservation-make,make make make reservation,599899785f9b93bee2795ae03c3b4898a6cd856d,2,reservation-make
+agent-query,my choice member number,f3ffa21f598d3e20d9405eac645716de7107e12a,2,agent-query
+agent-query,group reservation agent please,46ca9385ccdf6ffdc8be5b45acf53c404fe9871c,2,agent-query
+reservation-modify,i need i need to i need i need to make changes to my reservation,0d018c8364fd51aea91c133f149bc55334dae9fa,2,reservation-modify
+agent-query,talk to a customer service,53acf24a8a30087535249b3ae192769b7d984fca,2,agent-query
+agent-query,a special rate i d for florida farm bureau member,e63293b106f59600638be9509896bb423e61384c,2,agent-query
+agent-query,i like to find out about your somewhat of a rewards program we stayed twice at comfort suite we know we believe we are members but we don't know how to do this,944074233e92ef37f17fa8b13ec6cca2344441f5,2,agent-query
+reservation-query,my reservations,49cfd9faaac0cfd46c9439f0da06be99f05414f4,2,reservation-query
+agent-query,i just tried to make a reservation online but it will not work and i don't understand why i am a choice member our member number is,c42d8906c82a0db7609c0e9e5732cddaff6db659,2,agent-query
+reservation-modify,i i need to i need to make changes to my reservation,e50f885924a3f52d706366055457e2e034e6128c,2,reservation-modify
+agent-query,customer service missing credits,6e6ed2cc7eee9d42b376fbd110ac1dd915452f64,2,agent-query
+agent-query,i need to talk to a choice privileges representative,a717c066ebacc03adfba4b555567afe60bf5a979,2,agent-query
+reservation-modify,changes for a reservation,c715159a03a5bd0e6ddfa010c412c2232ed9155e,2,reservation-modify
+agent-query,choice member,b1187b31ce4a7ceef5d147eaba7e8173ce4ac91c,2,agent-query
+agent-query,customer service for bad management,f0c197d13f54c3318254969e95adcf8aeb1a947a,2,agent-query
+reservation-cancel,possibly cancel a reservation,fdec86f25fee6e05d05699c4eb459bd9a99414dc,2,reservation-cancel
+agent-query,speak with a supervisor please,7db5d20a85c6b4566d8f01ba27c16fdb41de972b,2,agent-query
+reservation-make,need i need to make reservations,85964686478f298d0fadba985590845c662d449a,2,reservation-make
+agent-query,operator please operator,6ccbbd5f3706ae476a8aeb00be4f6600bdd79d89,2,agent-query
+points-balance,my points my points balance,05f573df4c1e5807aed75dc0dd7d7187495f0733,2,points-balance
+reservation-make,i need to make a second reservation,aca3ecd1fd3c0dbce9703893855e7b721f15ee16,2,reservation-make
+reservation-modify,make changes to reservations,e1b7a4ad0322b82a5fb4fbf3e2b97582ae000ad8,2,reservation-modify
+agent-query,i need to speak to customer service about my charges,41c9280793dea49965801374ca6a21aa1d7c2e43,2,agent-query
+reservation-modify,i i to make changes to my reservation,872aa61a13a7e2b9251d3e8931d21af3442d6505,2,reservation-modify
+agent-query,i'd like to talk to a customer service,a8a1ded7301fedbbde96fe36ec7327459f7a8102,2,agent-query
+reservation-modify,i want to change the reservation,b78bbff851fb8c0fe1da47e9eb02bd9ac494b0c6,2,reservation-modify
+reservation-make,like to make a reservation like to make a,f164574a3d2be52c4de72b8d0f6989beb737fb6c,2,reservation-make
+points-query,getting points,9ff0ecc8f1a778710db88a720c0a6d75b1a87a0b,2,points-query
+reservation-query,what reservation,2c5c2e72218d554ff41bf96b97a6635d6e9ea084,2,reservation-query
+agent-query,i need a operator,01b3fa14a145ffc65657e7c70952652c2cd455fc,2,agent-query
+agent-query,gimme an operator,d7d623afad863f22be9199ce4513df046971dd0f,2,agent-query
+agent-query,report a guest,c2a516144ac07f0be686b29603a77adeb5a7d508,2,agent-query
+agent-query,make a reservation speak to representative,88860e69ef5f6097eb2b58cad3061e8a55691b41,2,agent-query
+agent-query,my member number cannot be found,41c11e1a5eea6e6ab9dc9e364eb2f7ae94758c6e,2,agent-query
+agent-query,operator for points,bb0170374b7109359e760ec1c580c4f2006fc7d6,2,agent-query
+agent-query,can i get a representative,4ee9f54de80d2d8e070df3070f41cca8aca1fae0,2,agent-query
+reservation-make,trying to make a reservation and it won't allow me to online,d821c52e57ffb5a581f8d45c717da8ad73ad5e64,2,reservation-make
+reservation-query,just reservation please,a6635da6be19951c25e44345f52d29083001e892,2,reservation-query
+reservation-query,like to a reservation i'd like to me a reservation,1a12b427c6440306915b5716cfbbc4b3a380926d,2,reservation-query
+agent-query,need to talk to a representative please,0fe259e9b666fd5debc9fb41509b187db1eccc5e,2,agent-query
+agent-query,i speak to a manager,c0b1b66937ab14baaf0e27abe5a498102332210b,2,agent-query
+agent-query,i'd like to find out my choice membership number,0c1c17382f40f0d251a15253f79ac0fcfe915771,2,agent-query
+reservation-make,make a reservation in barre vermont,687eb0661cbedda0d2224e5ebc0a3445df90c388,2,reservation-make
+reservation-make,make need to make a reservation,f8c5e7c145e200c01080675ff94a4b867c26c97f,2,reservation-make
+points-balance,points balance with the room,43bcc5460caff61cf3a34c08f53fa9dd0a48696a,2,points-balance
+agent-query,i'm not sure let's go with report a missing stay,78ec69ac528a12838b026d88fc9f03e3d69c8a6a,2,agent-query
+agent-query,questions for a representative,622e0b4ab241992711568a64a582752794ffd566,2,agent-query
+agent-query,member phone number,23f6bb70e3694a082801e32db9e9c773187911c7,2,agent-query
+agent-query,customer services,0f8b0e19c9395af5cb1aaa5dabd3429622a051d7,2,agent-query
+agent-query,could i talk to somebody about the choice website i am a diamond member and i'm trying to for some reason i cannot get my new phone be activated on the choice website,7a3efe49fc1a695e2d055e45670b4ae1dd610773,2,agent-query
+agent-query,speak to the customer customer representative,4270b57a65f9562f2a8f19644d197b8d359c235d,2,agent-query
+reservation-make,i'm trying to make a reservation on a new site in prescott arizona,b9af779bdd5dee16c1dc3a4798fecdbf1da6bed0,2,reservation-make
+reservation-make,would like to make reservation,6d10facfc4f46f12179fee976bb7c692279d8e52,2,reservation-make
+reservation-cancel,cancel a reservation at,d999707ddc1eaf8b7495b1e5205bb7388b37630f,2,reservation-cancel
+agent-query,choice privilege member,a80d405ce8bc67ebf0508670f0f730e8fda7af3e,2,agent-query
+points-balance,points balance points balance,922a846d00fff98edc76a0493525d987afa66770,2,points-balance
+reservation-make,make a reservation claiming free night,8fadabdb88a8c3853937b0fdbb8e185bc2dba17a,2,reservation-make
+agent-query,i need to speak to a representative immediately,187a3108b3b4f1b47426ad1d731c582cd3475c86,2,agent-query
+reservation-make,hi i would like to try reservation to make reservation,c7370cee2cea269c8bef1e9e7a7222a671c85887,2,reservation-make
+reservation-make,i want to get some information about a reservation make a reservation,bc464fbe135d410dc8d496115ddb9b7bc840c29e,2,reservation-make
+reservation-modify,i'd like to revise my reservation,a5c086ab17e7ede4b019e54b5cdbe8d46600b792,2,reservation-modify
+reservation-make,like to make a reservation reservation,bee89beb9ffd43dbf0cb967ebd55ad82eaaf1038,2,reservation-make
+agent-query,i need to customer service,c5f4719f8db6a4b2a0cafd25d8438a953f4a159d,2,agent-query
+agent-query,can i talk to an agent,63fd7e8dd8f07fc6b1830cb2da4029f2dff0adc9,2,agent-query
+agent-query,need to speak to a supervisor,3fbcfbec8c9bcb00b7634d6a26ddd6d5e6afd636,2,agent-query
+agent-query,customer service rep lauren,ccae1458e9d89400e60fbac01f93b84514f07682,2,agent-query
+reservation-query,i'd like reservations,654ae74a2227942812996c49df2cbb0383b99f17,2,reservation-query
+points-balance,i need help with my points balance lost points,b6a6c18ce4bd43543da5834f141aa4f724a971d4,2,points-balance
+reservation-make,i'm trying to make a reservation and it won't let me,4c52aab30f834d819f93ad52c8fbbd1225ca1a21,2,reservation-make
+reservation-make,check privileges and make reservations,49960b77a10adc1d3e6eb02e3f8cec73580aacb7,2,reservation-make
+reservation-make,i'd like to make a reservation today,857b12ab8a720cb0ee8cd6ac3ef206c1940233c0,2,reservation-make
+reservation-modify,changes a reservation,14b129bb000bd15d38ed5e3b0eaf16d100af52d3,2,reservation-modify
+agent-query,operate,eb89f63e692cf7212ff4f96be0c1482288c8a322,2,agent-query
+reservation-make,i'd like to make a reservation and i also want to check on my choice privileges account,4a1eed98f3d0e07422a7446cd05572603a703420,2,reservation-make
+reservation-cancel,cancel a reservation reservation,5abbaa529be76882319f1780a313422c3dbc9444,2,reservation-cancel
+agent-query,talk to a customer service rep,65297703557648c8c0bc5d5f2df6ff6a7a176488,2,agent-query
+agent-query,operators,3f9b424e5b465f32ce072b9af245275b7865306e,2,agent-query
+agent-query,rep,b53b115bb9c25e2036eac404dd22184d2d22fe40,2,agent-query
+reservation-make,i would like to make a reservation need to talk to somebody,39e7a75a69fa9d9ff1472f5e4df9da1aa8acca32,2,reservation-make
+reservation-make,i wanna make a reservation for tomorrow,2e5f6e11911ccf73357ebc5194f9db9d03c12219,2,reservation-make
+agent-query,customer representatives,4357623f5f127fca5815a9b9f766f1a533a9056a,2,agent-query
+points-balance,points balance missed,842a839ae89fa7f2dd300eb569837c43b8f5c0bd,2,points-balance
+reservation-query,reservation reservation reservation reservation reservation,ac60e93b6404680d0c1349f5fbe9c42cee32ae0b,2,reservation-query
+reservation-make,make make make a reservation,275bb8fa04f3e003822e244b8b214031082dafa3,2,reservation-make
+agent-query,i need to speak to a reservation agent,9ea85c15bf465b8f829864bb47e47985b09e2cf0,2,agent-query
+reservation-make,i like i like to make reservations,b8f4f25c5a6a7205e53fae738f864f1563adb074,2,reservation-make
+reservation-modify,changes in reservation,7fe58c3c54d353b70546911a922b90aa2c1385a6,2,reservation-modify
+reservation-make,like to make a like to make a reservation,c2732bb98a206e45cf4611be8d531c7da453ed12,2,reservation-make
+agent-query,yeah i need to report a problem with the hotel,0dc0f05434c9c8f01bc56cd63b1fb91e58807cb0,2,agent-query
+reservation-query,reservation new reservation,43d305911401236604090c4e50c8bcd85a988e41,2,reservation-query
+agent-query,need to speak with a customer service representative,06f5daaa15df08181c49822194de003a89e25399,2,agent-query
+agent-query,i need to speak to somebody in customer service,0b4c9b6dda4ed45bba6f79e0f3974a836a9ac19c,2,agent-query
+points-query,how do i get points for my s,0029c9ac92ac21451c7bfdd2a34736b9496e2b41,2,points-query
+points-balance,what's my choice pro just points balance,e619774d3f75051980d8dfbd76208ae69098d674,2,points-balance
+reservation-modify,reservation changes to reservation,d07931a7dafde322d0ddd255e6af542f92b9e7a8,2,reservation-modify
+reservation-make,i don't know my password and to sign in and i wanted to make a reservation,7b0a5299f7218281f0640c387c15a6c1a38e9eff,2,reservation-make
+reservation-modify,make a change to a reservation,a311097a5554cc2352c6a49d12f43432ca372094,2,reservation-modify
+points-query,i need points,db7485ebdc82595600a78ac4aeab8ffcd07f7c1f,2,points-query
+reservation-make,make a reservation for the water park,94836412e831a2b0d849182c4c1139acf31afa8f,2,reservation-make
+reservation-cancel,cancellation reservation cancellation,6f01ea0bd39867ae47256d14c0c2b217473a22b1,2,reservation-cancel
+agent-query,i need to speak with a customer service representative,f8484bd004631dcac5f6b69542380492d2e2c9f1,2,agent-query
+agent-query,customer service c,37c00b91213f4cc61bd7e5e8d56997855fef63bf,2,agent-query
+reservation-cancel,i have to cancel my reservation,d88a05699da6e2fd22b7bd632be567d0e0bef564,2,reservation-cancel
+reservation-modify,i need to see changes to my reservation,36a02674477ef5d277cb90e0776b3470f6eea49a,2,reservation-modify
+agent-query,report a,a1ccf14469b33c16f0f3c6c0b19e8f66dad53467,2,agent-query
+reservation-make,i'd like to make a reservation and i would also like to know my points balance,aca1711269e4903dcba6df9b3070e7b90bf4f721,2,reservation-make
+agent-query,national rep,3aa52f61495cc08f1a789b3e9da76ac8c8107b21,2,agent-query
+agent-query,member benefits,7bd2eefc66cc0d73dd0795b91412099665fa4ed1,2,agent-query
+agent-query,agent agent agent,7c3efa0166a1adbe56438bb9169c5cb6ef253bda,2,agent-query
+agent-query,representative i'd like to talk to a representative,1487da4916d44a1f05f9e5a1498446b3194f9b76,2,agent-query
+points-query,a point,83275debddcdf2ba373a38b2b2944e1cc7934653,2,points-query
+reservation-make,i need to make a reservation for a smoking room,d72cce7a49668be7f1426b6ba5cb1ac01325f9e1,2,reservation-make
+reservation-make,i would like to make i would like to make a reservation,c9b7001c6a249cb7f6606cad3e7238c67fbb824f,2,reservation-make
+agent-query,i need to speak to an an agent,144ebe14558b1e11aa6be4a40418bb2749779d4c,2,agent-query
+agent-query,talk to supervisor,e5f93efd48d870a653da9567a0fb6c8a5e8543b9,2,agent-query
+agent-query,report choice privilege guest,d5a6798b5b684c1dae1649830a9c7714add7ca73,2,agent-query
+agent-query,i need to talk to someone live an operator,e67fccf7bb81fba46c19eee805efa97febe78177,2,agent-query
+agent-query,signup to become a new member,81d71f9fe59279aa667de32b06eecf453c13828e,2,agent-query
+reservation-modify,change a reservation talk to attendant,380d0f709bbd5946ba6e57ad88d66470871d94c4,2,reservation-modify
+reservation-cancel,cancel a reservation please,27056d09efe17cde00c9b5e739d508bc7c1ab747,2,reservation-cancel
+reservation-make,choice balance and making a reservation,39750b0d8a4cf0b15ed3f9047d32c98c3944f009,2,reservation-make
+agent-query,privilege points operator,b3c4ae4c4477d62bc7da8f0c4f08d0405eed7b94,2,agent-query
+reservation-make,just want to make some reservations,6c039110d3c2cfded46e07a08da5d05e4dddad01,2,reservation-make
+reservation-cancel,how do i cancel reservation,098f1172edc0c0275d013a82e602b075c4b2ef7d,2,reservation-cancel
+agent-query,farm bureau membership discounts,649e80e226b3c2e0bf8430aa768b2555299dfa01,2,agent-query
+reservation-make,i need to make a reservation in fort smith arkansas but i need to know my point balance first,f10514c923e1c558a43cd71729f974b99479d818,2,reservation-make
+reservation-modify,i need to make changes to my reservation i guess,ba640374b1ac0be21b5df9fbf5ba84589329efe0,2,reservation-modify
+agent-query,how do i input my triple a discount or my triple a membership,ca94389364b81baf0f7165f9a8a1f92c514044a8,2,agent-query
+reservation-make,i need a make a reservation,fd54e40ea73b17049415f119fa76e99ca68f1691,2,reservation-make
+agent-query,i need to speak with the customer representative,1c2e9d5252f217349801db763f318cb9ea79391f,2,agent-query
+reservation-query,with my reservation,8179e971bfedc65d287be1260f4a7a3f09def913,2,reservation-query
+reservation-modify,trying to modify my reservation,84c68b5dd1266d78c85bf57d9eaa064702cd0db7,2,reservation-modify
+points-query,get points,a9dc8b8f96e8e8ebe6159b683723214f64ffb742,2,points-query
+reservation-make,make a reservation new reservation,ee07c361c8c5515df9628af889e36afdaa4bb658,2,reservation-make
+points-balance,what's my choice privilege point i meant points balance,cdaceda9afc00b17b4c07ac2b0c6d69b22eb4dfb,2,points-balance
+agent-query,help operator,c703f6d68cfffaccd8ecc70d12eae22d52f5d910,2,agent-query
+agent-query,speak to a representative about a reservation,ce3a84dc1b64c28476f7c9f3179a4ece07501fb1,2,agent-query
+agent-query,the representative,b448cb9d699f3a45729126fb9926717a0dc4e4c4,2,agent-query
+agent-query,i need to report points that aren't,71ee777d9ecce61b562433cf8bd6d20a9413f190,2,agent-query
+reservation-make,like to make a reservation like to me a reservation,9277b11d57acd96aa59b611020e99a98c3c11b47,2,reservation-make
+reservation-query,reservation today,f9e60c68e5d885f1b1a1a025482148ca8501b734,2,reservation-query
+agent-query,member assistance customer service,4447fad7782b594a6374c0347f33cb1df9b6b4b3,2,agent-query
+reservation-make,make sure i made my reservations correctly,f754b474f60152dbce01300d53be56f41b6720e7,2,reservation-make
+reservation-modify,changes in a reservation,d869756686124fdcdceec0e0c879463091ea8017,2,reservation-modify
+agent-query,find a choice privileges member,f0c9e2665995fe7a1a919b69fa2d2b60b5fcaf24,2,agent-query
+reservation-cancel,i canceled a reservation and never got reimbursed,23691d7c086ea0f0689e6139dd193c2a4736831d,2,reservation-cancel
+reservation-make,how to make a reservation,27319e7f5be22d45beec3cd95e3e1ca689f0a427,2,reservation-make
+reservation-cancel,i need to cancel a reservation that was placed mistakenly,1a845c176e0eb0becffc2b46ed4858b4c7106fdd,2,reservation-cancel
+reservation-make,i was making reservations,ad6c1eab502f267544218a99b58d6b143fe40522,2,reservation-make
+reservation-make,i'd like to make i would like to make a reservation,1cb7d2056f0bd7f85d042cb183209c49eccaf54c,2,reservation-make
+agent-query,i need to speak to a customer service representative or a agent please,060586d5d30b103cf2244b5a7d74cabf9b725d01,2,agent-query
+agent-query,help with login membership and privileges,e5ab8963e99a907ef422f01042b6304dee5be575,2,agent-query
+agent-query,live agent live agent,04a963297a9e06eb9a9787ee8d785182876363ca,2,agent-query
+reservation-make,make reservation make reservations,98fd449ac3055ad710e0608a2eaa6ad1d0073731,2,reservation-make
+reservation-make,i would like to make a new reservation for myself,3dc5f01a0ce387f00eca8d1fd2cccd4e733f3956,2,reservation-make
+agent-query,i would like to speak with a manager for the quality inn gettysburg,9f8c0a432892cce9cda0495ac50b80830cb694be,2,agent-query
+agent-query,i've got a membership number and i can't get in to my online account,f40189d0199657d64f79748dffe263bcf294de50,2,agent-query
+reservation-modify,i make i need to make changes to my reservations,34b70083eb778bf4705f21bddcfa64ee19f22090,2,reservation-modify
+agent-query,responding to email i want to speak to a representative,01aa31ca4156c49a0d099b6a5e218ad9956dee62,2,agent-query
+agent-query,i need a live agent,04883b1b84f0f17bd312bb5d4e4c9d21ff323135,2,agent-query
+points-balance,my choice privileges balance points balance,d6588d79f1898a3d0a26488105910bc13d42d0d2,2,points-balance
+agent-query,questions for customer service agent,6ffaf007ae5f7565cd5c094fc93dfac897fb3ab9,2,agent-query
+reservation-make,i was informed when i made a reservation that i needed to call the choice service center because of a duplicate account,a3fd2b271503c01c15b8f4f43b9a1a55f09364c3,2,reservation-make
+agent-query,may i speak to representative,ece858caa199f13113ce7a691ae35824a27dadfd,2,agent-query
+reservation-modify,i need to make changes to my reservation reservation,ff5f0770cebd178680a31528023ae470d3dc7230,2,reservation-modify
+agent-query,i need to speak talk to a customer representative,e846e7ea4f02cafdc5c30c48a77fa46bc15a059c,2,agent-query
+reservation-make,we would like to make reservations in waynesboro,47c8f731795770e0c176599c33707d6c28814134,2,reservation-make
+reservation-cancel,we need to cancel a reservation,fa698844e9e34d5f46838e6845c35f1ba42371c4,2,reservation-cancel
+reservation-make,i need to check on my points and make a reservation,9a246ae25aef086d5b01969da13a6ca0cc1efc00,2,reservation-make
+reservation-make,i need to make a reservation reservation,52e55ceb204b863f6c75fd4439cf49f4083bdee6,2,reservation-make
+reservation-query,i need your reservation,ab8dd4cc4622e074326da2f8f3e13590fbff1e5d,2,reservation-query
+agent-query,i forgot my password and user i d but i have my membership number to make a reservation,ea6eb8269816c778726af5b946d2ccd517fa2bb7,2,agent-query
+reservation-cancel,i need to talk to somebody about canceling a reservation,38bf137c8cf7ad0a27c60cad72af3e1756c8e2d1,2,reservation-cancel
+agent-query,travel agent help,527e528427221a9c295bc2052c8ed73bf0d94be3,2,agent-query
+agent-query,speak with representatives,b174171b99db555bc0d1ddc9045e7c1a9931cdbe,2,agent-query
+reservation-make,i'd like to know how many points i have and maybe make reservations,9d7cc6389215ff0251bea1ef07e0991112b608d9,2,reservation-make
+agent-query,customer service issue,3c5dd1c562824454bc4a46b6259281acc6af538d,2,agent-query
+points-query,in points,b0b664a8200b73842a1f25041bd97c43be7fbb32,2,points-query
+reservation-query,a reservation reservation,1d9cd10fa98ea87a9316d3de35666a45a38f1c4f,2,reservation-query
+points-query,how do i get the point,22f2d857112002ea4075f83fe8a2cef37a0aa8d2,2,points-query
+agent-query,membership rewards,3e6c18429f24c0652ba4e2c7feed6978d963dfdd,2,agent-query
+points-balance,i need to check the balance of points on my,cd2508e753920fd65d4546cd6e09fb694e38c077,2,points-balance
+agent-query,member rates,b4d39af4409452372ed3a85c4eab196cf713a887,2,agent-query
+agent-query,talk to account representative,abd03451adddf6831e64148631fb25100c87a881,2,agent-query
+points-balance,point balance points balance,cc3be2d8284cf1ae4ac5c529d3bb942caf8e36fd,2,points-balance
+reservation-cancel,canceled reservation,0b18daa856d5783c048c744f8b32fe433ccbab76,2,reservation-cancel
+points-balance,what's what's my points balance,1b64df5123adb380c045ee3766952cdea222f32c,2,points-balance
+agent-query,to talk to customer service rep,5b925b96e065269ba40ed8b1c674665dc231b444,2,agent-query
+reservation-make,i like to i'd like to make a reservation,c3d9d5a2caa8d9326fe2c1e5289297d82b48d608,2,reservation-make
+agent-query,speak speak with agent,5d3304f549b62d6543f0d708d8e09448219a6b02,2,agent-query
+points-balance,my points point balance,61c935e640ba50940c46f1616989e9f6b8a42cfc,2,points-balance
+agent-query,i need to login as a member,16486e4cfe3760747e71ec8fe579f327992d204f,2,agent-query
+reservation-make,i would like to make a reservation or check on a reservation,4103534086ab77b0b210a9ff4c5b28ac037b6f01,2,reservation-make
+points-query,i need to get points,bb624b495bb28591499afac6cdebebedb86ce5ae,2,points-query
+agent-query,i'm a reward member need my information,009e451b6870bc4486c62d254ab3083f5086f39e,2,agent-query
+points-balance,current points balance,2644ef29f1617081117df328be5cdca772b1a3c0,2,points-balance
+reservation-make,like to like to make a reservation,8d49f3e87c5fe065eb2c95740e2d4577cf6e45c6,2,reservation-make
+reservation-make,i'm trying to make a reservation on the computer,4d54695f1f181e235127b82be0837e49d0ab0ffc,2,reservation-make
+agent-query,a customer service representative to file a complaint,fb85b3a355126628e4d47826e030adbde3d85c3e,2,agent-query
+points-query,what is my point,d511924b0da12e6bb0f2b9652380fab80b039851,2,points-query
+agent-query,i need to speak to a customer care representative,28f5c211cc5c95945fa85179aa652fb25ed0ffd8,2,agent-query
+agent-query,i need to speak to a representative about my choice privileges,5b07bfb2b11a7976f4acfe90dde14c45b9d94f05,2,agent-query
+agent-query,i need to verify a prepaid a prepaid reservation,8a2e6d43b052501b24ff12d09fbf7a966fe9ae06,2,agent-query
+reservation-query,i need a reservations,5475c6c2cf98e24a2ad1552d841a8768f366fbe8,2,reservation-query
+reservation-query,we need reservations,ae7ee649a0f434d8e354dbf17a9b1377ac00131a,2,reservation-query
+agent-query,labor representative please,70489126231c0f69fc195a8c0182b8bb7cbc85dd,2,agent-query
+reservation-cancel,how do i cancel my reservation,bf102096f68e2d27aeb9fa9308feba448e6e43ad,2,reservation-cancel
+agent-query,wanna speak to a service representative,5975e2de063aa174a9cba2f764badf8f33a70ec3,2,agent-query
+reservation-query,i have a reservation,a7bd3408cddeda95d3392a706eb3259d479042ce,2,reservation-query
+agent-query,customer service i'm checking about points that have disappeared from my account,b4aace0884998cb79e9b19e71fe0d7174c17b208,2,agent-query
+agent-query,a agent,979d2c59a61a9c6332559fa891a29014a828f10f,2,agent-query
+reservation-make,i would like to make a reservation and i cannot sign in on your website,6339f228f7fe568b399067dc4fbc4173c38d2905,2,reservation-make
+reservation-make,i wanna make a reservation and i also wanna know my choice privilege hotel balance,d018c01940a2767eb1f9e3e9f287c6babdec4be6,2,reservation-make
+reservation-make,make a reservation in the u s,98964b6e9f2a4967725c1183d7004901df419ded,2,reservation-make
+agent-query,need operator,5408c9edd8752cc2c57baa5b76119988bedacc65,2,agent-query
+points-balance,i need to find out the balance on our points,c900f442146cdfbae40c24af56800be6856f5cee,2,points-balance
+reservation-query,g p reservation,9a7043b02a1fb1b496631a8440cc1742c499c1c9,2,reservation-query
+agent-query,to a representative please,e33b5ce266824d943225545a605daadac4f41490,2,agent-query
+reservation-query,the reservations,d29f6340eb6c273d2ff41b4869fa9efafdf46aed,2,reservation-query
+agent-query,i need an operator operator i got a notice about a,df4561b75f839ccf4c8bb2574d652ffa6e26a786,2,agent-query
+agent-query,need to talk to a customer representative,eaf2d500ce2d4e981676d037a090b644c0dc123d,2,agent-query
+agent-query,cancel a reservation speak to a representative,f90fd91efe4e3d164617ce80ca9053ec0a1da2c3,2,agent-query
+agent-query,talk to an administrator,1b7d61599b684fb3ce2263ff72f098c904c818cd,2,agent-query
+agent-query,problems with my choice membership,5022245a5948cd9768898f28fb71cf87e204f40a,2,agent-query
+agent-query,i would need to speak to an agent please,e80307e1c451ab7e23430bc30cc5b3dba85e763c,2,agent-query
+agent-query,i'd like to speak to i'd like to speak to an agent,7a6c05f48a665d77a7390dc0d52cb0a1bfc9cd41,2,agent-query
+agent-query,connect me with a customer service person please,151ff5d108f66e27f7671c6448500be584773fa7,2,agent-query
+reservation-cancel,record of previous canceled reservation,5eec3e3610cd6f364256a785fac8d7668f68ebbf,2,reservation-cancel
+agent-query,can i speak with a representative,99b4b23916134532c31f628a58519b04f2507ab6,2,agent-query
+agent-query,i'd like to speak to a representative about my choice,fc3f1d3cb26407c5d17e91363bc188280909f9fa,2,agent-query
+agent-query,customer service representative i was cut off from a phone call,5dde0c907ba7656df379e01cf9db99e0b3d49bf4,2,agent-query
+agent-query,may i please may i please speak to a representative,7c705ea23948e6820ebe08b57522b2718a15ecd7,2,agent-query
+agent-query,speaking to a representative about reservations made,a442c630935a6bcaac6a2039891b4b17b520c3ae,2,agent-query
+reservation-make,i want to make a reservation for brooksville florida,a0c64f22bbf93630ba837cb78af5e673397179d8,2,reservation-make
+reservation-make,i'd like to make a reservation well i have a question about reservation,6135335f86eddc2106551df59ceb168f0cd616c0,2,reservation-make
+reservation-modify,making change my reservation,72d7b89f4d5621c4af05e62a4bd88a4827a71b9e,2,reservation-modify
+reservation-cancel,cancel a reservation cancel,33e653f4609335df3fcfc17ddf70c2b501535fd6,2,reservation-cancel
+reservation-modify,need to make changes to reservation changes to reservation,8296ee9670e115ac6ca3d85f7ae465df517302a7,2,reservation-modify
+agent-query,change membership information,be22c6592c66b1f00d36231d5db15e377146ce6c,2,agent-query
+reservation-cancel,canceling reservation,a88d4e05359c1727ed392855fa02d6f9f2f0abdb,2,reservation-cancel
+reservation-modify,well what i'd like to know is how to change a reservation,e710af426732b1582229fb8dc476d392cfa83af5,2,reservation-modify
+agent-query,someone with customer service,2e64b0d29aed294abd95f1208e9ae18cd0092a4d,2,agent-query
+agent-query,customer service guest relation,0a58b03f774ff6d594a7b4166b9b1294ce948284,2,agent-query
+agent-query,speak to a customer relations rep,3959742db6cb2ef74ed36813ac1380a5f2a281de,2,agent-query
+agent-query,add points speak to a representative,ee33c07b14abc2021867fcb16a7d7c818532fd6b,2,agent-query
+agent-query,i would like to speak with a customer care representative,91e3af592db1cdb2b765112899906e2c85c48b0b,2,agent-query
+agent-query,talk to a desk clerk,8ebac1666ae0e2cbfc1892f1cdb203116b63558a,2,agent-query
+agent-query,diamond member status,e7ea864858910c08d618be7509fb68957855d1c4,2,agent-query
+points-balance,choice privilege balance point balance,35b7113cb2c680ab101d0a44c1e43af605c9faf7,2,points-balance
+agent-query,customer service login to account,afef5c740531338184b461e250490b53d75eee2f,2,agent-query
+reservation-make,would like to make a reservation would like to make a reservation,789d06f4181acdccc688118dc4f16468eb3e116e,2,reservation-make
+agent-query,i like to make a report,86fd46ea5a3821da1ff4eefcbce969ad88ea8a3c,2,agent-query
+reservation-make,make reservation book book reservation,7d1f4c482ca12acd9817b484a093f50d4f310b2e,2,reservation-make
+reservation-make,i i need to make a reservation,feef56bf51ee0ccb293e24f7a4344a448b4a93c2,2,reservation-make
+agent-query,membership enrollment,939ac0c798ce546a8d7d5f1c9d4a6c23bbff7a53,2,agent-query
+agent-query,i don't seem i'm a platinum member,01a18bd3a6a5c05f3bdbd3330d9c92c59708f3b2,2,agent-query
+agent-query,operator help,6bbf60bd0189e461115b594c42d58e49074ae90f,2,agent-query
+agent-query,a live operator,1b9d7b681000bb621e35b7f3529cb74a0851abff,2,agent-query
+points-balance,point balance point balance,809dab60f15883e67e4908e8580acdf0f8747d2b,2,points-balance
+agent-query,talk to representative about rates on a room,a664407eac597e34090407bb8952ba4305e57332,2,agent-query
+reservation-cancel,make a cancel reservation,f142012539b9b0f3463acaf53bdde9a35b35ef60,2,reservation-cancel
+agent-query,i'd like to speak with a representative about,30f4e417de4111bae2c286ebeaa693e66fde97b5,2,agent-query
+reservation-make,i wanna make a new reservation,a5d2c3218990c1bb45811f66867631a1fb9b7c89,2,reservation-make
+reservation-make,i wanted to make a reservation,9fa1d5d1a40509e3b514b1045b79afbb83fa7d5d,2,reservation-make
+points-balance,what's my choice hotel balances the points balances i'd like to know,2160d62747b177633880b1b35e38f1efcd59aec9,2,points-balance
+agent-query,my choice membership number,91683808c2ec4e02618bcbf71a2cc47d7c981517,2,agent-query
+reservation-query,need the reservation,f10bc23fed173ad589e11c890af7cadbeaf280ac,2,reservation-query
+reservation-make,guest would like to make reservation,2afd3e85fcc2b3ce23e1926ab304a1e80683b6c9,2,reservation-make
+reservation-make,i made three reservations recently and yet i have zero points why is that thank you,dd1fe8cfe4b2c3806d141c70fb184782e45ef73f,2,reservation-make
+reservation-modify,changes to my reservation please,3b39858e78fd3f836937b6566aaf8423bfdf8a95,2,reservation-modify
+points-balance,what's my choice privilege balance points balance balance,9c99560836fca740e70cade26e0bae6e103cac38,2,points-balance
+agent-query,i have a problem with my membership username,b65c13cb02ead2d392bcc63c676d66f3fe8d8015,2,agent-query
+agent-query,need information from an agent,7f866568e10614092d94e58695df556489dd53a5,2,agent-query
+reservation-query,i have need a reservation,4966e29d4ce859d25c7b76c43eb6381e33a268ae,2,reservation-query
+agent-query,membership issues,b87036da5a5b82f0db09a5c1e45e4a4b44da1768,2,agent-query
+reservation-modify,need to modify reservation,b13175ab69d5f2d3659f83e08ee7672b98f46013,2,reservation-modify
+points-query,the points,d3d6a4f153ada120177b1a03e5daef92e5d85f5c,2,points-query
+points-query,of the points,a9d282d393aeff9f2f49430109567adb7f7d5377,2,points-query
+reservation-modify,make a change to reservation,0feee3c2b0303b2e738f7cb34f03d2accb372ae4,2,reservation-modify
+agent-query,operator at the tyler comfort inn,e7bc2df4b9ea2351a9fee4caca851a0b1351e9ac,2,agent-query
+reservation-cancel,i need to cancel a reserved room,2a30140e93a70e54e2076f40f712339b1c43a53e,2,reservation-cancel
+agent-query,report rewards program i d,fa406b005253b5e1305f441e25442f5b3a13682f,2,agent-query
+agent-query,can i speak to a customer service rep,82aa22b9124c25630aca03a55ec4056bf762001f,2,agent-query
+points-query,any points,177f05d1e5d27691943fcf21fd14f4ce9b14f45d,2,points-query
+reservation-make,i wanna make a i wanna make a reservation,7aa0b3fb8eaa5d54629280ee8f643b4965fa1709,2,reservation-make
+reservation-make,i would like to check on a reservation to make a reservation,9a28988b942221c60ab6df15f2dd1b82510fe01f,2,reservation-make
+reservation-query,i need to a reservation,544b4c15d8107c0c2712040147b4286661576b04,2,reservation-query
+agent-query,contact representative,0a0208ce8750e909b2fb701497701ff180857efe,2,agent-query
+reservation-query,reservations new reservation,6ba9b9e36848e9d5976e3426397d882fad41f962,2,reservation-query
+points-query,get my point,c7bfc6f6ae8acd2669bc4bef1e0a2a3381a1b024,2,points-query
+agent-query,member information,261b02adb035055145d4f0c9d68f2c052bbce542,2,agent-query
+reservation-query,reservation a reservation,38c172f1aaafd3eb46c116463f9a21202bbfadc0,2,reservation-query
+reservation-make,i'd like to make a reservation and the websites not working,8bb10e15f75a6ed9bfb6fe1f1535446e5667100c,2,reservation-make
+agent-query,i wanna file a complaint i want a representative,ecd883f6cb7ed8059835e238af6b712fd5e5d64c,2,agent-query
+agent-query,service customer service rep,ae1c06d2729fc5686d2834bfa3b15c3dbddde5fb,2,agent-query
+agent-query,speak to a a a agent,cc55ba0ef41e1941209992323df96af97edef048,2,agent-query
+points-query,how do i get point,1a935336030750a207bfac5012a548c4e18cd5cc,2,points-query
+reservation-modify,change your reservation,53cbc27e1fa5ee9657f98e52e491c8c5e562f175,2,reservation-modify
+reservation-make,i need my login information and i want to make a reservation,622f8deb49a0ae20d86d122576e24f21bca82c3d,2,reservation-make
+points-balance,what is my points choice choice points choice privileges choice balance points balance,9c74ee8dafafa31ecf7374686687073bd9fe14b2,2,points-balance
+agent-query,i need to know my membership points,1b540578d5dff837a3e3704f372776b648c96e17,2,agent-query
+reservation-make,made a reservation but i didn't put a date in,05567a6acd92186e05a7f1f02227b665f6719eff,2,reservation-make
+agent-query,what is my choice membership number,4f79a4bb4203058f15e71b79d1fa863226cc7659,2,agent-query
+agent-query,choice member services,edb6e2fdc3dd53a8d030bd46c799b692cb2a30b6,2,agent-query
+reservation-make,want to make a reservation in fredericksburg texas and use my points,30a7e3197ad2bd0d269ff1c7b4c53e3b8e97b6b0,2,reservation-make
+agent-query,points balance an agent,63cae214685557adfa22c218f6d3d8613fcabc4d,2,agent-query
+agent-query,help with membership,8dfaf5bea8e3492222ef673e45457889f9a5bc34,2,agent-query
+reservation-modify,make changes for my reservation,d8ec55fb78e9e8b46b606033ec21c227568135cc,2,reservation-modify
+reservation-make,i would like to make make reservation,729e6a57f7a00fcb7f4aa0f653177e5befbf6cc2,2,reservation-make
+reservation-query,i want a reservations,40d37a067fbff8cae11c909d73e82017680b33ee,2,reservation-query
+agent-query,question regarding choice membership,52f60dd358c81c03b07ab0ba99977bb0979aa5bc,2,agent-query
+agent-query,i need to a customer representative,b98010776c9ec5402cd47218c0d26e3bebcff975,2,agent-query
+reservation-query,i need to have a reservation,6f5a1a1c744daaf62cfdbd105eaecfc230d39e12,2,reservation-query
+agent-query,need to find my membership number,dde541773e585736fb2b1dccfcbec13486c8d4dc,2,agent-query
+agent-query,speak to member services,744da69b4fbe4d2e21913783d0f0d34287c4b142,2,agent-query
+reservation-cancel,i would like to cancel some reservations,0995e813d9907133b761244c1fc16ab8f813afdf,2,reservation-cancel
+agent-query,i was transferred to that customer service representative please,c1eb8f6d0fa455208c69f5a015ce5f6797a2bdf8,2,agent-query
+agent-query,need an operator,2727e4ac0d750fd180ddb3e273e69014b279e893,2,agent-query
+agent-query,report a missing missing stay,b47efe75ce292e209092fa566939b5609942e397,2,agent-query
+agent-query,how do i make points to my membership,cf2c72be1d778c7ac5efd3ef9427002a5557cd95,2,agent-query
+reservation-query,i need a reservation reservation reservation,78c8825751d4aeb80b1e76189d9cb12e5bfc97d2,2,reservation-query
+reservation-modify,i'd like to make a change to a reservation,23cc5f92d5363ad38bec49e669f6f80d1be94b8f,2,reservation-modify
+reservation-make,i'd like to make a reservation but your website is not responding,fffc075d554176e5f1349ddb30d16fdea6a46097,2,reservation-make
+agent-query,i need to speak with a sales manager,7f89ba8eeecde456ed5409c703f7d1a1ed1b3af2,2,agent-query
+agent-query,talk to the representative,cdd57649180d0432a60b283d4720cc4d2c624d1d,2,agent-query
+reservation-modify,make change to my reservation,408ec5547a24a08ecc993fad5ff14ea283c10f33,2,reservation-modify
+agent-query,i need to talk to a customer service representative,5ecbbadf7efe8d0a4742e6243bbe37032ec864b1,2,agent-query
+reservation-cancel,i need to cancel my reservation and and try and get my,9e0c6948fcb659f1b03fdca12b28c78c7bbe9e54,2,reservation-cancel
+agent-query,speak to a a representative,94b41d059e3b57b0fed52004beeaf1ca69b9909a,2,agent-query
+reservation-make,i'd like t make reservation,67c5b08a632f32cc4639d39c9fb519155d404719,2,reservation-make
+reservation-make,reservations make reservations,9682e6f7fb80f56e2bad03a2b832b578cef34e51,2,reservation-make
+agent-query,member i d,bbe00198ea3cdbefb3b0c056794fd89b0586328c,2,agent-query
+agent-query,need to talk to an agent,4ef8d2166f76d147acebfa9612f512df61c8ffdb,2,agent-query
+points-balance,want to use my points balance,9f71dfe5a9f002d19175c811409194da528e6b9d,2,points-balance
+agent-query,representative speak to a representative,253444def6fad4cb0d80e04830f7ca311c71ef28,2,agent-query
+agent-query,i need to talk to a supervisor i'm calling from a choice motel,8746372ae875e7dea385922549308d38733d4c83,2,agent-query
+agent-query,a new membership,b9b22810e34b0907a2f7d9edd0193ce2b2da060e,2,agent-query
+reservation-cancel,i need to cancel a reservation and re,382f2d6ab22a69642de8756b321a6c489b57dc1b,2,reservation-cancel
+agent-query,operator operator,a018f7e34d139a9f4fdebd2b9545184724db3ea6,2,agent-query
+agent-query,lost membership number,02c0264c0a7bf094abdfcf96adc2eaec2ce50a33,2,agent-query
+agent-query,membership login,53cf09c16545a883385121bc5f30332dbd8e6bfc,2,agent-query
+agent-query,i need to check and see if my membership is active,a30522c6e80268cf92a2cec9e9524a8f6528680e,2,agent-query
+agent-query,i need customer service regarding my account,f831b7b9657cddaa487b77cfdfb6fa895699fd96,2,agent-query
+reservation-make,i'd like to make a reservation in victoria british columbia,edf766138a1722a389a10ec7372730ed2b659277,2,reservation-make
+agent-query,speak with a manager,e3c42868195a63bff3341ca12c9540426e8f105f,2,agent-query
+agent-query,a supervisor,cb90cdb3526ad6fa4e7d9ec78f2e69130f8f11ea,2,agent-query
+agent-query,clients or membership service,662a19a8cd235554e5bfdd469d202507a343239a,2,agent-query
+agent-query,actually i wanted to speak to a representative,486d5c14e933436d14067c490098c14dbd647567,2,agent-query
+agent-query,operator reservation,26d96323f27d9bb6ff8328b3a468d32fe9c0de52,2,agent-query
+points-balance,what's my choice balance points balance,7615947ab79129bc9f7898e76ba1f41a8d772d50,2,points-balance
+agent-query,customer service service,6a6c254bfebdb947df53176b840bed730a6da6bd,2,agent-query
+agent-query,need to speak to customer service,efec1e9f9ef5a101ac387e9ca9e8b405e10fb122,2,agent-query
+reservation-modify,changes in changes in reservation,9f321b7fbc70d24261b0952642869b266a45b483,2,reservation-modify
+agent-query,choice privilege operator,677dc0b7abb9b18eddfcd00f4217c9c6d9af30ee,2,agent-query
+reservation-make,make a reservation at best western,180c7b66ef25f2eef094facf0224e8e8549e4c1a,2,reservation-make
+reservation-make,i'd made a reservation,1885af58cfecd0844863ad0be24435f550287408,2,reservation-make
+reservation-make,i'd like to make a reservation and use some of my points for some of the days,278dba0a3449ec5a3b3fbc7fdd9597557a45c0f0,2,reservation-make
+agent-query,need to report a stay that was not taken,e12bd710d5ce3578ece868f4a7748a24e1e224fd,2,agent-query
+agent-query,i would like to speak to a customer representative about my choice points please,aa2cf18f6c77a290e6d0d72cbea4172fd6602446,2,agent-query
+points-balance,what's my what's my points balance,361fb6154f685836ee711c5e91ba0d171331580c,2,points-balance
+points-balance,regarding the points balance,9bd780fb3e04f36cfad23bdff04b46ef2fbe267e,2,points-balance
+payment-make,to make a payment,19969609cdce00d87547eec24011e42fec9d1943,2,payment-make
+agent-query,connect me to the operator,3d775e16ba515f2f185940ec4829997c85644cb9,2,agent-query
+agent-query,speak to a manager please,fb2e2043aad7caf8022100a1f6e5ef143b5972cc,2,agent-query
+agent-query,i need to talk to representative please,dbf4d1eac790d7dd348783826a337ae19a5694a1,2,agent-query
+agent-query,customer service this is a hotel,2a460d6d7e15542b02293380ffb01d66f7012abd,2,agent-query
+agent-query,customer service rep customer service rep customer service rep,79c0353317be768ceb02704f74bfb59b5f8a913e,2,agent-query
+reservation-make,i'd like to make a reservation reservations please,a7a63c685ce794c1210dab6488e63c116cd5c0fe,2,reservation-make
+agent-query,wish to speak to customer service i have two,5ceed40e7c5ba1d04148f6a7142ebb900dc22c05,2,agent-query
+agent-query,i'm trying to verify my membership,45583641cf5580a5380a5088b48f7f30d7feddeb,2,agent-query
+agent-query,choice points privilege member,286616629d4e2ed6a864eb0aedb6e9e525708e8c,2,agent-query
+reservation-make,take make a reservation,6f8137c1b268ed1ec8b131927752820324f6ace5,2,reservation-make
+reservation-make,i need to make a reservations,f9f78b161be4d71f5d943e00c28a5c29cf229e99,2,reservation-make
+reservation-cancel,i need to cancel our reservation,aea53b4ba58b7f8e33323608033a22a9762e3a61,2,reservation-cancel
+reservation-modify,change for my reservation,69acd702603441b0eb94c2ea5c6ec8a47e1e56ac,2,reservation-modify
+agent-query,change a customer service,4ccc6f6fa4324a29d05d97dc2b536626d9144355,2,agent-query
+agent-query,talk to the agent,6a0ce4ee9dd3bfbdf9f443bd8b7c8ef377963011,2,agent-query
+reservation-modify,i need to make some changes to my reservation please,c32b5c28dde627d93f78b8df735db759fbff18e8,2,reservation-modify
+reservation-make,need to make the reservation,2cb8fc05b0dd4d2a17beb5e41a02bf26e752e6d7,2,reservation-make
+reservation-modify,i'd like to modify my reservation please,dee6aff358c8723b84e173cc83e073ede58f2d9a,2,reservation-modify
+agent-query,i need to get a choice privilege a choice privileges member's number,887fb0b2027629b9792d24e1a01c4fce782d2739,2,agent-query
+reservation-modify,i need to make changes for this reservation,1395da90b501a5436ca9991742c16cbcb5b0d0c0,2,reservation-modify
+agent-query,need a rep,b311f1c9750fe2bc37898deb0d52210859f9dfd7,2,agent-query
+agent-query,talk to a members resolution,2ca0688b1ef7f23bd5dbf2f91cbc87611de9d345,2,agent-query
+agent-query,card information membership information,bdebbcf2a2fc58e19955e8a6a81e312e05a87340,2,agent-query
+agent-query,i like to speak to an agent,034105eb07b4dbc9a14336ea7ead4911ad7b2659,2,agent-query
+points-balance,so what's my point balance,733785c366fccbee27f9eb3897fab31f0cd031c8,2,points-balance
+agent-query,yes i need to speak to an operator,e9dbbacb997b1e75d5151527f4c861fd1f3948c2,2,agent-query
+agent-query,representative i wanna know my choice balance but need to reconcile some,3c83f7c5aebfed0f2c4be3feeac6557b50c4f447,2,agent-query
+reservation-modify,make a change in reservation,f2b49d47d80f327fbedbd0969e1dcb223c7d3947,2,reservation-modify
+reservation-modify,changing the reservation,26e348e09be1d937161169bfca47c5aca888a0ba,2,reservation-modify
+agent-query,speak to a operator how about that,a8e7d1b1cca8246a33446a6d63da9dbece5f4b57,2,agent-query
+agent-query,to see if i'm a member or not,2fc44e2aecedfca133938e8d2aa3dbd175c80c11,2,agent-query
+agent-query,to talk to customer service,79e40b92a62eb0557998dc4caecd7b3fb8040809,2,agent-query
+reservation-make,to make a reservation in bakersfield california,c74c30dfbdbc8476f39f7cca37918195cbbd32fb,2,reservation-make
+reservation-make,make reservations make reservations,21299581d47ceacce11ea92fefddf531b4c13e1f,2,reservation-make
+reservation-modify,i need to make changes for my reservations,22910a33e4077a15d49277dbfe7c113cd695bb8e,2,reservation-modify
+agent-query,what's my choice member number,dfe1dc749aeec16bfe9868b8622c2a1f77438deb,2,agent-query
+agent-query,new membership card,31c1f7267a628368f3afa85ae149f17858fc0b0e,2,agent-query
+agent-query,i need to report a missing stay,ec2207f115610e24f52e3b7898437630f57c13b3,2,agent-query
+reservation-cancel,credit for canceled reservation,07b60af8c95cded58007d87110ed0005ec8c51b3,2,reservation-cancel
+reservation-make,i'd like to make a reservation and also get my points value,59383aec312cd66e2ad8c60ee73fd85ace41b724,2,reservation-make
+reservation-modify,a change reservation,5be37389943a01cdc689287eaa2523b7ed33aca0,2,reservation-modify
+agent-query,agent how do i get there,8bc5657c6f08ff036c3474ccfc7c1df29a311971,2,agent-query
+reservation-modify,changes on the reservation,3cb2cc07fd5f5f0b47ee243d32c5ac42fe4e0896,2,reservation-modify
+agent-query,i would like to speak to a representative,f65dd008acf78f84c31a28a6f5ef7f262671ce0e,2,agent-query
+agent-query,representative that's what i'd like,e7d643f8df72b140b334e429e315377eac812b80,2,agent-query
+reservation-make,we would like to make a reservation,c5625b34bd4be9996c7f41bebbd838bdd1767411,2,reservation-make
+agent-query,speak with customer service,54a0a1871d3fc3e7ee734e50147d4ff4f9f6f4c2,2,agent-query
+agent-query,i'd like to speak to manager,aa380f203dc6ffe71185f9744f83f119bcf1fa58,2,agent-query
+agent-query,i need to speak to customer service please,74f4b5b88e4d5b001a400a8aafa38d82182e0f50,2,agent-query
+agent-query,customer service for making a reservation,81c490fc97a4e7b36b63ab23616d8d22895cbc91,2,agent-query
+reservation-cancel,cancel cancel our reservation,63adf737c40657e1e61a3f9c7a2a1c2cc50dd7cd,2,reservation-cancel
+agent-query,customer representative on points balance,50aba6eafc657a5da350e2c2dfaf40841f919f39,2,agent-query
+agent-query,i need to talk to a customer representative about my choice privileges,bcf56660cc719652b9c72022ae0895a954780c6d,2,agent-query
+reservation-make,i would need to make a reservation,ae4c327504a08431939f1765a5f35451834e8c19,2,reservation-make
+agent-query,need to talk to an operator,f8ebdbee6fa2ff44a3f133e3c3e3859d923a77bc,2,agent-query
+reservation-modify,i need to change my reservation if i can,d2f834918ab6de7439620ceb9341a1de23879156,2,reservation-modify
+reservation-modify,change change i'd like to change a reservation,bad281daa551f95523ecef11baad58933d3becdf,2,reservation-modify
+agent-query,i need to speak with a customer service,e86887418837ddd03addf8a51e52a97ca2f53351,2,agent-query
+reservation-modify,i i need to make changes to my reservation,2c6a9f2b3f4d4cbddf60d03a5ce4ddcaa6046c6a,2,reservation-modify
+agent-query,i need to report points that were not awarded for a stay,5dd289ec9058e83ebc1f13e7b6ff8d85b84139eb,2,agent-query
+reservation-modify,need to make a change to a reservation,c0ada2643ff8aeddc4a169336ede13b4ed71c4ee,2,reservation-modify
+agent-query,human representative,78d5bc5eef94b5ae3e4bd9f4e748f140bc6d078e,2,agent-query
+agent-query,i need to speak with a customer service person,ab62922c44b40117e7866427cd5fe62ccec1c08b,2,agent-query
+agent-query,membership customer service,b1fb0f871a3f1f5dfe60f5e357283aefa7a548a4,2,agent-query
+agent-query,speak to the customer service,443de7af02c85c14debed52fd25ccf3535949c8e,2,agent-query
+reservation-make,question concerning making reservation,2d0108e04ce3d17f0b47acbea7dd16c904438363,2,reservation-make
+agent-query,forgot my membership number,effebe0120d7f753da1e8b5defc1eecc5eedede5,2,agent-query
+agent-query,i would like to talk to a customer relationship representative,415c3efc2971a784e5a87ad8f774a2b44828e79b,2,agent-query
+agent-query,i need to extend my stay and report hotel,192f9aa9f5d4b60895ef6089afaaf12a4f713694,2,agent-query
+agent-query,speak to someone in customer service,1625c9ae9771c23370614eb9c547a1efc5f0b72a,2,agent-query
+agent-query,i wanna speak to a reservation agent,65b4e98639e03adac67eed90a5409f659062d97f,2,agent-query
+reservation-modify,i need to i need to make some changes with my reservations,3c67a39668d5d389053e4bce2d85ad46e9591d2c,2,reservation-modify
+reservation-modify,looking to change a reservation,83c3d4ea187377b37fb3ab835701ea7e127fff9c,2,reservation-modify
+reservation-make,i need to make a reservation cause your website's not working,545bfeb9a7ee53a0ce09dcbe247fc302e7f35025,2,reservation-make
+reservation-modify,need changes to my reservation,3b7ebaac91a52107ed91ae1961f9f23f25b242ac,2,reservation-modify
+agent-query,i i need to talk to a customer service representative,70a68feb73a6277235ed39d24e27386e66c33820,2,agent-query
+reservation-make,made reservations need to check the best price because it did not come up,06939f36f53915438189de94fafc7f6568adfe18,2,reservation-make
+reservation-make,wanna make a reservation i wanna redeem some points i wanna talk to a person,4b2bb863abbcabb4c179aa4162cc1f838a0c87dc,2,reservation-make
+agent-query,feedback customer service representative,00ca7b01b859c6d23b9779725305309bfebff6f3,2,agent-query
+reservation-make,i'd like to make a reservation in manchester tennessee,f96ce8800257d4655e39d9f1ee0c916e23e4eb0f,2,reservation-make
+agent-query,let me talk to an agent,9143a2c5aee1e1b4e6d267027366d526f98cc5ec,2,agent-query
+reservation-make,i'd like to redeem a free night and make a reservation,486131d54fc60213d576285ab1dc855f7b6665b8,2,reservation-make
+reservation-cancel,i need to cancel a reservation and i'm trying to get refunded for that,49c89e277997b1e263244c897c5fff1708c87d4f,2,reservation-cancel
+agent-query,i don't remember my username or email,ae30d991f800235679dec237724827daae207b81,2,agent-query
+agent-query,i can't remember my,340295494abe1294658f2dffcab4de9f82f2f7a5,2,agent-query
+reservation-make,make make a reservation make a reservation,c4a51041035bd369aa94f19d5b66f7a514636a09,2,reservation-make
+points-balance,point balance and accounts,07d31e1e8f75154ff411121849278a104f249cb3,2,points-balance
+reservation-cancel,cancel a reservation cancel reservation,5bc9b9ccc6121548d79aa4fa563f3d206543a75d,2,reservation-cancel
+agent-query,to speak with a manager,0d2b438cc3bec5ecd0d6cf1c5f262f77a51f6478,2,agent-query
+points-balance,to get a total on my point balance,14cb92a5db7ebafd760e38d6c305a818090c9d19,2,points-balance
+agent-query,trying to find out if i'm already a member,62b6df23e800e9e107d5cf2274746b702b8a246b,2,agent-query
+agent-query,i need my choice member number,18bf9688210daf82a5a5b66765dde9329e64ecbe,2,agent-query
+agent-query,to talk to an agent,c8447c99855a065e19cb11018e7403ab0021c6e5,2,agent-query
+reservation-make,a reservation make a reservation please,83f2b35cff6946def8e8dc5b9504079349f8477e,2,reservation-make
+agent-query,an agent please,8675d88077991521315aebde711653b919359038,2,agent-query
+agent-query,i need a service center operator,5edcbc94b524a39db5784c1b9031584c95db8b7a,2,agent-query
+agent-query,i was disconnected with a reservation clerk,46e95a10d43c688251d9a18edb284c5b8b0c8f6b,2,agent-query
+agent-query,a district manager,cba93450dd91e3e3c20cbf57e2757f2079ef9af6,2,agent-query
+agent-query,i would like to speak to an agent,3f229007a42d15081b7773ef9dd3fd5b96564695,2,agent-query
+agent-query,i would like to sign in on my old membership,85ac57e558dc902cde107e4afff02eea17dc1f3f,2,agent-query
+reservation-modify,i guess make changes to my reservation,88b258417b0953837246d1170d7e99971bc84fc1,2,reservation-modify
+agent-query,i'd like to speak with a representative please,6f0f8ebeaf55343a766260e498498fcc6362b007,2,agent-query
+agent-query,i need a new member card,0b78145b5b71852a239da1d754768c36cab4d7e8,2,agent-query
+agent-query,supervisor supervisor,3ad2da52dc5e9fa5c29475435c0765f0ad80470d,2,agent-query
+agent-query,choice privilege representative,83b5c74f9d68fb87456ea18b9e7ab04f693d5468,2,agent-query
+agent-query,need help with choice membership,ceb0005bbee2a406d249a6e8cdc4d1dd66ded17e,2,agent-query
+points-balance,what's my choice privileges balance points balance,620240ff61bf40e9d7b2d0635358c9ddade28be3,2,points-balance
+reservation-make,i'm making a reservation,a775a871d9c17360bb56d1c52bee584a2b456d66,2,reservation-make
+reservation-make,make reservations in saint george utah,3377bea385f42e140331e07619af0d85037acee6,2,reservation-make
+reservation-modify,i need to make changes to the reservation,3b8e1eda2345b558ea4a05ff48cd3ab2dd973613,2,reservation-modify
+points-balance,balance of points on account,94f6c3de927c6641e9ae2959f99a8c23fda5c90e,2,points-balance
+points-balance,talk about my points balance,7d2fe8265ecc675a6b7027512350f399f622b719,2,points-balance
+reservation-make,about to make reservation,eef18b330a161a2db6d5e7e90f5c9e3a1d832bcd,2,reservation-make
+agent-query,speak to the agent,f4d132bbd5dad78340d0c4fb969d69bdb4d672f1,2,agent-query
+reservation-modify,i'd like to make a reservation change i'd like to change a reservation,04cdbce0c76461766f100a98dfca4b83589966c3,2,reservation-modify
+agent-query,speak to a manager,dacc3f489daa703ec78e35d658f2c9ca33a3de44,2,agent-query
+reservation-cancel,i need to cancel some reservations please,7f57d67ee470a6e5bcc5195c74e6179eaacfce81,2,reservation-cancel
+reservation-modify,i need to make changes to i need to make changes to my reservation,01108a92fbea1f48946c4111fa1535ae8a8b8800,2,reservation-modify
+points-query,how do i get my point,7068b0e1330e0fb1f2a3f8319e655f9c2d4002b5,2,points-query
+agent-query,talk to member services,3e873ff5b82767028d412dde9b265845e0942717,2,agent-query
+agent-query,my member number is incorrect online,248c3cfb34d7fa1f2338d02eca9c3b8be1e1a9cd,2,agent-query
+agent-query,a customer service,a64e7b9c6a4eff0169c40cc4aae64c427a642cbd,2,agent-query
+agent-query,i wanna talk to a customer care agent regarding a past stay,2266ee0aa91511d1d5bbda41fbcab912a73c9d05,2,agent-query
+reservation-make,i need to make the reservation,eab3667d5102c76d41a44e55e58018d43a00b0f2,2,reservation-make
+agent-query,okay deceived email agent,246919be3b0fce951e5f1e8a323de86444b3e904,2,agent-query
+reservation-make,make a reservation r,3da82ad5d910f4abb0797b2508261bc120f05852,2,reservation-make
+reservation-query,for reservations,062f60d67d99cbae76d60939f92de674a5ba6451,2,reservation-query
+reservation-make,want my to make reservations reservations,4df376d67f4d88e50851a2fb9a7f8a4b306d8d97,2,reservation-make
+points-balance,i would like to know what my points balance is my points privileges,29e6df314600bd78235ae6ab1443f3ad27577d37,2,points-balance
+reservation-cancel,well i wanna cancel my reservation but i forgot i don't i forgot the confirmation number,8ff67952646fdcf69d8a9bc3f7276373b434b387,2,reservation-cancel
+agent-query,speak to customer service rep,a1eb8d40a2aaaf882141975dc249cde50f6087e3,2,agent-query
+reservation-make,i need to make reservations for monday,dcc970cc818f51532c71a431e64bb271b87a0cd0,2,reservation-make
+agent-query,talk to a customer service person,3476cd8a896d9250ab95aa7112d08e8c6420cc34,2,agent-query
+points-balance,registering point balance,89a9b1d07751d55b8f2b59e6af146dc9f9f76503,2,points-balance
+agent-query,i need to talk to customer service representative,543fd887f606493fdf8b3a17fed2d4d7c36f81d7,2,agent-query
+agent-query,update membership,5f9fde93d02456947577c94cdb7e44ac83e4a287,2,agent-query
+reservation-make,i'm just trying to make a reservation,7afe1ac7f2889b9d8b04c8a844e2bf7309a2662c,2,reservation-make
+agent-query,i need to talk to a customer service representative about my choice privilege account,0ce85e2458b57026a13cde107c1bb49d985f1f5a,2,agent-query
+agent-query,i need to know my member i d number,97eb71b46923e4bbb1f568c55c9946c2b715e616,2,agent-query
+reservation-make,reservation i want to make a new reservation,37bdd708fa272f6cac42d7932719afbadb8d1b71,2,reservation-make
+agent-query,member members service,e7cdf9c7f7cfc4656c5de52821f5b8185e3ee728,2,agent-query
+reservation-modify,changes of reservation,01a0970d2e5244281df7f7bf131b397d25eeeedb,2,reservation-modify
+reservation-make,actually i wanted to make a reservation,98c160e51b39854ba801548ecdc4f07f34f4dcab,2,reservation-make
+agent-query,identify choice privileges member,b8bdb7e39ded5975a71c736409fa9886977f5c1f,2,agent-query
+agent-query,talk to somebody about my membership,b314589fdead0c2f9e813ee36962031260121604,2,agent-query
+reservation-modify,i need a make changes to my reservation,bd9a5a5814a3e3afcb652bf0128ba67da7c17b2d,2,reservation-modify
+reservation-make,i need to make a reservation in tucumcari new mexico,b32f6b639952109d476c70e2b102641b7dd69aa5,2,reservation-make
+reservation-make,like to make a reservation today,2aee84de0345677a043c80e7cbf65bb0422682e2,2,reservation-make
+agent-query,representative credit card,f9ec18fdca4ecb321536cace861005330d07a024,2,agent-query
+agent-query,changes to my membership card,deb89011ffb22ec1e11b6441771dffc8d360a0ba,2,agent-query
+reservation-modify,i'm trying to make changes to my reservation,a066cd55cd491d5a1b51568e16cf1a9c16cfd4b8,2,reservation-modify
+reservation-make,make my reservation,7111b1a2e14e9b06661f5c2217b3a78a776980a7,2,reservation-make
+agent-query,i would like to check on my membership number,c0281030e360eb653b3c482cbf2ee6875d18560f,2,agent-query
+reservation-make,i want to make a reservations,d2653eab7f97e9356c00c3fa4c244c7d874a224a,2,reservation-make
+reservation-query,get reservation,d83ff2178f5fd9e88423b9b005c0a90464e6795a,2,reservation-query
+reservation-modify,changes to my rate changes to my reservation,52ec865716325a40f82acbfbbbdcec8a87fc97f4,2,reservation-modify
+agent-query,like to speak to a service rep,964561cb98dff4ada597ee24653af71ee0bef5c4,2,agent-query
+agent-query,to speak with a customer representative please,4340ca8186dcbfca2dfa7b8f8bf8d6ab8aa40f8f,2,agent-query
+reservation-query,reservation r,53bfb363e7c439f09ab4ceecc3b21245a84d23f7,2,reservation-query
+reservation-make,make a reservation cos your website's crashed,b3398d51028ed94fca89e7347d1a7c668ac02970,2,reservation-make
+agent-query,i need to check my membership,c7e8ee90685746c5d9474f08d624b6f5719e99e9,2,agent-query
+reservation-make,i'd i'd like to make a reservation,6ad86cae72206372fb635bff370f31ec93a7f557,2,reservation-make
+reservation-modify,changing a reservation,d793ce25709730ae3a2e766d497514b10478d757,2,reservation-modify
+reservation-modify,would like to change a reservation,ee7eea776194497e37dad53720724c50c91d9d85,2,reservation-modify
+agent-query,need to talk to a customer service representative,3c37beaf8aa6a14a1501dfb1f3d112f5751d43f6,2,agent-query
+reservation-modify,i need to i need to make changes to my reservation,fdd3a7db64750c08ec1d4357936b246b34a1da3c,2,reservation-modify
+agent-query,i don't remember my password,eb41234a382143a2080246feebd2bd5ddc610769,2,agent-query
+points-balance,choice balance points balance,235b4763ec55c47aa59b0270bfcfaf478c798f40,2,points-balance
+agent-query,report guest incident,92fd28f914c7fce9e8e1e4e6e6e0608847f237c8,2,agent-query
+agent-query,i need to talk to a customer service,032563cbd6353c996915da86562041fb495693ca,2,agent-query
+points-balance,reservation and points balance,7abd61fd04d4c15adabc7d66c06a81da1c478635,2,points-balance
+agent-query,choice privileges member number,a4c463aac79ccb502f22e1db15633c591ed938f6,2,agent-query
+reservation-modify,change reservation reservation,dbb1fc67aaa1b903a4a9770c028fc3b6e3524a02,2,reservation-modify
+agent-query,to speak to customer service please,e9791e519c8be7e85a89a88d8783482c9da4d84f,2,agent-query
+agent-query,report missing stays,ece911ccea4a4d6726680bf903606dbb970bf6cb,2,agent-query
+agent-query,membership password,c93b446c172910420fbf3f71cdcc561a9e4a9e85,2,agent-query
+agent-query,choice privileges agent,68bfe54151e000e4596732d86736b857bc11c06a,2,agent-query
+reservation-make,to make reservations in o'clare minnesota o'clare wisconsin,4affbc7c104af91085c54ff2174eaa5db5decb57,2,reservation-make
+agent-query,i need to find out the member,20bc5ed559f6925affd95604fbf3d8038d819e9f,2,agent-query
+points-query,my points please,75f9de9a3a9832cafd2042bb3ac6a5cd49f156e3,2,points-query
+reservation-make,i like to make a reservation in flagstaff arizona,5d13b14782b69e6bc81aae00ec0b78e1dc2551a5,2,reservation-make
+reservation-modify,make changes in the reservation,4df6afed96d4df7513510774e3e301eb78c756d0,2,reservation-modify
+reservation-make,to make a reservation please,9f60d00861749b6e4252c1679513bc1ab8ef9ada,2,reservation-make
+agent-query,where can i process membership rewards transfer,97bb5616043ec16eb39d9ed9464d3726db189076,2,agent-query
+reservation-cancel,cancellation a reservation,8838283ac752851d9de0929df619f257a9c9a97e,2,reservation-cancel
+reservation-make,made a reservation they say they don't have it,45f3b71c3f63938908b49ebb487d04c554c1713d,2,reservation-make
+agent-query,i need to speak i need to speak to a representative,2a412b62b2a244a79946d51d1f43c59835ff85b7,2,agent-query
+reservation-make,i would make like to make a reservation,109433f6f28d4ae740fda385d740d7c6a174cfd2,2,reservation-make
+reservation-cancel,cancel our reservation,d82fbaef7df144bc676ce6959bcceb9e61fbbf3b,2,reservation-cancel
+agent-query,report a hotel,d0ffbff099ffadeabf99e57b04870c4806f0e3df,2,agent-query
+reservation-cancel,need to cancel my reservation,95e519e3a6b70408b5adba2291665fc589d9c901,2,reservation-cancel
+agent-query,agent customer service,51df5d223874af0830e5568892e203e9f21d80fa,2,agent-query
+agent-query,customer choice member,15f64b0441ff69d2e6e43e01a6bc0dce6c48a3f5,2,agent-query
+reservation-query,reservation new,b13fb156f442aa0d5bf5209abe8bda33d39a65eb,2,reservation-query
+agent-query,i'd like to add my voice to my membership card,4465ec227b278a7307957c2e96f5079ef738afa4,2,agent-query
+reservation-cancel,i'd to cancel my reservation,d26b62eb176c43eb01a60498955577ddb7bd4a97,2,reservation-cancel
+agent-query,i am being evicted and i need to speak to a manager,35f86cdc1a0a8ce89a93c9b70cdf7bca3b96394f,2,agent-query
+agent-query,how do i get logged in on the member site,fef23c33f331acebfd30994297d316287332e687,2,agent-query
+reservation-make,i need to make a reservation in pittsburgh,01c13ae7f787fbc7fcfc90250a16736519f88409,2,reservation-make
+agent-query,speak to a customer service person,f9d40c3d2ffd22ee26a3c4ccbafece96dd6fd313,2,agent-query
+points-balance,a point what's my point balance,32bed394b76d87a36e5dc26fd56131e7e6476a1a,2,points-balance
+agent-query,what is the confirmation number i'm trying to report missing stays,07ec184a044e7fe89cbdd6edd45732802ee5240e,2,agent-query
+agent-query,speak to an agent agent,1d3b76774f9588bac80f97b9da38d100697d13cd,2,agent-query
+agent-query,speak a representative,af9fd17f99d660ddbabdc98bd773e650eeb9be42,2,agent-query
+reservation-modify,to modify reservation,f7dd480fdaf9254dee66c24d059e76d1410b6510,2,reservation-modify
+agent-query,i don't remember the directions to my hotel i'm staying at in albuquerque,d6ddf171feedf3856e85860e24597f191d36a0c0,2,agent-query
+agent-query,question regarding choice privilege membership,089caa43a0eec82e2ea53deab4e8f6fe1634b63b,2,agent-query
+agent-query,would like to talk to a customer representative,5346b7525a77d67a81bff81eb1f7da9b502e5803,2,agent-query
+reservation-modify,change reservation guest name,bb20abdce4c57b656ff05cf62f3f25c86ffa9715,2,reservation-modify
+reservation-make,i would like to make a reservation in lake city florida,7c7e6f2b20992292f0f704c1996691a88e3ea5ad,2,reservation-make
+points-query,about my points points,a0b9b1d6781a5b97dd4f3eb635f145b687e251db,2,points-query
+agent-query,i'd like to transfer membership,b96142e24eb7cf963a36a4ebb19ac8d5def8c4d8,2,agent-query
+reservation-make,i wanna make a reservation internet problem,41312a65459639604a4b7a07ba35ba1be5d8d5c8,2,reservation-make
+reservation-modify,i wanna change my reservation change reservation,32a4e398529123e8a2dd80ac78c861b6c66b4c3d,2,reservation-modify
+points-balance,i want my point balance,9d3f681d300ab87a80d4383b2cbbc1410241a00b,2,points-balance
+points-balance,my choice balance points balance,32315d11259cf26955b2494c0d437ed21f3a878d,2,points-balance
+points-query,get point,0f64d4dee593bb998eb79d3626f81a3be9d3b254,2,points-query
+agent-query,i would like to speak to a representative customer service,f709014b3c942e6d192c895b5ee757f66f777bb2,2,agent-query
+reservation-modify,i would like changes in my reservation and i'd like to talk to a person please,3a535b0fceda4701d14224b2ba45e89741175958,2,reservation-modify
+agent-query,membership questions,78f0037b8e46a8d88e55c23cb163f2bf41ad1c66,2,agent-query
+agent-query,i need to talk to operator please,26e36007e51febcedd13a5997868ab1da28123e3,2,agent-query
+agent-query,i'd like to make a reservation i'd like to speak to an agent,8bf020c02d504fc070ef61cac0f672498a97635e,2,agent-query
+reservation-make,misplaced choice hotels card i need to make reservations,81afa25bb2658443f80b71bee1aa0fcceaac108f,2,reservation-make
+agent-query,to talk with a representative,a5d4d54336e8870f0ec024fb9cb1ff78b8710320,2,agent-query
+points-query,point points,1ae55422efbb49bb2ab2576b326a230b4d3a437e,2,points-query
+agent-query,what is my member number,3d0db9a303b58ad5521a6b38986b1f22d57e21dc,2,agent-query
+reservation-modify,change reservation to choice privilege points,064e6a61a8391a0d7ee457b5895b9fe2c6897b9a,2,reservation-modify
+agent-query,to speak with a representative please,716b13b6388dc3bcbc194b25b56c15f0944ff595,2,agent-query
+agent-query,supervisors,dc70050790c2b987a9e223a09ceb72046a65eb22,2,agent-query
+points-query,point my point,bfe8d3c9f52fbcea58e7c4baacc4114235c77505,2,points-query
+agent-query,speak to an operator customer service,f43ea15052d92e5929bd774af21f298dbdab0484,2,agent-query
+agent-query,replacement card,fdc9a51b804a4e0e8fd0f8514ed8799c95910e0b,2,agent-query
+agent-query,i want to i want to talk to a representative,c44b45856d42fd8380aa8a51828f1d2a1d0b760e,2,agent-query
+agent-query,need to know if i'm a choice privileges member,5ec24f59e00fc7c09b0310a403e260a1ebcc53f1,2,agent-query
+agent-query,travel agent support,70e99e6e34bf52ac21a3fa92c991e0c6137ca44c,2,agent-query
+agent-query,report an incident,63a0f061bbe24f77c966bd549cc36747cfedc228,2,agent-query
+agent-query,i need to make a reservation change for my reservation to see the choice privilege member,4f6f4b95fbee983b0de8579bdcb0263a48821d9d,2,agent-query
+reservation-make,i'm going to make a reservation,03b8a1384fa2e79caa7b6bb838c1cc80f2d4cee9,2,reservation-make
+agent-query,need to speak with representative,66ec98e9a554a3552a061ea6a5d0a918419e6f23,2,agent-query
+agent-query,information on membership,2ee2ead8169d2783fb5aae8997577a530eb4203b,2,agent-query
+reservation-cancel,cancellation of a reservation to get my six thousand points back,5439e368c6f124539c19517d9c0b6ee26e74f725,2,reservation-cancel
+points-balance,understanding balance of points,d0c1273b85c6c9742bc40ea88d2cd323e53d884e,2,points-balance
+agent-query,i need my member number,56da8a01ebcbb638b8b716c7dc9b7654747e8fd0,2,agent-query
+agent-query,i need to check on my points i don't have my member number,d2cf257a408e1a9599a12809fe70ddc4245a2bdb,2,agent-query
+agent-query,need to speak to an operator please,96ebfc9005bbaf7aa1fd6c6054dd00592199143f,2,agent-query
+reservation-make,i need to make reservations through preferred hotels and resorts,ba760756b08eb38e95b8f35d217034bf0f42a446,2,reservation-make
+agent-query,to customer service,1a9847d20ea3ec79df67507ffa5954a3d028e0f8,2,agent-query
+reservation-make,i don't know if i have choice points but i need to make a reservation,08a7aedde3a0df2dcafea2b7d819ff0a96e772b5,2,reservation-make
+agent-query,let me speak to a customer service,40ac42e2042b0fa9fb8412069f5738727eddcf1f,2,agent-query
+reservation-make,i'd like to make a reservation reservation,e572c916aff47f8102e62a357fdf202519e101e7,2,reservation-make
+reservation-modify,i need to change a reservation to other hotel,92fdd98193712660d243c8302466b0b8e3c6b581,2,reservation-modify
+reservation-modify,i need to alter a reservation,4bdf2a240824433683135cffc304b12efd78b04b,2,reservation-modify
+agent-query,i need to speak to a rep regarding reward points,f3f1e8e0612946d6d2e8d81f7b998260e1f6bbf3,2,agent-query
+agent-query,i need a representative please i need a representative please right away representative,92c91d228e876e9984af98280347f14536e1e377,2,agent-query
+agent-query,talk to an agent talk to an agent,39d3529c5c0845c155b6fea0098e4590e42bffaa,2,agent-query
+agent-query,a need to talk to a rep,9f289909cc8126a1f6dd5e49c98ba41b07cd1805,2,agent-query
+reservation-modify,i need to make changes to my reservation reservation please,71f7e0839d6c716ec0a53bc02b83def7bc4f00f4,2,reservation-modify
+reservation-cancel,need to cancel a reservations,5256a10c6cf3149ce77ba714c20a8d3f7fc8e0bd,2,reservation-cancel
+agent-query,can i talk to a representative,6128005c714121eb24b172082babeed3c563978d,2,agent-query
+agent-query,manager supervisor,c8cbf9415a313fa016bb2a5eea3d2777baf52e0a,2,agent-query
+reservation-make,cancel reservation and make a reservation,a0c6ddb4690578ddb42b12cb82acbbd72bb4a5e7,2,reservation-make
+reservation-query,a a reservation,5cdc7a124b6b079609bc213ab63429ab0f53f3d1,2,reservation-query
+agent-query,talk to a agent let me talk to a agent,4ef4cc54cee886e53d842d21d71757eb4368ea04,2,agent-query
+reservation-make,paper make a reservation,3593325cf14ae695f52d2a85dd1a5608c69b60b8,2,reservation-make
+reservation-make,i like to make a reservations,8af9bafd3dd517d3ca84e734bdaaca24a10199e6,2,reservation-make
+agent-query,i want a operator,6163d959c7a7cc55b52ebdc485bc53929cda6103,2,agent-query
+agent-query,find a choice privilege member number,358c3958f6d29762e96976a9047590fe4a8ff2b6,2,agent-query
+agent-query,i need to check point i need to speak to customer representative please,3267b8651ecc30622eabcf16d3836316b54041d3,2,agent-query
+reservation-cancel,how can i cancel my reservation,39352025f5bd4b2824c738583b55977d5bb9638b,2,reservation-cancel
+agent-query,choice points membership,efe32755982eff75e6095fc7086d5c2926706739,2,agent-query
+agent-query,we need a operator we need help we're in a hotel that's not good,e1c2756d9da944c84b9fc0a1901326467f2e6858,2,agent-query
+reservation-cancel,canceling reservations,6dd883413603a0f23463159d55e653204f3d0916,2,reservation-cancel
+agent-query,a a a discrepancy in a bill,b9e425d670e94d42440a1fee87a464efb19e9c80,2,agent-query
+agent-query,need to call customer service,9b5430c8c02ac9f786d962154ed98d6d2ba4c038,2,agent-query
+agent-query,i'd like to speak to a manager,d392bed77f02a76ed32801d630f64f9cb9faf568,2,agent-query
+agent-query,i need to talk to someone i'm a hotel general manager need to talk to someone about a reservation,edb6cc1a3a270d0ed87e3ca62f2f1204c233aa77,2,agent-query
+reservation-make,make a reservation and points balance,8aeb3277f1697487482e8b09aa368947d68857fe,2,reservation-make
+agent-query,talk to a member's resolution please,706fb9afeddac284675e2aa52647eb9322104076,2,agent-query
+reservation-query,i like reservations,9f98a2bad65481e34b8ca7cb11f41c11023ea5fb,2,reservation-query
+points-balance,points balance i don't have my password,9ceb9d33df8e3d34111ae24cb5f22fe0900c728a,2,points-balance
+reservation-make,i would like to make a reservation in win wood,6a51afc726e7dce9e438306fb4c96d0e9043baf7,2,reservation-make
+agent-query,having problems with my member number,5b1ce56d4019947e5534718d8e8d1b9dbe3355af,2,agent-query
+agent-query,rep agent,fcac8eec8702811c3884c266eeafca324dcbf772,2,agent-query
+agent-query,health representative,ee3377a08cdc7abbe8f4f19c8d848eba9ce53ed8,2,agent-query
+reservation-modify,i need to change a reservation two rooms were booked instead of one,c3fe9accf27752a0ddbfbba50a29d10e72cbd2e0,2,reservation-modify
+agent-query,talk customer service,3775f0e61654a352034648b51f7f9843f96bcbab,2,agent-query
+agent-query,members information,84bae0419d5b064421d513cb36978798ca4b09b0,2,agent-query
+agent-query,i'd like to an a representative please,3cfad8d249f06a8875a46aed588ee500f79d94b0,2,agent-query
+reservation-query,reservation reservation reservation reservation,1d14e57df7aa222f5b0b3c8354e1cdacb509e9b1,2,reservation-query
+agent-query,new member,1efd51e821b71b2a31f24030349a6da9545d92df,2,agent-query
+agent-query,request representative,99b4586812dc3e0a2226dc876e0370ca74a4fc7a,2,agent-query
+agent-query,i need to talk to a service representative customer service,6d43c6e0bce96040614663bb885dbb33bac59cf2,2,agent-query
+agent-query,checkout membership status,f46eedb4983ed20d009ba187f16c3104392fb050,2,agent-query
+points-balance,to to somebody about points balance,c8b1c9d3fa1fd7178d14dd77f09b8702c877fadd,2,points-balance
+agent-query,trying to go online and get a room i can't get connected could i have an agent to talk to make a reservation,d4a4ccad966c7e38a5935a33e6acebd72e1c7d92,2,agent-query
+reservation-make,how do i make a reservation,9b369496c069c4520f22f49023a341cf6851caa5,2,reservation-make
+reservation-make,i'd like to make a reservation in tallahassee florida,1090e45056c14c445c95d86664ff5680e0736cbd,2,reservation-make
+agent-query,i want to speak to a agent about my stay,89cf4a46d0b8ffbf54bfe98a984b1f090fdf39f2,2,agent-query
+agent-query,join a membership,ccaeaf7160458267f2b91d89e2fb20d703c43cef,2,agent-query
+reservation-cancel,how do i cancel a reservation,89244cb00dd87992e7ba3e7ddea4b9ce5b2bdce5,2,reservation-cancel
+agent-query,i would like to talk to a customer service person,4aa9e4d977e1059285ca74311dce537e4cf46c9a,2,agent-query
+points-balance,yeah i need my points balance,9de7e0787eed8961cb56c16b4b6ee839198f01fb,2,points-balance
+points-query,i'm out of points,7aaa4923daebfc401d6d1529c10fd23bbcced7dc,2,points-query
+points-balance,what is the point balance,aaedd63be0967b501db89948193f5cb312249d80,2,points-balance
+reservation-query,i would like reservations,1f79840ede6f5a24b4fd2a909f40ab99621fead1,2,reservation-query
+reservation-modify,i need to revise my reservation,f3610a822d6215d5e489c9f7890748cbaae80cb5,2,reservation-modify
+reservation-make,i wish to make a reservation,6c4c49368f51e7d770f4fd2e9a7e1568e0306a0e,2,reservation-make
+reservation-make,i'd like to make a reservation in page arizona,1b74ca7dbbdde9a16cf39910fd37a4d0f4ba78a9,2,reservation-make
+agent-query,like to talk to an operator,2e87bb703df281ab621cbe7af44082e6fa8a596b,2,agent-query
+reservation-make,make the reservations,238d6b4f415668c2e33f53dacba24673099c2124,2,reservation-make
+reservation-cancel,i need i need to cancel a reservation,5fcccd5d115a2e5802592714839a8e46a3418aa4,2,reservation-cancel
+reservation-modify,make update a reservation,881237b256ef0412a176bbe490b8e8c8df35e6f6,2,reservation-modify
+agent-query,speaking to a representative,f8e7be0fcc46f6399f4d3f833a3c1685085a6041,2,agent-query
+reservation-modify,changes to my changes to my reservation,ee7d7d3c98998781207bb118602d27eec69fdb8d,2,reservation-modify
+agent-query,i would like to speak to an operator about my choice balance,9f2bd0173de7cb036d944e8ff7ed78749b580cfc,2,agent-query
+agent-query,speak with representative,1c1281bea81e1fd322e26c63f686ba82ca0fd589,2,agent-query
+agent-query,speak to one of your agents,54da402b434d1afb834e524e262584ef3ea9830c,2,agent-query
+agent-query,need to speak with representative regarding a guest complaint,c341f012efee2c8eaad98b475f13347bdedef716,2,agent-query
+agent-query,i need a choice privileges membership number,ca439fe9fdb16adb171a657c08c598c2762a1bac,2,agent-query
+agent-query,u s agent,51045631e33023b23b804b787ca26d31ba513827,2,agent-query
+agent-query,make a payment for a family member,742a7d6373bf89ccb9c0da02368f48aa8d3a17c0,2,agent-query
+reservation-query,our reservation,b82514ec34e9d75ecac788dd864d7d9856128c53,2,reservation-query
+agent-query,i need to combine two different membership numbers because i'm it's not working out right,9a5356c24a1883c61776498cca481bd7eda812f5,2,agent-query
+reservation-make,to make reservation please,1cea193112ec61c4d656adc77b58831a2dea5ad3,2,reservation-make
+agent-query,no i need to talk to a representative let me talk to a representative,c7f35d7178121036b6310df0e26349e5ef95a1a5,2,agent-query
+agent-query,reporting a problem,5ad196e0cb482f1582554c53096968e9e5d4b4c0,2,agent-query
+reservation-make,i have to make my reservation,2e576fab07c3f5d4a91e7fba3a8c22485f59792f,2,reservation-make
+reservation-modify,i need to alter my reservation,959c18c83722ef17951d1b1e94fecdbebe973519,2,reservation-modify
+reservation-make,like to make a i'd like to make a reservation,6e5f71d5602ef8b1d2901ba366451e757628681c,2,reservation-make
+agent-query,need to talk to a representative about points,d1773fa48598b8709afb3979c238aebedc37dcf5,2,agent-query
+agent-query,i'm not sure customer service please,08cdb458ed87bfcce6a75793eb6b9b7dcd8fe6a8,2,agent-query
+reservation-make,i wanna make a reservation for kingsman arizona,66f5b16d080a98147ec5dafd084abec2a7f55f05,2,reservation-make
+agent-query,i need to report missing points,f0ea8feb2f98757fc2f75517e90d5dabf33f75fb,2,agent-query
+reservation-make,i'd like to make a reservation and what is my choice privileges,479a1601e720aceec2af293dba9f2453adecf300,2,reservation-make
+reservation-make,make i would like to make a reservation,db787d0b4fb46177c879b28c67f1bbd83975cc0b,2,reservation-make
+agent-query,edit my member profile,911e430a1c2fce3b19f952d612b244047e6959cd,2,agent-query
+points-balance,what's my point point balance,9378e55f21fba07f8b74ef3677d4d21036fed6bb,2,points-balance
+agent-query,i'd like to speak to a representative to file a complaint,f682f9253f93c831551db2278f1524a5eb1fe63c,2,agent-query
+agent-query,i like to speak to the representative,23a7ab71c85009c3e00b5a9f1e79a2a0eb033d82,2,agent-query
+reservation-query,how to get reservations,f7a972d3419c6e8064fdd7341dbb6997a9cae252,2,reservation-query
+agent-query,i need to speak with a customer service rep,03512332d6a255fdbf2fafd65470113f718e7edf,2,agent-query
+reservation-make,i need a i need to make a reservation where i'm in the hotel now please,74cd0550c27077cfa778259d4199954935f667af,2,reservation-make
+reservation-modify,i need to change my reservation it's a mistake on my reservation,20304e4fbc172647d8b7dbd518212a637f70f952,2,reservation-modify
+agent-query,customer service customer service please,57fab4a93aa01397e3e1d904217fab28f3f0b99a,2,agent-query
+reservation-modify,i need to make changes for my reservation reservation,ffa78a806af2df74d62ca02cbbf2693bbb091e59,2,reservation-modify
+agent-query,customer service for billing,fff8c75f99422d1fc57faec823892ddd620b94fc,2,agent-query
+reservation-make,i want to make the reservation,a8d3b3a53b48d82e1984a0e8ebd69763abb574b5,2,reservation-make
+reservation-query,for a reservation,f9f8f6f2dede811019f9cd429a2b1a9c25472846,2,reservation-query
+agent-query,operator agency,c9f2f602cb69fa1f9dcc0f47acdd7972e0c6cccc,2,agent-query
+reservation-make,i would like to make a reservation and i would like to know my choice balance points,aed5465d8e86dfe2a5ac3a9278160e50b5e5952d,2,reservation-make
+agent-query,i want to speak with a representative,e7dff2fe4a76a47a3a2dea0dd8aa748c6183839b,2,agent-query
+reservation-cancel,regarding points from a canceled reservation,98bbf825e28f668896898975728f2d6da0c47798,2,reservation-cancel
+agent-query,to speak with a customer service representative,fc307b33e3f9742b5e81aa89b6edd35228f2bbfb,2,agent-query
+agent-query,i have questions of my member statement,6ea34512970d3200c71808add5f768bb47a50078,2,agent-query
+points-balance,i want points balance,5a80ad25cff4abce728b3d8be423e3ab5449d85e,2,points-balance
+reservation-modify,i need to make changes with my reservation,fd37c05d335882eacbd69a33840406372280ba09,2,reservation-modify
+points-balance,points point balance,5a9f56fbd086350cd7b77add21fce9bad59975e3,2,points-balance
+reservation-make,i would like to make reservation at virginia beach,659883b96ab35f395c5b982628aead5f2693eb17,2,reservation-make
+agent-query,customer service to check points balance,cb13717cb17bdfc597b130b1b77767a5de579d99,2,agent-query
+agent-query,member service department,bc28dfe072a64796761ed101f0c4afa6179c808b,2,agent-query
+reservation-make,i'd to make reservation,23762a1dccdfbb9bf1ce3ef3beb1f544b2a09fa2,2,reservation-make
+reservation-make,i's like to make a reservation,19fce6051a87917f6eb3193bf7ca421a56ca32d6,2,reservation-make
+agent-query,need to speak with a manager,ff3e524384a4bf58fe31d5bb2edf970c365d0326,2,agent-query
+agent-query,speak with member services,b3ff8aa72e038af8842cf3fb648d61be0aaba473,2,agent-query
+agent-query,i can't remember my choice privileges login,b458353c710edca692c1938336482259becf3085,2,agent-query
+agent-query,customer service report,a173c1b0e657a67c19d5c9167b54f19d7cf6f89f,2,agent-query
+agent-query,i would like to report a stay that did not go on my account,679e18b7c8283cc8b4103b585dd0dc51eef0b8a0,2,agent-query
+reservation-query,i want reservations,1fb44bf46361e35630207904f1a5cd25e43d7e94,2,reservation-query
+agent-query,speak to a customer relations representative,047bac8100815e61b4d4a447f47ace1bac87ae51,2,agent-query
+agent-query,i wanna talk to customer service,df78f799acf6b3c4021d121c7dad26d6961055e6,2,agent-query
+agent-query,choice membership please,da50180f3c2267d3d6bb7572b7c5b7f20dedafb9,2,agent-query
+reservation-modify,i need make changes to my reservation,b396fc6b843ddc53ddd318af6dd19239ba86f3ea,2,reservation-modify
+reservation-modify,changes to reservation reservation,7bb787ade6041e6d20ba50d28dd2ebec931e3801,2,reservation-modify
+agent-query,general manager,9e53aeabef5c9effe65b85b75be1f0fd385fc4f5,2,agent-query
+reservation-modify,i i i need to make changes to my reservation reservation,d504d7b22ca53cb618575c02812dfa79e4bd30a6,2,reservation-modify
+agent-query,talk to a representative person,09a0676ff94dc690be8ecf8a8579d0507d1d2735,2,agent-query
+agent-query,how do i talk to an agent,5c6521488fb5e7a27d927476e2f053aa4924f97a,2,agent-query
+points-query,how to have points,90fada1fa780991488a654ab8625ecdb17ca3313,2,points-query
+agent-query,i was injured at one of your hotels i just told the operator that,a0c4e9261ceaa40e3436ac46847b4d8a7f089c08,2,agent-query
+agent-query,i have a complaint against a manager,a8d6a065086660861f4de45046aefbfb20ae28f1,2,agent-query
+points-balance,what's my just point balance,3430d71b080a20e8ff08fd6ddd82da5bf1b99558,2,points-balance
+agent-query,reply missing points,b68c3fec9e096659f78b90a24827c12b700a53c0,2,agent-query
+agent-query,customer service points,0a5e0a81c03d25b2f9c9f14f8106b837112190a1,2,agent-query
+points-balance,point point balance,50ac8873923e5cd81d65f67d5e599fc4b447a723,2,points-balance
+agent-query,i would like to speak with a representative about the pinnacle points,9ea21736a47997d7027c6284c42835e7809e9a8b,2,agent-query
+reservation-make,notification of points and make reservations,829a4cd0382888e9d07318ad985e9ea4c191a1e4,2,reservation-make
+agent-query,customer service complaint department,2ee15a2a705fa8eddb48e3a73193e46dc130d7e7,2,agent-query
+reservation-make,i wanna make a reservation i wanna make a reservation,07bd0c507d380193dbf53025aacaeaf9ec792b27,2,reservation-make
+reservation-cancel,i would like to see if i could cancel a reservation,3b64981fe1677470b90a58db24db8e1de7f53272,2,reservation-cancel
+agent-query,members guest services,522b21629c47680a31e6c4a039bdcc1b2a2b8936,2,agent-query
+reservation-cancel,i want to cancel my reservation,6beed889fd7df2fb924f5e8596ff2d541b717e08,2,reservation-cancel
+agent-query,report business stay,b5443082875e703c50a093bff46673d5078230d2,2,agent-query
+reservation-cancel,cancel reservation cancel,5937ac5a5ed88084cc7619d1a9b2ac89a125fe8e,2,reservation-cancel
+reservation-make,i wanna make reservation in a city in mississippi olive branch mississippi,192709d75abe7abdc35fbf0f1fe47f3836697229,2,reservation-make
+reservation-modify,i need to change make changes to my reservation,d67079446a4cc63e59429e5e869cafd51d2e5735,2,reservation-modify
+reservation-make,like to make a reservation like to make a reservation,66ae1c7b4afdd8fb64a80d88e38706ae4a17bffa,2,reservation-make
+reservation-make,i need to make a c d reservation,651aecc061db387673c2196575663348f86b58fc,2,reservation-make
+reservation-cancel,i wanna cancel reservation,8787118545ed4f4178f09ca51635ca0970c06cca,2,reservation-cancel
+agent-query,i need to speak to representatives,b435a5deb9434af95e68bc38deaccab772c023fd,2,agent-query
+agent-query,help with member number,d936f5ef700a8c529f555e0528d9151290788fb8,2,agent-query
+agent-query,membership membership membership membership membership membership agent agent agent agent,4ae3c9dae9549e5fba2613ed1aef788d1e82041c,2,agent-query
+reservation-query,we need a reservation,d45ea036f89fc503e946adb1f79e85e1fc3bfc76,2,reservation-query
+reservation-make,i want to redeem points and make a reservation,a33c4d3a4ac85f2ac52b83d903a722b4e4747760,2,reservation-make
+agent-query,i need to get my membership number,2176ecd609e85889ad1862cc18e49d90191ee9b1,2,agent-query
+agent-query,i need to talk to somebody in customer service,dcf2e897bcc05c660a342ce6f0bad9ffc59a994b,2,agent-query
+points-balance,why do i have a points balance instead of going to my american advantage,80d08bc58a73e2116033781e67700efdddd37349,2,points-balance
+agent-query,i need to talk to customer representative,c2056a611011d3b1a6951ff16ef617c90f6a49c9,2,agent-query
+reservation-make,make a reservation in steamboat springs colorado,eecd135be26d6bb81c4b87b8fabce60d93e4b1f0,2,reservation-make
+agent-query,speak to a choice privileges sales manager,5840b463bec5d92895789fe5bd8638b805ef9376,2,agent-query
+reservation-modify,changes to my reservation cancel,5c8d1565d38d44b48ca6380b31d6e1a03f2f9404,2,reservation-modify
+points-query,what what's my points,7ea4c3377a222b6f802984048828d70d410c319a,2,points-query
+reservation-modify,make changes to a reservation please,6721c9197085d85c0cb78abed667e9871b4ba860,2,reservation-modify
+agent-query,i want you to go take a shower okay speak to a representative,7297d4275639e4bf3890109f4bed9787c5956882,2,agent-query
+reservation-make,i cannot find my card and i need to make a reservation but i need my card number,5c2cd35a4be829dfafaf5b4410296bdfa196ad49,2,reservation-make
+agent-query,agent a,4b2debb2e118270ae7dfdbe83d3684f8fd197293,2,agent-query
+agent-query,i need to check on my membership,66cc4ab9078fbd0e80928453a763cb5139e5e621,2,agent-query
+agent-query,question about choice privilege customer service,0f4018afc24eaafaff6363e02df0d8713d8d0508,2,agent-query
+reservation-make,i'm needing to make a reservation,1019ffedd7120583cb88671298430e6e65a280b2,2,reservation-make
+agent-query,check on membership,600f60612d7688c7717df0841160933b25f01fe3,2,agent-query
+points-query,like to get my points,a49a4e9ea4de3c1e823242d713467147277c9ec8,2,points-query
+points-balance,i like the points balance,a68578dde1eb0f221175f890cc4d64a711780989,2,points-balance
+reservation-make,i have a like make a reservation but ask questions about my points,eb7b989ba275fa9bc901117adcad6bbea54ebc4e,2,reservation-make
+agent-query,i would like to speak with a customer service rep,e1f898ff3d3791361a5a9967f279b0237aa170ff,2,agent-query
+reservation-modify,amend reservation,085627da23fc170e2be865663159badb88ef25ed,2,reservation-modify
+agent-query,i need to change my address and also access my my account and i can't remember my password,c824f472a8756120fe79ebbd39e05d589b3fb3f1,2,agent-query
+reservation-make,i made a reservation,451dbcc29a7b21bdc0efed5197c617d013111644,2,reservation-make
+agent-query,i wanna ask about my member points,3984cca871582f7ba89d8aebe15d474dda7f0559,2,agent-query
+reservation-modify,i need to make a change for my reservation,96949713545353d8ea04810b997dec4b91004aed,2,reservation-modify
+reservation-cancel,cancel my reservations,c53341e8d8ec2fb6530dbc33ce79d69a0095593a,2,reservation-cancel
+agent-query,make a travel agent reservation,e3197c9711f85d8fbd4dec7ea7c778f35abc83e8,2,agent-query
+agent-query,i need my choice membership number,6a6382f4d8053d044d6a6cafdefdf71e00864516,2,agent-query
+points-balance,get my points balance for a free night,e845ecee82ef5c726bad3f72066ac0854eae72f0,2,points-balance
+reservation-cancel,i need to cancel a reservation damn it,abed5ff53da94038393a321e230ca56c1b1532cc,2,reservation-cancel
+agent-query,i need a live representative to help me,e34e44787e36c9b2a94804e3dd4e765d68118d6c,2,agent-query
+agent-query,i want to talk to member services agent,1c748073b69d8cef33d548e37f3cfdd57575dc87,2,agent-query
+reservation-make,reservation like to make a reservation,1ca7634ef044d5df5ca1531ae9608f1b798ffddb,2,reservation-make
+agent-query,i can't remember my username and password,0970cc547437e4391d594a37e88b6f93387f6fcb,2,agent-query
+reservation-query,i need to reservation,978c3ce029184d7c520227fcead0fa4d353c0282,2,reservation-query
+agent-query,agent help,b70c2dbc266873ebb39e1376f7e1849dc5c03534,2,agent-query
+agent-query,i would like to talk to a customer service cos it's kind of confusing,d5ee10da976613022404abee5677d66672937f7f,2,agent-query
+agent-query,i'm looking for guest relations to report something i worked with the hotel,ec3d5041e2fc962d64859435dac446a5c340eda7,2,agent-query
+reservation-modify,i make i would like to make changes in my reservation,b369c328e8fb429d42ff49cfadddaf8cbcda6e7c,2,reservation-modify
+agent-query,i need help with my membership online,5cc1c6b0ba22dcf3c86f6dcdb65323334d9506a7,2,agent-query
+agent-query,customer care rep,071322dc7bddb837147c2ca878bdb830c9174034,2,agent-query
+points-balance,points points balances points balances,752d00a1cb7631d3258655abd0a3656ee022cbcd,2,points-balance
+reservation-make,i i'd like i'd like to make a reservation,cf6caf803f6a28e92aa80bf972d7e1102bf53b80,2,reservation-make
+agent-query,speak representative,dae88da0edc7d2a95ad8f27cac60b31fdc3486f0,2,agent-query
+agent-query,i need to speak to someone in member resolution,56ddf668f01be4448ea302d5e8f0be671315fbae,2,agent-query
+reservation-make,to make a reservation but the website is fucking up,0b4754d221306d68e00e2a2ad76f46b5899566f9,2,reservation-make
+agent-query,i can't remember my password,c2db48c4fead956271a5653a79657b3986a23e23,2,agent-query
+reservation-make,i'd like to make a reservation but i'd like to make it in a certain town,a844c6bbb1f4f1f2f8d9ccad9b0e9bc3c46b1cde,2,reservation-make
+reservation-make,hi this is i would like for you to make reservations for me in cape canaveral or cocoa beach area for two nights,49000c641b1d7654f8687ff44b43ee566db37cdd,2,reservation-make
+agent-query,customer service book a reservation,be1057d7856634dd6210d6009ce7d2d4e5d24b69,2,agent-query
+reservation-query,i just need to do reservations,5284ef2ad9d6061700ecc7dd726b6cdab985b310,2,reservation-query
+reservation-make,i like i'd like to make a reservation,d220e56160a4dbc5fe710189b027b88f580b46b7,2,reservation-make
+reservation-cancel,want to cancel reservation,90c98c535b2cb16649c1207830658a41807c1447,2,reservation-cancel
+agent-query,i need to speak to a representative about my points,5089291b6aa031d9ef055341e0bc3a71423f6706,2,agent-query
+reservation-modify,i need changes to my reservation,6ed27242695e952436cc205b77e268cb87f68e38,2,reservation-modify
+reservation-make,i'd i'd like to make reservation,db2429bce427d9ad50a27cda811b89fb8746e13a,2,reservation-make
+reservation-modify,i want to change my reservation,62a5d88837f0e592bc9d5441404d83e9e96aabf9,2,reservation-modify
+agent-query,to talk to customer service regarding my points,72a6d13438803b3fba12c8b7666406dd0442767c,2,agent-query
+agent-query,i need a customer service representative,ebcbeda9cb86f55b6707bfe712220685d578d39a,2,agent-query
+agent-query,register enrolling for choice privilege membership,e0b6b7dcdf70be726f851abf972d8143b4ca788d,2,agent-query
+agent-query,updating star report,1d4391c241f865a19d709888c862de996e39e541,2,agent-query
+reservation-make,i made a reservation and i'm waiting for my confirmation to come over where the hotel is at where i'll be staying,18e2ac2c78d6d7e2e4dcccbabdb3697bf70210eb,2,reservation-make
+agent-query,misplaced membership card,88231e6e4eebbe2077b52f044a2aaa442f388cbb,2,agent-query
+agent-query,need to speak to a representative about my statement,995320c68dceeb4e4700645fe4ada40397100097,2,agent-query
+agent-query,canceling a choice membership number,6f5831e76b6f85a23e0fb988b9300059c4bc039e,2,agent-query
+reservation-query,get reservations,f8b6cf544ad1b25b12481f56f775bd49f8901d29,2,reservation-query
+agent-query,need to talk with an operator,4a2e2e89a2cf433cedeb9a92dd051bbf309cf469,2,agent-query
+agent-query,my representative,e4024ca7f0b0cacb74ee1b28ecfef178e6a8894a,2,agent-query
+agent-query,i want to setup a choice privileges membership,2a71b5f7d768b34bce17a91e1b38fa811f15622c,2,agent-query
+agent-query,need to speak with a representative from choice hotels please,8a3d91b33436a71492a1af39ad61334f7393ca49,2,agent-query
+reservation-modify,changes to the reservation,a0ace4a52335ab39b76015ab76a4cca2f30f4eed,2,reservation-modify
+reservation-make,hey i need to make a reservation,7b5d9ea351486a0af1451592d67a95eaf37bde21,2,reservation-make
+reservation-make,hell i make a reservation it's why i call here,42bda32a48f162cd927eec526e12295107de55e9,2,reservation-make
+reservation-make,i would like to make a reservation and i can't do it on your website,c1eb31717fc72cfe175faaadcdf2505840c1fbae,2,reservation-make
+reservation-make,i like make the reservation,a789830ac31ea2e11889260a22859f5c095ac2cb,2,reservation-make
+reservation-make,i made reservation at the wrong hotel,b04f3753091b35fd30cacc665fff79c3d609c3ba,2,reservation-make
+reservation-query,i'd like to get a reservation,a778d79c21a29227a209fcb9bdc6b4093cc61757,2,reservation-query
+reservation-modify,need changes to the reservation,ac0a34106564dba36abcddfb25c4d1ba6829e0df,2,reservation-modify
+agent-query,account representative representative,2baeffa8fa4f94620ee3297f579eb6fbfc68e7f4,2,agent-query
+points-balance,check my reward point balance,ccc3087f6540b121a47a6eb3eddc3070a9666101,2,points-balance
+agent-query,i'd like to speak to customer service,f171b769bb0d98b01d91b86971d3c4f6f660432e,2,agent-query
+agent-query,i need to speak with a manager,76de5ca0e491419fceff47a4f4fc278aafe2a0ab,2,agent-query
+agent-query,i need to speak to a manager that knows what's going on with your point system and rewards,bf99a4479639b0ce85c48659c37e25998dd2cc8e,2,agent-query
+agent-query,renew membership,7a1e98903f6c61848c3cc7e30218ac153c392202,2,agent-query
+reservation-modify,i have to change a reservation,ecfe952a28af952816790e7015c70e25612149b7,2,reservation-modify
+agent-query,i need to talk to a manager,3f4fe5f26000fa99f4d59af0f3d99537bcf77f61,2,agent-query
+reservation-query,his reservation,0f44ade6a52bbf58c2df8a093ace5585540156bc,2,reservation-query
+agent-query,i need a i need a representative,34428750f5d51ba72cf7a6545409dd04984b1172,2,agent-query
+agent-query,i need to combine some memberships,fe7d9b24e35305f3df4a8ab5f1191261d5d0c1c0,2,agent-query
+agent-query,i need to speak with the agent who was working on my reservation,1caa9122fba28f04dfb344b99a7c92ad0f9a311a,2,agent-query
+agent-query,speak to rep,f80089d723594d8c72d88b443f391000b47b0a4a,2,agent-query
+reservation-query,how about reservation,75f9a4a3e746feebb706bced2040764c86f24571,2,reservation-query
+agent-query,getting a twenty percent discount on a prepay reservation,56b30008196555787822e952d29a8a6f3b66add8,2,agent-query
+points-balance,points points points balance,7d24b3dd896fb0dae6bef1cfbca271c01f0753e8,2,points-balance
+agent-query,membership number,3d41dfc368952a77d936be23bf308f5a90cc65f3,2,agent-query
+agent-query,general manager coaching,0bdd7bbf595d036bef8b352642333629588c52a8,2,agent-query
+agent-query,member numbers wrong,f67dc497eb82537f5ebfb6460df940b51b80dfe4,2,agent-query
+reservation-modify,let me make change to my reservation,5aef1859dd42af8e3e5bddfb2c8ba109758357e6,2,reservation-modify
+agent-query,log a complaint about a manager owner of a hotel,b600f9354edf1ae1e3fd96a6790633b6bf9751ce,2,agent-query
+points-balance,what is my choice points balance points balance,42a64c7fcfd64849b518a6d4c5f6a0e4b7470702,2,points-balance
+agent-query,choice membership signup problems,2bd233784a33b7467df3fac352b87b29d16d43e6,2,agent-query
+agent-query,just put me on with a representative please,17c4b532d3ee197ce8092e335a72fba270b64c8c,2,agent-query
+agent-query,sales representative,1b684fb9beeb1e8687fcf9c9fb0880f9cc2f87dc,2,agent-query
+agent-query,how do i view my account on my member new member number,2a623300532f19a8b97525456c551b67e738f501,2,agent-query
+agent-query,check report check rewards program,10156f5773707c75db748bf521e8c54831bb8fe5,2,agent-query
+agent-query,membership question,cd0fe47ea9337cd362282960f8009eaaca3a37c7,2,agent-query
+agent-query,i want to speak to a customer service rep she called me back and i wasn't able to get to my cell phone in time,42d71df18c9474f5fafb34c17817a2b5998d5786,2,agent-query
+agent-query,help with the website my membership,3185d0d24bf2290d967cdd4b8a1b900386eb403e,2,agent-query
+reservation-query,get reserved reservations,368c86d3dc0adac080877ec1ffbdba734ee7639a,2,reservation-query
+agent-query,it need correct member number,5f54f7f47c315a872ce63777a52ccf7f35a7cd2e,2,agent-query
+agent-query,need to speak to your tech support representative,d2f5819c4ef6ba9600da111508d502a2e3977c38,2,agent-query
+agent-query,may i speak to a representative,005890cde699f650f7165feab30fd00212323033,2,agent-query
+agent-query,operator help help help operator,f37581c5c683f5a4eaa10fb16979d1904874c4aa,2,agent-query
+reservation-modify,make changes to the reservation,01ca6847b7105a16301df417cbfa90457babf65c,2,reservation-modify
+agent-query,i need customer service please,526b25eea35615aed74c112e35f11b2b5868485f,2,agent-query
+reservation-query,all reservations please,241e8e65c78d70e18db7c05011490f5fbcabf3b9,2,reservation-query
+reservation-query,could get in through i c i but reservations,9786ceddd72935e90adf6314bf2fcd3bd55f76e6,2,reservation-query
+reservation-modify,changing reservations,6a3da596a89d458f13bc2c22c8a8c6338b499d8b,2,reservation-modify
+agent-query,i need a manager,b035d89f4ca48d0932281a6bfae9ae3d38507ec1,2,agent-query
+reservation-make,i'd like to make two reservation,5cd14aab5fb00755b6409051662248c57a4b2489,2,reservation-make
+agent-query,rewards points discrepancy,4408c4c129c84c65ac75677f0ae0793bd2408583,2,agent-query
+reservation-query,need reservation,e98c600531c915137131c033308cf643f83d831b,2,reservation-query
+points-balance,privilege choice balance point balance,3890ed5e441c80924700d7d2f4eed204c93d5964,2,points-balance
+reservation-make,i like to make reservation please,df4025adaad21016b66542b7b4bee5c992cc5164,2,reservation-make
+agent-query,contact the general manager in the northwest region,8cb69cab0d838c52eeaa0d578b0d51d421231904,2,agent-query
+agent-query,i need member service customer service,e7e9087b374d423add2926bfb5d1dbe0fe2ad55a,2,agent-query
+reservation-modify,changes in my reservation,0b477cb67bdbd36b698bc91ad38fbab83322529c,2,reservation-modify
+reservation-modify,change his reservation,27d071540148cce9ddc04ca4bd360d49b8123cc6,2,reservation-modify
+agent-query,talk to a rep,3744af039007d10e9894e017558b91facee27d4a,2,agent-query
+points-query,thirty two hundred points,94f417eee74183debdfaec0370fb9d69fd93a347,2,points-query
+payment-make,would like to make a payment on my auto policy,c64da2535f51d2607e823c30bc13fc29121ef1ac,1,payment-make
+agent-query,to make changes to my policy agent,93b2912c25d0170b9a41ed95fc56b7b88747cf94,1,agent-query
+agent-query,new agent,9bbc29bfe2dbd03ae2b340b81591d1539a130a4a,1,agent-query
+payment-make,payment i'd like to make payment,9c027a4d87ed511eef024a85b1313089ba088175,1,payment-make
+payment-make,i'd like to make a payment please,38d1b22239e478b7cc0d18ff499a105b41408361,1,payment-make
+payment-make,to make payment arrangements,dc0a2b9aa655118cd643de82ee2b7c2fc8b76684,1,payment-make
+payment-make,i'd like to make a new payment,762ec4125833373fac43e04ad599e8f8fb0e6059,1,payment-make
+agent-query,i am an agent and need to find out the difference why there's such a difference between an old policy and a new quoted policy,3f31b69473f98edb81cab70fcd4ceead5efeb699,1,agent-query
+agent-query,company representative representative,92c9f538844c0e871531bf5d52df84531727e5a2,1,agent-query
+agent-query,need to speak to an operator,dc6037f5fceb30f464029b209c77d1ac08f18b38,1,agent-query
+agent-query,i need to report that somebody hit my car,20fc280095b7a79b680ecd36326aac91e9bc9aa7,1,agent-query
+agent-query,mobile home customer service,b5fd9c946c52879eff00acf3b9e43d2b7bbf475a,1,agent-query
+payment-make,make a payment by phone,a5bed1a83c44051650c3d71ee5fea6c3b8991d1f,1,payment-make
+payment-make,i make a payment,aeac38676b4aa8860473361b4a7a14da2ad80016,1,payment-make
+payment-make,i'm calling to make a payment,b56701f8c97d39aa20cd405393e9293b85c64b4b,1,payment-make
+payment-make,i would like to make payment,419bf1c22e2ccf805dd3c96da5199783622bb79e,1,payment-make
+reservation-make,hello this is a test call and i would like to make a reservation,ac5cefb3f90c28f213bfa9eec4eb21a992f06c86,1,reservation-make
+agent-query,report a claim,71f58930de39fc934e5e9d8b835168fd5677d709,1,agent-query
+payment-make,how to make a payment,746b176c8602507867c85831a71e1a013c9a5bbc,1,payment-make
+payment-make,make a payment please,cc16c38f92e1ca0724764ee59176c262889b040e,1,payment-make
+agent-query,agent services,dc3fea05be5e4f0d8509feb0929120330b3d4ef7,1,agent-query
+agent-query,report button,497dc0eec0655ccbbbee11db404e09c0b34d6363,1,agent-query
+agent-query,i'd like to speak to a customer service,568058783a595d7d9c7a97a14adf478e3f01b2fc,1,agent-query
+payment-make,would like to make a payment,4cbe493c2ddd67e8d8e8799de7c314c2922a446e,1,payment-make
+payment-make,make make a payment,a032f40ac52e4ff62ca6436e5c1a3d201e04cc10,1,payment-make
+agent-query,billing a representative please,836c256f021ea225039c87289a22594d5f753d4c,1,agent-query
+agent-query,repayment,bb680401c814842c9a443c4b1d8b56e9932c92e7,1,agent-query
+agent-query,i'd like to speak to representative,54c4a08c26c834ba35c8e565666c47a3fea73407,1,agent-query
+payment-make,make a payments,de10f9f7b699c5c45eab06bdbd52b648249dedf2,1,payment-make
+agent-query,customer service customer service a live person,0a8b2499a079950c95d8875100611dfdecb52f74,1,agent-query
+agent-query,motorcycle representative,9b469b46782a976bb1dec5e60f2db9755c629645,1,agent-query
+agent-query,need to speak to a rep,3d07ea4124c0724aa7d5493fb6e4cb6f0d1de28b,1,agent-query
+agent-query,i'd like to talk representative,4ab36522d01a6d678f700b3be479af474d6495f5,1,agent-query
+agent-query,to add an agent to the quoting system,0172ce4f626c38228f06450254d509aec1e75812,1,agent-query
+agent-query,customer agents,6f531489fea428d92ce981c896379a413db5a0e9,1,agent-query
+agent-query,i talk to my agent but i don't think my agent's in so i need customer service,bdd3ff10d173d0aa8a13476fbfa69422c172435d,1,agent-query
+payment-make,make payment make payment,84b848863d927371b3b715cf553daf7fda6cdd2c,1,payment-make
+agent-query,billing problem customer service,8156dc7518ff2ce668b011fddb773db97ebf7bb8,1,agent-query
+agent-query,give me a representative,3d990a3ca674f18ed3e0e248f6db64f28f6b353c,1,agent-query
+agent-query,i don't wanna be an agent anymore,bb1f3a0d39019ea69227487c7bef4d2965323509,1,agent-query
+agent-query,i just i just need to get to a representative please,493688b794fb603d38c16ce9528294ae608910b7,1,agent-query
+payment-make,i'd i'd like to make a payment,fcf626b699e251f8b8b144a1193b77a8110470b4,1,payment-make
+agent-query,speak to customer customer service,55ee3c6793312fefca98c1821fc3e644135d4d2e,1,agent-query
+agent-query,i'd like a representative,9dc62ad5682c23d7767bc572ff976d14e7f974d9,1,agent-query
+payment-make,wanna make a payment on my credit card,e2b3924d75392fc7301fe5bbd7bc103dd800a986,1,payment-make
+agent-query,talk to agent,dd07b426cb4da33de5e753fa0ca6683e340458ba,1,agent-query
+payment-make,i wanna make a payment,5b36c168c41de7825d4f3c445be6b4294b9c3c14,1,payment-make
+reservation-query,reservation,855b3aad9e13dcb704aae8eaf82ae1e3b135800d,6185,reservation-query

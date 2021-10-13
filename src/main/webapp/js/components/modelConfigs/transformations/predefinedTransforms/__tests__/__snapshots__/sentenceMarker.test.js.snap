@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sentenceMarker snapshot predefined transformation 1`] = `
+Object {
+  "/$/": "_class_se",
+  "/^/i": "_class_ss",
+}
+`;

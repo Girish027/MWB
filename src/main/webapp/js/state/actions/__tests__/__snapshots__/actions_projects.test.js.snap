@@ -1,0 +1,443 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions_projects <Function call /> should call addDatasetToProjectSuccess 1`] = `
+Array [
+  Object {
+    "dataset": Object {
+      "id": "123",
+    },
+    "projectId": "123",
+    "serverMessage": "Dataset added",
+    "type": "ADD_DATASET_TO_PROJECT_SUCCESS",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call collapsibleSidebarSelect 1`] = `
+Array [
+  Object {
+    "isCollapsibleModelOpen": true,
+    "type": "COLLAPSIBLE_SIDEBAR_SELECT",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call fetchAllProjects 1`] = `
+Array [
+  Object {
+    "type": "REQUEST_PROJECTS_ALL",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call fetchProject 1`] = `
+Array [
+  Object {
+    "projectId": "123",
+    "type": "REQUEST_PROJECT",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call fetchProjectsByClient 1`] = `
+Array [
+  Object {
+    "clientId": "14",
+    "limit": 100,
+    "startIndex": 0,
+    "type": "REQUEST_PROJECTS_BY_CLIENT",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call projectListLoadedSuccess 1`] = `
+Array [
+  Object {
+    "newProjectList": Array [],
+    "type": "PROJECT_LIST_LOADED_SUCCESS",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call receiveProjectsByClient 1`] = `
+Array [
+  Object {
+    "clientId": "14",
+    "limit": 100,
+    "projects": Array [],
+    "startIndex": 0,
+    "type": "RECEIVE_PROJECTS_BY_CLIENT",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call refreshProjectsByClient 1`] = `
+Array [
+  Object {
+    "clientId": "14",
+    "limit": 500,
+    "startIndex": 0,
+    "type": "REQUEST_PROJECTS_BY_CLIENT",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call requestAllProjects 1`] = `
+Array [
+  Object {
+    "type": "REQUEST_PROJECTS_ALL",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call requestProject 1`] = `
+Array [
+  Object {
+    "projectId": "123",
+    "type": "REQUEST_PROJECT",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call requestProjectsByClient 1`] = `
+Array [
+  Object {
+    "clientId": "14",
+    "limit": 100,
+    "startIndex": 0,
+    "type": "REQUEST_PROJECTS_BY_CLIENT",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call sidebarSelectProject 1`] = `
+Array [
+  Object {
+    "projectId": "123",
+    "type": "SIDEBAR_SELECT_PROJECT",
+  },
+]
+`;
+
+exports[`actions_projects <Function call /> should call toggleSidebarVisible 1`] = `
+Array [
+  Object {
+    "type": "PROJECT_LIST_TOGGLE_VISIBLE",
+    "visible": true,
+  },
+]
+`;
+
+exports[`actions_projects createProject: should do post call with required data 1`] = `"/nltools/private/v1/clients/14/projects"`;
+
+exports[`actions_projects deleteProjectById: should do delete call with required data 1`] = `"/nltools/private/v1/clients/14/projects/123"`;
+
+exports[`actions_projects demoteProjectById: should do put call with projectId 1`] = `"/nltools/private/v1/clients/14/projects/123/demote"`;
+
+exports[`actions_projects onCreateProjectFailure: should dispatch actions to display bad request message when project creation failed 1`] = `
+Array [
+  Object {
+    "modalDialogState": null,
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Unable to create project",
+  },
+]
+`;
+
+exports[`actions_projects onCreateProjectFailure: should dispatch actions to display warning message when project creation failed 1`] = `
+Array [
+  Object {
+    "modalDialogState": null,
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "type": "WARNING_REQUEST",
+    "value": "Unable to create project",
+  },
+]
+`;
+
+exports[`actions_projects onCreateProjectFailure: should dispatch actions to display warning message when project creation failed without data 1`] = `
+Array [
+  Object {
+    "modalDialogState": null,
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": undefined,
+  },
+]
+`;
+
+exports[`actions_projects onCreateProjectSuccess: should dispatch actions to create project and display good request message on project create success 1`] = `
+Array [
+  Object {
+    "project": Object {
+      "name": "TestProject",
+    },
+    "type": "ADD_NEW_PROJECT",
+  },
+  Object {
+    "modalDialogState": Object {
+      "dispatch": [Function],
+      "header": "Upload Dataset",
+      "history": Object {
+        "push": [MockFunction] {
+          "calls": Array [
+            Array [
+              "/datasets?clientid=&appid=&projectid=undefined",
+            ],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        },
+      },
+      "project": Object {
+        "name": "TestProject",
+      },
+      "projectId": undefined,
+      "type": "DatasetDialog",
+    },
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model TestProject created.",
+  },
+]
+`;
+
+exports[`actions_projects onCreateProjectSuccess: should dispatch actions to create project and display good request message on project create success without data 1`] = `
+Array [
+  Object {
+    "project": Object {},
+    "type": "ADD_NEW_PROJECT",
+  },
+  Object {
+    "modalDialogState": Object {
+      "dispatch": [Function],
+      "header": "Upload Dataset",
+      "history": Object {
+        "push": [MockFunction] {
+          "calls": Array [
+            Array [
+              "/datasets?clientid=&appid=&projectid=undefined",
+            ],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        },
+      },
+      "project": Object {},
+      "projectId": undefined,
+      "type": "DatasetDialog",
+    },
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model undefined created.",
+  },
+]
+`;
+
+exports[`actions_projects onDeleteProjectSuccess: should dispatch actions to delete project and display good request message on project delete success 1`] = `
+Array [
+  Object {
+    "id": "123",
+    "type": "PROJECT_DELETE",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model  deleted.",
+  },
+]
+`;
+
+exports[`actions_projects onMarkDeployableModelFailure: should dispatch actions to set failed status and display bad request message when mark for deploy operation failed 1`] = `
+Array [
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Unable to mark model version 12 as deployable.",
+  },
+]
+`;
+
+exports[`actions_projects onMarkDeployableModelFailure: should dispatch actions to set failed status and display bad request message when mark for deploy operation failed without data 1`] = `
+Array [
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Unable to mark model version 12 as deployable.",
+  },
+]
+`;
+
+exports[`actions_projects onProjectFailure: should dispatch actions to set failed status and display bad request message when project operation failed 1`] = `
+Array [
+  Object {
+    "projectId": "123",
+    "status": "FAILED",
+    "type": "PROJECT_STATUS_UPDATE",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Unable to perform project action",
+  },
+]
+`;
+
+exports[`actions_projects onProjectFailure: should dispatch actions to set failed status and display bad request message when project operation failed without data available 1`] = `
+Array [
+  Object {
+    "projectId": "123",
+    "status": "FAILED",
+    "type": "PROJECT_STATUS_UPDATE",
+  },
+  Object {
+    "type": "BAD_REQUEST",
+    "value": undefined,
+  },
+]
+`;
+
+exports[`actions_projects onProjectFailure: should dispatch actions to set warning status and display bad request message when project operation failed 1`] = `
+Array [
+  Object {
+    "projectId": "123",
+    "status": "FAILED",
+    "type": "PROJECT_STATUS_UPDATE",
+  },
+  Object {
+    "type": "WARNING_REQUEST",
+    "value": "Unable to perform project action",
+  },
+]
+`;
+
+exports[`actions_projects onPromoteProjectSuccess: should dispatch actions to promote project to global model and demote already existing project to node level model 1`] = `
+Array [
+  Object {
+    "projects": Array [
+      Object {
+        "id": "123",
+        "name": "TestProject",
+        "type": "NODE",
+      },
+      Object {
+        "id": "234",
+        "name": "Root_Intent",
+        "type": "GLOBAL",
+      },
+    ],
+    "type": "PROJECT_UPDATE",
+  },
+  Object {
+    "projectId": "123",
+    "status": "COMPLETED",
+    "type": "PROJECT_STATUS_UPDATE",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model promoted to global level.",
+  },
+]
+`;
+
+exports[`actions_projects onPromoteProjectSuccess: should dispatch actions to promote project to global model and demote already existing project to node level model without data available 1`] = `
+Array [
+  Object {
+    "projects": Array [],
+    "type": "PROJECT_UPDATE",
+  },
+  Object {
+    "projectId": "123",
+    "status": "COMPLETED",
+    "type": "PROJECT_STATUS_UPDATE",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model promoted to global level.",
+  },
+]
+`;
+
+exports[`actions_projects onUnmarkDeployableModelFailure: should dispatch actions to set failed status and display bad request message when unmark operation failed 1`] = `
+Array [
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Unable to unmark model version 12 from deployable.",
+  },
+]
+`;
+
+exports[`actions_projects onUnmarkDeployableModelFailure: should dispatch actions to set failed status and display bad request message when unmark operation failed without data 1`] = `
+Array [
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Unable to unmark model version 12 from deployable.",
+  },
+]
+`;
+
+exports[`actions_projects onUpdateProjectSuccess: should dispatch actions to update project status and display good request message on project update success 1`] = `
+Array [
+  Object {
+    "projects": Array [
+      Object {
+        "0": Object {
+          "id": "123",
+          "name": "TestProject",
+        },
+      },
+    ],
+    "type": "PROJECT_UPDATE",
+  },
+  Object {
+    "projectId": "123",
+    "status": "COMPLETED",
+    "type": "PROJECT_STATUS_UPDATE",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model updated.",
+  },
+]
+`;
+
+exports[`actions_projects onUpdateProjectSuccess: should dispatch actions to update project status and display good request message on project update success without response available 1`] = `
+Array [
+  Object {
+    "projects": Array [
+      Object {},
+    ],
+    "type": "PROJECT_UPDATE",
+  },
+  Object {
+    "projectId": "123",
+    "status": "COMPLETED",
+    "type": "PROJECT_STATUS_UPDATE",
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model updated.",
+  },
+]
+`;
+
+exports[`actions_projects promoteProjectById: should do put call with required data 1`] = `"/nltools/private/v1/clients/14/projects/234/promote?globalProjectName=Root_Intent&globalProjectId=123"`;
+
+exports[`actions_projects updateByProject: should do patch call to update project without data 1`] = `Array []`;
+
+exports[`actions_projects updateByProject: should do post call with required data 1`] = `"/nltools/private/v1/clients/14/projects/123"`;

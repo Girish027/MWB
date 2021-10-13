@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EditorLongPairs /> Snapshots renders correctly with props 1`] = `
+<div
+  className="model-transformation-editor-container"
+  id="EditorLongPairs"
+>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      ADD ITEM
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={[Function]}
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      TEST REGEX
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  &lt;div/&gt;
+  <div
+    className="transformation-editor-area"
+  >
+    <DragDropWrapper
+      droppableId="editor-long-pairs"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={Array []}
+      onDragEnd={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<EditorLongPairs /> Snapshots renders getItems correctly with listItems 1`] = `
+<div
+  className="model-transformation-editor-container"
+  id="EditorLongPairs"
+>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      ADD ITEM
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={[Function]}
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      TEST REGEX
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  &lt;div/&gt;
+  <div
+    className="transformation-editor-area"
+  >
+    <DragDropWrapper
+      droppableId="editor-long-pairs"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={Array []}
+      onDragEnd={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<EditorLongPairs /> Snapshots renders getItems correctly with listItems and onlyRegex as false 1`] = `
+<div
+  className="model-transformation-editor-container"
+  id="EditorLongPairs"
+>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      ADD ITEM
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={[Function]}
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      TEST REGEX
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  &lt;div/&gt;
+  <div
+    className="transformation-editor-area"
+  >
+    <DragDropWrapper
+      droppableId="editor-long-pairs"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={Array []}
+      onDragEnd={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<EditorLongPairs /> Snapshots renders getItems correctly with listItems as undefined 1`] = `
+<div
+  className="model-transformation-editor-container"
+  id="EditorLongPairs"
+>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      ADD ITEM
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={[Function]}
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      TEST REGEX
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  &lt;div/&gt;
+  <div
+    className="transformation-editor-area"
+  >
+    <DragDropWrapper
+      droppableId="editor-long-pairs"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={Array []}
+      onDragEnd={[Function]}
+    />
+  </div>
+</div>
+`;

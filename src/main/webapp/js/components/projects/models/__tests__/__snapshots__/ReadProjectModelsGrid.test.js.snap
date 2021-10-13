@@ -1,0 +1,5501 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call getEditorMultiline 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call getStatusBadge 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call handleCellValueChange 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call onClickMarkForDeploy 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call renderDescription 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call renderModelId 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call renderStar 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call renderStatus 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call renderStatus correctly for LIVE status 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call renderStatus correctly for PREVIEW status 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call renderStatus with Empty project 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should call updateStatusForCell 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - COMPLETED with statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - COMPLETED without statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - ERROR with statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - ERROR without statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - FAILED with statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - FAILED without statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - LIVE with statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - LIVE without statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - NULL with statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - NULL without statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - PREVIEW with statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - PREVIEW without statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - QUEUED with statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - QUEUED without statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - RUNNING with statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - RUNNING without statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - STARTED with statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: <Function call /> should renders correct status - STARTED without statusMessage 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: onClickModelVersion should render renderModelVersion correctly 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Functionality: renderDataset should render renderDataset correctly 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Snapshots renders correctly when status complete 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1113",
+        "created": 1569593066484,
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t1",
+        "id": "3",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe49",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "COMPLETE",
+        "userId": "xyz@247.ai",
+        "version": 1,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  filtered={
+    Object {
+      "id": "userId",
+      "value": "abc.xyz@247.ai",
+    }
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Snapshots renders correctly when status failed 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1114",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t2",
+        "id": "4",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe50",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "FAILED",
+        "userId": "xyz@247.ai",
+        "version": 2,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  filtered={
+    Object {
+      "id": "userId",
+      "value": "abc.xyz@247.ai",
+    }
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Snapshots renders correctly when status live 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1117",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t5",
+        "id": "9",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe53",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "LIVE",
+        "userId": "xyz@247.ai",
+        "version": 5,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  filtered={
+    Object {
+      "id": "userId",
+      "value": "abc.xyz@247.ai",
+    }
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Snapshots renders correctly when status preview 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1116",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t4",
+        "id": "8",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe52",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "PREVIEW",
+        "userId": "xyz@247.ai",
+        "version": 4,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  filtered={
+    Object {
+      "id": "userId",
+      "value": "abc.xyz@247.ai",
+    }
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;
+
+exports[`<ReadProjectModelsGrid /> Snapshots renders correctly when status running 1`] = `
+<withTheme(Table)
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": "For Deploy",
+        "accessor": "starred",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Versions",
+        "accessor": "",
+        "id": "version",
+        "minWidth": 95,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Datasets",
+        "accessor": "",
+        "id": "datasetIds",
+        "minWidth": 100,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Description",
+        "accessor": "description",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Type",
+        "accessor": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Technology",
+        "accessor": "",
+        "id": "modelType",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "",
+        "id": "status",
+        "minWidth": 120,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "ID",
+        "accessor": "",
+        "id": "modelToken",
+        "minWidth": 120,
+      },
+      Object {
+        "Header": "Created By",
+        "accessor": "userId",
+        "minWidth": 90,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Created Time",
+        "accessor": "created",
+        "minWidth": 130,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "",
+        "id": "action",
+        "minWidth": 100,
+        "sortable": false,
+        "style": Object {
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+        },
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "configId": "1115",
+        "datasetIds": Array [
+          "2477",
+        ],
+        "description": "t3",
+        "id": "5",
+        "modelToken": "cfe27b7c-ef7a-4e8b-acc9-0bec3aa9fe51",
+        "modelType": "DIGITAL",
+        "name": "table",
+        "projectId": "7",
+        "status": "RUNNING",
+        "userId": "xyz@247.ai",
+        "version": 3,
+      },
+    ]
+  }
+  defaultFilterMethod={[Function]}
+  defaultSorted={
+    Array [
+      Object {
+        "desc": true,
+        "id": "created",
+      },
+    ]
+  }
+  filtered={
+    Object {
+      "id": "userId",
+      "value": "abc.xyz@247.ai",
+    }
+  }
+  onResizedChange={[Function]}
+  resizable={true}
+  style={
+    Object {
+      "borderLeft": "unset",
+      "maxHeight": "calc(95vh - 225px)",
+    }
+  }
+/>
+`;

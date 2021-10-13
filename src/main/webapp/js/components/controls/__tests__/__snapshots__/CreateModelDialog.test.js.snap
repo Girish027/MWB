@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateModelDialog /> Creating an instance with test props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    clientId="14"
+    closeIconVisible={true}
+    dispatch={[Function]}
+    errorType=""
+    headerChildren="Create New Model"
+    history={Object {}}
+    isOpen={true}
+    okChildren="NEXT"
+    okDisabled={true}
+    okVisible={true}
+    onCancel={[Function]}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    showBodySeperator={false}
+    size="large"
+    styleOverride={
+      Object {
+        "childContainer": Object {
+          "marginBottom": "0px",
+          "marginTop": "0px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "460px",
+          "width": "446px",
+        },
+      }
+    }
+  >
+    <div>
+      <div>
+        <Form
+          fields={
+            Object {
+              "locale": [Function],
+              "text": [Function],
+              "vertical": [Function],
+            }
+          }
+          formContext={Object {}}
+          formData={Object {}}
+          jsonSchema={
+            Object {
+              "properties": Object {
+                "description": Object {
+                  "optional": true,
+                  "title": "Description",
+                  "type": "string",
+                },
+                "locale": Object {
+                  "default": "en-US",
+                  "title": "Locale",
+                  "type": "string",
+                },
+                "name": Object {
+                  "isRequired": true,
+                  "title": "Name",
+                  "type": "string",
+                },
+                "vertical": Object {
+                  "default": "FINANCIAL",
+                  "title": "Vertical",
+                  "type": "string",
+                },
+              },
+              "required": Array [
+                "name",
+              ],
+              "title": "",
+              "type": "object",
+            }
+          }
+          liveValidate={true}
+          onChange={[Function]}
+          onSubmit={[Function]}
+          showErrorList={false}
+          uiSchema={
+            Object {
+              "description": Object {
+                "ui:field": "text",
+              },
+              "locale": Object {
+                "ui:field": "locale",
+              },
+              "name": Object {
+                "ui:field": "text",
+              },
+              "vertical": Object {
+                "ui:field": "vertical",
+              },
+            }
+          }
+        />
+      </div>
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

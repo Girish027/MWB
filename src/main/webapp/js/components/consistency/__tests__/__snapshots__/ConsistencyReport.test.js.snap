@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ConsistencyReport /> Snapshots renders correctly for default props on mount 1`] = `
+<ConsistencyReport
+  consistencyReport={
+    Object {
+      "filter": Object {
+        "datasets": Array [],
+      },
+      "isError": false,
+      "isSearching": false,
+      "isUpdatingTags": false,
+      "limit": 10,
+      "projectId": "12",
+      "query": "sd",
+      "showControls": true,
+      "sort": "ASC",
+      "startIndex": 0,
+      "total": 20,
+    }
+  }
+  datasets={
+    Array [
+      Object {
+        "id": "2",
+        "name": "abc",
+        "status": "COMPLETED",
+      },
+      Object {
+        "id": "3",
+        "name": "abc1",
+        "status": "COMPLETED",
+      },
+    ]
+  }
+  dispatch={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "stateKey": "ConsistencyReport",
+            "type": "CELL_EDITABLE_STATE_CREATE",
+          },
+        ],
+        Array [
+          Object {
+            "stateKey": "ConsistencyReport",
+            "type": "CELL_EDITABLE_MANUAL_TAG_SUGGEST_STATE_CREATE",
+          },
+        ],
+        Array [
+          Object {
+            "projectId": "13",
+            "type": "CONSISTENCY_REPORT_SET_PROJECT_ID",
+          },
+        ],
+        Array [
+          Object {
+            "datasets": Array [
+              "2",
+              "3",
+            ],
+            "onlyConflicts": undefined,
+            "type": "CONSISTENCY_REPORT_SET_FILTER",
+          },
+        ],
+        Array [
+          Object {
+            "stateKey": "ConsistencyReport",
+            "type": "CELL_EDITABLE_STATE_CREATE",
+          },
+        ],
+        Array [
+          Object {
+            "stateKey": "ConsistencyReport",
+            "type": "CELL_EDITABLE_MANUAL_TAG_SUGGEST_STATE_CREATE",
+          },
+        ],
+        Array [
+          Object {
+            "projectId": "13",
+            "type": "CONSISTENCY_REPORT_SET_PROJECT_ID",
+          },
+        ],
+        Array [
+          Object {
+            "datasets": Array [
+              "2",
+              "3",
+            ],
+            "onlyConflicts": undefined,
+            "type": "CONSISTENCY_REPORT_SET_FILTER",
+          },
+        ],
+        Array [
+          Object {
+            "stateKey": "ConsistencyReport",
+            "type": "CELL_EDITABLE_STATE_CREATE",
+          },
+        ],
+        Array [
+          Object {
+            "stateKey": "ConsistencyReport",
+            "type": "CELL_EDITABLE_MANUAL_TAG_SUGGEST_STATE_CREATE",
+          },
+        ],
+        Array [
+          Object {
+            "projectId": "13",
+            "type": "CONSISTENCY_REPORT_SET_PROJECT_ID",
+          },
+        ],
+        Array [
+          Object {
+            "datasets": Array [
+              "2",
+              "3",
+            ],
+            "onlyConflicts": undefined,
+            "type": "CONSISTENCY_REPORT_SET_FILTER",
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  project={
+    Object {
+      "id": "12",
+      "name": "project1",
+    }
+  }
+  selectedProjectId="13"
+>
+  <div
+    id="ConsistencyReport"
+  >
+    <p>
+      Requested project does not have transformed datasets.
+    </p>
+  </div>
+</ConsistencyReport>
+`;
+
+exports[`<ConsistencyReport /> Snapshots renders correctly for default props on shallow copy 1`] = `
+<div
+  id="ConsistencyReport"
+>
+  <p>
+    Requested project does not have transformed datasets.
+  </p>
+</div>
+`;

@@ -1,0 +1,27 @@
+// TODO: remove after DropDown is integrated from TFS-UI for Cascade Menu;
+.action-menu {
+  .action-menu-item {
+    font-size: 13px;
+    color: #323F54;
+  }
+}
+
+.grommet {
+  &.grommetux-drop {
+    min-width: 150px !important;
+  }
+}
+
+.grommetux-box {
+  &.grommetux-menu__contents {
+    background: white !important;
+  }
+}
+
+.grommetux-menu__control {
+  svg {
+    polyline {
+      fill: #000;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`classNumber snapshot predefined transformation 1`] = `
+Object {
+  "/#(?=[^a-zA-Z0-9])/i": "_class_number_ref",
+  "/\\\\b(?:zero|one|two|three|four|five|six|seven|eight|nine|hundred|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)'?s\\\\b/i": "_class_number",
+  "/\\\\b[0-9]+(?:\\\\s*[\\\\.,]\\\\s*[0-9]+)*(?:\\\\s*(?:nd|th|rd|st))?\\\\b/i": "_class_number",
+}
+`;

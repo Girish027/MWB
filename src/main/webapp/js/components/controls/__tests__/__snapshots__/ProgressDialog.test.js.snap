@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressDialog /> Creating an instance with no props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren=""
+    cancelVisible={false}
+    closeIconVisible={false}
+    isOpen={true}
+    okChildren=""
+    okVisible={false}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    showFooter={false}
+    showHeader={false}
+    size="small"
+    styleOverride={
+      Object {
+        "childContainer": Object {
+          "margin": "auto",
+        },
+      }
+    }
+  >
+    <div>
+      <p
+        style={
+          Object {
+            "color": "#313F54",
+            "marginBottom": "25px",
+            "textAlign": "left",
+          }
+        }
+      />
+      <Memo(withTheme(DashedSpinner))
+        fill="#004C97"
+        height="50"
+        width="50"
+      />
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<ProgressDialog /> Creating an instance with test props Snapshots should render correctly 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren=""
+    cancelVisible={false}
+    closeIconVisible={true}
+    isOpen={true}
+    okChildren=""
+    okVisible={false}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    showFooter={false}
+    showHeader={false}
+    size="small"
+    styleOverride={
+      Object {
+        "childContainer": Object {
+          "margin": "auto",
+        },
+      }
+    }
+  >
+    <div>
+      <p
+        style={
+          Object {
+            "color": "#313F54",
+            "marginBottom": "25px",
+            "textAlign": "left",
+          }
+        }
+      >
+        Loading
+      </p>
+      <Memo(withTheme(DashedSpinner))
+        fill="#004C97"
+        height="50"
+        width="50"
+      />
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

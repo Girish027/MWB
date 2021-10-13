@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DragDropWrapper /> Snapshots render correctly for disabled view 1`] = `
+<DragDropContext
+  onDragEnd={[Function]}
+>
+  <Connect(Droppable)
+    direction="vertical"
+    droppableId="droppable"
+    ignoreContainerClipping={false}
+    isDropDisabled={true}
+    type="DEFAULT"
+  >
+    <Component />
+  </Connect(Droppable)>
+</DragDropContext>
+`;
+
+exports[`<DragDropWrapper /> Snapshots render correctly for enabled view 1`] = `
+<DragDropContext
+  onDragEnd={[Function]}
+>
+  <Connect(Droppable)
+    direction="vertical"
+    droppableId="droppable"
+    ignoreContainerClipping={false}
+    isDropDisabled={false}
+    type="DEFAULT"
+  >
+    <Component />
+  </Connect(Droppable)>
+</DragDropContext>
+`;
+
+exports[`<DragDropWrapper /> Snapshots render correctly for given style 1`] = `
+<DragDropContext
+  onDragEnd={[Function]}
+>
+  <Connect(Droppable)
+    direction="vertical"
+    droppableId="droppable"
+    ignoreContainerClipping={false}
+    isDropDisabled={false}
+    type="DEFAULT"
+  >
+    <Component />
+  </Connect(Droppable)>
+</DragDropContext>
+`;
+
+exports[`<DragDropWrapper /> Snapshots render correctly for zero items 1`] = `
+<DragDropContext
+  onDragEnd={[Function]}
+>
+  <Connect(Droppable)
+    direction="vertical"
+    droppableId="droppable"
+    ignoreContainerClipping={false}
+    isDropDisabled={false}
+    type="DEFAULT"
+  >
+    <Component />
+  </Connect(Droppable)>
+</DragDropContext>
+`;

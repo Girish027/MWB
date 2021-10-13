@@ -1,0 +1,38 @@
+[2021-06-29 19:00:00,002] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:00:00,005] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:01:00,001] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:01:00,002] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:02:00,005] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:02:00,005] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:03:00,002] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:03:00,002] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:04:00,001] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:04:00,001] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:05:00,002] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:05:00,002] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:06:00,002] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:06:00,002] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:07:00,001] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:07:00,001] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:08:00,005] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:08:00,005] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:09:00,007] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:09:00,007] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:10:00,016] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:10:00,016] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:11:00,005] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL update
+[2021-06-29 19:11:00,006] [task-scheduler-3] [DEBUG] [org.springframework.jdbc.core.JdbcTemplate] : sid: uid: cid: - Executing prepared SQL statement [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]
+[2021-06-29 19:11:48,917] [SpringContextShutdownHook] [DEBUG] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : sid: uid: cid: - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2399a68f, started on Tue Jun 29 17:57:28 IST 2021
+[2021-06-29 19:11:48,919] [SpringContextShutdownHook] [DEBUG] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : sid: uid: cid: - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5fa47f35, started on Tue Jun 29 17:58:10 IST 2021, parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2399a68f
+[2021-06-29 19:11:48,975] [SpringContextShutdownHook] [INFO] [org.quartz.core.QuartzScheduler] : sid: uid: cid: - Scheduler NLToolsScheduler_$_NON_CLUSTERED paused.
+[2021-06-29 19:11:53,979] [SpringContextShutdownHook] [WARN] [org.springframework.data.redis.listener.RedisMessageListenerContainer] : sid: uid: cid: - Unable to close connection. Subscription task still running
+[2021-06-29 19:11:53,981] [SpringContextShutdownHook] [INFO] [org.springframework.integration.endpoint.EventDrivenConsumer] : sid: uid: cid: - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2021-06-29 19:11:53,982] [SpringContextShutdownHook] [INFO] [org.springframework.integration.channel.PublishSubscribeChannel] : sid: uid: cid: - Channel '"nltools".errorChannel' has 0 subscriber(s).
+[2021-06-29 19:11:53,982] [SpringContextShutdownHook] [INFO] [org.springframework.integration.endpoint.EventDrivenConsumer] : sid: uid: cid: - stopped _org.springframework.integration.errorLogger
+[2021-06-29 19:11:53,985] [SpringContextShutdownHook] [INFO] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] : sid: uid: cid: - Shutting down ExecutorService 'taskScheduler'
+[2021-06-29 19:11:54,004] [SpringContextShutdownHook] [INFO] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] : sid: uid: cid: - Shutting down ExecutorService 'applicationTaskExecutor'
+[2021-06-29 19:11:54,013] [SpringContextShutdownHook] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : sid: uid: cid: - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-06-29 19:11:54,033] [SpringContextShutdownHook] [INFO] [org.springframework.scheduling.quartz.SchedulerFactoryBean] : sid: uid: cid: - Shutting down Quartz Scheduler
+[2021-06-29 19:11:54,034] [SpringContextShutdownHook] [INFO] [org.quartz.core.QuartzScheduler] : sid: uid: cid: - Scheduler NLToolsScheduler_$_NON_CLUSTERED shutting down.
+[2021-06-29 19:11:54,034] [SpringContextShutdownHook] [INFO] [org.quartz.core.QuartzScheduler] : sid: uid: cid: - Scheduler NLToolsScheduler_$_NON_CLUSTERED paused.
+[2021-06-29 19:11:54,487] [SpringContextShutdownHook] [INFO] [org.quartz.core.QuartzScheduler] : sid: uid: cid: - Scheduler NLToolsScheduler_$_NON_CLUSTERED shutdown complete.

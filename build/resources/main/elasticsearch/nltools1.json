@@ -1,0 +1,124 @@
+{
+    "settings" : {
+        "number_of_shards" : 5,
+        "number_of_replicas" : 1,
+        "index.requests.cache.enable": true
+    },
+    "mappings" : {
+    "_default_" : {
+      "_all" : {"enabled" : false, "omit_norms" : true},
+      "_meta" : {
+        "schemaVersion" : "schema2"
+      },
+      "dynamic_templates" : [ {
+        "message_field" : {
+          "match" : "message",
+          "match_mapping_type" : "string",
+          "mapping" : {
+            "type" : "string", "index" : "analyzed", "omit_norms" : true,
+            "fielddata" : { "format" : "disabled" }
+          }
+        }
+      },
+      {
+        "string_fields" : {
+          "match" : "*",
+          "unmatch" : "single*",
+          "match_mapping_type" : "string",
+          "mapping" : {
+            "type" : "string", "index" : "not_analyzed", "omit_norms" : true, "ignore_above" : 256, "doc_values" : true,
+            "fielddata" : { "format" : "paged_bytes" }
+          }
+        }
+      },
+      {
+        "float_fields" : {
+          "match" : "*",
+          "match_mapping_type" : "float",
+          "mapping" : { "type" : "float", "doc_values" : true }
+        }
+      }, {
+        "double_fields" : {
+          "match" : "*",
+          "match_mapping_type" : "double",
+          "mapping" : { "type" : "double", "doc_values" : true }
+        }
+      }, {
+        "byte_fields" : {
+          "match" : "*",
+          "match_mapping_type" : "byte",
+          "mapping" : { "type" : "byte", "doc_values" : true }
+        }
+      }, {
+        "short_fields" : {
+          "match" : "*",
+          "match_mapping_type" : "short",
+          "mapping" : { "type" : "short", "doc_values" : true }
+        }
+      }, {
+        "integer_fields" : {
+          "match" : "*",
+          "match_mapping_type" : "integer",
+          "mapping" : { "type" : "integer", "doc_values" : true }
+        }
+      }, {
+        "long_fields" : {
+          "match" : "*",
+          "match_mapping_type" : "long",
+          "mapping" : { "type" : "long", "doc_values" : true }
+        }
+      }, {
+        "date_fields" : {
+          "match" : "*",
+          "match_mapping_type" : "date",
+          "mapping" : { "type" : "date", "doc_values" : true }
+        }
+      }, {
+        "geo_point_fields" : {
+          "match" : "*",
+          "match_mapping_type" : "geo_point",
+          "mapping" : { "type" : "geo_point", "doc_values" : true }
+        }
+      } ],
+      "properties" : {
+        "uuid" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "clientId" : { "type" : "integer", "doc_values" : true},
+        "projectId" : { "type" : "integer", "doc_values" : true},
+        "datasetId" : { "type" : "integer", "doc_values" : true},
+        "jobId" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "dataset" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 }, 
+        "dataType" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "vertical" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "collectedAt" : { "type" : "date", "index" : "not_analyzed", "doc_values" : true },
+        "filename" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 512 },
+        "filesize" : { "type" : "integer", "doc_values" : true },
+        "sessionId" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "ani" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "dnis" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },  
+        "node" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "audio" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "intent" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 256 },
+        "ruTag" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 256 },
+        "taggedAt" : { "type" : "date", "format": "epoch_millis", "doc_values" : true},
+        "taggedBy" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 256 },
+        "deletedBy" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 256 },
+        "deletedAt" : { "type" : "date", "format": "epoch_millis", "doc_values" : true},
+        "num_tokens" : { "type" : "integer", "doc_values" : true},
+        "autoTagCount" : { "type" : "integer", "doc_values" : true},
+        "autoTagStr" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 256 },
+        "autoTag" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 256 },
+        "transcriptionRaw" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 512 },
+        "transcriptionHash" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "textStringForTagging" : { "type" : "string", "index" : "analyzed", "omit_norms" : true },
+        "textStringOriginal" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 512 },
+        "documentType" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "documentId" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 64 },
+        "@timestamp": { "type": "date", "doc_values" : true },
+        "@version": { "type": "string", "index": "not_analyzed", "doc_values" : true },
+        "commentedAt" : { "type" : "date", "format": "epoch_millis", "doc_values" : true},
+        "commentedBy" : { "type" : "string", "index" : "not_analyzed", "doc_values" : true, "omit_norms" : true , "ignore_above" : 256 },
+        "comment" : { "type" : "string", "index" : "analyzed", "omit_norms" : true, "fields": { "raw": {  "type":  "string", "index": "not_analyzed", "ignore_above" : 256}}}
+      }
+    }
+  }
+}

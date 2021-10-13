@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions_appConfig fetchAppConfig should dispatch appConfigRequest action 1`] = `
+Array [
+  Object {
+    "type": "APP_CONFIG_REQUEST",
+  },
+]
+`;
+
+exports[`actions_appConfig fetchAppConfig should make a GET call to get the config properties 1`] = `"/nltools/private/v1/configProperties?propertyName=kibanaLogURL,kibanaLogIndex,itsURL,ufpURL,oAuthLogoutURL,environment,amplitudeApiKey,logoutWarningTimeout,logoutTimeout,speechTestTimeout,userAccountLink,internalSupportLink,externalSupportLink,documentationLink,orionURL"`;
+
+exports[`actions_appConfig onAppConfigFailure should dispatch appConfigRequest action 1`] = `
+Array [
+  Object {
+    "data": Object {
+      "value": "test",
+    },
+    "type": "APP_CONFIG_FAILURE",
+  },
+]
+`;
+
+exports[`actions_appConfig onAppConfigSuccess should dispatch appConfigSuccess action with data 1`] = `
+Array [
+  Object {
+    "data": Object {
+      "value": "test",
+    },
+    "type": "APP_CONFIG_SUCCESS",
+  },
+]
+`;

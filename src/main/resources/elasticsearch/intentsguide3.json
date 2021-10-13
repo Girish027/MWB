@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "number_of_shards": 2,
+    "number_of_replicas": 1,
+    "index.requests.cache.enable": true,
+    "analysis": {
+      "analyzer": {
+        "analyzer_keyword": {
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "topic_goal": {
+      "_meta": {
+        "schemaVersion": "schema2"
+      },
+      "properties": {
+        "intent": {
+          "type": "text",
+          "fielddata": true,
+          "analyzer": "analyzer_keyword",
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        },
+        "projectId": {
+          "type": "integer",
+          "doc_values": true
+        },
+        "rutag": {
+          "type": "text",
+          "norms": false
+        },
+        "description": {
+          "type": "text",
+          "norms": false
+        },
+        "keywords": {
+          "type": "text",
+          "norms": false
+        },
+        "examples": {
+          "type": "text",
+          "norms": false
+        },
+        "comments": {
+          "type": "text",
+          "norms": false
+        }
+      }
+    }
+  }
+}

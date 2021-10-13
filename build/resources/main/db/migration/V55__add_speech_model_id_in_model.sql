@@ -1,0 +1,1 @@
+ALTER TABLE models ADD speech_model_id varchar(250) DEFAULT NULL;

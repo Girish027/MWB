@@ -1,0 +1,1032 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Editor /> Snapshots renders correctly with string type transformation 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorTransformations
+        modelViewReadOnly={false}
+        transformation="whitespace-normalization"
+      />,
+      <EditorTransformations
+        modelViewReadOnly={false}
+        transformation="whitespace-normalization"
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots renders correctly with string type transformation 2`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorLongPairs
+        currentTransformationName="non-breaking-space-regex"
+        dispatch={[MockFunction]}
+        helpComponent={
+          <div
+            className="transformation-item-help"
+          >
+            
+            <div>
+              <span
+                className="label"
+              >
+                Example:
+              </span>
+              <span
+                className="content"
+              >
+                /\\b(\\w+)(\\s\\1\\b)+/i: $1
+              </span>
+              <a
+                href="https://docs.247.ai/specifying-configuration-options-nl-model"
+                target="_blank"
+              >
+                MORE INFO
+              </a>
+            </div>
+          </div>
+        }
+        isTransformationValid={true}
+        modelViewReadOnly={false}
+        onUpdateList={[Function]}
+        onlyRegex={false}
+        transformation={
+          Object {
+            "non-breaking-space-regex": Object {
+              "mappings": Object {
+                "/\\\\xao/i": " ",
+              },
+              "type": "regex-replace",
+            },
+          }
+        }
+        transformationItems={
+          Object {
+            "/\\\\xao/i": " ",
+          }
+        }
+      />,
+      <EditorTransformations
+        currentTransformationName="non-breaking-space-regex"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "non-breaking-space-regex": Object {
+              "mappings": Object {
+                "/\\\\xao/i": " ",
+              },
+              "type": "regex-replace",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render INPUT_MATCH component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorLongPairs
+        currentTransformationName="fsfdsf"
+        dispatch={[MockFunction]}
+        helpComponent={
+          <div
+            className="transformation-item-help"
+          >
+            
+            <div>
+              <span
+                className="label"
+              >
+                Example:
+              </span>
+              <span
+                className="content"
+              >
+                /gold|copper|aluminum/i: MetalRU
+              </span>
+              <a
+                href="https://docs.247.ai/specifying-configuration-options-nl-model"
+                target="_blank"
+              >
+                MORE INFO
+              </a>
+            </div>
+          </div>
+        }
+        isTransformationValid={true}
+        modelViewReadOnly={false}
+        onUpdateList={[Function]}
+        onlyRegex={false}
+        transformation={
+          Object {
+            "fsfdsf": Object {
+              "comments": "",
+              "mappings": Object {
+                "\\"sdfsdfsdfsdf\\"": "dsfdsfddf",
+              },
+              "type": "input-match",
+            },
+          }
+        }
+        transformationItems={
+          Object {
+            "\\"sdfsdfsdfsdf\\"": "dsfdsfddf",
+          }
+        }
+        trimSpaces={true}
+      />,
+      <EditorTransformations
+        currentTransformationName="fsfdsf"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "fsfdsf": Object {
+              "comments": "",
+              "mappings": Object {
+                "\\"sdfsdfsdfsdf\\"": "dsfdsfddf",
+              },
+              "type": "input-match",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render REGEX_REMOVAL component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorOrderedList
+        currentTransformationName="html-encoding"
+        dispatch={[MockFunction]}
+        modelViewReadOnly={false}
+        onUpdateList={[Function]}
+        transformation={
+          Object {
+            "html-encoding": Object {
+              "list": Array [
+                "/%[0-9]+/",
+              ],
+              "type": "regex-removal",
+            },
+          }
+        }
+        transformationItems={
+          Array [
+            "/%[0-9]+/",
+          ]
+        }
+      />,
+      <EditorTransformations
+        currentTransformationName="html-encoding"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "html-encoding": Object {
+              "list": Array [
+                "/%[0-9]+/",
+              ],
+              "type": "regex-removal",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render REGEX_REPLACE component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorLongPairs
+        currentTransformationName="non-breaking-space-regex"
+        dispatch={[MockFunction]}
+        helpComponent={
+          <div
+            className="transformation-item-help"
+          >
+            
+            <div>
+              <span
+                className="label"
+              >
+                Example:
+              </span>
+              <span
+                className="content"
+              >
+                /\\b(\\w+)(\\s\\1\\b)+/i: $1
+              </span>
+              <a
+                href="https://docs.247.ai/specifying-configuration-options-nl-model"
+                target="_blank"
+              >
+                MORE INFO
+              </a>
+            </div>
+          </div>
+        }
+        isTransformationValid={true}
+        modelViewReadOnly={false}
+        onUpdateList={[Function]}
+        onlyRegex={false}
+        transformation={
+          Object {
+            "non-breaking-space-regex": Object {
+              "mappings": Object {
+                "/\\\\xao/i": " ",
+              },
+              "type": "regex-replace",
+            },
+          }
+        }
+        transformationItems={
+          Object {
+            "/\\\\xao/i": " ",
+          }
+        }
+      />,
+      <EditorTransformations
+        currentTransformationName="non-breaking-space-regex"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "non-breaking-space-regex": Object {
+              "mappings": Object {
+                "/\\\\xao/i": " ",
+              },
+              "type": "regex-replace",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render SPELL_CHECKING component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorTransformations
+        dispatch={[MockFunction]}
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        readOnly={false}
+        transformation={
+          Object {
+            "enchant-spellcheck-enhance": Object {
+              "type": "spell-checking",
+            },
+          }
+        }
+      />,
+      <EditorTransformations
+        currentTransformationName="enchant-spellcheck-enhance"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "enchant-spellcheck-enhance": Object {
+              "type": "spell-checking",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render STEMS component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorSimplePairs
+        dispatch={[MockFunction]}
+        helpComponent={
+          <div
+            className="transformation-item-help"
+          >
+            
+            <div>
+              <span
+                className="label"
+              >
+                Example:
+              </span>
+              <span
+                className="content"
+              >
+                account's: account
+              </span>
+              <a
+                href="https://docs.247.ai/specifying-configuration-options-nl-model"
+                target="_blank"
+              >
+                MORE INFO
+              </a>
+            </div>
+          </div>
+        }
+        isTransformationValid={true}
+        modelViewReadOnly={false}
+        onUpdateList={[Function]}
+        onlySubstText={false}
+        transformation={
+          Object {
+            "word-substitutions": Object {
+              "mappings": Object {
+                "_class_debit_card's": "_class_debit_card is",
+                "account's": "account",
+              },
+              "type": "stems",
+            },
+          }
+        }
+        transformationItems={
+          Object {
+            "_class_debit_card's": "_class_debit_card is",
+            "account's": "account",
+          }
+        }
+      />,
+      <EditorTransformations
+        currentTransformationName="word-substitutions"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "word-substitutions": Object {
+              "mappings": Object {
+                "_class_debit_card's": "_class_debit_card is",
+                "account's": "account",
+              },
+              "type": "stems",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render STEMS_NOCASE component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorSimplePairs
+        dispatch={[MockFunction]}
+        helpComponent={
+          <div
+            className="transformation-item-help"
+          >
+            
+            <div>
+              <span
+                className="label"
+              >
+                Example:
+              </span>
+              <span
+                className="content"
+              >
+                account's: account
+              </span>
+              <a
+                href="https://docs.247.ai/specifying-configuration-options-nl-model"
+                target="_blank"
+              >
+                MORE INFO
+              </a>
+            </div>
+          </div>
+        }
+        isTransformationValid={true}
+        modelViewReadOnly={false}
+        onUpdateList={[Function]}
+        onlySubstText={false}
+        transformation={
+          Object {
+            "chat-shortcuts": Object {
+              "mappings": Object {
+                "2moro": "Tomorrow",
+                "2nite": "Tonight",
+              },
+              "type": "stems-nocase",
+            },
+          }
+        }
+        transformationItems={
+          Object {
+            "2moro": "Tomorrow",
+            "2nite": "Tonight",
+          }
+        }
+      />,
+      <EditorTransformations
+        currentTransformationName="chat-shortcuts"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "chat-shortcuts": Object {
+              "mappings": Object {
+                "2moro": "Tomorrow",
+                "2nite": "Tonight",
+              },
+              "type": "stems-nocase",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render STEMS_NOCASE_URL component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorTransformations
+        dispatch={[MockFunction]}
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        readOnly={false}
+        transformation={
+          Object {
+            "ewewr": Object {
+              "comments": "",
+              "type": "stems-nocase-url",
+              "url": "sffsdfsdfsdsf",
+            },
+          }
+        }
+      />,
+      <EditorTransformations
+        currentTransformationName="ewewr"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "ewewr": Object {
+              "comments": "",
+              "type": "stems-nocase-url",
+              "url": "sffsdfsdfsdsf",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render STEMS_URL component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorSimplePairs
+        dispatch={[MockFunction]}
+        helpComponent={
+          <div
+            className="transformation-item-help"
+          >
+            
+            <div>
+              <span
+                className="label"
+              >
+                Example:
+              </span>
+              <span
+                className="content"
+              >
+                account's: account
+              </span>
+              <a
+                href="https://docs.247.ai/specifying-configuration-options-nl-model"
+                target="_blank"
+              >
+                MORE INFO
+              </a>
+            </div>
+          </div>
+        }
+        isTransformationValid={true}
+        modelViewReadOnly={false}
+        onUpdateList={[Function]}
+        onlySubstText={false}
+        transformation={
+          Object {
+            "ewewr": Object {
+              "comments": "",
+              "type": "stems",
+              "url": "sffsdfsdfsdsf",
+            },
+          }
+        }
+      />,
+      <EditorTransformations
+        currentTransformationName="ewewr"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "ewewr": Object {
+              "comments": "",
+              "type": "stems",
+              "url": "sffsdfsdfsdsf",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render STOP_WORDS component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorTags
+        dispatch={[MockFunction]}
+        modelViewReadOnly={false}
+        onUpdateTags={[Function]}
+        transformation={
+          Object {
+            "stops": Object {
+              "list": Array [
+                "been",
+                "be",
+              ],
+              "type": "stop-words",
+            },
+          }
+        }
+        transformationItem={
+          Array [
+            "been",
+            "be",
+          ]
+        }
+      />,
+      <EditorTransformations
+        currentTransformationName="stops"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "stops": Object {
+              "list": Array [
+                "been",
+                "be",
+              ],
+              "type": "stop-words",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render WORDCLASS_SUBST_REGEX component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorLongPairs
+        currentTransformationName="email-regex"
+        dispatch={[MockFunction]}
+        helpComponent={
+          <div
+            className="transformation-item-help"
+          >
+            
+            <div>
+              <span
+                className="label"
+              >
+                Example:
+              </span>
+              <span
+                className="content"
+              >
+                /d+.?d*/: _class_number
+              </span>
+              <a
+                href="https://docs.247.ai/specifying-configuration-options-nl-model"
+                target="_blank"
+              >
+                MORE INFO
+              </a>
+            </div>
+          </div>
+        }
+        isTransformationValid={true}
+        modelViewReadOnly={false}
+        onUpdateList={[Function]}
+        onlyRegex={true}
+        transformation={
+          Object {
+            "email-regex": Object {
+              "mappings": Object {
+                "/(([\\\\w_\\\\.-])+@([\\\\d\\\\w\\\\.-])+\\\\.([a-z\\\\.]){2,6})/i": "_class_email",
+              },
+              "type": "wordclass-subst-regex",
+            },
+          }
+        }
+        transformationItems={
+          Object {
+            "/(([\\\\w_\\\\.-])+@([\\\\d\\\\w\\\\.-])+\\\\.([a-z\\\\.]){2,6})/i": "_class_email",
+          }
+        }
+        trimSpaces={true}
+      />,
+      <EditorTransformations
+        currentTransformationName="email-regex"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "email-regex": Object {
+              "mappings": Object {
+                "/(([\\\\w_\\\\.-])+@([\\\\d\\\\w\\\\.-])+\\\\.([a-z\\\\.]){2,6})/i": "_class_email",
+              },
+              "type": "wordclass-subst-regex",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;
+
+exports[`<Editor /> Snapshots specificEditor: should render WORDCLASS_SUBST_TEXT component 1`] = `
+<withTheme(Tabs)
+  align="left"
+  forceRenderTabPanel={false}
+  onTabSelected={[Function]}
+  selectedIndex={0}
+  styleOverride={
+    Object {
+      "tabContainer": Object {
+        "borderTop": "none",
+        "marginLeft": "1px",
+      },
+      "tabPanel": Object {
+        "height": "calc(100vh - 245px)",
+      },
+    }
+  }
+  tabPanels={
+    Array [
+      <EditorSimplePairs
+        dispatch={[MockFunction]}
+        helpComponent={
+          <div
+            className="transformation-item-help"
+          >
+            
+            <div>
+              <span
+                className="label"
+              >
+                Example:
+              </span>
+              <span
+                className="content"
+              >
+                boston: _class_city
+              </span>
+              <a
+                href="https://docs.247.ai/specifying-configuration-options-nl-model"
+                target="_blank"
+              >
+                MORE INFO
+              </a>
+            </div>
+          </div>
+        }
+        isTransformationValid={true}
+        modelViewReadOnly={false}
+        onUpdateList={[Function]}
+        onlySubstText={true}
+        transformation={
+          Object {
+            "sdqwewe": Object {
+              "comments": "",
+              "mappings": Object {
+                "ewrewew": "_class_ereew",
+              },
+              "type": "wordclass-subst-text",
+            },
+          }
+        }
+        transformationItems={
+          Object {
+            "ewrewew": "_class_ereew",
+          }
+        }
+      />,
+      <EditorTransformations
+        currentTransformationName="sdqwewe"
+        modelViewReadOnly={false}
+        onUpdateTransformation={[MockFunction]}
+        transformation={
+          Object {
+            "sdqwewe": Object {
+              "comments": "",
+              "mappings": Object {
+                "ewrewew": "_class_ereew",
+              },
+              "type": "wordclass-subst-text",
+            },
+          }
+        }
+      />,
+    ]
+  }
+  tabs={
+    Array [
+      "UI",
+      "JSON",
+    ]
+  }
+/>
+`;

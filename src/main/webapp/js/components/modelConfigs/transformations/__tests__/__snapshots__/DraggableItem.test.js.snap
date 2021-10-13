@@ -1,0 +1,593 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DraggableItem /> Snapshots render correctly for edit view 1`] = `
+<DraggableItem
+  className=""
+  id="abc"
+  index={1}
+  itemContentClass=""
+  modelViewReadOnly={false}
+  noOfItems={10}
+  onDelete={[Function]}
+  onSelect={[Function]}
+>
+  <div
+    className="list-item "
+    data-name="item-1"
+    key="item-abc"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <div
+      className="index"
+    >
+      2
+    </div>
+    <div
+      className="item-content  "
+    />
+    <div
+      className="list-item-delete"
+    >
+      <IconButton
+        defaultColor="#004c97"
+        disabled={false}
+        disabledColor="#9B9B9B"
+        focusedColor="#003467"
+        height={10}
+        icon={[Function]}
+        onClick={[Function]}
+        padding="1px"
+        strokeColor="none"
+        styleOverride={Object {}}
+        title="Delete Item"
+        width={10}
+      >
+        <withTheme(Button)
+          disabled={false}
+          name="action-button"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          styleOverride={
+            Object {
+              ":focus": Object {
+                "outline": "none",
+              },
+              ":hover": Object {
+                "boxShadow": "none",
+                "color": "#003467",
+              },
+              "backgroundColor": "initial",
+              "border": "none",
+              "color": "#004C97",
+              "height": "auto",
+              "minHeight": "0px",
+              "padding": "1px",
+            }
+          }
+          tabIndex={0}
+          title="Delete Item"
+          type="flat"
+        >
+          <Button
+            disabled={false}
+            name="action-button"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            styleOverride={
+              Object {
+                ":focus": Object {
+                  "outline": "none",
+                },
+                ":hover": Object {
+                  "boxShadow": "none",
+                  "color": "#003467",
+                },
+                "backgroundColor": "initial",
+                "border": "none",
+                "color": "#004C97",
+                "height": "auto",
+                "minHeight": "0px",
+                "padding": "1px",
+              }
+            }
+            tabIndex={0}
+            tfsStyle={
+              Object {
+                "button": Object {
+                  "base": Object {
+                    ":focus": Object {
+                      "outline": "2px solid #009CDE",
+                    },
+                    "border": "1px solid transparent",
+                    "borderRadius": "4px",
+                    "cursor": "pointer",
+                    "fontSize": "13px",
+                    "fontWeight": 600,
+                    "minHeight": "35px",
+                    "minWidth": "100px",
+                    "outlineOffset": "2px",
+                    "paddingLeft": "20px",
+                    "paddingRight": "20px",
+                    "wordBreak": "normal",
+                  },
+                  "disabled": Object {
+                    "cursor": "not-allowed",
+                    "flat": Object {
+                      "color": "#666666",
+                    },
+                    "primary": Object {
+                      "backgroundColor": "#E0E0E0",
+                      "color": "#666666",
+                    },
+                    "secondary": Object {
+                      "border": "2px solid #E0E0E0",
+                      "color": "#666666",
+                    },
+                  },
+                  "flat": Object {
+                    ":active": Object {
+                      "color": "#004C97",
+                    },
+                    ":hover": Object {
+                      "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                      "color": "#336FAB",
+                    },
+                    "backgroundColor": "transparent",
+                    "color": "#000000",
+                    "minWidth": "auto",
+                    "paddingLeft": "10px",
+                    "paddingRight": "10px",
+                  },
+                  "primary": Object {
+                    ":active": Object {
+                      "backgroundColor": "#336FAB",
+                      "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                      "color": "#FFFFFF",
+                    },
+                    ":hover": Object {
+                      "backgroundColor": "#336FAB",
+                      "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                      "color": "#FFFFFF",
+                    },
+                    "backgroundColor": "#004C97",
+                    "color": "#FFFFFF",
+                  },
+                  "secondary": Object {
+                    ":active": Object {
+                      "border": "2px solid #336FAB",
+                      "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                      "color": "#336FAB",
+                    },
+                    ":hover": Object {
+                      "border": "2px solid #336FAB",
+                      "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                      "color": "#336FAB",
+                    },
+                    "backgroundColor": "#FFFFFF",
+                    "border": "2px solid #004C97",
+                    "color": "#004C97",
+                  },
+                },
+              }
+            }
+            title="Delete Item"
+            type="flat"
+          >
+            <button
+              data-radium={true}
+              disabled={false}
+              name="action-button"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "initial",
+                  "border": "none",
+                  "borderRadius": "4px",
+                  "color": "#004C97",
+                  "cursor": "pointer",
+                  "fontSize": "13px",
+                  "fontWeight": 600,
+                  "height": "auto",
+                  "minHeight": "0px",
+                  "minWidth": "auto",
+                  "outlineOffset": "2px",
+                  "padding": "1px",
+                  "paddingLeft": "10px",
+                  "paddingRight": "10px",
+                  "wordBreak": "normal",
+                }
+              }
+              tabIndex={0}
+              title="Delete Item"
+              type="button"
+            >
+              <Xmark
+                fill="#004c97"
+                height={10}
+                stroke="none"
+                width={10}
+              >
+                <svg
+                  height={10}
+                  stroke="none"
+                  viewBox="0 0 24 24"
+                  width={10}
+                >
+                  <path
+                    d="M.421 20.58a1.442 1.442 0 0 0 2.038 2.04l8.891-8.89a.242.242 0 0 1 .34 0l8.891 8.89a1.445 1.445 0 0 0 2.41-.64 1.46 1.46 0 0 0-.372-1.4l-8.891-8.89a.257.257 0 0 1-.071-.17.239.239 0 0 1 .071-.17l8.892-8.89A1.442 1.442 0 0 0 20.581.42L11.69 9.31a.242.242 0 0 1-.34 0L2.459.42A1.442 1.442 0 0 0 .421 2.46l8.891 8.89a.239.239 0 0 1 .071.17.257.257 0 0 1-.071.17z"
+                    data-name="remove"
+                    fill="#004c97"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </Xmark>
+            </button>
+          </Button>
+        </withTheme(Button)>
+      </IconButton>
+      <span
+        className="grabbable"
+        title="Grab and Reorder"
+      >
+        <DragIcon
+          fill="#313f54"
+          height={13.5}
+          width={8.5}
+        >
+          <svg
+            height={13.5}
+            viewBox="0 0 8 14"
+            width={8.5}
+          >
+            <g
+              data-name="Group 52"
+            >
+              <g
+                data-name="streamline-icon-dial-finger-1@24x24 (1)"
+              >
+                <path
+                  d="M1.75-.001A1.75 1.75 0 1 1 0 1.75 1.751 1.751 0 0 1 1.75-.001zm5 0A1.75 1.75 0 1 1 5 1.75 1.751 1.751 0 0 1 6.75-.001zm-5 5A1.75 1.75 0 1 1 0 6.75a1.751 1.751 0 0 1 1.75-1.751zm5 0A1.75 1.75 0 1 1 5 6.75a1.751 1.751 0 0 1 1.75-1.751zm-5 5A1.75 1.75 0 1 1 0 11.75a1.751 1.751 0 0 1 1.75-1.751zm5 0A1.75 1.75 0 1 1 5 11.75a1.751 1.751 0 0 1 1.75-1.751z"
+                  data-name="Path 11"
+                  fill="#313f54"
+                />
+              </g>
+            </g>
+          </svg>
+        </DragIcon>
+      </span>
+    </div>
+  </div>
+</DraggableItem>
+`;
+
+exports[`<DraggableItem /> Snapshots render correctly for last item in the list 1`] = `
+<DraggableItem
+  className=""
+  id="abc"
+  index={10}
+  itemContentClass=""
+  modelViewReadOnly={false}
+  noOfItems={10}
+  onDelete={[Function]}
+  onSelect={[Function]}
+>
+  <div
+    className="list-item "
+    data-name="item-10"
+    key="item-abc"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <div
+      className="index"
+    >
+      11
+    </div>
+    <div
+      className="item-content  "
+    />
+    <div
+      className="list-item-delete"
+    >
+      <IconButton
+        defaultColor="#004c97"
+        disabled={false}
+        disabledColor="#9B9B9B"
+        focusedColor="#003467"
+        height={10}
+        icon={[Function]}
+        onClick={[Function]}
+        padding="1px"
+        strokeColor="none"
+        styleOverride={Object {}}
+        title="Delete Item"
+        width={10}
+      >
+        <withTheme(Button)
+          disabled={false}
+          name="action-button"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          styleOverride={
+            Object {
+              ":focus": Object {
+                "outline": "none",
+              },
+              ":hover": Object {
+                "boxShadow": "none",
+                "color": "#003467",
+              },
+              "backgroundColor": "initial",
+              "border": "none",
+              "color": "#004C97",
+              "height": "auto",
+              "minHeight": "0px",
+              "padding": "1px",
+            }
+          }
+          tabIndex={0}
+          title="Delete Item"
+          type="flat"
+        >
+          <Button
+            disabled={false}
+            name="action-button"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            styleOverride={
+              Object {
+                ":focus": Object {
+                  "outline": "none",
+                },
+                ":hover": Object {
+                  "boxShadow": "none",
+                  "color": "#003467",
+                },
+                "backgroundColor": "initial",
+                "border": "none",
+                "color": "#004C97",
+                "height": "auto",
+                "minHeight": "0px",
+                "padding": "1px",
+              }
+            }
+            tabIndex={0}
+            tfsStyle={
+              Object {
+                "button": Object {
+                  "base": Object {
+                    ":focus": Object {
+                      "outline": "2px solid #009CDE",
+                    },
+                    "border": "1px solid transparent",
+                    "borderRadius": "4px",
+                    "cursor": "pointer",
+                    "fontSize": "13px",
+                    "fontWeight": 600,
+                    "minHeight": "35px",
+                    "minWidth": "100px",
+                    "outlineOffset": "2px",
+                    "paddingLeft": "20px",
+                    "paddingRight": "20px",
+                    "wordBreak": "normal",
+                  },
+                  "disabled": Object {
+                    "cursor": "not-allowed",
+                    "flat": Object {
+                      "color": "#666666",
+                    },
+                    "primary": Object {
+                      "backgroundColor": "#E0E0E0",
+                      "color": "#666666",
+                    },
+                    "secondary": Object {
+                      "border": "2px solid #E0E0E0",
+                      "color": "#666666",
+                    },
+                  },
+                  "flat": Object {
+                    ":active": Object {
+                      "color": "#004C97",
+                    },
+                    ":hover": Object {
+                      "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                      "color": "#336FAB",
+                    },
+                    "backgroundColor": "transparent",
+                    "color": "#000000",
+                    "minWidth": "auto",
+                    "paddingLeft": "10px",
+                    "paddingRight": "10px",
+                  },
+                  "primary": Object {
+                    ":active": Object {
+                      "backgroundColor": "#336FAB",
+                      "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                      "color": "#FFFFFF",
+                    },
+                    ":hover": Object {
+                      "backgroundColor": "#336FAB",
+                      "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                      "color": "#FFFFFF",
+                    },
+                    "backgroundColor": "#004C97",
+                    "color": "#FFFFFF",
+                  },
+                  "secondary": Object {
+                    ":active": Object {
+                      "border": "2px solid #336FAB",
+                      "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                      "color": "#336FAB",
+                    },
+                    ":hover": Object {
+                      "border": "2px solid #336FAB",
+                      "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                      "color": "#336FAB",
+                    },
+                    "backgroundColor": "#FFFFFF",
+                    "border": "2px solid #004C97",
+                    "color": "#004C97",
+                  },
+                },
+              }
+            }
+            title="Delete Item"
+            type="flat"
+          >
+            <button
+              data-radium={true}
+              disabled={false}
+              name="action-button"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "initial",
+                  "border": "none",
+                  "borderRadius": "4px",
+                  "color": "#004C97",
+                  "cursor": "pointer",
+                  "fontSize": "13px",
+                  "fontWeight": 600,
+                  "height": "auto",
+                  "minHeight": "0px",
+                  "minWidth": "auto",
+                  "outlineOffset": "2px",
+                  "padding": "1px",
+                  "paddingLeft": "10px",
+                  "paddingRight": "10px",
+                  "wordBreak": "normal",
+                }
+              }
+              tabIndex={0}
+              title="Delete Item"
+              type="button"
+            >
+              <Xmark
+                fill="#004c97"
+                height={10}
+                stroke="none"
+                width={10}
+              >
+                <svg
+                  height={10}
+                  stroke="none"
+                  viewBox="0 0 24 24"
+                  width={10}
+                >
+                  <path
+                    d="M.421 20.58a1.442 1.442 0 0 0 2.038 2.04l8.891-8.89a.242.242 0 0 1 .34 0l8.891 8.89a1.445 1.445 0 0 0 2.41-.64 1.46 1.46 0 0 0-.372-1.4l-8.891-8.89a.257.257 0 0 1-.071-.17.239.239 0 0 1 .071-.17l8.892-8.89A1.442 1.442 0 0 0 20.581.42L11.69 9.31a.242.242 0 0 1-.34 0L2.459.42A1.442 1.442 0 0 0 .421 2.46l8.891 8.89a.239.239 0 0 1 .071.17.257.257 0 0 1-.071.17z"
+                    data-name="remove"
+                    fill="#004c97"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </Xmark>
+            </button>
+          </Button>
+        </withTheme(Button)>
+      </IconButton>
+      <span
+        className="grabbable"
+        title="Grab and Reorder"
+      >
+        <DragIcon
+          fill="#313f54"
+          height={13.5}
+          width={8.5}
+        >
+          <svg
+            height={13.5}
+            viewBox="0 0 8 14"
+            width={8.5}
+          >
+            <g
+              data-name="Group 52"
+            >
+              <g
+                data-name="streamline-icon-dial-finger-1@24x24 (1)"
+              >
+                <path
+                  d="M1.75-.001A1.75 1.75 0 1 1 0 1.75 1.751 1.751 0 0 1 1.75-.001zm5 0A1.75 1.75 0 1 1 5 1.75 1.751 1.751 0 0 1 6.75-.001zm-5 5A1.75 1.75 0 1 1 0 6.75a1.751 1.751 0 0 1 1.75-1.751zm5 0A1.75 1.75 0 1 1 5 6.75a1.751 1.751 0 0 1 1.75-1.751zm-5 5A1.75 1.75 0 1 1 0 11.75a1.751 1.751 0 0 1 1.75-1.751zm5 0A1.75 1.75 0 1 1 5 11.75a1.751 1.751 0 0 1 1.75-1.751z"
+                  data-name="Path 11"
+                  fill="#313f54"
+                />
+              </g>
+            </g>
+          </svg>
+        </DragIcon>
+      </span>
+    </div>
+  </div>
+</DraggableItem>
+`;
+
+exports[`<DraggableItem /> Snapshots render correctly for read only view 1`] = `
+<DraggableItem
+  className=""
+  id="abc"
+  index={1}
+  itemContentClass=""
+  modelViewReadOnly={true}
+  noOfItems={10}
+  onDelete={[Function]}
+  onSelect={[Function]}
+>
+  <div
+    className="list-item "
+    data-name="item-1"
+    key="item-abc"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <div
+      className="index"
+    >
+      2
+    </div>
+    <div
+      className="item-content  "
+    />
+  </div>
+</DraggableItem>
+`;

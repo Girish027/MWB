@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions_datasets addDatasetToProject should dispatch addDatasetToProject action 1`] = `Array []`;
+
+exports[`actions_datasets fetchCancelTransformJob should dispatch fetchCancelTransformJob action 1`] = `Array []`;
+
+exports[`actions_datasets fetchDataset should dispatch fetchDataset action 1`] = `
+Array [
+  Object {
+    "datasetId": "121",
+    "datasetSelectionIndex": 0,
+    "type": "REQUEST_DATASET",
+  },
+]
+`;
+
+exports[`actions_datasets fetchDatasetTransform should dispatch fetchDatasetTransform action 1`] = `
+Array [
+  Object {
+    "transformingDatasetId": "121",
+    "type": "REQUEST_DATASET_TRANSFORM",
+  },
+]
+`;
+
+exports[`actions_datasets fetchDeleteTransformJob should dispatch fetchDeleteTransformJob action 1`] = `Array []`;
+
+exports[`actions_datasets removeDatasetFromProject should dispatch removeDatasetFromProject action with data 1`] = `Array []`;

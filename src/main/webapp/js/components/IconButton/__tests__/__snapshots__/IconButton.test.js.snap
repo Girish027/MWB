@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IconButton /> Snapshots renders correctly when icon is disabled 1`] = `
+<withTheme(Button)
+  disabled={true}
+  name="action-button"
+  onBlur={[Function]}
+  onClick={[MockFunction]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  styleOverride={
+    Object {
+      ":focus": Object {
+        "outline": "none",
+      },
+      ":hover": Object {
+        "boxShadow": "none",
+        "color": "#003467",
+      },
+      "backgroundColor": "initial",
+      "border": "none",
+      "color": "#004C97",
+      "height": "auto",
+      "minHeight": "0px",
+      "padding": "1px",
+    }
+  }
+  tabIndex={0}
+  title=""
+  type="flat"
+>
+  <Memo(withTheme(Plus))
+    fill="#9B9B9B"
+    height={10}
+    stroke="none"
+    width={10}
+  />
+</withTheme(Button)>
+`;
+
+exports[`<IconButton /> Snapshots renders correctly when icon is in focus 1`] = `
+<withTheme(Button)
+  disabled={false}
+  name="action-button"
+  onBlur={[Function]}
+  onClick={[MockFunction]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  styleOverride={
+    Object {
+      ":focus": Object {
+        "outline": "none",
+      },
+      ":hover": Object {
+        "boxShadow": "none",
+        "color": "#003467",
+      },
+      "backgroundColor": "initial",
+      "border": "none",
+      "color": "#004C97",
+      "height": "auto",
+      "minHeight": "0px",
+      "padding": "1px",
+    }
+  }
+  tabIndex={0}
+  title=""
+  type="flat"
+>
+  <Memo(withTheme(Plus))
+    fill="#003467"
+    height={10}
+    stroke="none"
+    width={10}
+  />
+</withTheme(Button)>
+`;
+
+exports[`<IconButton /> Snapshots renders correctly when icon is not in focus 1`] = `
+<withTheme(Button)
+  disabled={false}
+  name="action-button"
+  onBlur={[Function]}
+  onClick={[MockFunction]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  styleOverride={
+    Object {
+      ":focus": Object {
+        "outline": "none",
+      },
+      ":hover": Object {
+        "boxShadow": "none",
+        "color": "#003467",
+      },
+      "backgroundColor": "initial",
+      "border": "none",
+      "color": "#004C97",
+      "height": "auto",
+      "minHeight": "0px",
+      "padding": "1px",
+    }
+  }
+  tabIndex={0}
+  title=""
+  type="flat"
+>
+  <Memo(withTheme(Plus))
+    fill="#004c97"
+    height={10}
+    stroke="none"
+    width={10}
+  />
+</withTheme(Button)>
+`;
+
+exports[`<IconButton /> Snapshots renders correctly when icon with extended props 1`] = `
+<withTheme(Button)
+  disabled={false}
+  name="action-button"
+  onBlur={[Function]}
+  onClick={[MockFunction]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  styleOverride={
+    Object {
+      ":focus": Object {
+        "outline": "none",
+      },
+      ":hover": Object {
+        "boxShadow": "none",
+        "color": "#003467",
+      },
+      "backgroundColor": "initial",
+      "border": "none",
+      "color": "#004C97",
+      "height": "auto",
+      "minHeight": "0px",
+      "padding": "1px",
+    }
+  }
+  tabIndex={0}
+  title=""
+  type="flat"
+>
+  <Memo(withTheme(Plus))
+    fill="yellow"
+    height={20}
+    stroke="#ffffff"
+    width={20}
+  />
+</withTheme(Button)>
+`;
+
+exports[`<IconButton /> Snapshots renders correctly with title 1`] = `
+<withTheme(Button)
+  disabled={false}
+  name="action-button"
+  onBlur={[Function]}
+  onClick={[MockFunction]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  styleOverride={
+    Object {
+      ":focus": Object {
+        "outline": "none",
+      },
+      ":hover": Object {
+        "boxShadow": "none",
+        "color": "#003467",
+      },
+      "backgroundColor": "initial",
+      "border": "none",
+      "color": "#004C97",
+      "height": "auto",
+      "minHeight": "0px",
+      "padding": "1px",
+    }
+  }
+  tabIndex={0}
+  title="test title"
+  type="flat"
+>
+  <Memo(withTheme(Plus))
+    fill="#004c97"
+    height={10}
+    stroke="none"
+    width={10}
+  />
+</withTheme(Button)>
+`;

@@ -1,0 +1,595 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ModelTestBatchResultsGrid /> Snapshots renders correctly when Intent filter is enabled with an intent 1`] = `
+<Deprecated>
+  <Deprecated>
+    <withTheme(ContextualActionsBar)>
+      <withTheme(ContextualActionItem)>
+        <withTheme(DropDown)
+          itemList={
+            Array [
+              "All",
+              "Misclassified",
+            ]
+          }
+          key="transcriptions"
+          labelName="Transcriptions"
+          onItemSelected={[Function]}
+          selectedIndex={0}
+        />
+      </withTheme(ContextualActionItem)>
+      <withTheme(ContextualActionItem)>
+        <withTheme(DropDown)
+          itemList={
+            Array [
+              "All",
+              "Agent_Query",
+              "Reservation_Cancel",
+            ]
+          }
+          key="intents"
+          labelName="Intent"
+          onItemSelected={[Function]}
+          selectedIndex={0}
+        />
+      </withTheme(ContextualActionItem)>
+    </withTheme(ContextualActionsBar)>
+  </Deprecated>
+  <Deprecated>
+    <withTheme(Table)
+      columns={
+        Array [
+          Object {
+            "Cell": [Function],
+            "Header": "Transcription",
+            "accessor": "",
+            "id": "transcription",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Rollup Intent (RUI)",
+            "accessor": "",
+            "id": "rollupIntent",
+            "width": 180,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Count",
+            "accessor": "",
+            "id": "count",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 1",
+            "accessor": "",
+            "id": "Predicted_RUI1",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 1",
+            "accessor": "",
+            "id": "score1",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 2",
+            "accessor": "",
+            "id": "Predicted_RUI2",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 2",
+            "accessor": "",
+            "id": "score2",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 3",
+            "accessor": "",
+            "id": "Predicted_RUI3",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 3",
+            "accessor": "",
+            "id": "score3",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 4",
+            "accessor": "",
+            "id": "Predicted_RUI4",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 4",
+            "accessor": "",
+            "id": "score4",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 5",
+            "accessor": "",
+            "id": "Predicted_RUI5",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 5",
+            "accessor": "",
+            "id": "score5",
+          },
+        ]
+      }
+      data={
+        Array [
+          Object {
+            "intent": "Agent_Query",
+            "predict1": "Agent_Query",
+            "transcription": "I need help",
+          },
+        ]
+      }
+      defaultPageSize={100}
+      resizable={true}
+      showPagination={true}
+      style={
+        Object {
+          "maxHeight": "calc(95vh - 260px)",
+        }
+      }
+    />
+  </Deprecated>
+</Deprecated>
+`;
+
+exports[`<ModelTestBatchResultsGrid /> Snapshots renders correctly when Misclassified filter is selected 1`] = `
+<Deprecated>
+  <Deprecated>
+    <withTheme(ContextualActionsBar)>
+      <withTheme(ContextualActionItem)>
+        <withTheme(DropDown)
+          itemList={
+            Array [
+              "All",
+              "Misclassified",
+            ]
+          }
+          key="transcriptions"
+          labelName="Transcriptions"
+          onItemSelected={[Function]}
+          selectedIndex={0}
+        />
+      </withTheme(ContextualActionItem)>
+      <withTheme(ContextualActionItem)>
+        <withTheme(DropDown)
+          itemList={
+            Array [
+              "All",
+              "Agent_Query",
+              "Reservation_Cancel",
+            ]
+          }
+          key="intents"
+          labelName="Intent"
+          onItemSelected={[Function]}
+          selectedIndex={0}
+        />
+      </withTheme(ContextualActionItem)>
+    </withTheme(ContextualActionsBar)>
+  </Deprecated>
+  <Deprecated>
+    <withTheme(Table)
+      columns={
+        Array [
+          Object {
+            "Cell": [Function],
+            "Header": "Transcription",
+            "accessor": "",
+            "id": "transcription",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Rollup Intent (RUI)",
+            "accessor": "",
+            "id": "rollupIntent",
+            "width": 180,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Count",
+            "accessor": "",
+            "id": "count",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 1",
+            "accessor": "",
+            "id": "Predicted_RUI1",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 1",
+            "accessor": "",
+            "id": "score1",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 2",
+            "accessor": "",
+            "id": "Predicted_RUI2",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 2",
+            "accessor": "",
+            "id": "score2",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 3",
+            "accessor": "",
+            "id": "Predicted_RUI3",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 3",
+            "accessor": "",
+            "id": "score3",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 4",
+            "accessor": "",
+            "id": "Predicted_RUI4",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 4",
+            "accessor": "",
+            "id": "score4",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 5",
+            "accessor": "",
+            "id": "Predicted_RUI5",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 5",
+            "accessor": "",
+            "id": "score5",
+          },
+        ]
+      }
+      data={
+        Array [
+          Object {
+            "intent": "Reservation_Cancel",
+            "predict1": "reservation_cancel",
+            "transcription": "I want to cancel my booking",
+          },
+        ]
+      }
+      defaultPageSize={100}
+      resizable={true}
+      showPagination={true}
+      style={
+        Object {
+          "maxHeight": "calc(95vh - 260px)",
+        }
+      }
+    />
+  </Deprecated>
+</Deprecated>
+`;
+
+exports[`<ModelTestBatchResultsGrid /> Snapshots renders correctly when both filters are selected 1`] = `
+<Deprecated>
+  <Deprecated>
+    <withTheme(ContextualActionsBar)>
+      <withTheme(ContextualActionItem)>
+        <withTheme(DropDown)
+          itemList={
+            Array [
+              "All",
+              "Misclassified",
+            ]
+          }
+          key="transcriptions"
+          labelName="Transcriptions"
+          onItemSelected={[Function]}
+          selectedIndex={0}
+        />
+      </withTheme(ContextualActionItem)>
+      <withTheme(ContextualActionItem)>
+        <withTheme(DropDown)
+          itemList={
+            Array [
+              "All",
+              "Agent_Query",
+              "Reservation_Cancel",
+            ]
+          }
+          key="intents"
+          labelName="Intent"
+          onItemSelected={[Function]}
+          selectedIndex={0}
+        />
+      </withTheme(ContextualActionItem)>
+    </withTheme(ContextualActionsBar)>
+  </Deprecated>
+  <Deprecated>
+    <withTheme(Table)
+      columns={
+        Array [
+          Object {
+            "Cell": [Function],
+            "Header": "Transcription",
+            "accessor": "",
+            "id": "transcription",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Rollup Intent (RUI)",
+            "accessor": "",
+            "id": "rollupIntent",
+            "width": 180,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Count",
+            "accessor": "",
+            "id": "count",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 1",
+            "accessor": "",
+            "id": "Predicted_RUI1",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 1",
+            "accessor": "",
+            "id": "score1",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 2",
+            "accessor": "",
+            "id": "Predicted_RUI2",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 2",
+            "accessor": "",
+            "id": "score2",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 3",
+            "accessor": "",
+            "id": "Predicted_RUI3",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 3",
+            "accessor": "",
+            "id": "score3",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 4",
+            "accessor": "",
+            "id": "Predicted_RUI4",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 4",
+            "accessor": "",
+            "id": "score4",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 5",
+            "accessor": "",
+            "id": "Predicted_RUI5",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 5",
+            "accessor": "",
+            "id": "score5",
+          },
+        ]
+      }
+      data={Array []}
+      defaultPageSize={100}
+      resizable={true}
+      showPagination={true}
+      style={
+        Object {
+          "maxHeight": "calc(95vh - 260px)",
+        }
+      }
+    />
+  </Deprecated>
+</Deprecated>
+`;
+
+exports[`<ModelTestBatchResultsGrid /> Snapshots renders correctly with batch test results in table 1`] = `
+<Deprecated>
+  <Deprecated>
+    <withTheme(ContextualActionsBar)>
+      <withTheme(ContextualActionItem)>
+        <withTheme(DropDown)
+          itemList={
+            Array [
+              "All",
+              "Misclassified",
+            ]
+          }
+          key="transcriptions"
+          labelName="Transcriptions"
+          onItemSelected={[Function]}
+          selectedIndex={0}
+        />
+      </withTheme(ContextualActionItem)>
+      <withTheme(ContextualActionItem)>
+        <withTheme(DropDown)
+          itemList={
+            Array [
+              "All",
+              "Agent_Query",
+              "Reservation_Cancel",
+            ]
+          }
+          key="intents"
+          labelName="Intent"
+          onItemSelected={[Function]}
+          selectedIndex={0}
+        />
+      </withTheme(ContextualActionItem)>
+    </withTheme(ContextualActionsBar)>
+  </Deprecated>
+  <Deprecated>
+    <withTheme(Table)
+      columns={
+        Array [
+          Object {
+            "Cell": [Function],
+            "Header": "Transcription",
+            "accessor": "",
+            "id": "transcription",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Rollup Intent (RUI)",
+            "accessor": "",
+            "id": "rollupIntent",
+            "width": 180,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Count",
+            "accessor": "",
+            "id": "count",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 1",
+            "accessor": "",
+            "id": "Predicted_RUI1",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 1",
+            "accessor": "",
+            "id": "score1",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 2",
+            "accessor": "",
+            "id": "Predicted_RUI2",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 2",
+            "accessor": "",
+            "id": "score2",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 3",
+            "accessor": "",
+            "id": "Predicted_RUI3",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 3",
+            "accessor": "",
+            "id": "score3",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 4",
+            "accessor": "",
+            "id": "Predicted_RUI4",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 4",
+            "accessor": "",
+            "id": "score4",
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Predicted RUI 5",
+            "accessor": "",
+            "id": "Predicted_RUI5",
+            "width": 150,
+          },
+          Object {
+            "Cell": [Function],
+            "Header": "Score 5",
+            "accessor": "",
+            "id": "score5",
+          },
+        ]
+      }
+      data={
+        Array [
+          Object {
+            "intent": "Agent_Query",
+            "predict1": "Agent_Query",
+            "transcription": "I need help",
+          },
+          Object {
+            "intent": "Reservation_Cancel",
+            "predict1": "reservation_cancel",
+            "transcription": "I want to cancel my booking",
+          },
+          Object {
+            "intent": "Reservation_Cancel",
+            "predict1": "Reservation_Cancel",
+            "transcription": "cancel my reservation for",
+          },
+        ]
+      }
+      defaultPageSize={100}
+      resizable={true}
+      showPagination={true}
+      style={
+        Object {
+          "maxHeight": "calc(95vh - 260px)",
+        }
+      }
+    />
+  </Deprecated>
+</Deprecated>
+`;

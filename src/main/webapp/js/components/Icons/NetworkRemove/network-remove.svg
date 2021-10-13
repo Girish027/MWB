@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Internet-Networks-Servers / Worldwide-Web / network-remove</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Internet-Networks-Servers-/-Worldwide-Web-/-network-remove" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(2.000000, 2.000000)">
+            <g id="network-remove">
+                <circle id="Oval" stroke="#D0021B" cx="8.625" cy="8.625" r="3"></circle>
+                <path d="M9.75,7.5 L7.5,9.75" id="Shape" stroke="#D0021B"></path>
+                <path d="M7.5,7.5 L9.75,9.75" id="Shape" stroke="#D0021B"></path>
+                <path d="M5.2445,11.575 C2.35880982,11.1840283 0.248500422,8.65545099 0.380018002,5.74636698 C0.511535582,2.83728297 2.8414001,0.509442659 5.75059733,0.380453667 C8.65979455,0.251464675 11.1865367,2.36397108 11.575,5.25" id="Shape" stroke="#313F54"></path>
+                <path d="M4.6445,11.4605 C3.884,10.3445 3.375,8.3165 3.375,6 C3.375,3.6835 3.884,1.656 4.6445,0.5395" id="Shape" stroke="#313F54"></path>
+                <path d="M0.3875,5.625 L5.25,5.625" id="Shape" stroke="#313F54"></path>
+                <path d="M1.4995,2.625 L10.5,2.625" id="Shape" stroke="#313F54"></path>
+                <path d="M1.024,8.625 L3.607,8.625" id="Shape" stroke="#313F54"></path>
+                <path d="M7.3555,0.5395 C8.0023025,1.6316363 8.39643808,2.85470376 8.509,4.119" id="Shape" stroke="#313F54"></path>
+            </g>
+        </g>
+    </g>
+</svg>

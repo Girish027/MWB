@@ -1,0 +1,937 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TaggingGuideImportPreview /> Snapshots renders correctly for default props 1`] = `
+<TaggingGuideImportPreview
+  columns={
+    Array [
+      Object {
+        "name": "column1",
+        "required": true,
+      },
+    ]
+  }
+  columnsBinding={
+    Object {
+      "dsd": 0,
+    }
+  }
+  data={
+    Array [
+      "dsfdsf",
+    ]
+  }
+  onColumnBindChange={[MockFunction]}
+>
+  <Box
+    announce={false}
+    direction="column"
+    flex={true}
+    focusable={true}
+    id="TaggingGuideMappingPreviewContainer"
+    onScroll={[Function]}
+    pad="none"
+    responsive={true}
+    tag="div"
+  >
+    <div
+      className="grommetux-box grommetux-box--direction-column grommetux-box--responsive grommetux-box--flex grommetux-box--pad-none"
+      id="TaggingGuideMappingPreviewContainer"
+      onScroll={[Function]}
+      style={Object {}}
+    >
+      <div
+        id="TaggingGuideMappingPreviewGridContainer"
+      >
+        <div
+          id="TaggingGuideImportPreview"
+        >
+          <div
+            className="header-table-container"
+            style={
+              Object {
+                "top": "0px",
+              }
+            }
+          >
+            <table>
+              <tbody>
+                <tr>
+                  <td
+                    className=""
+                    key="col-0"
+                  >
+                    <div>
+                      <Select
+                        multiple={false}
+                        onChange={[Function]}
+                        options={
+                          Array [
+                            Object {
+                              "label": "Skip",
+                              "value": "__skip__",
+                            },
+                            Object {
+                              "label": undefined,
+                              "value": "column1",
+                            },
+                          ]
+                        }
+                      >
+                        <div
+                          className="grommetux-select"
+                          onClick={[Function]}
+                        >
+                          <input
+                            className="grommetux-input grommetux-select__input"
+                            readOnly={true}
+                            type="text"
+                            value=""
+                          />
+                          <Button
+                            a11yTitle="Select Icon"
+                            className="grommetux-select__control"
+                            icon={
+                              <CaretDown
+                                responsive={true}
+                              />
+                            }
+                            method="push"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <button
+                              aria-label="Select Icon"
+                              className="grommetux-button grommetux-button--plain grommetux-select__control"
+                              disabled={false}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseUp={[Function]}
+                              type="button"
+                            >
+                              <span
+                                className="grommetux-button__icon"
+                              >
+                                <CaretDown
+                                  responsive={true}
+                                >
+                                  <svg
+                                    aria-label="caret-down"
+                                    className="grommetux-control-icon grommetux-control-icon-caret-down grommetux-control-icon--responsive"
+                                    height="24px"
+                                    role="img"
+                                    version="1.1"
+                                    viewBox="0 0 24 24"
+                                    width="24px"
+                                  >
+                                    <polygon
+                                      fill="none"
+                                      points="22 8 12 20 2 8"
+                                      stroke="#000"
+                                      strokeWidth="2"
+                                    />
+                                  </svg>
+                                </CaretDown>
+                              </span>
+                            </button>
+                          </Button>
+                        </div>
+                      </Select>
+                    </div>
+                  </td>
+                  <td
+                    className="Skipped"
+                    key="col-1"
+                  >
+                    <div>
+                      <Select
+                        multiple={false}
+                        onChange={[Function]}
+                        options={
+                          Array [
+                            Object {
+                              "label": "Skip",
+                              "value": "__skip__",
+                            },
+                            Object {
+                              "label": undefined,
+                              "value": "column1",
+                            },
+                          ]
+                        }
+                        value="Skip"
+                      >
+                        <div
+                          className="grommetux-select"
+                          onClick={[Function]}
+                        >
+                          <input
+                            className="grommetux-input grommetux-select__input"
+                            readOnly={true}
+                            type="text"
+                            value="Skip"
+                          />
+                          <Button
+                            a11yTitle="Select Icon"
+                            className="grommetux-select__control"
+                            icon={
+                              <CaretDown
+                                responsive={true}
+                              />
+                            }
+                            method="push"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <button
+                              aria-label="Select Icon"
+                              className="grommetux-button grommetux-button--plain grommetux-select__control"
+                              disabled={false}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseUp={[Function]}
+                              type="button"
+                            >
+                              <span
+                                className="grommetux-button__icon"
+                              >
+                                <CaretDown
+                                  responsive={true}
+                                >
+                                  <svg
+                                    aria-label="caret-down"
+                                    className="grommetux-control-icon grommetux-control-icon-caret-down grommetux-control-icon--responsive"
+                                    height="24px"
+                                    role="img"
+                                    version="1.1"
+                                    viewBox="0 0 24 24"
+                                    width="24px"
+                                  >
+                                    <polygon
+                                      fill="none"
+                                      points="22 8 12 20 2 8"
+                                      stroke="#000"
+                                      strokeWidth="2"
+                                    />
+                                  </svg>
+                                </CaretDown>
+                              </span>
+                            </button>
+                          </Button>
+                        </div>
+                      </Select>
+                    </div>
+                  </td>
+                  <td
+                    className="Skipped"
+                    key="col-2"
+                  >
+                    <div>
+                      <Select
+                        multiple={false}
+                        onChange={[Function]}
+                        options={
+                          Array [
+                            Object {
+                              "label": "Skip",
+                              "value": "__skip__",
+                            },
+                            Object {
+                              "label": undefined,
+                              "value": "column1",
+                            },
+                          ]
+                        }
+                        value="Skip"
+                      >
+                        <div
+                          className="grommetux-select"
+                          onClick={[Function]}
+                        >
+                          <input
+                            className="grommetux-input grommetux-select__input"
+                            readOnly={true}
+                            type="text"
+                            value="Skip"
+                          />
+                          <Button
+                            a11yTitle="Select Icon"
+                            className="grommetux-select__control"
+                            icon={
+                              <CaretDown
+                                responsive={true}
+                              />
+                            }
+                            method="push"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <button
+                              aria-label="Select Icon"
+                              className="grommetux-button grommetux-button--plain grommetux-select__control"
+                              disabled={false}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseUp={[Function]}
+                              type="button"
+                            >
+                              <span
+                                className="grommetux-button__icon"
+                              >
+                                <CaretDown
+                                  responsive={true}
+                                >
+                                  <svg
+                                    aria-label="caret-down"
+                                    className="grommetux-control-icon grommetux-control-icon-caret-down grommetux-control-icon--responsive"
+                                    height="24px"
+                                    role="img"
+                                    version="1.1"
+                                    viewBox="0 0 24 24"
+                                    width="24px"
+                                  >
+                                    <polygon
+                                      fill="none"
+                                      points="22 8 12 20 2 8"
+                                      stroke="#000"
+                                      strokeWidth="2"
+                                    />
+                                  </svg>
+                                </CaretDown>
+                              </span>
+                            </button>
+                          </Button>
+                        </div>
+                      </Select>
+                    </div>
+                  </td>
+                  <td
+                    className="Skipped"
+                    key="col-3"
+                  >
+                    <div>
+                      <Select
+                        multiple={false}
+                        onChange={[Function]}
+                        options={
+                          Array [
+                            Object {
+                              "label": "Skip",
+                              "value": "__skip__",
+                            },
+                            Object {
+                              "label": undefined,
+                              "value": "column1",
+                            },
+                          ]
+                        }
+                        value="Skip"
+                      >
+                        <div
+                          className="grommetux-select"
+                          onClick={[Function]}
+                        >
+                          <input
+                            className="grommetux-input grommetux-select__input"
+                            readOnly={true}
+                            type="text"
+                            value="Skip"
+                          />
+                          <Button
+                            a11yTitle="Select Icon"
+                            className="grommetux-select__control"
+                            icon={
+                              <CaretDown
+                                responsive={true}
+                              />
+                            }
+                            method="push"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <button
+                              aria-label="Select Icon"
+                              className="grommetux-button grommetux-button--plain grommetux-select__control"
+                              disabled={false}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseUp={[Function]}
+                              type="button"
+                            >
+                              <span
+                                className="grommetux-button__icon"
+                              >
+                                <CaretDown
+                                  responsive={true}
+                                >
+                                  <svg
+                                    aria-label="caret-down"
+                                    className="grommetux-control-icon grommetux-control-icon-caret-down grommetux-control-icon--responsive"
+                                    height="24px"
+                                    role="img"
+                                    version="1.1"
+                                    viewBox="0 0 24 24"
+                                    width="24px"
+                                  >
+                                    <polygon
+                                      fill="none"
+                                      points="22 8 12 20 2 8"
+                                      stroke="#000"
+                                      strokeWidth="2"
+                                    />
+                                  </svg>
+                                </CaretDown>
+                              </span>
+                            </button>
+                          </Button>
+                        </div>
+                      </Select>
+                    </div>
+                  </td>
+                  <td
+                    className="Skipped"
+                    key="col-4"
+                  >
+                    <div>
+                      <Select
+                        multiple={false}
+                        onChange={[Function]}
+                        options={
+                          Array [
+                            Object {
+                              "label": "Skip",
+                              "value": "__skip__",
+                            },
+                            Object {
+                              "label": undefined,
+                              "value": "column1",
+                            },
+                          ]
+                        }
+                        value="Skip"
+                      >
+                        <div
+                          className="grommetux-select"
+                          onClick={[Function]}
+                        >
+                          <input
+                            className="grommetux-input grommetux-select__input"
+                            readOnly={true}
+                            type="text"
+                            value="Skip"
+                          />
+                          <Button
+                            a11yTitle="Select Icon"
+                            className="grommetux-select__control"
+                            icon={
+                              <CaretDown
+                                responsive={true}
+                              />
+                            }
+                            method="push"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <button
+                              aria-label="Select Icon"
+                              className="grommetux-button grommetux-button--plain grommetux-select__control"
+                              disabled={false}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseUp={[Function]}
+                              type="button"
+                            >
+                              <span
+                                className="grommetux-button__icon"
+                              >
+                                <CaretDown
+                                  responsive={true}
+                                >
+                                  <svg
+                                    aria-label="caret-down"
+                                    className="grommetux-control-icon grommetux-control-icon-caret-down grommetux-control-icon--responsive"
+                                    height="24px"
+                                    role="img"
+                                    version="1.1"
+                                    viewBox="0 0 24 24"
+                                    width="24px"
+                                  >
+                                    <polygon
+                                      fill="none"
+                                      points="22 8 12 20 2 8"
+                                      stroke="#000"
+                                      strokeWidth="2"
+                                    />
+                                  </svg>
+                                </CaretDown>
+                              </span>
+                            </button>
+                          </Button>
+                        </div>
+                      </Select>
+                    </div>
+                  </td>
+                  <td
+                    className="Skipped"
+                    key="col-5"
+                  >
+                    <div>
+                      <Select
+                        multiple={false}
+                        onChange={[Function]}
+                        options={
+                          Array [
+                            Object {
+                              "label": "Skip",
+                              "value": "__skip__",
+                            },
+                            Object {
+                              "label": undefined,
+                              "value": "column1",
+                            },
+                          ]
+                        }
+                        value="Skip"
+                      >
+                        <div
+                          className="grommetux-select"
+                          onClick={[Function]}
+                        >
+                          <input
+                            className="grommetux-input grommetux-select__input"
+                            readOnly={true}
+                            type="text"
+                            value="Skip"
+                          />
+                          <Button
+                            a11yTitle="Select Icon"
+                            className="grommetux-select__control"
+                            icon={
+                              <CaretDown
+                                responsive={true}
+                              />
+                            }
+                            method="push"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <button
+                              aria-label="Select Icon"
+                              className="grommetux-button grommetux-button--plain grommetux-select__control"
+                              disabled={false}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseUp={[Function]}
+                              type="button"
+                            >
+                              <span
+                                className="grommetux-button__icon"
+                              >
+                                <CaretDown
+                                  responsive={true}
+                                >
+                                  <svg
+                                    aria-label="caret-down"
+                                    className="grommetux-control-icon grommetux-control-icon-caret-down grommetux-control-icon--responsive"
+                                    height="24px"
+                                    role="img"
+                                    version="1.1"
+                                    viewBox="0 0 24 24"
+                                    width="24px"
+                                  >
+                                    <polygon
+                                      fill="none"
+                                      points="22 8 12 20 2 8"
+                                      stroke="#000"
+                                      strokeWidth="2"
+                                    />
+                                  </svg>
+                                </CaretDown>
+                              </span>
+                            </button>
+                          </Button>
+                        </div>
+                      </Select>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            className="data-table-container"
+          >
+            <table>
+              <tbody>
+                <tr
+                  key="row-1"
+                >
+                  <td
+                    className="cell"
+                    key="col-0"
+                  >
+                    <div>
+                      d
+                    </div>
+                  </td>
+                  <td
+                    className="cell Skipped"
+                    key="col-1"
+                  >
+                    <div>
+                      s
+                    </div>
+                  </td>
+                  <td
+                    className="cell Skipped"
+                    key="col-2"
+                  >
+                    <div>
+                      f
+                    </div>
+                  </td>
+                  <td
+                    className="cell Skipped"
+                    key="col-3"
+                  >
+                    <div>
+                      d
+                    </div>
+                  </td>
+                  <td
+                    className="cell Skipped"
+                    key="col-4"
+                  >
+                    <div>
+                      s
+                    </div>
+                  </td>
+                  <td
+                    className="cell Skipped"
+                    key="col-5"
+                  >
+                    <div>
+                      f
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Box>
+</TaggingGuideImportPreview>
+`;
+
+exports[`<TaggingGuideImportPreview /> Snapshots renders correctly for default props 2`] = `
+<TaggingGuideImportPreview
+  columns={
+    Array [
+      Object {
+        "name": "column1",
+        "required": true,
+      },
+    ]
+  }
+  columnsBinding={
+    Object {
+      "dsd": 0,
+    }
+  }
+  data={Array []}
+  onColumnBindChange={[MockFunction]}
+>
+  <Box
+    announce={false}
+    direction="column"
+    flex={true}
+    focusable={true}
+    id="TaggingGuideMappingPreviewContainer"
+    onScroll={[Function]}
+    pad="none"
+    responsive={true}
+    tag="div"
+  >
+    <div
+      className="grommetux-box grommetux-box--direction-column grommetux-box--responsive grommetux-box--flex grommetux-box--pad-none"
+      id="TaggingGuideMappingPreviewContainer"
+      onScroll={[Function]}
+      style={Object {}}
+    >
+      <div
+        id="TaggingGuideMappingPreviewGridContainer"
+      >
+        <div
+          id="TaggingGuideImportPreview"
+        >
+          <div
+            className="header-table-container"
+            style={
+              Object {
+                "top": "0px",
+              }
+            }
+          />
+          <div
+            className="data-table-container"
+          />
+        </div>
+      </div>
+    </div>
+  </Box>
+</TaggingGuideImportPreview>
+`;
+
+exports[`<TaggingGuideImportPreview /> Snapshots renders correctly for default props with state set as true 1`] = `
+<Box
+  announce={false}
+  direction="column"
+  flex={true}
+  focusable={true}
+  id="TaggingGuideMappingPreviewContainer"
+  onScroll={[Function]}
+  pad="none"
+  responsive={true}
+  tag="div"
+>
+  <div
+    id="TaggingGuideMappingPreviewGridContainer"
+  >
+    <div
+      id="TaggingGuideImportPreview"
+    >
+      <div
+        className="header-table-container"
+        style={
+          Object {
+            "top": "0px",
+          }
+        }
+      >
+        <table>
+          <tbody>
+            <tr>
+              <td
+                className=""
+                key="col-0"
+              >
+                <div>
+                  <Select
+                    multiple={false}
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "Skip",
+                          "value": "__skip__",
+                        },
+                        Object {
+                          "label": undefined,
+                          "value": "column1",
+                        },
+                      ]
+                    }
+                  />
+                </div>
+              </td>
+              <td
+                className="Skipped"
+                key="col-1"
+              >
+                <div>
+                  <Select
+                    multiple={false}
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "Skip",
+                          "value": "__skip__",
+                        },
+                        Object {
+                          "label": undefined,
+                          "value": "column1",
+                        },
+                      ]
+                    }
+                    value="Skip"
+                  />
+                </div>
+              </td>
+              <td
+                className="Skipped"
+                key="col-2"
+              >
+                <div>
+                  <Select
+                    multiple={false}
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "Skip",
+                          "value": "__skip__",
+                        },
+                        Object {
+                          "label": undefined,
+                          "value": "column1",
+                        },
+                      ]
+                    }
+                    value="Skip"
+                  />
+                </div>
+              </td>
+              <td
+                className="Skipped"
+                key="col-3"
+              >
+                <div>
+                  <Select
+                    multiple={false}
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "Skip",
+                          "value": "__skip__",
+                        },
+                        Object {
+                          "label": undefined,
+                          "value": "column1",
+                        },
+                      ]
+                    }
+                    value="Skip"
+                  />
+                </div>
+              </td>
+              <td
+                className="Skipped"
+                key="col-4"
+              >
+                <div>
+                  <Select
+                    multiple={false}
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "Skip",
+                          "value": "__skip__",
+                        },
+                        Object {
+                          "label": undefined,
+                          "value": "column1",
+                        },
+                      ]
+                    }
+                    value="Skip"
+                  />
+                </div>
+              </td>
+              <td
+                className="Skipped"
+                key="col-5"
+              >
+                <div>
+                  <Select
+                    multiple={false}
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "Skip",
+                          "value": "__skip__",
+                        },
+                        Object {
+                          "label": undefined,
+                          "value": "column1",
+                        },
+                      ]
+                    }
+                    value="Skip"
+                  />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="data-table-container"
+      >
+        <table>
+          <tbody>
+            <tr
+              key="row-1"
+            >
+              <td
+                className="cell"
+                key="col-0"
+              >
+                <div>
+                  d
+                </div>
+              </td>
+              <td
+                className="cell Skipped"
+                key="col-1"
+              >
+                <div>
+                  s
+                </div>
+              </td>
+              <td
+                className="cell Skipped"
+                key="col-2"
+              >
+                <div>
+                  f
+                </div>
+              </td>
+              <td
+                className="cell Skipped"
+                key="col-3"
+              >
+                <div>
+                  d
+                </div>
+              </td>
+              <td
+                className="cell Skipped"
+                key="col-4"
+              >
+                <div>
+                  s
+                </div>
+              </td>
+              <td
+                className="cell Skipped"
+                key="col-5"
+              >
+                <div>
+                  f
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</Box>
+`;

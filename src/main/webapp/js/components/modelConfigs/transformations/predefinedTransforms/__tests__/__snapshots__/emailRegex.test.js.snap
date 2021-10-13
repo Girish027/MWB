@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`emailRegex snapshot predefined transformation 1`] = `
+Object {
+  "/(([\\\\w_\\\\.-])+@([\\\\d\\\\w\\\\.-])+\\\\.([a-z\\\\.]){2,6})/i": "_class_email",
+}
+`;

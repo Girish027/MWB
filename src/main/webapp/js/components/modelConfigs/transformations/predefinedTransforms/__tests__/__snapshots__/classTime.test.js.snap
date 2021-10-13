@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`classTime snapshot predefined transformation 1`] = `
+Object {
+  "/d{1,2}s*(?:(?:am|pm)|(?:s:sd{1,2})s*(?:am|pm)?)/i": "_class_time",
+}
+`;

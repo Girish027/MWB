@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  mysql-db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'test_nltoolsdb'
+      MYSQL_USER: 'mwb'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+    expose:
+    - '3306'
+
+  ui:
+    image: advancedprototypes-ui:latestUI
+    command: ./docker.build.sh
+    container_name: latestUI
+    depends_on:
+    - mysql-db

@@ -1,0 +1,1617 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewSpeechModel /> Functionality: should call getDatasetsLabel should display the dataset message correctly 1`] = `
+<div
+  id="NewModel"
+>
+  <ul
+    className="form-fields"
+  >
+    <li>
+      <label>
+        Model
+      </label>
+      <div
+        style={
+          Object {
+            "color": "#313f54",
+          }
+        }
+      >
+         
+      </div>
+    </li>
+    <li>
+      <label>
+        Version Description
+      </label>
+      <withTheme(Textarea)
+        defaultValue=""
+        disabled={false}
+        name="modelDescription"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Enter a description"
+        styleOverride={
+          Object {
+            "width": "100%",
+          }
+        }
+        type="text"
+      />
+    </li>
+    <li>
+      <MultipleCheckboxFilter
+        allowEmpty={true}
+        className="DatasetsFilter"
+        disabled={false}
+        label={
+          <div
+            style={
+              Object {
+                "color": "#727272",
+              }
+            }
+          >
+            Datasets*
+          </div>
+        }
+        noOfColumns={3}
+        onChange={[Function]}
+        options={Array []}
+        showAsGrid={false}
+        showDropbox={false}
+        type={null}
+        value={Array []}
+      />
+    </li>
+  </ul>
+  <div
+    id="speech-dropbox"
+    style={
+      Object {
+        "marginBottom": "30px",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "30px",
+        "width": "400px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "paddingBottom": "20px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontSize": "14.5px",
+            "fontWeight": "normal",
+            "paddingBottom": "5px",
+          }
+        }
+      >
+        Upload word class file
+      </span>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "float": "right",
+            "icon": Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            },
+            "label": Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            },
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            }
+          }
+        >
+          <Memo(withTheme(Download))
+            fill="#004c97"
+            height="13px"
+            width="10px"
+          />
+        </span>
+        <div
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            }
+          }
+        >
+           Download existing 
+        </div>
+      </div>
+    </div>
+    <Dropzone
+      accept="text/plain"
+      acceptStyle={
+        Object {
+          "borderColor": "#00e676",
+        }
+      }
+      acceptedIcon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      activeStyle={
+        Object {
+          "borderColor": "#2196f3",
+        }
+      }
+      baseStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#eeeeee",
+          "borderRadius": 2,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "color": "#bdbdbd",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "height": "170px",
+          "outline": "none",
+          "padding": "20px",
+          "transition": "border .24s ease-in-out",
+        }
+      }
+      disabled={false}
+      icon={[Function]}
+      multiple={false}
+      rejectFile={[Function]}
+      rejectStyle={
+        Object {
+          "borderColor": "#ff1744",
+        }
+      }
+      removeFile={false}
+      saveFile={[Function]}
+      shouldUpload={false}
+      uploadHandler={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<NewSpeechModel /> Functionality: should call isDatasetValid should upload the config successfully 1`] = `
+<div
+  id="NewModel"
+>
+  <ul
+    className="form-fields"
+  >
+    <li>
+      <label>
+        Model
+      </label>
+      <div
+        style={
+          Object {
+            "color": "#313f54",
+          }
+        }
+      >
+         
+      </div>
+    </li>
+    <li>
+      <label>
+        Version Description
+      </label>
+      <withTheme(Textarea)
+        defaultValue=""
+        disabled={false}
+        name="modelDescription"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Enter a description"
+        styleOverride={
+          Object {
+            "width": "100%",
+          }
+        }
+        type="text"
+      />
+    </li>
+    <li>
+      <MultipleCheckboxFilter
+        allowEmpty={true}
+        className="DatasetsFilter"
+        disabled={false}
+        label={
+          <div
+            style={
+              Object {
+                "color": "#727272",
+              }
+            }
+          >
+            Datasets*
+          </div>
+        }
+        noOfColumns={3}
+        onChange={[Function]}
+        options={Array []}
+        showAsGrid={false}
+        showDropbox={false}
+        type={null}
+        value={Array []}
+      />
+    </li>
+  </ul>
+  <div
+    id="speech-dropbox"
+    style={
+      Object {
+        "marginBottom": "30px",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "30px",
+        "width": "400px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "paddingBottom": "20px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontSize": "14.5px",
+            "fontWeight": "normal",
+            "paddingBottom": "5px",
+          }
+        }
+      >
+        Upload word class file
+      </span>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "float": "right",
+            "icon": Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            },
+            "label": Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            },
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            }
+          }
+        >
+          <Memo(withTheme(Download))
+            fill="#004c97"
+            height="13px"
+            width="10px"
+          />
+        </span>
+        <div
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            }
+          }
+        >
+           Download existing 
+        </div>
+      </div>
+    </div>
+    <Dropzone
+      accept="text/plain"
+      acceptStyle={
+        Object {
+          "borderColor": "#00e676",
+        }
+      }
+      acceptedIcon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      activeStyle={
+        Object {
+          "borderColor": "#2196f3",
+        }
+      }
+      baseStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#eeeeee",
+          "borderRadius": 2,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "color": "#bdbdbd",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "height": "170px",
+          "outline": "none",
+          "padding": "20px",
+          "transition": "border .24s ease-in-out",
+        }
+      }
+      disabled={false}
+      icon={[Function]}
+      multiple={false}
+      rejectFile={[Function]}
+      rejectStyle={
+        Object {
+          "borderColor": "#ff1744",
+        }
+      }
+      removeFile={false}
+      saveFile={[Function]}
+      shouldUpload={false}
+      uploadHandler={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<NewSpeechModel /> Functionality: should call isValidated should set the model as valid 1`] = `
+<div
+  id="NewModel"
+>
+  <ul
+    className="form-fields"
+  >
+    <li>
+      <label>
+        Model
+      </label>
+      <div
+        style={
+          Object {
+            "color": "#313f54",
+          }
+        }
+      >
+         
+      </div>
+    </li>
+    <li>
+      <label>
+        Version Description
+      </label>
+      <withTheme(Textarea)
+        defaultValue=""
+        disabled={false}
+        name="modelDescription"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Enter a description"
+        styleOverride={
+          Object {
+            "width": "100%",
+          }
+        }
+        type="text"
+      />
+    </li>
+    <li>
+      <MultipleCheckboxFilter
+        allowEmpty={true}
+        className="DatasetsFilter"
+        disabled={false}
+        label={
+          <div
+            style={
+              Object {
+                "color": "#727272",
+              }
+            }
+          >
+            Datasets*
+          </div>
+        }
+        noOfColumns={3}
+        onChange={[Function]}
+        options={Array []}
+        showAsGrid={false}
+        showDropbox={false}
+        type={null}
+        value={Array []}
+      />
+    </li>
+  </ul>
+  <div
+    id="speech-dropbox"
+    style={
+      Object {
+        "marginBottom": "30px",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "30px",
+        "width": "400px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "paddingBottom": "20px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontSize": "14.5px",
+            "fontWeight": "normal",
+            "paddingBottom": "5px",
+          }
+        }
+      >
+        Upload word class file
+      </span>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "float": "right",
+            "icon": Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            },
+            "label": Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            },
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            }
+          }
+        >
+          <Memo(withTheme(Download))
+            fill="#004c97"
+            height="13px"
+            width="10px"
+          />
+        </span>
+        <div
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            }
+          }
+        >
+           Download existing 
+        </div>
+      </div>
+    </div>
+    <Dropzone
+      accept="text/plain"
+      acceptStyle={
+        Object {
+          "borderColor": "#00e676",
+        }
+      }
+      acceptedIcon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      activeStyle={
+        Object {
+          "borderColor": "#2196f3",
+        }
+      }
+      baseStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#eeeeee",
+          "borderRadius": 2,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "color": "#bdbdbd",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "height": "170px",
+          "outline": "none",
+          "padding": "20px",
+          "transition": "border .24s ease-in-out",
+        }
+      }
+      disabled={false}
+      icon={[Function]}
+      multiple={false}
+      rejectFile={[Function]}
+      rejectStyle={
+        Object {
+          "borderColor": "#ff1744",
+        }
+      }
+      removeFile={false}
+      saveFile={[Function]}
+      shouldUpload={false}
+      uploadHandler={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<NewSpeechModel /> Functionality: should call onclickDownload should call getDataURL 1`] = `
+<div
+  id="NewModel"
+>
+  <ul
+    className="form-fields"
+  >
+    <li>
+      <label>
+        Model
+      </label>
+      <div
+        style={
+          Object {
+            "color": "#313f54",
+          }
+        }
+      >
+         
+      </div>
+    </li>
+    <li>
+      <label>
+        Version Description
+      </label>
+      <withTheme(Textarea)
+        defaultValue=""
+        disabled={false}
+        name="modelDescription"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Enter a description"
+        styleOverride={
+          Object {
+            "width": "100%",
+          }
+        }
+        type="text"
+      />
+    </li>
+    <li>
+      <MultipleCheckboxFilter
+        allowEmpty={true}
+        className="DatasetsFilter"
+        disabled={false}
+        label={
+          <div
+            style={
+              Object {
+                "color": "#727272",
+              }
+            }
+          >
+            Datasets*
+          </div>
+        }
+        noOfColumns={3}
+        onChange={[Function]}
+        options={Array []}
+        showAsGrid={false}
+        showDropbox={false}
+        type={null}
+        value={Array []}
+      />
+    </li>
+  </ul>
+  <div
+    id="speech-dropbox"
+    style={
+      Object {
+        "marginBottom": "30px",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "30px",
+        "width": "400px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "paddingBottom": "20px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontSize": "14.5px",
+            "fontWeight": "normal",
+            "paddingBottom": "5px",
+          }
+        }
+      >
+        Upload word class file
+      </span>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "float": "right",
+            "icon": Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            },
+            "label": Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            },
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            }
+          }
+        >
+          <Memo(withTheme(Download))
+            fill="#004c97"
+            height="13px"
+            width="10px"
+          />
+        </span>
+        <div
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            }
+          }
+        >
+           Download existing 
+        </div>
+      </div>
+    </div>
+    <Dropzone
+      accept="text/plain"
+      acceptStyle={
+        Object {
+          "borderColor": "#00e676",
+        }
+      }
+      acceptedIcon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      activeStyle={
+        Object {
+          "borderColor": "#2196f3",
+        }
+      }
+      baseStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#eeeeee",
+          "borderRadius": 2,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "color": "#bdbdbd",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "height": "170px",
+          "outline": "none",
+          "padding": "20px",
+          "transition": "border .24s ease-in-out",
+        }
+      }
+      disabled={false}
+      icon={[Function]}
+      multiple={false}
+      rejectFile={[Function]}
+      rejectStyle={
+        Object {
+          "borderColor": "#ff1744",
+        }
+      }
+      removeFile={false}
+      saveFile={[Function]}
+      shouldUpload={false}
+      uploadHandler={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<NewSpeechModel /> Functionality: should call rejectFile should call onChange 1`] = `
+<div
+  id="NewModel"
+>
+  <ul
+    className="form-fields"
+  >
+    <li>
+      <label>
+        Model
+      </label>
+      <div
+        style={
+          Object {
+            "color": "#313f54",
+          }
+        }
+      >
+         
+      </div>
+    </li>
+    <li>
+      <label>
+        Version Description
+      </label>
+      <withTheme(Textarea)
+        defaultValue=""
+        disabled={false}
+        name="modelDescription"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Enter a description"
+        styleOverride={
+          Object {
+            "width": "100%",
+          }
+        }
+        type="text"
+      />
+    </li>
+    <li>
+      <MultipleCheckboxFilter
+        allowEmpty={true}
+        className="DatasetsFilter"
+        disabled={false}
+        label={
+          <div
+            style={
+              Object {
+                "color": "#727272",
+              }
+            }
+          >
+            Datasets*
+          </div>
+        }
+        noOfColumns={3}
+        onChange={[Function]}
+        options={Array []}
+        showAsGrid={false}
+        showDropbox={false}
+        type={null}
+        value={Array []}
+      />
+    </li>
+  </ul>
+  <div
+    id="speech-dropbox"
+    style={
+      Object {
+        "marginBottom": "30px",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "30px",
+        "width": "400px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "paddingBottom": "20px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontSize": "14.5px",
+            "fontWeight": "normal",
+            "paddingBottom": "5px",
+          }
+        }
+      >
+        Upload word class file
+      </span>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "float": "right",
+            "icon": Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            },
+            "label": Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            },
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            }
+          }
+        >
+          <Memo(withTheme(Download))
+            fill="#004c97"
+            height="13px"
+            width="10px"
+          />
+        </span>
+        <div
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            }
+          }
+        >
+           Download existing 
+        </div>
+      </div>
+    </div>
+    <Dropzone
+      accept="text/plain"
+      acceptStyle={
+        Object {
+          "borderColor": "#00e676",
+        }
+      }
+      acceptedIcon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      activeStyle={
+        Object {
+          "borderColor": "#2196f3",
+        }
+      }
+      baseStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#eeeeee",
+          "borderRadius": 2,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "color": "#bdbdbd",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "height": "170px",
+          "outline": "none",
+          "padding": "20px",
+          "transition": "border .24s ease-in-out",
+        }
+      }
+      disabled={false}
+      icon={[Function]}
+      multiple={false}
+      rejectFile={[Function]}
+      rejectStyle={
+        Object {
+          "borderColor": "#ff1744",
+        }
+      }
+      removeFile={true}
+      saveFile={[Function]}
+      shouldUpload={false}
+      uploadHandler={[Function]}
+    />
+    <ValidationPlaceholder
+      styleOverride={
+        Object {
+          "marginTop": "10px",
+        }
+      }
+      validationMessage="File format or content is invalid. Please consult documentation."
+    />
+  </div>
+</div>
+`;
+
+exports[`<NewSpeechModel /> Functionality: should call saveFile should upload the file successfully 1`] = `
+<div
+  id="NewModel"
+>
+  <ul
+    className="form-fields"
+  >
+    <li>
+      <label>
+        Model
+      </label>
+      <div
+        style={
+          Object {
+            "color": "#313f54",
+          }
+        }
+      >
+         
+      </div>
+    </li>
+    <li>
+      <label>
+        Version Description
+      </label>
+      <withTheme(Textarea)
+        defaultValue=""
+        disabled={false}
+        name="modelDescription"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Enter a description"
+        styleOverride={
+          Object {
+            "width": "100%",
+          }
+        }
+        type="text"
+      />
+    </li>
+    <li>
+      <MultipleCheckboxFilter
+        allowEmpty={true}
+        className="DatasetsFilter"
+        disabled={false}
+        label={
+          <div
+            style={
+              Object {
+                "color": "#727272",
+              }
+            }
+          >
+            Datasets*
+          </div>
+        }
+        noOfColumns={3}
+        onChange={[Function]}
+        options={Array []}
+        showAsGrid={false}
+        showDropbox={false}
+        type={null}
+        value={Array []}
+      />
+    </li>
+  </ul>
+  <div
+    id="speech-dropbox"
+    style={
+      Object {
+        "marginBottom": "30px",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "30px",
+        "width": "400px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "paddingBottom": "20px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontSize": "14.5px",
+            "fontWeight": "normal",
+            "paddingBottom": "5px",
+          }
+        }
+      >
+        Upload word class file
+      </span>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "float": "right",
+            "icon": Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            },
+            "label": Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            },
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            }
+          }
+        >
+          <Memo(withTheme(Download))
+            fill="#004c97"
+            height="13px"
+            width="10px"
+          />
+        </span>
+        <div
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            }
+          }
+        >
+           Download existing 
+        </div>
+      </div>
+    </div>
+    <Dropzone
+      accept="text/plain"
+      acceptStyle={
+        Object {
+          "borderColor": "#00e676",
+        }
+      }
+      acceptedIcon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      activeStyle={
+        Object {
+          "borderColor": "#2196f3",
+        }
+      }
+      baseStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#eeeeee",
+          "borderRadius": 2,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "color": "#bdbdbd",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "height": "170px",
+          "outline": "none",
+          "padding": "20px",
+          "transition": "border .24s ease-in-out",
+        }
+      }
+      disabled={false}
+      icon={[Function]}
+      multiple={false}
+      rejectFile={[Function]}
+      rejectStyle={
+        Object {
+          "borderColor": "#ff1744",
+        }
+      }
+      removeFile={false}
+      saveFile={[Function]}
+      shouldUpload={false}
+      uploadHandler={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<NewSpeechModel /> Functionality: should call saveModelChanges should call saveModelChanges 1`] = `
+<div
+  id="NewModel"
+>
+  <ul
+    className="form-fields"
+  >
+    <li>
+      <label>
+        Model
+      </label>
+      <div
+        style={
+          Object {
+            "color": "#313f54",
+          }
+        }
+      >
+         
+      </div>
+    </li>
+    <li>
+      <label>
+        Version Description
+      </label>
+      <withTheme(Textarea)
+        defaultValue=""
+        disabled={false}
+        name="modelDescription"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Enter a description"
+        styleOverride={
+          Object {
+            "width": "100%",
+          }
+        }
+        type="text"
+      />
+    </li>
+    <li>
+      <MultipleCheckboxFilter
+        allowEmpty={true}
+        className="DatasetsFilter"
+        disabled={false}
+        label={
+          <div
+            style={
+              Object {
+                "color": "#727272",
+              }
+            }
+          >
+            Datasets*
+          </div>
+        }
+        noOfColumns={3}
+        onChange={[Function]}
+        options={Array []}
+        showAsGrid={false}
+        showDropbox={false}
+        type={null}
+        value={Array []}
+      />
+    </li>
+  </ul>
+  <div
+    id="speech-dropbox"
+    style={
+      Object {
+        "marginBottom": "30px",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "30px",
+        "width": "400px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "paddingBottom": "20px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontSize": "14.5px",
+            "fontWeight": "normal",
+            "paddingBottom": "5px",
+          }
+        }
+      >
+        Upload word class file
+      </span>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "float": "right",
+            "icon": Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            },
+            "label": Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            },
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            }
+          }
+        >
+          <Memo(withTheme(Download))
+            fill="#004c97"
+            height="13px"
+            width="10px"
+          />
+        </span>
+        <div
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            }
+          }
+        >
+           Download existing 
+        </div>
+      </div>
+    </div>
+    <Dropzone
+      accept="text/plain"
+      acceptStyle={
+        Object {
+          "borderColor": "#00e676",
+        }
+      }
+      acceptedIcon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      activeStyle={
+        Object {
+          "borderColor": "#2196f3",
+        }
+      }
+      baseStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#eeeeee",
+          "borderRadius": 2,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "color": "#bdbdbd",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "height": "170px",
+          "outline": "none",
+          "padding": "20px",
+          "transition": "border .24s ease-in-out",
+        }
+      }
+      disabled={false}
+      icon={[Function]}
+      multiple={false}
+      rejectFile={[Function]}
+      rejectStyle={
+        Object {
+          "borderColor": "#ff1744",
+        }
+      }
+      removeFile={false}
+      saveFile={[Function]}
+      shouldUpload={false}
+      uploadHandler={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<NewSpeechModel /> Snapshots should match with basic props 1`] = `
+<div
+  id="NewModel"
+>
+  <ul
+    className="form-fields"
+  >
+    <li>
+      <label>
+        Model
+      </label>
+      <div
+        style={
+          Object {
+            "color": "#313f54",
+          }
+        }
+      >
+         
+      </div>
+    </li>
+    <li>
+      <label>
+        Version Description
+      </label>
+      <withTheme(Textarea)
+        defaultValue=""
+        disabled={false}
+        name="modelDescription"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Enter a description"
+        styleOverride={
+          Object {
+            "width": "100%",
+          }
+        }
+        type="text"
+      />
+    </li>
+    <li>
+      <MultipleCheckboxFilter
+        allowEmpty={true}
+        className="DatasetsFilter"
+        disabled={false}
+        label={
+          <div
+            style={
+              Object {
+                "color": "#727272",
+              }
+            }
+          >
+            Datasets*
+          </div>
+        }
+        noOfColumns={3}
+        onChange={[Function]}
+        options={Array []}
+        showAsGrid={false}
+        showDropbox={false}
+        type={null}
+        value={Array []}
+      />
+    </li>
+  </ul>
+  <div
+    id="speech-dropbox"
+    style={
+      Object {
+        "marginBottom": "30px",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "30px",
+        "width": "400px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "paddingBottom": "20px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontSize": "14.5px",
+            "fontWeight": "normal",
+            "paddingBottom": "5px",
+          }
+        }
+      >
+        Upload word class file
+      </span>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "float": "right",
+            "icon": Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            },
+            "label": Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            },
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "marginTop": "-3px",
+              "paddingRight": "5px",
+            }
+          }
+        >
+          <Memo(withTheme(Download))
+            fill="#004c97"
+            height="13px"
+            width="10px"
+          />
+        </span>
+        <div
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#6E6E6E",
+              "cursor": "pointer",
+              "fontSize": "12.5px",
+              "fontWeight": "normal",
+              "textDecoration": "underline",
+            }
+          }
+        >
+           Download existing 
+        </div>
+      </div>
+    </div>
+    <Dropzone
+      accept="text/plain"
+      acceptStyle={
+        Object {
+          "borderColor": "#00e676",
+        }
+      }
+      acceptedIcon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      activeStyle={
+        Object {
+          "borderColor": "#2196f3",
+        }
+      }
+      baseStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#eeeeee",
+          "borderRadius": 2,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "color": "#bdbdbd",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "height": "170px",
+          "outline": "none",
+          "padding": "20px",
+          "transition": "border .24s ease-in-out",
+        }
+      }
+      disabled={false}
+      icon={[Function]}
+      multiple={false}
+      rejectFile={[Function]}
+      rejectStyle={
+        Object {
+          "borderColor": "#ff1744",
+        }
+      }
+      removeFile={false}
+      saveFile={[Function]}
+      shouldUpload={false}
+      uploadHandler={[Function]}
+    />
+  </div>
+</div>
+`;

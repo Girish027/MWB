@@ -1,0 +1,3051 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TransformationItems /> Snapshots renders correctly with string type transformation 1`] = `
+<div
+  id="TransformationItems"
+>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "lineHeight": "60px",
+        "paddingBottom": 2,
+        "paddingLeft": 30,
+      }
+    }
+  >
+    Transformations
+  </div>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      NEW
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      PREDEFINED
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    className="dragdrop-container"
+  >
+    <DragDropWrapper
+      droppableId="transformation-items"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={
+        Array [
+          Object {
+            "content": <div
+              data-idx={0}
+            >
+              <DraggableItem
+                className="transformation-list-item transformation-selected-item"
+                id="non-breaking-space-regex-0"
+                index={0}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={0}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  non-breaking-space-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-replace
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "non-breaking-space-regex-0",
+          },
+          Object {
+            "content": <div
+              data-idx={1}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="whitespace-normalization-1"
+                index={1}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={1}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  whitespace-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "whitespace-normalization-1",
+          },
+          Object {
+            "content": <div
+              data-idx={2}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="chat-shortcuts-2"
+                index={2}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={2}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  chat-shortcuts
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems-nocase
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "chat-shortcuts-2",
+          },
+          Object {
+            "content": <div
+              data-idx={3}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="word-substitutions-3"
+                index={3}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={3}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  word-substitutions
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "word-substitutions-3",
+          },
+          Object {
+            "content": <div
+              data-idx={4}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="email-regex-4"
+                index={4}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={4}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  email-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  wordclass-subst-regex
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "email-regex-4",
+          },
+          Object {
+            "content": <div
+              data-idx={5}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="html-encoding-5"
+                index={5}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={5}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  html-encoding
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-removal
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "html-encoding-5",
+          },
+          Object {
+            "content": <div
+              data-idx={6}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="enchant-spellcheck-enhance-6"
+                index={6}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={6}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  enchant-spellcheck-enhance
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  spell-checking
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "enchant-spellcheck-enhance-6",
+          },
+          Object {
+            "content": <div
+              data-idx={7}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="case-normalization-7"
+                index={7}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={7}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  case-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "case-normalization-7",
+          },
+          Object {
+            "content": <div
+              data-idx={8}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="training-data-stems-8"
+                index={8}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={8}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  training-data-stems
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "training-data-stems-8",
+          },
+          Object {
+            "content": <div
+              data-idx={9}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="stops-9"
+                index={9}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={9}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  stops
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stop-words
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "stops-9",
+          },
+        ]
+      }
+      onDragEnd={[Function]}
+    />
+  </div>
+  <Dialog
+    okString="Delete"
+    onCancel={[Function]}
+    onOk={[Function]}
+    showCancel={true}
+    showOk={true}
+    title="Delete Transformation Item Confirmation"
+    visible={false}
+  >
+    <div>
+      <label>
+        Select Delete to remove transformation: 
+      </label>
+      <br />
+    </div>
+  </Dialog>
+</div>
+`;
+
+exports[`<TransformationItems /> Snapshots renders getItems correctly with listItems 1`] = `
+<div
+  id="TransformationItems"
+>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "lineHeight": "60px",
+        "paddingBottom": 2,
+        "paddingLeft": 30,
+      }
+    }
+  >
+    Transformations
+  </div>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      NEW
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      PREDEFINED
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    className="dragdrop-container"
+  >
+    <DragDropWrapper
+      droppableId="transformation-items"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={
+        Array [
+          Object {
+            "content": <div
+              data-idx={0}
+            >
+              <DraggableItem
+                className="transformation-list-item transformation-selected-item"
+                id="non-breaking-space-regex-0"
+                index={0}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={0}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  non-breaking-space-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-replace
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "non-breaking-space-regex-0",
+          },
+          Object {
+            "content": <div
+              data-idx={1}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="whitespace-normalization-1"
+                index={1}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={1}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  whitespace-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "whitespace-normalization-1",
+          },
+          Object {
+            "content": <div
+              data-idx={2}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="chat-shortcuts-2"
+                index={2}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={2}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  chat-shortcuts
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems-nocase
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "chat-shortcuts-2",
+          },
+          Object {
+            "content": <div
+              data-idx={3}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="word-substitutions-3"
+                index={3}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={3}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  word-substitutions
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "word-substitutions-3",
+          },
+          Object {
+            "content": <div
+              data-idx={4}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="email-regex-4"
+                index={4}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={4}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  email-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  wordclass-subst-regex
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "email-regex-4",
+          },
+          Object {
+            "content": <div
+              data-idx={5}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="html-encoding-5"
+                index={5}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={5}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  html-encoding
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-removal
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "html-encoding-5",
+          },
+          Object {
+            "content": <div
+              data-idx={6}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="enchant-spellcheck-enhance-6"
+                index={6}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={6}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  enchant-spellcheck-enhance
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  spell-checking
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "enchant-spellcheck-enhance-6",
+          },
+          Object {
+            "content": <div
+              data-idx={7}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="case-normalization-7"
+                index={7}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={7}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  case-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "case-normalization-7",
+          },
+          Object {
+            "content": <div
+              data-idx={8}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="training-data-stems-8"
+                index={8}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={8}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  training-data-stems
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "training-data-stems-8",
+          },
+          Object {
+            "content": <div
+              data-idx={9}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="stops-9"
+                index={9}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={9}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  stops
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stop-words
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "stops-9",
+          },
+        ]
+      }
+      onDragEnd={[Function]}
+    />
+  </div>
+  <Dialog
+    okString="Delete"
+    onCancel={[Function]}
+    onOk={[Function]}
+    showCancel={true}
+    showOk={true}
+    title="Delete Transformation Item Confirmation"
+    visible={false}
+  >
+    <div>
+      <label>
+        Select Delete to remove transformation: 
+      </label>
+      <br />
+    </div>
+  </Dialog>
+</div>
+`;
+
+exports[`<TransformationItems /> Snapshots renders getItems correctly with listItems as undefined 1`] = `
+<div
+  id="TransformationItems"
+>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "lineHeight": "60px",
+        "paddingBottom": 2,
+        "paddingLeft": 30,
+      }
+    }
+  >
+    Transformations
+  </div>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      NEW
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      PREDEFINED
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    className="dragdrop-container"
+  >
+    <DragDropWrapper
+      droppableId="transformation-items"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={
+        Array [
+          Object {
+            "content": <div
+              data-idx={0}
+            >
+              <DraggableItem
+                className="transformation-list-item transformation-selected-item"
+                id="non-breaking-space-regex-0"
+                index={0}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={0}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  non-breaking-space-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-replace
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "non-breaking-space-regex-0",
+          },
+          Object {
+            "content": <div
+              data-idx={1}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="whitespace-normalization-1"
+                index={1}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={1}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  whitespace-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "whitespace-normalization-1",
+          },
+          Object {
+            "content": <div
+              data-idx={2}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="chat-shortcuts-2"
+                index={2}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={2}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  chat-shortcuts
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems-nocase
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "chat-shortcuts-2",
+          },
+          Object {
+            "content": <div
+              data-idx={3}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="word-substitutions-3"
+                index={3}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={3}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  word-substitutions
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "word-substitutions-3",
+          },
+          Object {
+            "content": <div
+              data-idx={4}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="email-regex-4"
+                index={4}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={4}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  email-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  wordclass-subst-regex
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "email-regex-4",
+          },
+          Object {
+            "content": <div
+              data-idx={5}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="html-encoding-5"
+                index={5}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={5}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  html-encoding
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-removal
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "html-encoding-5",
+          },
+          Object {
+            "content": <div
+              data-idx={6}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="enchant-spellcheck-enhance-6"
+                index={6}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={6}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  enchant-spellcheck-enhance
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  spell-checking
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "enchant-spellcheck-enhance-6",
+          },
+          Object {
+            "content": <div
+              data-idx={7}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="case-normalization-7"
+                index={7}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={7}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  case-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "case-normalization-7",
+          },
+          Object {
+            "content": <div
+              data-idx={8}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="training-data-stems-8"
+                index={8}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={8}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  training-data-stems
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "training-data-stems-8",
+          },
+          Object {
+            "content": <div
+              data-idx={9}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="stops-9"
+                index={9}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={9}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  stops
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stop-words
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "stops-9",
+          },
+        ]
+      }
+      onDragEnd={[Function]}
+    />
+  </div>
+  <Dialog
+    okString="Delete"
+    onCancel={[Function]}
+    onOk={[Function]}
+    showCancel={true}
+    showOk={true}
+    title="Delete Transformation Item Confirmation"
+    visible={false}
+  >
+    <div>
+      <label>
+        Select Delete to remove transformation: 
+      </label>
+      <br />
+    </div>
+  </Dialog>
+</div>
+`;
+
+exports[`<TransformationItems /> Snapshots renders getItems correctly with listItems as undefined 2`] = `
+<div
+  id="TransformationItems"
+>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "lineHeight": "60px",
+        "paddingBottom": 2,
+        "paddingLeft": 30,
+      }
+    }
+  >
+    Transformations
+  </div>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      NEW
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      PREDEFINED
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    className="dragdrop-container"
+  >
+    <DragDropWrapper
+      droppableId="transformation-items"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={
+        Array [
+          Object {
+            "content": <div
+              data-idx={0}
+            >
+              <DraggableItem
+                className="transformation-list-item transformation-selected-item"
+                id="non-breaking-space-regex-0"
+                index={0}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={0}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  non-breaking-space-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-replace
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "non-breaking-space-regex-0",
+          },
+          Object {
+            "content": <div
+              data-idx={1}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="whitespace-normalization-1"
+                index={1}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={1}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  whitespace-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "whitespace-normalization-1",
+          },
+          Object {
+            "content": <div
+              data-idx={2}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="chat-shortcuts-2"
+                index={2}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={2}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  chat-shortcuts
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems-nocase
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "chat-shortcuts-2",
+          },
+          Object {
+            "content": <div
+              data-idx={3}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="word-substitutions-3"
+                index={3}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={3}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  word-substitutions
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "word-substitutions-3",
+          },
+          Object {
+            "content": <div
+              data-idx={4}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="email-regex-4"
+                index={4}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={4}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  email-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  wordclass-subst-regex
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "email-regex-4",
+          },
+          Object {
+            "content": <div
+              data-idx={5}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="html-encoding-5"
+                index={5}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={5}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  html-encoding
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-removal
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "html-encoding-5",
+          },
+          Object {
+            "content": <div
+              data-idx={6}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="enchant-spellcheck-enhance-6"
+                index={6}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={6}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  enchant-spellcheck-enhance
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  spell-checking
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "enchant-spellcheck-enhance-6",
+          },
+          Object {
+            "content": <div
+              data-idx={7}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="case-normalization-7"
+                index={7}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={7}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  case-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "case-normalization-7",
+          },
+          Object {
+            "content": <div
+              data-idx={8}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="training-data-stems-8"
+                index={8}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={8}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  training-data-stems
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "training-data-stems-8",
+          },
+          Object {
+            "content": <div
+              data-idx={9}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="stops-9"
+                index={9}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={9}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  stops
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stop-words
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "stops-9",
+          },
+        ]
+      }
+      onDragEnd={[Function]}
+    />
+  </div>
+  <Dialog
+    okString="Delete"
+    onCancel={[Function]}
+    onOk={[Function]}
+    showCancel={true}
+    showOk={true}
+    title="Delete Transformation Item Confirmation"
+    visible={false}
+  >
+    <div>
+      <label>
+        Select Delete to remove transformation: 
+      </label>
+      <br />
+    </div>
+  </Dialog>
+</div>
+`;
+
+exports[`<TransformationItems /> Snapshots renders getItems correctly with listItems as undefined 3`] = `
+<div
+  id="TransformationItems"
+>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "lineHeight": "60px",
+        "paddingBottom": 2,
+        "paddingLeft": 30,
+      }
+    }
+  >
+    Transformations
+  </div>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      NEW
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      PREDEFINED
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    className="dragdrop-container"
+  >
+    <DragDropWrapper
+      droppableId="transformation-items"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={
+        Array [
+          Object {
+            "content": <div
+              data-idx={0}
+            >
+              <DraggableItem
+                className="transformation-list-item transformation-selected-item"
+                id="non-breaking-space-regex-0"
+                index={0}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={0}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  non-breaking-space-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-replace
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "non-breaking-space-regex-0",
+          },
+          Object {
+            "content": <div
+              data-idx={1}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="whitespace-normalization-1"
+                index={1}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={1}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  whitespace-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "whitespace-normalization-1",
+          },
+          Object {
+            "content": <div
+              data-idx={2}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="chat-shortcuts-2"
+                index={2}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={2}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  chat-shortcuts
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems-nocase
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "chat-shortcuts-2",
+          },
+          Object {
+            "content": <div
+              data-idx={3}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="word-substitutions-3"
+                index={3}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={3}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  word-substitutions
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "word-substitutions-3",
+          },
+          Object {
+            "content": <div
+              data-idx={4}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="email-regex-4"
+                index={4}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={4}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  email-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  wordclass-subst-regex
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "email-regex-4",
+          },
+          Object {
+            "content": <div
+              data-idx={5}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="html-encoding-5"
+                index={5}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={5}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  html-encoding
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-removal
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "html-encoding-5",
+          },
+          Object {
+            "content": <div
+              data-idx={6}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="enchant-spellcheck-enhance-6"
+                index={6}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={6}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  enchant-spellcheck-enhance
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  spell-checking
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "enchant-spellcheck-enhance-6",
+          },
+          Object {
+            "content": <div
+              data-idx={7}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="case-normalization-7"
+                index={7}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={7}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  case-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "case-normalization-7",
+          },
+          Object {
+            "content": <div
+              data-idx={8}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="training-data-stems-8"
+                index={8}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={8}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  training-data-stems
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "training-data-stems-8",
+          },
+          Object {
+            "content": <div
+              data-idx={9}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="stops-9"
+                index={9}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={9}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  stops
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stop-words
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "stops-9",
+          },
+        ]
+      }
+      onDragEnd={[Function]}
+    />
+  </div>
+  <Dialog
+    okString="Delete"
+    onCancel={[Function]}
+    onOk={[Function]}
+    showCancel={true}
+    showOk={true}
+    title="Delete Transformation Item Confirmation"
+    visible={false}
+  >
+    <div>
+      <label>
+        Select Delete to remove transformation: 
+      </label>
+      <br />
+    </div>
+  </Dialog>
+</div>
+`;
+
+exports[`<TransformationItems /> Snapshots renders getItems correctly with listItems as undefined 4`] = `
+<div
+  id="TransformationItems"
+>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "lineHeight": "60px",
+        "paddingBottom": 2,
+        "paddingLeft": 30,
+      }
+    }
+  >
+    Transformations
+  </div>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      NEW
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      PREDEFINED
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    className="dragdrop-container"
+  >
+    <DragDropWrapper
+      droppableId="transformation-items"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={
+        Array [
+          Object {
+            "content": <div
+              data-idx={0}
+            >
+              <DraggableItem
+                className="transformation-list-item transformation-selected-item"
+                id="non-breaking-space-regex-0"
+                index={0}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={0}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  non-breaking-space-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-replace
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "non-breaking-space-regex-0",
+          },
+          Object {
+            "content": <div
+              data-idx={1}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="whitespace-normalization-1"
+                index={1}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={1}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  whitespace-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "whitespace-normalization-1",
+          },
+          Object {
+            "content": <div
+              data-idx={2}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="chat-shortcuts-2"
+                index={2}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={2}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  chat-shortcuts
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems-nocase
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "chat-shortcuts-2",
+          },
+          Object {
+            "content": <div
+              data-idx={3}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="word-substitutions-3"
+                index={3}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={3}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  word-substitutions
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "word-substitutions-3",
+          },
+          Object {
+            "content": <div
+              data-idx={4}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="email-regex-4"
+                index={4}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={4}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  email-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  wordclass-subst-regex
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "email-regex-4",
+          },
+          Object {
+            "content": <div
+              data-idx={5}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="html-encoding-5"
+                index={5}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={5}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  html-encoding
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-removal
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "html-encoding-5",
+          },
+          Object {
+            "content": <div
+              data-idx={6}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="enchant-spellcheck-enhance-6"
+                index={6}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={6}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  enchant-spellcheck-enhance
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  spell-checking
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "enchant-spellcheck-enhance-6",
+          },
+          Object {
+            "content": <div
+              data-idx={7}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="case-normalization-7"
+                index={7}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={7}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  case-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "case-normalization-7",
+          },
+          Object {
+            "content": <div
+              data-idx={8}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="training-data-stems-8"
+                index={8}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={8}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  training-data-stems
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "training-data-stems-8",
+          },
+          Object {
+            "content": <div
+              data-idx={9}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="stops-9"
+                index={9}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={9}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  stops
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stop-words
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "stops-9",
+          },
+        ]
+      }
+      onDragEnd={[Function]}
+    />
+  </div>
+  <AddTransformationDialog
+    dispatch={[MockFunction]}
+    onCancel={[Function]}
+    onOK={[Function]}
+    showDialog={true}
+    transformations={
+      Array [
+        Object {
+          "non-breaking-space-regex": Object {
+            "mappings": Object {
+              "/\\\\xao/i": " ",
+            },
+            "type": "regex-replace",
+          },
+        },
+        "whitespace-normalization",
+        Object {
+          "chat-shortcuts": Object {
+            "mappings": Object {
+              "XOXO": "Hugs and Kisses",
+            },
+            "type": "stems-nocase",
+          },
+        },
+        Object {
+          "word-substitutions": Object {
+            "comments": "These are client specific abbreviations",
+            "mappings": Object {
+              "_class_debit_card's": "_class_debit_card is",
+              "account's": "account",
+              "youve": "you have",
+            },
+            "type": "stems",
+          },
+        },
+        Object {
+          "email-regex": Object {
+            "mappings": Object {
+              "/(([\\\\w_\\\\.-])+@([\\\\d\\\\w\\\\.-])+\\\\.([a-z\\\\.]){2,6})/i": "_class_email",
+            },
+            "type": "wordclass-subst-regex",
+          },
+        },
+        Object {
+          "html-encoding": Object {
+            "list": Array [
+              "/%[0-9]+/",
+            ],
+            "type": "regex-removal",
+          },
+        },
+        Object {
+          "enchant-spellcheck-enhance": Object {
+            "type": "spell-checking",
+          },
+        },
+        "case-normalization",
+        "training-data-stems",
+        Object {
+          "stops": Object {
+            "list": Array [
+              "been",
+            ],
+            "type": "stop-words",
+          },
+        },
+      ]
+    }
+  />
+  <AddPredefinedTransformationDialog
+    onCancel={[Function]}
+    onOK={[Function]}
+    showDialog={true}
+  />
+  <Dialog
+    okString="Delete"
+    onCancel={[Function]}
+    onOk={[Function]}
+    showCancel={true}
+    showOk={true}
+    title="Delete Transformation Item Confirmation"
+    visible={false}
+  >
+    <div>
+      <label>
+        Select Delete to remove transformation: 
+      </label>
+      <br />
+    </div>
+  </Dialog>
+</div>
+`;
+
+exports[`<TransformationItems /> Snapshots should not call dispatch action on onDragEnd call without destination and source 1`] = `
+<div
+  id="TransformationItems"
+>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "lineHeight": "60px",
+        "paddingBottom": 2,
+        "paddingLeft": 30,
+      }
+    }
+  >
+    Transformations
+  </div>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      NEW
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      PREDEFINED
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    className="dragdrop-container"
+  >
+    <DragDropWrapper
+      droppableId="transformation-items"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={
+        Array [
+          Object {
+            "content": <div
+              data-idx={0}
+            >
+              <DraggableItem
+                className="transformation-list-item transformation-selected-item"
+                id="non-breaking-space-regex-0"
+                index={0}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={0}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  non-breaking-space-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-replace
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "non-breaking-space-regex-0",
+          },
+          Object {
+            "content": <div
+              data-idx={1}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="whitespace-normalization-1"
+                index={1}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={1}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  whitespace-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "whitespace-normalization-1",
+          },
+          Object {
+            "content": <div
+              data-idx={2}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="chat-shortcuts-2"
+                index={2}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={2}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  chat-shortcuts
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems-nocase
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "chat-shortcuts-2",
+          },
+          Object {
+            "content": <div
+              data-idx={3}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="word-substitutions-3"
+                index={3}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={3}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  word-substitutions
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "word-substitutions-3",
+          },
+          Object {
+            "content": <div
+              data-idx={4}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="email-regex-4"
+                index={4}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={4}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  email-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  wordclass-subst-regex
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "email-regex-4",
+          },
+          Object {
+            "content": <div
+              data-idx={5}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="html-encoding-5"
+                index={5}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={5}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  html-encoding
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-removal
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "html-encoding-5",
+          },
+          Object {
+            "content": <div
+              data-idx={6}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="enchant-spellcheck-enhance-6"
+                index={6}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={6}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  enchant-spellcheck-enhance
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  spell-checking
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "enchant-spellcheck-enhance-6",
+          },
+          Object {
+            "content": <div
+              data-idx={7}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="case-normalization-7"
+                index={7}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={7}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  case-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "case-normalization-7",
+          },
+          Object {
+            "content": <div
+              data-idx={8}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="training-data-stems-8"
+                index={8}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={8}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  training-data-stems
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "training-data-stems-8",
+          },
+          Object {
+            "content": <div
+              data-idx={9}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="stops-9"
+                index={9}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={9}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  stops
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stop-words
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "stops-9",
+          },
+        ]
+      }
+      onDragEnd={[Function]}
+    />
+  </div>
+  <Dialog
+    okString="Delete"
+    onCancel={[Function]}
+    onOk={[Function]}
+    showCancel={true}
+    showOk={true}
+    title="Delete Transformation Item Confirmation"
+    visible={false}
+  >
+    <div>
+      <label>
+        Select Delete to remove transformation: 
+      </label>
+      <br />
+    </div>
+  </Dialog>
+</div>
+`;
+
+exports[`<TransformationItems /> Snapshots should not call dispatch action on onDragEnd call without destination and source 2`] = `
+<div
+  id="TransformationItems"
+>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "lineHeight": "60px",
+        "paddingBottom": 2,
+        "paddingLeft": 30,
+      }
+    }
+  >
+    Transformations
+  </div>
+  <withTheme(ContextualActionsBar)
+    styleOverride={
+      Object {
+        "borderBottom": "1px solid #ddd",
+        "borderTop": "none",
+      }
+    }
+  >
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      NEW
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      icon={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      onClickAction={[Function]}
+      styleOverride={
+        Object {
+          "margin": "24px 0px",
+        }
+      }
+    >
+      PREDEFINED
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    className="dragdrop-container"
+  >
+    <DragDropWrapper
+      droppableId="transformation-items"
+      getListStyle={[Function]}
+      isDisabled={false}
+      items={
+        Array [
+          Object {
+            "content": <div
+              data-idx={0}
+            >
+              <DraggableItem
+                className="transformation-list-item transformation-selected-item"
+                id="non-breaking-space-regex-0"
+                index={0}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={0}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  non-breaking-space-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-replace
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "non-breaking-space-regex-0",
+          },
+          Object {
+            "content": <div
+              data-idx={1}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="whitespace-normalization-1"
+                index={1}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={1}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  whitespace-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "whitespace-normalization-1",
+          },
+          Object {
+            "content": <div
+              data-idx={2}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="chat-shortcuts-2"
+                index={2}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={2}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  chat-shortcuts
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems-nocase
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "chat-shortcuts-2",
+          },
+          Object {
+            "content": <div
+              data-idx={3}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="word-substitutions-3"
+                index={3}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={3}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  word-substitutions
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stems
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "word-substitutions-3",
+          },
+          Object {
+            "content": <div
+              data-idx={4}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="email-regex-4"
+                index={4}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={4}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  email-regex
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  wordclass-subst-regex
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "email-regex-4",
+          },
+          Object {
+            "content": <div
+              data-idx={5}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="html-encoding-5"
+                index={5}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={5}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  html-encoding
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  regex-removal
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "html-encoding-5",
+          },
+          Object {
+            "content": <div
+              data-idx={6}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="enchant-spellcheck-enhance-6"
+                index={6}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={6}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  enchant-spellcheck-enhance
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  spell-checking
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "enchant-spellcheck-enhance-6",
+          },
+          Object {
+            "content": <div
+              data-idx={7}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="case-normalization-7"
+                index={7}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={7}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  case-normalization
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "case-normalization-7",
+          },
+          Object {
+            "content": <div
+              data-idx={8}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="training-data-stems-8"
+                index={8}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={8}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  training-data-stems
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "training-data-stems-8",
+          },
+          Object {
+            "content": <div
+              data-idx={9}
+            >
+              <DraggableItem
+                className="transformation-list-item"
+                id="stops-9"
+                index={9}
+                itemContentClass="transformation-item-content"
+                modelViewReadOnly={false}
+                noOfItems={9}
+                onDelete={[Function]}
+                onSelect={[Function]}
+              >
+                <div
+                  className="transformation-name"
+                >
+                  stops
+                </div>
+                <div
+                  className="transformation-type"
+                >
+                  stop-words
+                </div>
+              </DraggableItem>
+            </div>,
+            "id": "stops-9",
+          },
+        ]
+      }
+      onDragEnd={[Function]}
+    />
+  </div>
+  <Dialog
+    okString="Delete"
+    onCancel={[Function]}
+    onOk={[Function]}
+    showCancel={true}
+    showOk={true}
+    title="Delete Transformation Item Confirmation"
+    visible={false}
+  >
+    <div>
+      <label>
+        Select Delete to remove transformation: 
+      </label>
+      <br />
+    </div>
+  </Dialog>
+</div>
+`;

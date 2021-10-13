@@ -1,0 +1,14 @@
+{
+  "name": {
+    "ui:field": "text"
+  },
+  "description": {
+    "ui:field": "text"
+  },
+  "vertical": {
+    "ui:field": "vertical"
+  },
+  "locale": {
+      "ui:field": "locale"
+  }
+}

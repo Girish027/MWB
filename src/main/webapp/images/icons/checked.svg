@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>checked Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="checked-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="checked-Icon-1" fill="#6AC259" fill-rule="nonzero">
+            <path d="M8,0 C3.5819306,0 0,3.5817806 0,8 C0,12.4182194 3.5819306,16 8,16 C12.4185569,16 16,12.4182194 16,8 C16,3.5817806 12.4184069,0 8,0 Z M6.53247271,12.1094439 L3.0099047,8.58702592 L4.18399404,7.41293658 L6.53247271,9.76126525 L11.816006,4.477582 L12.9900953,5.65167133 L6.53247271,12.1094439 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

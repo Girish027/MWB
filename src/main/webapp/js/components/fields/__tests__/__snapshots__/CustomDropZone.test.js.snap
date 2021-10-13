@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomDropZone /> Snapshots renders correctly for default props 1`] = `
+<div
+  style={
+    Object {
+      "field": Object {
+        "height": "35px",
+        "width": "99%",
+      },
+      "label": Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "fontWeight": "normal",
+        "paddingBottom": "5px",
+      },
+      "select": Object {
+        "border": "1px solid #dce1e8",
+        "borderRadius": "2px",
+        "boxSizing": "border-box",
+        "fontSize": "14px",
+        "height": "35px",
+        "margin": "0px",
+        "marginBottom": "15px",
+        "opacity": 1,
+        "outline": "none",
+        "padding": "8px",
+        "width": "99%",
+      },
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flow-root",
+        "marginTop": "10px",
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "color": "#6E6E6E",
+          "fontSize": "14px",
+          "fontWeight": "normal",
+          "paddingBottom": "5px",
+        }
+      }
+    >
+      Upload Dataset
+    </span>
+    <div
+      style={
+        Object {
+          "display": "inline-flex",
+          "float": "right",
+          "icon": Object {
+            "paddingRight": "5px",
+          },
+          "label": Object {
+            "color": "#6E6E6E",
+            "cursor": "pointer",
+            "fontSize": "12px",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+          },
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "paddingRight": "5px",
+          }
+        }
+      >
+        <Memo(withTheme(Download))
+          fill="#004c97"
+          height="13px"
+          width="10px"
+        />
+      </span>
+      <div
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "cursor": "pointer",
+            "fontSize": "12px",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+          }
+        }
+      >
+         Download Template 
+      </div>
+    </div>
+  </div>
+  <Dropzone
+    accept="text/csv, application/vnd.ms-excel, .csv"
+    acceptStyle={
+      Object {
+        "borderColor": "#00e676",
+      }
+    }
+    acceptedIcon={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "compare": null,
+        "type": [Function],
+      }
+    }
+    activeStyle={
+      Object {
+        "borderColor": "#2196f3",
+      }
+    }
+    baseStyle={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fafafa",
+        "borderColor": "#eeeeee",
+        "borderRadius": 2,
+        "borderStyle": "dashed",
+        "borderWidth": 2,
+        "color": "#bdbdbd",
+        "display": "flex",
+        "flex": 1,
+        "flexDirection": "column",
+        "height": "170px",
+        "outline": "none",
+        "padding": "20px",
+        "transition": "border .24s ease-in-out",
+      }
+    }
+    disabled={false}
+    icon={[Function]}
+    multiple={false}
+    rejectFile={[Function]}
+    rejectStyle={
+      Object {
+        "borderColor": "#ff1744",
+      }
+    }
+    removeFile={false}
+    saveFile={[Function]}
+    shouldUpload={false}
+    uploadHandler={[Function]}
+  />
+</div>
+`;

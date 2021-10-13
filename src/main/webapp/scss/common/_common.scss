@@ -1,0 +1,222 @@
+@import '../vars/vars';
+
+$appBlue: $primaryColor;
+
+.titleContainer {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  width: 88%;
+}
+
+.closeContainer {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  width: 8%;
+}
+
+.float-right {
+  float: right;
+}
+
+.tooltip-adjust {
+  vertical-align: text-bottom !important;
+}
+
+.radiosContainer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+.radioContainer{
+  display: flex;
+  flex-direction: row;
+  width: 260px;
+  height: 20px;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.radioColContainer {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  // width: 200px;
+
+  .applyFiltersColContainer {
+    margin: 10px;
+  }
+
+}
+
+
+.checkboxesContainer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+.checkboxColContainer {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding-top: 5px;
+  overflow: visible;
+  // width: 200px;
+
+  .applyFiltersColContainer {
+    padding-top: 30px;
+    margin: 20px;
+  }
+
+}
+
+.selectContainer {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.checkboxContainer{
+  display: flex;
+  flex-direction: row;
+  width: 260px;
+  height: 20px;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.checkboxContainerVersion{
+  display: flex;
+  flex-direction: row;
+  width: 260px;
+  height: 20px;
+  margin: 2px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.controlContainer{
+  display: flex;
+  flex-direction: row;
+  margin-right: 5px;
+}
+
+.controlLabel {
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+.checkboxOn {
+  background-image: url("icons/checkboxOn.svg");
+  background-repeat: no-repeat;
+}
+
+.checkboxOff {
+  background-image: url("icons/checkboxOff.svg");
+  background-repeat: no-repeat;
+}
+
+.checkboxDisabled {
+  background-image: url("icons/checkboxDisabled.svg");
+  background-repeat: no-repeat;
+}
+
+.radioOn {
+  background-image: url("icons/radioOn.svg");
+  background-repeat: no-repeat;
+}
+
+.radioOff {
+  background-image: url("icons/radioOff.svg");
+  background-repeat: no-repeat;
+}
+
+button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.whiteTextBtn {
+  color: white;
+}
+
+form {
+  //border: 1px #eee solid;
+  //padding: 40px;
+}
+
+h5 {
+  margin-top: 20px;
+
+  /* font-family: "Open Sans"; */
+  font-size: 16px;
+  color: #666;
+}
+
+.redText {
+  color: red !important;
+}
+
+.greenText {
+  color: green !important;
+}
+
+/* scrollbars */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  display: none;
+  width: 6px;
+  height: 6px;
+}
+
+:hover::-webkit-scrollbar {
+  display: block;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,0.5);
+}
+
+.btn:focus, .btn.focus {
+  box-shadow: none !important;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  box-shadow: none !important;
+}
+
+
+.models_dataset{
+  svg {
+    // Workaround for the SVG overflow bug in IE10/11 is still required.
+    // See https://github.com/twbs/bootstrap/issues/26878
+    overflow: hidden;
+    vertical-align: unset;
+  }
+}

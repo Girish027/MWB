@@ -1,0 +1,36 @@
+// http://www.colorcombos.com/color-schemes/215/ColorCombo215.html
+
+//@import url(https://fonts.googleapis.com/css?family=Slabo+27px)
+
+$fontTitle: 'Abel', serif;
+
+$lightblue: #ef8822;
+$lighterblue: #bbd9ee;
+$lightestblue: #ebf4fa;
+$darkblue: #206ba4;
+$orange: #ffab35;
+$lightestGrey: #eee;
+
+$brand-color: $lightblue !default;
+
+$brand-neutral-colors: ($lightblue, $lighterblue, $lightestblue) !default;
+$brand-accent-colors: ($darkblue, $lightblue, $orange) !default;
+$brand-link-color: $darkblue!default;
+$brand-status-colors: (
+  critical: #ff324d,
+  error: #ff324d,
+  warning: #ffd602,
+  label: #a8a8a8,
+  ok: #8cc800,
+  unknown: #a8a8a8,
+  disabled: #a8a8a8
+) !default;
+$brand-grey-colors: (#333, #3b3b3b, #434343, #666) !default;
+
+@if not variable-exists(brand-graph-colors) {
+  $brand-graph-colors: ();
+  $brand-graph-colors: join($brand-graph-colors, $brand-accent-colors);
+  $brand-graph-colors: join($brand-graph-colors, $brand-neutral-colors);
+};
+
+$button-secondary-color: nth($brand-neutral-colors, 2);

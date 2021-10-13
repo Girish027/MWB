@@ -1,0 +1,602 @@
+[
+ {
+   "id": 2146,
+   "uniqueTextString": "reservation",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 1332,
+   "uniqueTextString": "make a reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 1197,
+   "uniqueTextString": "reservations",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 1010,
+   "uniqueTextString": "[noise]",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 782,
+   "uniqueTextString": "[side_speech]",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 758,
+   "uniqueTextString": "customer service",
+   "suggestedTag": "agent",
+   "manualTag": ""
+ },
+ {
+   "id": 681,
+   "uniqueTextString": "id like to make a reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 454,
+   "uniqueTextString": "()",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 430,
+   "uniqueTextString": "representative",
+   "suggestedTag": "agent",
+   "manualTag": ""
+ },
+ {
+   "id": 308,
+   "uniqueTextString": "reservation [noise]",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 272,
+   "uniqueTextString": "i need to make changes to my reservation",
+   "suggestedTag": "change reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 265,
+   "uniqueTextString": "make reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 242,
+   "uniqueTextString": "cancel reservation",
+   "suggestedTag": "cancel reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 199,
+   "uniqueTextString": "operator",
+   "suggestedTag": "agent",
+   "manualTag": ""
+ },
+ {
+   "id": 165,
+   "uniqueTextString": "make a reservation [noise]",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 154,
+   "uniqueTextString": "i need to make a reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 140,
+   "uniqueTextString": "points",
+   "suggestedTag": "points",
+   "manualTag": ""
+ },
+ {
+   "id": 137,
+   "uniqueTextString": "reservations [noise]",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 133,
+   "uniqueTextString": "[side_speech] [noise]",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 131,
+   "uniqueTextString": "points balance",
+   "suggestedTag": "points balance",
+   "manualTag": ""
+ },
+ {
+   "id": 128,
+   "uniqueTextString": "cancel a reservation",
+   "suggestedTag": "cancel reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 124,
+   "uniqueTextString": "make reservations",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 123,
+   "uniqueTextString": "customer service [noise]",
+   "suggestedTag": "agent",
+   "manualTag": ""
+ },
+ {
+   "id": 121,
+   "uniqueTextString": "like to make a reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 114,
+   "uniqueTextString": "change reservation",
+   "suggestedTag": "change reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 110,
+   "uniqueTextString": "agent",
+   "suggestedTag": "agent",
+   "manualTag": ""
+ },
+ {
+   "id": 96,
+   "uniqueTextString": "[echo_prompt]",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 90,
+   "uniqueTextString": "changes to reservation",
+   "suggestedTag": "change reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 86,
+   "uniqueTextString": "changes to my reservation",
+   "suggestedTag": "change reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 86,
+   "uniqueTextString": "i would like to make a reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 83,
+   "uniqueTextString": "complaint",
+   "suggestedTag": "complaint",
+   "manualTag": ""
+ },
+ {
+   "id": 79,
+   "uniqueTextString": "speak to a representative",
+   "suggestedTag": "contact agent",
+   "manualTag": ""
+ },
+ {
+   "id": 78,
+   "uniqueTextString": "book a room",
+   "suggestedTag": "book room",
+   "manualTag": ""
+ },
+ {
+   "id": 77,
+   "uniqueTextString": "[noise] [side_speech]",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 75,
+   "uniqueTextString": "make a payment",
+   "suggestedTag": "make payment",
+   "manualTag": ""
+ },
+ {
+   "id": 73,
+   "uniqueTextString": "new reservation",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 71,
+   "uniqueTextString": "i need to extend my stay",
+   "suggestedTag": "extend stay",
+   "manualTag": ""
+ },
+ {
+   "id": 71,
+   "uniqueTextString": "what's my choice privileges points balance",
+   "suggestedTag": "choice privilege point balance",
+   "manualTag": ""
+ },
+ {
+   "id": 69,
+   "uniqueTextString": "reservation [side_speech]",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 66,
+   "uniqueTextString": "[other_language]",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 66,
+   "uniqueTextString": "i need to cancel a reservation",
+   "suggestedTag": "cancel reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 65,
+   "uniqueTextString": "id like to make a reservation [noise]",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 63,
+   "uniqueTextString": "how do i get points for my stay",
+   "suggestedTag": "points stay",
+   "manualTag": ""
+ },
+ {
+   "id": 62,
+   "uniqueTextString": "change a reservation",
+   "suggestedTag": "change reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 62,
+   "uniqueTextString": "hello",
+   "suggestedTag": "hello",
+   "manualTag": ""
+ },
+ {
+   "id": 58,
+   "uniqueTextString": "payment",
+   "suggestedTag": "payment",
+   "manualTag": ""
+ },
+ {
+   "id": 56,
+   "uniqueTextString": "a reservation",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 55,
+   "uniqueTextString": "() [noise]",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 53,
+   "uniqueTextString": "cancellation",
+   "suggestedTag": "cancel",
+   "manualTag": ""
+ },
+ {
+   "id": 53,
+   "uniqueTextString": "make changes to my reservation",
+   "suggestedTag": "change reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 53,
+   "uniqueTextString": "missing points",
+   "suggestedTag": "missed points",
+   "manualTag": ""
+ },
+ {
+   "id": 53,
+   "uniqueTextString": "representative [noise]",
+   "suggestedTag": "agent",
+   "manualTag": ""
+ },
+ {
+   "id": 53,
+   "uniqueTextString": "uh reservation",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 52,
+   "uniqueTextString": "choice privileges",
+   "suggestedTag": "choice privilege",
+   "manualTag": ""
+ },
+ {
+   "id": 50,
+   "uniqueTextString": "[noise] reservation",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 48,
+   "uniqueTextString": "need to make a reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 47,
+   "uniqueTextString": "redeem points",
+   "suggestedTag": "redeem points",
+   "manualTag": ""
+ },
+ {
+   "id": 47,
+   "uniqueTextString": "uh reservations",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 47,
+   "uniqueTextString": "um",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 46,
+   "uniqueTextString": "test",
+   "suggestedTag": "test",
+   "manualTag": ""
+ },
+ {
+   "id": 45,
+   "uniqueTextString": "make a reservation [side_speech]",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 45,
+   "uniqueTextString": "reservations [side_speech]",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 41,
+   "uniqueTextString": "feedback on a hotel",
+   "suggestedTag": "feedback hotel",
+   "manualTag": ""
+ },
+ {
+   "id": 41,
+   "uniqueTextString": "point balance",
+   "suggestedTag": "points balance",
+   "manualTag": ""
+ },
+ {
+   "id": 41,
+   "uniqueTextString": "uh",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 40,
+   "uniqueTextString": "billing",
+   "suggestedTag": "bill",
+   "manualTag": ""
+ },
+ {
+   "id": 40,
+   "uniqueTextString": "check my points",
+   "suggestedTag": "check points",
+   "manualTag": ""
+ },
+ {
+   "id": 40,
+   "uniqueTextString": "reservations please",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 38,
+   "uniqueTextString": "change my reservation",
+   "suggestedTag": "change reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 38,
+   "uniqueTextString": "to make a reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 37,
+   "uniqueTextString": "book a reservation",
+   "suggestedTag": "book reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 37,
+   "uniqueTextString": "extend my stay",
+   "suggestedTag": "extend stay",
+   "manualTag": ""
+ },
+ {
+   "id": 35,
+   "uniqueTextString": "[noise] reservation [noise]",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 35,
+   "uniqueTextString": "make reservation [noise]",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 33,
+   "uniqueTextString": "points for my stay",
+   "suggestedTag": "points stay",
+   "manualTag": ""
+ },
+ {
+   "id": 31,
+   "uniqueTextString": "() ()",
+   "suggestedTag": "none",
+   "manualTag": ""
+ },
+ {
+   "id": 29,
+   "uniqueTextString": "customer support",
+   "suggestedTag": "customer support",
+   "manualTag": ""
+ },
+ {
+   "id": 29,
+   "uniqueTextString": "i need to make changes to my reservation [noise]",
+   "suggestedTag": "change reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 28,
+   "uniqueTextString": "id like to make a reservation [side_speech]",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 27,
+   "uniqueTextString": "[noise] make a reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 27,
+   "uniqueTextString": "talk to a representative",
+   "suggestedTag": "contact agent",
+   "manualTag": ""
+ },
+ {
+   "id": 26,
+   "uniqueTextString": "[speech_in_noise] reservation",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 26,
+   "uniqueTextString": "feedback",
+   "suggestedTag": "feedback",
+   "manualTag": ""
+ },
+ {
+   "id": 26,
+   "uniqueTextString": "help",
+   "suggestedTag": "help",
+   "manualTag": ""
+ },
+ {
+   "id": 26,
+   "uniqueTextString": "reservation reservation",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 25,
+   "uniqueTextString": "[noise] reservations",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 25,
+   "uniqueTextString": "i wanna make a reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 25,
+   "uniqueTextString": "uh customer service",
+   "suggestedTag": "agent",
+   "manualTag": ""
+ },
+ {
+   "id": 25,
+   "uniqueTextString": "uh make a reservation",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 24,
+   "uniqueTextString": "cancel reservations",
+   "suggestedTag": "cancel reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 24,
+   "uniqueTextString": "customer relations",
+   "suggestedTag": "customer relations",
+   "manualTag": ""
+ },
+ {
+   "id": 24,
+   "uniqueTextString": "customer service representative",
+   "suggestedTag": "agent agent",
+   "manualTag": ""
+ },
+ {
+   "id": 24,
+   "uniqueTextString": "i need a reservation",
+   "suggestedTag": "reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 24,
+   "uniqueTextString": "i need to cancel my reservation",
+   "suggestedTag": "cancel reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 24,
+   "uniqueTextString": "i'd like to make a payment",
+   "suggestedTag": "make payment",
+   "manualTag": ""
+ },
+ {
+   "id": 24,
+   "uniqueTextString": "points [noise]",
+   "suggestedTag": "points",
+   "manualTag": ""
+ },
+ {
+   "id": 23,
+   "uniqueTextString": "choice privileges points balance",
+   "suggestedTag": "choice privilege point balance",
+   "manualTag": ""
+ },
+ {
+   "id": 23,
+   "uniqueTextString": "how many points do i have",
+   "suggestedTag": "many points",
+   "manualTag": ""
+ },
+ {
+   "id": 23,
+   "uniqueTextString": "i need to change a reservation",
+   "suggestedTag": "change reservation",
+   "manualTag": ""
+ },
+ {
+   "id": 23,
+   "uniqueTextString": "i need to make a reservation [noise]",
+   "suggestedTag": "make reservation",
+   "manualTag": ""
+ }
+]

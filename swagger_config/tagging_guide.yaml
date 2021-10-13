@@ -1,0 +1,335 @@
+swagger: '2.0'
+info:
+  version: '1.2.0'
+  title: TaggingGuide
+  description: Tagging Guide and related APIs
+host: localhost:8443
+basePath: /nltools
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /v1/taggingguide/columns:
+    get:
+      tags:
+        - get
+      summary: List all available tagging guide columns
+      operationId: listColumns
+      responses:
+        200:
+          description: An array of tagging guide columns
+          schema:
+            $ref: "#/definitions/TaggingGuideColumnList"
+  /v1/taggingguide/{projectId}/import:
+    post:
+      tags:
+        - post
+      summary: Add intent tagging guide to a project
+      operationId: importGuide
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: file
+          in: formData
+          required: true
+          type: file
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/TaggingGuideStagedImportResponse'
+        400:
+          description: Project does not have a transformed data set.
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Invalid Project id
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/taggingguide/{projectId}/import/{token}/column/mapping:
+    get:
+      tags:
+        - get
+      summary: List tagging guide mappings for the project and user
+      operationId: listMappings
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: userId
+          in: path
+          type: string
+          description: The id of the user
+      responses:
+        200:
+          description: An array of Column mappings for the project
+          schema:
+            $ref: "#/definitions/TaggingGuideColumnMappingSelectionList"
+        404:
+          description: Invalid projectId
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error" 
+    post:
+      tags:
+        - post
+      summary: Add column mappings for a user
+      operationId: importGuideAddMappings
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: ignoreFirstRow
+          in: query
+          required: false
+          type: boolean
+          default: true
+        - name: columnMappings
+          description: List of column mappings for a user
+          in: body
+          schema:
+            $ref: "#/definitions/TaggingGuideColumnMappingSelectionList"
+      responses:
+        200:
+          description: Column mappings successfully added for the user
+          schema:
+            $ref: "#/definitions/TaggingGuideColumnMappedResponse"
+        404:
+          description: Invalid project id
+          schema:
+            $ref: "#/definitions/Error"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /v1/taggingguide/{projectId}/import/{token}/commit:
+    post:
+      tags:
+        - post
+      summary: Commit the staged intent tagging guide to the project
+      operationId: commitImportGuide
+      consumes:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: token
+          in: path
+          required: true
+          type: string
+          description: The token id of the transaction
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/TaggingGuideImportStats'
+        404:
+          description: Invalid Project id
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description: Elasticsearch Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/taggingguide/{projectId}/import/{token}/abort:
+    post:
+      tags:
+        - post
+      summary: Abort the staged intent tagging guide to the project
+      operationId: abortImportGuide
+      consumes:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: token
+          in: path
+          required: true
+          type: string
+          description: The token id of the transaction
+      responses:
+        200:
+          description: Successfully aborted the tagging guide import
+        404:
+          description: Invalid Project id or token
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  TaggingGuideColumn:
+    discriminator: name
+    type: object
+    required:
+      - name
+      - required
+    properties:
+      id:
+        type: string
+        description: The identifier for the column row
+      name:
+        type: string
+        description: Column name
+      required:
+        type: boolean
+        description: States whether this is a required column
+      displayName:
+        type: string
+        description: The display name or the header name of the column
+  TaggingGuideColumnMappingSelection:
+    type: object
+    required:
+      - userId
+      - columnName
+      - columnIndex
+    properties:
+      id:
+        type: string
+        description: The identifier for the column row    
+      userId:
+        type: string
+        description: The id of the user
+      columnName:
+        type: string
+        description: The name of the column
+      columnIndex:
+        type: integer
+        format: int32
+      displayName:
+        type: string
+        description: The header name of the column in the uploaded guide 
+  TaggingGuideColumnList:
+    type: array
+    items:
+      $ref: "#/definitions/TaggingGuideColumn"
+  TaggingGuideColumnMappingSelectionList:
+    type: array
+    items:
+      $ref: "#/definitions/TaggingGuideColumnMappingSelection"
+  TaggingGuideImportResponse:
+    type: object
+    required:
+      - importedAt
+      - importedBy
+    properties:
+      id:
+        type: string
+        description: The id of the record
+      importedAt:
+        type: string
+        description: The time of the guide import
+      importedBy:
+        type: string
+        description: The user importing the guide
+      validTagCount:
+        type: integer
+        format: int32
+        description: The count of total valid intents
+      invalidTags:
+        type: array
+        items:
+          type: string
+      missingTags:
+        type: array
+        items:
+          type: string
+  TaggingGuideStagedImportResponse:
+    type: object
+    required:
+      - token
+      - columns
+      - previewData
+    properties:
+      token:
+        type: string
+        description: The token of the import session
+      columns:
+        type: object
+        schema:
+          $ref: "#/definitions/TaggingGuideColumnList"
+      fileSystemPath:
+        type: string
+        description: The path of the file on the filesystem
+      previewData:
+        type: array
+        items:
+          type: array
+          items:
+            type: string
+  TaggingGuideColumnMappedResponse:
+    allOf:
+    - $ref: '#/definitions/TaggingGuideImportResponse'
+    - type: object
+      required:
+        - token
+      properties:
+        token:
+          type: string
+          description: The session id of the guide import
+        fileSystemPath:
+          type: string
+          description: The path on the filesystem of the uploaded guide
+  TaggingGuideImportStats:
+    required:
+      - validTagCount
+      - missingTags
+      - invalidTags
+      - importedBy
+      - importetdAt
+    properties:
+      id:
+        type: string
+        description: The id of the record
+      projectId:
+        type: string
+        description: The associated project id
+      validTagCount:
+        type: integer
+        format: int32
+        description: The count of successfully imported tags
+      missingTags:
+        type: array
+        description: List of missing tags from the guide.
+        items:
+          type: string
+      invalidTags:
+        type: array
+        description: List of invalid tags from the guide.
+        items:
+          type: string
+      importedBy:
+        type: string
+        description: The user importing the guide
+      importedAt:
+        type: integer
+        format: int64
+        description: The milliseconds since epoch at which the guide was imported

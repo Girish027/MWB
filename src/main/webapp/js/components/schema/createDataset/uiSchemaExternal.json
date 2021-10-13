@@ -1,0 +1,11 @@
+{
+  "name": {
+    "ui:field": "text"
+  },
+  "description": {
+    "ui:field": "text"
+  },
+  "dropZone": {
+    "ui:field": "dropZone"
+  }
+}

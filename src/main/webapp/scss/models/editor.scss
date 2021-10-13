@@ -1,0 +1,48 @@
+@import '../vars/vars';
+
+.editor-panel {
+  // 100vh - (size of header, pageheader and tabs)
+  height: calc(100vh - 250px);
+  width: 100%;
+
+  input[type="text"]:disabled {
+    background-color: $disabledTextFieldBackgroundColor;
+  }
+
+  textarea:disabled {
+    background-color: $disabledTextFieldBackgroundColor;
+  }
+}
+
+.transformation-editor-area {
+  width: 90%;
+  margin: 0px 30px;
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  max-height: calc(100vh - 320px);
+}
+
+.transformation-item-help {
+  padding: 15px 0px 15px 30px;
+  font-size: 16px;
+  line-height: 25px;
+
+  .label {
+    color: #727272;
+    padding-right: 8px;
+  }
+  .content {
+    color: #212529;
+    padding-right: 8px;
+  }
+  a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #727272
+  }
+  a:hover {
+    color: #004C97;
+  };
+
+}
+

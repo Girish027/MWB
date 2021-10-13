@@ -1,0 +1,833 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: DataManagement
+  description: Data Management APIs and their descriptions
+host: localhost:8443
+basePath: /nltools
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /v1/projects/clients/{clientId}/projects/{projectId}/datasets/{datasetId}/transform:
+    put:
+      summary: transforms a dataset for a project
+      operationId: transformDataset
+      tags:
+        - put
+      parameters:
+        - name: clientId
+          in: path
+          required: true
+          description: The id of the client
+          type: string
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+      responses:
+        202:
+          description: ACCEPTED
+          schema:
+            $ref: '#/definitions/TaskEventDetail'
+          headers:
+            location:
+              type: string
+              description: A link to the transform status api
+        401:
+          description: Unauthorized to call the API
+        404:
+          description: Project or Dataset cannot be found
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description: Dataset has already been transformed
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/datasets/{datasetId}/transform:
+    delete:
+      summary: Delete a failed transform job
+      operationId: deleteFailedtransformation
+      tags:
+        - delete
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+      responses:
+        204:
+          description: OK
+        401:
+          description: Unauthorized to call the API
+        404:
+          description: Project or Dataset cannot be found
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description: Dataset has already been transformed
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/datasets/{datasetId}/transform/retry:
+    put:
+      summary: retry a failed transformation job
+      operationId: transformRetry
+      tags:
+        - put
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+      responses:
+        202:
+          description: ACCEPTED
+          schema:
+            $ref: '#/definitions/TaskEventDetail'
+          headers:
+            location:
+              type: string
+              description: A link to the transform status api
+        404:
+          description: Project or Dataset cannot be found
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description: Dataset has already been transformed, or indexed
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+/v1/projects/{projectId}/datasets/{datasetId}/transform/cancel:
+  put:
+    summary: cancel a transformation job
+    operationId: cancelTransformation
+    tags:
+      - put
+    parameters:
+      - name: projectId
+        in: path
+        required: true
+        description: The id of the project to map dataset to
+        type: string
+      - name: datasetId
+        in: path
+        required: true
+        description: The id of the dataset to map
+        type: string
+    responses:
+      200:
+        description: OK
+        schema:
+          $ref: '#/definitions/TaskEventDetail'
+      404:
+        description: Project or Dataset cannot be found
+        schema:
+          $ref: '#/definitions/Error'
+      409:
+        description: Dataset has already been transformed, or indexed
+        schema:
+          $ref: '#/definitions/Error'
+      500:
+        description:  Internal Server Error
+        schema:
+          $ref: '#/definitions/Error'
+      503:
+        description:  Service Unavailable
+        schema:
+          $ref: '#/definitions/Error'
+  /v1/projects/datasets/transform/status:
+    post:
+      summary: Retrieves the status of all transform jobs for a given list of dataset ids
+      operationId: transformStatusForDatasets
+      tags:
+        - get
+      parameters:
+        - name: datasetIds
+          in: body
+          required: true
+          description: Datasets ids to get the status
+          schema:
+            type: array
+            items:
+              type: string          
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/DatasetTaskStatusResponse'
+        400:
+          description: Bad request, e.g if no dataset ids are given
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/transform/status:
+    post:
+      summary: Retrieves the status of all transform jobs for a given list of projects and dataset ids
+      operationId: transformStatusForProjects
+      tags:
+        - get
+      parameters:
+        - name: projects
+          in: body
+          required: true
+          description: Project and dataset ids to get the status
+          schema:
+            type: object,
+            additionalProperties: {
+              type: array,
+              items: {
+                type: string
+              }
+            }         
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ProjectTaskStatusResponse'
+        400:
+          description: Bad request, e.g if no project or dataset ids are given
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/datasets/{datasetId}/transform/status:
+    get:
+      summary: Retrieves the status of a transform job
+      operationId: transformStatus
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/TaskEventDetail'
+        404:
+          description: Transformation job cannot be found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/datasets/{datasetId}/export:
+    get:
+      produces:
+        - application/zip
+      summary: Export all of the data associated to project and dataset in application/zip format
+      operationId: export
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+        - name: op
+          in: query
+          required: false
+          description: The default query operator
+          type: string
+          default: AND
+      responses:
+        200:
+          description: OK
+          schema:
+            type: file
+          headers:
+            Content-type:
+              type: string
+              description: application/zip
+            Content-Disposition:
+              type: string
+              description: attachment; filename=output.zip
+          description: Export data into a ZIP file
+        404:
+          description: Project or Dataset not found to export
+          schema:
+            $ref: '#/definitions/Error'
+        408:
+          description: Request Timeout
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/datasets/{datasetId}/export/unique:
+    get:
+      produces:
+        - text/csv
+      summary: Export all unique transcriptions associated to project and dataset in text/csv format
+      operationId: exportUnique
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+        - name: op
+          in: query
+          required: false
+          description: The default query operator
+          type: string
+          default: AND
+      responses:
+        200:
+          description: OK
+          schema:
+            type: file
+          headers:
+            Content-type:
+              type: string
+              description: text/csv; charset=utf-8
+            Content-Disposition:
+              type: string
+              description: attachment; filename=output-unique.csv
+          description: Export unique transcriptions into a CSV file
+        404:
+          description: Project or Dataset not found to export
+          schema:
+            $ref: '#/definitions/Error'
+        408:
+          description: Request Timeout
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/datasets/{datasetId}/export/all:
+    get:
+      produces:
+        - text/csv
+      summary: Export all of the transcriptions associated to project and dataset in text/csv format
+      operationId: exportAll
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: datasetId
+          in: path
+          required: true
+          description: The id of the dataset to map
+          type: string
+        - name: op
+          in: query
+          required: false
+          description: The default query operator
+          type: string
+          default: AND
+      responses:
+        200:
+          description: OK
+          schema:
+            type: file
+          headers:
+            Content-type:
+              type: string
+              description: text/csv; charset=utf-8
+            Content-Disposition:
+              type: string
+              description: attachment; filename=output.csv
+          description: Export transcriptions into a CSV file
+        404:
+          description: Project or Dataset not found to export
+          schema:
+            $ref: '#/definitions/Error'
+        408:
+          description: Request Timeout
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/export:
+    get:
+      produces:
+        - application/zip
+      summary: Export all of the data associated to project in application/zip format
+      operationId: export
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: search
+          in: body
+          required: false
+          description: search request to filter on dataset ids
+          type: object
+          $ref: '#/definitions/SearchRequest'
+        - name: op
+          in: query
+          required: false
+          description: The default query operator
+          type: string
+          default: AND
+      responses:
+        200:
+          description: OK
+          schema:
+            type: file
+          headers:
+            Content-type:
+              type: string
+              description: application/zip
+            Content-Disposition:
+              type: string
+              description: attachment; filename=output.zip
+          description: Export data into a ZIP file
+        404:
+          description: Project or Dataset not found to export
+          schema:
+            $ref: '#/definitions/Error'
+        408:
+          description: Request Timeout
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/export/unique:
+    get:
+      produces:
+        - text/csv
+      summary: Export all unique transcriptions associated to project in text/csv format
+      operationId: exportUnique
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: search
+          in: body
+          required: false
+          description: search request to filter on dataset ids
+          type: object
+          $ref: '#/definitions/SearchRequest'
+        - name: op
+          in: query
+          required: false
+          description: The default query operator
+          type: string
+          default: AND
+      responses:
+        200:
+          description: OK
+          schema:
+            type: file
+          headers:
+            Content-type:
+              type: string
+              description: text/csv; charset=utf-8
+            Content-Disposition:
+              type: string
+              description: attachment; filename=output-unique.csv
+          description: Export unique transcriptions into a CSV file
+        404:
+          description: Project or Dataset not found to export
+          schema:
+            $ref: '#/definitions/Error'
+        408:
+          description: Request Timeout
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/export/all:
+    get:
+      produces:
+        - text/csv
+      summary: Export all of the transcriptions associated to project in text/csv format
+      operationId: exportAll
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+        - name: search
+          in: body
+          required: false
+          description: search request to filter on dataset ids
+          type: object
+          $ref: '#/definitions/SearchRequest'
+        - name: op
+          in: query
+          required: false
+          description: The default query operator
+          type: string
+          default: AND
+      responses:
+        200:
+          description: OK
+          schema:
+            type: file
+          headers:
+            Content-type:
+              type: string
+              description: text/csv; charset=utf-8
+            Content-Disposition:
+              type: string
+              description: attachment; filename=output.csv
+          description: Export transcriptions into a CSV file
+        404:
+          description: Project or Dataset not found to export
+          schema:
+            $ref: '#/definitions/Error'
+        408:
+          description: Request Timeout
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/projects/{projectId}/taggingguide/export:
+    get:
+      produces:
+        - text/csv
+      summary: Export tagging guide for a project in text/csv format
+      operationId: exportTaggingGuideForProject
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project to map dataset to
+          type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            type: file
+          headers:
+            Content-type:
+              type: string
+              description: text/csv; charset=utf-8
+            Content-Disposition:
+              type: string
+              description: attachment; filename=<ProjectName>_Tagging_Guide_<Timestamp>.csv
+          description: Export tagging guide for a project to a CSV file
+        404:
+          description: Project not found
+          schema:
+            $ref: '#/definitions/Error'
+        408:
+          description: Request Timeout
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+        503:
+          description:  Service Unavailable
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  TaskEvent:
+    discriminator: task
+    type: object
+    required:
+      - jobId
+      - task
+      - status
+    properties:
+      jobId:
+        type: string
+        description: ID of job
+      task:
+        type: string
+        enum:
+          - TAG
+          - INDEX
+        description: Task name
+      status:
+        type: string
+        enum:
+          - STARTED
+          - QUEUED
+          - RUNNING
+          - COMPLETED
+          - CANCELLED
+          - FAILED
+        description: Task status
+      errorCode:
+        type: string
+        enum:
+          - OK
+        description: message code for task
+      message:
+        type: string
+        description: message for task for detailed information
+  TaskEventDetail:
+    allOf:
+    - $ref: '#/definitions/TaskEvent'
+    - type: object
+      required:
+        - id
+        - createdAt
+        - modifiedAt
+      properties:
+        id:
+          type: string
+          description: dataset id
+        recordsImported:
+          type: integer
+          format: int64
+          description: Records found in dataset file
+        recordsProcessed:
+          type: integer
+          format: int64
+          description: Records processed by categorization / indexing task
+        createdAt:
+          type: integer
+          format: int64
+          description: The UTC date time for when the Task Event was created
+        modifiedAt:
+          type: integer
+          format: int64
+          description: The UTC date time for when the Task Event was modified
+        percentComplete:
+          type: integer
+          format: int32
+          description: The percentage that the transformation job is complete
+  Job:
+    discriminator: projectId
+    type: object
+    required:
+      - projectId
+      - datasetId
+    properties:
+      projectId:
+        type: string
+        description: ID of job
+      datasetId:
+        type: string
+        description: Task name
+      filename:
+        type: string
+        description: Task status
+  JobDetail:
+    allOf:
+    - $ref: '#/definitions/Job'
+    - type: object
+      required:
+        - id
+        - createdAt
+        - createdBy
+      properties:
+        id:
+          type: string
+          description: job id
+        createdAt:
+          type: integer
+          format: int64
+          description: The UTC date time for when the Task Event was created
+        createdBy:
+          type: string
+          description: ID of the user that initiated this job
+        modifiedAt:
+          type: integer
+          format: int64
+          description: The UTC date time for when the Job was restarted
+        modifiedBy:
+          type: string
+          description: ID of the user that restarted this job
+  DatasetTaskStatusResponse:
+    type: object
+    additionalProperties:
+      $ref: '#/definitions/TaskEventDetail'           
+  ProjectTaskStatusResponse:
+    type: object
+    additionalProperties:
+      $ref: '#/definitions/DatasetTaskStatusResponse'
+SearchRequest:
+    properties:
+      query:
+        type: string
+        description: Query string or keyword to search
+        default: "*"
+      filter:
+        $ref: '#/definitions/SearchRequestFilter'
+  SearchRequestFilter:
+    properties:
+      tagged:
+        type: boolean
+        description: Search only tagged transcriptions
+        default: false
+      untagged:
+        type: boolean
+        description: Search only untagged transcriptions
+        default: true
+      hasComment:
+        type: boolean
+        description: Search only commented transcriptions if true, if false all transcriptions
+        default: false
+      wordCountRange:
+        type: object
+        description: Range of word counts to look for in a transcription
+        properties:
+          min:
+            type: integer
+            default: 1
+          max:
+            type: integer
+      autoTagCountRange:
+        type: object
+        description: Range to specify minimum and maximum auto categorization counts
+        properties:
+          min:
+            type: integer
+            default: 1
+          max:
+            type: integer
+      dateRange:
+        $ref: '#/definitions/DateRange'
+      datasets:
+        discription: filter on specified datasets
+        type: array
+        items: integer
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response

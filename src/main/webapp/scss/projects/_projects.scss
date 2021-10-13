@@ -1,0 +1,567 @@
+@import '../vars/vars';
+
+.ProjectListFolderItem {
+  &.grommetux-box--separator-bottom,
+  &.grommetux-box--separator-horizontal,
+  &.grommetux-box--separator-all {
+    border-bottom: none;
+  }
+}
+
+#projectList {
+  width: 300px;
+  margin-right:12px;
+}
+
+.pageCentered {
+  display: flex;
+  justify-content: center;
+  overflow:visible;
+  width: 100%;
+  background: white;
+
+  .page {
+    display: block;
+    width:450px;
+    //margin:15px;
+    background: white;
+    //padding: 20px;
+    //border: 1px solid #eee;
+  }
+
+  input:not(.grommetux-input), textarea, select:not(.grommetux-select) {
+    display:block;
+    margin-bottom:10px;
+    width:80%;
+  }
+  textarea: {
+    height: 100px;
+  }
+
+  // button[type=submit]:not(.grommetux-button) {
+  //   float:right;
+  //   margin-right:20%;
+  // }
+
+  .tfs-btn {
+    &.btn-link {
+      float: left;
+    }
+
+    &.btn-primary {
+      float: right;
+    }
+  }
+
+  input:not(.grommetux-input),
+  select:not(.grommetux-select),
+  textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+
+  textarea: {
+    height: 100px;
+  }
+
+  // button[type=submit]:not(.grommetux-button) {
+  //   background-color: $primaryColor;
+  //   border: 1px solid #333;
+  //   color: #fff;
+  //   float: right;
+  //   margin-right: 0%;
+  //   border-radius: 5px;
+  // }
+
+  // button[type=button]:not(.grommetux-button) {
+  //   background-color: transparent;
+  //   border: 1px solid $primaryColor;
+  //   color: #000;
+  //   float: right;
+  //   margin-right: 20px;
+  //   border-radius: 5px;
+  // }
+
+  // button:disabled:not(.grommetux-button) {
+  //   background: #ddd;
+  //   color: #666;
+  //   cursor: not-allowed;
+  // }
+
+}
+
+th {
+  background: white;
+}
+
+tr {
+  pointer-events: all;
+  cursor: pointer;
+  background: #eee;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+tr:hover {
+  pointer-events: all;
+  cursor: pointer;
+  background: white;
+}
+
+td {
+  //pointer-events: none;
+  //cursor: default;
+}
+
+.error {
+  color: red;
+}
+
+.notification {
+  float: right;
+  width: auto;
+  display: block;
+  z-index: 2;
+
+  p {
+    font-size: 18px;
+    color: black;
+    margin: 0;
+    padding: 10px;
+  }
+
+  border-radius: 5px;
+  background: whitesmoker;
+  border: 1px solid #ddd;
+  height: auto;
+}
+
+.projLabels {
+  width: 90px;
+}
+
+#ReadProject {
+  min-width: 500px;
+
+  label {
+    margin-bottom: unset;
+  }
+
+  .grommetux-tabs {
+    background-color: $tabHeaderBackgroundColor;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    border-bottom: 0;
+    height: 60px;
+  }
+
+  div[role="tablist"] {
+    li {
+      button {
+        label {
+          color: #666;
+
+          /* font-family: "Open Sans", sans-serif; */
+          font-size: 16px;
+          font-weight: bolder;
+          padding-bottom: 20px;
+        }
+      }
+
+      button[aria-selected="true"] {
+        label {
+          border-color: transparent;
+          border-bottom: solid 2px #666;
+          padding-bottom: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      button[aria-selected="false"]:hover {
+        label {
+          color: $primaryColor;
+          border-color: transparent;
+          padding-bottom: 20px;
+          border-bottom: solid 1px transparent;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      button[aria-selected="false"]:not(:hover) {
+        label {
+          border-color: transparent;
+          padding-bottom: 20px;
+          border-bottom: solid 1px transparent;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+
+  #ReadProjectDatasetsDetails {
+
+    .greenText, .redText, .yellowText, .transformLink{
+      font-weight: bold;
+    }
+
+    .ReactTable .rt-tbody .rt-td :last-child {
+      padding-top: 0!important;
+      padding-bottom: 0!important;
+    }
+
+    #ReadProjectDatasetsGrid {
+      .react-grid-header-fixed-container {
+        position: absolute;
+      }
+
+      .react-grid-loading-bar {
+        display: none;
+        position: absolute;
+      }
+
+      .react-grid-table-container {
+        padding-bottom: 20px;
+
+        tr.react-grid-row {
+          min-height: 34px;
+          height: 34px;
+        }
+      }
+
+      .react-grid-cell {
+        .greenText, .redText, .yellowText {
+          font-weight: bold;
+        }
+
+        .TransformLink {
+          font-weight: bold;
+        }
+      }
+    }
+
+    #ReadProjectModelsGrid {
+      .react-grid-header-fixed-container {
+        position: absolute;
+      }
+
+      .react-grid-loading-bar {
+        display: none;
+        position: absolute;
+      }
+
+      .react-grid-table-container {
+        padding-bottom: 20px;
+
+        tr.react-grid-row {
+          min-height: 34px;
+          height: 34px;
+        }
+      }
+    }
+  }
+}
+
+.ProjectDetailsTitle {
+  padding-top: 0;
+
+  .ProjectDetailsTitleHead {
+    line-height: 1.5em;
+    margin: 0;
+
+    .ProjectDetailsTitleSelectContainer {
+      padding-top: 15px;
+      padding-left: 30px;
+    }
+  }
+}
+
+.ProjectListFolderItem {
+  padding: 0px;
+
+  .ProjectListFolderIcon {
+    padding: 8px;
+    border-bottom: 1px solid #f5f5f6;
+  }
+  .ProjectListFolderItemName {
+    display: block;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 13px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #f5f5f6;
+    .project-list-menu-icon {
+      position: absolute;
+      padding-left: 239px;
+      padding-top: 0px;
+    }
+    .project-list-item-name {
+      color: #313F54;
+      font-family: LatoWeb;
+      font-weight: bold;
+      white-space: nowrap;
+      font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .project-list-item-meta {
+      color: #6E7887;
+      font-family: Lato;
+      font-size: 12px;
+      line-height: 19px;
+      padding-bottom: 5px;
+      .grommetux-timestamp__date {
+        font-size: 10px;
+      }
+    }
+    .project-list-item-duration {
+      font-size: 10px;
+      padding-top: 10px;
+      font-family: Lato;
+      line-height: 0px;
+      color: #6E7887;
+      text-transform: uppercase;
+    }
+    .project-list-volume-count {
+      font-size: 14px;
+      font-family: Lato;
+      font-weight: bold;
+      color: #313F54;
+    }
+    .project-list-escalation-count {
+      font-size: 14px;
+      font-family: Lato;
+      font-weight: bold;
+      color: #313F54;
+    }
+    .project-list-volume {
+      color: #6E7887;
+      font-family: Lato;
+      font-size: 12px;
+      line-height: 19px;
+    }
+    .project-list-escalation {
+      color: #6E7887;
+      font-family: Lato;
+      font-size: 12px;
+      line-height: 19px;
+    }
+    .grey-theme-volume {
+      font-size: 14px;
+      font-family: Lato;
+      color: #6E7887;
+      padding-left: 3px;
+    }
+    .grey-theme-escalation {
+      font-size: 14px;
+      font-family: Lato;
+      color: #6E7887;
+      padding-left: 3px;
+    }
+    .red-theme-escalation {
+      font-size: 14px;
+      font-family: Lato;
+      color: #e03c31;
+      padding-left: 3px;
+    }
+  }
+
+    .project-list-item-delete-icon {
+      display: none;
+    }
+
+    :hover {
+      .project-list-item-delete-icon {
+        display: block;
+        color: $primaryTextColor;
+      }
+      .project-list-item-delete-icon:hover {
+        display: block;
+        color: $primaryColor;
+      }
+    }
+
+  &.grommetux-list-item--selected {
+    background: $separatorBackgroundColor;
+    color: $primaryTextColor;
+  }
+
+  .ProjectListFolderItemDescription {
+    margin-top: 5px;
+  }
+
+  .ProjectListFolderItemMetadata {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .ProjectListFolderItemDate {
+    text-align: right;
+  }
+
+  .grommetux-box--flex {
+    overflow: hidden;
+  }
+}
+
+
+#ProjectForm {
+  margin-top: 20px;
+}
+
+.DatasetRowCascadeMenu {
+  .TaggerCascadeMenuItem {
+    min-width: 200px;
+  }
+}
+
+#AddDatasetDialog {
+  .ModalContent {
+    min-width: 450px;
+
+    .TaggerForm {
+      .Field {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.grommetux-box.selectProjectMessage {
+  margin-top: 20px;
+}
+
+#SettingsTab {
+  margin: 13px;
+  .ModelLevelMonitoringTitle {
+    color: #313f54;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .EscalationRate {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4A4A4A
+  }
+  .Threshold {
+    font-size: 14px;
+    padding-top: 17px;
+    color: #4A4A4A;
+  }
+  .DefaultThreshold {
+    font-size: 10px;
+    color: #6E7887;
+    padding-top: 3px;
+    padding-bottom: 6px;
+  }
+  .NodeLevelMonitoringTitle {
+    color: #313f54;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 45px;
+  }
+  .EscalationRateDesc {
+    font-size: 12px;
+    color: #6E7887;
+    padding-bottom: 8px;
+    padding-top: 6px;
+  }
+}
+//overview
+.greytext {
+   color: #6E7887;
+   line-height: 1.6;
+   font-size: 10px;
+   margin-bottom: 4px;
+}
+.fsize {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.dsize{
+  font-size: 14px;
+}
+.leftdes {
+   list-style-type: none;
+   float: left;
+   padding: 15px;
+   margin-top: 90px;
+}
+.nodes-component {
+  height: 80%;
+  width: 480px;
+}
+.left {
+  position: absolute;
+  float: left;
+  width: 64%;
+  height: 40%;
+  padding-left: 0;
+}
+.graph-component {
+   margin-top: 40px;
+   height: 10%;
+   //border: 3px solid brown;
+   width: 1000px;
+}
+.div-component {
+  width: 154%;
+  margin-top: 200px;
+}
+.underline {
+  height: 1px;
+  border: none;
+  color: #333;
+  background-color: #333;
+}
+.nodes {
+  font-weight: bold;
+  padding: 15px;
+  padding-bottom: 0px;
+  font-size: 14px;
+}
+.middle {
+  padding: 10px;
+  position: absolute;
+  left: 500px;
+  width: 25%;
+  height: 40%;
+}
+.right {
+  padding: 10px;
+  position: absolute;
+  left: 710px;
+  width: 30%;
+  height: 40%;
+}
+.list {
+   list-style-type: none;
+   float: left;
+   padding: 10px;
+   font-size: 14px;
+}
+.volpadding {
+  padding-left: 202px;
+  padding-right: 80px;
+}
+.limit {
+  max-width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.selectbox {
+  width: 220px;
+  max-height: 32px;
+}

@@ -1,0 +1,7 @@
+#name,Required,Display Name
+intent,TRUE,Granular Intent
+rutag,FALSE,Rollup Intent
+description,FALSE,Description
+comments,FALSE,Comments
+examples,FALSE,Examples
+keywords,FALSE,Keywords

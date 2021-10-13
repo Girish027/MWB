@@ -1,0 +1,1 @@
+ALTER TABLE model_configs MODIFY description varchar(512) DEFAULT NULL;

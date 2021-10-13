@@ -1,0 +1,214 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Clients
+  description: Client APIs and their descriptions
+host: localhost:8080
+basePath: /nltools/v1
+schemes:
+- http
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /clients:
+    get:
+      tags:
+      - get
+      summary: List all clients
+      operationId: listClients
+      parameters:
+      - name: limit
+        in: query
+        description: How many items to return at one time (max 100)
+        type: integer
+        format: int32
+      - name: startIndex
+        in: query
+        description: starting index
+        type: integer
+        format: int32
+        default: 0
+      - name: showVerticals
+        in: query
+        description:  Enable filtering of vertical clients. (null=show all clients, true=show only verticals, false=show only non-verticals)
+        type: boolean
+        format: null/true/false
+        default: null
+      - name: showDeleted
+        in: query
+        description: Show deleted/disabled clients
+        type: boolean
+        format: true/false
+        default: false
+      responses:
+        200:
+          description: An paged array of clients
+          headers:
+            location:
+              type: string
+              description: A link to the next page of responses
+            X-Offset:
+              type: integer
+              format: int32
+              description: The current offset / startIndex
+            X-Total-Count:
+              type: integer
+              format: int32
+              description: The total number of items available
+          schema:
+            $ref: '#/definitions/ClientsDetail'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      tags:
+      - post
+      summary: Create a client
+      operationId: createClient
+      parameters:
+      - name: client
+        description: Client object
+        in: body
+        schema:
+          $ref: '#/definitions/Client'
+      responses:
+        201:
+          description: Client succesfully created
+          schema:
+            $ref: '#/definitions/ClientDetail'
+        400:
+          description: Client could not be created
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /clients/{clientId}:
+    get:
+      tags:
+      - delete
+      summary: Info for a specific client
+      operationId: getClientById
+      parameters:
+      - name: clientId
+        in: path
+        required: true
+        description: The id of the client to retrieve
+        type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/ClientDetail'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  Client:
+    type: object
+    discriminator: name
+    required:
+    - name
+    - internalId
+    - state
+    properties:
+      name:
+        type: string
+        description: Client name
+      internalId:
+        type: string
+        description: Internal id used by 247
+      address:
+        type: string
+        description: Client address
+      description:
+        type: string
+        description: Short description for this client
+      isVertical:
+        description: If this client represents a generic case for a vertical market.
+        type: boolean
+        format: true/false
+        default: false
+      state:
+        description: Client state
+        type: string
+        enum:
+        - ENABLED
+        - DISABLED
+        default: ENABLED
+  ClientDetail:
+    allOf:
+    - $ref: '#/definitions/Client'
+    - type: object
+    - properties:
+        id:
+          type: string
+          description: Numeric string to identify the Client uniquely
+        createdAt:
+          type: integer
+          format: int64
+          description: The UTC date time for client creation
+        modifiedAt:
+          type: integer
+          format: int64
+          description: Modification time for any attribute update
+        offset:
+          type: integer
+          format: int32
+        totalCount:
+          type: integer
+          format: int64
+  ClientsDetail:
+    type: array
+    items:
+      $ref: '#/definitions/ClientDetail'
+  PatchRequest:
+    type: array
+    items:
+      $ref: '#/definitions/PatchDocument'
+  PatchDocument:
+    description: A JSONPatch document as defined by RFC 6902
+    required:
+    - op
+    - path
+    properties:
+      op:
+        type: string
+        description: The operation to be performed
+        enum:
+        - add
+        - remove
+        - replace
+        - move
+        - copy
+        - test
+      path:
+        type: string
+        description: A JSON-Pointer
+      value:
+        type: object
+        description: The value to be used within the operations.
+      from:
+        type: string
+        description: A string containing a JSON Pointer value.
+  Error:
+    required:
+    - code
+    - error_code
+    - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response

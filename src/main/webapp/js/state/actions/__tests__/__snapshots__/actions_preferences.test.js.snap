@@ -1,0 +1,330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions_preferences should call addClientTechnology 1`] = `Array []`;
+
+exports[`actions_preferences should call addOrUpdateTechnology 1`] = `Array []`;
+
+exports[`actions_preferences should call addOrUpdateTechnology for technology with ngram 1`] = `Array []`;
+
+exports[`actions_preferences should call addOrUpdateTechnology for technology with use 1`] = `Array []`;
+
+exports[`actions_preferences should call createModelPreferences 1`] = `Array []`;
+
+exports[`actions_preferences should call createModelPreferences 2`] = `undefined`;
+
+exports[`actions_preferences should call createModelPreferencesFailure 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [],
+    "clientLevelPreference": Object {},
+    "clientType": undefined,
+    "isClientAvailable": false,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": Object {},
+  },
+]
+`;
+
+exports[`actions_preferences should call createModelPreferencesSuccess 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [
+      Object {
+        "attribute": "151",
+        "client_id": 151,
+        "id": 5,
+        "level": "model",
+        "type": "use_large",
+        "value": 2,
+      },
+    ],
+    "clientLevelPreference": Object {},
+    "clientType": undefined,
+    "isClientAvailable": true,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": Object {},
+  },
+]
+`;
+
+exports[`actions_preferences should call getTechnology 1`] = `Array []`;
+
+exports[`actions_preferences should call getTechnologyByClientModel 1`] = `Array []`;
+
+exports[`actions_preferences should call getTechnologyByClientModelResult 1`] = `
+Array [
+  Object {
+    "response": Object {
+      "id": 2,
+      "isLatest": 1,
+      "type": "use_large",
+      "version": 1.2,
+    },
+    "type": "RECEIVE_PROJECT_PREFERENCE",
+  },
+]
+`;
+
+exports[`actions_preferences should call getVectorizer 1`] = `Array []`;
+
+exports[`actions_preferences should call onAddOrUpdateClientTechnologyFailure 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [],
+    "clientLevelPreference": Object {},
+    "clientType": undefined,
+    "isClientAvailable": false,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": Object {},
+  },
+]
+`;
+
+exports[`actions_preferences should call onAddOrUpdateClientTechnologySuccess 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [
+      Object {
+        "attribute": "151",
+        "client_id": 151,
+        "id": 3,
+        "level": "client",
+        "type": "use_large",
+        "value": 2,
+      },
+    ],
+    "clientLevelPreference": Object {
+      "attribute": "151",
+      "client_id": 151,
+      "id": 3,
+      "level": "client",
+      "type": "use_large",
+      "value": 2,
+    },
+    "clientType": undefined,
+    "isClientAvailable": true,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": Object {},
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model default is successfully updated to n-grams",
+  },
+]
+`;
+
+exports[`actions_preferences should call onAddOrUpdateClientTechnologySuccess with no data in db 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [
+      Object {
+        "attribute": "151",
+        "client_id": 151,
+        "id": 3,
+        "level": "client",
+        "type": "use_large",
+        "value": 2,
+      },
+    ],
+    "clientLevelPreference": Object {
+      "attribute": "151",
+      "client_id": 151,
+      "id": 3,
+      "level": "client",
+      "type": "use_large",
+      "value": 2,
+    },
+    "clientType": undefined,
+    "isClientAvailable": true,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": Object {},
+  },
+  Object {
+    "type": "GOOD_REQUEST",
+    "value": "Model default is successfully updated to n-grams",
+  },
+]
+`;
+
+exports[`actions_preferences should call onGetTechnologyFailure 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [],
+    "clientLevelPreference": Object {},
+    "clientType": "n-gram",
+    "isClientAvailable": false,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": undefined,
+  },
+]
+`;
+
+exports[`actions_preferences should call onGetTechnologySuccess 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [],
+    "clientLevelPreference": Object {},
+    "clientType": "n-gram",
+    "isClientAvailable": false,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": undefined,
+  },
+]
+`;
+
+exports[`actions_preferences should call onGetVectorizerFailure 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [
+      Object {
+        "attribute": "151",
+        "client_id": 151,
+        "id": 3,
+        "level": "client",
+        "type": "use_large",
+        "value": 1,
+      },
+      Object {
+        "attribute": "151",
+        "client_id": 151,
+        "id": 4,
+        "level": "model",
+        "type": "n-gram",
+        "value": 1,
+      },
+    ],
+    "clientLevelPreference": Object {},
+    "clientType": undefined,
+    "isClientAvailable": false,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": Object {
+      "N_GRAM": 1,
+      "USE": 2,
+    },
+  },
+]
+`;
+
+exports[`actions_preferences should call onGetVectorizerSuccess 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [
+      Object {
+        "attribute": "151",
+        "client_id": 151,
+        "id": 3,
+        "level": "client",
+        "type": "use_large",
+        "value": 1,
+      },
+      Object {
+        "attribute": "151",
+        "client_id": 151,
+        "id": 4,
+        "level": "model",
+        "type": "n-gram",
+        "value": 1,
+      },
+    ],
+    "clientLevelPreference": Object {
+      "attribute": "151",
+      "client_id": 151,
+      "id": 3,
+      "level": "client",
+      "type": "use_large",
+      "value": 2,
+    },
+    "clientType": "use_large",
+    "isClientAvailable": true,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": Object {
+      "N_GRAM": 1,
+      "USE": 2,
+    },
+  },
+]
+`;
+
+exports[`actions_preferences should call onUpdateModelTechnologyFailure 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [],
+    "clientLevelPreference": Object {},
+    "clientType": undefined,
+    "isClientAvailable": false,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": Object {},
+  },
+]
+`;
+
+exports[`actions_preferences should call onUpdateModelTechnologySuccess 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [
+      Array [
+        Object {
+          "attribute": "151",
+          "client_id": 151,
+          "id": 4,
+          "level": "model",
+          "type": "use_large",
+          "value": 1,
+        },
+      ],
+    ],
+    "clientLevelPreference": Object {},
+    "clientType": undefined,
+    "isClientAvailable": true,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": Object {},
+  },
+]
+`;
+
+exports[`actions_preferences should call onUpdateModelTechnologySuccess with empty allPreferences 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [
+      Array [
+        Object {
+          "attribute": "151",
+          "client_id": 151,
+          "id": 4,
+          "level": "model",
+          "type": "use_large",
+          "value": 1,
+        },
+      ],
+    ],
+    "clientLevelPreference": Object {},
+    "clientType": undefined,
+    "isClientAvailable": true,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": Object {},
+  },
+]
+`;
+
+exports[`actions_preferences should call technologySelected 1`] = `
+Array [
+  Object {
+    "allPreferences": Array [],
+    "clientLevelPreference": Object {},
+    "clientType": undefined,
+    "isClientAvailable": false,
+    "type": "DEFAULT_TECHNOLOGY",
+    "vectorizer": undefined,
+  },
+]
+`;
+
+exports[`actions_preferences should call updateClientTechnology with empty id 1`] = `Array []`;
+
+exports[`actions_preferences should call updateClientTechnology with n-gram 1`] = `Array []`;
+
+exports[`actions_preferences should call updateClientTechnology with use_large 1`] = `Array []`;
+
+exports[`actions_preferences should call updateModelTechnology with N-Gram 1`] = `Array []`;
+
+exports[`actions_preferences should call updateModelTechnology with use_large 1`] = `Array []`;

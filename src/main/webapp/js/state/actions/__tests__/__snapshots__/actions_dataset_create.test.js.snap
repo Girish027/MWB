@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions_dataset_create importFile should dispatch columnBinding action 1`] = `
+Array [
+  Object {
+    "bindingArray": Array [
+      Object {
+        "columnIndex": "0",
+        "columnName": "transcription",
+        "displayName": "Transcription",
+        "id": "1",
+      },
+      Object {
+        "columnIndex": "1",
+        "columnName": "rutag",
+        "displayName": "Rollup Intent",
+        "id": "7",
+      },
+    ],
+    "columnsBinding": Object {
+      "rutag": 1,
+      "transcription": 0,
+    },
+    "isBindingValid": true,
+    "isPreSelected": true,
+    "type": "CREATE_DATASET_DIALOG_COLUMNS_BIND",
+  },
+  Object {
+    "modalDialogState": Object {
+      "cancelChildren": "CLOSE",
+      "cancelVisible": true,
+      "closeIconVisible": true,
+      "dispatch": [Function],
+      "header": "Uploading your file…",
+      "message": "You may close this window while we upload your file. Uploading will not cancel. We will prompt you once your file has successfully uploaded.",
+      "showFooter": true,
+      "showHeader": true,
+      "styleOverride": Object {
+        "cancel": Object {
+          ":hover": Object {
+            "backgroundColor": "#003467",
+            "color": "#fff",
+          },
+          "backgroundColor": "#004c97",
+          "color": "#fff",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "30px",
+        },
+        "content": Object {
+          "left": "calc((100vw - 500px) / 2)",
+          "maxHeight": "333px",
+          "maxWidth": "444px",
+          "top": "160px",
+        },
+      },
+      "type": "ProgressDialog",
+    },
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "bindingArray": Array [],
+    "skipFirstRow": true,
+    "token": "8182f040-8c4c-40c5-b864-3ffb2d71d330",
+    "type": "CREATE_DATASET_DIALOG_COLUMNS_BIND_REQUEST",
+  },
+]
+`;
+
+exports[`actions_dataset_create importFile should dispatch createDataset action 1`] = `
+Array [
+  Object {
+    "type": "CREATE_DATASET_REQUEST",
+  },
+]
+`;
+
+exports[`actions_dataset_create importFile should dispatch fileUpload action 1`] = `Array []`;
+
+exports[`actions_dataset_create importFile should dispatch importFile action 1`] = `Array []`;
+
+exports[`actions_dataset_create importFile should make a GET call to get the config properties 1`] = `"/nltools/private/v1/files/import"`;
+
+exports[`actions_dataset_create onDatasetImportFailure should dispatch onDatasetImportFailure action 1`] = `
+Array [
+  Object {
+    "type": "BAD_REQUEST",
+    "value": "Error in parsing the data given in the uploaded file, please check documentation for expected format.",
+  },
+  Object {
+    "type": "CREATE_DATASET_DIALOG_RESET",
+  },
+  Object {
+    "modalDialogState": null,
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+]
+`;
+
+exports[`actions_dataset_create onDatasetImportSuccess should dispatch onDatasetImportSuccess action with data 1`] = `
+Array [
+  Object {
+    "columns": Array [
+      Object {
+        "displayName": "Transcription",
+        "id": "1",
+        "name": "transcription",
+        "required": true,
+      },
+      Object {
+        "displayName": "Filename",
+        "id": "3",
+        "name": "filename",
+        "required": false,
+      },
+      Object {
+        "displayName": "Granular Intent",
+        "id": "5",
+        "name": "inheritedIntent",
+        "required": false,
+      },
+      Object {
+        "displayName": "Rollup Intent",
+        "id": "7",
+        "name": "rutag",
+        "required": false,
+      },
+      Object {
+        "displayName": "Filesize",
+        "id": "9",
+        "name": "filesize",
+        "required": false,
+      },
+      Object {
+        "displayName": "Date",
+        "id": "11",
+        "name": "date",
+        "required": false,
+      },
+      Object {
+        "displayName": "Dataset",
+        "id": "13",
+        "name": "dataset",
+        "required": false,
+      },
+    ],
+    "previewData": Array [
+      Array [
+        "Transcription",
+        "Rollup Intent",
+      ],
+      Array [
+        "What are store hours",
+        "Store_Hours",
+      ],
+      Array [
+        "store hours",
+        "Store_Hours",
+      ],
+      Array [
+        "store opening time",
+        "Store_Hours",
+      ],
+      Array [
+        "store closing time",
+        "Store_Hours",
+      ],
+      Array [
+        "store times",
+        "Store_Hours",
+      ],
+      Array [
+        "When does this shop open",
+        "Store_Hours",
+      ],
+      Array [
+        "store timings",
+        "Store_Hours",
+      ],
+      Array [
+        "What are store timings",
+        "Store_Hours",
+      ],
+      Array [
+        "Tell me the store hours",
+        "Store_Hours",
+      ],
+    ],
+    "token": "token",
+    "type": "CREATE_DATASET_DIALOG_FILE_UPLOAD_SUCCESS",
+  },
+  Object {
+    "step": "mapping",
+    "type": "CREATE_DATASET_DIALOG_CHANGE_STEP",
+  },
+  Object {
+    "bindingArray": Array [
+      Object {
+        "columnIndex": "0",
+        "columnName": "transcription",
+        "displayName": "Transcription",
+        "id": "1",
+      },
+      Object {
+        "columnIndex": "1",
+        "columnName": "rutag",
+        "displayName": "Rollup Intent",
+        "id": "7",
+      },
+    ],
+    "columnsBinding": Object {
+      "rutag": 1,
+      "transcription": 0,
+    },
+    "isBindingValid": true,
+    "isPreSelected": true,
+    "type": "CREATE_DATASET_DIALOG_COLUMNS_BIND",
+  },
+  Object {
+    "modalDialogState": Object {
+      "cancelChildren": "CLOSE",
+      "cancelVisible": true,
+      "closeIconVisible": true,
+      "dispatch": [Function],
+      "header": "Uploading your file…",
+      "message": "You may close this window while we upload your file. Uploading will not cancel. We will prompt you once your file has successfully uploaded.",
+      "showFooter": true,
+      "showHeader": true,
+      "styleOverride": Object {
+        "cancel": Object {
+          ":hover": Object {
+            "backgroundColor": "#003467",
+            "color": "#fff",
+          },
+          "backgroundColor": "#004c97",
+          "color": "#fff",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "30px",
+        },
+        "content": Object {
+          "left": "calc((100vw - 500px) / 2)",
+          "maxHeight": "333px",
+          "maxWidth": "444px",
+          "top": "160px",
+        },
+      },
+      "type": "ProgressDialog",
+    },
+    "type": "MODAL_DIALOG_CHANGE",
+  },
+  Object {
+    "bindingArray": Array [],
+    "skipFirstRow": true,
+    "token": "8182f040-8c4c-40c5-b864-3ffb2d71d330",
+    "type": "CREATE_DATASET_DIALOG_COLUMNS_BIND_REQUEST",
+  },
+]
+`;

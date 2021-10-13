@@ -1,0 +1,503 @@
+buildscript {
+    ext {
+        springBootVersion = '2.2.0.RELEASE'
+    }
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.github.rholder:gradle-one-jar:1.0.4")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+      //  classpath 'gradle.plugin.com.github.jk1:gradle-licenseautoconfigure-report:0.3.5'
+        classpath 'com.moowork.gradle:gradle-node-plugin:1.1.1'
+        classpath 'org.ajoberstar:grgit:1.1.0'
+        // classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.7"
+    }
+}
+
+
+plugins {
+    id 'com.github.jk1.dependency-license-report' version '0.3.5'
+    id 'org.hidetake.swagger.codegen' version '1.1.0'
+    id 'com.gorylenko.gradle-git-properties' version '1.4.17'
+    id "org.flywaydb.flyway" version "5.2.3"
+    id "org.sonarqube" version "2.8"
+//    id "com.gradle.build-scan" version "2.4"
+}
+
+dependencies {
+    swaggerCodegen 'io.swagger:swagger-codegen-cli:2.2.1'
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'pmd'
+apply plugin: 'findbugs'
+apply plugin: 'checkstyle'
+apply plugin: "io.spring.dependency-management"
+apply plugin: 'jacoco'
+apply plugin: 'com.github.jk1.dependency-license-report'
+apply plugin: 'com.moowork.node'
+apply plugin: 'gradle-one-jar'
+apply plugin: 'groovy'
+apply plugin: "org.sonarqube"
+apply plugin: 'idea'
+
+import groovy.json.JsonBuilder
+import org.ajoberstar.grgit.Grgit
+
+ext {
+    versionName = '2.6.2'
+    // Open the Git repository in the current directory.
+    git = Grgit.open(file('.'))
+    // Get commit id of HEAD.
+    revision = git.head().abbreviatedId
+    logbookVersion = '1.9.1'
+}
+
+def writeBuildNumber() {
+    def versionJsonFile = file('src/main/webapp/version.json')
+    def versionBuild
+    def json = ['versionName' : ext.versionName,
+                'version' : ext.versionName,
+                'revision' : ext.revision,
+                'buildDate' : System.currentTimeMillis()]
+    versionJsonFile.write(new JsonBuilder(json).toPrettyString())
+}
+
+
+// findbugs tasks
+findbugs {
+    reportLevel = "low"
+    ignoreFailures = true
+    toolVersion = "3.0.1"
+    sourceSets = [sourceSets.main]
+    reportsDir = file("$project.buildDir/reports/findbugs")
+    effort = "max"
+}
+
+// checkstyle tasks
+checkstyle {
+    ignoreFailures = true
+}
+
+// pmd tasks
+pmd {
+    ignoreFailures = true
+}
+
+//jacocoTestReport {
+//    reports {
+//        xml.enabled false
+//        csv.enabled false
+//        html.destination "${buildDir}/jacocoHtml"
+//    }
+//}
+
+sonarqube {
+    properties {
+        property "sonar.projectName", "advancedprototypes-ui"
+        property "sonar.projectKey", "ui:core"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.host.url", "http://sonar.cicd.247-inc.net:8080"
+        property "sonar.sources", "./src/main/java"
+        property "sonar.tests", "./src/test/java"
+        property "sonar.java.binaries", "./build/classes/java/main/"
+        property "sonar.java.test.binaries", "./build/classes/java/test/"
+        property "sonar.inclusions", "**/*.java"
+    }
+}
+
+node {
+    version = '8.9.2'
+    npmVersion = '5.6.0'
+    download = true
+}
+
+jar {
+    enabled = true
+    baseName = 'nl-tools-ui'
+    version = versionName
+    manifest {
+        attributes(
+                'Main-Class': 'com.tfs.learningsystems.NlToolsUiApplication'
+        )
+    }
+}
+
+//To run unit and integration tests
+test {
+   // failFast = true
+    exclude '**/*IntTest.class'
+}
+
+//To run only integration tests
+task integrationTest(type: Test) {
+    include '**/*IntTest.class'
+}
+
+task oneJar(type: OneJar) {
+    mainClass = 'com.tfs.learningsystems.NlToolsUiApplication'
+    additionalDir = file('./src/main/resources')
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+configurations {
+    //compile.exclude group:'ch.qos.logback'
+    compile.exclude group: "org.slf4j", module: "slf4j-log4j12"
+    compile.exclude group: "log4j", module: "log4j"
+    compile.exclude module:'log4j-over-slf4j'
+    compile.exclude module:'jul-over-slf4j'
+}
+
+dependencies {
+
+
+   // compile ('org.eclipse.jgit:org.eclipse.jgit:4.1.1.201511131810-r')
+    compile ('org.kohsuke:github-api:1.92')
+
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.10'
+    testCompileOnly 'org.projectlombok:lombok:1.18.10'
+    // The production code uses the SLF4J logging API at compile time
+    compile('org.aspectj:aspectjweaver:1.8.8')
+    compile('org.projectlombok:lombok')
+    //compile('org.xerial:sqlite-jdbc:3.8.11.2')
+    compile('mysql:mysql-connector-java:8.0.19')
+    runtime('mysql:mysql-connector-java:8.0.19')
+    compile('org.flywaydb:flyway-core:5.2.3')
+    compile('com.github.fge:json-patch:1.9')
+    compile('org.quartz-scheduler:quartz:2.2.3'){
+        exclude group: 'c3p0'
+    }
+    compile('com.opencsv:opencsv:3.8')
+    compile('org.freemarker:freemarker:2.3.25-incubating')
+    compile('com.ibm.icu:icu4j:58.1')
+    compile('org.elasticsearch:elasticsearch:5.6.8')
+    compile('org.elasticsearch.client:transport:5.6.8')
+    compile group: 'org.elasticsearch.plugin', name: 'transport-netty4-client', version: '5.6.8'
+
+    compile('com.mchange:c3p0:0.9.5.2')
+  //  compile('com.okta:okta-sdk:0.0.4')
+    // compile('org.flywaydb:flyway-core:5.2.3')
+
+    compile('org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.2.0.RELEASE')
+
+    compile('org.springframework.session:spring-session-jdbc')
+    compile('org.springframework:spring-context-support')
+
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-devtools')
+    compile('org.springframework.boot:spring-boot-starter-jetty')
+    compile('org.springframework.boot:spring-boot-starter-jdbc')
+    compile('org.springframework.boot:spring-boot-starter-jersey')
+    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-security')
+    compile('org.springframework.security:spring-security-crypto:5.2.0.RELEASE')
+
+    //OAuth2 Login
+    //compile("org.springframework.security.oauth:spring-security-oauth2:2.2.0.RELEASE")
+    compile('com.okta.spring:okta-spring-boot-starter:0.6.0')
+    compile('com.okta.jwt:okta-jwt-verifier:0.3.0')
+
+    compile('org.opensaml:opensaml:2.6.4')
+
+
+    compile('javax.ws.rs:javax.ws.rs-api:2.1.1')
+    compile('io.swagger:swagger-annotations:1.5.10')
+    compile('io.swagger:swagger-core:1.5.10')
+    compile('io.swagger:swagger-jaxrs:1.5.10')
+    compile('io.swagger:swagger-models:1.5.10')
+    compile('org.glassfish.jersey.media:jersey-media-multipart:2.29.1')
+    compile('org.apache.lucene:lucene-queryparser:6.6.1')
+    compile('org.apache.lucene:lucene-core:6.6.1')
+    compile('org.apache.poi:poi:3.9')
+    compile('org.apache.poi:poi-ooxml:3.9')
+
+    compile('org.springframework.integration:spring-integration-core:5.1.2.RELEASE')
+
+    compile('org.springframework.integration:spring-integration-file:5.1.2.RELEASE')
+
+    // JPA Data (We are going to use Repositories, Entities, Hibernate, etc...)
+    compile ('org.springframework.boot:spring-boot-starter-data-jpa')
+
+    //
+    // couldn't specify version here, or it will conflict with the 'jedis' below.
+    //    https://stackoverflow.com/questions/47907236/nosuchmethoderror-org-springframework-data-repository-config-repositoryconfigur?rq=1
+    //
+    compile ('org.springframework.data:spring-data-redis')
+    compile('redis.clients:jedis:3.1.0')
+
+    compile('commons-beanutils:commons-beanutils:1.9.3')
+    compile('org.apache.httpcomponents:httpclient:4.5')
+    compile('com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20180219.1')
+    compile ('org.zalando:logbook-core:1.9.1')
+    compile("org.zalando:logbook-spring-boot-starter:${logbookVersion}") {
+        exclude group: "org.zalando", module: "logbook-httpclient"
+    }
+    compile('org.jdom:jdom2:2.0.6')
+   // compile('io.swagger:swagger-jersey2-jaxrs:1.5.17')
+
+
+    testCompile('junit:junit:4.12')
+    // AssertJ
+    testCompile('org.assertj:assertj-core:1.7.0')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.meanbean:meanbean:2.0.3')
+    testCompile('org.powermock:powermock-module-junit4:2.0.0')
+    testCompile('org.powermock:powermock-api-mockito2:2.0.0')
+    testCompile('org.apache.httpcomponents:httpmime:4.5.3')
+    testCompile('com.sun.jna:jna:3.0.9')
+    testCompile('commons-codec:commons-codec:1.10')
+    testCompile('com.github.spullara.mustache.java:compiler:0.9.4')
+}
+
+task foo  {
+    println "......$projectDir"
+}
+
+task webpack(type: NpmTask, dependsOn: 'npmInstall') {
+    inputs.file("$projectDir/package.json")
+    inputs.dir("$projectDir/webpack/")
+    inputs.dir("$projectDir/conf/")
+    inputs.dir("$projectDir/src/main/webapp/scss/")
+    outputs.dir("$projectDir/src/main/webapp/dist/")
+    args = ["run", "webpack"]
+}
+
+task npmEslint(type: NpmTask, dependsOn: 'npmInstall') {
+    inputs.file("$projectDir/package.json")
+    args = ["run", "eslint"]
+}
+
+task npmTest(type: NpmTask, dependsOn: 'npmInstall') {
+    inputs.file("$projectDir/package.json")
+    args = ["run", "test"]
+}
+
+task npmDevServer(type: NpmTask) {
+    inputs.file("$projectDir/package.json")
+    args = ["run", "webpack-dev-server"]
+}
+
+task create_zip(type: Zip) {
+    writeBuildNumber()
+    from fileTree('src/main/webapp')
+    archiveName 'public.zip'
+    include('version.json')
+    include('*.html')
+    include('images/**')
+    include('css/**')
+    exclude('data/**')
+    include('**/data/*.zip')
+    include('**/data/*.wav')
+    include('**/bundle.js')
+    include('**/*.bundle.*')
+    exclude('js/**')
+    exclude('**/*.map')
+    destinationDir new File(projectDir, 'build/libs')
+}
+
+task create_debug_zip(type: Zip) {
+    writeBuildNumber()
+    from fileTree('src/main/webapp')
+    archiveName 'public_debug.zip'
+    include('version.json')
+    include('*.html')
+    include('images/**')
+    include('css/**')
+    exclude('data/**')
+    include('**/data/*.zip')
+    include('**/bundle.js')
+    include('**/*.bundle.*')
+    destinationDir new File(projectDir, 'build/libs')
+}
+
+//
+// to initialize test DB
+//     gradlew cleanTestDB  migrateTestDB
+//
+task migrateTestDB(type: org.flywaydb.gradle.task.FlywayMigrateTask) {
+    url = 'jdbc:mysql://localhost/test_nltoolsdb'
+    //url = 'jdbc:mysql://dev-workbench01.db.shared.int.sv2.247-inc.net/test_nltoolsdb'
+    //url = 'jdbc:mysql://psr-workbench01.db.shared.int.sv2.247-inc.net/test_nltoolsdb'
+    //url = 'jdbc:mysql://mysql-db:3306/test_nltoolsdb'
+    user = 'root'
+    password = 'root'
+}
+
+task cleanTestDB(type: org.flywaydb.gradle.task.FlywayCleanTask) {
+    url = 'jdbc:mysql://localhost/test_nltoolsdb'
+    //url = 'jdbc:mysql://dev-workbench01.db.shared.int.sv2.247-inc.net/test_nltoolsdb'
+    //url = 'jdbc:mysql://psr-workbench01.db.shared.int.sv2.247-inc.net/test_nltoolsdb'
+    user = 'root'
+    password = 'root'
+}
+
+task migrateLocalTestDB(type: org.flywaydb.gradle.task.FlywayMigrateTask) {
+    url = 'jdbc:mysql://localhost/test_nltoolsdb'
+    user = 'root'
+    password = 'root@123'
+}
+
+
+bootJar.finalizedBy create_debug_zip
+bootJar.finalizedBy create_zip
+
+build.finalizedBy(create_zip)
+
+task bootWrapper(type: Zip) {
+    def uiPackageName = jar.baseName + '-' + jar.version
+    dependsOn = ['bootJar']
+    from fileTree('build/libs')
+    archiveName jar.baseName + '-wrapper.zip'
+    include(uiPackageName + '.jar')
+    include(create_zip.archiveName)
+    include(create_debug_zip.archiveName)
+    destinationDir new File(projectDir, 'build/libs')
+}
+
+processResources.dependsOn 'webpack'
+
+clean.delete << file('node_modules')
+clean.delete << file('coverage')
+clean.delete << file('bin')
+clean.delete << file('.nyc_output')
+clean.delete << file('src/main/webapp/dist')
+clean.delete << file('src/main/webapp/index.html')
+clean.delete << file('src/main/webapp/webpackStats.json')
+
+//invoke this task by -PyamlFile=client.yaml this way, we can pass the input file from outside
+// ./gradlew -PyamlFile=client.yaml generateAPIDoc
+// ./gradlew -PyamlFile=client.yaml generateServer
+task generateAPIDoc(type: SwaggerCodegen) {
+    language = 'html'
+    if (project.hasProperty('yamlFile')) {
+        inputFile = file(yamlFile)
+    }
+    outputDir = file("$projectDir")
+}
+task generateServer(type: SwaggerCodegen) {
+    language = 'jaxrs'
+    if (project.hasProperty('yamlFile')) {
+        inputFile = file(yamlFile)
+    }
+    outputDir = file("$projectDir")
+    configFile = file('swagger.config.json')
+}
+
+//task clean(type: Delete) {
+//    delete buildDir
+//}
+
+
+//task generateClient(type: SwaggerCodegen, dependsOn: clean) {
+//    language = 'spring'
+//    library = 'spring-cloud'
+//    inputFile = file('petstore.yaml')
+//    outputDir = file("$buildDir/generated/client")
+//}
+
+task copyDocs(type: Copy){
+    from "$projectDir"
+    into "$projectDir/doc"
+    include 'index.html'
+    rename('index.html', 'client.html')
+}
+
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled true
+        html.enabled false
+        html.stylesheet resources.text.fromFile('config/xsl/findbugs-custom.xsl')
+    }
+}
+
+//https://examples.javacodegeeks.com/core-java/gradle/gradle-sourcesets-example/
+task sourceSetProperties {
+    sourceSets {
+        main {
+            println "java.srcDirs = ${java.srcDirs}"
+            println "resources.srcDirs = ${resources.srcDirs}"
+            println "java.files = ${java.files.name}"
+            println "allJava.files = ${allJava.files.name}"
+            println "resources.files = ${resources.files.name}"
+            println "allSource.files = ${allSource.files.name}"
+            // println "output.classesDir = ${output.classesDir}"
+            println "output.resourcesDir = ${output.resourcesDir}"
+            println "output.files = ${output.files}"
+            println "reporting.baseDir = ${reporting.baseDir}"
+            println "buildDir = ${buildDir}"
+            println "testReportDir = ${testReportDir}"
+        }
+    }
+}
+
+//https://github.com/djangofan/junit-suite-order/blob/master/build.gradle
+//https://discuss.gradle.org/t/example-of-running-junit-tests-as-parameterized-and-parallel-at-the-same-time/550/6
+tasks.withType(Test) {
+    jvmArgs '-Xms128m', '-Xmx1024m', '-Ddeploy.profile=test',
+            '-Dhttps.proxyHost=proxy-grp1.lb-priv.sv2.247-inc.net','-Dhttps.proxyPort=3128', // get proxy values from gradle.properties
+            '-Dhttp.proxyHost=proxy-grp1.lb-priv.sv2.247-inc.net','-Dhttp.proxyPort=3128',
+            '-Dorg.gradle.unsafe.configuration-cache-problems=warn', '-Dorg.gradle.unsafe.configuration-cache.max-problems=3',
+            '-Dorg.gradle.unsafe.configuration-cache=true'
+    maxParallelForks = 1
+    testLogging {
+        exceptionFormat "full"
+        events "started", "passed", "skipped", "failed", "standardOut", "standardError"
+        displayGranularity = 0
+    }
+    // no maximum
+    forkEvery = 0
+}
+
+task runTestParallel(type: Test) {
+    description = "Uses Gradle filter to execute targeted test group."
+    jvmArgs "-Ddeploy.profile=test"
+    include '**/All*Tests.class'
+}
+
+bootRun {
+    writeBuildNumber()
+    if ( project.hasProperty('jvmArgs') ) {
+        jvmArgs project.jvmArgs.split('\\s+')
+    } else {
+        jvmArgs "-Dspring.profiles.active=development"
+    }
+}
+
+
+
+springBoot {
+    buildInfo {
+        properties {
+            additional = [
+                    'version'  : project.ext.versionName,
+                    'revision' : project.ext.revision,
+                    'buildDate': System.currentTimeMillis()
+            ]
+        }
+    }
+}

@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> Snapshots renders correctly with default props 1`] = `
+<Form
+  ErrorList={[Function]}
+  ObjectFieldTemplate={[Function]}
+  className="form-group"
+  disabled={false}
+  formContext={Object {}}
+  formData={Object {}}
+  liveValidate={false}
+  noHtml5Validate={false}
+  noValidate={false}
+  onChange={[Function]}
+  onSubmit={[Function]}
+  safeRenderCompletion={false}
+  schema={
+    Object {
+      "properties": Object {
+        "description": Object {
+          "optional": true,
+          "title": "Description",
+          "type": "string",
+        },
+        "locale": Object {
+          "default": "en-US",
+          "title": "Locale",
+          "type": "string",
+        },
+        "name": Object {
+          "isRequired": true,
+          "title": "Name",
+          "type": "string",
+        },
+        "vertical": Object {
+          "default": "FINANCIAL",
+          "title": "Vertical",
+          "type": "string",
+        },
+      },
+      "required": Array [
+        "name",
+      ],
+      "title": "",
+      "type": "object",
+    }
+  }
+  showErrorList={false}
+  transformErrors={[Function]}
+  uiSchema={
+    Object {
+      "description": Object {
+        "ui:field": "text",
+      },
+      "locale": Object {
+        "ui:field": "locale",
+      },
+      "name": Object {
+        "ui:field": "text",
+      },
+      "vertical": Object {
+        "ui:field": "vertical",
+      },
+    }
+  }
+>
+  <div>
+    <button
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</Form>
+`;

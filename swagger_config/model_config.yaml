@@ -1,0 +1,353 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Models
+  description: Models APIs
+host: localhost:8443
+basePath: /nltools/v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /configs:
+    x-swagger-router-controller: configs
+    get:
+      tags:
+        - get
+      summary: List all configs
+      operationId: listConfigs
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          type: integer
+          format: int32
+          default: 25
+        - name: startIndex
+          in: query
+          description: starting index
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        200:
+          description: An paged array of Configs
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: "#/definitions/ModelConfigCollection"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    post:
+      tags:
+        - post
+      summary: Add a model config archive
+      operationId: addConfig
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: name
+          in: formData
+          required: true
+          description: The name of the config
+          type: string
+        - name: description
+          in: formData
+          required: true
+          description: The description of the config
+          type: string
+        - name: projectId
+          in: formData
+          required: true
+          description: The projectId
+          type: string
+        - name: file
+          description: The file form-data param
+          in: formData
+          type: file
+      responses:
+        201:
+          description: Config File succesfully added
+          schema:
+            $ref: "#/definitions/ModelConfigDetail"
+        400:
+          description: Invalid request
+          schema:
+            $ref: "#/definitions/Error"
+        401:
+          description: Unauthorized to call the API
+        401:
+          description: User not authenticated
+          schema:
+            $ref: "#/definitions/Error"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    post:
+      tags:
+        - post
+      summary: Add a model config
+      operationId: addConfig
+      consumes:
+        - application/json
+      parameters:
+        - name: config
+          in: body
+          required: true
+          description: The config data to add
+          schema:
+            $ref: "#/definitions/ModelConfigDetail"
+      responses:
+        201:
+          description: Config File succesfully added
+          schema:
+            $ref: "#/definitions/ModelConfigDetail"
+        400:
+          description: Invalid request
+          schema:
+            $ref: "#/definitions/Error"
+        401:
+          description: Unauthorized to call the API
+        401:
+          description: User not authenticated
+          schema:
+            $ref: "#/definitions/Error"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /configs/{configId}:
+    get:
+      summary: Get Config Metadata
+      operationId: getConfigById
+      tags:
+        - get
+      parameters:
+        - name: configId
+          in: path
+          required: true
+          description: The id of the config metadata to retrieve
+          type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          schema:
+            $ref: "#/definitions/ModelConfigDetail"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    patch:
+      tags:
+        - patch
+      consumes:
+        - application/json-patch+json
+      summary: Modifies a model configuration
+      operationId: patchConfig
+      description: Modifies one or more attributes of a model configuration
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the config to patch
+          type: string
+        - name: JsonPatch
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/PatchRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ModelConfigDetail'
+        400:
+          description: Invalid request
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /configs/{configId}/data:
+      get:
+        summary: Get config object with all data
+        operationId: getConfigDataById
+        tags:
+          - get
+        parameters:
+          - name: configId
+            in: path
+            required: true
+            description: The id of the config file to retrieve
+            type: string
+        responses:
+          200:
+            description: Expected response to a valid request
+            schema:
+              $ref: '#/definitions/ModelConfigDetail'
+          500:
+            description:  Internal Server Error
+            schema:
+              $ref: "#/definitions/Error"
+  /configs/{configId}/download:
+    get:
+      summary: Download config archive
+      operationId: getConfigFilesById
+      tags:
+        - get
+      parameters:
+        - name: configId
+          in: path
+          required: true
+          description: The id of the config file to retrieve
+          type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          type: file
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /projects/{projectId}/configs:
+    get:
+      summary: Get all conigurations for a project
+      operationId: getConfigsForProject
+      tags:
+        - get
+      parameters:
+        - name: projectId
+          in: path
+          required: true
+          description: The project Id
+          type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ModelConfigCollection'
+        404:
+          description: Invalid project Id
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  ModelConfig:
+    discriminator: name
+    type: object
+    required:
+      - name
+      - description
+      - configFile
+      - user
+      - projectId
+    properties:
+      name:
+        type: string
+        description: The name of the config
+      description:
+        type: string
+        description: The discription of the config
+      configArchiveFile:
+        type: file
+        description: The archived config and support files
+      user:
+        type: string
+        description: The username who saved the config
+      projectId:
+        type: string
+        description: The project the config is for
+  ModelConfigDetail:
+    allOf:
+        - $ref: '#/definitions/ModelConfig'
+        - type: object
+        - properties:
+            id:
+              type: string
+              description: The ID of this config
+            configFile:
+              type: string
+              description: The config file as a string
+            stopwordsFile:
+              type: string
+              description: The stopwords file as a string
+            wordClassesFile:
+              type: string
+              description: The word classes file as a string
+            stemmingExceptionsFile:
+              type: string
+              description: The stemming exceptions file as a string
+            wordExpansionsFile:
+              type: string
+              description: The word expansions file as a string
+            locationClassesFile:
+              type: string
+              description: The location classes file as a string
+            createdAt:
+              type: integer
+              format: int64
+              description: The milliseconds since epoch representing the time the config was uploaded
+            modifiedAt:
+              type: integer
+              format: int64
+              description: The milliseconds since epoch representing the time the config metadata was modified
+  ModelConfigCollection:
+    type: array
+    items:
+      $ref: "#/definitions/ModelConfigDetail"
+  PatchRequest:
+    type: array
+    items:
+      $ref: "#/definitions/PatchDocument"
+  PatchDocument:
+    description: A JSONPatch document as defined by RFC 6902
+    required:
+     - op
+     - path
+    properties:
+     op:
+      type: string
+      description: The operation to be performed
+      enum:
+       - add
+       - remove
+       - replace
+       - move
+       - copy
+       - test
+     path:
+      type: string
+      description: A JSON-Pointer
+     value:
+      type: object
+      description: The value to be used within the operations.
+     from:
+      type: string
+      description: A string containing a JSON Pointer value.
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response
+

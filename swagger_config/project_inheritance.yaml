@@ -1,0 +1,141 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: ProjectDatasetInheritance
+  description: Project - Dataset inheritance boostrapping APIs
+host: localhost:8443
+basePath: /nltools
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /v1/inheritance:
+    x-swagger-router-controller: projects
+    get:
+      tags:
+        - get
+      summary: List all inheritance details
+      operationId: listProjectDatasetInheritanceDetails
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          type: integer
+          format: int32
+          default: 100
+        - name: startIndex
+          in: query
+          description: starting index
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        200:
+          description: An paged array of Projects-Dataset inheritances
+          headers:
+            headers:
+              location:
+                type: string
+                description: A link to the next page of responses
+              X-Offset:
+                type: integer
+                format: int32
+                description: The current offset / startIndex
+              X-Total-Count:
+                type: integer
+                format: int32
+                description: The total number of items available
+          schema:
+            $ref: "#/definitions/ProjectDatasetInheritanceDetailList"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+    post:
+      tags:
+        - post
+      summary: Stage for project - dataset to be inherited 
+      operationId: addProjectDatasetInheritance
+      parameters:
+        - name: projectDatasetInheritance
+          description: ProjectDatasetInheritance object
+          in: body
+          schema:
+            $ref: "#/definitions/ProjectDatasetInheritance"
+      responses:
+        201:
+          description: ProjectDatasetInheritance staged succesfully created
+          schema:
+            $ref: "#/definitions/ProjectDatasetInheritanceDetail"
+        400:
+          description: ProjectDatasetInheritance could not be staged successfully
+          schema:
+            $ref: "#/definitions/Error"
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  ProjectDatasetInheritanceDetailList:
+    type: array
+    items:
+      $ref: '#/definitions/ProjectDatasetInheritanceDetail'
+  ProjectDatasetInheritance:
+    type: object
+    required:
+      - inheritingFromClientId
+      - inheritingFromProjectId
+      - inheritingFromDatasetId
+      - inheritingIntoClientId
+      - inheritingIntoProjectId
+      - inheritingIntoDatasetId
+    properties:
+      inheritingFromClientId:
+        type: string
+        description: ClientId from where to inherit
+      inheritingFromProjectId:
+        type: string
+        description: ProjectId from where to inherit
+      inheritingFromDatasetId:
+        type: string
+        description: DatasetId from where to inherit
+      inheritingIntoClientId:
+        type: string
+        description: ClientId into which inherit        
+      inheritingIntoProjectId:
+        type: string
+        description: ProjectId into which inherit
+      inheritingIntoDatasetId:
+        type: string
+        description: DatasetId into which inherit
+  ProjectDatasetInheritanceDetail:
+    allOf:
+    - $ref: '#/definitions/ProjectDatasetInheritance'
+    - type: object
+      required:
+        - id
+      properties:
+        id:
+          type: string
+          description: project dataset inheritance id
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response

@@ -1,0 +1,581 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UtteranceInputBar /> Snapshots renders Run Test button when utterance result is provided 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "backgroundColor": "#fafbfc",
+      "borderTop": "1px solid #fafbfc",
+    }
+  }
+>
+  <ul
+    className="utterance-input-area-ul"
+  >
+    <li
+      className="center-item-li"
+      key="input-bar-digital"
+    >
+      <textarea
+        className="utterance-input-area-input"
+        cols="100"
+        name="utterance"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Type utterance here... example: "
+        rows="1"
+      />
+      <div
+        className="model-test-utterance-instructions"
+      >
+        Count: 200
+      </div>
+      <withTheme(InfoTooltip)
+        direction="right"
+        tooltipText="Do not include any Personally Identifiable information in the utterance string"
+      />
+      <withTheme(Button)
+        className="model-test-submit"
+        onClick={[Function]}
+      >
+        RUN TEST
+      </withTheme(Button)>
+    </li>
+  </ul>
+</Deprecated>
+`;
+
+exports[`<UtteranceInputBar /> Snapshots renders correctly for a Speech model with Digital as test model type 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "backgroundColor": "#fafbfc",
+      "borderTop": "1px solid #fafbfc",
+    }
+  }
+>
+  <ul
+    className="utterance-input-area-ul"
+  >
+    <span>
+      <li
+        className="center-item-li radio-group"
+      >
+        <withTheme(RadioGroup)
+          displayType="horizontal"
+          labels={
+            Array [
+              "Speech",
+              "Digital",
+            ]
+          }
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "container": Object {},
+              "label": Object {
+                "color": "#575757",
+              },
+              "paddingLeft": "20px",
+            }
+          }
+          value="DIGITAL_SPEECH"
+          values={
+            Array [
+              "DIGITAL_SPEECH",
+              "DIGITAL",
+            ]
+          }
+        />
+      </li>
+      <li
+        className="center-item-li"
+      >
+        <PrimaryNavDivider
+          fill="#6E6E6E"
+          float="left"
+          height="20px"
+        />
+      </li>
+    </span>
+    <li
+      className="center-item-li"
+      key="input-bar-digital"
+    >
+      <textarea
+        className="utterance-input-area-input"
+        cols="100"
+        name="utterance"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Type utterance here... example: "
+        rows="1"
+      />
+      <div
+        className="model-test-utterance-instructions"
+      >
+        Count: 200
+      </div>
+      <withTheme(InfoTooltip)
+        direction="right"
+        tooltipText="Do not include any Personally Identifiable information in the utterance string"
+      />
+    </li>
+  </ul>
+</Deprecated>
+`;
+
+exports[`<UtteranceInputBar /> Snapshots renders correctly for a Speech model with Digital as test model type and user entered utterance 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "backgroundColor": "#fafbfc",
+      "borderTop": "1px solid #fafbfc",
+    }
+  }
+>
+  <ul
+    className="utterance-input-area-ul"
+  >
+    <span>
+      <li
+        className="center-item-li radio-group"
+      >
+        <withTheme(RadioGroup)
+          displayType="horizontal"
+          labels={
+            Array [
+              "Speech",
+              "Digital",
+            ]
+          }
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "container": Object {},
+              "label": Object {
+                "color": "#575757",
+              },
+              "paddingLeft": "20px",
+            }
+          }
+          value="DIGITAL_SPEECH"
+          values={
+            Array [
+              "DIGITAL_SPEECH",
+              "DIGITAL",
+            ]
+          }
+        />
+      </li>
+      <li
+        className="center-item-li"
+      >
+        <PrimaryNavDivider
+          fill="#6E6E6E"
+          float="left"
+          height="20px"
+        />
+      </li>
+    </span>
+    <li
+      className="center-item-li"
+      key="input-bar-digital"
+    >
+      <textarea
+        className="utterance-input-area-input"
+        cols="100"
+        name="utterance"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Type utterance here... example: "
+        rows="1"
+      />
+      <div
+        className="model-test-utterance-instructions"
+      >
+        Count: 200
+      </div>
+      <withTheme(InfoTooltip)
+        direction="right"
+        tooltipText="Do not include any Personally Identifiable information in the utterance string"
+      />
+      <withTheme(Button)
+        className="model-test-submit"
+        onClick={[Function]}
+      >
+        RUN TEST
+      </withTheme(Button)>
+    </li>
+  </ul>
+</Deprecated>
+`;
+
+exports[`<UtteranceInputBar /> Snapshots renders correctly for a Speech model with Speech as test model type, with fileType as link 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "backgroundColor": "#fafbfc",
+      "borderTop": "1px solid #fafbfc",
+    }
+  }
+>
+  <ul
+    className="utterance-input-area-ul"
+  >
+    <span>
+      <li
+        className="center-item-li radio-group"
+      >
+        <withTheme(RadioGroup)
+          displayType="horizontal"
+          labels={
+            Array [
+              "Speech",
+              "Digital",
+            ]
+          }
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "container": Object {},
+              "label": Object {
+                "color": "#575757",
+              },
+              "paddingLeft": "20px",
+            }
+          }
+          value="DIGITAL_SPEECH"
+          values={
+            Array [
+              "DIGITAL_SPEECH",
+              "DIGITAL",
+            ]
+          }
+        />
+      </li>
+      <li
+        className="center-item-li"
+      >
+        <PrimaryNavDivider
+          fill="#6E6E6E"
+          float="left"
+          height="20px"
+        />
+      </li>
+    </span>
+    <span>
+      <li
+        className="center-item-li"
+        key="input-bar-speech"
+        style={
+          Object {
+            "paddingLeft": "30px",
+          }
+        }
+      >
+        <withTheme(ContextualActionItem)
+          icon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          onClickAction={[Function]}
+          styleOverride={
+            Object {
+              "fontWeight": "bold",
+              "icon": Object {
+                "height": "22px",
+                "paddingRight": "1px",
+                "width": "15px",
+              },
+              "marginTop": "0px",
+              "paddingLeft": "0px",
+              "paddingRight": "20px",
+            }
+          }
+        >
+          RECORD
+        </withTheme(ContextualActionItem)>
+        <withTheme(ContextualActionItem)
+          icon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          left={true}
+          styleOverride={
+            Object {
+              "fontWeight": "bold",
+              "icon": Object {
+                "height": "22px",
+                "paddingRight": "1px",
+                "width": "15px",
+              },
+              "marginTop": "0px",
+              "paddingLeft": "0px",
+              "paddingRight": "20px",
+            }
+          }
+        >
+          <Upload
+            accept="audio/wav"
+            beforeUpload={[Function]}
+            component="span"
+            customRequest={[Function]}
+            data={Object {}}
+            headers={Object {}}
+            multipart={false}
+            multiple={false}
+            name="file"
+            onError={[Function]}
+            onReady={[Function]}
+            onStart={[Function]}
+            onSuccess={[Function]}
+            openFileDialogOnClick={true}
+            prefixCls="rc-upload"
+            supportServerRender={false}
+            withCredentials={false}
+          >
+            UPLOAD
+          </Upload>
+        </withTheme(ContextualActionItem)>
+        <withTheme(ContextualActionItem)
+          icon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          left={true}
+          onClickAction={[Function]}
+          styleOverride={
+            Object {
+              "fontWeight": "bold",
+              "icon": Object {
+                "height": "22px",
+                "paddingRight": "1px",
+                "width": "15px",
+              },
+              "marginTop": "0px",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+            }
+          }
+        >
+          LINK
+        </withTheme(ContextualActionItem)>
+      </li>
+    </span>
+  </ul>
+</Deprecated>
+`;
+
+exports[`<UtteranceInputBar /> Snapshots renders correctly for a digital model 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "backgroundColor": "#fafbfc",
+      "borderTop": "1px solid #fafbfc",
+    }
+  }
+>
+  <ul
+    className="utterance-input-area-ul"
+  >
+    <li
+      className="center-item-li"
+      key="input-bar-digital"
+    >
+      <textarea
+        className="utterance-input-area-input"
+        cols="100"
+        name="utterance"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Type utterance here... example: "
+        rows="1"
+      />
+      <div
+        className="model-test-utterance-instructions"
+      >
+        Count: 200
+      </div>
+      <withTheme(InfoTooltip)
+        direction="right"
+        tooltipText="Do not include any Personally Identifiable information in the utterance string"
+      />
+    </li>
+  </ul>
+</Deprecated>
+`;
+
+exports[`<UtteranceInputBar /> Snapshots renders just the Action elements when modelTestResults are not present 1`] = `
+<Deprecated
+  styleOverride={
+    Object {
+      "backgroundColor": "#fafbfc",
+      "borderTop": "1px solid #fafbfc",
+    }
+  }
+>
+  <ul
+    className="utterance-input-area-ul"
+  >
+    <span>
+      <li
+        className="center-item-li radio-group"
+      >
+        <withTheme(RadioGroup)
+          displayType="horizontal"
+          labels={
+            Array [
+              "Speech",
+              "Digital",
+            ]
+          }
+          onChange={[Function]}
+          styleOverride={
+            Object {
+              "container": Object {},
+              "label": Object {
+                "color": "#575757",
+              },
+              "paddingLeft": "20px",
+            }
+          }
+          value="DIGITAL_SPEECH"
+          values={
+            Array [
+              "DIGITAL_SPEECH",
+              "DIGITAL",
+            ]
+          }
+        />
+      </li>
+      <li
+        className="center-item-li"
+      >
+        <PrimaryNavDivider
+          fill="#6E6E6E"
+          float="left"
+          height="20px"
+        />
+      </li>
+    </span>
+    <span>
+      <li
+        className="center-item-li"
+        key="input-bar-speech"
+        style={
+          Object {
+            "paddingLeft": "30px",
+          }
+        }
+      >
+        <withTheme(ContextualActionItem)
+          icon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          onClickAction={[Function]}
+          styleOverride={
+            Object {
+              "fontWeight": "bold",
+              "icon": Object {
+                "height": "22px",
+                "paddingRight": "1px",
+                "width": "15px",
+              },
+              "marginTop": "0px",
+              "paddingLeft": "0px",
+              "paddingRight": "20px",
+            }
+          }
+        >
+          RECORD
+        </withTheme(ContextualActionItem)>
+        <withTheme(ContextualActionItem)
+          icon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          left={true}
+          styleOverride={
+            Object {
+              "fontWeight": "bold",
+              "icon": Object {
+                "height": "22px",
+                "paddingRight": "1px",
+                "width": "15px",
+              },
+              "marginTop": "0px",
+              "paddingLeft": "0px",
+              "paddingRight": "20px",
+            }
+          }
+        >
+          <Upload
+            accept="audio/wav"
+            beforeUpload={[Function]}
+            component="span"
+            customRequest={[Function]}
+            data={Object {}}
+            headers={Object {}}
+            multipart={false}
+            multiple={false}
+            name="file"
+            onError={[Function]}
+            onReady={[Function]}
+            onStart={[Function]}
+            onSuccess={[Function]}
+            openFileDialogOnClick={true}
+            prefixCls="rc-upload"
+            supportServerRender={false}
+            withCredentials={false}
+          >
+            UPLOAD
+          </Upload>
+        </withTheme(ContextualActionItem)>
+        <withTheme(ContextualActionItem)
+          icon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "type": [Function],
+            }
+          }
+          left={true}
+          onClickAction={[Function]}
+          styleOverride={
+            Object {
+              "fontWeight": "bold",
+              "icon": Object {
+                "height": "22px",
+                "paddingRight": "1px",
+                "width": "15px",
+              },
+              "marginTop": "0px",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+            }
+          }
+        >
+          LINK
+        </withTheme(ContextualActionItem)>
+      </li>
+    </span>
+  </ul>
+</Deprecated>
+`;

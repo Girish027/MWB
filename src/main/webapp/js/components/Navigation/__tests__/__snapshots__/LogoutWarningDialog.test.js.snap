@@ -1,0 +1,1157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LogoutWarningDialog /> should match snapshot 1`] = `
+<LogoutWarningDialog
+  iconLink="http://link-to-icon.svg"
+  isOpen={true}
+  onClickOk={[Function]}
+  onClose={[MockFunction]}
+  productName="Engagement Cloud"
+>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    headerChildren="Confirm [24]7ai Engagement Cloud Log Out"
+    isOpen={true}
+    okChildren="LOG OUT"
+    okVisible={true}
+    onClickCancel={[MockFunction]}
+    onClickClose={[MockFunction]}
+    onClickOk={[Function]}
+    styleOverride={
+      Object {
+        "childContainer": Object {
+          "marginBottom": "15px",
+          "marginTop": "30px",
+        },
+        "container": Object {
+          "background": "#FAFAFA",
+          "boxShadow": "rgba(0, 0, 0, 0.2) 1px 3px 3px 0px, rgba(0, 0, 0, 0.2) 1px 3px 15px 2px",
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "100%",
+          "maxWidth": "600px",
+        },
+        "content": Object {
+          "left": "calc((110vw - 680px) / 2)",
+          "maxHeight": "515px",
+          "maxWidth": "532px",
+          "top": "243px",
+        },
+        "footer": Object {
+          "borderTop": "1px solid",
+          "display": "flex",
+          "paddingBottom": "12px",
+          "paddingRight": "15px",
+          "paddingTop": "12px",
+        },
+        "header": Object {
+          "title": Object {
+            "fontSize": "20px",
+            "marginLeft": "20px",
+            "marginTop": "20px",
+          },
+        },
+      }
+    }
+  >
+    <DialogComponent
+      cancelButtonTypeOverride={null}
+      cancelChildren="CANCEL"
+      cancelDisabled={false}
+      cancelVisible={true}
+      centerContent={true}
+      closeIconVisible={true}
+      footerChildren={null}
+      headerChildren="Confirm [24]7ai Engagement Cloud Log Out"
+      headerIcon={null}
+      isOpen={true}
+      okButtonTypeOverride={null}
+      okChildren="LOG OUT"
+      okDisabled={false}
+      okVisible={true}
+      onClickCancel={[MockFunction]}
+      onClickClose={[MockFunction]}
+      onClickOk={[Function]}
+      onKeyDownClose={[Function]}
+      otherCancelProps={Object {}}
+      otherFooterProps={Object {}}
+      otherHeaderProps={Object {}}
+      otherOkProps={Object {}}
+      showBodySeperator={true}
+      showFooter={true}
+      showHeader={true}
+      size="default"
+      styleOverride={
+        Object {
+          "childContainer": Object {
+            "marginBottom": "15px",
+            "marginTop": "30px",
+          },
+          "container": Object {
+            "background": "#FAFAFA",
+            "boxShadow": "rgba(0, 0, 0, 0.2) 1px 3px 3px 0px, rgba(0, 0, 0, 0.2) 1px 3px 15px 2px",
+            "display": "grid",
+            "gridTemplateRows": "60px auto 60px",
+            "height": "100%",
+            "maxWidth": "600px",
+          },
+          "content": Object {
+            "left": "calc((110vw - 680px) / 2)",
+            "maxHeight": "515px",
+            "maxWidth": "532px",
+            "top": "243px",
+          },
+          "footer": Object {
+            "borderTop": "1px solid",
+            "display": "flex",
+            "paddingBottom": "12px",
+            "paddingRight": "15px",
+            "paddingTop": "12px",
+          },
+          "header": Object {
+            "title": Object {
+              "fontSize": "20px",
+              "marginLeft": "20px",
+              "marginTop": "20px",
+            },
+          },
+        }
+      }
+      tfsStyle={
+        Object {
+          "button": Object {
+            "base": Object {
+              ":focus": Object {
+                "outline": "2px solid #009CDE",
+              },
+              "border": "1px solid transparent",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "13px",
+              "fontWeight": 600,
+              "minHeight": "35px",
+              "minWidth": "100px",
+              "outlineOffset": "2px",
+              "paddingLeft": "20px",
+              "paddingRight": "20px",
+              "wordBreak": "normal",
+            },
+            "disabled": Object {
+              "cursor": "not-allowed",
+              "flat": Object {
+                "color": "#666666",
+              },
+              "primary": Object {
+                "backgroundColor": "#E0E0E0",
+                "color": "#666666",
+              },
+              "secondary": Object {
+                "border": "2px solid #E0E0E0",
+                "color": "#666666",
+              },
+            },
+            "flat": Object {
+              ":active": Object {
+                "color": "#004C97",
+              },
+              ":hover": Object {
+                "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                "color": "#336FAB",
+              },
+              "backgroundColor": "transparent",
+              "color": "#000000",
+              "minWidth": "auto",
+              "paddingLeft": "10px",
+              "paddingRight": "10px",
+            },
+            "primary": Object {
+              ":active": Object {
+                "backgroundColor": "#336FAB",
+                "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                "color": "#FFFFFF",
+              },
+              ":hover": Object {
+                "backgroundColor": "#336FAB",
+                "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                "color": "#FFFFFF",
+              },
+              "backgroundColor": "#004C97",
+              "color": "#FFFFFF",
+            },
+            "secondary": Object {
+              ":active": Object {
+                "border": "2px solid #336FAB",
+                "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                "color": "#336FAB",
+              },
+              ":hover": Object {
+                "border": "2px solid #336FAB",
+                "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                "color": "#336FAB",
+              },
+              "backgroundColor": "#FFFFFF",
+              "border": "2px solid #004C97",
+              "color": "#004C97",
+            },
+          },
+          "dialog": Object {
+            "cancel": Object {},
+            "cancelButtonType": "flat",
+            "childContainer": Object {
+              "overflow": "auto",
+              "padding": "20px 30px 30px",
+              "textAlign": "center",
+            },
+            "closeIcon": Object {
+              "alignSelf": "end",
+              "borderBottom": "1px solid",
+              "borderBottomColor": "#DADADA",
+              "boxSizing": "border-box",
+              "cursor": "pointer",
+              "display": "flex",
+              "flexDirection": "column",
+              "height": "100%",
+              "justifyContent": "center",
+              "paddingLeft": "23px",
+              "paddingRight": "23px",
+              "svg": Object {
+                "display": "block",
+                "fill": "black",
+                "float": "right",
+                "height": "16px",
+                "width": "16px",
+              },
+            },
+            "container": Object {
+              "background": "rgb(255, 255, 255)",
+              "border": "1px solid rgb(204, 204, 204)",
+              "borderRadius": "4px",
+              "boxShadow": "1px 3px 3px 0 rgba(0,0,0,.2), 1px 3px 15px 2px rgba(0,0,0,.2)",
+              "display": "grid",
+              "fontFamily": "Lato",
+              "gridTemplateRows": "60px auto 60px",
+            },
+            "footer": Object {
+              "borderTop": "1px solid",
+              "borderTopColor": "#DADADA",
+              "display": "flex",
+              "justifyContent": "flex-end",
+              "paddingBottom": "12px",
+              "paddingLeft": "15px",
+              "paddingRight": "15px",
+              "paddingTop": "12px",
+            },
+            "header": Object {
+              "borderBottom": "1px solid",
+              "borderBottomColor": "#DADADA",
+              "boxSizing": "border-box",
+              "display": "flex",
+              "flexDirection": "column",
+              "height": "100%",
+              "justifyContent": "center",
+              "title": Object {
+                "fontSize": "20px",
+                "fontWeight": "bold",
+                "marginLeft": "23px",
+                "marginRight": "20px",
+              },
+              "titleIcon": Object {
+                "marginRight": "20px",
+              },
+              "width": "100%",
+            },
+            "headerContainer": Object {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            },
+            "ok": Object {
+              "marginLeft": "20px",
+            },
+            "okButtonType": "primary",
+            "overlay": Object {
+              "alignItems": "center",
+              "backgroundColor": "rgba(0, 0, 0, 0.34)",
+              "bottom": "0px",
+              "display": "flex",
+              "flexDirection": "column",
+              "height": "100%",
+              "justifyContent": "center",
+              "left": "0px",
+              "padding": "1em",
+              "position": "fixed",
+              "right": "0px",
+              "top": "0px",
+              "verticalAlign": "middle",
+              "width": "100%",
+              "zIndex": "9000",
+            },
+            "size": Object {
+              "default": Object {},
+              "large": Object {
+                "height": "85vh",
+                "maxHeight": "700px",
+                "width": "700px",
+              },
+              "medium": Object {
+                "height": "400px",
+                "width": "600px",
+              },
+              "small": Object {
+                "height": "300px",
+                "width": "500px",
+              },
+            },
+          },
+        }
+      }
+    >
+      <div
+        data-radium={true}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "rgba(0, 0, 0, 0.34)",
+            "bottom": "0px",
+            "display": "flex",
+            "flexDirection": "column",
+            "height": "100%",
+            "justifyContent": "center",
+            "left": "0px",
+            "padding": "1em",
+            "position": "fixed",
+            "right": "0px",
+            "top": "0px",
+            "verticalAlign": "middle",
+            "width": "100%",
+            "zIndex": "9000",
+          }
+        }
+      >
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "background": "#FAFAFA",
+              "border": "1px solid rgb(204, 204, 204)",
+              "borderRadius": "4px",
+              "boxShadow": "rgba(0, 0, 0, 0.2) 1px 3px 3px 0px, rgba(0, 0, 0, 0.2) 1px 3px 15px 2px",
+              "display": "grid",
+              "fontFamily": "Lato",
+              "gridTemplateRows": "60px auto 60px",
+              "height": "100%",
+              "maxWidth": "600px",
+            }
+          }
+        >
+          <div
+            data-radium={true}
+            key=".0"
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <div
+              data-radium={true}
+              key=".0"
+              style={
+                Object {
+                  "borderBottom": "1px solid",
+                  "borderBottomColor": "#DADADA",
+                  "boxSizing": "border-box",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                data-radium={true}
+                style={
+                  Object {
+                    "fontSize": "20px",
+                    "fontWeight": "bold",
+                    "marginLeft": "20px",
+                    "marginRight": "20px",
+                    "marginTop": "20px",
+                  }
+                }
+              >
+                <span
+                  key=".1"
+                >
+                  Confirm [24]7ai Engagement Cloud Log Out
+                </span>
+              </div>
+            </div>
+            <div
+              data-radium={true}
+              key=".$tfs-dialog-close-key"
+              onClick={[MockFunction]}
+              onKeyDown={[Function]}
+              onMouseDown={[MockFunction]}
+              role="button"
+              style={
+                Object {
+                  "alignSelf": "end",
+                  "borderBottom": "1px solid",
+                  "borderBottomColor": "#DADADA",
+                  "boxSizing": "border-box",
+                  "cursor": "pointer",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "paddingLeft": "23px",
+                  "paddingRight": "23px",
+                }
+              }
+              tabIndex={0}
+            >
+               
+              <Xmark
+                fill="black"
+                height="1em"
+                key=".1"
+                onClick={[MockFunction]}
+                style={
+                  Object {
+                    "display": "block",
+                    "fill": "black",
+                    "float": "right",
+                    "height": "16px",
+                    "width": "16px",
+                  }
+                }
+                width="1em"
+              >
+                <svg
+                  height="1em"
+                  onClick={[MockFunction]}
+                  style={
+                    Object {
+                      "display": "block",
+                      "fill": "black",
+                      "float": "right",
+                      "height": "16px",
+                      "width": "16px",
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M.421 20.58a1.442 1.442 0 0 0 2.038 2.04l8.891-8.89a.242.242 0 0 1 .34 0l8.891 8.89a1.445 1.445 0 0 0 2.41-.64 1.46 1.46 0 0 0-.372-1.4l-8.891-8.89a.257.257 0 0 1-.071-.17.239.239 0 0 1 .071-.17l8.892-8.89A1.442 1.442 0 0 0 20.581.42L11.69 9.31a.242.242 0 0 1-.34 0L2.459.42A1.442 1.442 0 0 0 .421 2.46l8.891 8.89a.239.239 0 0 1 .071.17.257.257 0 0 1-.071.17z"
+                    data-name="remove"
+                    fill="black"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </Xmark>
+            </div>
+          </div>
+          <div
+            data-radium={true}
+            key=".1"
+            style={
+              Object {
+                "marginBottom": "15px",
+                "marginTop": "30px",
+                "overflow": "auto",
+                "padding": "20px 30px 30px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <Card
+              iconLink="http://link-to-icon.svg"
+              key=".0"
+              title="Engagement Cloud"
+            >
+              <div
+                role="presentation"
+                style={
+                  Object {
+                    "background": "#FFFFFF 0% 0% no-repeat padding-box",
+                    "borderRadius": "3px",
+                    "boxShadow": "2px 2px 5px #0000001A",
+                    "boxSizing": "border-box",
+                    "fontSize": "16px",
+                    "margin": "auto",
+                    "padding": "20px",
+                    "width": "202px",
+                  }
+                }
+              >
+                <img
+                  alt="Application logo"
+                  src="http://link-to-icon.svg"
+                  style={
+                    Object {
+                      "height": "80px",
+                      "marginLeft": "auto",
+                      "marginRight": "auto",
+                      "width": "122px",
+                    }
+                  }
+                />
+                <div
+                  style={
+                    Object {
+                      "color": "#313f54",
+                      "fontSize": "16px",
+                      "fontWeight": "bold",
+                      "lineHeight": "18px",
+                      "paddingBottom": "10px",
+                      "paddingTop": "15px",
+                    }
+                  }
+                >
+                  Engagement Cloud
+                </div>
+              </div>
+            </Card>
+            <div
+              data-radium={true}
+              key=".1"
+              style={
+                Object {
+                  "color": "#313f54",
+                  "lineHeight": "18px",
+                  "paddingTop": "10px",
+                  "textAlign": "left",
+                }
+              }
+            >
+              <p
+                data-radium={true}
+                key=".0"
+                style={
+                  Object {
+                    "marginBottom": "1em",
+                    "marginTop": "1em",
+                  }
+                }
+              >
+                Logging out will end your [24]7 Engagement Cloud session, but your single sign-on session may still be active.
+              </p>
+              <strong
+                key=".1"
+              >
+                If you have other [24]7ai tools open in other tabs or browsers, you will need to log out of each tool individually.
+              </strong>
+              <p
+                data-radium={true}
+                key=".2"
+                style={
+                  Object {
+                    "marginBottom": "1em",
+                    "marginTop": "1em",
+                  }
+                }
+              >
+                To protect your privacy, close all browser windows when you have logged out of all tools, especially if you are using a public computer.
+              </p>
+            </div>
+          </div>
+          <div
+            data-radium={true}
+            key=".2"
+            style={
+              Object {
+                "borderTop": "1px solid",
+                "borderTopColor": "#DADADA",
+                "display": "flex",
+                "justifyContent": "flex-end",
+                "paddingBottom": "12px",
+                "paddingLeft": "15px",
+                "paddingRight": "15px",
+                "paddingTop": "12px",
+              }
+            }
+          >
+            <withTheme(Button)
+              disabled={false}
+              key=".$tfs-dialog-cancel-key"
+              name="tfs-dialog-cancel-key"
+              onClick={[MockFunction]}
+              styleOverride={
+                Object {
+                  "base": Object {
+                    ":focus": Object {
+                      "outline": "2px solid #009CDE",
+                    },
+                    "border": "1px solid transparent",
+                    "borderRadius": "4px",
+                    "cursor": "pointer",
+                    "fontSize": "13px",
+                    "fontWeight": 600,
+                    "minHeight": "35px",
+                    "minWidth": "100px",
+                    "outlineOffset": "2px",
+                    "paddingLeft": "20px",
+                    "paddingRight": "20px",
+                    "wordBreak": "normal",
+                  },
+                  "disabled": Object {
+                    "cursor": "not-allowed",
+                    "flat": Object {
+                      "color": "#666666",
+                    },
+                    "primary": Object {
+                      "backgroundColor": "#E0E0E0",
+                      "color": "#666666",
+                    },
+                    "secondary": Object {
+                      "border": "2px solid #E0E0E0",
+                      "color": "#666666",
+                    },
+                  },
+                  "flat": Object {
+                    ":active": Object {
+                      "color": "#004C97",
+                    },
+                    ":hover": Object {
+                      "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                      "color": "#336FAB",
+                    },
+                    "backgroundColor": "transparent",
+                    "color": "#000000",
+                    "minWidth": "auto",
+                    "paddingLeft": "10px",
+                    "paddingRight": "10px",
+                  },
+                  "primary": Object {
+                    ":active": Object {
+                      "backgroundColor": "#336FAB",
+                      "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                      "color": "#FFFFFF",
+                    },
+                    ":hover": Object {
+                      "backgroundColor": "#336FAB",
+                      "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                      "color": "#FFFFFF",
+                    },
+                    "backgroundColor": "#004C97",
+                    "color": "#FFFFFF",
+                  },
+                  "secondary": Object {
+                    ":active": Object {
+                      "border": "2px solid #336FAB",
+                      "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                      "color": "#336FAB",
+                    },
+                    ":hover": Object {
+                      "border": "2px solid #336FAB",
+                      "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                      "color": "#336FAB",
+                    },
+                    "backgroundColor": "#FFFFFF",
+                    "border": "2px solid #004C97",
+                    "color": "#004C97",
+                  },
+                }
+              }
+              type="flat"
+            >
+              <Button
+                disabled={false}
+                name="tfs-dialog-cancel-key"
+                onClick={[MockFunction]}
+                onMouseDown={[Function]}
+                styleOverride={
+                  Object {
+                    "base": Object {
+                      ":focus": Object {
+                        "outline": "2px solid #009CDE",
+                      },
+                      "border": "1px solid transparent",
+                      "borderRadius": "4px",
+                      "cursor": "pointer",
+                      "fontSize": "13px",
+                      "fontWeight": 600,
+                      "minHeight": "35px",
+                      "minWidth": "100px",
+                      "outlineOffset": "2px",
+                      "paddingLeft": "20px",
+                      "paddingRight": "20px",
+                      "wordBreak": "normal",
+                    },
+                    "disabled": Object {
+                      "cursor": "not-allowed",
+                      "flat": Object {
+                        "color": "#666666",
+                      },
+                      "primary": Object {
+                        "backgroundColor": "#E0E0E0",
+                        "color": "#666666",
+                      },
+                      "secondary": Object {
+                        "border": "2px solid #E0E0E0",
+                        "color": "#666666",
+                      },
+                    },
+                    "flat": Object {
+                      ":active": Object {
+                        "color": "#004C97",
+                      },
+                      ":hover": Object {
+                        "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                        "color": "#336FAB",
+                      },
+                      "backgroundColor": "transparent",
+                      "color": "#000000",
+                      "minWidth": "auto",
+                      "paddingLeft": "10px",
+                      "paddingRight": "10px",
+                    },
+                    "primary": Object {
+                      ":active": Object {
+                        "backgroundColor": "#336FAB",
+                        "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                        "color": "#FFFFFF",
+                      },
+                      ":hover": Object {
+                        "backgroundColor": "#336FAB",
+                        "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                        "color": "#FFFFFF",
+                      },
+                      "backgroundColor": "#004C97",
+                      "color": "#FFFFFF",
+                    },
+                    "secondary": Object {
+                      ":active": Object {
+                        "border": "2px solid #336FAB",
+                        "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                        "color": "#336FAB",
+                      },
+                      ":hover": Object {
+                        "border": "2px solid #336FAB",
+                        "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                        "color": "#336FAB",
+                      },
+                      "backgroundColor": "#FFFFFF",
+                      "border": "2px solid #004C97",
+                      "color": "#004C97",
+                    },
+                  }
+                }
+                tabIndex={0}
+                tfsStyle={
+                  Object {
+                    "button": Object {
+                      "base": Object {
+                        ":focus": Object {
+                          "outline": "2px solid #009CDE",
+                        },
+                        "border": "1px solid transparent",
+                        "borderRadius": "4px",
+                        "cursor": "pointer",
+                        "fontSize": "13px",
+                        "fontWeight": 600,
+                        "minHeight": "35px",
+                        "minWidth": "100px",
+                        "outlineOffset": "2px",
+                        "paddingLeft": "20px",
+                        "paddingRight": "20px",
+                        "wordBreak": "normal",
+                      },
+                      "disabled": Object {
+                        "cursor": "not-allowed",
+                        "flat": Object {
+                          "color": "#666666",
+                        },
+                        "primary": Object {
+                          "backgroundColor": "#E0E0E0",
+                          "color": "#666666",
+                        },
+                        "secondary": Object {
+                          "border": "2px solid #E0E0E0",
+                          "color": "#666666",
+                        },
+                      },
+                      "flat": Object {
+                        ":active": Object {
+                          "color": "#004C97",
+                        },
+                        ":hover": Object {
+                          "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                          "color": "#336FAB",
+                        },
+                        "backgroundColor": "transparent",
+                        "color": "#000000",
+                        "minWidth": "auto",
+                        "paddingLeft": "10px",
+                        "paddingRight": "10px",
+                      },
+                      "primary": Object {
+                        ":active": Object {
+                          "backgroundColor": "#336FAB",
+                          "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                          "color": "#FFFFFF",
+                        },
+                        ":hover": Object {
+                          "backgroundColor": "#336FAB",
+                          "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                          "color": "#FFFFFF",
+                        },
+                        "backgroundColor": "#004C97",
+                        "color": "#FFFFFF",
+                      },
+                      "secondary": Object {
+                        ":active": Object {
+                          "border": "2px solid #336FAB",
+                          "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                          "color": "#336FAB",
+                        },
+                        ":hover": Object {
+                          "border": "2px solid #336FAB",
+                          "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                          "color": "#336FAB",
+                        },
+                        "backgroundColor": "#FFFFFF",
+                        "border": "2px solid #004C97",
+                        "color": "#004C97",
+                      },
+                    },
+                  }
+                }
+                type="flat"
+              >
+                <button
+                  data-radium={true}
+                  disabled={false}
+                  name="tfs-dialog-cancel-key"
+                  onBlur={[Function]}
+                  onClick={[MockFunction]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "transparent",
+                      "border": "1px solid transparent",
+                      "borderRadius": "4px",
+                      "color": "#000000",
+                      "cursor": "pointer",
+                      "fontSize": "13px",
+                      "fontWeight": 600,
+                      "minHeight": "35px",
+                      "minWidth": "auto",
+                      "outlineOffset": "2px",
+                      "paddingLeft": "10px",
+                      "paddingRight": "10px",
+                      "wordBreak": "normal",
+                    }
+                  }
+                  tabIndex={0}
+                  type="button"
+                >
+                  CANCEL
+                </button>
+              </Button>
+            </withTheme(Button)>
+            <withTheme(Button)
+              disabled={false}
+              key=".$tfs-dialog-ok-key"
+              name="tfs-dialog-ok-key"
+              onClick={[Function]}
+              styleOverride={
+                Object {
+                  "base": Object {
+                    ":focus": Object {
+                      "outline": "2px solid #009CDE",
+                    },
+                    "border": "1px solid transparent",
+                    "borderRadius": "4px",
+                    "cursor": "pointer",
+                    "fontSize": "13px",
+                    "fontWeight": 600,
+                    "minHeight": "35px",
+                    "minWidth": "100px",
+                    "outlineOffset": "2px",
+                    "paddingLeft": "20px",
+                    "paddingRight": "20px",
+                    "wordBreak": "normal",
+                  },
+                  "disabled": Object {
+                    "cursor": "not-allowed",
+                    "flat": Object {
+                      "color": "#666666",
+                    },
+                    "primary": Object {
+                      "backgroundColor": "#E0E0E0",
+                      "color": "#666666",
+                    },
+                    "secondary": Object {
+                      "border": "2px solid #E0E0E0",
+                      "color": "#666666",
+                    },
+                  },
+                  "flat": Object {
+                    ":active": Object {
+                      "color": "#004C97",
+                    },
+                    ":hover": Object {
+                      "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                      "color": "#336FAB",
+                    },
+                    "backgroundColor": "transparent",
+                    "color": "#000000",
+                    "minWidth": "auto",
+                    "paddingLeft": "10px",
+                    "paddingRight": "10px",
+                  },
+                  "marginLeft": "20px",
+                  "primary": Object {
+                    ":active": Object {
+                      "backgroundColor": "#336FAB",
+                      "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                      "color": "#FFFFFF",
+                    },
+                    ":hover": Object {
+                      "backgroundColor": "#336FAB",
+                      "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                      "color": "#FFFFFF",
+                    },
+                    "backgroundColor": "#004C97",
+                    "color": "#FFFFFF",
+                  },
+                  "secondary": Object {
+                    ":active": Object {
+                      "border": "2px solid #336FAB",
+                      "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                      "color": "#336FAB",
+                    },
+                    ":hover": Object {
+                      "border": "2px solid #336FAB",
+                      "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                      "color": "#336FAB",
+                    },
+                    "backgroundColor": "#FFFFFF",
+                    "border": "2px solid #004C97",
+                    "color": "#004C97",
+                  },
+                }
+              }
+              type="primary"
+            >
+              <Button
+                disabled={false}
+                name="tfs-dialog-ok-key"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                styleOverride={
+                  Object {
+                    "base": Object {
+                      ":focus": Object {
+                        "outline": "2px solid #009CDE",
+                      },
+                      "border": "1px solid transparent",
+                      "borderRadius": "4px",
+                      "cursor": "pointer",
+                      "fontSize": "13px",
+                      "fontWeight": 600,
+                      "minHeight": "35px",
+                      "minWidth": "100px",
+                      "outlineOffset": "2px",
+                      "paddingLeft": "20px",
+                      "paddingRight": "20px",
+                      "wordBreak": "normal",
+                    },
+                    "disabled": Object {
+                      "cursor": "not-allowed",
+                      "flat": Object {
+                        "color": "#666666",
+                      },
+                      "primary": Object {
+                        "backgroundColor": "#E0E0E0",
+                        "color": "#666666",
+                      },
+                      "secondary": Object {
+                        "border": "2px solid #E0E0E0",
+                        "color": "#666666",
+                      },
+                    },
+                    "flat": Object {
+                      ":active": Object {
+                        "color": "#004C97",
+                      },
+                      ":hover": Object {
+                        "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                        "color": "#336FAB",
+                      },
+                      "backgroundColor": "transparent",
+                      "color": "#000000",
+                      "minWidth": "auto",
+                      "paddingLeft": "10px",
+                      "paddingRight": "10px",
+                    },
+                    "marginLeft": "20px",
+                    "primary": Object {
+                      ":active": Object {
+                        "backgroundColor": "#336FAB",
+                        "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                        "color": "#FFFFFF",
+                      },
+                      ":hover": Object {
+                        "backgroundColor": "#336FAB",
+                        "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                        "color": "#FFFFFF",
+                      },
+                      "backgroundColor": "#004C97",
+                      "color": "#FFFFFF",
+                    },
+                    "secondary": Object {
+                      ":active": Object {
+                        "border": "2px solid #336FAB",
+                        "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                        "color": "#336FAB",
+                      },
+                      ":hover": Object {
+                        "border": "2px solid #336FAB",
+                        "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                        "color": "#336FAB",
+                      },
+                      "backgroundColor": "#FFFFFF",
+                      "border": "2px solid #004C97",
+                      "color": "#004C97",
+                    },
+                  }
+                }
+                tabIndex={0}
+                tfsStyle={
+                  Object {
+                    "button": Object {
+                      "base": Object {
+                        ":focus": Object {
+                          "outline": "2px solid #009CDE",
+                        },
+                        "border": "1px solid transparent",
+                        "borderRadius": "4px",
+                        "cursor": "pointer",
+                        "fontSize": "13px",
+                        "fontWeight": 600,
+                        "minHeight": "35px",
+                        "minWidth": "100px",
+                        "outlineOffset": "2px",
+                        "paddingLeft": "20px",
+                        "paddingRight": "20px",
+                        "wordBreak": "normal",
+                      },
+                      "disabled": Object {
+                        "cursor": "not-allowed",
+                        "flat": Object {
+                          "color": "#666666",
+                        },
+                        "primary": Object {
+                          "backgroundColor": "#E0E0E0",
+                          "color": "#666666",
+                        },
+                        "secondary": Object {
+                          "border": "2px solid #E0E0E0",
+                          "color": "#666666",
+                        },
+                      },
+                      "flat": Object {
+                        ":active": Object {
+                          "color": "#004C97",
+                        },
+                        ":hover": Object {
+                          "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                          "color": "#336FAB",
+                        },
+                        "backgroundColor": "transparent",
+                        "color": "#000000",
+                        "minWidth": "auto",
+                        "paddingLeft": "10px",
+                        "paddingRight": "10px",
+                      },
+                      "primary": Object {
+                        ":active": Object {
+                          "backgroundColor": "#336FAB",
+                          "boxShadow": "inset 0px 0px 3px 0px #004C97",
+                          "color": "#FFFFFF",
+                        },
+                        ":hover": Object {
+                          "backgroundColor": "#336FAB",
+                          "boxShadow": "2px 3px 10px 0px #DBDBDB",
+                          "color": "#FFFFFF",
+                        },
+                        "backgroundColor": "#004C97",
+                        "color": "#FFFFFF",
+                      },
+                      "secondary": Object {
+                        ":active": Object {
+                          "border": "2px solid #336FAB",
+                          "boxShadow": "inset 0px 0px 3px 0px #336FAB",
+                          "color": "#336FAB",
+                        },
+                        ":hover": Object {
+                          "border": "2px solid #336FAB",
+                          "boxShadow": "0px 2px 5px 0px #DBDBDB",
+                          "color": "#336FAB",
+                        },
+                        "backgroundColor": "#FFFFFF",
+                        "border": "2px solid #004C97",
+                        "color": "#004C97",
+                      },
+                    },
+                  }
+                }
+                type="primary"
+              >
+                <button
+                  data-radium={true}
+                  disabled={false}
+                  name="tfs-dialog-ok-key"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#004C97",
+                      "border": "1px solid transparent",
+                      "borderRadius": "4px",
+                      "color": "#FFFFFF",
+                      "cursor": "pointer",
+                      "fontSize": "13px",
+                      "fontWeight": 600,
+                      "marginLeft": "20px",
+                      "minHeight": "35px",
+                      "minWidth": "100px",
+                      "outlineOffset": "2px",
+                      "paddingLeft": "20px",
+                      "paddingRight": "20px",
+                      "wordBreak": "normal",
+                    }
+                  }
+                  tabIndex={0}
+                  type="button"
+                >
+                  LOG OUT
+                </button>
+              </Button>
+            </withTheme(Button)>
+          </div>
+        </div>
+      </div>
+    </DialogComponent>
+  </withTheme(DialogComponent)>
+</LogoutWarningDialog>
+`;

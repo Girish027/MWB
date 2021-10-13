@@ -1,0 +1,62 @@
+@import '../vars/vars';
+
+#ModelReview {
+  display: grid;
+    grid-template-areas:
+      "metadata content";
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 25% 1fr;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+
+  .metadata {
+    grid-area: metadata;
+    border-right: 1px solid #ddd;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .title {
+    line-height: 60px;
+    padding-left: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
+    background: #fafbfc;
+  }
+
+  label {
+    display: block;
+    color: #727272;
+  }
+
+  ul {
+    padding-left: 30px;
+    padding-top: 20px;
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      margin-bottom: 25px;
+    }
+  }
+
+  .dataset-list {
+    margin: 0;
+    padding: 0px;
+    list-style-type: none;
+    line-height: 18px;
+    width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 10px;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}

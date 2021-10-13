@@ -1,0 +1,418 @@
+@import '../vars/vars';
+
+.openDatasetsContainer {
+  table {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  input[type="checkbox"] {
+    cursor: pointer !important;
+  }
+
+  /* override Bootstrap library */
+  .bootstrap-description {
+    height: 30px !important;
+    margin: 5px !important;
+  }
+
+  .bootstrap-description span {
+    font-size: 12px !important;
+    color: #666;
+  }
+
+  .bootstrap-description button {
+    margin-right: 10px;
+  }
+
+  .table-responsive thead {
+    display: none !important;
+  }
+
+  th {
+    border-left: 0 !important;
+    border-right: 0 !important;
+
+    /* font-family: "Helvetica", sans-serif !important; */
+    color: #666;
+    background-color: #f9f9f9;
+  }
+
+  .react-grid-desc {
+    display: inline-block !important;;
+    height: 20px !important;;
+    width: 23px !important;;
+    background-image: url("icons/descending.svg") !important;
+    vertical-align: top;
+  }
+
+  .react-grid-asc {
+    display: inline-block !important;;
+    height: 20px !important;;
+    width: 25px !important;;
+    background-image: url("icons/ascending.svg") !important;
+    vertical-align: top;
+  }
+
+  .react-grid-drag-handle {
+    background-image: url("icons/resizeColumn.svg") !important;
+    display: inline-block;
+    height: 20px;
+    width: 25px;
+    right: 0;
+    margin-top: 5px;
+    position: absolute;
+  }
+
+  .react-grid-drag-handle:nth-child(1) {
+    display: none !important;
+  }
+
+  .react-grid-column {
+    vertical-align: top !important;
+    margin-bottom: 5px !important;
+  }
+
+  .react-grid-desc::before {
+    font-family: none !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    content: none !important;
+    margin-left: 5px;
+  }
+
+  .react-grid-asc::before {
+    font-family: none !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    content: none !important;
+    margin-left: 5px;
+  }
+
+  td {
+    border-left: 1px solid #ddd;
+    border-right: 0;
+
+    /* font-family: "Open Sans", sans-serif; */
+  }
+
+  .react-grid-header-fixed-container {
+    position: fixed;
+    z-index: 10;
+    min-width: 1000px;
+    margin-top: 2px;
+
+    .react-grid-header {
+      border-top: 1px solid #e9e9e9;
+
+      .react-grid-drag-handle:last-of-type {
+        right: 10px;
+      }
+
+      font-family: $fontFamily !important;
+    }
+  }
+
+  .disabled-column-header {
+    cursor: default !important;
+  }
+
+  .react-grid-container {
+    margin-right: 5px;
+    margin-left: 0;
+    padding-right: 5px;
+    padding-left: 0;
+
+    thead {
+      .react-grid-action-container {
+        .react-grid-action-menu-item {
+          white-space: nowrap;
+
+          input {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    td.react-grid-action-container {
+      border: 0;
+    }
+
+  }
+
+  .react-grid-table-container {
+    overflow: visible !important;
+    position: absolute !important;
+    top: 31px;
+  }
+
+  .react-grid-checkbox-container {
+    border-bottom: 1px solid #f7f7f7;
+
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 13px;
+    height: 20px;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    width: 30px !important;
+  }
+
+  .react-grid-header {
+    background-color: white;
+  }
+
+  .react-grid-checkbox-container:nth-child(1) {
+    //opacity: 0;
+    //background-color: white;
+    //pointer-events: none;
+  }
+
+  .react-grid-table {
+    white-space: normal !important;
+  }
+
+  .react-grid-cell {
+    vertical-align: middle !important;
+    min-height: 34px;
+    line-height: 34px;
+    font-family: $fontFamily !important;
+
+  }
+
+  .react-grid-cell:nth-child(1) {
+    overflow: hidden !important;
+  }
+
+  .react-grid-cell:nth-child(2) {
+    overflow: hidden !important;
+  }
+
+  .react-grid-cell:nth-child(3) {
+    overflow: hidden !important;
+    word-wrap: break-word !important;
+    text-overflow: inherit !important;
+  }
+
+  .react-grid-cell:nth-child(4) {
+    overflow: hidden !important;
+  }
+
+  .react-grid-cell:nth-child(5) {
+    overflow: visible !important;
+  }
+
+  .react-grid-cell:nth-child(6) {
+    overflow: visible !important;
+  }
+
+  .footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    z-index: 1;
+    background: #f9f9f9;
+    pointer-events: all;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #eee;
+    padding: 2px;
+    padding-bottom: 10px;
+    padding-top: 4px;
+
+    .pageBtn {
+      border-radius: 4px;
+    }
+
+    .toggleBtn {
+      width: 20px;
+      height: 30px;
+      background-color: transparent;
+      display: inline-block;
+      position: relative;
+      margin: 2px;
+      margin-left: 5px;
+      padding: 0;
+      pointer-events: all;
+      cursor: pointer;
+    }
+
+    .expandBtn {
+      background-image: url("icons/expand.svg") !important;
+    }
+
+    .contractBtn {
+      background-image: url("icons/collapse.svg") !important;
+    }
+
+    .pageBtnSelect {
+
+    }
+
+    .pageBtnNotSelected {
+      background-color: #f9f9f9;
+    }
+  }
+
+  .pager-btn-active {
+    background-color: #004c97;
+    border-radius: 4px;
+    border-color: white;
+    color: white;
+    border: none;
+
+    /* font-family: "Open Sans", sans-serif; */
+    pointer-events: all;
+    cursor: pointer;
+
+  }
+
+  .pager-btn-inactive {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    color: #666;
+    border: 1px solid #f7f7f7;
+
+    /* font-family: "Open Sans", sans-serif; */
+    pointer-events: all;
+    cursor: pointer;
+    background-color: white;
+  }
+
+  .pager-btn-inactive:hover {
+    background-color: #004c97;
+    color: white;
+  }
+
+  .transition{
+    transition-duration: 0.5s;
+  }
+
+  .datagridContainer {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 220px;
+    z-index: 3;
+
+    .TagDatasetLoading {
+      line-height: 24px;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    .gridFooterForSuggestList {
+      display: block;
+      position: relative;
+      height: 120px;
+      width: 100%;
+      background-color: #fff;
+    }
+
+  }
+
+  .resultsMessageContainer {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    color: #666;
+    font-size: 14px;
+    width: auto;
+    left: 0;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .columnSelector{
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+
+  .show-hide-btn{
+    pointer-events: all;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .react-grid-checkbox-container {
+    width: 25px;
+  }
+
+  .react-grid-pager-toolbar {
+    height: 34px !important;
+  }
+
+  @media (min-width: 993px) {
+    .container {
+      width: 100% !important;
+    }
+  }
+
+  .colSelect {
+    width: 10px;
+  }
+
+  .colCount {
+    width: 30px;
+  }
+
+  .colSuggestedTxtStr {
+    width: 300px;
+  }
+
+  .colUniqueTxtStr {
+    width: 300px;
+  }
+
+  .colManualTxtStr {
+    width: 300px;
+  }
+
+  .colCommentsTxtStr {
+    width: auto;
+  }
+
+  .sendBtn {
+    opacity: 0;
+  }
+
+  tr.selectedRow {
+    background-color: blue;
+  }
+
+  tr {
+    background-color: #fbfbfb;
+  }
+
+  $placeholderColor: #d2d2d2;
+
+  ::-webkit-input-placeholder {
+    color: $placeholderColor;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: $placeholderColor;
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $placeholderColor;
+  }
+
+  :-ms-input-placeholder {
+    color: $placeholderColor;
+  }
+}

@@ -1,0 +1,634 @@
+
+@import '../vars/vars';
+
+.TaggerControl {
+  background: #fff;
+  font-style: normal;
+  font-weight: normal;
+
+  /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+}
+
+
+.TaggerControl.grommetux-select {
+  background: none;
+
+  input {
+    background: #fff;
+  }
+
+  button {
+    .grommetux-button__icon {
+      padding: 8px 12px 12px 12px;
+    }
+  }
+
+}
+
+.grommetux-search--inline .grommetux-control-icon-search  {
+  width: 0;
+}
+
+.TaggerCascadeMenu {
+  z-index: $contextMenusZIndex;
+  box-shadow: 2px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  .TaggerCascadeMenuItem {
+    position: relative;
+
+    .TaggerCascadeMenuItemLabel {
+      white-space: nowrap;
+    }
+
+    .TaggerCascadeMenu {
+      position: absolute;
+      top: 0;
+      left: calc(100% - 10px);
+      display: none;
+    }
+  }
+
+  .TaggerCascadeMenuItem:hover, .TaggerCascadeMenuItem.hover {
+    background-color: #eee;
+
+    > .TaggerCascadeMenu {
+      display: block;
+    }
+  }
+
+  .TaggerCascadeMenuItem.disabled {
+    color: #999;
+
+    .TaggerCascadeMenuItemIcon, .TaggerCascadeMenuNextIcon {
+      svg {
+        stroke: #999;
+      }
+    }
+  }
+}
+
+#TaggerModal {
+  z-index: $modalZIndex;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: $fontFamily;
+
+  .grommetux-layer__container{
+    /*border: 1px solid rgba(0, 0, 0, 0.15);*/
+
+    /*border: 1px solid #5FA5D8;*/
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    padding: 0;
+    background: #fff;
+    resize: none;
+    border-radius: 0;
+  }
+
+  .ModalRow {
+    padding: 10px;
+    font-size: 16px;
+
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.15);*/
+  }
+
+  .ModalRow:last-of-type {
+    border-bottom: none;
+  }
+
+  .ModalHead {
+    line-height: 32px;
+
+    /*color: #666;*/
+    font-size: 18px;
+
+    /* font-family: "Open Sans", sans-serif; */
+    font-weight: bold;
+
+    /* background: #DBECF8; */
+    display: inline-block;
+  }
+
+  .ModalTitle {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+
+  .ModalClose {
+    float: right;
+    border-bottom: 0;
+  }
+
+  .ModalContent {
+    min-width: 400px;
+    min-height: 140px;
+  }
+
+  // .ModalActions {
+  //   line-height: 32px;
+
+  //   /* background: #DBECF8; */
+
+  //   button {
+  //     min-width: 50px;
+  //     padding: 3px 11px;
+  //     background: #fff;
+  //   }
+
+  //   button.grommetux-button--primary {
+  //     margin-right: 0;
+  //     background: $primaryColor;
+  //   }
+  // }
+}
+
+#TaggerModal.TaggerModalResize {
+  .grommetux-layer__container {
+    resize: both;
+  }
+
+  .grommetux-layer__container::after {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    content: ' ';
+    cursor: nw-resize;
+    bottom: 0;
+    right: 0;
+    z-index: $modalResizeIconZIndex;
+  }
+}
+
+.TaggerForm {
+  font-style: normal;
+  font-weight: normal;
+
+  /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+  font-size: 16px;
+  color: #333;
+  line-height: 20px;
+
+  .Field {
+    label {
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      text-align: left;
+      width: 100%;
+    }
+
+    select {
+      width: 100%;
+      -webkit-appearance: menulist;
+      -moz-appearance: menulist;
+      background: none;
+      padding: 0;
+      margin: 0;
+      border: 1px solid rgb(129, 129, 129);
+      border-radius: 0;
+    }
+  }
+}
+
+.TaggerSearchInput {
+  position: relative;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+
+  .InputContainer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    input {
+      height: 30px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      width: 100%;
+      margin: 0;
+      padding: 5px 32px 5px 5px;
+    }
+
+    //input:focus {
+    //    border: 2px solid #206BA4;
+    //    border-radius: 4px;
+    //    padding-right: 54px;
+    //}
+  }
+
+  .FormCloseIconContainer {
+    display: none;
+    position: absolute;
+    left: calc(100% - 52px);
+    top: 6px;
+    cursor: pointer;
+  }
+
+  .SearchIconContainer {
+    position: absolute;
+    left: calc(100% - 26px);
+    top: 6px;
+    cursor: pointer;
+  }
+}
+
+.TaggerSearchInput.disabled {
+  .SearchIconContainer {
+    cursor: default;
+  }
+}
+
+.TaggerSearchInput.focus:not(.disabled), .TaggerSearchInput:hover:not(.disabled) {
+  .InputContainer {
+    input {
+      padding-right: 54px;
+    }
+  }
+
+  .FormCloseIconContainer {
+    display: block;
+  }
+}
+
+.TaggerMapping {
+  width: 100%;
+  height: 100%;
+
+  .ContentRow {
+    padding-top: 8px;
+  }
+
+  .ContentRow.BindingInfo {
+    padding-bottom: 4px;
+
+    > div {
+      padding-bottom: 6px;
+    }
+
+    .InfoLabel {
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    .InfoText {
+      span {
+        margin-left: 10px;
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      span.Skipped {
+        color: #666;
+        border: 1px solid #666;
+        background: rgba(102, 102, 102, 0.05);
+        border-radius: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+
+      span.Required {
+        font-weight: bold;
+        color: #f00;
+        border: 1px solid #f00;
+        background: rgba(255, 0, 0, 0.05);
+        border-radius: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+
+      span.Selected {
+        color: #2ecc40;
+        border: 1px solid #2ecc40;
+        background: rgba(0, 255, 0, 0.05);
+        border-radius: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+
+    .InfoText.Empty {
+      font-style: italic;
+      color: #aaa;
+      line-height: 23px;
+
+      span {
+        background: none;
+      }
+    }
+  }
+
+  .ContentRow.SkipFirstRow {
+    padding-left: 5px;
+
+    .SkipFirstRowLabel {
+      font-weight: bold;
+    }
+  }
+
+  .MappingPreviewContainer {
+    overflow: auto;
+
+    .MappingPreviewGridContainer {
+      min-width: 700px;
+      min-height: 400px;
+
+      .Preview {
+        position: relative;
+
+        table {
+          display: table;
+          line-height: 20px;
+          font-style: normal;
+          font-weight: normal;
+
+          /* font-family: "Open Sans", sans-serif; */
+          font-size: 14px;
+          color: #000;
+          border-collapse: collapse;
+          margin: 0;
+          padding: 0;
+
+          tr {
+            display: table-row;
+            margin: 0;
+            padding: 0;
+
+            td {
+              display: table-cell;
+              margin: 0;
+              padding: 6px;
+              cursor: default;
+              background: #fff;
+              vertical-align: middle;
+              border-top: 0;
+              border-right: 0;
+              border-left: 1px solid #ccc;
+              border-bottom: 1px solid #ccc;
+              width: 180px;
+              min-width: 180px;
+              max-width: 180px;
+
+              div {
+                max-height: 60px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: pre-wrap;
+              }
+            }
+
+            td:last-of-type {
+              border-right: 1px solid #ccc;
+            }
+          }
+
+          tr:first-of-type {
+            td {
+              border-top: 1px solid #ccc;
+            }
+          }
+        }
+
+        div.header-table-container {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+
+          tr {
+            td {
+              height: 50px;
+              max-height: 50px;
+              min-height: 50px;
+              width: 1%;
+
+              div {
+                height: 32px;
+
+                .grommetux-select {
+                  width: calc(100% - 12px);
+                }
+              }
+            }
+
+            td:not(.Skipped) {
+              .grommetux-select {
+                .grommetux-input {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+
+        div.data-table-container {
+          position: absolute;
+          top: 50px;
+
+          td {
+            width: 1%;
+          }
+
+          td.Skipped {
+            background: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
+// TODO : Remove this, once dropdown menu is integrated from tfs-ui, and grommet/Menu is removed.
+.ActionItems {
+  .grommetux-button--plain .grommetux-button__icon {
+    display: none;
+  }
+
+  .grommetux-button__label {
+    font-size: 25px;
+  }
+}
+
+.CellEditable {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+
+  input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 20px;
+    border: none;
+    background: none;
+  }
+
+  input:focus, input:hover:not(:focus) {
+    border: $inputBorder;
+    border-radius: $inputBorderRadius;
+    background: #fff;
+  }
+}
+
+.CellEditable.touched.error {
+  input:focus {
+    border: $inputErrorBorder;
+    border-radius: $inputBorderRadius;
+  }
+}
+
+.CellEditableManualTag {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+
+  .SuggestContainer {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    min-width: 200px;
+    width: 200px;
+    max-width: 280px;
+    min-height: 60px;
+    max-height: 160px;
+    margin-top: 2px;
+    padding: 10px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    cursor: default;
+    border: 1px solid #f1f1f1;
+
+    .Suggest {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+      border-bottom: 0;
+      margin-bottom: 2px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      pointer-events: all !important;
+    }
+
+    .Suggest.suggested {
+      font-weight: bold;
+    }
+
+    .Suggest.warning {
+      background-color: lighten(#e0d490, 80%);
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .Suggest.error {
+      background-color: lighten(#b36666, 60%);
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .Suggest:hover,
+    .Suggest:not(.warning):not(.error):hover,
+    .Suggest.keyboardSelected {
+      background-color: #ef8822;
+      color: white;
+    }
+  }
+
+  .SuggestContainer::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  .SuggestContainer::-webkit-scrollbar:vertical {
+    width: 16px;
+  }
+
+  .SuggestContainer::-webkit-scrollbar:horizontal {
+    height: 16px;
+  }
+
+  .SuggestContainer::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(84, 164, 222, 1);
+  }
+
+  .SuggestContainer::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 8px;
+  }
+}
+
+.MultipleCheckboxFilter {
+  line-height: 34px;
+  background-color: #f7f7f7;
+
+  .Label {
+    font-size: 16px;
+    line-height: 34px;
+    padding: 0 0 0 15px;
+    white-space: nowrap;
+    font-weight: bold;
+    float: left;
+  }
+
+  .List {
+    line-height: 34px;
+
+    .controlContainer {
+      height: 34px;
+      float: left;
+      line-height: 34px;
+      margin-right: 0;
+      margin-left: 15px;
+      white-space: nowrap;
+    }
+  }
+
+}
+
+.WarningBox {
+  border: 2px solid orange;
+  padding: 5px;
+  text-align: center;
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.transparent-bkg {
+  background-color: transparent;
+}
+
+.tooltip-general {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-general .tooltiptext-gen {
+  visibility: hidden;
+  top: 100%;
+  left: -100%;
+  width: 50px;
+  border: 1px solid #313f54;
+  background: #fff;
+  position: absolute;
+  z-index: 10;
+}
+
+.tooltip-general:hover .tooltiptext-gen {
+  visibility: visible;
+}

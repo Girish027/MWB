@@ -1,0 +1,48 @@
+@import '../../vars/vars';
+#Dialog {
+    .row-divider {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+.dialog-title-icon {
+
+    margin-right: 1px;
+}
+
+.dialog-title-text {
+    margin-left: 10px;
+    font-size: 15px;
+    color: $primaryTextColor;
+    margin-bottom: 20px;
+}
+
+.dialog-action-items {
+    margin-top: 40px;
+}
+
+.dialog-content {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.dialog-ok-container {
+    margin-left: auto;
+}
+
+.dialog-cancel-container {
+    margin-left: 5px;
+}
+
+.dialog-defaults {
+}
+
+.modal-footer {
+    justify-content: space-between !important;
+    border-top: none !important
+}
+
+.modal-title {
+  display: flex;
+}

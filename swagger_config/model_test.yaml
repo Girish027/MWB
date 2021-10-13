@@ -1,0 +1,406 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: ModelTest
+  description: Model test related APIs
+host: localhost:8443
+basePath: /nltools/v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /test/clients/{clientId}/projects/{projectId}/models/{modelId}/eval_transcriptions:
+    post:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      summary: Metadata about a intent classification for a specific utternace
+      operationId: evalTranscriptions
+      parameters:
+        - name: clientId
+          in: path
+          required: true
+          description: The id of the client
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: modelId
+          in: path
+          required: true
+          description: The id of the model
+          type: string
+        - name: testModelType
+          in: query
+          required: false
+          description: Type of model being tested
+          type: string
+          default: 'DIGITAL'
+        - name: utterances
+          in: body
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        200:
+          description: Utterances are successfully evaluated for the user
+          schema:
+            $ref: "#/definitions/EvaluationResponse"
+        404:
+          description: Invalid project id, model id, or the combination
+          schema:
+            $ref: "#/definitions/Error"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /test/clients/{clientId}/projects/{projectId}/models/{modelId}/eval_utterance:
+      post:
+        consumes:
+          - multipart/form-data
+        produces:
+          - application/json
+        summary: Metadata about a intent classification for a specific utternace
+        operationId: evalSpeechUtterance
+        parameters:
+          - name: clientId
+            in: path
+            required: true
+            description: The id of the client
+          - name: projectId
+            in: path
+            required: true
+            description: The id of the project
+            type: string
+          - name: modelId
+            in: path
+            required: true
+            description: The id of the model
+            type: string
+          - name: filetype
+            in: query
+            required: true
+            enum: [link, recording, uploaded]
+            description: source of utterance
+            type: string
+          - name: audioURL
+            in: formData
+            required: false
+            description: URL where audio file is hosted
+            type: string
+          - name: audioFile
+            in: formData
+            required: false
+            description: uploaded audio file
+            type: file
+        responses:
+          200:
+            description: Utterances are successfully evaluated for the user
+            schema:
+              $ref: "#/definitions/EvaluationResponse"
+          404:
+            description: Invalid project id, model id, or audio file
+            schema:
+              $ref: "#/definitions/Error"
+          500:
+            description:  Internal Server Error
+            schema:
+              $ref: "#/definitions/Error"
+  /test/clients/{clientId}/projects/{projectId}/models/{modelId}/eval_datasets:
+    post:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      summary: Metadata about a intent classification for a specific utternace
+      operationId: evalDatasets
+      parameters:
+        - name: clientId
+          in: path
+          required: true
+          description: The id of the client
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: modelId
+          in: path
+          required: true
+          description: The id of the model
+          type: string
+        - name: testModelType
+          in: query
+          required: false
+          description: Type of model being tested
+          type: string
+          default: 'DIGITAL'
+        - name: datasets
+          in: body
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        200:
+          description: Datasets are successfully put in queue for the user
+          schema:
+            $ref: "#/definitions/EvaluationResponse"
+        404:
+          description: Invalid project id, model id, or the combination
+          schema:
+            $ref: "#/definitions/Error"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /test/clients/{clientId}/projects/{projectId}/models/{modelId}/batch_tests:
+    get:
+      produces:
+      - application/json
+      summary: get results of previous batch tests, their status and info
+      operationId: listBatchTests
+      parameters:
+      - name: clientId
+        in: path
+        required: true
+        description: The id of the client
+      - name: projectId
+        in: path
+        required: true
+        description: The id of the project
+        type: string
+      - name: modelId
+        in: path
+        required: true
+        description: The id of the model
+        type: string
+        # query params
+      - name: limit
+        in: query
+        description: How many items to return at one time (max 20)
+        type: integer
+        format: int32
+        default: 20
+      - name: startIndex
+        in: query
+        description: starting index
+        type: integer
+        format: int32
+        default: 0
+      responses:
+        200:
+          description: Successfully get the status
+          schema:
+            $ref: "#/definitions/BatchTestResultsResponse"
+        404:
+          description: Invalid project id, model id, or the combination
+          schema:
+            $ref: "#/definitions/Error"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+  /test/clients/{clientId}/projects/{projectId}/models/{modelId}/check_eval/{test_id}:
+    get:
+      produces:
+        - application/json
+      summary: get status, and output of model test
+      operationId: checkStatus
+      parameters:
+        - name: clientId
+          in: path
+          required: true
+          description: The id of the client
+        - name: projectId
+          in: path
+          required: true
+          description: The id of the project
+          type: string
+        - name: modelId
+          in: path
+          required: true
+          description: The id of the model
+          type: string
+        - name: test_id
+          in: path
+          required: true
+          description: The id of the model test, returned from 'eval_datasets'
+          type: string
+      responses:
+        200:
+          description: Successfully get the status
+          schema:
+            $ref: "#/definitions/EvaluationResponse"
+        404:
+          description: Invalid project id, model id, or the combination
+          schema:
+            $ref: "#/definitions/Error"
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  IntentScore:
+    discriminator: intent
+    type: object
+    required:
+      - intent
+      - score
+    properties:
+      intent:
+        type: string
+        description: The intent generated by the model
+      score:
+        type: number
+        description: The score for the corresponding intent
+  UtteranceEvaluation:
+    discriminator: utterance
+    type: object
+    required:
+      - utterance
+      - recognitionScore
+      - utteranceWithWordClass
+      - intents
+      - transformations
+      - entities
+    properties:
+      utterance:
+        type: string
+        description: transcribed text
+      recognitionScore:
+        type: number
+        description: confidence score for transcribed text
+      utteranceWithWordClass:
+        type: string
+        description: transcribed text with substituted wordclass
+      intents:
+        type: array
+        items:
+          $ref: "#/definitions/IntentScore"
+      transformations:
+        type: object
+        description: return message from the underneath model
+      entities:
+        type: object
+        description: return message from the underneath model
+  EvaluationResponse:
+    type: object
+    required:
+      - projectId
+      - modelId
+      - testId
+      - type
+      - status
+      - message
+    properties:
+      projectId:
+        type: string
+        description: The project id in test
+      modelId:
+        type: string
+        description: The model id in test
+      testId:
+        type: string
+        description: The id related to this test, only applicable with testing dataset
+      type:
+        type: string
+        enum: [utterances, datasets]
+        description: The type of this test
+      status:
+        type: string
+        enum: [queued, in_progress, success, failed]
+        description: The status of this test
+      message:
+        type: string
+        description: The free-format message
+      evaluations:
+        type: array
+        description: The evaluation for each sentence sent by the caller
+        items:
+          $ref: "#/definitions/UtteranceEvaluation"
+  BatchTestInfo:
+    type: object
+    required:
+    - testId
+    - type
+    - status
+    - message
+    - requestPayload
+    - createdAt
+    - batchTestName
+    properties:
+      testId:
+        type: string
+        description: The id related to this test, only applicable with testing dataset
+      type:
+        type: string
+        description: The type of this test should be dataset
+      status:
+        type: string
+        enum: [queued, in_progress, success, failed]
+        description: The status of this test
+      message:
+        type: string
+        description: The free-format message
+      requestPayload:
+        type: string
+        description: Comma separate input datasets for the test
+      createdAt:
+        type: string
+        description: The time the batch test was created
+      batchTestName:
+        type: string
+        description: the name of the batch test
+  BatchTestResultsResponse:
+    type: object
+    required:
+    - projectId
+    - modelId
+    - modelName
+    - modelVersion
+    properties:
+      projectId:
+        type: string
+        description: The project id in test
+      modelId:
+        type: string
+        description: The model id in test
+      modelName:
+        type: string
+        description: The name of the model
+      modelVersion:
+        type: string
+        description: The version for the model
+      modelDescription:
+        type: string
+        description: The description of the model in test
+      batchTestInfo:
+        type: array
+        description: The information for the specific batch test
+        items:
+          $ref: "#/definitions/BatchTestInfo"
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response

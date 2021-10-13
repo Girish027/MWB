@@ -1,0 +1,401 @@
+
+@import '../vars/vars';
+
+$TaggerGridLoadingBarHeight: 3px;
+$TaggerGridHeaderHeight: 30px;
+
+.TaggerGridControls {
+  z-index: $taggerGridControlsZIndex;
+}
+
+.TaggerGrid {
+  .react-grid-container {
+    position: relative;
+
+    table {
+      margin: 0;
+      padding: 0;
+    }
+
+    thead {
+      .react-grid-action-container {
+        .react-grid-action-menu-item {
+          white-space: nowrap;
+
+          input {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    th {
+      border-left: 0;
+      border-right: 0;
+
+      /* font-family: "Helvetica", sans-serif; */
+      font-family: $fontFamily;
+      color: #666;
+      background-color: #f9f9f9;
+
+      .react-grid-column {
+        width: calc(100% - 25px);
+      }
+    }
+
+    .react-grid-checkbox-container {
+      width: 30px;
+    }
+
+    tr:nth-of-type(odd) {
+      background-color:$gridOddRowBackgroundColor;
+    }
+
+    td {
+      border-left: 1px solid #ddd;
+      border-right: 0;
+
+      /* font-family: "Open Sans", sans-serif; */
+      font-family: $fontFamily;
+    }
+
+    td.react-grid-action-container {
+      border: 0;
+    }
+
+    /*
+        td:last-of-type {
+            border-right: 1px solid #ddd;
+        }
+        */
+
+    input[type="checkbox"] {
+      cursor: pointer;
+    }
+
+    /* header */
+
+    .react-grid-header-fixed-container {
+      position: absolute;
+      z-index: $taggerGridFixedHeaderZIndex;
+      margin-top: $TaggerGridLoadingBarHeight;
+      height: $TaggerGridHeaderHeight;
+
+      .react-grid-header {
+        border-top: 1px solid #e9e9e9;
+      }
+
+      .react-grid-column {
+        white-space: nowrap;
+
+        .react-grid-desc::before {
+          display: none;
+          content: ' ';
+          height: 20px;
+          width: 25px;
+          background-image: url("icons/descending.svg");
+          vertical-align: top;
+
+        }
+
+        .react-grid-desc.react-grid-react-grid-sort-handle-visible::before {
+          display: inline-block;
+        }
+
+        .react-grid-asc::before {
+          display: none;
+          content: ' ';
+          height: 20px;
+          width: 25px;
+          background-image: url("icons/ascending.svg");
+          vertical-align: top;
+        }
+
+        .react-grid-asc.react-grid-react-grid-sort-handle-visible::before {
+          display: inline-block;
+        }
+      }
+
+      .react-grid-drag-handle {
+        background-image: url("icons/resizeColumn.svg");
+        display: inline-block;
+        height: 20px;
+        width: 25px;
+        right: 0;
+        margin-top: 5px;
+        position: absolute;
+      }
+
+      .react-grid-drag-handle:last-of-type {
+        right: 10px;
+      }
+    }
+
+    /* table */
+
+    .react-grid-table-container {
+      overflow: visible;
+      position: absolute;
+      padding-top: $TaggerGridLoadingBarHeight + $TaggerGridHeaderHeight + 2; /* 2 for border */
+      min-height: 200px;
+    }
+
+    .react-grid-table {
+      white-space: normal;
+    }
+
+    /* Need to set overflow to visible so that the actions menu will display */
+    .react-grid-cell {
+      vertical-align: middle;
+      white-space: pre-wrap;
+      overflow: visible;
+      word-break: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+
+    .react-grid-cell.menu {
+      overflow: visible;
+    }
+
+    .react-grid-empty-row {
+      border: 0;
+      cursor: default;
+
+      /* font-family: "Open Sans", sans-serif; */
+      font-family: $fontFamily;
+      display: none;
+    }
+
+    .react-grid-row:only-child {
+      .react-grid-empty-row {
+        display: table-cell;
+      }
+    }
+
+    .react-grid-empty-row:hover {
+      background: #fff;
+    }
+
+    .react-grid-row {
+      cursor: default;
+    }
+
+    .react-grid-row.react-grid-edit {
+      background-color: #e9e9e9;
+      color: #333;
+      box-shadow: none;
+
+      .react-grid-cell {
+        padding: 4px;
+      }
+
+      .react-grid-action-container {
+        visibility: hidden;
+      }
+    }
+
+    .react-grid-inline-editor {
+      margin-top: 30px;
+    }
+
+    /* loading bar */
+
+    .react-grid-loading-bar {
+      display: block;
+      position: absolute;
+      z-index: $taggerGridLoadingBarZIndex;
+      height: $TaggerGridLoadingBarHeight;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      background: #f9f9f9;
+    }
+
+    .react-grid-loading-bar::before {
+      display: none;
+      background: #ef8822;
+    }
+
+    /* custom elements */
+
+    .CellEditableTextarea {
+      padding: 0 4px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: auto;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: calc(100% - 8px);
+      height: calc(100% - 8px);
+      max-width: calc(100% - 8px);
+      max-height: calc(100% - 8px);
+      resize: none;
+      line-height: 22px;
+    }
+
+    .CellEditableDataSample {
+      visibility: hidden;
+    }
+
+    .CellEditableInput {
+      padding: 4px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 100%;
+      height: 24px;
+      line-height: 22px;
+    }
+
+    .react-grid-invalid-cell {
+      .CellEditableTextarea, .CellEditableInput {
+        border: 1px solid red;
+      }
+    }
+  }
+
+  .react-grid-container.react-grid-is-loading {
+    .react-grid-loading-bar::before {
+      display: block;
+    }
+  }
+
+  .GridActionContainer {
+    width: 100%;
+
+    .GridActionButton {
+      position: relative;
+      padding: 0;
+      margin: 6px auto 6px auto;
+      border: none;
+
+      .grommetux-button__icon {
+        position: absolute;
+        left: 8px;
+        top: calc(50% - 15px);
+        padding: 0;
+        margin: 0;
+      }
+
+      .grommetux-control-icon:not([class*="color-index-plain"]) *[stroke*="#"]:hover {
+        position: absolute;
+        left: 8px;
+        top: calc(50% - 15px);
+        padding: 0;
+        margin: 0;
+        stroke: $primaryColor;
+      }
+
+
+      .grommetux-button__label {
+        padding-left: 18px;
+      }
+    }
+
+    button.grommetux-button.GridActionButton:hover {
+      color: $primaryColor;
+      border: none;
+      background-color: transparent;
+      box-shadow: none;
+
+      .grommetux-control-icon:not([class*="color-index-plain"]) *[stroke*="#"] {
+        position: absolute;
+        left: 8px;
+        top: calc(50% - 15px);
+        padding: 0;
+        margin: 0;
+        stroke: $primaryColor;
+      }
+    }
+
+    .GridActionButton.grommetux-button--disabled, .GridActionButton.grommetux-button--disabled:hover {
+      .grommetux-button__icon {
+        svg {
+          stroke: #fff;
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+
+.TaggerGridPager {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+  margin: 5px 0 0 0;
+  padding: 4px 0 4px 0;
+
+  .TaggerGridPagerSegment {
+    line-height: 32px;
+    border-right: 1px dashed #ddd;
+    padding: 0 8px 0 8px;
+
+    select {
+      height: 24px;
+      min-width: 50px;
+      margin-left: 5px;
+      border: 1px solid #676767;
+    }
+  }
+
+  .TaggerGridPagerSegment:last-child {
+    border: none;
+  }
+
+  .toggleBtn {
+    width: 15px;
+    height: 30px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .toggleBtn.expandBtn {
+    background-image: url("icons/expand.svg") !important;
+  }
+
+  .toggleBtn.contractBtn {
+    background-image: url("icons/collapse.svg") !important;
+  }
+
+  .pagerBtn {
+    color: #060606;
+    border-radius: 4px;
+    border: 1px solid #d7d7d7;
+
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: $fontFamily;
+    pointer-events: all;
+    cursor: pointer;
+    background-color: white;
+    height: 28px;
+    margin-top: 1px;
+    line-height: 28px;
+    padding: 0 4px 0 4px;
+  }
+
+  .pagerBtn.active:not([disabled]), .pagerBtn:hover:not([disabled]) {
+    background-color: #ef8822;
+    border: 1px solid #ef8822;
+    color: white;
+  }
+
+  .pagerBtn[disabled] {
+    cursor: default;
+    color: #ccc;
+    border: 1px solid #d7d7d7;
+  }
+}
+
+.react-grid-container {
+  box-shadow: none !important;
+  border-bottom: 1px solid #eee;
+}

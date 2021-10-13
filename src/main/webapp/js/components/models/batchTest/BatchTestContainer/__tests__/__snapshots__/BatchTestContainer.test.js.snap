@@ -1,0 +1,705 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BatchTestContainer /> Functionality: onClickBatchTestItem: should set the update the value of state.inputDatasets 1`] = `
+Array [
+  undefined,
+]
+`;
+
+exports[`<BatchTestContainer /> Snapshots renders correctly for a model without any batch tests 1`] = `
+<div
+  id="batchtest-container"
+>
+  <div
+    className="main-sidebar-container sidebar-open"
+  >
+    <div
+      className="listContainer"
+      id="batchTestSideBar"
+      style={
+        Object {
+          "marginTop": "0px",
+        }
+      }
+    >
+      <span
+        className="float-right"
+        style={
+          Object {
+            "marginTop": "30px",
+          }
+        }
+      >
+        <button
+          data-radium={true}
+          disabled={false}
+          name="action-button"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "backgroundColor": "initial",
+              "border": "none",
+              "borderRadius": "4px",
+              "color": "#004C97",
+              "cursor": "pointer",
+              "fontSize": "13px",
+              "fontWeight": 600,
+              "height": "auto",
+              "minHeight": "0px",
+              "minWidth": "auto",
+              "outlineOffset": "2px",
+              "padding": "1px",
+              "paddingLeft": "10px",
+              "paddingRight": "10px",
+              "wordBreak": "normal",
+            }
+          }
+          tabIndex={0}
+          title="Hide Sidebar"
+          type="button"
+        >
+          <svg
+            height={10}
+            viewBox="0 0 7 11"
+            width={10}
+          >
+            <polygon
+              fill="#004c97"
+              points="5.98 0 0 5.5 5.98 11 7 10.06 2.04 5.5 7 0.94 5.98 0"
+            />
+          </svg>
+        </button>
+      </span>
+      <div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "background": "#FFFFFF",
+              "borderBottom": "2px solid #F6F7F8",
+              "borderTop": "2px solid #F6F7F8",
+              "boxSizing": "border-box",
+              "height": "60px",
+            }
+          }
+        >
+          <div
+            data-qa="actionItem"
+            data-radium={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            role="menuitem"
+            tabIndex={0}
+          >
+            <div
+              data-radium={true}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#004C97",
+                  "cursor": "pointer",
+                  "float": "left",
+                  "fontSize": "12px",
+                  "marginTop": "20px",
+                  "paddingLeft": "30px",
+                }
+              }
+            >
+              <span
+                data-radium={true}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "color": "#004C97",
+                    "height": "10px",
+                    "paddingRight": "6px",
+                    "width": "10px",
+                  }
+                }
+              >
+                <svg
+                  height="10px"
+                  viewBox="0 0 24 24"
+                  width="10px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 0A12 12 0 110 12 12 12 0 0112 0z"
+                    fill="#004C97"
+                  />
+                  <path
+                    d="M17.641 10.613h-4.293V6.32H10.69v4.293H6.397v2.658h4.293v4.293h2.658v-4.293h4.293z"
+                    fill="#FFFFFF"
+                  />
+                </svg>
+              </span>
+              CREATE NEW BATCH TEST
+            </div>
+          </div>
+        </div>
+        <div
+          className="vertical-center horizontal-center message-default"
+          style={Object {}}
+        >
+          You don't have any recent batchtest.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="main-separator"
+  />
+  <div
+    id="main-content-container"
+  >
+    <div
+      style={Object {}}
+    >
+      <div
+        className="vertical-center horizontal-center message-default"
+        style={Object {}}
+      >
+        Create new batch test
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestContainer /> Snapshots renders correctly for recent batch test - FAILED 1`] = `
+<div
+  id="batchtest-container"
+>
+  <div
+    className="main-sidebar-container sidebar-open"
+  >
+    <BatchTestSidebar
+      app={
+        Object {
+          "csrfToken": "token",
+          "userId": "247-test",
+        }
+      }
+      clientId="1"
+      datasets={Object {}}
+      dispatch={[Function]}
+      history={Object {}}
+      isOpen={true}
+      listOfBatchTests={
+        Object {
+          "batchTestInfo": Array [
+            Object {
+              "batchTestName": "BatchTest_1536876619527",
+              "createdAt": "1536876619527",
+              "requestPayload": "1, 2",
+              "status": "FAILED",
+              "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+              "type": "DATASETS",
+            },
+            Object {
+              "batchTestName": "BatchTest_1536876893245",
+              "createdAt": "1536876893245",
+              "requestPayload": "1, 2",
+              "status": "FAILED",
+              "testId": "random-3ca7-4958-a40c-cd7a8f02a7cc",
+              "type": "DATASETS",
+            },
+          ],
+          "modelDescription": "tora the cat",
+          "modelId": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+          "modelName": "tora",
+          "modelVersion": "1",
+          "projectId": "1",
+        }
+      }
+      model={
+        Object {
+          "modelToken": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+        }
+      }
+      modelBatchTestResults={Object {}}
+      modelId="3"
+      onClickBatchTestItem={[Function]}
+      onReviewDatasetsClick={[Function]}
+      onRunBatchTestClick={[Function]}
+      onRunSingleUtterance={[Function]}
+      onTuneModelClick={[Function]}
+      projectId="2"
+      toggleSidebar={[Function]}
+    />
+  </div>
+  <div
+    className="main-separator"
+  />
+  <div
+    id="main-content-container"
+  >
+    <Deprecated>
+      <Placeholder
+        message="The selected batchtest failed. Please select another one."
+        styleOverride={Object {}}
+      />
+    </Deprecated>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestContainer /> Snapshots renders correctly for recent batch test - IN_PROGRESS 1`] = `
+<div
+  id="batchtest-container"
+>
+  <div
+    className="main-sidebar-container sidebar-open"
+  >
+    <BatchTestSidebar
+      app={
+        Object {
+          "csrfToken": "token",
+          "userId": "247-test",
+        }
+      }
+      clientId="1"
+      datasets={Object {}}
+      dispatch={[Function]}
+      history={Object {}}
+      isOpen={true}
+      listOfBatchTests={
+        Object {
+          "batchTestInfo": Array [
+            Object {
+              "batchTestName": "BatchTest_1536876619527",
+              "createdAt": "1536876619527",
+              "requestPayload": "1, 2",
+              "status": "IN_PROGRESS",
+              "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+              "type": "DATASETS",
+            },
+            Object {
+              "batchTestName": "BatchTest_1536876893245",
+              "createdAt": "1536876893245",
+              "requestPayload": "1, 2",
+              "status": "IN_PROGRESS",
+              "testId": "random-3ca7-4958-a40c-cd7a8f02a7cc",
+              "type": "DATASETS",
+            },
+          ],
+          "modelDescription": "tora the cat",
+          "modelId": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+          "modelName": "tora",
+          "modelVersion": "1",
+          "projectId": "1",
+        }
+      }
+      model={
+        Object {
+          "modelToken": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+        }
+      }
+      modelBatchTestResults={Object {}}
+      modelId="3"
+      onClickBatchTestItem={[Function]}
+      onReviewDatasetsClick={[Function]}
+      onRunBatchTestClick={[Function]}
+      onRunSingleUtterance={[Function]}
+      onTuneModelClick={[Function]}
+      projectId="2"
+      toggleSidebar={[Function]}
+    />
+  </div>
+  <div
+    className="main-separator"
+  />
+  <div
+    id="main-content-container"
+  >
+    <Deprecated>
+      <Placeholder
+        message="Please wait while we prepare the results..."
+        styleOverride={Object {}}
+      />
+    </Deprecated>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestContainer /> Snapshots renders correctly for recent batch test - QUEUED 1`] = `
+<div
+  id="batchtest-container"
+>
+  <div
+    className="main-sidebar-container sidebar-open"
+  >
+    <BatchTestSidebar
+      app={
+        Object {
+          "csrfToken": "token",
+          "userId": "247-test",
+        }
+      }
+      clientId="1"
+      datasets={Object {}}
+      dispatch={[Function]}
+      history={Object {}}
+      isOpen={true}
+      listOfBatchTests={
+        Object {
+          "batchTestInfo": Array [
+            Object {
+              "batchTestName": "BatchTest_1536876619527",
+              "createdAt": "1536876619527",
+              "requestPayload": "1, 2",
+              "status": "QUEUED",
+              "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+              "type": "DATASETS",
+            },
+            Object {
+              "batchTestName": "BatchTest_1536876893245",
+              "createdAt": "1536876893245",
+              "requestPayload": "1, 2",
+              "status": "QUEUED",
+              "testId": "random-3ca7-4958-a40c-cd7a8f02a7cc",
+              "type": "DATASETS",
+            },
+          ],
+          "modelDescription": "tora the cat",
+          "modelId": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+          "modelName": "tora",
+          "modelVersion": "1",
+          "projectId": "1",
+        }
+      }
+      model={
+        Object {
+          "modelToken": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+        }
+      }
+      modelBatchTestResults={Object {}}
+      modelId="3"
+      onClickBatchTestItem={[Function]}
+      onReviewDatasetsClick={[Function]}
+      onRunBatchTestClick={[Function]}
+      onRunSingleUtterance={[Function]}
+      onTuneModelClick={[Function]}
+      projectId="2"
+      toggleSidebar={[Function]}
+    />
+  </div>
+  <div
+    className="main-separator"
+  />
+  <div
+    id="main-content-container"
+  >
+    <Deprecated>
+      <Placeholder
+        message="Please wait while we prepare the results..."
+        styleOverride={Object {}}
+      />
+    </Deprecated>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestContainer /> Snapshots renders correctly for recent batch test - SUCCESS 1`] = `
+<div
+  id="batchtest-container"
+>
+  <div
+    className="main-sidebar-container sidebar-open"
+  >
+    <BatchTestSidebar
+      app={
+        Object {
+          "csrfToken": "token",
+          "userId": "247-test",
+        }
+      }
+      clientId="1"
+      datasets={Object {}}
+      dispatch={[Function]}
+      history={Object {}}
+      isOpen={true}
+      listOfBatchTests={
+        Object {
+          "batchTestInfo": Array [
+            Object {
+              "batchTestName": "BatchTest_1536876619527",
+              "createdAt": "1536876619527",
+              "requestPayload": "1, 2",
+              "status": "SUCCESS",
+              "testId": "64fc4148-3ca7-4958-a40c-cd7a8f02a7cc",
+              "type": "DATASETS",
+            },
+            Object {
+              "batchTestName": "BatchTest_1536876893245",
+              "createdAt": "1536876893245",
+              "requestPayload": "1, 2",
+              "status": "SUCCESS",
+              "testId": "random-3ca7-4958-a40c-cd7a8f02a7cc",
+              "type": "DATASETS",
+            },
+          ],
+          "modelDescription": "tora the cat",
+          "modelId": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+          "modelName": "tora",
+          "modelVersion": "1",
+          "projectId": "1",
+        }
+      }
+      model={
+        Object {
+          "modelToken": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+        }
+      }
+      modelBatchTestResults={Object {}}
+      modelId="3"
+      onClickBatchTestItem={[Function]}
+      onReviewDatasetsClick={[Function]}
+      onRunBatchTestClick={[Function]}
+      onRunSingleUtterance={[Function]}
+      onTuneModelClick={[Function]}
+      projectId="2"
+      toggleSidebar={[Function]}
+    />
+  </div>
+  <div
+    className="main-separator"
+  />
+  <div
+    id="main-content-container"
+  >
+    <Deprecated>
+      <Placeholder
+        message="Please wait while we retrieve the results..."
+        styleOverride={Object {}}
+      />
+    </Deprecated>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestContainer /> Snapshots renders correctly when Create New Batch Test is clicked - CreateBatchTest should be shown 1`] = `
+<div
+  id="batchtest-container"
+>
+  <div
+    className="main-sidebar-container sidebar-open"
+  >
+    <BatchTestSidebar
+      app={
+        Object {
+          "csrfToken": "token",
+          "userId": "247-test",
+        }
+      }
+      clientId="1"
+      datasets={Object {}}
+      dispatch={[Function]}
+      history={Object {}}
+      isOpen={true}
+      listOfBatchTests={Object {}}
+      match={
+        Object {
+          "params": Object {
+            "clientId": "1",
+            "modelId": "3",
+            "projectId": "2",
+          },
+        }
+      }
+      model={
+        Object {
+          "modelToken": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+        }
+      }
+      modelBatchTestResults={Object {}}
+      modelId="3"
+      onClickBatchTestItem={[Function]}
+      onReviewDatasetsClick={[Function]}
+      onRunBatchTestClick={[Function]}
+      onRunSingleUtterance={[Function]}
+      onTuneModelClick={[Function]}
+      projectId="2"
+      toggleSidebar={[Function]}
+    />
+  </div>
+  <div
+    className="main-separator"
+  />
+  <div
+    id="main-content-container"
+  >
+    <CreateBatchTest
+      app={
+        Object {
+          "csrfToken": "token",
+          "userId": "247-test",
+        }
+      }
+      clientId="1"
+      datasets={Object {}}
+      dispatch={[Function]}
+      history={Object {}}
+      listOfBatchTests={Object {}}
+      match={
+        Object {
+          "params": Object {
+            "clientId": "1",
+            "modelId": "3",
+            "projectId": "2",
+          },
+        }
+      }
+      model={
+        Object {
+          "modelToken": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+        }
+      }
+      modelBatchTestResults={Object {}}
+      modelId="3"
+      onReviewDatasetsClick={[Function]}
+      onRunSingleUtterance={[Function]}
+      onTuneModelClick={[Function]}
+      projectId="2"
+      showBatchTestResults={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<BatchTestContainer /> Snapshots renders correctly when sidebar is closed  1`] = `
+<div
+  id="batchtest-container"
+>
+  <div
+    className="main-sidebar-container sidebar-closed"
+  >
+    <BatchTestSidebar
+      app={
+        Object {
+          "csrfToken": "token",
+          "userId": "247-test",
+        }
+      }
+      clientId="1"
+      datasets={Object {}}
+      dispatch={[Function]}
+      history={Object {}}
+      isOpen={false}
+      listOfBatchTests={Object {}}
+      match={
+        Object {
+          "params": Object {
+            "clientId": "1",
+            "modelId": "3",
+            "projectId": "2",
+          },
+        }
+      }
+      model={
+        Object {
+          "modelToken": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+        }
+      }
+      modelBatchTestResults={Object {}}
+      modelId="3"
+      onClickBatchTestItem={[Function]}
+      onReviewDatasetsClick={[Function]}
+      onRunBatchTestClick={[Function]}
+      onRunSingleUtterance={[Function]}
+      onTuneModelClick={[Function]}
+      projectId="2"
+      toggleSidebar={[Function]}
+    />
+  </div>
+  <div
+    className="main-separator"
+  />
+  <div
+    id="main-content-container"
+  >
+    <Deprecated>
+      <Placeholder
+        message="Create new batch test"
+        styleOverride={Object {}}
+      />
+    </Deprecated>
+  </div>
+</div>
+`;
+
+exports[`<BatchTestContainer /> Snapshots renders correctly when test has been submitted - goes back to Results page 1`] = `
+<div
+  id="batchtest-container"
+>
+  <div
+    className="main-sidebar-container sidebar-open"
+  >
+    <BatchTestSidebar
+      app={
+        Object {
+          "csrfToken": "token",
+          "userId": "247-test",
+        }
+      }
+      clientId="1"
+      datasets={Object {}}
+      dispatch={[Function]}
+      history={Object {}}
+      isOpen={true}
+      listOfBatchTests={Object {}}
+      match={
+        Object {
+          "params": Object {
+            "clientId": "1",
+            "modelId": "3",
+            "projectId": "2",
+          },
+        }
+      }
+      model={
+        Object {
+          "modelToken": "8eddf9c8-1aac-4aef-b6a0-8ea3ac36e451",
+        }
+      }
+      modelBatchTestResults={Object {}}
+      modelId="3"
+      onClickBatchTestItem={[Function]}
+      onReviewDatasetsClick={[Function]}
+      onRunBatchTestClick={[Function]}
+      onRunSingleUtterance={[Function]}
+      onTuneModelClick={[Function]}
+      projectId="2"
+      toggleSidebar={[Function]}
+    />
+  </div>
+  <div
+    className="main-separator"
+  />
+  <div
+    id="main-content-container"
+  >
+    <Deprecated>
+      <Placeholder
+        message="Create new batch test"
+        styleOverride={Object {}}
+      />
+    </Deprecated>
+  </div>
+</div>
+`;

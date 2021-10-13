@@ -1,0 +1,314 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Users
+  description: User APIs and their descriptions
+host: localhost:8080
+basePath: /nltools/v1
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /users:
+    get:
+      tags:
+        - get
+      summary: List all users
+      operationId: listUsers
+      parameters:
+        - name: limit
+          in: query
+          description: number of results per page
+          type: integer
+          format: int32
+          default: 100
+        - name: startIndex
+          in: query
+          description: starting index
+          type: integer
+          format: int32
+          default: 0
+        - name: showDeleted
+          in: query
+          description: show disabled users
+          type: boolean
+          format: true/false
+          default: false
+      responses:
+        200:
+          description: An paged array of Users
+          headers:
+            location:
+              type: string
+              description: A link to the next page of responses
+            X-Offset:
+              type: integer
+              format: int32
+              description: The current offset / startIndex
+            X-Total-Count:
+              type: integer
+              format: int32
+              description: The total number of items available
+          schema:
+            $ref: '#/definitions/UsersDetail'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      tags:
+        - post
+      summary: Create a user
+      operationId: createUser
+      parameters:
+        - name: user
+          description: User object
+          in: body
+          schema:
+            $ref: '#/definitions/User'
+      responses:
+        201:
+          description: User succesfully created
+          schema:
+            $ref: '#/definitions/UserDetail'
+        401:
+          description: Unauthorized to call the API
+        400:
+          description: User could not be created
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /users/{userId}:
+    get:
+      summary: Info for a specific User
+      operationId: getUserById
+      tags:
+        - get
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          description: The id of the user to retrieve
+          type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/UserDetail'
+        404:
+          description:  User Not Found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      tags:
+        - delete
+      summary: Deletes a user.
+      operationId: deleteUserById
+      description: Disables the user
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          description: The id of the user to delete
+          type: string
+      responses:
+        204:
+          description: OK
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    patch:
+      tags:
+        - patch
+      consumes:
+        - application/json-patch+json
+      summary: Modifies a user
+      operationId: patchUserById
+      description: Modifies an attribute of a user without required parameters
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          description: The id of the user to patch
+          type: string
+        - name: JsonPatch
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/PatchRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/UserDetail'
+        401:
+          description: Unauthorized to call the API
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /users/{userId}/undelete:
+    post:
+      tags:
+        - post
+      summary: Undeletes a user.
+      operationId: undeleteUserById
+      description: Enables the user
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          description: The id of the User to retrieve
+          type: string
+      responses:
+        204:
+          description: OK
+        401:
+          description: Unauthorized to call the API
+        404:
+          description: User Not Found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description:  Internal Server Error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  User:
+    type: object
+    discriminator: username
+    required:
+      - username
+      - firstName
+      - lastName
+      - email
+      - state
+    properties:
+      username:
+        type: string
+        description: User name
+      firstName:
+        type: string
+        description: User first name
+      lastName:
+        type: string
+        description: User last name
+      email:
+        type: string
+        format: email
+        description: user email
+      state:
+        type: string
+        enum:
+          - ENABLED
+          - DISABLED
+        default: ENABLED
+  UserDetail:
+    allOf:
+        - $ref: '#/definitions/User'
+        - type: object
+          required:
+            - id
+            - createdAt
+            - createdBy
+          properties:
+            id:
+              type: string
+              description: Numeric string to identify the user uniquely
+            createdAt:
+              type: integer
+              format: int64
+              description: UTC time of user creation
+            createdBy:
+              type: string
+              description: User ID of User creator
+            modifiedAt:
+              type: integer
+              format: int64
+              description: Modification time for any attribute update
+            modifiedBy:
+              type: string
+              description: User ID of last user to make a change 
+            lastLoginAt:
+              type: integer
+              format: int64
+              description: UTC time of user login time
+            lastLogoutAt:
+              type: integer
+              format: int64
+              description: UTC time of user logout time
+            utcOffset:
+              type: integer
+              format: int32
+              description: UTC offset with respect to GMT
+            locale:
+              type: string
+              description: user locale
+            offset:
+              type: integer
+              format: int32
+            totalCount:
+              type: integer
+              format: int64
+  UsersDetail:
+    type: array
+    items:
+      $ref: '#/definitions/UserDetail'
+  PatchRequest:
+    type: array
+    items:
+      $ref: '#/definitions/PatchDocument'
+  PatchDocument:
+    description: A JSONPatch document as defined by RFC 6902
+    required:
+      - op
+      - path
+    properties:
+      op:
+        type: string
+        description: The operation to be performed
+        enum:
+          - add
+          - remove
+          - replace
+          - move
+          - copy
+          - test
+      path:
+        type: string
+        description: A JSON-Pointer
+      value:
+        type: object
+        description: The value to be used within the operations.
+      from:
+        type: string
+        description: A string containing a JSON Pointer value.
+  Error:
+    required:
+      - code
+      - error_code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: HTTP status code
+      error_code:
+        type: string
+        description: Error category
+      message:
+        type: string
+        description: Error message shown in api response
